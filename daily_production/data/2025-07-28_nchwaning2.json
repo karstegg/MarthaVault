@@ -1,0 +1,121 @@
+{
+  "report_meta": {
+    "site": "Nchwaning 2",
+    "engineer": "Johan Kotze",
+    "acting_for": "Sikilela Nzuza",
+    "report_date": "2025-07-28",
+    "data_date": "2025-07-27",
+    "shift_day": "Sunday",
+    "report_time": "07:15",
+    "status": "final"
+  },
+  "safety": {
+    "incidents": 0,
+    "near_misses": 0,
+    "safety_meetings": 1,
+    "status": "clear",
+    "notes": "Week concluded with perfect safety record maintained"
+  },
+  "production": {
+    "rom": {
+      "actual": 7289,
+      "target": 6904,
+      "variance": 385,
+      "variance_percent": 5.6,
+      "performance": "exceptional"
+    },
+    "product": {
+      "actual": 6978,
+      "target": 6634,
+      "variance": 344,
+      "variance_percent": 5.2,
+      "performance": "exceptional"
+    },
+    "decline": {
+      "actual": 311,
+      "target": 270,
+      "variance": 41,
+      "variance_percent": 15.2,
+      "performance": "excellent"
+    },
+    "loads": {
+      "actual": 116,
+      "target": 105,
+      "variance": 11,
+      "variance_percent": 10.5,
+      "performance": "record_breaking",
+      "notes": "New site record - 6th consecutive day above 110 loads"
+    },
+    "blast_faces": {
+      "actual": 12,
+      "target": 10,
+      "variance": 2,
+      "variance_percent": 20.0,
+      "performance": "record_tied",
+      "notes": "Maintains site record set earlier in week"
+    }
+  },
+  "equipment": {
+    "tmm_fleet": {
+      "dt_availability": 100,
+      "fl_availability": 100,
+      "hd_availability": 100,
+      "rt_availability": 100,
+      "sr_availability": 100,
+      "uv_availability": 100,
+      "overall_availability": 100,
+      "performance": "perfect",
+      "consecutive_perfect_days": 5
+    },
+    "breakdowns": {
+      "count": 0,
+      "duration_hours": 0,
+      "critical": 0,
+      "minor": 0,
+      "status": "zero_breakdowns",
+      "notes": "Week concluded with zero breakdown streak intact"
+    },
+    "maintenance": {
+      "planned": 2,
+      "emergency": 0,
+      "preventive": 3,
+      "status": "optimal"
+    }
+  },
+  "operational_notes": {
+    "achievements": [
+      "Final day of record-breaking performance week",
+      "New site load record achieved (116 loads)",
+      "Fifth consecutive day of 100% TMM availability",
+      "Highest weekly ROM total in site history",
+      "Perfect safety record maintained throughout week"
+    ],
+    "challenges": [],
+    "follow_up_actions": [
+      "Document week's performance metrics for best practice analysis",
+      "Schedule preventive maintenance during upcoming week",
+      "Prepare handover notes for Sikilela Nzuza's return"
+    ]
+  },
+  "week_summary": {
+    "total_rom": 50526,
+    "total_product": 48447,
+    "total_loads": 794,
+    "average_daily_rom": 7218,
+    "average_daily_product": 6921,
+    "average_daily_loads": 113,
+    "performance_trend": "exceptional_sustained_peak"
+  },
+  "analyst_notes": {
+    "performance_rating": "A+",
+    "trend": "peak_sustained",
+    "key_success_factors": [
+      "Complete equipment recovery and optimization",
+      "Perfect maintenance execution",
+      "Sustained high blast face preparation",
+      "Optimal load cycle efficiency",
+      "Strong acting engineer leadership"
+    ],
+    "outlook": "Set new performance baseline for site capability"
+  }
+}

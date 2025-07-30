@@ -1,0 +1,23 @@
+description = "Scans the inbox and intelligently sorts all files."
+prompt = """
+Execute a full triage process on the `00_inbox/` directory.
+
+**1. Process Text/Markdown Files:**
+-   Analyze content to determine the correct folder (`projects/`, `people/`, etc.).
+-   Move and rename the file to `YYYY-MM-DD – Title.md`.
+-   Ensure standard front-matter is present.
+-   Sync any checkboxes with `tasks/master_task_list.md`.
+
+**2. Process Media Files (images, audio, video):**
+-   Move the file to the correct `media/[type]/[year]/` directory.
+-   Rename it to `YYYY-MM-DD_HHMM_slug.ext`.
+-   Create a companion Markdown note for the media file, embedding the media and adding descriptive tags and metadata.
+-   If the media is audio, transcribe it.
+
+**3. Reporting:**
+-   For each item processed, report the action taken (e.g., `[✓] 00_inbox/note.txt → projects/Project_X/2025-07-30 – Note.md`).
+-   Provide a final summary of all actions taken.
+
+**4. Safety:**
+-   Adhere strictly to the safety protocols in `CLAUDE.md`. Never overwrite files; append a suffix if a file of the same name exists.
+"""

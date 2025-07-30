@@ -1,0 +1,80 @@
+{
+  "report_metadata": {
+    "date": "2025-07-21",
+    "data_date": "2025-07-18_2025-07-20",
+    "site": "Nchwaning 2",
+    "engineer": "Sikilela Nzuza",
+    "report_type": "daily_production",
+    "weekend_report": true,
+    "timestamp": "2025-07-21T06:54:00Z"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "notes": "Clear"
+  },
+  "production": {
+    "daily_breakdown": {
+      "friday_18th": {
+        "rom": {"actual": 4946, "target": 6904, "variance": -1958, "variance_percent": -28.4, "unit": "tonnes"},
+        "product": {"actual": 5243, "target": 6634, "variance": -1391, "variance_percent": -21.0, "unit": "tonnes"}
+      },
+      "saturday_19th": {
+        "rom": {"actual": 0, "target": 2844, "variance": -2844, "variance_percent": -100.0, "unit": "tonnes"},
+        "product": {"actual": 0, "target": 1624, "variance": -1624, "variance_percent": -100.0, "unit": "tonnes"}
+      },
+      "sunday_20th": {
+        "rom": {"actual": 0, "target": 2825, "variance": -2825, "variance_percent": -100.0, "unit": "tonnes"},
+        "product": {"actual": 0, "target": 1629, "variance": -1629, "variance_percent": -100.0, "unit": "tonnes"}
+      }
+    },
+    "mtd_performance": {
+      "target": 89570,
+      "actual": 76246,
+      "variance": -13324,
+      "variance_percent": -14.9,
+      "unit": "tonnes",
+      "description": "Month-to-date plant product"
+    },
+    "issues": ["Weekend production shutdown", "Friday production below target"]
+  },
+  "shift_readiness": {
+    "production_tmm": [
+      {"type": "DT", "name": "Dump Trucks", "available": 8, "total": 9, "readiness_percent": 88.9, "issues": ["DT120 MC24 controller"]},
+      {"type": "FL", "name": "Front Loaders", "available": 6, "total": 6, "readiness_percent": 100.0},
+      {"type": "HD", "name": "Hydraulic Drills", "available": 6, "total": 6, "readiness_percent": 100.0},
+      {"type": "RT", "name": "Roof Bolters", "available": 6, "total": 6, "readiness_percent": 100.0},
+      {"type": "SR", "name": "Scalers", "available": 4, "total": 6, "readiness_percent": 66.7, "issues": ["SR27 wheel frame", "SR27 pin"]}
+    ],
+    "graben_section": [
+      {"type": "DT", "name": "Dump Trucks", "available": 2, "total": 2, "readiness_percent": 100.0},
+      {"type": "FL", "name": "Front Loaders", "available": 2, "total": 2, "readiness_percent": 100.0},
+      {"type": "HD", "name": "Hydraulic Drills", "available": 2, "total": 2, "readiness_percent": 100.0},
+      {"type": "RT", "name": "Roof Bolters", "available": 2, "total": 2, "readiness_percent": 100.0},
+      {"type": "SR", "name": "Scalers", "available": 1, "total": 2, "readiness_percent": 50.0, "issues": ["SR46 hydraulic oil pump"]}
+    ]
+  },
+  "breakdowns": {
+    "production_issues": [
+      {"vehicle": "DT120", "type": "dump_truck", "issues": ["MC24 controller"]},
+      {"vehicle": "SR27", "type": "scaler", "issues": ["wheel frame", "pin"]},
+      {"vehicle": "SR46", "type": "scaler", "issues": ["hydraulic oil pump"]}
+    ]
+  },
+  "performance_summary": {
+    "key_highlights": [
+      "Safety clear for weekend period",
+      "Friday production achieved: ROM 4,946t, Product 5,243t",
+      "FL, HD, RT production sections at 100% readiness",
+      "Graben section mostly operational"
+    ],
+    "key_issues": [
+      "Weekend production shutdown (Saturday/Sunday zero output)",
+      "Friday production 21-28% below targets",
+      "MTD performance 14.9% below target (76,246t vs 89,570t)",
+      "Scaler availability poor: 66.7% production, 50% Graben",
+      "DT120 controller issues affecting dump truck availability"
+    ],
+    "overall_status": "weekend_shutdown_friday_underperformance"
+  }
+}

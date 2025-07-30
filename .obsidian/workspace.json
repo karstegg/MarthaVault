@@ -1,0 +1,210 @@
+{
+  "main": {
+    "id": "a3000346d0d23e7f",
+    "type": "split",
+    "children": [
+      {
+        "id": "2774a7346c1b18d7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1eab43d07412c743",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_Inbox/2025-07-29 – Assmang Black Rock Org Chart.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-07-29 – Assmang Black Rock Org Chart"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "70195bc6a3d380e4",
+    "type": "split",
+    "children": [
+      {
+        "id": "63ed82c2393d7bfc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "759b14c2e47b40e6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "97095aa62efe480b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "ff1f17964ac3d7b0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e8bdc17feff4bebd",
+    "type": "split",
+    "children": [
+      {
+        "id": "c7ab2ac19efb2b70",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "83f7eb2c13be1f61",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "tasks/master_task_list.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for master_task_list"
+            }
+          },
+          {
+            "id": "7f059d31c9392911",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "tasks/master_task_list.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from master_task_list"
+            }
+          },
+          {
+            "id": "b3751c6a30b1d4a6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f31d658338fb5a10",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "tasks/master_task_list.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of master_task_list"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "1eab43d07412c743",
+  "lastOpenFiles": [
+    "people/Willie Koekemoer.md",
+    "people/Lourens van der Heerden.md",
+    "people/Willy Kookamoor.md",
+    "people/Lourence van Heerden.md",
+    "CLAUDE.md.tmp.21752.1753799933927",
+    "people/Gregory Karsten.md",
+    "00_Inbox/2025-07-29 – Team Directory.md",
+    "CLAUDE.md",
+    "00_Inbox/2025-07-29 – Assmang Black Rock Org Chart.md",
+    "people/Sello Taku.md",
+    "people/Rudy Opperman.md",
+    "CLAUDE.md.tmp.21752.1753799605911",
+    "people/Xavier Peterson.md",
+    "projects/SA_Cranes/2025-07-29 – SA Cranes Contract Update Process.md",
+    "people/Sikilela Nzuza.md",
+    "tasks/2025-07-29 – Priority Task Schedule.md",
+    "claude.md",
+    "tasks/master_task_list.md",
+    "people/Lawrence Van Gieren.md",
+    "projects/SA_Cranes",
+    "people/Simon.md",
+    "people/Selom.md",
+    "people/Sipo.md",
+    "tasks/2025-07-29 – GES Appointments Finalization.md",
+    "tasks/2025-07-29 – BEV Workshop Charges Order.md",
+    "people/Billy.md",
+    "projects/BEV/2025-07-29 – BEV Fire Risk Assessment Review.md",
+    "projects/BEV",
+    "00_Inbox/2025-07-29 – Priority Task Investigation.md",
+    "claude.md.md",
+    "New folder",
+    "claude-commands",
+    "people",
+    "media",
+    "tasks",
+    "projects"
+  ]
+}

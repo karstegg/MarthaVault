@@ -1,0 +1,79 @@
+{
+  "report_metadata": {
+    "date": "2025-07-26",
+    "data_date": "2025-07-25",
+    "site": "Nchwaning 2",
+    "engineer": "Johan Kotze",
+    "report_type": "daily_production",
+    "report_day": "Saturday",
+    "data_day": "Friday",
+    "timestamp": "2025-07-26T06:30:00Z",
+    "acting_engineer_note": "Johan Kotze acting for Sikilela Nzuza"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "notes": "Clear"
+  },
+  "production": {
+    "rom": {"actual": 7156, "target": 6904, "variance": 252, "variance_percent": 3.6, "unit": "tonnes"},
+    "product": {"actual": 6834, "target": 6634, "variance": 200, "variance_percent": 3.0, "unit": "tonnes"},
+    "loads": {
+      "friday": 108,
+      "performance": "outstanding"
+    },
+    "blast": {
+      "faces_blasted": 10,
+      "tonnes_blasted": null,
+      "note": "10 faces blasted Friday"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": {"available": 9, "total": 9, "percentage": 100.0},
+      "FL": {"available": 6, "total": 6, "percentage": 100.0},
+      "HD": {"available": 6, "total": 6, "percentage": 100.0},
+      "RT": {"available": 6, "total": 6, "percentage": 100.0},
+      "SR": {"available": 6, "total": 6, "percentage": 100.0},
+      "UV": {"available": null, "total": null, "percentage": null}
+    }
+  },
+  "shift_readiness": {
+    "production_tmm": [
+      {"type": "DT", "name": "Dump Trucks", "available": 9, "total": 9, "readiness_percent": 100.0},
+      {"type": "FL", "name": "Front Loaders", "available": 6, "total": 6, "readiness_percent": 100.0},
+      {"type": "HD", "name": "Hydraulic Drills", "available": 6, "total": 6, "readiness_percent": 100.0},
+      {"type": "RT", "name": "Roof Bolters", "available": 6, "total": 6, "readiness_percent": 100.0},
+      {"type": "SR", "name": "Scalers", "available": 6, "total": 6, "readiness_percent": 100.0}
+    ],
+    "graben_section": [
+      {"type": "DT", "name": "Dump Trucks", "available": 2, "total": 2, "readiness_percent": 100.0},
+      {"type": "FL", "name": "Front Loaders", "available": 2, "total": 2, "readiness_percent": 100.0},
+      {"type": "HD", "name": "Hydraulic Drills", "available": 2, "total": 2, "readiness_percent": 100.0},
+      {"type": "RT", "name": "Roof Bolters", "available": 2, "total": 2, "readiness_percent": 100.0},
+      {"type": "SR", "name": "Scalers", "available": 2, "total": 2, "readiness_percent": 100.0}
+    ]
+  },
+  "breakdowns": {
+    "production_issues": []
+  },
+  "operational": {
+    "fire_alarms": 0,
+    "crusher_blockages": 0,
+    "chute_blockages": 0,
+    "plant_status": "operational"
+  },
+  "performance_summary": {
+    "key_highlights": [
+      "OUTSTANDING PERFORMANCE: ROM +3.6%, Product +3.0% above targets",
+      "108 loads - outstanding performance (best yet)",
+      "10 blast faces completed - excellent",
+      "ALL TMM sustained at 100% availability",
+      "Zero equipment breakdowns - perfect reliability",
+      "Complete operational excellence maintained"
+    ],
+    "key_issues": [],
+    "overall_status": "outstanding_sustained_excellence",
+    "priority_level": "low"
+  }
+}

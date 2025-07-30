@@ -1,0 +1,13 @@
+description = "Creates a new, structured note, placing it in a project folder if specified."
+prompt = """
+You have been given arguments for a new note.
+
+1.  **Parse Arguments**: Look for `project:` and `title:` hints in the arguments.
+2.  **Determine Path**: 
+    - If a `project:` is specified, the path is `projects/[project_name]/`.
+    - Otherwise, the path is `00_inbox/`.
+3.  **Create Filename**: The filename must be `[YYYY-MM-DD] – [title].md`.
+4.  **Create File Content**: The file should start with the standard front-matter as defined in `CLAUDE.md` (Status, Priority, etc.).
+5.  **Apply Tags**: Add tags according to the vault's tagging policy.
+6.  **Confirm Creation**: Respond with the full path to the newly created file, e.g., "✅ Created `projects/Project_X/2025-07-30 – New Note.md`"
+"""

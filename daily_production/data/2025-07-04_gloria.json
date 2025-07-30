@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "site": "Gloria",
+    "engineer": "Sipho Dubazane",
+    "report_date": "2025-07-04",
+    "data_date": "2025-07-03",
+    "time_received": "06:45",
+    "shift_period": "Night shift (2025-07-03) to Day shift (2025-07-04)"
+  },
+  "safety": {
+    "status": "All clear",
+    "incidents": [],
+    "fire_alarms": "None",
+    "main_fans": "In Order"
+  },
+  "production": {
+    "rom": {
+      "actual": 2727,
+      "target": 2890,
+      "variance": -163,
+      "performance_pct": 94.4,
+      "note": "vs 4041 reported - likely comparison figure"
+    },
+    "decline": {
+      "actual": 3587,
+      "target": 2650,
+      "variance": 937,
+      "performance_pct": 135.4,
+      "note": "vs 4041 reported - exceeds target significantly"
+    },
+    "product": {
+      "actual": 3607,
+      "target": 2980,
+      "variance": 627,
+      "performance_pct": 121.0,
+      "note": "vs 3314 reported - strong performance above target"
+    },
+    "loads": {
+      "breakdown": [66, 31, 68],
+      "total": 165,
+      "performance": "Variable load performance"
+    }
+  },
+  "equipment": {
+    "tmm_availability": {
+      "DT": {
+        "availability_pct": 95,
+        "start_of_shift": "6/6",
+        "fleet_size": 6,
+        "available": 6,
+        "status": "Excellent availability"
+      },
+      "FL": {
+        "availability_pct": 67,
+        "start_of_shift": "4/5",
+        "fleet_size": 4,
+        "available": 4,
+        "status": "Reduced availability - FL0083 speed sensor issue"
+      },
+      "HD": {
+        "availability_pct": 96,
+        "start_of_shift": "4/4",
+        "fleet_size": 4,
+        "available": 4,
+        "status": "Excellent availability"
+      },
+      "RT": {
+        "availability_pct": 97,
+        "start_of_shift": "4/4",
+        "fleet_size": 4,
+        "available": 4,
+        "status": "Excellent availability"
+      },
+      "SR": {
+        "availability_pct": 67,
+        "start_of_shift": "3/4",
+        "fleet_size": 4,
+        "available": 3,
+        "status": "Reduced availability - SR0037 tail frame issue"
+      }
+    },
+    "specialized_equipment": {
+      "emulsion_uv": {
+        "available": "2/2",
+        "status": "Full availability"
+      },
+      "manitou": {
+        "available": "1/1",
+        "status": "Full availability"
+      },
+      "manlifts": {
+        "available": "2/2",
+        "status": "Full availability"
+      }
+    },
+    "breakdowns": [
+      {
+        "equipment": "FL0083",
+        "issue": "Speed sensor",
+        "category": "FL",
+        "impact": "Reduced FL fleet availability"
+      },
+      {
+        "equipment": "SR0037",
+        "issue": "Tail frame",
+        "category": "SR",
+        "impact": "Reduced SR fleet availability"
+      }
+    ]
+  },
+  "storage": {
+    "surface_silos": {
+      "silo_1": 63,
+      "silo_2": 95,
+      "silo_3": 74,
+      "silo_4": 94,
+      "average": 81.5,
+      "status": "Good levels, Silo 1 requires attention"
+    },
+    "underground_silos": {
+      "74": 19,
+      "HG": 34,
+      "D": 65,
+      "LG": 75,
+      "average": 48.3,
+      "status": "Mixed levels, 74 and HG silos low"
+    }
+  },
+  "infrastructure": {
+    "main_fans": "In Order",
+    "plant_blockages": "None",
+    "fire_alarms": "None",
+    "overall_status": "Good"
+  },
+  "summary": {
+    "overall_performance": "Strong production performance with equipment challenges",
+    "key_issues": [
+      "FL0083 speed sensor requiring repair",
+      "SR0037 tail frame issue",
+      "Underground silos 74 and HG running low",
+      "FL and SR availability reduced to 67%"
+    ],
+    "positive_highlights": [
+      "Product and Decline exceed targets significantly",
+      "ROM close to target at 94.4%",
+      "DT, HD, RT equipment excellent availability",
+      "All safety systems operational"
+    ]
+  }
+}

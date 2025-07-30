@@ -1,0 +1,4 @@
+description = "Alias for new-note. Creates a new, structured note."
+prompt = """
+This is an alias for the `/new-note` command. Execute the instructions in `new-note.toml` with the provided arguments.
+"""

@@ -1,0 +1,89 @@
+{
+  "report_metadata": {
+    "date": "2025-07-22",
+    "data_date": "2025-07-21", 
+    "site": "Nchwaning 2",
+    "engineer": "Johan Kotze",
+    "report_type": "daily_production",
+    "report_day": "Tuesday",
+    "data_day": "Monday",
+    "timestamp": "2025-07-22T06:45:00Z",
+    "acting_engineer_note": "Johan Kotze acting for Sikilela Nzuza"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "notes": "Clear"
+  },
+  "production": {
+    "rom": {"actual": 5678, "target": 6904, "variance": -1226, "variance_percent": -17.8, "unit": "tonnes"},
+    "product": {"actual": 5892, "target": 6634, "variance": -742, "variance_percent": -11.2, "unit": "tonnes"},
+    "loads": {
+      "monday": 89,
+      "performance": "good"
+    },
+    "blast": {
+      "faces_blasted": 8,
+      "tonnes_blasted": null,
+      "note": "8 faces blasted Monday"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": {"available": 8, "total": 9, "percentage": 88.9},
+      "FL": {"available": 6, "total": 6, "percentage": 100.0},
+      "HD": {"available": 5, "total": 6, "percentage": 83.3},
+      "RT": {"available": 6, "total": 6, "percentage": 100.0},
+      "SR": {"available": 2, "total": 6, "percentage": 33.3},
+      "UV": {"available": null, "total": null, "percentage": null}
+    }
+  },
+  "shift_readiness": {
+    "production_tmm": [
+      {"type": "DT", "name": "Dump Trucks", "available": 8, "total": 9, "readiness_percent": 88.9, "issues": ["DT120 MC24 controller ongoing"]},
+      {"type": "FL", "name": "Front Loaders", "available": 6, "total": 6, "readiness_percent": 100.0},
+      {"type": "HD", "name": "Hydraulic Drills", "available": 5, "total": 6, "readiness_percent": 83.3, "issues": ["HD maintenance"]},
+      {"type": "RT", "name": "Roof Bolters", "available": 6, "total": 6, "readiness_percent": 100.0},
+      {"type": "SR", "name": "Scalers", "available": 2, "total": 6, "readiness_percent": 33.3, "issues": ["Multiple scaler breakdowns - critical shortage"]}
+    ],
+    "graben_section": [
+      {"type": "DT", "name": "Dump Trucks", "available": 2, "total": 2, "readiness_percent": 100.0},
+      {"type": "FL", "name": "Front Loaders", "available": 2, "total": 2, "readiness_percent": 100.0},
+      {"type": "HD", "name": "Hydraulic Drills", "available": 2, "total": 2, "readiness_percent": 100.0},
+      {"type": "RT", "name": "Roof Bolters", "available": 2, "total": 2, "readiness_percent": 100.0},
+      {"type": "SR", "name": "Scalers", "available": 1, "total": 2, "readiness_percent": 50.0, "issues": ["SR46 hydraulic oil pump ongoing"]}
+    ]
+  },
+  "breakdowns": {
+    "production_issues": [
+      {"vehicle": "DT120", "type": "dump_truck", "issues": ["MC24 controller"], "status": "ongoing"},
+      {"vehicle": "SR27", "type": "scaler", "issues": ["wheel frame", "pin"], "status": "ongoing"},
+      {"vehicle": "SR46", "type": "scaler", "issues": ["hydraulic oil pump"], "status": "ongoing"},
+      {"vehicle": "SR_multiple", "type": "scaler", "issues": ["Critical scaler shortage - 4 units down"], "status": "critical"}
+    ]
+  },
+  "operational": {
+    "fire_alarms": 0,
+    "crusher_blockages": 0,
+    "chute_blockages": 0,
+    "plant_status": "operational"
+  },
+  "performance_summary": {
+    "key_highlights": [
+      "Safety clear for Monday operations",
+      "Production achieved: ROM 5,678t, Product 5,892t", 
+      "89 loads completed - good performance",
+      "8 blast faces completed",
+      "FL and RT at 100% availability"
+    ],
+    "key_issues": [
+      "CRITICAL: Scaler availability crisis - only 33.3% available",
+      "Production 11-18% below targets",
+      "DT120 controller issue persisting",
+      "HD availability reduced to 83.3%",
+      "Multiple ongoing equipment breakdowns"
+    ],
+    "overall_status": "production_below_target_equipment_crisis",
+    "priority_level": "high"
+  }
+}

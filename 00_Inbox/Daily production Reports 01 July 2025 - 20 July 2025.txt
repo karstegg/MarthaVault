@@ -1,0 +1,3832 @@
+Here is the rest if the daily reports for July 2025 from report date 1/7/25 to 20/7/25.
+Please use sub agents to process all the files as per pdr:
+
+[06:56, 01/07/2025] Sikelela Shaft Engineer: 01-07-2025 
+
+Safety  Clear
+ 
+ROM:            5700 v 6903t 
+Product:       2249 v 3032t
+Loads:          47, 65, 69
+
+ Blast:Actual vs Plan ? vs16 
+
+  TMMs Availability:
+DTs: 93%.    
+FLs: 77%  
+HDs: 87%    
+RTs: 54%     
+SRs: 80%    
+
+DZ13: 100% 
+GD12: 90% 
+
+Start of Shift-Production TMM
+DT:  8/9    DT128 fire suppression 
+FL:  5/6     FL102 transmission oil pressure 
+HD:  5/6    HD63 boom extension 
+RT:  5/6     RT38 engine 
+SR:  5/6     SR29 starting 
+
+Emulsion UVs 
+(UV62,66,108) = 100%
+
+Logistics UV
+(UV54,59,120)= 76% 
+Manlifts
+Sampling (UV77,123) =100% 
+Survey (UV98,99) = 50%
+
+TMM
+Breakdowns (Services & Graben)
+UV90- water pump & timing
+UV69- front diff 
+UV54- oil leak 
+UV84- park brake 
+UV98- bucket 
+FL85- propshaft 
+FL92- display 
+HD63- water box 
+FL100-…
+[06:56, 01/07/2025] Sipho Dubazane: Gloria Report
+01-07-2025 
+
+*Safety
+- All clear
+
+ *ROM 
+- 916 vs 3390
+
+
+ Decline
+4813 vs 4554
+
+  *Product   
+     2278  vs 2216
+     
+                
+
+*Surface Silos {%} 
+1 - 94
+2 - 93
+3 - 92
+4 - 57
+
+ *U/G SILOS {%}
+ 74 - 19
+ HG - 14
+ D    - 15
+ LG - 27
+
+ *Loads
+- 74;79;45
+-
+  *TMMs Availability: {%}
+- DTs: 99
+- FLs: 55
+- HDs: 67
+- RTs: 100
+- SRs: 58
+
+ *Start of Shift-Production TMM
+DT:  6/6
+FL:   3/5
+HD:  3/4
+RT:   4/4 
+SR:   3/4
+
+*Emulsion Uv's*
+- 2/2
+
+*Manitou
+- 1/1
+ 
+*Manlifts
+- 0/2 UV0076 & UV0097 Radius arm
+
+ *TMM*
+- FL0081 Speed sensor 
+- FL0083 Bucket movement 
+
+- HD0060 - Anti parallel cylinder 
+
+- SR0037 Tail frame
+-
+  
+ *Main Fans 
+- ⁠In Order
+
+ *Plant blockages 
+- None
+
+ *Fire alarm 
+- None
+[06:58, 01/07/2025] Xavier Petersen: Good Day Team,
+S&W
+Tuesday  
+01Jul 2025
+Monday Report
+
+Safety:
+Clear
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+No Stoppages
+
+Nch3 PW
+No Stoppages 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+Delay: 3-7LVL Feeder Coil Burnt
+Fix: Winder Technician Electrician and Winder Technician Fitter Replaced Coil
+
+Main Fans
+GL
+No Stoppages 
+
+Nch2
+No Stoppages 
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 101,0%
+Sat: 101,0%
+Sun: 100,9%
+Mon: 100,8%
+Tue: %
+Wed: %
+Thu: %
+
+DD02:
+Fri: 78,8%
+Sat: 88,1%
+Sun: 87,8%
+Mon: 88,5%
+Tue: %
+Wed: %
+Thu: %
+
+Fire Scada Alarms:
+0
+
+Block Chutes:
+None
+
+Production:
+Fri: 183/ Shaft Barrel Repair Project 
+Sat: 0/1640 Shaft Barrel Repair Project 
+Sun: 1276/1640 Shaft Barrel Repair Proj…
+[07:07, 01/07/2025] Sello Sease: *Nchwaning 3 
+ 01-07-2025
+
+ Safety 
+All clear
+
+ROM
+2901 vs 6174
+ 
+Decline
+2611 vs 4399
+ 
+Product
+2202 vs 4047
+
+ LOADS 
+73, 70, 59
+
+Blast
+8 Faces 
+ 
+Previous day TMM availability %
+HDs: 85
+DTs: 79
+FLs: 95
+RTs: 96
+SRs: 89
+UVs: 92
+
+GD11: N/A
+DZ11:  100
+UV044: 87
+
+TMMs for SOS:
+HDs: 7/9
+DTs: 13/15
+FLs: 8/10
+RTs: 9/10
+SRs: 7/9
+UVs: 8/9
+
+Manlifts:4/4
+
+Emulsion UV: 3/4 
+
+ *CURRENT BREAK DOWNS   
+DT0109 - Strata, gears and spares 
+DT0119 - Engine cut off, no operator
+D0147 - Red stop light 
+DT0149 - No operator 
+DT0154 - Strata system faulty
+FL0113 - Tyre replacement, oil leak
+HD0049 - Hydraulic hose
+HD0052 - Feed cylinder bolts
+RT0054 - Hydraulic hose, property 
+SR0030 - Hydraulic hose
+SR0044 - Fail to start
+UV0047 - Brakes
+UV0126 - Front axle
+UV0131 - Brakes fail …
+[06:39, 02/07/2025] Sipho Dubazane: Gloria Report
+02-07-2025 
+
+*Safety
+- All clear
+
+ *ROM 
+- 2308 vs 4041
+
+
+ Decline
+     2977 vs 4041
+
+  *Product   
+     2694  vs 3314
+     
+*Surface Silos {%} 
+1 - 76
+2 - 93
+3 - 79
+4 - 85
+
+ *U/G SILOS {%}
+ 74 - 23
+ HG - 14
+ D    - 15
+ LG - 20
+
+ *Loads
+- 49;48;25
+-
+  *TMMs Availability: {%}
+- DTs: 94
+- FLs: 50
+- HDs: 67
+- RTs: 89
+- SRs: 64
+
+ *Start of Shift-Production TMM
+DT:  6/6
+FL:   3/5
+HD:  4/4
+RT:   4/4 
+SR:   3/4
+
+*Emulsion Uv's*
+- 2/2
+
+*Manitou
+- 1/1
+ 
+*Manlifts
+- 2/2 
+
+ *TMM*
+- FL0081 Speed sensor 
+- FL0083 Bucket movement 
+
+- SR0037 Tail frame
+-
+  
+ *Main Fans 
+- ⁠In Order
+
+ *Plant blockages 
+- None
+
+ *Fire alarm 
+- None
+[07:36, 02/07/2025] Sikelela Shaft Engineer: 02-07-2025 
+
+Safety  Clear
+ 
+ROM:            4038 v 6903t 
+Product:       5038 v 6497t
+Loads:          55, 24, 31
+
+ Blast:Actual vs Plan ? vs16 
+
+  TMMs Availability:
+DTs: 95%.    
+FLs: 67%  
+HDs: 100%    
+RTs: 79%     
+SRs: 82%    
+
+DZ13: 100% 
+GD12: 100% 
+
+Start of Shift-Production TMM
+DT:  9/9    
+FL:  6/6    
+HD:  4/6    HD63 centraliser; HD64 boom extension  
+RT:  5/6     RT38 engine 
+SR:  5/6     SR25 oil leak 
+
+Emulsion UVs 
+(UV62,66,108) = 100%
+
+Logistics UV
+(UV54,59,120)= 66% 
+Manlifts
+Sampling (UV77,123) =100% 
+Survey (UV98,99) = 50%
+
+TMM
+Breakdowns (Services & Graben)
+UV90- water pump & timing
+UV54- oil leak 
+UV84- park brake 
+UV98- bucket 
+FL85- propshaft 
+FL92- display 
+
+Plant blockages- 1 blockage due to big rocks on day shift. Then night shift…
+[08:02, 02/07/2025] Sello Sease: *Nchwaning 3 
+ 02-07-2025
+
+ Safety 
+All clear
+
+ROM
+4648 vs 8060
+ 
+Decline
+4107 vs 7889
+ 
+Product
+4148 vs 7257
+
+ LOADS 
+79, 97, 35
+
+Blast
+22 Faces
+ 
+Previous day TMM availability %
+HDs: 67
+DTs: 76
+FLs: 95
+RTs: 86
+SRs: 81
+UVs: 96
+
+GD11: 68
+DZ11:  100
+UV044: 88
+
+TMMs for SOS:
+HDs: 6/9
+DTs: 11/15
+FLs: 8/10
+RTs: 9/10
+SRs: 8/9
+UVs: 9/9
+
+Manlifts:4/4
+
+Emulsion UV: 3/4 
+
+ *CURRENT BREAK DOWNS   
+DT0109 - Strata, gears and spares 
+DT0119 - Engine cut off, no operator
+D0147 - Red stop light 
+DT0150 - Charging
+DT0154 - Hyd pipe failure 
+DT0171 - Mirror weld
+FL0108 - Red stop error 
+FL0113 - Bucket, tyre, oil leak
+HD0051 - Centralizer bolts
+HD0052 - Feed cylinder bolts
+HD0054 - Cable replacement 
+HD0061 - Pump trip
+RT0054 - Hydraulic hose, property 
+RT0055 - Power trip
+…
+[08:03, 02/07/2025] Xavier Petersen: Good Day Team,
+S&W
+Wednesday  
+02Jul 2025
+Tuesday Report
+
+Safety:
+Clear
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+Annual Cage Replacement Compartment No.2
+
+Nch3 PW
+No Stoppages 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+Delay: Skip Tipping Fault 
+Fix: Winder Technician Electrician and Shaft Boilermaker Foreman Investigated and installed shim to align rail.
+
+Main Fans
+GL
+No Stoppages 
+
+Nch2
+No Stoppages 
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 101,0%
+Sat: 101,0%
+Sun: 100,9%
+Mon: 100,8%
+Tue: 100,9%
+Wed: %
+Thu: %
+
+DD02:
+Fri: 78,8%
+Sat: 88,1%
+Sun: 87,8%
+Mon: 88,5%
+Tue: 86,8%
+Wed: %
+Thu: %
+
+Fire Scada Alarms:
+0
+
+Block Chutes:
+None
+
+Production:
+Fri: 183/ Shaft Barrel Repair Project 
+Sat: 0/1640…
+[15:31, 02/07/2025] Greg: THE EMPLOYER 
+
+HEALTH AND SAFETY GROUP AUDITS 
+
+The Regional office will be conducting comprehensive health and safety audits on the mine. The audit will include the evaluation of all the relevant Codes of Practices, applicable mine standards, procedures, planned task observations as well as all other relevant documentation. 
+
+The group audit will be conducted at Blackrock Mine on the 07 July 2025 at 09h00 
+
+Please ensure that all relevant documents, legally appointed employees, as well as adequate representatives from the Health and Safety Committee and unions, are present on the day of the audit. 
+
+The Mine Manager must present all the LTI, reportable accident frequency rates, health and hygiene statistics for the past five years to the inspectorate. 
+
+Ple…
+[06:50, 03/07/2025] Sipho Dubazane: Gloria Report
+03-07-2025 
+
+*Safety
+- All clear
+
+ *ROM 
+- 4280 vs 4041
+
+
+ Decline
+     3966 vs 4041
+
+  *Product   
+     4224  vs 3314
+     
+*Surface Silos {%} 
+1 - 86
+2 - 95
+3 - 96
+4 - 34
+
+ *U/G SILOS {%}
+ 74 - 19
+ HG - 28
+ D    - 14
+ LG - 20
+
+ *Loads
+- 68;61;44
+-
+  *TMMs Availability: {%}
+- DTs: 100
+- FLs: 50
+- HDs: 100
+- RTs: 100
+- SRs: 67
+
+ *Start of Shift-Production TMM
+DT:  6/6
+FL:   4/5
+HD:  4/4
+RT:   4/4 
+SR:   3/4
+
+*Emulsion Uv's*
+- 2/2
+
+*Manitou
+- 1/1
+ 
+*Manlifts
+- 2/2 
+
+ *TMM*
+- FL0083 Bucket movement 
+
+- SR0037 Tail frame
+-
+  
+ *Main Fans 
+- ⁠In Order
+
+ *Plant blockages 
+- CV53X2
+
+ *Fire alarm 
+- CV52
+[06:59, 03/07/2025] Xavier Petersen: Good Day Team,
+S&W
+Thursday  
+03Jul2025
+Wednesday Report
+
+Safety:
+Clear
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+No Stoppages 
+
+Nch3 PW
+No Stoppages 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+Delay: Oil 🛢 leak at 3-7LVL
+Fix: Winder Technician Fitter repaired leaking pipes.
+
+Main Fans
+GL
+No Stoppages 
+
+Nch2
+No Stoppages 
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 101,0%
+Sat: 101,0%
+Sun: 100,9%
+Mon: 100,8%
+Tue: 100,9%
+Wed: 100,7%
+Thu: %
+
+DD02:
+Fri: 78,8%
+Sat: 88,1%
+Sun: 87,8%
+Mon: 88,5%
+Tue: 86,8%
+Wed: 83,5%
+Thu: %
+
+Fire Scada Alarms:
+0
+
+Block Chutes:
+None
+
+Production:
+Fri: 183/ Shaft Barrel Repair Project 
+Sat: 0/1640 Shaft Barrel Repair Project 
+Sun: 1276/1640 Shaft Barrel Repair Project 
+…
+[06:45, 04/07/2025] Sipho Dubazane: Gloria Report
+04-07-2025 
+
+*Safety
+- All clear
+
+ *ROM 
+- 2727 vs 4041
+
+
+ Decline
+     3587 vs 4041
+
+  *Product   
+     3607  vs 3314
+     
+*Surface Silos {%} 
+1 - 63
+2 - 95
+3 - 74
+4 - 94
+
+ *U/G SILOS {%}
+ 74 - 19
+ HG - 34
+ D    - 65
+ LG - 75
+
+ *Loads
+- 66;31;68
+-
+  *TMMs Availability: {%}
+- DTs: 95
+- FLs: 67
+- HDs: 96
+- RTs: 97
+- SRs: 67
+
+ *Start of Shift-Production TMM
+DT:  6/6
+FL:   4/5
+HD:  4/4
+RT:   4/4 
+SR:   3/4
+
+*Emulsion Uv's*
+- 2/2
+
+*Manitou
+- 1/1
+ 
+*Manlifts
+- 2/2 
+
+ *TMM*
+- FL0083 Speed sensor 
+
+- SR0037 Tail frame
+-
+  
+ *Main Fans 
+- ⁠In Order
+
+ *Plant blockages 
+- None
+
+ *Fire alarm 
+- None
+[06:57, 04/07/2025] Xavier Petersen: Good Day Team,
+S&W
+Friday  
+04Jul2025
+Thursday Report
+
+Safety:
+Clear
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+No Stoppages 
+
+Nch3 PW
+No Stoppages 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+Adjusted Speed in Red Clay Area
+
+Main Fans
+GL
+No Stoppages 
+
+Nch2
+Annual Cage Replacement Compartment No.1
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 101,0%
+Sat: 101,0%
+Sun: 100,9%
+Mon: 100,8%
+Tue: 100,9%
+Wed: 100,7%
+Thu: 100,8%
+
+DD02:
+Fri: 78,8%
+Sat: 88,1%
+Sun: 87,8%
+Mon: 88,5%
+Tue: 86,8%
+Wed: 83,5%
+Thu: 80,4%
+
+Fire Scada Alarms:
+2 x NON-EMERGENCY ALARMS_COMMS FAILURE 
+
+Block Chutes:
+None
+
+Production:
+Fri: 183/ Shaft Barrel Repair Project 
+Sat: 0/1640 Shaft Barrel Repair Project 
+Sun: 1276/1640 Shaft Bar…
+[07:22, 04/07/2025] Greg: Good morning, Engineers please send me a status update of your respective areas preparation for DMR audit. Please use the action list I sent as reference
+[07:47, 04/07/2025] Sikelela Shaft Engineer: 04-07-2025 
+
+Safety  Clear
+ 
+ROM:            4867 v 6903t 
+Product:       1394 v 4873t
+Loads:          76, 22, 50
+
+Plant had a breakdown from 16:32- 21:54 
+
+ Blast:Actual vs Plan ? vs16 
+
+  TMMs Availability:
+DTs: 92%.    
+FLs: 76%  
+HDs: 98%    
+RTs: 74%     
+SRs: 98%    
+
+DZ13: 100% 
+GD12: 100% 
+
+Start of Shift-Production TMM
+DT:  9/9    
+FL:  6/6    
+HD:  6/6    
+RT:  5/6     RT43 oil leak 
+SR:  6/6     
+
+Emulsion UVs 
+(UV62,66,108) = 100%
+
+Logistics UV
+(UV54,59,120)= 66% 
+Manlifts
+Sampling (UV77,123) =100% 
+Survey (UV98,99) = 50%
+
+TMM
+Breakdowns (Services & Graben)
+UV90- water pump & timing
+UV54- oil leak 
+UV98- bucket 
+FL85- propshaft 
+FL92- park brake 
+HD63- percussion hose 
+
+Plant blockages- 0
+Fire alarm- 4
+[08:45, 04/07/2025] Stef Lourens: *Nchwaning 3 
+ 04-07-2025
+
+ Safety 
+All clear
+
+ROM
+6760 vs 8060
+ 
+Decline
+6396 vs 7889
+ 
+Product
+5518 vs 7257
+
+ LOADS 
+122, 96, 20
+
+Blast
+ 21Faces
+ 
+Previous day TMM availability %
+HDs: 81
+DTs: 83
+FLs: 100
+RTs: 92
+SRs: 91
+UVs: 96
+
+GD11: 100
+DZ11:  100
+UV044: 100
+
+TMMs for SOS:
+HDs: 8/9
+DTs: 13/15
+FLs: 9/10
+RTs: 9/10
+SRs: 8/9
+UVs: 9/9
+
+Manlifts:4/4
+
+Emulsion UV: 3/4 
+
+ *CURRENT BREAK DOWNS   
+DT0109 - Strata, gears and spares 
+D0147 - Electrical Breakdown split drive.
+ 
+FL 0098- OEM crack welding
+RT0052 - Hydraulic hose, 
+RT0051 - Damage
+UV0047 - Brakes
+
+  Fire Alarms* 
+None
+
+ Crusher and chute        blockage*    
+None reported
+[07:15, 05/07/2025] Sipho Dubazane: Gloria Report
+05-07-2025 
+
+*Safety
+- All clear
+
+ *ROM 
+- 3305 vs 4041
+
+
+ Decline
+     4999 vs 4041
+
+  *Product   
+     6181  vs 2868
+     
+*Surface Silos {%} 
+1 - 20
+2 - 59
+3 - 43
+4 - 93
+
+ *U/G SILOS {%}
+ 74 - 74
+ HG - 16
+ D    - 17
+ LG - 17
+
+ *Loads
+- 60;28;61
+-
+  *TMMs Availability: {%}
+- DTs: 99
+- FLs: 75
+- HDs: 97
+- RTs: 100
+- SRs: 61
+
+ *Start of Shift-Production TMM
+DT:  6/6
+FL:   4/5
+HD:  4/4
+RT:   4/4 
+SR:   3/4
+
+*Emulsion Uv's*
+- 2/2
+
+*Manitou
+- 1/1
+ 
+*Manlifts
+- 2/2 
+
+ *TMM*
+- FL0083 Speed sensor 
+
+- SR0037 Tail frame
+-
+  
+ *Main Fans 
+- ⁠In Order
+
+ *Plant blockages 
+- 20CV02
+- CV78
+
+ *Fire alarm 
+- None
+[10:54, 05/07/2025] Xavier Petersen: Good Day Team,
+S&W
+Saturday  
+05 Jul 2025
+Friday Report
+
+Safety:
+Clear
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+No Stoppages
+
+Nch3 PW
+No Stoppages 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+No Stoppages 
+
+Main Fans
+GL
+No Stoppages 
+
+Nch2
+No Stoppages 
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 100,7%
+Sat: %
+Sun: %
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+
+DD02:
+Fri: 83,4%
+Sat: %
+Sun: %
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+
+Fire Scada Alarms:
+2 x NON-EMERGENCY ALARMS DUE TO COMMS FAILURE 
+
+Block Chutes:
+None
+
+Production:
+Fri: 5552/6623
+Sat: /1577
+Sun: /1577
+Mon: /5204
+Tue: /6623
+Wed: /6623
+Thu: /5204
+
+Ore pass Levels:
+Fri: 38,1%
+Sat: %
+Sun: %
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+[16:38, 05/07/2025] Xavier Petersen: Good Day Again Team, 
+Nch3 Cage Replacement Completed 👍🏽
+[17:27, 05/07/2025] Xavier Petersen: Team,
+The Feeder Liner Replacement is also Completed at Nch2 3-7LVL.
+[17:40, 05/07/2025] Sello Taku: Well done Xavier
+[17:40, 05/07/2025] Xavier Petersen: Thank you Sello, 
+I'll convey your message to the Team 👍🏽
+[15:25, 06/07/2025] Xavier Petersen: Good Day Team, 
+Nch2 Planned BM Shaft and 3-7LVL Work Completed.
+[17:34, 06/07/2025] Xavier Petersen: Good Day Team,
+S&W
+Sunday  
+06 Jul 2025
+Saturday Report
+
+Safety:
+Clear
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+3-7LVL Feeder Liner Replacement 
+
+Nch3 PW
+Annual Conveyance Replacement 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+No Stoppages 
+
+Main Fans
+GL
+No Stoppages 
+
+Nch2
+No Stoppages 
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 100,7%
+Sat: 100,7%
+Sun: %
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+
+DD02:
+Fri: 83,4%
+Sat: 86,7%
+Sun: %
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+
+Fire Scada Alarms:
+0
+
+Block Chutes:
+None
+
+Production:
+Fri: 5552/6623
+Sat: 2195/1577
+Sun: /1577
+Mon: /5204
+Tue: /6623
+Wed: /6623
+Thu: /5204
+
+Ore pass Levels:
+Fri: 38,1%
+Sat: 33,3%
+Sun: %
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+[06:54, 07/07/2025] Xavier Petersen: Good Day Team,
+S&W
+Monday  
+07 Jul 2025
+Sunday Report
+
+Safety:
+Clear
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+No Stoppages 
+
+Nch3 PW
+No Stoppages 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+Sat: 3-7LVL Feeder Liner Replacement 
+Sun: 3-7LVL Measuring Flask Liner Replacement 
+
+Main Fans
+GL
+No Stoppages 
+
+Nch2
+No Stoppages 
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 100,7%
+Sat: 100,7%
+Sun: 100,6%
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+
+DD02:
+Fri: 83,4%
+Sat: 86,7%
+Sun: 82,9%
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+
+Fire Scada Alarms:
+0
+
+Block Chutes:
+None
+
+Production:
+Fri: 5552/6623
+Sat: 2195/1648
+Sun: 1348/1648
+Mon: /5204
+Tue: /6623
+Wed: /6623
+Thu: /5204
+
+Ore pass Levels:
+Fri: 38,1%
+Sat: 33,3%
+Sun: 20,1%
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+[07:28, 07/07/2025] Sikelela Shaft Engineer: 07-07-2025 
+
+Safety Clear 
+
+Friday (04 July 2025)
+ROM:          5545 v 6904t
+Product:     2359 v 6634t 
+
+Saturday (05 July 2025)
+ROM:           1486 v 2844t
+Product:      3565 v 1624t 
+
+Sunday (06 July 2025)
+ROM:           1543v 2954t
+Product:      1236 v 1703t
+
+
+Start of Shift-Production TMM
+DT:  9/9    
+FL:   6/6    
+HD:  6/6    
+RT:   6/6   
+SR:   6/6   
+
+Graben 
+DT:  1/2   DT99 oil cooler 
+FL:   2/2    
+HD:  2/2   
+RT:   2/2   
+SR:   2/2    
+
+FL85- propshaft 
+
+MTD target:  29 539t  plant product 
+MTD actual:  23 345t  plant product
+[08:35, 07/07/2025] Stef Lourens: *Nchwaning 3 
+ 07/07/2025
+
+ Safety 
+Property damage Uv 0124
+
+ROM
+Sat-5277 vs 8060
+Sun-7252 vs 0
+Mon-3347 vs 0
+ 
+Decline
+Sat - 4979 vs 7889
+Sun -6804 vs 7889
+Mon -3843 vs 0
+ 
+Product
+3843 vs 7257
+6560 vs 7257
+3885 vs 0
+
+ LOADS 
+126,97,41
+52
+70
+
+Blast
+14 Faces
+Sunday 7 faces, 1 h/wall ,2 F/wall
+ 
+Previous day TMM availability %
+HDs: 69
+DTs: 81
+FLs: 91
+RTs: 98
+SRs: 100
+UVs: 100
+
+GD11: 100
+DZ11:  100
+UV044: 100
+
+TMMs for SOS:
+HDs: 8/9
+DTs: 13/15
+FLs: 9/10
+RTs: 9/10
+SRs: 8/9
+UVs: 9/9
+
+Manlifts:4/4
+
+Emulsion UV: 3/4 
+
+ *CURRENT BREAK DOWNS   
+DT0109 - Strata, gears and spares 
+D0147 - Electrical Breakdown split drive.
+HD0052- CABLE DAMAGE
+HD0061 - Power pack
+HD0057- drifter
+RT0057- electrical
+RT0058- Mechanical
+
+ 
+FL 0098- OEM crack welding
+UV0047 - Brakes
+
+  Fire…
+[06:33, 08/07/2025] Sipho Dubazane: Gloria Report
+08-07-2025 
+
+*Safety
+- All clear
+
+ *ROM 
+- 2142 vs 4225
+
+
+ Decline
+     3225 vs 4225
+
+  *Product   
+     3  vs 1972
+     
+*Surface Silos {%} 
+1 -  57
+2 - 87
+3 - 88
+4 - 19
+
+ *U/G SILOS {%}
+ 74 - 30
+ HG - 17
+ D    - 17
+ LG - 13
+
+ *Loads
+- 60;42;23
+-
+  *TMMs Availability: {%}
+- DTs: 97
+- FLs: 70
+- HDs: 96
+- RTs: 97
+- SRs: ??
+
+ *Start of Shift-Production TMM
+DT:  6/6
+FL:   4/5
+HD:  4/4
+RT:   4/4 
+SR:   3/4
+
+*Emulsion Uv's*
+- 2/2
+
+*Manitou
+- 1/1
+ 
+*Manlifts
+- 2/2 
+
+ *TMM*
+- FL0083 Speed sensor 
+
+- SR0037 Tail frame
+-
+  
+ *Main Fans 
+- ⁠In Order
+
+ *Plant blockages 
+- CV0052X2
+
+ *Fire alarm 
+- None
+[06:52, 08/07/2025] Stef Lourens: *Nchwaning 3 
+ 08/07/2025
+
+ Safety 
+Clear
+
+ROM
+4422 vs 8060
+ 
+Decline
+3740 vs 6179
+ 
+Product
+3360 vs 7257
+
+ LOADS 
+66,92,82
+
+Blast
+13 Faces
+0 h/wall ,0 F/wall
+ 
+Previous day TMM availability %
+HDs: 82
+DTs: 80
+FLs: 97
+RTs: 88
+SRs: 90
+UVs: 100
+
+GD11: 100
+DZ11:  100
+UV044: 100
+
+TMMs for SOS:
+HDs: 9/9
+DTs: 11/14
+FLs: 9/10
+RTs: 10/10
+SRs: 9/10
+UVs: 9/9
+
+Manlifts:4/4
+
+Emulsion UV: 4/4 
+
+ *CURRENT BREAK DOWNS   
+DT0109 - Strata, gears and spares 
+DT0147 - Electrical Breakdown split drive.
+DT0119- Strata.
+FL 0098- OEM crack welding.
+Sr 0038 - Investigation
+  Fire Alarms* 
+None
+
+ Crusher and chute        blockage*    
+None
+[07:00, 08/07/2025] Xavier Petersen: Good Day Team,
+S&W
+Tuesday 
+08 Jul 2025
+Monday Report
+
+Safety:
+Clear
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+No Stoppages 
+
+Nch3 PW
+No Stoppages 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+Delay:
+Interface between Shaft and Winder Faulty 
+Fix:
+Winder Technician Electrician Attended to Issue 
+
+Main Fans
+GL
+No Stoppages 
+
+Nch2
+No Stoppages 
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 100,7%
+Sat: 100,7%
+Sun: 100,6%
+Mon: 100,6%
+Tue: %
+Wed: %
+Thu: %
+
+DD02:
+Fri: 83,4%
+Sat: 86,7%
+Sun: 82,9%
+Mon: 81,5%
+Tue: %
+Wed: %
+Thu: %
+
+Fire Scada Alarms:
+0
+
+Block Chutes:
+None
+
+Production:
+Fri: 5552/6623
+Sat: 2195/1648
+Sun: 1348/1648
+Mon: 4187/5439
+Tue: /6623
+Wed: /6623
+Thu: /5439
+
+Ore pass Levels:
+Fri: 38,1%
+Sat: 33,3%
+Sun: 20,1%
+Mon: 35,5%
+Tue: %
+Wed: %
+Thu: %
+[07:19, 08/07/2025] Sikelela Shaft Engineer: 08-07-2025 
+
+Safety  Clear
+ 
+ROM:             4345 v 6903t 
+Product:        3049 v 4305t
+Loads:          42, 24, 60
+Ore pass full during afternoon shift, and then UG plant stood 
+
+ Blast:Actual vs Plan ? vs16 
+
+  TMMs Availability:
+DTs: 88%.    
+FLs: 95%  
+HDs: 95%    
+RTs: 86%     
+SRs: 99%    
+
+DZ13: 98% 
+GD12: 96% 
+
+Start of Shift-Production TMM
+DT:  9/9    
+FL:  6/6    
+HD: 5/6    HD65 shank 
+RT:  4/6     RT40 no movement; RT36 damage
+SR:  6/6     
+
+Emulsion UVs 
+(UV62,66,108) = 66%
+
+Logistics UV
+(UV54,59,120)= 38% 
+Manlifts
+Sampling (UV77,123) =100% 
+Survey (UV98,99) = 94%
+
+TMM
+Breakdowns (Services & Graben)
+UV90- water pump & timing
+UV37- lights 
+UV59- smoking 
+UV66- articulation 
+UV54- oil leak 
+UV72- oil leak 
+UV119- overheating 
+FL85- propshaft 
+
+Plant blockages- 0
+Fire alarm- no report
+[20:07, 08/07/2025] Greg: Good evening. Dmr audit was completed. We have to check the torque settings on all ldvs, including hilux, cruisers and fermels. SK will send out the template that must be completed and signed by the artisan or kaltyre tech. All vehicles to be brought to the workshop for the check. Ive asked Kaltyre to assist if there is no breakdowns.
+[20:07, 08/07/2025] Greg: This must start tonight.
+[07:15, 09/07/2025] Xavier Petersen: Good Day Team,
+S&W
+Wednesday 
+09 Jul 2025
+Tuesday Report
+
+Safety:
+Clear
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+Delay: Winder Trip
+Fix: Winder Technician Electrician Reset 
+
+Nch3 PW
+No Stoppages 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+No Stoppages 
+
+Main Fans
+GL
+No Stoppages 
+
+Nch2
+No Stoppages 
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 100,7%
+Sat: 100,7%
+Sun: 100,6%
+Mon: 100,6%
+Tue: 100,5%
+Wed: %
+Thu: %
+
+DD02:
+Fri: 83,4%
+Sat: 86,7%
+Sun: 82,9%
+Mon: 81,5%
+Tue: 86,1%
+Wed: %
+Thu: %
+
+Fire Scada Alarms:
+0
+
+Block Chutes:
+None
+
+Production:
+Fri: 5552/6623
+Sat: 2195/1648
+Sun: 1348/1648
+Mon: 4187/5439
+Tue: 7005/6623
+Wed: /6623
+Thu: /5439
+
+Ore pass Levels:
+Fri: 38,1%
+Sat: 33,3%
+Sun: 20,1%
+Mon: 35,5%
+Tue: 4,8%
+Wed: %
+Thu: %
+[08:01, 09/07/2025] Sikelela Shaft Engineer: 09-07-2025 
+
+Safety  Clear
+ 
+ROM:             5356 v 6903t 
+Product:        6458 v 4305t
+Loads:          54, 36, 68
+Struggled with big rocks on afternoon & night shift 
+
+ Blast:Actual vs Plan ? vs16 
+
+  TMMs Availability:
+DTs: 97%
+FLs: 99%  
+HDs: 98%    
+RTs: 72%     
+SRs: 97%    
+
+DZ13: 100% 
+GD12: 96% 
+
+Start of Shift-Production TMM
+DT:  9/9    
+FL:  6/6    
+HD: 6/6   
+RT:  4/6     RT40 no movement
+SR:  6/6     
+
+Emulsion UVs 
+(UV62,66,108) = 66%
+
+Logistics UV
+(UV54,59,120)= 33% 
+Manlifts
+Sampling (UV77,123) =100% 
+Survey (UV98,99) = 100%
+
+TMM
+Breakdowns (Services & Graben)
+UV90- water pump & timing
+UV59- smoking 
+UV66- articulation 
+UV54- oil leak 
+UV72- oil leak 
+UV133- brakes 
+FL85- propshaft 
+
+Plant blockages- 3 and feeder needed to be blasted 
+Fire alarm- no report
+[08:11, 09/07/2025] Sello Sease: *Nchwaning 3 
+ 09/07/2025
+
+ Safety 
+Clear
+
+ROM
+5326 vs 8060
+ 
+Decline
+4285 vs 7881
+ 
+Product
+3249 vs 7250
+
+ LOADS 
+76,97,42
+
+Blast
+16faces 1h/wall slipping 1f/wall 
+ 
+Previous day TMM availability %
+HDs: 93
+DTs: 81
+FLs: 92
+RTs: 92
+SRs: 84
+UVs: 98
+
+GD11: 100
+DZ11:  100
+UV044: 88
+
+TMMs for SOS:
+HDs: 9/9
+DTs: 11/14
+FLs: 9/10
+RTs: 9/10
+SRs: 6/10
+UVs: 9/9
+
+Manlifts:4/4
+
+Emulsion UV: 4/4 
+
+ *CURRENT BREAK DOWNS   
+DT0145 - Strata
+DT0146 - Strata
+DT0147 - Electrical Breakdown split drive.
+DT0149 - Hyd oil temp
+FL0091 - Aircon
+FL 0098- Jhb repair 
+FL0099 - Transmission oil leak 
+HD0052 -Operational 
+RT0051 - Hyd oil low level 
+SR0024 - FTS
+SR0026 - Park brake not releasing 
+Sr 0038 - Investigation
+UV0047 - Brakes repair 
+UV0126 - Reverse camera 
+  Fire Alarms* 
+None
+
+ Crusher and chute        blockage*    
+None
+[09:02, 09/07/2025] Sipho Dubazane: Gloria Report
+09-07-2025 
+
+*Safety
+- All clear
+
+ *ROM 
+- 758 vs 3873
+
+
+ Decline
+     1735 vs 3873
+
+  *Product   
+     3114  vs 3773
+     
+*Surface Silos {%} 
+1 -  78
+2 - 23
+3 - 55
+4 - 14
+
+ *U/G SILOS {%}
+ 74 - 43
+ HG - 15
+ D    - 17
+ LG - 19
+
+ *Loads
+- 26;40;4
+-
+  *TMMs Availability: {%}
+- DTs: 99
+- FLs: 75
+- HDs: 94
+- RTs: 95
+- SRs: 65
+
+ *Start of Shift-Production TMM
+DT:  6/6
+FL:   4/5
+HD:  4/4
+RT:   4/4 
+SR:   3/4
+
+*Emulsion Uv's*
+- 2/2
+
+*Manitou
+- 1/1
+ 
+*Manlifts
+- 2/2 
+
+ *TMM*
+- FL0083 Speed sensor 
+
+- SR0037 Tail frame
+-
+  
+ *Main Fans 
+- ⁠In Order
+
+ *Plant blockages 
+- None
+
+ *Fire alarm 
+- None
+[07:04, 10/07/2025] Xavier Petersen: Good Day Team,
+S&W
+Thursday 
+10 Jul 2025
+Wednesday Report
+
+Safety:
+Clear
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+No Stoppages 
+
+Nch3 PW
+No Stoppages 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+No Stoppages 
+
+Main Fans
+GL
+Delay:
+Power Interruption 
+Fix:
+Winder Technician Electrician Reset 
+
+Nch2
+No Stoppages 
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 100,7%
+Sat: 100,7%
+Sun: 100,6%
+Mon: 100,6%
+Tue: 100,5%
+Wed: 100,6%
+Thu: %
+
+DD02:
+Fri: 83,4%
+Sat: 86,7%
+Sun: 82,9%
+Mon: 81,5%
+Tue: 86,1%
+Wed: 82,4%
+Thu: %
+
+Fire Scada Alarms:
+0
+
+Block Chutes:
+None
+
+Production:
+Fri: 5552/6623
+Sat: 2195/1648
+Sun: 1348/1648
+Mon: 4187/5439
+Tue: 7005/6623
+Wed: 5810/6623
+Thu: /5439
+
+Ore pass Levels:
+Fri: 38,1%
+Sat: 33,3%
+Sun: 20,1%
+Mon: 35,5%
+Tue: 4,8%
+Wed: 0,4%
+Thu: %
+[07:05, 10/07/2025] Sipho Dubazane: Gloria Report
+10-07-2025 
+
+*Safety
+- All clear
+
+ *ROM 
+- 2404 vs 3873
+
+
+ Decline
+     1143 vs 3873
+
+  *Product   
+     1633  vs 3773
+     
+*Surface Silos {%} 
+1 -  83
+2 - 22
+3 - 20
+4 - 14
+
+ *U/G SILOS {%}
+ 74 - 26
+ HG - 82
+ D    - 17
+ LG - 18
+
+ *Loads
+- 37;0;47
+-
+  *TMMs Availability: {%}
+- DTs: 100
+- FLs: 73
+- HDs: 77
+- RTs: 95
+- SRs: 65
+
+ *Start of Shift-Production TMM
+DT:  6/6
+FL:   4/5
+HD:  4/4
+RT:   4/4 
+SR:   3/4
+
+*Emulsion Uv's*
+- 1/2 UV0068 Drive line flex plate
+
+*Manitou
+- 1/1
+ 
+*Manlifts
+- 2/2 
+
+ *TMM*
+- FL0083 Speed sensor/ Bucket movement 
+
+- SR0037 Tail frame
+-
+  
+ *Main Fans 
+- ⁠In Order
+
+ *Plant blockages 
+- None
+
+ *Fire alarm 
+- None
+[07:16, 10/07/2025] Sikelela Shaft Engineer: 10-07-2025 
+
+Safety  Clear
+ 
+ROM:             5913 v 6903t 
+Product:        4967 v 6514t
+Loads:          46, 62, 69
+
+ Blast:Actual vs Plan ? vs16 
+
+  TMMs Availability:
+DTs: 79%
+FLs: 90%  
+HDs: 96%    
+RTs: 74%     
+SRs: 84%    
+
+DZ13: 100% 
+GD12: 100% 
+
+Start of Shift-Production TMM
+DT:  7/9    DT120 & DT159 door sensor 
+FL:  5/6    FL66 oil leak
+HD: 6/6   
+RT:  4/6     RT43 boom movement; RT50 sprocket 
+SR:  5/6     SR42 exhaust 
+
+Emulsion UVs 
+(UV62,66,108) = 89%
+
+Logistics UV
+(UV54,59,120)= 33% 
+Manlifts
+Sampling (UV77,123) =100% 
+Survey (UV98,99) = 100%
+
+TMM
+Breakdowns (Services & Graben)
+UV90- water pump & timing
+UV59- engine 
+UV54- oil leak 
+UV118- not starting 
+UV133- brakes 
+UV137- hyd fan 
+FL85- propshaft 
+HD35- coupling 
+SR46- oil leak 
+
+Plant blo…
+[10:12, 10/07/2025] Sello Sease: *Nchwaning 3 
+ 10/07/2025
+
+ Safety 
+Clear
+
+ROM
+5688 vs 8060
+ 
+Decline
+5189 vs 3940
+ 
+Product
+2912 vs 3625
+
+ LOADS 
+
+
+Blast
+16faces 1h/wall slipping 1f/wall 
+ 
+Previous day TMM availability %
+HDs: 93
+DTs: 63
+FLs: 87
+RTs: 91
+SRs: 89
+UVs: 98
+
+GD11: 100
+DZ11:  ??
+UV044: 84
+
+TMMs for SOS:
+HDs: 8/9
+DTs: 7/14
+FLs: 9/10
+RTs: 9/10
+SRs: 9/10
+UVs: 9/9
+
+Manlifts:4/4
+
+Emulsion UV: 4/4 
+
+ *CURRENT BREAK DOWNS   
+
+DT’s performance was below par with various issues from Strata, charging and Aircons.
+
+  Fire Alarms* 
+None
+
+ Crusher and chute        blockage*    
+None
+[06:40, 11/07/2025] Sipho Dubazane: Gloria Report
+11-07-2025 
+
+*Safety
+- All clear
+
+ *ROM 
+- 2183 vs 3873
+
+
+ Decline
+     4180 vs 3873
+
+  *Product   
+     3262 vs 3773
+     
+*Surface Silos {%} 
+1 -  52
+2 - 94
+3 - 19
+4 - 14
+
+ *U/G SILOS {%}
+ 74 - 28
+ HG - 17
+ D    - 17
+ LG - 20
+
+ *Loads
+- 35;35;54
+-
+  *TMMs Availability: {%}
+- DTs: 100
+- FLs: 79
+- HDs: 82
+- RTs: 97
+- SRs: 35
+
+ *Start of Shift-Production TMM
+DT:  6/6
+FL:   4/5
+HD:  4/4
+RT:   4/4 
+SR:   3/4
+
+*Emulsion Uv's*
+- 0/2 UV0068 Drive line flex plate from 10 /01 /25 02:13
+- UV0067 Internal error from 01H25 -EOS
+
+*Manitou
+- 1/1
+ 
+*Manlifts
+- 2/2 
+
+ *TMM*
+- FL0083 Speed sensor/ Bucket movement 
+
+- SR0037 Tail frame
+-
+  
+ *Main Fans 
+- ⁠In Order
+
+ *Plant blockages 
+- None
+
+ *Fire alarm 
+- None
+[06:46, 11/07/2025] Stef Lourens: *Nchwaning 3 
+ 11/07/2025
+
+ Safety 
+Clear
+
+ROM
+6511 vs 8060
+ 
+Decline
+6743 vs 6179
+ 
+Product
+8023 vs 7257
+
+ LOADS 
+77,100,60
+
+Blast
+17Faces
+1 h/wall 1 F/wall
+ 
+Previous day TMM availability %
+HDs: 93
+DTs: 72
+FLs: 97
+RTs: 86
+SRs: 90
+UVs: 97
+
+GD11: 100
+DZ11:  100
+UV044: 100
+
+TMMs for SOS:
+HDs: 9/9
+DTs: 11/14
+FLs: 9/10
+RTs: 10/10
+SRs: 9/10
+UVs: 7/9
+
+Manlifts:4/4
+
+Emulsion UV: 4/4 
+
+ *CURRENT BREAK DOWNS   
+DT0109 - Strata, gears and spares 
+DT0147 - Electrical Breakdown split drive.
+DT0160- Brakes lock & fire suppression
+DT0161- Gears
+DT0119- Strata.
+FL 0098- OEM crack welding.
+FL0099-Repair bucket.
+RT0025-Strata
+RT0058- Rigth front outrigger
+Sr 0028- Boom nuts
+UV0047 - Brakes
+UV0081- oil leak
+
+  Fire Alarms* 
+None
+
+ Crusher and chute        blockage*    
+None
+[07:05, 11/07/2025] Xavier Petersen: Good Day Team,
+S&W
+Friday 
+11 Jul 2025
+Thursday Report
+
+Safety:
+Clear
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+No Stoppages 
+
+Nch3 PW
+No Stoppages 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+No Stoppages 
+
+Main Fans
+GL
+No Stoppages 
+
+Nch2
+No Stoppages 
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 100,7%
+Sat: 100,7%
+Sun: 100,6%
+Mon: 100,6%
+Tue: 100,5%
+Wed: 100,6%
+Thu: 100,5%
+
+DD02:
+Fri: 83,4%
+Sat: 86,7%
+Sun: 82,9%
+Mon: 81,5%
+Tue: 86,1%
+Wed: 82,4%
+Thu: 81,0%
+
+Fire Scada Alarms:
+0
+
+Block Chutes:
+None
+
+Production:
+Fri: 5552/6623
+Sat: 2195/1648
+Sun: 1348/1648
+Mon: 4187/5439
+Tue: 7005/6623
+Wed: 5810/6623
+Thu: 5183/5439
+
+Ore pass Levels:
+Fri: 38,1%
+Sat: 33,3%
+Sun: 20,1%
+Mon: 35,5%
+Tue: 4,8%
+Wed: 0,4%
+Thu: 38,2%
+[08:20, 11/07/2025] Sikelela Shaft Engineer: 11-07-2025 
+
+Safety  Clear
+ 
+ROM:             5803 v 6903t 
+Product:       2686 v 6514t
+Loads:          57, 67, 68
+
+ Blast:Actual vs Plan ? vs16 
+
+  TMMs Availability:
+DTs: 75%
+FLs: 97%  
+HDs: 90%    
+RTs: 68%     
+SRs: 89%    
+
+DZ13: 100% 
+GD12: 100% 
+
+Start of Shift-Production TMM
+DT:  7/9    DT120 & DT159 door sensor (awaiting MC24)  
+FL:  6/6    
+HD: 6/6   
+RT:  5/6     RT38 resin hose 
+SR:  5/6     SR45 hammer bolts 
+
+Emulsion UVs 
+(UV62,66,108) = 100%
+
+Logistics UV
+(UV54,59,120)= 33% 
+Manlifts
+Sampling (UV77,123) =100% 
+Survey (UV98,99) = 100%
+
+TMM
+Breakdowns (Services & Graben)
+UV90- water pump & timing
+UV37- gears 
+UV59- engine 
+UV54- oil leak 
+UV133- brakes 
+FL85- propshaft 
+HD35- coupling 
+SR46- oil leak 
+
+Plant blockages- 0
+Fire alarms- no report
+[07:50, 12/07/2025] Sipho Dubazane: Gloria Report
+12-07-2025 
+
+*Safety
+- All clear
+
+ *ROM 
+- 1461 vs 3873
+
+
+ Decline
+     3211 vs 3873
+
+  *Product   
+     2777 vs 3773
+     
+*Surface Silos {%} 
+1 -  19
+2 - 88
+3 - 16
+4 - 78
+
+ *U/G SILOS {%}
+ 74 - 19
+ HG - 17
+ D    - 17
+ LG - 20
+
+ *Loads
+- 47;47;19
+-
+  *TMMs Availability: {%}
+- DTs: 100
+- FLs: 77
+- HDs: 89
+- RTs: 88
+- SRs: 72
+
+ *Start of Shift-Production TMM
+DT:  6/6
+FL:   4/5
+HD:  4/4
+RT:   4/4 
+SR:   3/4
+
+*Emulsion Uv's*
+- 1/2 UV0068 BME & Strata
+
+*Manitou
+- 1/1
+ 
+*Manlifts
+- 2/2 
+
+ *TMM*
+- FL0083 Speed sensor/ Bucket movement 
+
+- SR0037 Tail frame
+-
+  
+ *Main Fans 
+- ⁠In Order
+
+ *Plant blockages 
+- None
+
+ *Fire alarm 
+- 78 CV01
+[09:09, 12/07/2025] Xavier Petersen: Good Day Team,
+S&W
+Saturday  
+12 Jul 2025
+Friday Report
+
+Safety:
+Clear
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+No Stoppages
+
+Nch3 PW
+No Stoppages 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+No Stoppages 
+
+Main Fans
+GL
+No Stoppages 
+
+Nch2
+No Stoppages 
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 100,5%
+Sat: %
+Sun: %
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+
+DD02:
+Fri: 84,1%
+Sat: %
+Sun: %
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+
+Fire Scada Alarms:
+0
+
+Block Chutes:
+None
+
+Production:
+Fri: 7207/6621
+Sat: /1577
+Sun: /1577
+Mon: /5204
+Tue: /6623
+Wed: /6623
+Thu: /5204
+
+Ore pass Levels:
+Fri: 33,8%
+Sat: %
+Sun: %
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+[18:37, 12/07/2025] Xavier Petersen: Good Evening Team:
+1) Solrock Team completed Planned Work for the Day.
+2) 3-7LVL Planned Work for Today Completed.
+[13:58, 13/07/2025] Xavier Petersen: Good Evening Team:
+1) Solrock Team completed Planned Work for the Day.
+2) Nch2 Nodes Planned Work for Today Completed.
+[06:38, 14/07/2025] Sipho Dubazane: Gloria Report
+14-07-2025 
+
+*Safety
+- All clear
+- 
+ Saturday & Sunday 
+ *ROM 
+- 2160 vs 0
+- 1689 vs 0
+
+
+ Decline
+     2046 vs 0
+     1499 vs 0
+
+  *Product   
+     4283 vs 3773
+      2000 vs 0
+     
+*Surface Silos {%} 
+1 -  19
+2 - 16
+3 - 17
+4 - 23
+
+ *U/G SILOS {%}
+ 74 - 19
+ HG - 24
+ D    - 17
+ LG - 23
+
+ *Loads
+- 86
+- 73
+-
+  *TMMs Availability: {%}
+- DTs: 100
+- FLs: 80
+- HDs: 100
+- RTs: 92
+- SRs: 50
+
+ *Start of Shift-Production TMM
+DT:  6/6
+FL:   4/5
+HD:  4/4
+RT:   4/4 
+SR:   3/4
+
+*Emulsion Uv's*
+- 2/2 
+
+*Manitou
+- 1/1
+ 
+*Manlifts
+- 2/2 
+
+ *TMM*
+- FL0083 Speed sensor/ Bucket movement 
+
+- SR0037 Tail frame
+-
+  
+ *Main Fans 
+- ⁠In Order
+
+ *Plant blockages 
+- None
+
+ *Fire alarm 
+- None
+[06:49, 14/07/2025] Sikelela Shaft Engineer: 14-07-2025 
+
+Safety Clear 
+
+Friday (11 July 2025)
+ROM:          5897 v 6904t
+Product:     6143 v 6634t 
+
+Saturday (12 July 2025)
+ROM:           0 v 2844t
+Product:      1944 v 1624t 
+
+Sunday (13 July 2025)
+ROM:           1186 v  2825t
+Product:      1503 v 1629t
+
+
+Start of Shift-Production TMM
+DT:  7/9    DT120 door sensor; DT169 weld hand rails
+FL:   6/6    
+HD:  6/6    
+RT:   6/6   
+SR:   6/6   
+
+Graben 
+DT:  1/2   DT99 fire suppression 
+FL:   2/2    
+HD:  2/2   
+RT:   2/2   
+SR:   1/2    SR46 oil leak 
+
+FL85- propshaft 
+FL100- aircon 
+
+MTD target:  58 628t  plant product 
+MTD actual:  50 103t  plant product
+[06:59, 14/07/2025] Xavier Petersen: Good Day Team,
+S&W
+Monday  
+14 Jul 2025
+Saturday-Sunday Report
+
+Safety:
+Clear
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+No Stoppages
+
+Nch3 PW
+No Stoppages 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+Sat_Solrock Shaft Barrel Repair Project 
+Sat_3-7LVL Hydraulic Pipe Work
+Sun_Solrock Shaft Barrel Repair Project 
+Sun_Installation of Shaft Monitoring Beams (5&6) and Nodes
+
+Main Fans
+GL
+No Stoppages 
+
+Nch2
+No Stoppages 
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 100,5%
+Sat: 100,5%
+Sun: 100,5%
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+
+DD02:
+Fri: 84,1%
+Sat: 82,5%
+Sun: 88,2%
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+
+Fire Scada Alarms:
+0
+
+Block Chutes:
+None
+
+Production:
+Fri: 7207/6621
+Sat: 259/1577
+Sun: 1384/1577
+Mon: /5204
+Tu…
+[07:48, 14/07/2025] Sello Sease: Good morning all
+
+The weekend planned overtime work were all completed. 
+
+DT0147 system emergency stop fault shall be addressed today, so it can be taken to workshop for inspection and recommission.
+[09:20, 14/07/2025] Greg: Thanks Sello
+[06:36, 15/07/2025] Sipho Dubazane: Gloria Report
+15-07-2025 
+
+*Safety
+- All clear
+
+
+ *ROM 
+- 4188 vs 3873
+
+ Decline
+     4939 vs 3873
+     
+
+  *Product   
+     2767 vs 1887
+      
+     
+*Surface Silos {%} 
+1 -  16
+2 - 21
+3 - 95
+4 - 81
+
+ *U/G SILOS {%}
+ 74 - 22
+ HG - 18
+ D    - 17
+ LG - 19
+
+ *Loads
+- 76;62;55
+-
+  *TMMs Availability: {%}
+- DTs: 99
+- FLs: 79
+- HDs: 99
+- RTs: 55
+- SRs: 35
+
+ *Start of Shift-Production TMM
+DT:  6/6
+FL:   4/5
+HD:  4/4
+RT:   2/4 
+SR:   3/4
+
+*Emulsion Uv's*
+- 2/2 
+
+*Manitou
+- 1/1
+ 
+*Manlifts
+- 2/2 
+
+ *TMM*
+- FL0083 Speed sensor/ Bucket movement 
+
+- SR0037 Tail frame
+-
+- RT0045 Boom not moving 
+- RT0046 Percussion 
+  
+ *Main Fans 
+- ⁠In Order
+
+ *Plant blockages 
+- None
+
+ *Fire alarm 
+- None
+[06:59, 15/07/2025] Xavier Petersen: Good Day Team,
+S&W
+Tuesday  
+15 Jul 2025
+Monday Report
+
+Safety:
+Clear
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+No Stoppages
+
+Nch3 PW
+No Stoppages 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+No Stoppages 
+
+Main Fans
+GL
+No Stoppages 
+
+Nch2
+No Stoppages 
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 100,5%
+Sat: 100,5%
+Sun: 100,5%
+Mon: 100,4%
+Tue: %
+Wed: %
+Thu: %
+
+DD02:
+Fri: 84,1%
+Sat: 82,5%
+Sun: 88,2%
+Mon: 82,1%
+Tue: %
+Wed: %
+Thu: %
+
+Fire Scada Alarms:
+4 x NON-EMERGENCY COMMS FAILURE ALARMS
+
+Block Chutes:
+None
+
+Production:
+Fri: 7207/6621
+Sat: 259/1577
+Sun: 1384/1577
+Mon: 5798/5202
+Tue: /6623
+Wed: /6623
+Thu: /5204
+
+Ore pass Levels:
+Fri: 33,8%
+Sat: 22,1%
+Sun: 19,2%
+Mon: 43,2%
+Tue: %
+Wed: %
+Thu: %
+[07:10, 15/07/2025] Sikelela Shaft Engineer: 15-07-2025 
+
+Safety  Clear
+ 
+ROM:             6390 v 6903t 
+Product:       4677 v 6514t
+Loads:          67, 83, 58
+
+ Blast:Actual vs Plan ? vs16 
+
+  TMMs Availability:
+DTs: 84%
+FLs: 74%  
+HDs: 95%    
+RTs: 95%     
+SRs: 99%    
+
+DZ13: 100% 
+GD12: 100% 
+
+Start of Shift-Production TMM
+DT:  8/9    DT120 door controller 
+FL:  5/6     FL86 bucket pin 
+HD: 6/6   
+RT:  6/6     
+SR:  6/6     
+
+Emulsion UVs 
+(UV62,66,108) = 100%
+
+Logistics UV
+(UV54,59,120)= 33% 
+Manlifts
+Sampling (UV77,123) =100% 
+Survey (UV98,99) = 100%
+
+TMM
+Breakdowns (Services & Graben)
+UV90- water pump & timing
+UV37- gears 
+UV59- engine 
+UV54- oil leak 
+UV133- brakes 
+FL85- propshaft 
+SR46- oil leak 
+
+Plant blockages- 0
+Fire alarms- no report
+[07:15, 15/07/2025] Sello Sease: *Nchwaning 3 
+ 15/07/2025
+
+ Safety 
+Clear
+
+ROM
+3632 vs 8060
+ 
+Decline
+5238 vs 5911
+ 
+Product
+7364 vs 5438
+
+ LOADS 
+72, 90, 51
+
+Blast
+15 Mn faces, 3 foot walls
+ 
+Previous day TMM availability %
+HDs: 91
+DTs: 80
+FLs: 82
+RTs: 91
+SRs: 84
+UVs: 100
+
+GD11: 100
+DZ11:  100
+UV044: 78
+
+TMMs for SOS:
+HDs: 8/9
+DTs: 10/14
+FLs: 7/10
+RTs: 10/10
+SRs: 6/10
+UVs: 9/9
+
+Manlifts:4/4
+
+Emulsion UV: 4/4 
+
+ *CURRENT BREAK DOWNS   
+
+DT0147 - Awaiting electrical communication cable
+DT0146 - Charging
+DT0150 - Gears
+DT0161 - Gears
+FL0107 - Half arrows repair 
+HD0062 - Front centre LHB
+SR0030 - Tag system faulty 
+UV0047 - Brakes not releasing
+
+  Fire Alarms* 
+None
+
+ Crusher and chute        blockage*    
+60CV01 - x1 reported
+[11:34, 15/07/2025] Greg: Morning Sello, what is the full status of DT147. Did Epiroc techs come yesterday?
+[06:42, 16/07/2025] Sipho Dubazane: Gloria Report
+16-07-2025 
+
+*Safety
+- All clear
+
+
+ *ROM 
+- 1445 vs 3873
+
+ Decline
+     1985 vs 3873
+     
+
+  *Product   
+     3586 vs 3773
+      
+     
+*Surface Silos {%} 
+1 -  16
+2 - 21
+3 - 15
+4 - 67
+
+ *U/G SILOS {%}
+ 74 - 75
+ HG - 19
+ D    - 17
+ LG - 25
+
+ *Loads
+- 53;40;15
+-
+  *TMMs Availability: {%}
+- DTs: 95
+- FLs: 70
+- HDs: 79
+- RTs: 72
+- SRs: 48
+
+ *Start of Shift-Production TMM
+DT:  6/6
+FL:   4/5
+HD:  4/4
+RT:   4/4 
+SR:   3/4
+
+*Emulsion Uv's*
+- 2/2 
+
+*Manitou
+- 1/1
+ 
+*Manlifts
+- 2/2 
+
+ *TMM*
+- FL0083 Speed sensor/ Bucket movement 
+
+- SR0037 Tail frame
+- 
+  
+ *Main Fans 
+- ⁠In Order
+
+ *Plant blockages 
+- None
+
+ *Fire alarm 
+- None
+[06:47, 16/07/2025] Sikelela Shaft Engineer: 16-07-2025 
+
+Safety  Clear
+ 
+ROM:             6458 v 6903t 
+Product:       5896 v 6514t
+Loads:          73, 63, 70
+
+ Blast:Actual vs Plan ? vs16 
+
+  TMMs Availability:
+DTs: 85%
+FLs: 84%  
+HDs: 98%    
+RTs: 88%     
+SRs: 80%    
+
+DZ13: 100% 
+GD12: 100% 
+
+Start of Shift-Production TMM
+DT:  8/9    DT120 door controller 
+FL:  5/6     FL102 aircon 
+HD: 6/6   
+RT:  6/6     
+SR:  4/6     SR25 wheel frame; SR45 rear axle 
+
+Emulsion UVs 
+(UV62,66,108) = 100%
+
+Logistics UV
+(UV54,59,120)= 33% 
+Manlifts
+Sampling (UV77,123) =100% 
+Survey (UV98,99) = 100%
+
+TMM
+Breakdowns (Services & Graben)
+UV90- water pump & timing
+UV37- gears 
+UV59- engine 
+UV54- oil leak 
+UV102- low revs 
+UV133- brakes 
+FL85- propshaft 
+SR46- oil leak 
+
+Plant blockages- 0
+Fire alarms- 0
+[06:53, 16/07/2025] Xavier Petersen: Good Day Team,
+S&W
+Wednesday  
+16 Jul 2025
+Tuesday Report
+
+Safety:
+Clear
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+No Stoppages
+
+Nch3 PW
+Delay: 
+Cage Door Limit Faulty 
+Fix:
+Winder Technician Electrician Reset 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+No Stoppages 
+
+Main Fans
+GL
+No Stoppages 
+
+Nch2
+No Stoppages 
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 100,5%
+Sat: 100,5%
+Sun: 100,5%
+Mon: 100,4%
+Tue: 100,4%
+Wed: %
+Thu: %
+
+DD02:
+Fri: 84,1%
+Sat: 82,5%
+Sun: 88,2%
+Mon: 82,1%
+Tue: 88,7%
+Wed: %
+Thu: %
+
+Fire Scada Alarms:
+0
+
+Block Chutes:
+None
+
+Production:
+Fri: 7207/6621
+Sat: 259/1577
+Sun: 1384/1577
+Mon: 5798/5202
+Tue: 6562/6621
+Wed: /6623
+Thu: /5204
+
+Ore pass Levels:
+Fri: 33,8%
+Sat: 22,1%
+Sun: 19,2%
+Mon: 43,2%
+Tue: 42,3%
+Wed: %
+Thu: %
+[06:58, 16/07/2025] Sello Sease: *Nchwaning 3 
+ 16/07/2025
+
+ Safety 
+Clear
+
+ROM
+5759 vs 8060
+ 
+Decline
+5333 vs 7881
+ 
+Product
+3815 vs 7250
+
+ LOADS 
+65(9), 72(11), 44(6)
+
+() Number of DT’s used.
+
+Blast
+17 Mn faces, 1 foot wall
+ 
+Previous day TMM availability %
+HDs: 85
+DTs: 77
+FLs: 92
+RTs: 78
+SRs: 80
+UVs: 98
+
+GD11: 29
+DZ11:  100
+UV044: 81
+
+TMMs for SOS:
+HDs: 7/9
+DTs: 10/12
+FLs: 9/10
+RTs: 8/10
+SRs: 8/10
+UVs: 9/9
+
+Manlifts:4/4
+
+Emulsion UV: 4/4 
+
+ *CURRENT BREAK DOWNS   
+
+DT0147 - Recovered to w/shop for further repairs
+DT0149 - Oil leak
+DT0150 - Gears
+DT0161 - Gears
+FL0107 - Half arrows repair 
+FL0113 - TCU error 
+HD0051 - Water box
+HD0056 - Fire suppression 
+RT0025 - Park brake
+RT0048 - Drill plug trip
+RT0051 - Feed chain
+RT0055 - Electrical 
+UV0044 - Pedals repair 
+SR0047 - Brakes
+UV0126 - R…
+[07:18, 17/07/2025] Sipho Dubazane: Gloria Report
+17-07-2025 
+
+*Safety
+- All clear
+
+
+ *ROM 
+- no report yet vs 3873
+
+ Decline
+     3439 vs 3873
+     
+
+  *Product   
+     No report yet vs 3773
+      
+     
+*Surface Silos {%} 
+1 -  70
+2 - 75
+3 - 10
+4 - 11
+
+ *U/G SILOS {%}
+ 74 - 21
+ HG - 15
+ D    - 17
+ LG - 20
+
+ *Loads
+- 44;64;16
+-
+  *TMMs Availability: {%}
+- DTs: 98
+- FLs: 74
+- HDs: 67
+- RTs: 78
+- SRs: 50
+
+ *Start of Shift-Production TMM
+DT:  6/6
+FL:   4/5
+HD:  4/4
+RT:   4/4 
+SR:   3/4
+
+*Emulsion Uv's*
+- 0/2 UV 0067 Wiper motor 
+- UV0068 center bearing 
+
+*Manitou
+- 1/1
+ 
+*Manlifts
+- 2/2 
+
+ *TMM*
+- FL0083 Speed sensor/ Bucket movement 
+
+- SR0037 Tail frame
+- 
+  
+ *Main Fans 
+- ⁠In Order
+
+ *Plant blockages 
+- None
+
+ *Fire alarm 
+- None
+[07:46, 17/07/2025] Sikelela Shaft Engineer: 17-07-2025 
+
+Safety  Clear
+ 
+ROM:             ? v 6903t 
+Product:       ? v 6514t
+Loads:          10 on Morning shift. Pulled Graben (seam 1) so 2West staged yesterday 
+
+ Blast:Actual vs Plan ? vs16 
+
+  TMMs Availability:
+DTs: 87%
+FLs: 80%  
+HDs: 92%    
+RTs: 96%     
+SRs: 80%    
+
+DZ13: 100% 
+GD12: 100% 
+
+Start of Shift-Production TMM
+DT:  8/9    DT120 door controller 
+FL:  5/6     FL102 aircon 
+HD: 6/6   
+RT:  6/6     
+SR:  5/6     SR25 wheel frame
+
+Emulsion UVs 
+(UV62,66,108) = 100%
+
+Logistics UV
+(UV54,59,120)= 61% 
+Manlifts
+Sampling (UV77,123) = 67% 
+Survey (UV98,99) = 100%
+
+TMM
+Breakdowns (Services & Graben)
+UV90- water pump & timing
+UV37- steering 
+UV59- engine 
+UV54- oil leak 
+UV102- low revs 
+UV77- service 
+UV92- diesel leak 
+UV133- brakes 
+FL85- pro…
+[10:35, 17/07/2025] Xavier Petersen: Good Day Team,
+S&W
+Thursday  
+17 Jul 2025
+Wednesday Report
+
+Safety:
+Clear
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+No Stoppages
+
+Nch3 PW
+No Stoppages 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+No Stoppages 
+
+Main Fans
+GL
+No Stoppages 
+
+Nch2
+No Stoppages 
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 100,5%
+Sat: 100,5%
+Sun: 100,5%
+Mon: 100,4%
+Tue: 100,4%
+Wed: 100,4%
+Thu: %
+
+DD02:
+Fri: 84,1%
+Sat: 82,5%
+Sun: 88,2%
+Mon: 82,1%
+Tue: 88,7%
+Wed: 82,3%
+Thu: %
+
+Fire Scada Alarms:
+0
+
+Block Chutes:
+None
+
+Production:
+Fri: 7207/6621
+Sat: 259/1577
+Sun: 1384/1577
+Mon: 5798/5202
+Tue: 6562/6621
+Wed: 6703/6621
+Thu: /5204
+
+Ore pass Levels:
+Fri: 33,8%
+Sat: 22,1%
+Sun: 19,2%
+Mon: 43,2%
+Tue: 42,3%
+Wed: 14,4%
+Thu: %
+[06:51, 18/07/2025] Xavier Petersen: Good Day Team,
+S&W
+Friday  
+18 Jul 2025
+Thursday Report
+
+Safety:
+Clear
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+No Stoppages
+
+Nch3 PW
+Delay:
+Driver's Desk Bells Out of Order 
+Fix:
+Winder Technician Electrician Team did fault finding and were able to reset relay 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+No Stoppages 
+
+Main Fans
+GL
+No Stoppages 
+
+Nch2
+No Stoppages 
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 100,5%
+Sat: 100,5%
+Sun: 100,5%
+Mon: 100,4%
+Tue: 100,4%
+Wed: 100,4%
+Thu: 100,4%
+
+DD02:
+Fri: 84,1%
+Sat: 82,5%
+Sun: 88,2%
+Mon: 82,1%
+Tue: 88,7%
+Wed: 82,3%
+Thu: 86,7%
+
+Fire Scada Alarms:
+0
+
+Block Chutes:
+None
+
+Production:
+Fri: 7207/6621
+Sat: 259/1577
+Sun: 1384/1577
+Mon: 5798/5202
+Tue: 6562/66…
+[07:49, 18/07/2025] Sikelela Shaft Engineer: 18-07-2025 
+
+Safety  Clear
+ 
+ROM:             4574 v 6903t 
+Product:       4920 v 6514t
+Loads:           49, 24, 58
+
+ Blast:Actual vs Plan ? vs16 
+
+  TMMs Availability:
+DTs: 93%
+FLs: 80%  
+HDs: 91%    
+RTs: 91%     
+SRs: 95%    
+
+DZ13: 100% 
+GD12: 100% 
+
+Start of Shift-Production TMM
+DT:  8/9    DT120 door controller 
+FL:  6/6     
+HD: 5/6     HD65 hyd hose 
+RT:  4/6     RT38 oil sensor, RT40 drifter 
+SR:  5/6     SR25 wheel frame
+
+Emulsion UVs 
+(UV62,66,108) = 100%
+
+Logistics UV
+(UV54,59,120)= 66% 
+Manlifts
+Sampling (UV77,123) = 100% 
+Survey (UV98,99) = 100%
+
+TMM
+Breakdowns (Services & Graben)
+UV90- water pump & timing
+UV37- steering 
+UV54- oil leak 
+UV84- engine cut off 
+UV137- CAS level 9
+UV133- brakes 
+SR46- hyd pump crack 
+
+Plant blockages- 0
+Fire alarms- 0
+[06:00, 19/07/2025] Xavier Petersen: Good Day Team,
+S&W
+Saturday  
+19 Jul 2025
+Friday Report
+
+Safety:
+Clear
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+No Stoppages
+
+Nch3 PW
+No Stoppages 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+No Stoppages 
+
+Main Fans
+GL
+No Stoppages 
+
+Nch2
+No Stoppages 
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 100,4%
+Sat: %
+Sun: %
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+
+DD02:
+Fri: 79,0%
+Sat: %
+Sun: %
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+
+Fire Scada Alarms:
+2 x NON-EMERGENCY ALARMS (NCH2 PW HYDRAULIC RELAY PANEL)
+
+Block Chutes:
+None
+
+Production:
+Fri: 5676/6621
+Sat: /1577
+Sun: /1577
+Mon: /5204
+Tue: /6623
+Wed: /6623
+Thu: /5204
+
+Ore pass Levels:
+Fri: 10,6%
+Sat: %
+Sun: %
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+[10:35, 20/07/2025] Xavier Petersen: Good Day Team,
+S&W
+Sunday  
+20 Jul 2025
+Saturday Report
+
+Safety:
+Clear
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+No Stoppages
+
+Nch3 PW
+No Stoppages 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+Solrock Shaft Barrel Repair Project 
+
+Main Fans
+GL
+No Stoppages 
+
+Nch2
+No Stoppages 
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 100,4%
+Sat: 100,3%
+Sun: %
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+
+DD02:
+Fri: 79,0%
+Sat: 79,5%
+Sun: %
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+
+Fire Scada Alarms:
+4 x NON-EMERGENCY COMMS ALARMS 
+
+Block Chutes:
+None
+
+Production:
+Fri: 5676/6621
+Sat: 130/1576
+Sun: /1576
+Mon: /5203
+Tue: /6621
+Wed: /6621
+Thu: /5203
+
+Ore pass Levels:
+Fri: 10,6%
+Sat: 12,8%
+Sun: %
+Mon: %
+Tue: %
+Wed: %
+Thu: %
+[15:09, 20/07/2025] Xavier Petersen: Good Day Again Team, 
+Solrock Team completed Planned Work for Weekend.

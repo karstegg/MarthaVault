@@ -1,0 +1,106 @@
+{
+  "report_metadata": {
+    "date": "2025-07-21",
+    "data_date": "2025-07-19_2025-07-20",
+    "site": "Gloria",
+    "engineer": "Sipho Dubazane",
+    "report_type": "daily_production",
+    "weekend_report": true,
+    "timestamp": "2025-07-21T06:37:00Z"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "notes": "All clear"
+  },
+  "production": {
+    "weekend_breakdown": {
+      "saturday": {
+        "rom": {"actual": 1961, "target": 0, "unit": "tonnes"},
+        "decline": {"actual": 3865, "target": 0, "unit": "tonnes"},
+        "product": {"actual": 3865, "target": 3773, "variance": 92, "variance_percent": 2.4, "unit": "tonnes"}
+      },
+      "sunday": {
+        "rom": {"actual": 1879, "target": 0, "unit": "tonnes"},
+        "decline": {"actual": 1799, "target": 0, "unit": "tonnes"},
+        "product": {"actual": 2342, "target": 0, "unit": "tonnes"}
+      }
+    },
+    "loads": [
+      {"day": "saturday", "load_1": 101, "load_2": 51},
+      {"day": "sunday", "data": "missing"}
+    ],
+    "issues": []
+  },
+  "silos": {
+    "surface_silos": [
+      {"silo_number": 1, "fill_percent": 21},
+      {"silo_number": 2, "fill_percent": 22},
+      {"silo_number": 3, "fill_percent": 22},
+      {"silo_number": 4, "fill_percent": 22}
+    ],
+    "underground_silos": [
+      {"silo_id": "74", "fill_percent": 23},
+      {"silo_id": "HG", "fill_percent": 59},
+      {"silo_id": "D", "fill_percent": 88},
+      {"silo_id": "LG", "fill_percent": 20}
+    ]
+  },
+  "equipment_availability": {
+    "tmm": {
+      "dump_trucks": {"code": "DT", "availability_percent": 100},
+      "front_loaders": {"code": "FL", "availability_percent": 74},
+      "hydraulic_drills": {"code": "HD", "availability_percent": 98},
+      "roof_bolters": {"code": "RT", "availability_percent": 100},
+      "scalers": {"code": "SR", "availability_percent": 50}
+    }
+  },
+  "shift_readiness": {
+    "production_tmm": [
+      {"type": "DT", "name": "Dump Trucks", "available": 6, "total": 6, "readiness_percent": 100.0},
+      {"type": "FL", "name": "Front Loaders", "available": 4, "total": 5, "readiness_percent": 80.0},
+      {"type": "HD", "name": "Hydraulic Drills", "available": 4, "total": 4, "readiness_percent": 100.0},
+      {"type": "RT", "name": "Roof Bolters", "available": 4, "total": 4, "readiness_percent": 100.0},
+      {"type": "SR", "name": "Scalers", "available": 3, "total": 4, "readiness_percent": 75.0}
+    ],
+    "support_equipment": [
+      {"type": "emulsion_uv", "available": 2, "total": 2, "readiness_percent": 100.0},
+      {"type": "manitou", "available": 1, "total": 1, "readiness_percent": 100.0},
+      {"type": "manlifts", "available": 2, "total": 2, "readiness_percent": 100.0}
+    ]
+  },
+  "utility_vehicles": {
+    "emulsion": {"availability_percent": 100, "available": 2, "total": 2, "status": "operational"},
+    "manitou": {"availability_percent": 100, "available": 1, "total": 1, "status": "operational"},
+    "manlifts": {"availability_percent": 100, "available": 2, "total": 2, "status": "operational"}
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"vehicle": "FL0083", "type": "front_loader", "issues": ["speed sensor", "bucket movement"]},
+      {"vehicle": "SR0037", "type": "scaler", "issues": ["tail frame"]}
+    ]
+  },
+  "operational_systems": {
+    "main_fans": {"status": "operational", "notes": "In Order"}
+  },
+  "operational_metrics": {
+    "plant_blockages": 0,
+    "fire_alarms": 0
+  },
+  "performance_summary": {
+    "key_highlights": [
+      "Saturday product exceeded target: 3,865t vs 3,773t (+2.4%)",
+      "Perfect DT and RT availability (100%)",
+      "Manitou operational (1/1) - rare full availability",
+      "Safety clear for weekend period",
+      "All support systems operational"
+    ],
+    "key_issues": [
+      "Scaler availability very low at 50%",
+      "FL availability poor at 74%",
+      "Underground silo D at 88% (high level)",
+      "Two equipment breakdowns (FL0083, SR0037)"
+    ],
+    "overall_status": "weekend_production_good"
+  }
+}

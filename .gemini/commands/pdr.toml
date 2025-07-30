@@ -1,0 +1,15 @@
+description = "Processes daily production reports from engineers."
+prompt = """
+Execute the Daily Production Report (PDR) workflow. You must adhere to the detailed logic outlined in `CLAUDE.md`.
+
+**Primary Workflow:**
+1.  **Detect Input**: Check if report text is provided as an argument. If not, scan the `00_inbox/` for new production reports.
+2.  **Handle Multiple Reports**: If multiple reports are found in the inbox, initiate parallel processing by invoking the specialized agents (pdr-nchwaning2, pdr-gloria, etc.) as described in the Claude constitution. Your role is to act as the orchestrator.
+3.  **Parse Content**: For each report, parse all required data points (Safety, Production, Equipment, Breakdowns, Site-Specific data like Silo levels).
+4.  **Validate Data**: Cross-reference equipment codes against `daily_production/equipment_codes.md` and flag any errors or missing information.
+5.  **Generate Dual Output**:
+    -   **JSON File**: Create a machine-readable JSON file in `daily_production/data/` with the structured data.
+    -   **Markdown File**: Create a human-readable Markdown report in `daily_production/` that summarizes performance and links to the JSON data.
+6.  **Assign and Tag**: Assign the correct engineer to the report and apply all relevant tags.
+7.  **Confirm Completion**: Output a confirmation message summarizing the action, e.g., "✅ Processed Gloria report for 2025-07-30 and created dual-format output."
+"""

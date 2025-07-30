@@ -1,0 +1,159 @@
+{
+  "report_metadata": {
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "report_date": "2025-07-01",
+    "data_date": "2025-06-30",
+    "report_time": "07:07",
+    "shift_status": "current_day_preparation"
+  },
+  "safety": {
+    "status": "all_clear",
+    "incidents": [],
+    "follow_ups": []
+  },
+  "production": {
+    "rom": {
+      "actual": 2901,
+      "target": 6174,
+      "variance": -3273,
+      "performance_pct": 47.0
+    },
+    "decline": {
+      "actual": 2611,
+      "target": 4399,
+      "variance": -1788,
+      "performance_pct": 59.4
+    },
+    "product": {
+      "actual": 2202,
+      "target": 4047,
+      "variance": -1845,
+      "performance_pct": 54.4
+    },
+    "loads": {
+      "count": [73, 70, 59],
+      "total": 202,
+      "average": 67.3
+    },
+    "blast": {
+      "faces": 8,
+      "mn_faces": null,
+      "waste_faces": null
+    }
+  },
+  "equipment": {
+    "tmm_availability": {
+      "HD": 85,
+      "DT": 79,
+      "FL": 95,
+      "RT": 96,
+      "SR": 89,
+      "UV": 92
+    },
+    "specialized_equipment": {
+      "GD11": "N/A",
+      "DZ11": 100,
+      "UV044": 87
+    },
+    "sos_equipment": {
+      "HD": "7/9",
+      "DT": "13/15",
+      "FL": "8/10",
+      "RT": "9/10",
+      "SR": "7/9",
+      "UV": "8/9"
+    },
+    "support_equipment": {
+      "manlifts": "4/4",
+      "emulsion_uv": "3/4"
+    },
+    "breakdowns": [
+      {
+        "equipment": "DT0109",
+        "issues": ["strata", "gears and spares"],
+        "category": "mechanical"
+      },
+      {
+        "equipment": "DT0119",
+        "issues": ["engine cut off", "no operator"],
+        "category": "operational"
+      },
+      {
+        "equipment": "DT0147",
+        "issues": ["red stop light"],
+        "category": "electrical"
+      },
+      {
+        "equipment": "DT0149",
+        "issues": ["no operator"],
+        "category": "operational"
+      },
+      {
+        "equipment": "DT0154",
+        "issues": ["strata system faulty"],
+        "category": "mechanical"
+      },
+      {
+        "equipment": "FL0113",
+        "issues": ["tyre replacement", "oil leak"],
+        "category": "mechanical"
+      },
+      {
+        "equipment": "HD0049",
+        "issues": ["hydraulic hose"],
+        "category": "hydraulic"
+      },
+      {
+        "equipment": "HD0052",
+        "issues": ["feed cylinder bolts"],
+        "category": "mechanical"
+      },
+      {
+        "equipment": "RT0054",
+        "issues": ["hydraulic hose", "property"],
+        "category": "hydraulic"
+      },
+      {
+        "equipment": "SR0030",
+        "issues": ["hydraulic hose"],
+        "category": "hydraulic"
+      },
+      {
+        "equipment": "SR0044",
+        "issues": ["fail to start"],
+        "category": "electrical"
+      },
+      {
+        "equipment": "UV0047",
+        "issues": ["brakes"],
+        "category": "braking"
+      },
+      {
+        "equipment": "UV0126",
+        "issues": ["front axle"],
+        "category": "mechanical"
+      },
+      {
+        "equipment": "UV0131",
+        "issues": ["brakes fail"],
+        "category": "braking"
+      }
+    ]
+  },
+  "analysis": {
+    "production_performance": "significantly_below_target",
+    "critical_issues": [
+      "ROM production 53% below target",
+      "Multiple DT breakdowns affecting decline production",
+      "Hydraulic system issues across multiple equipment types"
+    ],
+    "equipment_health": "concerning",
+    "breakdown_patterns": {
+      "hydraulic_issues": 4,
+      "operator_shortage": 2,
+      "brake_problems": 2,
+      "strata_system_issues": 2
+    }
+  }
+}

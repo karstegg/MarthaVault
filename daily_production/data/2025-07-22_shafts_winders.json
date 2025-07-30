@@ -1,0 +1,94 @@
+{
+  "report_metadata": {
+    "date": "2025-07-22",
+    "data_date": "2025-07-21",
+    "site": "Shafts & Winders",
+    "engineer": "Xavier Peterson",
+    "report_type": "daily_production", 
+    "report_day": "Tuesday",
+    "data_day": "Monday",
+    "timestamp": "2025-07-22T07:00:00Z"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "notes": "Clear Monday operations"
+  },
+  "power_supply": {
+    "stoppages": 0,
+    "status": "operational"
+  },
+  "shafts_winders": {
+    "nchwaning2": {
+      "production_winder": {"code": "Nch2 PW", "stoppages": 0, "status": "operational"},
+      "rock_winder": {"code": "Nch2 RW", "stoppages": 0, "status": "operational", "project": "Solrock Shaft Barrel Repair Project completed"}
+    },
+    "nchwaning3": {
+      "production_winder": {"code": "Nch3 PW", "stoppages": 0, "status": "operational"}
+    },
+    "gloria": {
+      "production_winder": {"code": "GL PW", "stoppages": 0, "status": "operational"}
+    }
+  },
+  "main_fans": {
+    "gloria": {"stoppages": 0, "status": "operational"},
+    "nchwaning2": {"stoppages": 0, "status": "operational"},
+    "nchwaning3": {"stoppages": 0, "status": "operational"}
+  },
+  "lamprooms": {
+    "gloria": {"stoppages": 0, "status": "operational"},
+    "nchwaning2": {"stoppages": 0, "status": "operational"},
+    "nchwaning3": {"stoppages": 0, "status": "operational"}
+  },
+  "dam_levels": {
+    "DD01": {
+      "friday": 100.4, "saturday": 100.3, "sunday": 100.3, "monday": 100.2,
+      "tuesday": null, "wednesday": null, "thursday": null,
+      "unit": "percent"
+    },
+    "DD02": {
+      "friday": 79.0, "saturday": 79.5, "sunday": 89.0, "monday": 91.2,
+      "tuesday": null, "wednesday": null, "thursday": null,
+      "unit": "percent"
+    }
+  },
+  "ore_pass_levels": {
+    "weekly_tracking": [
+      {"day": "Friday", "level_percent": 10.6},
+      {"day": "Saturday", "level_percent": 12.8},
+      {"day": "Sunday", "level_percent": 12.5},
+      {"day": "Monday", "level_percent": 14.2}
+    ]
+  },
+  "operational_metrics": {
+    "fire_scada_alarms": 2,
+    "fire_alarm_type": "NON-EMERGENCY COMMS FAILURE ALARMS",
+    "block_chutes": 0
+  },
+  "production": {
+    "weekly_summary": [
+      {"day": "Friday", "actual": 5676, "target": 6621, "variance": -945},
+      {"day": "Saturday", "actual": 130, "target": 1576, "variance": -1446, "note": "Solrock Shaft Barrel Repair Project"},
+      {"day": "Sunday", "actual": 0, "target": 1576, "variance": -1576, "note": "Solrock Shaft Barrel Repair Project"},
+      {"day": "Monday", "actual": 4892, "target": 5203, "variance": -311, "note": "Solrock project completed"}
+    ]
+  },
+  "performance_summary": {
+    "key_highlights": [
+      "Solrock Shaft Barrel Repair Project completed",
+      "All infrastructure operational: winders, fans, lamprooms",
+      "No power supply stoppages",
+      "Monday production resumed at 4,892t",
+      "DD01 dam stable above 100%",
+      "Ore pass levels rising (14.2%)"
+    ],
+    "key_issues": [
+      "Monday production 6% below target (-311t)",
+      "2 non-emergency comms failure alarms",
+      "DD02 dam level continuing to rise (91.2%)",
+      "Weekend production loss from maintenance project"
+    ],
+    "overall_status": "operational_maintenance_completed",
+    "priority_level": "medium"
+  }
+}

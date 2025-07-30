@@ -1,0 +1,10 @@
+This video, "How I use Claude Code to automate my entire life (5 tricks)," by Alex Finn, is about using Claude Code for personal and business automation. The video demonstrates five use cases for Claude Code and provides instructions on how to set them up without any coding knowledge.
+Use Cases:
+ * Weekly Check-in: Automatically tracks business metrics, personal goals, career progress, and side hustles to create a personal dashboard.
+ * Daily Journaling: An AI agent helps with journaling by asking questions about accomplishments, feelings, and wins.
+ * Content Research and Planning: Researches competing newsletters and the user's past content to draft new content in the user's voice.
+ * Brain Dump Analyzer: Analyzes personal notes to create a mind map visualization of thoughts, philosophies, identities, and strategies.
+ * Daily Brief Agent: Researches the internet based on the user's interests and compiles a daily brief.
+The video emphasizes that these AI agents can save a significant amount of time and that all the prompts needed to set them up are provided in the description.
+
+https://youtu.be/wfiv67NixCY?si=NZt70NcqMVE7oxnN
