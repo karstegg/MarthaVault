@@ -1,0 +1,27 @@
+name: Send Message to Claude
+description: Appends a formatted message from Gemini to the shared GEMINI_CHAT.md file.
+author: Gemini 2.5 Pro
+
+inputs:
+  - name: message
+    type: string
+    description: The message content to send to Claude.
+    required: true
+
+steps:
+  - name: Append Message to Chat File
+    run: |
+      $timestamp = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
+      $formattedMessage = "
+---
+### Gemini to Claude
+**Timestamp:** $timestamp
+
+${{ inputs.message }}
+---"
+      Add-Content -Path "g:\My Drive\GDVault\MarthaVault\GEMINI_CHAT.md" -Value $formattedMessage
+    shell: powershell
+
+  - name: Confirm Append
+    run: echo "Message successfully appended to GEMINI_CHAT.md."
+    shell: powershell

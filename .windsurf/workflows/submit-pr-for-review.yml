@@ -1,0 +1,55 @@
+name: Submit Pull Request for Review
+description: Creates a new branch, commits changes, pushes the branch, and creates a Pull Request for Claude's review.
+author: Gemini 2.5 Pro
+
+inputs:
+  - name: branch_name
+    type: string
+    description: "The name for the new feature branch (e.g., 'feat/update-readme')."
+    required: true
+  - name: commit_message
+    type: string
+    description: "The commit message for the changes."
+    required: true
+  - name: pr_title
+    type: string
+    description: "The title for the Pull Request."
+    required: true
+  - name: pr_body
+    type: string
+    description: "The detailed body/description for the Pull Request. Should tag @claude-code."
+    required: true
+  - name: file_to_add
+    type: string
+    description: "The specific file to add to the commit. Defaults to staging all changes."
+    required: false
+    default: "."
+
+steps:
+  - name: Create and Switch to New Branch
+    run: git --verbose checkout -b ${{ inputs.branch_name }}
+    shell: powershell
+
+  - name: Stage Changes
+    run: git --verbose add ${{ inputs.file_to_add }}
+    shell: powershell
+
+  - name: Commit Changes
+    run: git --verbose commit -m "${{ inputs.commit_message }}"
+    shell: powershell
+
+  - name: Push Branch to Remote
+    run: git --verbose push -u origin ${{ inputs.branch_name }}
+    shell: powershell
+
+  - name: Create Pull Request
+    run: gh pr create --title "${{ inputs.pr_title }}" --body "${{ inputs.pr_body }}"
+    shell: powershell
+
+  - name: Return to Master Branch
+    run: git --verbose checkout master
+    shell: powershell
+
+  - name: Confirm PR Creation
+    run: echo "Pull Request successfully created for branch ${{ inputs.branch_name }}."
+    shell: powershell
