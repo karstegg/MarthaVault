@@ -1,0 +1,117 @@
+{
+  "report_metadata": {
+    "date": "2025-08-02",
+    "data_date": "2025-08-01",
+    "site": "Nchwaning 2",
+    "engineer": "Johan Kotze",
+    "acting_for": "Sikilela Nzuza",
+    "timestamp": "06:49"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 0,
+      "target": 0,
+      "variance": 0,
+      "note": "Planned shutdown or similar - confirmation pending with Johan"
+    },
+    "decline": {
+      "actual": null,
+      "target": null,
+      "variance": null
+    },
+    "product": {
+      "actual": 6133,
+      "target": 6514,
+      "variance": -381,
+      "variance_percentage": -5.8
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 45, "staged": 19, "target": 80, "total": 64},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 74, "target": 68, "variance": 6},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 69, "staged": 8, "target": 80, "total": 77}
+    ],
+    "blast": {
+      "actual": null,
+      "target": 16,
+      "note": "Actual vs Plan ? vs16"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": 86,
+      "FL": 93,
+      "HD": 84,
+      "RT": 95,
+      "SR": 96
+    },
+    "specialized": [
+      {"code": "DZ13", "availability": 100},
+      {"code": "GD12", "availability": 0}
+    ],
+    "emulsion_uv": {
+      "units": ["UV137", "UV138", "UV108"],
+      "availability": 100
+    },
+    "logistics_uv": {
+      "units": ["UV54", "UV59", "UV120", "UV133"],
+      "availability": 50
+    },
+    "sampling_uv": {
+      "units": ["UV77", "UV123"],
+      "availability": 50
+    },
+    "survey_uv": {
+      "units": ["UV98", "UV99"],
+      "availability": 100
+    }
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 7, "total": 9},
+      "FL": {"available": 5, "total": 6},
+      "HD": {"available": 5, "total": 6},
+      "RT": {"available": 6, "total": 6},
+      "SR": {"available": 6, "total": 6}
+    },
+    "manlifts": {"available": null, "total": null}
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "UV90", "issue": "water pump & timing"},
+      {"unit": "UV37", "issue": "steering"},
+      {"unit": "UV54", "issue": "FD oil leak"},
+      {"unit": "UV77", "issue": "bucket movement"},
+      {"unit": "UV133", "issue": "brakes"},
+      {"unit": "GD12", "issue": "warranty again - brakes", "note": "equipment code error: should be GD12 not GR12"},
+      {"unit": "DT128", "issue": "CAS L 9"},
+      {"unit": "DT170", "issue": "puncture"},
+      {"unit": "FL102", "issue": "puncture"},
+      {"unit": "HD53", "issue": "cable reel damaged"}
+    ]
+  },
+  "operational": {
+    "plant_blockages": 0,
+    "fire_alarms": 0
+  },
+  "performance_summary": {
+    "key_issues": [
+      "ROM production at 0% of target (complete shutdown)",
+      "Product production 5.8% below target",
+      "GD12 grader completely unavailable (0%)",
+      "10 equipment units currently broken down",
+      "HD availability below 85% threshold (84%)",
+      "Multiple UV units with mechanical issues"
+    ],
+    "key_highlights": [
+      "Safety status clear",
+      "Strong RT and SR availability (95%, 96%)",
+      "Survey UV units fully operational (100%)",
+      "No plant blockages or fire alarms"
+    ]
+  }
+}

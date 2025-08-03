@@ -1,0 +1,26 @@
+name: Gemini Chat Monitor
+
+on:
+  push:
+    paths:
+      - 'GEMINI_CHAT.md'
+    branches: [ master ]
+
+jobs:
+  notify-claude:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Check for Gemini messages
+        run: |
+          echo "🤖 Gemini activity detected in GEMINI_CHAT.md"
+          
+          # Extract latest message (you could parse for new content)
+          tail -20 GEMINI_CHAT.md
+          
+          # Could trigger Claude Code via API
+          # curl -X POST -H "Authorization: Bearer ${{ secrets.CLAUDE_API_KEY }}" \
+          #      -d '{"message": "Gemini sent a message"}' \
+          #      https://api.anthropic.com/v1/claude-code/notify

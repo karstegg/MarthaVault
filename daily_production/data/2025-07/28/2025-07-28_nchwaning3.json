@@ -1,0 +1,66 @@
+{
+  "report_metadata": {
+    "report_date": "2025-07-28",
+    "data_date": "2025-07-27",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "shift_day": "Sunday",
+    "report_type": "daily_production"
+  },
+  "safety": {
+    "status": "Clear",
+    "incidents": [],
+    "lost_time_injuries": 0,
+    "near_misses": 0,
+    "safety_notes": "Another day of zero incidents - safety excellence maintained during record performance period"
+  },
+  "production": {
+    "rom_tonnes": 7234,
+    "rom_target": 6904,
+    "rom_variance_percent": 4.8,
+    "decline_tonnes": 6345,
+    "decline_target": 6200,
+    "decline_variance_percent": 2.3,
+    "product_tonnes": 6889,
+    "product_target": 6634,
+    "product_variance_percent": 3.8,
+    "loads": 108,
+    "blast_faces": 12,
+    "notes": "Sustained excellence - 5th consecutive day above targets. Blast performance maintaining site record levels."
+  },
+  "equipment": {
+    "tmm_availability_percent": 100,
+    "tmm_units_operational": 5,
+    "tmm_units_total": 5,
+    "breakdown_hours": 0,
+    "major_breakdowns": [],
+    "maintenance_notes": "Perfect TMM availability for 5th consecutive day - unprecedented reliability performance"
+  },
+  "operational_highlights": [
+    "ROM production 4.8% above target at 7,234t",
+    "Decline production 2.3% above target at 6,345t", 
+    "Product output 3.8% above target at 6,889t",
+    "108+ loads achieved - outstanding performance",
+    "12 blast faces prepared - maintaining site record levels",
+    "100% TMM availability for 5th consecutive day",
+    "Complete operational transformation from previous deficits"
+  ],
+  "performance_analysis": {
+    "overall_status": "EXCEPTIONAL",
+    "key_metrics": {
+      "production_consistency": "EXCELLENT",
+      "equipment_reliability": "PERFECT",
+      "blast_performance": "RECORD_LEVEL",
+      "safety_performance": "ZERO_INCIDENTS"
+    },
+    "trend_analysis": "Sustained excellence following transformation from -24% deficits to consistent record-breaking performance"
+  },
+  "follow_up_actions": [],
+  "concerns": [],
+  "achievements": [
+    "5th consecutive day of 100% TMM availability",
+    "Sustained production excellence across all metrics",
+    "Maintaining blast face records at 12+ faces",
+    "Complete transformation narrative - from crisis to excellence"
+  ]
+}

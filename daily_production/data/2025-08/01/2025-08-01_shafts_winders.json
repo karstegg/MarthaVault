@@ -1,0 +1,103 @@
+{
+  "report_metadata": {
+    "date": "2025-08-01",
+    "data_date": "2025-07-31",
+    "site": "Shafts & Winders",
+    "engineer": "Xavier Peterson",
+    "timestamp": "06:54",
+    "report_type": "Friday Report (Thursday data)"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "infrastructure": {
+    "power_supply": {
+      "stoppages": 0,
+      "status": "operational"
+    },
+    "winders": {
+      "nch2_pw": {"status": "no_stoppages", "operational": true},
+      "nch3_pw": {"status": "no_stoppages", "operational": true},
+      "gl_pw": {"status": "no_stoppages", "operational": true},
+      "nch2_rw": {"status": "no_stoppages", "operational": true}
+    },
+    "main_fans": {
+      "gloria": {"status": "no_stoppages", "operational": true},
+      "nchwaning2": {"status": "no_stoppages", "operational": true},
+      "nchwaning3": {"status": "no_stoppages", "operational": true}
+    },
+    "lamprooms": {
+      "gloria": {"status": "no_stoppages", "operational": true},
+      "nchwaning2": {"status": "no_stoppages", "operational": true},
+      "nchwaning3": {"status": "no_stoppages", "operational": true}
+    }
+  },
+  "dam_levels": {
+    "dd01": {
+      "friday": 100.3,
+      "saturday": 100.2,
+      "sunday": 100.2,
+      "monday": 100.2,
+      "tuesday": 100.2,
+      "wednesday": 100.2,
+      "thursday": 100.1
+    },
+    "dd02": {
+      "friday": 78.3,
+      "saturday": 88.5,
+      "sunday": 94.3,
+      "monday": 88.0,
+      "tuesday": 81.3,
+      "wednesday": 89.1,
+      "thursday": 80.2
+    }
+  },
+  "ore_pass_levels": {
+    "friday": 22.0,
+    "saturday": 21.8,
+    "sunday": 21.9,
+    "monday": 24.4,
+    "tuesday": 36.9,
+    "wednesday": 19.1,
+    "thursday": 16.1
+  },
+  "production": {
+    "weekly_schedule": {
+      "friday": {"actual": 151, "target": 0, "note": "PAY WEEKEND OFF"},
+      "saturday": {"actual": 0, "target": 1577, "note": "PAY WEEKEND OFF"},
+      "sunday": {"actual": 0, "target": 1577, "note": "PAY WEEKEND OFF"},
+      "monday": {"actual": 4650, "target": 5204, "variance": -554, "variance_percentage": -10.6},
+      "tuesday": {"actual": 6219, "target": 6623, "variance": -404, "variance_percentage": -6.1},
+      "wednesday": {"actual": 7182, "target": 6623, "variance": 559, "variance_percentage": 8.4},
+      "thursday": {"actual": 6267, "target": 5204, "variance": 1063, "variance_percentage": 20.4}
+    }
+  },
+  "operational": {
+    "fire_scada_alarms": 0,
+    "block_chutes": 0
+  },
+  "performance_summary": {
+    "key_issues": [
+      "Monday production 10.6% below target (-554t)",
+      "Tuesday production 6.1% below target (-404t)",
+      "Ore pass levels declining (Thursday at 16.1%)",
+      "DD02 dam level fluctuating significantly"
+    ],
+    "key_highlights": [
+      "Safety status clear",
+      "All infrastructure systems operational",
+      "No power supply stoppages",
+      "All winders operational across sites",
+      "All main fans operational",
+      "All lamprooms operational",
+      "No fire SCADA alarms",
+      "No block chutes",
+      "DD01 dam consistently at full capacity (100%+)",
+      "Wednesday production 8.4% above target (+559t)",
+      "Thursday production 20.4% above target (+1,063t)",
+      "Strong recovery after Monday/Tuesday shortfalls"
+    ]
+  }
+}

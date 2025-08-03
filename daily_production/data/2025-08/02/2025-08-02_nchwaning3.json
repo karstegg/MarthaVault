@@ -1,0 +1,107 @@
+{
+  "report_metadata": {
+    "date": "2025-08-02",
+    "data_date": "2025-08-01",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "timestamp": "07:39"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 6422,
+      "target": 0,
+      "variance": 6422,
+      "note": "No target specified - weekend/shutdown day"
+    },
+    "decline": {
+      "actual": 6179,
+      "target": 0,
+      "variance": 6179,
+      "note": "No target specified - weekend/shutdown day"
+    },
+    "product": {
+      "actual": 6779,
+      "target": 0,
+      "variance": 6779,
+      "note": "No target specified - weekend/shutdown day"
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 101},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 84},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 65}
+    ],
+    "blast": {
+      "manganese": 12,
+      "waste": 2,
+      "total_faces": 14,
+      "breakdown": "12 Mn + 2 Waste"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "HD": 75,
+      "DT": 81,
+      "FL": 91,
+      "RT": 81,
+      "SR": 89,
+      "UV": 89
+    },
+    "specialized": [
+      {"code": "GD11", "availability": 100},
+      {"code": "DZ11", "availability": 100},
+      {"code": "UV044", "availability": 82}
+    ]
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "HD": {"available": 7, "total": 9},
+      "DT": {"available": 12, "total": 14},
+      "FL": {"available": 10, "total": 10},
+      "RT": {"available": 9, "total": 10},
+      "SR": {"available": 8, "total": 10},
+      "UV": {"available": 8, "total": 9}
+    },
+    "manlifts": {"available": 4, "total": 4},
+    "emulsion_uv": {"available": 4, "total": 4}
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "DT0149", "issue": "Awaiting battery parts"},
+      {"unit": "DT0150", "issue": "Gears faulty"},
+      {"unit": "HD0055", "issue": "Water cooler, cable"},
+      {"unit": "SR0026", "issue": "Right rear tyre"},
+      {"unit": "SR0030", "issue": "Incident repairs"},
+      {"unit": "SR0045", "issue": "FTS"},
+      {"unit": "UV0047", "issue": "Release brakes"}
+    ]
+  },
+  "operational": {
+    "fire_alarms": 0,
+    "crusher_chute_blockages": 0
+  },
+  "performance_summary": {
+    "key_issues": [
+      "HD availability below 80% threshold (75%)",
+      "DT availability below optimal (81%)",
+      "RT availability below optimal (81%)",
+      "7 equipment units currently broken down",
+      "Multiple SR units requiring repairs"
+    ],
+    "key_highlights": [
+      "Safety status clear",
+      "Strong production on non-target day",
+      "FL availability excellent (91%)",
+      "SR availability strong (89%)",
+      "UV availability strong (89%)",
+      "GD11 and DZ11 at 100% availability",
+      "All manlifts and emulsion UV operational",
+      "Good blast performance (14 faces total)",
+      "No fire alarms or blockages"
+    ]
+  }
+}

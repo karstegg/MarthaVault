@@ -1,0 +1,328 @@
+{
+  "report_metadata": {
+    "report_period": "2025-07-21 to 2025-07-27",
+    "submitted_by": "Philip Moller",
+    "submitted_to": ["Sello Taku", "Sipho Dubazane"],
+    "report_type": "Weekly BEV Performance Report",
+    "source_document": "2025-07-27_BRMO_Weekly_Report_Epiroc.pdf"
+  },
+  "dt_performance": {
+    "fleet_units": ["DT146", "DT147", "DT149", "DT150", "DT162", "DT163", "DT171"],
+    "total_fleet_size": 7,
+    "breakdown_incidents": [
+      {
+        "unit": "DT171",
+        "date": "2025-07-21",
+        "type": "Electrical",
+        "duration_minutes": 75,
+        "description": "No feedback",
+        "shift": "Night"
+      },
+      {
+        "unit": "DT149",
+        "date": "2025-07-23",
+        "type": "Mechanical",
+        "duration_minutes": 62,
+        "description": "No feedback",
+        "shift": "Night"
+      },
+      {
+        "unit": "DT150",
+        "date": "2025-07-23",
+        "type": "3rd Party Supplier Fault",
+        "duration_minutes": 923,
+        "description": "Strata breakdown",
+        "shift": "Afternoon"
+      },
+      {
+        "unit": "DT162",
+        "date": "2025-07-23",
+        "type": "3rd Party Supplier Fault", 
+        "duration_minutes": 1111,
+        "description": "Strata breakdown",
+        "shift": "Afternoon"
+      },
+      {
+        "unit": "DT150",
+        "date": "2025-07-24",
+        "type": "3rd Party Supplier Fault",
+        "duration_minutes": 62,
+        "description": "Strata breakdown",
+        "shift": "Afternoon"
+      },
+      {
+        "unit": "DT162",
+        "date": "2025-07-24",
+        "type": "Damages",
+        "duration_minutes": 256,
+        "description": "No feedback",
+        "shift": "Morning"
+      },
+      {
+        "unit": "DT162",
+        "date": "2025-07-25",
+        "type": "Electrical",
+        "duration_minutes": 51,
+        "description": "No feedback",
+        "shift": "Morning"
+      }
+    ],
+    "total_downtime_hours": 41.67,
+    "most_problematic_units": ["DT162", "DT150"],
+    "primary_issues": ["Strata system failures", "Electrical feedback problems", "Damages"]
+  },
+  "fl_performance": {
+    "fleet_units": ["FL98", "FL99", "FL107", "FL108", "FL112", "FL113"],
+    "total_fleet_size": 6,
+    "breakdown_incidents": [
+      {
+        "unit": "FL107",
+        "date": "2025-07-21",
+        "type": "Electrical",
+        "duration_minutes": 103,
+        "description": "Reverse camera display issue",
+        "shift": "Morning"
+      },
+      {
+        "unit": "FL107",
+        "date": "2025-07-21",
+        "type": "Mechanical - Critical",
+        "duration_minutes": 1643,
+        "description": "Bucket severely damaged - locked out",
+        "shift": "All",
+        "status": "Critical - Unit locked out"
+      },
+      {
+        "unit": "FL108",
+        "date": "2025-07-21",
+        "type": "Mechanical",
+        "duration_minutes": 87,
+        "description": "Transmission mounting rubbers changed",
+        "shift": "Morning"
+      },
+      {
+        "unit": "FL108",
+        "date": "2025-07-21",
+        "type": "Electrical",
+        "duration_minutes": 106,
+        "description": "No feedback",
+        "shift": "Night"
+      },
+      {
+        "unit": "FL112",
+        "date": "2025-07-21",
+        "type": "Electrical",
+        "duration_minutes": 89,
+        "description": "Articulation sensor calibration problem",
+        "shift": "Afternoon"
+      },
+      {
+        "unit": "FL107",
+        "date": "2025-07-22",
+        "type": "Mechanical - Critical",
+        "duration_minutes": 1001,
+        "description": "Standing with bucket repairs",
+        "shift": "Night",
+        "status": "Critical - Locked out"
+      },
+      {
+        "unit": "FL98",
+        "date": "2025-07-23",
+        "type": "Mechanical",
+        "duration_minutes": 510,
+        "description": "Bucket repairs at boilers",
+        "shift": "Morning"
+      },
+      {
+        "unit": "FL107",
+        "date": "2025-07-23",
+        "type": "Mechanical - Critical",
+        "duration_minutes": 1621,
+        "description": "Machine locked out - bucket repairs",
+        "shift": "All",
+        "status": "Critical - Locked out"
+      },
+      {
+        "unit": "FL113",
+        "date": "2025-07-23",
+        "type": "Mechanical",
+        "duration_minutes": 31,
+        "description": "Battery change out (wrong booking)",
+        "shift": "Morning"
+      },
+      {
+        "unit": "FL99",
+        "date": "2025-07-25",
+        "type": "Mechanical - Critical",
+        "duration_minutes": 4745,
+        "description": "Change bucket - major downtime",
+        "shift": "Morning",
+        "status": "Critical"
+      }
+    ],
+    "total_downtime_hours": 166.97,
+    "most_problematic_units": ["FL107", "FL99", "FL98"],
+    "critical_issue": "Bucket condition crisis - 60% of fleet affected",
+    "primary_issues": ["Severe bucket damage", "Electrical system failures", "Mechanical wear"]
+  },
+  "battery_performance": {
+    "st14_b4_packs": {
+      "total_available": 10,
+      "machines_supported": 5,
+      "ratio": 2.0,
+      "target_ratio": 1.6,
+      "status": "Meeting requirements",
+      "working_units": [
+        "VPY-00011", "VPY-00031", "VPY-00051", "VPY-00048", "VPY-00049",
+        "VPY-00088", "VPY-00086", "VPY-00076", "VPY-00083", "VPY-00041"
+      ]
+    },
+    "mt42_b5_packs": {
+      "total_available": 10,
+      "machines_supported": 8,
+      "ratio": 1.25,
+      "target_ratio": 1.6,
+      "status": "Above committed ratio",
+      "working_units": [
+        "VPX-00016", "VPX-00023", "VPX-00017", "VPX-00010", "VPX-00050",
+        "VPX-00031", "VPX-00036", "VPX-00028", "VPX-00026", "VPX-00024",
+        "VPX-00048"
+      ],
+      "breakdown_units": [
+        {
+          "unit": "VPX-00006",
+          "status": "Breakdown",
+          "issue": "Battery overheating",
+          "downtime_days": 6,
+          "action": "Fault finding in progress"
+        }
+      ],
+      "surface_units": ["VPX-00044"]
+    },
+    "critical_issues": [
+      "VPX-00006 overheating causing 6-day downtime",
+      "Battery damage audits completed",
+      "Quotations sent to BRMO for repairs",
+      "CCS battery inlet connectors wearing out"
+    ]
+  },
+  "charger_performance": {
+    "charger_type": "160kW",
+    "total_chargers": 8,
+    "operational_status": {
+      "fully_operational": 3,
+      "missing_modules": 3,
+      "faulty_fans": 3,
+      "multiple_issues": 2
+    },
+    "specific_issues": [
+      {
+        "charger": "Charger 1",
+        "issues": ["Faulty fan needs replacement"]
+      },
+      {
+        "charger": "Charger 2",
+        "issues": ["Missing 1 module"]
+      },
+      {
+        "charger": "Charger 5",
+        "issues": ["Missing 1 module"]
+      },
+      {
+        "charger": "Charger 7",
+        "issues": ["Missing 1 module", "Module 4 fault", "Faulty fan needs replacement"]
+      },
+      {
+        "charger": "Charger 8",
+        "issues": ["Faulty fan needs replacement"]
+      }
+    ],
+    "systemic_issues": [
+      "More noted charger stops being investigated",
+      "Worn out charger and CCS battery inlet connectors",
+      "Multiple module failures requiring replacement"
+    ],
+    "immediate_actions_required": [
+      "Replace Module 4 on Charger 7",
+      "Replace faulty fans on Chargers 1, 7, 8",
+      "Replace missing modules on Chargers 2, 5, 7",
+      "Replace worn CCS battery inlet connectors"
+    ]
+  },
+  "performance_hampered_by": [
+    {
+      "category": "Equipment Condition",
+      "issues": [
+        "ST14 machine buckets in severely poor condition",
+        "FL107 locked out due to bucket damage (corner missing, heavy cracks)",
+        "Mirror damages on MT42B trucks - design/placement issues"
+      ]
+    },
+    {
+      "category": "Infrastructure Failures",
+      "issues": [
+        "Multiple charger module failures",
+        "Charger fan failures",
+        "Worn CCS battery inlet connectors causing charger stops"
+      ]
+    },
+    {
+      "category": "Battery Issues",
+      "issues": [
+        "Battery overheating (VPX-00006 down 6 days)",
+        "Battery damage requiring repairs and quotations"
+      ]
+    },
+    {
+      "category": "Third Party Systems",
+      "issues": [
+        "Strata system breakdowns affecting DT fleet",
+        "3rd party supplier faults causing extended downtime"
+      ]
+    },
+    {
+      "category": "Maintenance & Spares",
+      "issues": [
+        "Critical spares list needs review",
+        "Extended repair times due to parts availability",
+        "Lack of dedicated Epiroc artisan oversight"
+      ]
+    }
+  ],
+  "other_relevant_items": {
+    "availability_metrics": {
+      "weekly_availability": "98%",
+      "monthly_average": "79-86%",
+      "target_availability": "Above 85%"
+    },
+    "compliance_status": {
+      "bev_technicians": "96%",
+      "cas_l9_gloria": "98%",
+      "cas_l9_nch2": "97%",
+      "cas_l9_nch3": "97%",
+      "certiq_mobilaris_n2": "97%",
+      "certiq_mobilaris_gloria": "98%",
+      "epiroc_sla": "84%"
+    },
+    "project_updates": {
+      "mh4_upgrades": "Software upgrades project update pending approval",
+      "cas_l9_implementation": "Delay requested until BRMO financial year end",
+      "dcdc_psb_campaign": "Plan to be communicated to Blackrock"
+    },
+    "staffing": {
+      "bev_service_techs": ["Ivan Phiri", "Lukas Serumola", "Patricia Mazinyo"],
+      "bev_specialist": "Frikkie van der Walt (On Leave)",
+      "service_assistant": "Patrick Yoko",
+      "field_service": ["Alpheus Mareke", "Mathews Mosemane"],
+      "cas_team_leader": "Bradley Nast",
+      "cas_service_techs": ["Phineas Sibanda", "Julius Manamela"]
+    },
+    "upcoming_priorities": [
+      "DCDC and PSB campaign communication",
+      "Critical bucket replacement program",
+      "Charger infrastructure repairs",
+      "Battery connector replacement",
+      "Epiroc artisan utilization discussion"
+    ]
+  }
+}

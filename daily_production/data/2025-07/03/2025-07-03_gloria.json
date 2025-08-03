@@ -1,0 +1,176 @@
+{
+  "report_metadata": {
+    "site": "Gloria",
+    "engineer": "Sipho Dubazane",
+    "report_date": "2025-07-03",
+    "data_date": "2025-07-02",
+    "received_time": "06:50",
+    "shift_period": "Night shift (2025-07-02) into Day shift (2025-07-03)"
+  },
+  "safety": {
+    "status": "All clear",
+    "incidents": [],
+    "safety_rating": "green"
+  },
+  "production_metrics": {
+    "rom": {
+      "actual": 4280,
+      "target": 4041,
+      "variance": 239,
+      "performance_percent": 105.9,
+      "status": "above_target"
+    },
+    "decline": {
+      "actual": 3966,
+      "target": 4041,
+      "variance": -75,
+      "performance_percent": 98.1,
+      "status": "below_target"
+    },
+    "product": {
+      "actual": 4224,
+      "target": 3314,
+      "variance": 910,
+      "performance_percent": 127.5,
+      "status": "above_target"
+    },
+    "loads": {
+      "shift_1": 68,
+      "shift_2": 61,
+      "shift_3": 44,
+      "total": 173,
+      "performance_rating": "good"
+    }
+  },
+  "storage_levels": {
+    "surface_silos": {
+      "silo_1": 86,
+      "silo_2": 95,
+      "silo_3": 96,
+      "silo_4": 34,
+      "average": 77.75,
+      "status": "high_capacity"
+    },
+    "underground_silos": {
+      "silo_74": 19,
+      "silo_hg": 28,
+      "silo_d": 14,
+      "silo_lg": 20,
+      "average": 20.25,
+      "status": "low_capacity"
+    }
+  },
+  "equipment_status": {
+    "tmm_availability": {
+      "dt": {
+        "availability_percent": 100,
+        "available": 6,
+        "total": 6,
+        "status": "excellent"
+      },
+      "fl": {
+        "availability_percent": 50,
+        "available": 4,
+        "total": 5,
+        "status": "poor",
+        "issues": ["FL0083 - Bucket movement"]
+      },
+      "hd": {
+        "availability_percent": 100,
+        "available": 4,
+        "total": 4,
+        "status": "excellent"
+      },
+      "rt": {
+        "availability_percent": 100,
+        "available": 4,
+        "total": 4,
+        "status": "excellent"
+      },
+      "sr": {
+        "availability_percent": 67,
+        "available": 3,
+        "total": 4,
+        "status": "fair",
+        "issues": ["SR0037 - Tail frame"]
+      }
+    },
+    "specialized_equipment": {
+      "uv_emulsion": {
+        "available": 2,
+        "total": 2,
+        "availability_percent": 100,
+        "status": "operational"
+      },
+      "manitou": {
+        "available": 1,
+        "total": 1,
+        "availability_percent": 100,
+        "status": "operational"
+      },
+      "manlifts": {
+        "available": 2,
+        "total": 2,
+        "availability_percent": 100,
+        "status": "operational"
+      }
+    },
+    "equipment_issues": [
+      {
+        "equipment": "FL0083",
+        "issue": "Bucket movement",
+        "category": "mechanical",
+        "impact": "medium"
+      },
+      {
+        "equipment": "SR0037",
+        "issue": "Tail frame",
+        "category": "mechanical",
+        "impact": "medium"
+      }
+    ]
+  },
+  "infrastructure": {
+    "main_fans": {
+      "status": "operational",
+      "condition": "In Order"
+    },
+    "plant_blockages": [
+      {
+        "location": "CV53X2",
+        "status": "blocked",
+        "impact": "production_affected"
+      }
+    ],
+    "fire_alarms": [
+      {
+        "location": "CV52",
+        "status": "activated",
+        "priority": "high"
+      }
+    ]
+  },
+  "performance_summary": {
+    "overall_rating": "good",
+    "key_achievements": [
+      "ROM exceeded target by 5.9%",
+      "Product exceeded target by 27.5%",
+      "DT and HD fleet at 100% availability",
+      "All specialized equipment operational"
+    ],
+    "concerns": [
+      "Decline slightly below target (-1.9%)",
+      "FL fleet at only 50% availability",
+      "Plant blockage at CV53X2",
+      "Fire alarm activated at CV52",
+      "Underground silos at low capacity (20.25% average)"
+    ],
+    "critical_actions_required": [
+      "Address FL0083 bucket movement issue",
+      "Repair SR0037 tail frame",
+      "Clear CV53X2 plant blockage",
+      "Investigate CV52 fire alarm",
+      "Monitor underground silo levels"
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "report_metadata": {
+    "date": "2025-07-28",
+    "site": "Gloria",
+    "engineer": "Sipho Dubazane",
+    "report_type": "daily_production",
+    "timestamp": "2025-07-28T00:00:00Z"
+  },
+  "safety": {
+    "status": "incident",
+    "incidents": 1,
+    "details": [
+      {
+        "equipment": "RT0060",
+        "type": "property_damage",
+        "description": "Property damage incident involving roof bolter RT0060"
+      }
+    ],
+    "notes": "RT0060 Property damage"
+  },
+  "production": {
+    "rom": {
+      "actual": 3660,
+      "target": 3873,
+      "variance": -213,
+      "variance_percent": -5.5,
+      "unit": "tonnes"
+    },
+    "decline": {
+      "actual": 2899,
+      "target": 3873,
+      "variance": -974,
+      "variance_percent": -25.2,
+      "unit": "tonnes"
+    },
+    "product": {
+      "actual": 1077,
+      "target": 3773,
+      "variance": -2696,
+      "variance_percent": -71.4,
+      "unit": "tonnes"
+    },
+    "loads": [
+      {"load_number": 1, "actual": 58, "target": null, "variance": null},
+      {"load_number": 2, "actual": 48, "target": null, "variance": null},
+      {"load_number": 3, "actual": 47, "target": null, "variance": null}
+    ],
+    "issues": ["Significant product shortfall", "Decline production below target"]
+  },
+  "silos": {
+    "surface_silos": [
+      {"silo_number": 1, "fill_percent": 24},
+      {"silo_number": 2, "fill_percent": 50},
+      {"silo_number": 3, "fill_percent": 25},
+      {"silo_number": 4, "fill_percent": 98}
+    ],
+    "underground_silos": [
+      {"silo_id": "74", "fill_percent": 22},
+      {"silo_id": "HG", "fill_percent": 54},
+      {"silo_id": "D", "fill_percent": 16},
+      {"silo_id": "LG", "fill_percent": 18}
+    ]
+  },
+  "equipment_availability": {
+    "tmm": {
+      "dump_trucks": {"code": "DT", "availability_percent": 92},
+      "front_loaders": {"code": "FL", "availability_percent": 78},
+      "hydraulic_drills": {"code": "HD", "availability_percent": 95},
+      "roof_bolters": {"code": "RT", "availability_percent": 100},
+      "scalers": {"code": "SR", "availability_percent": 93}
+    }
+  },
+  "shift_readiness": {
+    "production_tmm": [
+      {"type": "DT", "name": "Dump Trucks", "available": 6, "total": 6, "readiness_percent": 100.0},
+      {"type": "FL", "name": "Front Loaders", "available": 4, "total": 5, "readiness_percent": 80.0},
+      {"type": "HD", "name": "Hydraulic Drills", "available": 4, "total": 4, "readiness_percent": 100.0},
+      {"type": "RT", "name": "Roof Bolters", "available": 3, "total": 4, "readiness_percent": 75.0},
+      {"type": "SR", "name": "Scalers", "available": 4, "total": 4, "readiness_percent": 100.0}
+    ],
+    "support_equipment": [
+      {"type": "emulsion_uv", "available": 2, "total": 2, "readiness_percent": 100.0},
+      {"type": "manitou", "available": 0, "total": 1, "readiness_percent": 0.0},
+      {"type": "manlifts", "available": 2, "total": 2, "readiness_percent": 100.0}
+    ]
+  },
+  "utility_vehicles": {
+    "emulsion": {
+      "availability_percent": 100,
+      "available": 2,
+      "total": 2,
+      "status": "operational"
+    },
+    "manitou": {
+      "availability_percent": 0,
+      "available": 0,
+      "total": 1,
+      "status": "down"
+    },
+    "manlifts": {
+      "availability_percent": 100,
+      "available": 2,
+      "total": 2,
+      "status": "operational"
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"vehicle": "FL0083", "type": "front_loader", "issues": ["bucket line boring"]},
+      {"vehicle": "RT0060", "type": "roof_bolter", "issues": ["property damage"], "safety_incident": true}
+    ]
+  },
+  "operational_systems": {
+    "main_fans": {
+      "status": "operational",
+      "notes": "In Order"
+    }
+  },
+  "operational_metrics": {
+    "plant_blockages": 0,
+    "fire_alarms": 0
+  },
+  "performance_summary": {
+    "key_issues": [
+      "Safety incident: RT0060 property damage",
+      "Severe product shortfall: 1,077t vs 3,773t target (-71.4%)",
+      "Decline production underperforming: 2,899t vs 3,873t target (-25.2%)",
+      "ROM slightly below target: 3,660t vs 3,873t target (-5.5%)",
+      "Manitou equipment unavailable (0/1)"
+    ],
+    "key_highlights": [
+      "RT availability at 100%",
+      "HD availability high at 95%",
+      "Main fans operational",
+      "No plant blockages or fire alarms",
+      "Emulsion UVs and manlifts fully operational"
+    ],
+    "overall_status": "underperforming_with_safety_concern"
+  }
+}

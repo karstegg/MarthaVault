@@ -1,0 +1,102 @@
+{
+  "report_metadata": {
+    "date": "2025-07-31",
+    "data_date": "2025-07-30",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 4631,
+      "target": 8060,
+      "variance": -3429,
+      "percentage": 57.5
+    },
+    "decline": {
+      "actual": 4315,
+      "target": 3940,
+      "variance": 375,
+      "percentage": 109.5
+    },
+    "product": {
+      "actual": 5258,
+      "target": 3625,
+      "variance": 1633,
+      "percentage": 145.1
+    }
+  },
+  "loads": {
+    "note": "No data day and PM",
+    "night_shift": 87
+  },
+  "blast": {
+    "manganese": 15,
+    "waste": 3,
+    "total": 18
+  },
+  "equipment_availability": {
+    "tmm": {
+      "HD": 93,
+      "DT": 87,
+      "FL": 85,
+      "RT": 86,
+      "SR": 89,
+      "UV": 95
+    },
+    "specialized": [
+      {"code": "GD11", "availability": 100},
+      {"code": "DZ11", "availability": 90},
+      {"code": "UV044", "availability": 85}
+    ]
+  },
+  "shift_readiness": {
+    "tmm": {
+      "HD": {"ready": 8, "total": 9, "percentage": 88.9},
+      "DT": {"ready": 11, "total": 14, "percentage": 78.6},
+      "FL": {"ready": 8, "total": 10, "percentage": 80.0},
+      "RT": {"ready": 7, "total": 10, "percentage": 70.0},
+      "SR": {"ready": 9, "total": 10, "percentage": 90.0},
+      "UV": {"ready": 9, "total": 9, "percentage": 100.0}
+    },
+    "support": {
+      "manlifts": {"ready": 4, "total": 4, "percentage": 100.0},
+      "emulsion_uv": {"ready": 4, "total": 4, "percentage": 100.0}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "DT0147", "issue": "On stands post tyre replacement"},
+      {"unit": "DT0149", "issue": "Oil leak"},
+      {"unit": "FL0099", "issue": "Coolant leak"},
+      {"unit": "HD0050", "issue": "Cable reel welding"},
+      {"unit": "RT0048", "issue": "Compressor"},
+      {"unit": "RT0054", "issue": "Operational"},
+      {"unit": "SR0026", "issue": "Rear tyre flat"},
+      {"unit": "UV0047", "issue": "Brakes not releasing"}
+    ]
+  },
+  "operational": {
+    "fire_alarms": 0,
+    "crusher_chute_blockages": 0
+  },
+  "performance_summary": {
+    "key_issues": [
+      "ROM 42.5% below target (-3,429t)",
+      "Multiple equipment breakdowns across all TMM types",
+      "RT shift readiness low at 70%",
+      "DT shift readiness at 78.6%"
+    ],
+    "key_highlights": [
+      "EXCELLENT: Product 45.1% above target (+1,633t)",
+      "Decline production 9.5% above target (+375t)",
+      "Blast performance: 15 Mn + 3 waste faces",
+      "UV availability excellent at 95%",
+      "All manlifts and emulsion UVs operational"
+    ]
+  }
+}

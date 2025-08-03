@@ -1,0 +1,85 @@
+{
+  "report_metadata": {
+    "date": "2025-07-22",
+    "data_date": "2025-07-21",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "report_type": "daily_production",
+    "report_day": "Tuesday",
+    "data_day": "Monday",
+    "timestamp": "2025-07-22T06:30:00Z"
+  },
+  "safety": {
+    "status": "incident",
+    "incidents": 1,
+    "incident_details": [
+      {
+        "type": "injury_on_duty",
+        "date": "2025-07-21",
+        "time": "18:17",
+        "location": "Underground Shaft Conveyance (Cage)",
+        "occupation": "Roofbolter Operator",
+        "description": "Roofbolter Operator struck by cage door as Banksman was closing for traveling down shaft",
+        "injury": "Lower Abdominal Soft Tissue Injury",
+        "gender": "female",
+        "medical_status": "not_booked_off",
+        "doctor_review": "scheduled_tuesday",
+        "line_managers": ["Jan Nieuwoudt", "Gregory Karstens"],
+        "notified": true,
+        "investigation_status": "preliminary_reporting",
+        "reported_by": "Xavier Peterson"
+      }
+    ],
+    "notes": "Injury On Duty at Nchwaning 3 U/G Shaft - cage door incident"
+  },
+  "production": {
+    "rom": {"actual": null, "target": null, "variance": null, "unit": "tonnes", "status": "data_pending"},
+    "decline": {"actual": null, "target": null, "variance": null, "unit": "tonnes", "status": "data_pending"},
+    "product": {"actual": null, "target": null, "variance": null, "unit": "tonnes", "status": "data_pending"},
+    "loads": {
+      "monday": null,
+      "status": "data_pending"
+    },
+    "blast": {
+      "faces_blasted": null,
+      "tonnes_blasted": null,
+      "status": "data_pending"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": {"available": null, "total": null, "percentage": null},
+      "FL": {"available": null, "total": null, "percentage": null},
+      "HD": {"available": null, "total": null, "percentage": null},
+      "RT": {"available": null, "total": null, "percentage": null},
+      "SR": {"available": null, "total": null, "percentage": null},
+      "UV": {"available": null, "total": null, "percentage": null}
+    }
+  },
+  "shift_readiness": {
+    "production_tmm": [],
+    "status": "data_pending"
+  },
+  "breakdowns": {
+    "current_breakdowns": [],
+    "status": "data_pending"
+  },
+  "operational": {
+    "fire_alarms": null,
+    "crusher_blockages": null,
+    "chute_blockages": null
+  },
+  "performance_summary": {
+    "key_highlights": [
+      "Safety incident reported promptly for investigation"
+    ],
+    "key_issues": [
+      "Injury On Duty - Roofbolter Operator struck by cage door",
+      "Lower abdominal soft tissue injury sustained at 18:17",
+      "Production data pending due to safety incident focus",
+      "Preliminary investigation underway"
+    ],
+    "overall_status": "safety_incident_investigation",
+    "priority_level": "medium"
+  }
+}

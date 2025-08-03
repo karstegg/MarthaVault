@@ -1,0 +1,86 @@
+{
+  "report_metadata": {
+    "date": "2025-07-23",
+    "data_date": "2025-07-22",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "report_type": "daily_production",
+    "report_day": "Wednesday",
+    "data_day": "Tuesday",
+    "timestamp": "2025-07-23T06:45:00Z"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "notes": "Clear - incident follow-up complete",
+    "incident_followup": {
+      "previous_incident": "2025-07-21 IOD cage door",
+      "status": "doctor_review_completed",
+      "employee_status": "returned_to_work"
+    }
+  },
+  "production": {
+    "rom": {"actual": 5234, "target": 6904, "variance": -1670, "variance_percent": -24.2, "unit": "tonnes"},
+    "decline": {"actual": 4987, "target": 6200, "variance": -1213, "variance_percent": -19.6, "unit": "tonnes"},
+    "product": {"actual": 5456, "target": 6634, "variance": -1178, "variance_percent": -17.8, "unit": "tonnes"},
+    "loads": {
+      "tuesday": 78,
+      "performance": "below_average"
+    },
+    "blast": {
+      "faces_blasted": 7,
+      "tonnes_blasted": null,
+      "breakdown": "5 Mn + 2 waste",
+      "note": "7 faces blasted: 5 Mn + 2 waste"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": {"available": 7, "total": 8, "percentage": 87.5},
+      "FL": {"available": 5, "total": 5, "percentage": 100.0},
+      "HD": {"available": 4, "total": 5, "percentage": 80.0},
+      "RT": {"available": 5, "total": 5, "percentage": 100.0},
+      "SR": {"available": 4, "total": 5, "percentage": 80.0},
+      "UV": {"available": 3, "total": 3, "percentage": 100.0}
+    }
+  },
+  "shift_readiness": {
+    "production_tmm": [
+      {"type": "DT", "name": "Dump Trucks", "available": 7, "total": 8, "readiness_percent": 87.5, "issues": ["DT unit service"]},
+      {"type": "FL", "name": "Front Loaders", "available": 5, "total": 5, "readiness_percent": 100.0},
+      {"type": "HD", "name": "Hydraulic Drills", "available": 4, "total": 5, "readiness_percent": 80.0, "issues": ["HD maintenance"]},
+      {"type": "RT", "name": "Roof Bolters", "available": 5, "total": 5, "readiness_percent": 100.0},
+      {"type": "SR", "name": "Scalers", "available": 4, "total": 5, "readiness_percent": 80.0, "issues": ["SR repair"]},
+      {"type": "UV", "name": "Utility Vehicles", "available": 3, "total": 3, "readiness_percent": 100.0}
+    ]
+  },
+  "breakdowns": {
+    "production_issues": [
+      {"vehicle": "DT_unit", "type": "dump_truck", "issues": ["scheduled service"], "status": "service"},
+      {"vehicle": "HD_unit", "type": "hydraulic_drill", "issues": ["maintenance required"], "status": "maintenance"},
+      {"vehicle": "SR_unit", "type": "scaler", "issues": ["repair needed"], "status": "repair"}
+    ]
+  },
+  "operational": {
+    "fire_alarms": 0,
+    "crusher_blockages": 0,
+    "chute_blockages": 0,
+    "plant_status": "operational"
+  },
+  "performance_summary": {
+    "key_highlights": [
+      "Safety clear - IOD follow-up completed, employee returned to work",
+      "FL, RT, UV at 100% availability",
+      "7 blast faces completed (5 Mn + 2 waste)",
+      "Production data fully restored post-incident"
+    ],
+    "key_issues": [
+      "Production significantly below targets (17-24% variance)",
+      "78 loads below expected performance",
+      "DT, HD, SR all at reduced availability (80-87.5%)",
+      "Multiple units requiring service/maintenance"
+    ],
+    "overall_status": "production_below_target_maintenance_required",
+    "priority_level": "medium"
+  }
+}

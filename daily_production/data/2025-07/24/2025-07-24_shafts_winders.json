@@ -1,0 +1,91 @@
+{
+  "report_metadata": {
+    "date": "2025-07-24",
+    "data_date": "2025-07-23",
+    "site": "Shafts & Winders",
+    "engineer": "Xavier Peterson",
+    "report_type": "daily_production",
+    "report_day": "Thursday",
+    "data_day": "Wednesday",
+    "timestamp": "2025-07-24T07:15:00Z"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "notes": "Clear Wednesday operations"
+  },
+  "power_supply": {
+    "stoppages": 0,
+    "status": "operational"
+  },
+  "shafts_winders": {
+    "nchwaning2": {
+      "production_winder": {"code": "Nch2 PW", "stoppages": 0, "status": "operational"},
+      "rock_winder": {"code": "Nch2 RW", "stoppages": 0, "status": "operational"}
+    },
+    "nchwaning3": {
+      "production_winder": {"code": "Nch3 PW", "stoppages": 0, "status": "operational"}
+    },
+    "gloria": {
+      "production_winder": {"code": "GL PW", "stoppages": 0, "status": "operational"}
+    }
+  },
+  "main_fans": {
+    "gloria": {"stoppages": 0, "status": "operational"},
+    "nchwaning2": {"stoppages": 0, "status": "operational"},
+    "nchwaning3": {"stoppages": 0, "status": "operational"}
+  },
+  "lamprooms": {
+    "gloria": {"stoppages": 0, "status": "operational"},
+    "nchwaning2": {"stoppages": 0, "status": "operational"},
+    "nchwaning3": {"stoppages": 0, "status": "operational"}
+  },
+  "dam_levels": {
+    "DD01": {
+      "sunday": 100.3, "monday": 100.2, "tuesday": 100.1, "wednesday": 100.0,
+      "thursday": null, "friday": null, "saturday": null,
+      "unit": "percent"
+    },
+    "DD02": {
+      "sunday": 89.0, "monday": 91.2, "tuesday": 92.8, "wednesday": 94.1,
+      "thursday": null, "friday": null, "saturday": null,
+      "unit": "percent"
+    }
+  },
+  "ore_pass_levels": {
+    "weekly_tracking": [
+      {"day": "Sunday", "level_percent": 12.5},
+      {"day": "Monday", "level_percent": 14.2},
+      {"day": "Tuesday", "level_percent": 16.7},
+      {"day": "Wednesday", "level_percent": 18.9}
+    ]
+  },
+  "operational_metrics": {
+    "fire_scada_alarms": 0,
+    "fire_alarm_type": "ALL CLEARED",
+    "block_chutes": 0
+  },
+  "production": {
+    "weekly_summary": [
+      {"day": "Sunday", "actual": 0, "target": 1576, "variance": -1576, "note": "Solrock project impact"},
+      {"day": "Monday", "actual": 4892, "target": 5203, "variance": -311, "note": "Post-project resume"},
+      {"day": "Tuesday", "actual": 5567, "target": 5203, "variance": 364, "note": "Above target"},
+      {"day": "Wednesday", "actual": 5789, "target": 5203, "variance": 586, "note": "Excellent performance - 11% above target"}
+    ]
+  },
+  "performance_summary": {
+    "key_highlights": [
+      "OUTSTANDING PERFORMANCE: Wednesday 11% above target (5,789t vs 5,203t)",
+      "ALL fire SCADA alarms CLEARED - perfect safety systems",
+      "All infrastructure 100% operational for third consecutive day",
+      "DD01 dam stable at 100%",
+      "Ore pass levels rising excellently (18.9%)",
+      "Zero stoppages across all systems"
+    ],
+    "key_issues": [
+      "DD02 dam level continuing upward trend (94.1%) - monitor closely"
+    ],
+    "overall_status": "outstanding_performance_all_systems_excellent",
+    "priority_level": "low"
+  }
+}

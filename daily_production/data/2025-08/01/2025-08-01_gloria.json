@@ -1,0 +1,119 @@
+{
+  "report_metadata": {
+    "date": "2025-08-01",
+    "data_date": "2025-08-01",
+    "site": "Gloria",
+    "engineer": "Sipho Dubazane",
+    "timestamp": "06:32"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 3511,
+      "target": 3873,
+      "variance": -362,
+      "variance_percentage": -9.3
+    },
+    "decline": {
+      "actual": 3677,
+      "target": 3873,
+      "variance": -196,
+      "variance_percentage": -5.1
+    },
+    "product": {
+      "actual": 3873,
+      "target": 0,
+      "variance": 3873,
+      "note": "No target specified - excellent production"
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 61},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 57},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 24}
+    ]
+  },
+  "silo_levels": {
+    "surface": {
+      "silo_1": 33,
+      "silo_2": 11,
+      "silo_3": 87,
+      "silo_4": 86
+    },
+    "underground": {
+      "silo_74": 18,
+      "silo_hg": 14,
+      "silo_d": 18,
+      "silo_lg": 17
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": 100,
+      "FL": 79,
+      "HD": 100,
+      "RT": 88,
+      "SR": 100
+    },
+    "emulsion_uv": {
+      "available": 2,
+      "total": 2,
+      "availability": 100
+    },
+    "manitou": {
+      "available": 0,
+      "total": 1,
+      "availability": 0
+    },
+    "manlifts": {
+      "available": 2,
+      "total": 2,
+      "availability": 100
+    }
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 6, "total": 6},
+      "FL": {"available": 4, "total": 5},
+      "HD": {"available": 4, "total": 4},
+      "RT": {"available": 4, "total": 4},
+      "SR": {"available": 3, "total": 4}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "FL0083", "issue": "Bucket line boring"},
+      {"unit": "SR0040", "issue": "Starter faulty"}
+    ]
+  },
+  "operational": {
+    "main_fans": "in_order",
+    "plant_blockages": 0,
+    "fire_alarms": 1,
+    "fire_alarm_details": ["74N"]
+  },
+  "performance_summary": {
+    "key_issues": [
+      "ROM production 9.3% below target (-362t)",
+      "Decline production 5.1% below target (-196t)",
+      "FL availability below 80% (79%)",
+      "RT availability below 90% (88%)",
+      "Manitou completely unavailable (0%)",
+      "Surface Silo 2 critically low at 11%",
+      "All underground silos below 20%",
+      "Fire alarm active at 74N location",
+      "Night Shift performance significantly low (24 truckloads vs 57-61 for other shifts)"
+    ],
+    "key_highlights": [
+      "Safety status clear (no injuries)",
+      "Product output excellent (3,873t with no target)",
+      "DT, HD, and SR at 100% availability",
+      "Surface Silos 3 and 4 at good levels (87%, 86%)",
+      "Main fans operational",
+      "No plant blockages"
+    ]
+  }
+}
