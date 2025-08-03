@@ -1,0 +1,110 @@
+name: Claude Code Cloud Integration
+on:
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [created, edited]
+  workflow_dispatch:
+
+jobs:
+  claude-processor:
+    runs-on: ubuntu-latest
+    if: contains(github.event.comment.body, '@claude') || github.event_name == 'issues'
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      - name: Install Claude Code
+        run: |
+          npm install -g @anthropic-ai/claude-code
+          
+      - name: Process GitHub Issue with Claude
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Extract issue/comment content
+          if [ "${{ github.event_name }}" = "issues" ]; then
+            CONTENT="${{ github.event.issue.body }}"
+            ISSUE_NUMBER="${{ github.event.issue.number }}"
+          else
+            CONTENT="${{ github.event.comment.body }}"
+            ISSUE_NUMBER="${{ github.event.issue.number }}"
+          fi
+          
+          # Create a new branch for this work
+          BRANCH_NAME="claude-issue-${ISSUE_NUMBER}-$(date +%s)"
+          git checkout -b "$BRANCH_NAME"
+          
+          # Process the request with Claude Code
+          echo "Processing request: $CONTENT"
+          
+          # Use Claude Code to process the vault request
+          claude-code "$CONTENT"
+          
+          # Commit any changes
+          git config --local user.email "action@github.com"
+          git config --local user.name "Claude Code Bot"
+          
+          if git diff --quiet; then
+            echo "No changes made"
+            exit 0
+          fi
+          
+          git add -A
+          git commit -m "feat: Process issue #${ISSUE_NUMBER} - $(echo "$CONTENT" | head -c 50)...
+
+          🤖 Generated with Claude Code via GitHub Actions
+          
+          Co-Authored-By: Claude <noreply@anthropic.com>"
+          
+          # Push the branch
+          git push origin "$BRANCH_NAME"
+          
+          # Create a pull request
+          gh pr create \
+            --title "Claude Code: Process Issue #${ISSUE_NUMBER}" \
+            --body "Automated processing of issue #${ISSUE_NUMBER}
+
+          **Original Request:**
+          $CONTENT
+
+          **Changes Made:**
+          - Processed vault request using Claude Code
+          - Generated/modified files as requested
+          - Ready for review and merge
+
+          🤖 This PR was created automatically by Claude Code running in GitHub Actions." \
+            --head "$BRANCH_NAME" \
+            --base master
+            
+      - name: Comment on Issue
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issueNumber = context.payload.issue?.number || context.payload.pull_request?.number;
+            
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: `✅ **Claude Code Processing Complete**
+              
+              I've processed your request and created a pull request with the changes. 
+              
+              **Next Steps:**
+              1. Review the PR that was just created
+              2. Merge it when you're ready
+              3. Pull the changes to your local vault
+              
+              🤖 *Processed automatically by Claude Code in the cloud*`
+            });
