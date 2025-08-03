@@ -64,6 +64,26 @@ jobs:
             - You have authority to approve/reject based on standards adherence
             
             ## Review Criteria (from CLAUDE.md):
+            
+            **IMPORTANT: System files are EXEMPT from vault conventions:**
+            
+            **System Configuration Files:**
+            - CLAUDE.md, GEMINI.md (AI configuration)
+            - README.md, LICENSE (repository documentation)
+            - package.json, requirements.txt (dependencies/environment)
+            - .gitignore, .gitattributes (version control)
+            
+            **System Directories (and all contents):**
+            - .claude/ (Claude Code configuration, commands, hooks, settings)
+            - .github/ (GitHub Actions, workflows, templates)
+            - .git/ (version control system)
+            - node_modules/, .venv/, __pycache__/ (runtime/cache)
+            - scripts/ (automation/utility scripts)
+            
+            **Principle**: If it configures the system, defines AI behavior, or enables infrastructure - it's EXEMPT.
+            Vault conventions apply to CONTENT files only (user's notes, tasks, meetings, reports).
+            
+            **For Content Files Only:**
             1. **Folder Policy** (Section 2): Verify correct folder placement
                - 00_inbox/, projects/, tasks/, people/, personal/, reference/, media/, daily_production/
             2. **File Naming** (Section 3): Ensure format "YYYY-MM-DD – Descriptive Title.md"  
