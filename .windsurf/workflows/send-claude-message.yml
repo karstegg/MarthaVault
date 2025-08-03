@@ -19,7 +19,7 @@ steps:
 
 ${{ inputs.message }}
 ---"
-      Add-Content -Path "g:\My Drive\GDVault\MarthaVault\GEMINI_CHAT.md" -Value $formattedMessage
+      Add-Content -Path "./GEMINI_CHAT.md" -Value $formattedMessage
     shell: powershell
 
   - name: Confirm Append

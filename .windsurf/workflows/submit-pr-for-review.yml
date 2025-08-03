@@ -27,29 +27,76 @@ inputs:
 
 steps:
   - name: Create and Switch to New Branch
-    run: git --verbose checkout -b ${{ inputs.branch_name }}
+    run: git checkout -b ${{ inputs.branch_name }}
+    shell: powershell
+
+  - name: Check for Errors
+    run: |
+      if ($LASTEXITCODE -ne 0) {
+        Write-Error "Failed to create new branch."
+        exit 1
+      }
     shell: powershell
 
   - name: Stage Changes
-    run: git --verbose add ${{ inputs.file_to_add }}
+    run: git add ${{ inputs.file_to_add }}
+    shell: powershell
+
+  - name: Check for Errors
+    run: |
+      if ($LASTEXITCODE -ne 0) {
+        Write-Error "Failed to stage changes."
+        exit 1
+      }
     shell: powershell
 
   - name: Commit Changes
-    run: git --verbose commit -m "${{ inputs.commit_message }}"
+    run: |
+      $env:COMMIT_MSG = "${{ inputs.commit_message }}"
+      git commit -m $env:COMMIT_MSG
+    shell: powershell
+
+  - name: Check for Errors
+    run: |
+      if ($LASTEXITCODE -ne 0) {
+        Write-Error "Failed to commit changes."
+        exit 1
+      }
     shell: powershell
 
   - name: Push Branch to Remote
-    run: git --verbose push -u origin ${{ inputs.branch_name }}
+    run: git push -u origin ${{ inputs.branch_name }}
+    shell: powershell
+
+  - name: Check for Errors
+    run: |
+      if ($LASTEXITCODE -ne 0) {
+        Write-Error "Failed to push branch to remote."
+        exit 1
+      }
     shell: powershell
 
   - name: Create Pull Request
-    run: gh pr create --title "${{ inputs.pr_title }}" --body "${{ inputs.pr_body }}"
+    run: |
+      $env:PR_TITLE = "${{ inputs.pr_title }}"
+      $env:PR_BODY = "${{ inputs.pr_body }}"
+      gh pr create --title $env:PR_TITLE --body $env:PR_BODY
+    shell: powershell
+
+  - name: Check for Errors
+    run: |
+      if ($LASTEXITCODE -ne 0) {
+        Write-Error "Failed to create pull request."
+        # Attempt to roll back by deleting the remote branch
+        git push origin --delete ${{ inputs.branch_name }}
+        exit 1
+      }
     shell: powershell
 
   - name: Return to Master Branch
-    run: git --verbose checkout master
+    run: git checkout master
     shell: powershell
 
   - name: Confirm PR Creation
-    run: echo "Pull Request successfully created for branch ${{ inputs.branch_name }}."
+    run: echo "Pull request created successfully for branch ${{ inputs.branch_name }}."
     shell: powershell

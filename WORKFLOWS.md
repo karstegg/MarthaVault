@@ -1,6 +1,6 @@
 # MarthaVault Autonomous Workflows
 
-This document outlines the standardized, autonomous workflows used by the Gemini assistant to ensure efficient, safe, and auditable contributions to the MarthaVault.
+This document outlines the standardized, autonomous workflows used by the Gemini 2.5 Pro assistant to ensure efficient, safe, and auditable contributions to the MarthaVault.
 
 ---
 
@@ -41,6 +41,21 @@ The following workflows are defined in the `.windsurf/workflows/` directory.
 4.  Pushes the branch to the remote GitHub repository.
 5.  Creates a Pull Request with a title and body, tagging `@claude-code` for review.
 6.  Switches the local repository back to the `master` branch.
+
+---
+
+## 3. Platform Requirements
+
+- **Shell:** These workflows are written in PowerShell and require a Windows environment with PowerShell installed.
+- **GitHub CLI:** The `gh` command-line tool must be installed and authenticated.
+
+---
+
+## 4. Troubleshooting
+
+- **Command Fails:** Check the Windsurf logs for the specific error message. The workflows now include error-checking steps that will report the cause of the failure.
+- **Authentication Issues:** Ensure `gh` and `git` are properly authenticated with GitHub.
+- **Workspace Instability:** If you see errors related to `uncommitted changes` or `local changes would be overwritten`, use `git status` to diagnose the issue and `git stash` to clean the working directory before re-running the workflow.
 
 **Inputs:**
 - `branch_name` (string): The name for the new branch.
