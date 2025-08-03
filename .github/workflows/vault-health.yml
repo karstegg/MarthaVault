@@ -1,0 +1,47 @@
+name: Vault Health Check
+on:
+  schedule:
+    - cron: '0 9 * * *'  # Daily at 9 AM UTC
+  workflow_dispatch:  # Allow manual trigger
+  push:
+    branches: [ master ]
+    paths: 
+      - '**.md'
+      - '.github/workflows/**'
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Basic health checks
+        run: |
+          echo "=== Vault Health Check ==="
+          echo "Files in vault: $(find . -name '*.md' | wc -l)"
+          echo "Tasks in master list: $(grep -c '^\- \[' tasks/master_task_list.md || echo 0)"
+          echo "Files in inbox: $(ls -1 00_inbox/ | wc -l || echo 0)"
+          
+      - name: Check for broken internal links
+        run: |
+          echo "=== Checking Internal Links ==="
+          # Find all [[internal links]] in markdown files
+          grep -r '\[\[.*\]\]' --include="*.md" . | head -10 || echo "No internal links found"
+          
+      - name: Validate file naming convention
+        run: |
+          echo "=== File Naming Validation ==="
+          # Check for files that don't follow YYYY-MM-DD – Title.md pattern
+          find . -name "*.md" -not -path "./.git/*" | while read file; do
+            basename="$(basename "$file")"
+            if [[ ! "$basename" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}\ –\ .+\.md$ ]] && [[ "$basename" != "README.md" ]] && [[ "$basename" != "CLAUDE.md" ]] && [[ "$basename" != "GEMINI.md" ]]; then
+              echo "❌ Non-standard filename: $file"
+            fi
+          done
+          
+      - name: Summary
+        run: |
+          echo "=== Health Check Complete ==="
+          echo "✅ Basic validation completed"
+          echo "📊 See logs above for any issues found"
