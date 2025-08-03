@@ -1,0 +1,352 @@
+{
+  "report_metadata": {
+    "report_date": "2025-08-01",
+    "data_date": "2025-07-31", 
+    "report_type": "Daily Production + Critical Safety Incident",
+    "critical_status": true,
+    "incident_severity": "injury_on_duty"
+  },
+  "critical_safety_incident": {
+    "incident_id": "NCH3-SR0030-20250731-2300",
+    "date": "2025-07-31",
+    "time": "23:00",
+    "location": {
+      "site": "Nchwaning 3",
+      "area": "Underground Shaft",
+      "section": "North West Section",
+      "specific_location": "13 West 104 South"
+    },
+    "equipment": {
+      "type": "TMM Scaler",
+      "unit": "SR0030",
+      "purpose": "Make safe operations"
+    },
+    "personnel": {
+      "occupation": "Scaler Operator",
+      "employment_status": "Temporary Support Worker Multiskilled Drill & Blast",
+      "line_managers": ["Marius Olivier", "Francois Viljoen"],
+      "notification_status": "completed"
+    },
+    "incident_description": {
+      "sequence": [
+        "Scaler en route to 13 West face for safety operations",
+        "Informed by production team about water pumping operations", 
+        "Operator conversed with co-worker about situation",
+        "Attempted to park scaler when left paddle malfunctioned",
+        "Left paddle stuck causing uncontrolled right turn",
+        "Scaler overturned and rolled twice",
+        "Operator unbuckled safety belt post-incident",
+        "Fortune (mechanic) contacted immediately",
+        "Shift boss informed by miner"
+      ],
+      "root_cause_suspected": "Left paddle malfunction/stuck",
+      "contributing_factors": ["Water pumping operations in area", "Paddle mechanical failure"]
+    },
+    "injuries": {
+      "left_wrist": {
+        "condition": "Painful injury",
+        "assessment_status": "awaiting_xray"
+      },
+      "left_knee": {
+        "condition": "Painful injury", 
+        "assessment_status": "awaiting_xray"
+      },
+      "medical_status": "awaiting_doctor_diagnosis"
+    },
+    "immediate_response": {
+      "safety_directive_issued": true,
+      "all_scalers_stopped": true,
+      "paddle_inspection_ordered": true,
+      "sites_affected": ["Nchwaning 2", "Gloria", "Nchwaning 3"],
+      "documentation_required": true,
+      "operator_briefing_required": true
+    }
+  },
+  "production_data": {
+    "nchwaning_2": {
+      "engineer": "Johan Kotze",
+      "safety_status": "Clear",
+      "rom": {
+        "actual": 5902,
+        "target": 6903,
+        "achievement_percent": 85.5
+      },
+      "product": {
+        "actual": 5382,
+        "target": 6514,
+        "achievement_percent": 82.6
+      },
+      "loads": {
+        "shift_1": "57 + 29 staged vs 80",
+        "shift_2": "66 vs 68", 
+        "shift_3": "65 vs 80"
+      },
+      "blast": {
+        "actual": "TBC",
+        "plan": 16
+      },
+      "tmm_availability": {
+        "DTs": 86,
+        "FLs": 93,
+        "HDs": 84,
+        "RTs": 95,
+        "SRs": 96
+      },
+      "support_equipment": {
+        "DZ13": 100,
+        "GD12": 0
+      },
+      "start_of_shift": {
+        "DT": "9/9",
+        "FL": "6/6", 
+        "HD": "6/6",
+        "RT": "6/6",
+        "SR": "6/6"
+      },
+      "emulsion_uvs": {
+        "units": ["UV137", "UV138", "UV108"],
+        "availability": 100
+      },
+      "logistics_uv": {
+        "units": ["UV54", "UV59", "UV120", "UV133"],
+        "availability": 50
+      },
+      "manlifts": {
+        "sampling": {
+          "units": ["UV77", "UV123"],
+          "availability": 50
+        },
+        "survey": {
+          "units": ["UV98", "UV99"], 
+          "availability": 100
+        }
+      },
+      "breakdowns": [
+        {"unit": "UV90", "issue": "water pump & timing"},
+        {"unit": "UV37", "issue": "steering"},
+        {"unit": "UV54", "issue": "FD oil leak"},
+        {"unit": "UV77", "issue": "bucket movement"},
+        {"unit": "UV133", "issue": "brakes"},
+        {"unit": "GR12", "issue": "warranty brakes (recurring)"},
+        {"unit": "HD65", "issue": "Right boom cylinder"}
+      ],
+      "plant_blockages": 0,
+      "fire_alarms": 0
+    },
+    "gloria": {
+      "engineer": "Sipho Dubazane",
+      "safety_status": "Clear",
+      "rom": {
+        "actual": 3511,
+        "target": 3873,
+        "achievement_percent": 90.7
+      },
+      "decline": {
+        "actual": 3677,
+        "target": 3873,
+        "achievement_percent": 94.9
+      },
+      "product": {
+        "actual": 3873,
+        "target": 0,
+        "note": "Exceeded expectations"
+      },
+      "surface_silos": {
+        "silo_1": 33,
+        "silo_2": 11,
+        "silo_3": 87,
+        "silo_4": 86
+      },
+      "underground_silos": {
+        "74": 18,
+        "HG": 14,
+        "D": 18,
+        "LG": 17
+      },
+      "loads": [61, 57, 24],
+      "tmm_availability": {
+        "DTs": 100,
+        "FLs": 79,
+        "HDs": 100,
+        "RTs": 88,
+        "SRs": 100
+      },
+      "start_of_shift": {
+        "DT": "6/6",
+        "FL": "4/5",
+        "HD": "4/4", 
+        "RT": "4/4",
+        "SR": "3/4"
+      },
+      "emulsion_uvs": "2/2",
+      "manitou": "0/1",
+      "manlifts": "2/2",
+      "breakdowns": [
+        {"unit": "FL0083", "issue": "Bucket line boring"},
+        {"unit": "SR0040", "issue": "Starter faulty"}
+      ],
+      "main_fans": "In Order",
+      "plant_blockages": "None", 
+      "fire_alarms": ["74N"]
+    },
+    "shafts_winders": {
+      "engineer": "Xavier Peterson",
+      "safety_status": "Clear",
+      "power_supply": "No Stoppages",
+      "shafts_winders": {
+        "nch2_pw": "No Stoppages",
+        "nch3_pw": "No Stoppages", 
+        "gl_pw": "No Stoppages",
+        "nch2_rw": "No Stoppages"
+      },
+      "main_fans": {
+        "gloria": "No Stoppages",
+        "nch2": "No Stoppages",
+        "nch3": "No Stoppages"
+      },
+      "lamprooms": {
+        "gloria": "No Stoppages",
+        "nch2": "No Stoppages", 
+        "nch3": "No Stoppages"
+      },
+      "dam_levels": {
+        "DD01": {
+          "friday": 100.3,
+          "saturday": 100.2,
+          "sunday": 100.2,
+          "monday": 100.2,
+          "tuesday": 100.2,
+          "wednesday": 100.2,
+          "thursday": 100.1
+        },
+        "DD02": {
+          "friday": 78.3,
+          "saturday": 88.5,
+          "sunday": 94.3,
+          "monday": 88.0,
+          "tuesday": 81.3,
+          "wednesday": 89.1,
+          "thursday": 80.2
+        }
+      },
+      "fire_scada_alarms": 0,
+      "block_chutes": "None",
+      "production": {
+        "friday": "151/0 PAY WEEKEND OFF",
+        "saturday": "0/1577 PAY WEEKEND OFF",
+        "sunday": "0/1577 PAY WEEKEND OFF", 
+        "monday": "4650/5204",
+        "tuesday": "6219/6623",
+        "wednesday": "7182/6623",
+        "thursday": "6267/5204",
+        "thursday_achievement_percent": 120.4
+      },
+      "ore_pass_levels": {
+        "friday": 22.0,
+        "saturday": 21.8,
+        "sunday": 21.9,
+        "monday": 24.4,
+        "tuesday": 36.9,
+        "wednesday": 19.1,
+        "thursday": 16.1
+      }
+    },
+    "nchwaning_3": {
+      "engineer": "Sello Sease",
+      "safety_status": "CRITICAL INCIDENT",
+      "incident_impact": true,
+      "rom": {
+        "actual": 5283,
+        "target": 8060,
+        "achievement_percent": 65.6
+      },
+      "decline": {
+        "actual": 4193,
+        "target": 7881,
+        "achievement_percent": 53.2
+      },
+      "product": {
+        "actual": 3096,
+        "target": 7250,
+        "achievement_percent": 42.7
+      },
+      "loads": [96, 74, 63],
+      "blast": "TBC",
+      "tmm_availability": {
+        "HDs": 88,
+        "DTs": 84,
+        "FLs": 96,
+        "RTs": 82,
+        "SRs": 94,
+        "UVs": 90,
+        "note": "SRs availability excluding SR0030 incident unit"
+      },
+      "support_equipment": {
+        "GD11": 100,
+        "DZ11": 100,
+        "UV044": 83
+      },
+      "start_of_shift": {
+        "HDs": "8/9",
+        "DTs": "10/14",
+        "FLs": "9/10",
+        "RTs": "8/10", 
+        "SRs": "8/10",
+        "UVs": "8/9"
+      },
+      "manlifts": "4/4",
+      "emulsion_uv": "4/4",
+      "breakdowns": "To be updated later",
+      "fire_alarms": "None",
+      "crusher_blockages": "None"
+    }
+  },
+  "immediate_actions_required": [
+    {
+      "action": "Complete scaler paddle inspections across all sites",
+      "priority": "critical",
+      "responsible": ["Johan Kotze", "Sipho Dubazane"],
+      "deadline": "immediate"
+    },
+    {
+      "action": "Document all scaler inspection results", 
+      "priority": "critical",
+      "responsible": ["Johan Kotze", "Sipho Dubazane"],
+      "deadline": "today"
+    },
+    {
+      "action": "Brief all scaler operators on safety belt protocols",
+      "priority": "critical", 
+      "responsible": ["Johan Kotze", "Sipho Dubazane"],
+      "deadline": "today"
+    },
+    {
+      "action": "Monitor injured operator medical status",
+      "priority": "high",
+      "responsible": ["Sello Sease", "Line Management"],
+      "deadline": "ongoing"
+    },
+    {
+      "action": "Investigate SR0030 root cause analysis",
+      "priority": "high", 
+      "responsible": ["Sello Sease", "Maintenance Team"],
+      "deadline": "48 hours"
+    }
+  ],
+  "performance_summary": {
+    "overall_rom_achievement": 71.1,
+    "overall_product_achievement": 68.7,
+    "sites_above_target": ["Gloria"],
+    "sites_below_target": ["Nchwaning 2", "Nchwaning 3"],
+    "critical_issues": [
+      "Safety incident with injury requiring immediate fleet inspection",
+      "Nchwaning 3 significantly underperformed due to incident",
+      "GD12 recurring warranty brake issues at Nchwaning 2"
+    ],
+    "positive_highlights": [
+      "Gloria exceeded product targets",
+      "Shafts & Winders infrastructure 100% operational", 
+      "Strong scaler availability (excluding incident unit)"
+    ]
+  }
+}

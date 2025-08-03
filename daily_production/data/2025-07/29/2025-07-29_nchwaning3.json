@@ -1,0 +1,125 @@
+{
+  "report_metadata": {
+    "date": "2025-07-28",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Simon Siase",
+    "report_type": "daily_production",
+    "timestamp": "2025-07-28T00:00:00Z"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "notes": "All clear"
+  },
+  "production": {
+    "rom": {
+      "actual": 3639,
+      "target": 0,
+      "variance": 3639,
+      "variance_percent": null,
+      "unit": "tonnes",
+      "note": "No target set - actual production achieved"
+    },
+    "decline": {
+      "actual": 4271,
+      "target": 0,
+      "variance": 4271,
+      "variance_percent": null,
+      "unit": "tonnes",
+      "note": "No target set - actual production achieved"
+    },
+    "product": {
+      "actual": 2617,
+      "target": 0,
+      "variance": 2617,
+      "variance_percent": null,
+      "unit": "tonnes",
+      "note": "No target set - actual production achieved"
+    },
+    "loads": [
+      {"load_number": 1, "actual": 28, "target": null, "variance": null},
+      {"load_number": 2, "actual": null, "target": null, "variance": null, "status": "no_data"},
+      {"load_number": 3, "actual": null, "target": null, "variance": null, "status": "no_data"}
+    ],
+    "blast": {
+      "faces": 15,
+      "unit": "faces",
+      "status": "completed"
+    },
+    "issues": []
+  },
+  "equipment_availability": {
+    "tmm": {
+      "hydraulic_drills": {"code": "HD", "availability_percent": 89},
+      "dump_trucks": {"code": "DT", "availability_percent": 76},
+      "front_loaders": {"code": "FL", "availability_percent": 83},
+      "roof_bolters": {"code": "RT", "availability_percent": 90},
+      "scalers": {"code": "SR", "availability_percent": 97},
+      "utility_vehicles": {"code": "UV", "availability_percent": 100}
+    },
+    "specialized": [
+      {"equipment_id": "GD11", "type": "grader", "availability_percent": 100, "status": "operational"},
+      {"equipment_id": "DZ11", "type": "dozer", "availability_percent": 98, "status": "operational"},
+      {"equipment_id": "UV044", "type": "utility_vehicle", "availability_percent": 84, "status": "operational"}
+    ]
+  },
+  "shift_readiness": {
+    "production_tmm": [
+      {"type": "HD", "name": "Hydraulic Drills", "available": 7, "total": 9, "readiness_percent": 77.8},
+      {"type": "DT", "name": "Dump Trucks", "available": 12, "total": 14, "readiness_percent": 85.7},
+      {"type": "FL", "name": "Front Loaders", "available": 9, "total": 10, "readiness_percent": 90.0},
+      {"type": "RT", "name": "Roof Bolters", "available": 10, "total": 10, "readiness_percent": 100.0},
+      {"type": "SR", "name": "Scalers", "available": 10, "total": 10, "readiness_percent": 100.0},
+      {"type": "UV", "name": "Utility Vehicles", "available": 9, "total": 9, "readiness_percent": 100.0}
+    ],
+    "support_equipment": [
+      {"type": "manlifts", "available": 4, "total": 4, "readiness_percent": 100.0},
+      {"type": "emulsion_uv", "available": 4, "total": 4, "readiness_percent": 100.0}
+    ]
+  },
+  "utility_vehicles": {
+    "manlifts": {
+      "availability_percent": 100,
+      "available": 4,
+      "total": 4,
+      "status": "operational"
+    },
+    "emulsion": {
+      "availability_percent": 100,
+      "available": 4,
+      "total": 4,
+      "status": "operational"
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"vehicle": "DT0149", "type": "dump_truck", "issues": ["hydraulic oil leak"]},
+      {"vehicle": "DT0161", "type": "dump_truck", "issues": ["propshaft"]},
+      {"vehicle": "FL0107", "type": "front_loader", "issues": ["bucket repair"]},
+      {"vehicle": "HD0055", "type": "hydraulic_drill", "issues": ["percussion hose"]},
+      {"vehicle": "HD0062", "type": "hydraulic_drill", "issues": ["engine FTS"]},
+      {"vehicle": "RT0052", "type": "roof_bolter", "issues": ["hydraulic fitting"]},
+      {"vehicle": "UV0047", "type": "utility_vehicle", "issues": ["brakes not releasing"]}
+    ]
+  },
+  "operational_metrics": {
+    "fire_alarms": 0,
+    "crusher_blockages": 0,
+    "chute_blockages": 0
+  },
+  "performance_summary": {
+    "key_highlights": [
+      "Strong production performance: ROM 3,639t, Decline 4,271t, Product 2,617t",
+      "No production targets set - all actual tonnage achieved",
+      "Excellent safety record: All clear",
+      "High availability: UVs 100%, SRs 97%, RTs 90%",
+      "Perfect readiness: RTs, SRs, UVs, Manlifts, Emulsion all 100%"
+    ],
+    "key_issues": [
+      "Multiple equipment breakdowns: 7 units down",
+      "DT availability low at 76%",
+      "Load data incomplete (2 of 3 loads missing data)"
+    ],
+    "overall_status": "performing_well"
+  }
+}

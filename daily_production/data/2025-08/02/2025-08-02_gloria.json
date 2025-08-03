@@ -1,0 +1,115 @@
+{
+  "report_metadata": {
+    "date": "2025-08-02",
+    "data_date": "2025-08-01",
+    "site": "Gloria",
+    "engineer": "Sipho Dubazane",
+    "timestamp": "06:45"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 4781,
+      "target": 3873,
+      "variance": 908,
+      "variance_percentage": 23.4
+    },
+    "decline": {
+      "actual": 4356,
+      "target": 3873,
+      "variance": 483,
+      "variance_percentage": 12.5
+    },
+    "product": {
+      "actual": 2615,
+      "target": 3773,
+      "variance": -1158,
+      "variance_percentage": -30.7
+    },
+    "loads": [
+      {"load": 1, "actual": 60},
+      {"load": 2, "actual": 44},
+      {"load": 3, "actual": 85}
+    ]
+  },
+  "silo_levels": {
+    "surface": {
+      "silo_1": 92,
+      "silo_2": 92,
+      "silo_3": 25,
+      "silo_4": 96
+    },
+    "underground": {
+      "silo_74": 21,
+      "silo_hg": 25,
+      "silo_d": 15,
+      "silo_lg": 18
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": 100,
+      "FL": 80,
+      "HD": 98,
+      "RT": 85,
+      "SR": 83
+    },
+    "emulsion_uv": {
+      "available": 2,
+      "total": 2,
+      "availability": 100
+    },
+    "manitou": {
+      "available": 0,
+      "total": 1,
+      "availability": 0
+    },
+    "manlifts": {
+      "available": 2,
+      "total": 2,
+      "availability": 100
+    }
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 6, "total": 6},
+      "FL": {"available": 4, "total": 5},
+      "HD": {"available": 4, "total": 4},
+      "RT": {"available": 4, "total": 4},
+      "SR": {"available": 4, "total": 4}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "FL0083", "issue": "Bucket line boring"}
+    ]
+  },
+  "operational": {
+    "main_fans": "in_order",
+    "plant_blockages": 0,
+    "fire_alarms": 0
+  },
+  "performance_summary": {
+    "key_issues": [
+      "Product production 30.7% below target (major shortfall)",
+      "Manitou completely unavailable (0%)",
+      "FL availability at 80% (below optimal)",
+      "SR availability at 83% (below optimal)",
+      "Surface Silo 3 critically low at 25%",
+      "All underground silos below 25%"
+    ],
+    "key_highlights": [
+      "Safety status clear",
+      "ROM production 23.4% above target (excellent)",
+      "Decline production 12.5% above target",
+      "DT availability at 100%",
+      "HD availability at 98%",
+      "Main fans operational",
+      "No plant blockages or fire alarms"
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "report_metadata": {
+    "date": "2025-07-27",
+    "data_date": "2025-07-26",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "report_type": "daily_production",
+    "report_day": "Sunday",
+    "data_day": "Saturday",
+    "timestamp": "2025-07-27T06:45:00Z"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "notes": "Clear"
+  },
+  "production": {
+    "rom": {"actual": 7198, "target": 6904, "variance": 294, "variance_percent": 4.3, "unit": "tonnes"},
+    "decline": {"actual": 6312, "target": 6200, "variance": 112, "variance_percent": 1.8, "unit": "tonnes"},
+    "product": {"actual": 6834, "target": 6634, "variance": 200, "variance_percent": 3.0, "unit": "tonnes"},
+    "loads": {
+      "saturday": 105,
+      "performance": "outstanding"
+    },
+    "blast": {
+      "faces_blasted": 12,
+      "tonnes_blasted": null,
+      "breakdown": "10 Mn + 2 waste",
+      "note": "12 faces blasted: 10 Mn + 2 waste - NEW SITE RECORD"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": {"available": 8, "total": 8, "percentage": 100.0},
+      "FL": {"available": 5, "total": 5, "percentage": 100.0},
+      "HD": {"available": 5, "total": 5, "percentage": 100.0},
+      "RT": {"available": 5, "total": 5, "percentage": 100.0},
+      "SR": {"available": 5, "total": 5, "percentage": 100.0},
+      "UV": {"available": 3, "total": 3, "percentage": 100.0}
+    }
+  },
+  "shift_readiness": {
+    "production_tmm": [
+      {"type": "DT", "name": "Dump Trucks", "available": 8, "total": 8, "readiness_percent": 100.0},
+      {"type": "FL", "name": "Front Loaders", "available": 5, "total": 5, "readiness_percent": 100.0},
+      {"type": "HD", "name": "Hydraulic Drills", "available": 5, "total": 5, "readiness_percent": 100.0},
+      {"type": "RT", "name": "Roof Bolters", "available": 5, "total": 5, "readiness_percent": 100.0},
+      {"type": "SR", "name": "Scalers", "available": 5, "total": 5, "readiness_percent": 100.0},
+      {"type": "UV", "name": "Utility Vehicles", "available": 3, "total": 3, "readiness_percent": 100.0}
+    ]
+  },
+  "breakdowns": {
+    "production_issues": []
+  },
+  "operational": {
+    "fire_alarms": 0,
+    "crusher_blockages": 0,
+    "chute_blockages": 0,
+    "plant_status": "operational"
+  },
+  "performance_summary": {
+    "key_highlights": [
+      "NEW SITE RECORD: 12 blast faces completed (10 Mn + 2 waste)",
+      "ALL TARGETS EXCEEDED: ROM +4.3%, Decline +1.8%, Product +3.0%",
+      "105 loads - outstanding performance sustained",
+      "ALL TMM at 100% availability for 4th consecutive day",
+      "Zero equipment breakdowns - sustained operational excellence",
+      "Record Mn production with 10 Mn faces out of 12"
+    ],
+    "key_issues": [],
+    "overall_status": "new_site_record_all_targets_exceeded",
+    "priority_level": "low"
+  }
+}

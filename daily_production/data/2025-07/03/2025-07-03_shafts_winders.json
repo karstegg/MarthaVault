@@ -1,0 +1,145 @@
+{
+  "report_metadata": {
+    "report_date": "2025-07-03",
+    "data_date": "2025-07-02",
+    "received_time": "06:59",
+    "engineer": "Xavier Petersen",
+    "site": "Shafts & Winders",
+    "report_type": "infrastructure_daily"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": [],
+    "fire_scada_alarms": 0
+  },
+  "infrastructure": {
+    "power_supply": {
+      "status": "operational",
+      "stoppages": 0,
+      "issues": []
+    },
+    "winders": {
+      "nch2_pw": {
+        "status": "operational",
+        "stoppages": 0,
+        "issues": []
+      },
+      "nch3_pw": {
+        "status": "operational", 
+        "stoppages": 0,
+        "issues": []
+      },
+      "gl_pw": {
+        "status": "operational",
+        "stoppages": 0,
+        "issues": []
+      },
+      "nch2_rw": {
+        "status": "delayed",
+        "stoppages": 1,
+        "issues": [
+          {
+            "type": "oil_leak",
+            "location": "3-7LVL",
+            "description": "Oil leak at 3-7LVL",
+            "resolution": "Winder Technician Fitter repaired leaking pipes",
+            "status": "repaired"
+          }
+        ]
+      }
+    },
+    "main_fans": {
+      "gloria": {
+        "status": "operational",
+        "stoppages": 0,
+        "issues": []
+      },
+      "nchwaning_2": {
+        "status": "operational",
+        "stoppages": 0,
+        "issues": []
+      },
+      "nchwaning_3": {
+        "status": "operational",
+        "stoppages": 0,
+        "issues": []
+      }
+    },
+    "lamprooms": {
+      "gloria": {
+        "status": "operational",
+        "stoppages": 0,
+        "issues": []
+      },
+      "nchwaning_2": {
+        "status": "operational",
+        "stoppages": 0,
+        "issues": []
+      },
+      "nchwaning_3": {
+        "status": "operational",
+        "stoppages": 0,
+        "issues": []
+      }
+    }
+  },
+  "dam_levels": {
+    "dd01": {
+      "friday": 101.0,
+      "saturday": 101.0,
+      "sunday": 100.9,
+      "monday": 100.8,
+      "tuesday": 100.9,
+      "wednesday": 100.7,
+      "thursday": null,
+      "trend": "stable_high",
+      "capacity_status": "full"
+    },
+    "dd02": {
+      "friday": 78.8,
+      "saturday": 88.1,
+      "sunday": 87.8,
+      "monday": 88.5,
+      "tuesday": 86.8,
+      "wednesday": 83.5,
+      "thursday": null,
+      "trend": "declining",
+      "capacity_status": "adequate"
+    }
+  },
+  "operational_metrics": {
+    "block_chutes": 0,
+    "fire_scada_alarms": 0
+  },
+  "production_context": {
+    "project": "Shaft Barrel Repair Project",
+    "friday_production": 183,
+    "saturday_production": 0,
+    "saturday_target": 1640,
+    "sunday_production": 1276,
+    "sunday_target": 1640,
+    "project_impact": "significant_production_reduction",
+    "weekend_recovery": "partial"
+  },
+  "analysis": {
+    "infrastructure_reliability": "high",
+    "critical_issues": [
+      "Nch2 RW oil leak at 3-7LVL (resolved)",
+      "DD02 dam declining trend (83.5%)",
+      "Shaft Barrel Repair Project impacting production"
+    ],
+    "positive_indicators": [
+      "All power systems operational",
+      "All main fans operational", 
+      "All lamprooms operational",
+      "DD01 dam stable at full capacity",
+      "Zero fire SCADA alarms",
+      "Oil leak quickly repaired"
+    ],
+    "recommendations": [
+      "Monitor DD02 dam levels closely",
+      "Continue Shaft Barrel Repair Project progress tracking",
+      "Preventive maintenance on other winder oil systems"
+    ]
+  }
+}

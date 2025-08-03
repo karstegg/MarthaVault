@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "site": "Gloria",
+    "engineer": "Sipho Dubazane",
+    "report_date": "2025-07-01",
+    "data_date": "2025-06-30",
+    "received_time": "06:56",
+    "report_type": "daily_production"
+  },
+  "safety": {
+    "status": "All clear",
+    "incidents": [],
+    "concerns": []
+  },
+  "production": {
+    "rom": {
+      "actual": 916,
+      "target": 2890,
+      "variance": -1974,
+      "performance_pct": 31.7
+    },
+    "decline": {
+      "actual": 4813,
+      "target": 2650,
+      "variance": 2163,
+      "performance_pct": 181.6
+    },
+    "product": {
+      "actual": 2278,
+      "target": 2980,
+      "variance": -702,
+      "performance_pct": 76.4
+    },
+    "loads": {
+      "details": "74;79;45",
+      "total_loads": 198
+    }
+  },
+  "equipment": {
+    "tmm_availability": {
+      "DT": 99,
+      "FL": 55,
+      "HD": 67,
+      "RT": 100,
+      "SR": 58
+    },
+    "shift_ready_equipment": {
+      "DT": {
+        "available": 6,
+        "total": 6,
+        "percentage": 100
+      },
+      "FL": {
+        "available": 3,
+        "total": 5,
+        "percentage": 60
+      },
+      "HD": {
+        "available": 3,
+        "total": 4,
+        "percentage": 75
+      },
+      "RT": {
+        "available": 4,
+        "total": 4,
+        "percentage": 100
+      },
+      "SR": {
+        "available": 3,
+        "total": 4,
+        "percentage": 75
+      }
+    },
+    "specialized_equipment": {
+      "emulsion_uv": {
+        "available": 2,
+        "total": 2,
+        "percentage": 100
+      },
+      "manitou": {
+        "available": 1,
+        "total": 1,
+        "percentage": 100
+      },
+      "manlifts": {
+        "available": 0,
+        "total": 2,
+        "percentage": 0,
+        "issues": ["UV0076 & UV0097 Radius arm"]
+      }
+    },
+    "breakdowns": [
+      {
+        "equipment": "FL0081",
+        "issue": "Speed sensor",
+        "category": "FL"
+      },
+      {
+        "equipment": "FL0083",
+        "issue": "Bucket movement",
+        "category": "FL"
+      },
+      {
+        "equipment": "HD0060",
+        "issue": "Anti parallel cylinder",
+        "category": "HD"
+      },
+      {
+        "equipment": "SR0037",
+        "issue": "Tail frame",
+        "category": "SR"
+      }
+    ]
+  },
+  "storage": {
+    "surface_silos": {
+      "silo_1": 94,
+      "silo_2": 93,
+      "silo_3": 92,
+      "silo_4": 57,
+      "average": 84.0
+    },
+    "underground_silos": {
+      "74": 19,
+      "HG": 14,
+      "D": 15,
+      "LG": 27,
+      "average": 18.8
+    }
+  },
+  "infrastructure": {
+    "main_fans": "In Order",
+    "plant_blockages": "None",
+    "fire_alarm": "None"
+  },
+  "analysis": {
+    "critical_issues": [
+      "ROM significantly underperformed (27.0% of target)",
+      "FL availability critically low at 55%",
+      "SR availability low at 58%",
+      "Both manlifts out of service"
+    ],
+    "positive_performance": [
+      "Decline exceeded target by 5.7%",
+      "Product exceeded target by 2.8%",
+      "RT availability at 100%",
+      "DT availability excellent at 99%"
+    ],
+    "equipment_concerns": [
+      "Multiple FL units down (FL0081, FL0083)",
+      "HD0060 hydraulic issues",
+      "SR0037 structural issues",
+      "Manlift fleet completely unavailable"
+    ]
+  }
+}

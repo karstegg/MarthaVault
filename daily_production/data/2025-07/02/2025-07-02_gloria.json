@@ -1,0 +1,180 @@
+{
+  "report_metadata": {
+    "site": "Gloria",
+    "engineer": "Sipho Dubazane",
+    "report_date": "2025-07-02",
+    "data_date": "2025-07-01",
+    "received_time": "06:39",
+    "shift_period": "2025-07-01 operations"
+  },
+  "safety": {
+    "status": "All clear",
+    "incidents": [],
+    "fire_alarms": "None",
+    "safety_rating": "green"
+  },
+  "production": {
+    "rom": {
+      "actual": 2308,
+      "target": 2890,
+      "variance": -582,
+      "performance_pct": 79.9,
+      "status": "below_target"
+    },
+    "decline": {
+      "actual": 2977,
+      "target": 2650,
+      "variance": 327,
+      "performance_pct": 112.3,
+      "status": "above_target"
+    },
+    "product": {
+      "actual": 2694,
+      "target": 2980,
+      "variance": -286,
+      "performance_pct": 90.4,
+      "status": "below_target"
+    },
+    "loads": {
+      "counts": [49, 48, 25],
+      "total": 122,
+      "average": 40.7,
+      "performance": "variable"
+    }
+  },
+  "equipment": {
+    "tmm_availability": {
+      "DT": {
+        "availability_pct": 94,
+        "start_of_shift": "6/6",
+        "operational": 6,
+        "total_fleet": 6,
+        "status": "excellent"
+      },
+      "FL": {
+        "availability_pct": 50,
+        "start_of_shift": "3/5",
+        "operational": 3,
+        "total_fleet": 4,
+        "status": "poor",
+        "issues": [
+          "FL0081 - Speed sensor",
+          "FL0083 - Bucket movement"
+        ]
+      },
+      "HD": {
+        "availability_pct": 67,
+        "start_of_shift": "4/4",
+        "operational": 4,
+        "total_fleet": 4,
+        "status": "fair"
+      },
+      "RT": {
+        "availability_pct": 89,
+        "start_of_shift": "4/4",
+        "operational": 4,
+        "total_fleet": 4,
+        "status": "good"
+      },
+      "SR": {
+        "availability_pct": 64,
+        "start_of_shift": "3/4",
+        "operational": 3,
+        "total_fleet": 4,
+        "status": "fair",
+        "issues": [
+          "SR0037 - Tail frame"
+        ]
+      }
+    },
+    "specialized_equipment": {
+      "UV": {
+        "operational": "2/2",
+        "status": "fully_operational"
+      },
+      "Manitou": {
+        "operational": "1/1",
+        "status": "fully_operational"
+      },
+      "Manlifts": {
+        "operational": "2/2",
+        "status": "fully_operational"
+      }
+    },
+    "breakdown_summary": {
+      "total_issues": 3,
+      "critical_equipment": ["FL0081", "FL0083", "SR0037"],
+      "impact_assessment": "FL availability significantly impacted"
+    }
+  },
+  "storage": {
+    "surface_silos": {
+      "silo_1": {
+        "level_pct": 76,
+        "status": "good"
+      },
+      "silo_2": {
+        "level_pct": 93,
+        "status": "high"
+      },
+      "silo_3": {
+        "level_pct": 79,
+        "status": "good"
+      },
+      "silo_4": {
+        "level_pct": 85,
+        "status": "good"
+      },
+      "average_level": 83.25,
+      "capacity_status": "well_stocked"
+    },
+    "underground_silos": {
+      "silo_74": {
+        "level_pct": 23,
+        "status": "low"
+      },
+      "silo_HG": {
+        "level_pct": 14,
+        "status": "very_low"
+      },
+      "silo_D": {
+        "level_pct": 15,
+        "status": "very_low"
+      },
+      "silo_LG": {
+        "level_pct": 20,
+        "status": "low"
+      },
+      "average_level": 18.0,
+      "capacity_status": "critically_low"
+    }
+  },
+  "infrastructure": {
+    "main_fans": "In Order",
+    "plant_blockages": "None",
+    "fire_alarms": "None",
+    "ventilation_status": "operational",
+    "overall_status": "green"
+  },
+  "performance_analysis": {
+    "overall_rating": "mixed",
+    "key_concerns": [
+      "ROM production 20.1% below target",
+      "Product output 9.6% below target", 
+      "FL equipment availability critical at 50%",
+      "Underground silo levels critically low at 18% average"
+    ],
+    "positive_aspects": [
+      "Decline production 12.3% above target",
+      "Excellent DT availability at 94%",
+      "All specialized equipment operational",
+      "Clean safety record"
+    ],
+    "priority_actions": [
+      "Address FL0081 speed sensor issue",
+      "Repair FL0083 bucket movement problem",
+      "Fix SR0037 tail frame",
+      "Replenish underground silo levels"
+    ]
+  }
+}
