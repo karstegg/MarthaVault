@@ -1,0 +1,43 @@
+{
+  "report_date": "2025-07-07",
+  "site": "Nchwaning 2",
+  "source": "Sikelela Shaft Engineer",
+  "safety": {
+    "status": "Clear",
+    "incidents": []
+  },
+  "production": {
+    "rom": { "actual": null, "target": null, "unit": "t" },
+    "product": { "actual": null, "target": null, "unit": "t" },
+    "decline": { "actual": null, "target": null, "unit": "t" },
+    "loads": { "actual": null, "target": null, "unit": "loads" }
+  },
+  "tmm_availability": {
+    "start_of_shift": {
+      "production": [
+        { "type": "DT", "available": 9, "total": 9 },
+        { "type": "FL", "available": 6, "total": 6 },
+        { "type": "HD", "available": 6, "total": 6 },
+        { "type": "RT", "available": 6, "total": 6 },
+        { "type": "SR", "available": 6, "total": 6 }
+      ],
+      "graben": [
+        { "type": "DT", "available": 1, "total": 2 },
+        { "type": "FL", "available": 2, "total": 2 },
+        { "type": "HD", "available": 2, "total": 2 },
+        { "type": "RT", "available": 2, "total": 2 },
+        { "type": "SR", "available": 2, "total": 2 }
+      ]
+    }
+  },
+  "breakdowns": [
+    { "tmm_id": "DT99", "description": "oil cooler" },
+    { "tmm_id": "FL85", "description": "propshaft" }
+  ],
+  "mtd_production": {
+    "target": 29539,
+    "actual": 23345,
+    "unit": "t"
+  },
+  "notes": "This report was submitted on 2025-07-07 and primarily contains TMM availability for the start of shift. Production data (ROM, Product) is a summary for the preceding weekend (July 4-6) and is not representative of July 7th itself."
+}
