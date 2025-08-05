@@ -15,72 +15,43 @@
     ]
   },
   "production": {
-    "rom": [
-      {
-        "day": "Sat",
-        "actual": 5277,
-        "target": 8060
-      },
-      {
-        "day": "Sun",
-        "actual": 7252,
-        "target": 0
-      },
-      {
-        "day": "Mon",
-        "actual": 3347,
-        "target": 0
-      }
-    ],
-    "decline": [
-      {
-        "day": "Sat",
-        "actual": 4979,
-        "target": 7889
-      },
-      {
-        "day": "Sun",
-        "actual": 6804,
-        "target": 7889
-      },
-      {
-        "day": "Mon",
-        "actual": 3843,
-        "target": 0
-      }
-    ],
-    "product": [
-        {
-            "actual": 3843,
-            "target": 7257
-        },
-        {
-            "actual": 6560,
-            "target": 7257
-        },
-        {
-            "actual": 3885,
-            "target": 0
-        }
-    ],
-    "loads": [126, 97, 41]
+    "notes": "Production data reflects weekend totals (Sat-Mon, July 5-7) as reported on Monday, July 7th.",
+    "saturday_rom": {"actual": 5277, "target": 8060},
+    "sunday_rom": {"actual": 7252, "target": 0},
+    "monday_rom": {"actual": 3347, "target": 0},
+    "saturday_decline": {"actual": 4979, "target": 7889},
+    "sunday_decline": {"actual": 6804, "target": 7889},
+    "monday_decline": {"actual": 3843, "target": 0},
+    "saturday_product": {"actual": 3843, "target": 7257},
+    "sunday_product": {"actual": 6560, "target": 7257},
+    "monday_product": {"actual": 3885, "target": 0},
+    "loads": {
+      "saturday": 126,
+      "sunday": 97,
+      "monday": 41
+    }
+  },
+  "equipment_availability": {
+    "notes": "No TMM availability data was included in this production report.",
+    "production_fleet": {},
+    "graben_fleet": {}
   },
   "source_validation": {
     "safety_incident": {
       "value": "Property damage Uv 0124",
-      "source_line": 382,
+      "source_line": 1296,
       "source_quote": "Property damage Uv 0124",
       "confidence": "HIGH"
     },
     "rom_saturday": {
       "value": "Sat-5277 vs 8060",
-      "source_line": 385,
+      "source_line": 1299,
       "source_quote": "Sat-5277 vs 8060",
       "confidence": "HIGH"
     },
     "loads": {
         "value": "126,97,41",
-        "source_line": 400,
+        "source_line": 1314,
         "source_quote": "126,97,41",
         "confidence": "HIGH"
     }

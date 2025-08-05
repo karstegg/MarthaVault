@@ -1,3 +1,8 @@
+Status:: #status/new
+Priority:: #priority/medium
+Assignee::
+DueDate::
+
 # Daily Report: Shafts & Winders - 2025-07-07
 
 **Report Details**
@@ -40,5 +45,5 @@
 ---
 
 ## Source Validation
-- **Safety Status:** `Clear` (Line 262)
-- **Nch2 RW Stoppage:** `Sat: 3-7LVL Feeder Liner Replacement` (Line 278)
+- **Safety Status:** `Clear` (Line 1176)
+- **Nch2 RW Stoppage:** `Sat: 3-7LVL Feeder Liner Replacement` (Line 1192)

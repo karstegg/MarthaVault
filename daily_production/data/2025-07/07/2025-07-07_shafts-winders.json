@@ -68,16 +68,21 @@
       }
     ]
   },
+  "equipment_availability": {
+    "notes": "No TMM availability data is included in the Shafts & Winders daily stoppage report.",
+    "production_fleet": {},
+    "graben_fleet": {}
+  },
   "source_validation": {
     "safety_status": {
       "value": "Clear",
-      "source_line": 262,
+      "source_line": 1176,
       "source_quote": "Clear",
       "confidence": "HIGH"
     },
     "nch2_rw_stoppage": {
       "value": "Sat: 3-7LVL Feeder Liner Replacement",
-      "source_line": 278,
+      "source_line": 1192,
       "source_quote": "Sat: 3-7LVL Feeder Liner Replacement",
       "confidence": "HIGH"
     }
