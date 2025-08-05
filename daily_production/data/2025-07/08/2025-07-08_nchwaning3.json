@@ -1,0 +1,120 @@
+{
+    "report_metadata": {
+        "date": "2025-07-08",
+        "site": "Nchwaning 3",
+        "engineer": "Sello Sease",
+        "report_type": "daily_production",
+        "timestamp": "06:52",
+        "source": "WhatsApp"
+    },
+    "safety": {
+        "status": "Clear",
+        "incidents": 0,
+        "notes": []
+    },
+    "production": {
+        "rom": {
+            "actual": 4422,
+            "target": 8060,
+            "variance": -3638,
+            "unit": "tonnes"
+        },
+        "decline": {
+            "actual": 3740,
+            "target": 6179,
+            "variance": -2439,
+            "unit": "tonnes"
+        },
+        "product": {
+            "actual": 3360,
+            "target": 7257,
+            "variance": -3897,
+            "unit": "tonnes"
+        }
+    },
+    "equipment_availability": {
+        "production_fleet": {
+            "haul_trucks": {
+                "code": "HD",
+                "available": 9,
+                "total": 9
+            },
+            "dump_trucks": {
+                "code": "DT",
+                "available": 11,
+                "total": 14
+            },
+            "front_loaders": {
+                "code": "FL",
+                "available": 9,
+                "total": 10
+            },
+            "roof_bolters": {
+                "code": "RT",
+                "available": 10,
+                "total": 10
+            },
+            "scalers": {
+                "code": "SR",
+                "available": 9,
+                "total": 10
+            }
+        }
+    },
+    "breakdowns": {
+        "current_breakdowns": [
+            {
+                "vehicle": "DT0109",
+                "description": "Strata, gears and spares"
+            },
+            {
+                "vehicle": "DT0147",
+                "description": "Electrical Breakdown split drive."
+            },
+            {
+                "vehicle": "DT0119",
+                "description": "Strata."
+            },
+            {
+                "vehicle": "FL0098",
+                "description": "OEM crack welding."
+            },
+            {
+                "vehicle": "SR0038",
+                "description": "Investigation"
+            }
+        ]
+    },
+    "source_validation": {
+        "rom_production": {
+            "value": 4422,
+            "source_line": 521,
+            "source_quote": "4422 vs 8060",
+            "confidence": "HIGH"
+        },
+        "decline_production": {
+            "value": 3740,
+            "source_line": 524,
+            "source_quote": "3740 vs 6179",
+            "confidence": "HIGH"
+        },
+        "product_production": {
+            "value": 3360,
+            "source_line": 527,
+            "source_quote": "3360 vs 7257",
+            "confidence": "HIGH"
+        },
+        "dt_availability": {
+            "value": "11/14",
+            "source_line": 550,
+            "source_quote": "DTs: 11/14",
+            "confidence": "HIGH"
+        },
+        "dt_breakdown": {
+            "value": "DT0109 - Strata, gears and spares",
+            "source_line": 561,
+            "source_quote": "DT0109 - Strata, gears and spares",
+            "confidence": "HIGH"
+        }
+    }
+}

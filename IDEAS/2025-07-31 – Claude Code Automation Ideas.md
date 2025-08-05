@@ -56,4 +56,26 @@ DueDate::
 - Performance analytics
 - Automated briefings for management
 
-#automation #claude-code #personal-productivity #AI #reference #year/2025
+## WhatsApp Integration Concept
+**Source**: McKay Wrigley YouTube video mention
+
+### Core Idea
+- Use MCPs (Model Context Protocol) or automations with WhatsApp via Cloud Code on GitHub
+- Automatically fetch daily report messages as they come in from WhatsApp
+- Process and save data in structured format
+- Fully automated daily production reporting pipeline
+
+### Potential Capabilities
+- Auto-fetch WhatsApp messages with daily production data
+- Process incoming reports and convert to structured JSON/Markdown
+- Create direct WhatsApp → Claude Code communication channel
+- Claude Code can respond with attachments, messages, etc. via WhatsApp
+- Eliminate manual copy-paste of daily reports
+
+### Implementation Benefits
+- 24/7 automated report processing
+- Instant data structuring and analysis
+- Immediate alerts for critical issues
+- Seamless integration with existing reporting workflow
+
+#automation #claude-code #personal-productivity #AI #reference #whatsapp-integration #daily-reports #year/2025

@@ -1,0 +1,52 @@
+{
+  "report_metadata": {
+    "site": "Nchwaning 2",
+    "report_date": "2025-07-07",
+    "data_date": "2025-07-06",
+    "engineer": "Johan Kotze",
+    "time_received": "07:28",
+    "shift_period": "2025-07-06 Day & Night Shifts",
+    "source": "WhatsApp"
+  },
+  "safety": {
+    "status": "Clear",
+    "incidents": 0,
+    "notes": []
+  },
+  "production": {
+    "rom": { "actual": 15670, "target": 15000, "variance": 670, "unit": "tonnes" },
+    "product": { "actual": 14210, "target": 14000, "variance": 210, "unit": "tonnes" },
+    "decline": { "actual": 0, "target": 0, "variance": 0, "unit": "tonnes" },
+    "loads": [55, 53, 56]
+  },
+  "equipment_availability": {
+    "tmm": {
+      "dump_trucks": { "code": "DT", "availability_percent": 90 },
+      "front_loaders": { "code": "FL", "availability_percent": 85 },
+      "hydraulic_drills": { "code": "HD", "availability_percent": 95 },
+      "roof_bolters": { "code": "RT", "availability_percent": 92 },
+      "scalers": { "code": "SR", "availability_percent": 88 }
+    }
+  },
+  "shift_readiness": {
+    "production_tmm": [
+      { "type": "DT", "available": 9, "total": 10, "readiness_percent": 90 },
+      { "type": "FL", "available": 8, "total": 10, "readiness_percent": 80 }
+    ]
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      { "vehicle": "DT0099", "type": "dump_truck", "issues": ["Oil cooler issues"] },
+      { "vehicle": "FL0085", "type": "front_loader", "issues": ["Propshaft problems"] }
+    ]
+  },
+  "utility_vehicles": {
+    "water_bowsers": { "code": "WB", "availability_percent": 100 },
+    "diesel_bowsers": { "code": "DB", "availability_percent": 100 }
+  },
+  "performance_analysis": {
+    "overall_rating": "Good",
+    "key_focus_areas": ["Maintain TMM availability", "Address minor breakdowns promptly"],
+    "notes": "Solid performance over the weekend shift."
+  }
+}

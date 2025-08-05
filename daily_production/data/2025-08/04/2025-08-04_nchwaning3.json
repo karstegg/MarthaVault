@@ -1,0 +1,132 @@
+{
+  "report_metadata": {
+    "date": "2025-08-04",
+    "data_date": "2025-08-03",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "additional_info": ["Weekend planned major work completed", "Scaler audit completed by Piet Izaaks"]
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 4093,
+      "target": 0,
+      "variance": 4093,
+      "variance_percent": "N/A",
+      "note": "No target specified"
+    },
+    "decline": {
+      "actual": 4879,
+      "target": 0,
+      "variance": 4879,
+      "variance_percent": "N/A",
+      "note": "No target specified"
+    },
+    "product": {
+      "actual": 5672,
+      "target": 0,
+      "variance": 5672,
+      "variance_percent": "N/A",
+      "note": "No target specified"
+    },
+    "loads": [
+      {
+        "shift": "saturday",
+        "truckloads_tipped": 75
+      },
+      {
+        "shift": "sunday",
+        "truckloads_tipped": 69
+      }
+    ],
+    "blast": {
+      "status": "TBC",
+      "note": "To be confirmed"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "hd": "not_reported",
+      "dt": "not_reported", 
+      "fl": "not_reported",
+      "rt": "not_reported",
+      "sr": "not_reported",
+      "uv": "not_reported"
+    },
+    "specialized": [
+      {
+        "equipment": "GD11",
+        "availability": "not_reported"
+      },
+      {
+        "equipment": "DZ11",
+        "availability": "not_reported"
+      },
+      {
+        "equipment": "UV044",
+        "availability": "not_reported"
+      }
+    ]
+  },
+  "equipment_readiness": {
+    "start_of_shift": {
+      "hd": "8/9",
+      "dt": "9/14", 
+      "fl": "8/10",
+      "rt": "10/10",
+      "sr": "8/10",
+      "uv": "8/9"
+    },
+    "support_equipment": {
+      "manlifts": "4/4",
+      "emulsion_uv": "4/4"
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [],
+    "total_breakdowns": 0,
+    "note": "To be updated"
+  },
+  "operational": {
+    "fire_alarms": 0,
+    "crusher_chute_blockages": 0
+  },
+  "weekend_maintenance": {
+    "completed_work": [
+      {
+        "equipment": "FL 0107",
+        "work": "Bucket replacement completed"
+      },
+      {
+        "work": "Pipes and strainer box replaced"
+      },
+      {
+        "equipment": "FL 0108", 
+        "work": "Bucket repaired"
+      }
+    ],
+    "special_activities": [
+      {
+        "activity": "All Scalers audited and report completed by Piet Izaaks"
+      }
+    ]
+  },
+  "performance_summary": {
+    "key_highlights": [
+      "Strong production performance across all metrics",
+      "Excellent weekend truckload performance (144 total loads)",
+      "Major maintenance completed on FL equipment",
+      "Comprehensive scaler audit completed",
+      "All infrastructure systems clear"
+    ],
+    "key_issues": [
+      "TMM availability percentages not reported",
+      "Blast data to be confirmed",
+      "Current breakdown status incomplete"
+    ]
+  }
+}

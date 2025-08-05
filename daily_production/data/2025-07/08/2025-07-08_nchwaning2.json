@@ -1,0 +1,138 @@
+{
+    "report_metadata": {
+        "date": "2025-07-08",
+        "site": "Nchwaning 2",
+        "engineer": "Sikelela Nzuza",
+        "report_type": "daily_production",
+        "timestamp": "07:19",
+        "source": "WhatsApp"
+    },
+    "safety": {
+        "status": "Clear",
+        "incidents": 0,
+        "notes": []
+    },
+    "production": {
+        "rom": {
+            "actual": 4345,
+            "target": 6903,
+            "variance": -2558,
+            "unit": "tonnes"
+        },
+        "product": {
+            "actual": 3049,
+            "target": 4305,
+            "variance": -1256,
+            "unit": "tonnes"
+        }
+    },
+    "equipment_availability": {
+        "production_fleet": {
+            "dump_trucks": {
+                "code": "DT",
+                "available": 9,
+                "total": 9
+            },
+            "front_loaders": {
+                "code": "FL",
+                "available": 6,
+                "total": 6
+            },
+            "haul_trucks": {
+                "code": "HD",
+                "available": 5,
+                "total": 6
+            },
+            "roof_bolters": {
+                "code": "RT",
+                "available": 4,
+                "total": 6
+            },
+            "scalers": {
+                "code": "SR",
+                "available": 6,
+                "total": 6
+            }
+        }
+    },
+    "breakdowns": {
+        "current_breakdowns": [
+            {
+                "vehicle": "HD65",
+                "description": "shank"
+            },
+            {
+                "vehicle": "RT40",
+                "description": "no movement"
+            },
+            {
+                "vehicle": "RT36",
+                "description": "damage"
+            },
+            {
+                "vehicle": "UV90",
+                "description": "water pump & timing"
+            },
+            {
+                "vehicle": "UV37",
+                "description": "lights"
+            },
+            {
+                "vehicle": "UV59",
+                "description": "smoking"
+            },
+            {
+                "vehicle": "UV66",
+                "description": "articulation"
+            },
+            {
+                "vehicle": "UV54",
+                "description": "oil leak"
+            },
+            {
+                "vehicle": "UV72",
+                "description": "oil leak"
+            },
+            {
+                "vehicle": "UV119",
+                "description": "overheating"
+            },
+            {
+                "vehicle": "FL85",
+                "description": "propshaft"
+            }
+        ]
+    },
+    "source_validation": {
+        "rom_production": {
+            "value": 4345,
+            "source_line": 665,
+            "source_quote": "ROM:             4345 v 6903t",
+            "confidence": "HIGH"
+        },
+        "product_production": {
+            "value": 3049,
+            "source_line": 666,
+            "source_quote": "Product:        3049 v 4305t",
+            "confidence": "HIGH"
+        },
+        "hd_availability": {
+            "value": "5/6",
+            "source_line": 685,
+            "source_quote": "HD: 5/6    HD65 shank",
+            "confidence": "HIGH"
+        },
+        "rt_availability": {
+            "value": "4/6",
+            "source_line": 686,
+            "source_quote": "RT:  4/6     RT40 no movement; RT36 damage",
+            "confidence": "HIGH"
+        },
+        "uv_breakdown": {
+            "value": "UV90- water pump & timing",
+            "source_line": 700,
+            "source_quote": "UV90- water pump & timing",
+            "confidence": "HIGH"
+        }
+    }
+}
