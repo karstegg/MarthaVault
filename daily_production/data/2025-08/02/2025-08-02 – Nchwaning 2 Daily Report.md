@@ -7,18 +7,23 @@ JSONData:: [[2025-08-02_nchwaning2.json]]
 **Engineer**: [[Johan Kotze]] (Acting for [[Sikilela Nzuza]])  
 **Site**: Nchwaning 2  
 
-## 🟡 PLANNED SHUTDOWN INVESTIGATION
+## 🔴 PRODUCTION SHORTFALL ALERT
 
 ### Safety Status
 ✅ **CLEAR** - No incidents reported
 
 ### Production Performance
-🔴 **CRITICAL ISSUES IDENTIFIED**
+🔴 **PRODUCTION SHORTFALL ALERT**
 
-| Metric | Actual | Target | Variance | Performance |
-|--------|--------|--------|----------|-------------|
-| **ROM** | 0t | 0t | 0t | **Planned shutdown - confirmation pending with Johan** |
-| **Product** | 6,133t | 6,514t | -381t | **94.2% (5.8% below target)** |
+| Metric      | Actual | Target | Variance | Performance                        |
+| ----------- | ------ | ------ | -------- | ---------------------------------- |
+| **ROM**     | 6,180t | 6,903t | -723t    | **89.5% (10.5% below target)** 🔴 |
+| **Product** | 6,133t | 6,514t | -381t    | **94.2% (5.8% below target)** ⚠️  |
+
+#### ROM Production by Shift
+- **Day Shift**: 1,127t vs 2,301t target = **49% performance** 🔴 **CRITICAL**
+- **Afternoon Shift**: 2,703t vs 2,100t target = **129% performance** ✅ **EXCEEDED**
+- **Night Shift**: 2,350t vs 2,500t target = **94% performance** ⚠️
 
 #### Load & Haul Fleet Performance (Truckloads Tipped by Shift)
 - **Day Shift**: 64 truckloads total (45 + 19 staged) vs 80 target = **80% performance**
@@ -82,11 +87,21 @@ JSONData:: [[2025-08-02_nchwaning2.json]]
 
 ## Performance Summary
 - **Safety**: Clear status maintained ✅
-- **Production**: Planned shutdown pending confirmation 🟡
+- **Production**: Significant shortfall with day shift critical underperformance 🔴
 - **Equipment**: Multiple breakdowns impacting operations ⚠️
 - **Readiness**: RT and SR teams at full capacity ✅
+
+### Key Performance Issues
+- **Day shift ROM**: Only 49% of target achieved (1,127t vs 2,301t)
+- **Overall ROM**: 10.5% below daily target (-723t shortfall)
+- **Equipment availability**: 10 units currently broken down
+
+### Positive Highlights
+- **Afternoon shift**: Exceeded ROM target by 29% (2,703t vs 2,100t)
+- **Night shift**: Near-target performance at 94%
+- **Safety**: Zero incidents reported
 
 ---
 *Report processed: 2025-08-02 | Data period: 2025-08-01 | Source: WhatsApp 06:49*
 
-#daily-production #nchwaning2 #critical #johan-kotze #year/2025
+#daily-production #nchwaning2 #underperforming #johan-kotze #year/2025

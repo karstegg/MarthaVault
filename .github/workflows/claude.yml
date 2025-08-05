@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      pull-requests: read
+      pull-requests: read # First run - manual approval only
       issues: read
       id-token: write
       actions: read # Required for Claude to read CI results on PRs
@@ -107,11 +107,20 @@ jobs:
             1. Read full CLAUDE.md for complete context
             2. Review changes against ALL vault conventions
             3. Check file placement, naming, tags, front-matter
-            4. Provide specific feedback with section references
-            5. Approve only when standards are fully met
-            6. Tag @karstegg for final merge approval
+            4. Validate daily production reports against templates in Report Templates/
+            5. Cross-reference equipment codes with reference/equipment/brmo_fleet_database.json
+            6. Provide specific feedback with section references
+            7. **MANUAL APPROVAL ONLY** for first run - recommend approval/rejection
+            8. Tag @karstegg for final merge decision
             
-            Always be thorough, reference specific CLAUDE.md sections, and maintain vault integrity.
+            ## Daily Production Report Context:
+            - Template files: Report Templates/Standard Mine Site Report Template.md, Report Templates/Shafts & Winders Report Template.md
+            - Equipment database: reference/equipment/brmo_fleet_database.json (BEV vs diesel classification)
+            - JSON schema: Follow existing patterns in daily_production/data/YYYY-MM/DD/
+            - Sites: Gloria, Nchwaning 2, Nchwaning 3, Shafts & Winders
+            - Engineers: Sipho Dubazane (Gloria), Johan Kotze (N2), Sello Sease (N3), Xavier Peterson (S&W)
+            
+            Always be thorough, reference specific CLAUDE.md sections, recommend approval when standards met, and maintain vault integrity.
           
           # Optional: Custom environment variables for Claude
           # claude_env: |

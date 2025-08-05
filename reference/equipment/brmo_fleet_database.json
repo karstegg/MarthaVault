@@ -1,0 +1,220 @@
+{
+  "metadata": {
+    "last_updated": "2025-08-04",
+    "source": "BRMO UG Production Fleet.md",
+    "description": "Complete BRMO underground production fleet database with BEV/diesel classification"
+  },
+  "sites": {
+    "gloria": {
+      "dump_trucks": {
+        "diesel": [
+          {"equipment_no": "DT0105", "oem": "Epiroc", "model": "MT 436 LP"},
+          {"equipment_no": "DT0106", "oem": "Epiroc", "model": "MT 436 LP"},
+          {"equipment_no": "DT0152", "oem": "CAT", "model": "AD 30"},
+          {"equipment_no": "DT0153", "oem": "CAT", "model": "AD 30"},
+          {"equipment_no": "DT0173", "oem": "CAT", "model": "AD 30"},
+          {"equipment_no": "DT0174", "oem": "CAT", "model": "AD 30"}
+        ],
+        "bev": []
+      },
+      "front_loaders": {
+        "diesel": [
+          {"equipment_no": "FL0064", "oem": "Epiroc", "model": "ST14"},
+          {"equipment_no": "FL0081", "oem": "Epiroc", "model": "ST14"},
+          {"equipment_no": "FL0083", "oem": "Epiroc", "model": "ST14"},
+          {"equipment_no": "FL0118", "oem": "", "model": ""},
+          {"equipment_no": "FL0119", "oem": "Epiroc", "model": "ST14"}
+        ],
+        "bev": []
+      },
+      "roof_bolters": [
+        {"equipment_no": "RT0046", "oem": "Epiroc", "model": "235H"},
+        {"equipment_no": "RT0045", "oem": "Epiroc", "model": "235H"},
+        {"equipment_no": "RT0037", "oem": "Epiroc", "model": "235H"},
+        {"equipment_no": "RT0060", "oem": "Epiroc", "model": "235H"}
+      ],
+      "hydraulic_drills": [
+        {"equipment_no": "HD0059", "oem": "Epiroc", "model": "282"},
+        {"equipment_no": "HD0060", "oem": "Epiroc", "model": "282"},
+        {"equipment_no": "HD0066", "oem": "Epiroc", "model": "282"},
+        {"equipment_no": "HD0048", "oem": "Epiroc", "model": "282"}
+      ],
+      "scalers": [
+        {"equipment_no": "SR0037", "oem": "Aard", "model": "Super 220E"},
+        {"equipment_no": "SR0052", "oem": "Aard", "model": "Super 220E"},
+        {"equipment_no": "SR0017", "oem": "Aard", "model": "Super 220E"},
+        {"equipment_no": "SR0040", "oem": "Aard", "model": "Super 220E"}
+      ]
+    },
+    "nchwaning_3": {
+      "dump_trucks": {
+        "diesel": [
+          {"equipment_no": "DT0109", "oem": "CAT", "model": "AD 30"},
+          {"equipment_no": "DT0118", "oem": "CAT", "model": "AD 30"},
+          {"equipment_no": "DT0119", "oem": "CAT", "model": "AD 30"},
+          {"equipment_no": "DT0131", "oem": "CAT", "model": "AD 30"},
+          {"equipment_no": "DT0145", "oem": "CAT", "model": "AD 45"},
+          {"equipment_no": "DT0148", "oem": "CAT", "model": "AD 45"},
+          {"equipment_no": "DT0154", "oem": "CAT", "model": "AD 30"},
+          {"equipment_no": "DT0160", "oem": "CAT", "model": "AD 30"},
+          {"equipment_no": "DT0161", "oem": "CAT", "model": "AD 30"}
+        ],
+        "bev": [
+          {"equipment_no": "DT0146", "oem": "Epiroc", "model": "MT 42 B"},
+          {"equipment_no": "DT0147", "oem": "Epiroc", "model": "MT 42 B"},
+          {"equipment_no": "DT0149", "oem": "Epiroc", "model": "MT 42 B"},
+          {"equipment_no": "DT0150", "oem": "Epiroc", "model": "MT 42 B"},
+          {"equipment_no": "DT0162", "oem": "Epiroc", "model": "MT 42 B"},
+          {"equipment_no": "DT0163", "oem": "Epiroc", "model": "MT 42 B"},
+          {"equipment_no": "DT0171", "oem": "Epiroc", "model": "MT 42 B"}
+        ]
+      },
+      "front_loaders": {
+        "diesel": [
+          {"equipment_no": "FL0082", "oem": "Epiroc", "model": "ST14"},
+          {"equipment_no": "FL0090", "oem": "Epiroc", "model": "ST14"},
+          {"equipment_no": "FL0091", "oem": "Epiroc", "model": "ST14"},
+          {"equipment_no": "FL0101", "oem": "Epiroc", "model": "ST14"},
+          {"equipment_no": "FL0103", "oem": "Epiroc", "model": "ST14"}
+        ],
+        "bev": [
+          {"equipment_no": "FL0098", "oem": "Epiroc", "model": "ST14 B"},
+          {"equipment_no": "FL0099", "oem": "Epiroc", "model": "ST14 B"},
+          {"equipment_no": "FL0107", "oem": "Epiroc", "model": "ST14 B"},
+          {"equipment_no": "FL0108", "oem": "Epiroc", "model": "ST14 B"},
+          {"equipment_no": "FL0112", "oem": "Epiroc", "model": "ST14 B"},
+          {"equipment_no": "FL0113", "oem": "Epiroc", "model": "ST14 B"}
+        ]
+      },
+      "roof_bolters": [
+        {"equipment_no": "RT0047", "oem": "Epiroc", "model": "235 H"},
+        {"equipment_no": "RT0048", "oem": "Epiroc", "model": "235 H"},
+        {"equipment_no": "RT0049", "oem": "Epiroc", "model": "235 H"},
+        {"equipment_no": "RT0051", "oem": "Epiroc", "model": "235 H"},
+        {"equipment_no": "RT0052", "oem": "Epiroc", "model": "235 H"},
+        {"equipment_no": "RT0054", "oem": "Epiroc", "model": "235 H"},
+        {"equipment_no": "RT0055", "oem": "Epiroc", "model": "235 H"},
+        {"equipment_no": "RT0057", "oem": "Epiroc", "model": "235 H"},
+        {"equipment_no": "RT0058", "oem": "Epiroc", "model": "235 H"},
+        {"equipment_no": "RT0025", "oem": "Epiroc", "model": "235 H"}
+      ],
+      "hydraulic_drills": [
+        {"equipment_no": "HD0049", "oem": "Epiroc", "model": "S2"},
+        {"equipment_no": "HD0050", "oem": "Epiroc", "model": "S2"},
+        {"equipment_no": "HD0051", "oem": "Epiroc", "model": "S2"},
+        {"equipment_no": "HD0052", "oem": "Epiroc", "model": "S2"},
+        {"equipment_no": "HD0054", "oem": "Epiroc", "model": "S2"},
+        {"equipment_no": "HD0055", "oem": "Epiroc", "model": "S2"},
+        {"equipment_no": "HD0056", "oem": "Epiroc", "model": "S2"},
+        {"equipment_no": "HD0061", "oem": "Epiroc", "model": "S2"},
+        {"equipment_no": "HD0062", "oem": "Epiroc", "model": "S2"}
+      ],
+      "scalers": [
+        {"equipment_no": "SR0038", "oem": "Bell", "model": "220"},
+        {"equipment_no": "SR0024", "oem": "Aard", "model": "Super 220E"},
+        {"equipment_no": "SR0026", "oem": "Aard", "model": "Super 220E"},
+        {"equipment_no": "SR0028", "oem": "Aard", "model": "Super 220E"},
+        {"equipment_no": "SR0030", "oem": "Aard", "model": "Super 220E"},
+        {"equipment_no": "SR0035", "oem": "Aard", "model": "Super 220E"},
+        {"equipment_no": "SR0039", "oem": "Aard", "model": "Super 220E"},
+        {"equipment_no": "SR0043", "oem": "Aard", "model": "Super 220E"},
+        {"equipment_no": "SR0044", "oem": "Aard", "model": "Super 220E"}
+      ]
+    },
+    "nchwaning_2": {
+      "main_area": {
+        "dump_trucks": {
+          "diesel": [
+            {"equipment_no": "DT0120", "oem": "CAT", "model": "AD 30"},
+            {"equipment_no": "DT0121", "oem": "CAT", "model": "AD 30"},
+            {"equipment_no": "DT0122", "oem": "CAT", "model": "AD 30"},
+            {"equipment_no": "DT0157", "oem": "CAT", "model": "AD 30"},
+            {"equipment_no": "DT0158", "oem": "CAT", "model": "AD 30"},
+            {"equipment_no": "DT0159", "oem": "CAT", "model": "AD 30"},
+            {"equipment_no": "DT0169", "oem": "CAT", "model": "AD 30"},
+            {"equipment_no": "DT0170", "oem": "CAT", "model": "AD 30"},
+            {"equipment_no": "DT0128", "oem": "CAT", "model": "AD 30"}
+          ],
+          "bev": []
+        },
+        "front_loaders": {
+          "diesel": [
+            {"equipment_no": "FL0066", "oem": "Epiroc", "model": "ST14"},
+            {"equipment_no": "FL0068", "oem": "Epiroc", "model": "ST14"},
+            {"equipment_no": "FL0086", "oem": "Epiroc", "model": "ST14"},
+            {"equipment_no": "FL0087", "oem": "Epiroc", "model": "ST14"},
+            {"equipment_no": "FL0102", "oem": "Epiroc", "model": "ST14"},
+            {"equipment_no": "FL0120", "oem": "Epiroc", "model": "ST14"},
+            {"equipment_no": "FL0114", "oem": "Epiroc", "model": "ST14"}
+          ],
+          "bev": []
+        },
+        "roof_bolters": [
+          {"equipment_no": "RT0036", "oem": "Epiroc", "model": "235 H"},
+          {"equipment_no": "RT0038", "oem": "Epiroc", "model": "235 H"},
+          {"equipment_no": "RT0040", "oem": "Epiroc", "model": "235 H"},
+          {"equipment_no": "RT0043", "oem": "Epiroc", "model": "235 H"},
+          {"equipment_no": "RT0050", "oem": "Epiroc", "model": "235 H"},
+          {"equipment_no": "RT0056", "oem": "Epiroc", "model": "235 H"}
+        ],
+        "hydraulic_drills": [
+          {"equipment_no": "HD0046", "oem": "Epiroc", "model": "282"},
+          {"equipment_no": "HD0053", "oem": "Epiroc", "model": "282"},
+          {"equipment_no": "HD0064", "oem": "Epiroc", "model": "282"},
+          {"equipment_no": "HD0065", "oem": "Epiroc", "model": "282"},
+          {"equipment_no": "HD0067", "oem": "Epiroc", "model": "282"},
+          {"equipment_no": "HD0068", "oem": "Epiroc", "model": "282"}
+        ],
+        "scalers": [
+          {"equipment_no": "SR0025", "oem": "Aard", "model": "Super 220A"},
+          {"equipment_no": "SR0027", "oem": "Aard", "model": "Super 220A"},
+          {"equipment_no": "SR0029", "oem": "Aard", "model": "Super 220A"},
+          {"equipment_no": "SR0033", "oem": "Aard", "model": "Super 220E"},
+          {"equipment_no": "SR0042", "oem": "Aard", "model": "Super 220E"},
+          {"equipment_no": "SR0046", "oem": "Aard", "model": "Super 220E"},
+          {"equipment_no": "SR0045", "oem": "Aard", "model": "Super 220E"}
+        ]
+      },
+      "graben_area": {
+        "dump_trucks": {
+          "diesel": [
+            {"equipment_no": "DT0099", "oem": "Epiroc", "model": "MT 436 LP"},
+            {"equipment_no": "DT0176", "oem": "CAT", "model": "AD 30LP"}
+          ],
+          "bev": []
+        },
+        "front_loaders": {
+          "diesel": [
+            {"equipment_no": "FL0092", "oem": "Epiroc", "model": "ST1030"}
+          ],
+          "bev": []
+        },
+        "hydraulic_drills": [
+          {"equipment_no": "HD0035", "oem": "Epiroc", "model": "282"},
+          {"equipment_no": "HD0063", "oem": "Epiroc", "model": "282"}
+        ],
+        "roof_bolters": [
+          {"equipment_no": "RT0032", "oem": "Epiroc", "model": "235 H"},
+          {"equipment_no": "RT0053", "oem": "Epiroc", "model": "235 H"}
+        ],
+        "scalers": [
+          {"equipment_no": "SR0036", "oem": "Aard", "model": "Super 220A"}
+        ]
+      }
+    }
+  },
+  "equipment_totals": {
+    "by_site": {
+      "gloria": {"dump_trucks": 6, "front_loaders": 5, "roof_bolters": 4, "hydraulic_drills": 4, "scalers": 4},
+      "nchwaning_3": {"dump_trucks": 16, "front_loaders": 10, "roof_bolters": 10, "hydraulic_drills": 9, "scalers": 9},
+      "nchwaning_2_main": {"dump_trucks": 9, "front_loaders": 7, "roof_bolters": 6, "hydraulic_drills": 6, "scalers": 7},
+      "nchwaning_2_graben": {"dump_trucks": 2, "front_loaders": 1, "roof_bolters": 2, "hydraulic_drills": 2, "scalers": 1}
+    },
+    "by_power_type": {
+      "bev_dump_trucks": 7,
+      "diesel_dump_trucks": 26,
+      "bev_front_loaders": 6,
+      "diesel_front_loaders": 17
+    }
+  }
+}

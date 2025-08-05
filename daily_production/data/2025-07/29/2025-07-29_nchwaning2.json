@@ -1,8 +1,10 @@
 {
   "report_metadata": {
-    "date": "2025-07-28",
+    "date": "2025-07-29",
+    "data_date": "2025-07-28", 
     "site": "Nchwaning 2",
-    "engineer": "Sikelela Nzuza",
+    "engineer": "Johan Kotze",
+    "acting_for": "Sikelela Nzuza",
     "report_type": "daily_production",
     "timestamp": "2025-07-28T00:00:00Z"
   },
