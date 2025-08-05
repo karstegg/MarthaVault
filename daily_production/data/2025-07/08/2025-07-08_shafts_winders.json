@@ -1,0 +1,72 @@
+{
+    "report_metadata": {
+        "date": "2025-07-08",
+        "site": "Shafts & Winders",
+        "engineer": "Xavier Petersen",
+        "report_type": "daily_infrastructure",
+        "timestamp": "07:00",
+        "source": "WhatsApp"
+    },
+    "safety": {
+        "status": "Clear",
+        "incidents": 0,
+        "notes": []
+    },
+    "power_supply": {
+        "status": "No Stoppages"
+    },
+    "shaft_status": [
+        {
+            "name": "Nchwaning 2 PW",
+            "status": "No Stoppages"
+        },
+        {
+            "name": "Nchwaning 3 PW",
+            "status": "No Stoppages"
+        },
+        {
+            "name": "Gloria PW",
+            "status": "No Stoppages"
+        },
+        {
+            "name": "Nchwaning 2 RW",
+            "status": "Delay",
+            "details": "Interface between Shaft and Winder Faulty",
+            "resolution": "Winder Technician Electrician Attended to Issue"
+        }
+    ],
+    "fan_status": [
+        {
+            "name": "Gloria Main Fan",
+            "status": "No Stoppages"
+        },
+        {
+            "name": "Nchwaning 2 Main Fan",
+            "status": "No Stoppages"
+        },
+        {
+            "name": "Nchwaning 3 Main Fan",
+            "status": "No Stoppages"
+        }
+    ],
+    "source_validation": {
+        "safety_status": {
+            "value": "Clear",
+            "source_line": 578,
+            "source_quote": "Clear",
+            "confidence": "HIGH"
+        },
+        "nch2_rw_delay": {
+            "value": "Interface between Shaft and Winder Faulty",
+            "source_line": 595,
+            "source_quote": "Interface between Shaft and Winder Faulty",
+            "confidence": "HIGH"
+        },
+        "nch2_rw_fix": {
+            "value": "Winder Technician Electrician Attended to Issue",
+            "source_line": 597,
+            "source_quote": "Winder Technician Electrician Attended to Issue",
+            "confidence": "HIGH"
+        }
+    }
+}
