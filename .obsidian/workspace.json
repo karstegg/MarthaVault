@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/Raw Whatsap Data for Daily Reports.md",
+                "file": "daily_production/2025-07-07 – Nchwaning 2 Daily Report.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Raw Whatsap Data for Daily Reports"
+              "title": "2025-07-07 – Nchwaning 2 Daily Report"
             }
           }
         ]
@@ -172,22 +172,22 @@
   "lastOpenFiles": [
     "daily_production/data/2025-07-07/2025-07-07 – Nchwaning 2 Daily Report.md",
     "daily_production/data/2025-07-07/2025-07-07_nchwaning2.json",
-    "daily_production/data/2025-07-07",
+    "scripts/validate-daily-report-simple.ps1",
+    "scripts/validate-daily-report.ps1",
     "daily_production/2025-07-07 – Nchwaning 2 Daily Report.md",
     "00_Inbox/Raw Whatsap Data for Daily Reports.md",
+    "temp_final_script.ps1",
+    "temp_final_message.txt",
+    "daily_production/data/2025-07-07",
     "daily_production/equipment_codes.md",
     "temp_send_message.ps1",
     "temp_message_content.txt",
     "temp_check_messages.ps1",
     "scripts/gemini-activity.log",
-    "daily_production/data/2025-07-07_nchwaning2.json",
     "test.md",
-    "temp_list_files.ps1",
     "test2.md",
     "daily_production/data/2025-07/07/2025-07-07_nchwaning2_report.md",
-    "daily_production/data/2025-07/07/2025-07-07_nchwaning2.json",
     "daily_production/data/2025-07/07/2025-07-07 – Nchwaning 2 Daily Report.md",
-    "temp_get_branch.ps1",
     "2025-08-05_Comprehensive_Session_Export.md",
     "people/Willie Koekemoer.md",
     "people/Lourens van der Heerden.md",
@@ -204,7 +204,6 @@
     "people/Sikilela Nzuza.md",
     "tasks/2025-07-29 – Priority Task Schedule.md",
     "claude.md",
-    "tasks/master_task_list.md",
-    "people/Lawrence Van Gieren.md"
+    "tasks/master_task_list.md"
   ]
 }

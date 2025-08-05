@@ -160,6 +160,7 @@ Located in `daily_production/` folder with dual format:
 5. **Cross-reference** equipment codes using `equipment_codes.md`
 6. **Track trends** and identify critical performance issues
 7. **Follow up** on missing reports or operational crises
+8. **Mandatory data validation**: All processed reports must include source validation section
 
 #### Equipment Code Validation & BEV Classification
 Reference `daily_production/equipment_codes.md` for:
@@ -172,6 +173,36 @@ Reference `daily_production/equipment_codes.md` for:
 - **BEV Equipment**: Epiroc MT 42 B (DTs) and ST14 B (FLs) - all at Nchwaning 3
 - **Diesel Equipment**: CAT AD 30/45 (DTs) and Epiroc ST14 (FLs) - all sites
 - Use for automated BEV vs diesel analysis in daily reports
+
+#### **CRITICAL: Data Validation Requirements** 🚨
+**Effective immediately, all daily production reports must comply with:**
+
+**For Gemini (Processing Agent):**
+- **NEVER INVENT DATA**: Extract only actual values from source WhatsApp data
+- **Source validation required**: Every report must include `source_validation` section with:
+  ```json
+  {
+    "source_validation": {
+      "field_name": {
+        "value": [extracted_value],
+        "source_line": [line_number],
+        "source_quote": "[exact_text_from_source]",
+        "confidence": "HIGH|MEDIUM|LOW|NONE"
+      }
+    }
+  }
+  ```
+- **Missing data protocol**: If data not in source, use `null` - DO NOT fabricate
+- **Self-verification**: Quote 3 random data points from source before submitting
+
+**For Claude-Code (Review Agent):**
+- **Mandatory source verification**: Cross-check 3 random data points against source file
+- **Flag suspicious data**: Question any "perfect" numbers or unrealistic values
+- **Require source context**: Request original WhatsApp data path and line numbers
+- **Two-stage approval**: Technical compliance + Data integrity both required
+
+**Validation Script:**
+Use `scripts/validate-daily-report.ps1` to verify data accuracy before approving any PR.
 
 ### Task Management
 - All checkbox tasks must be mirrored in `tasks/master_task_list.md`
