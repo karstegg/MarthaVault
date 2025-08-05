@@ -1,0 +1,85 @@
+{
+  "report_metadata": {
+    "date": "2025-07-07",
+    "site": "Shafts & Winders",
+    "engineer": "Xavier Petersen",
+    "report_type": "daily_stoppage",
+    "timestamp": "06:54",
+    "source": "WhatsApp"
+  },
+  "safety": {
+    "status": "Clear",
+    "incidents": 0,
+    "notes": []
+  },
+  "stoppages": {
+    "power_supply": {
+      "status": "No Stoppages",
+      "notes": []
+    },
+    "shafts_winders": [
+      {
+        "location": "Nch2 PW",
+        "status": "No Stoppages"
+      },
+      {
+        "location": "Nch3 PW",
+        "status": "No Stoppages"
+      },
+      {
+        "location": "GL PW",
+        "status": "No Stoppages"
+      },
+      {
+        "location": "Nch2 RW",
+        "status": "Stoppage",
+        "notes": [
+          "Sat: 3-7LVL Feeder Liner Replacement",
+          "Sun: 3-7LVL Measuring Flask Liner Replacement"
+        ]
+      }
+    ],
+    "main_fans": [
+      {
+        "location": "GL",
+        "status": "No Stoppages"
+      },
+      {
+        "location": "Nch2",
+        "status": "No Stoppages"
+      },
+      {
+        "location": "Nch3",
+        "status": "No Stoppages"
+      }
+    ],
+    "lamprooms": [
+      {
+        "location": "GL",
+        "status": "No Stoppages"
+      },
+      {
+        "location": "Nch2",
+        "status": "No Stoppages"
+      },
+      {
+        "location": "Nch3",
+        "status": "No Stoppages"
+      }
+    ]
+  },
+  "source_validation": {
+    "safety_status": {
+      "value": "Clear",
+      "source_line": 262,
+      "source_quote": "Clear",
+      "confidence": "HIGH"
+    },
+    "nch2_rw_stoppage": {
+      "value": "Sat: 3-7LVL Feeder Liner Replacement",
+      "source_line": 278,
+      "source_quote": "Sat: 3-7LVL Feeder Liner Replacement",
+      "confidence": "HIGH"
+    }
+  }
+}

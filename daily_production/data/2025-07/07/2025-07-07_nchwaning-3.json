@@ -1,0 +1,88 @@
+{
+  "report_metadata": {
+    "date": "2025-07-07",
+    "site": "Nchwaning 3",
+    "engineer": "Stef Lourens",
+    "report_type": "daily_production",
+    "timestamp": "08:35",
+    "source": "WhatsApp"
+  },
+  "safety": {
+    "status": "Incident",
+    "incidents": 1,
+    "notes": [
+      "Property damage Uv 0124"
+    ]
+  },
+  "production": {
+    "rom": [
+      {
+        "day": "Sat",
+        "actual": 5277,
+        "target": 8060
+      },
+      {
+        "day": "Sun",
+        "actual": 7252,
+        "target": 0
+      },
+      {
+        "day": "Mon",
+        "actual": 3347,
+        "target": 0
+      }
+    ],
+    "decline": [
+      {
+        "day": "Sat",
+        "actual": 4979,
+        "target": 7889
+      },
+      {
+        "day": "Sun",
+        "actual": 6804,
+        "target": 7889
+      },
+      {
+        "day": "Mon",
+        "actual": 3843,
+        "target": 0
+      }
+    ],
+    "product": [
+        {
+            "actual": 3843,
+            "target": 7257
+        },
+        {
+            "actual": 6560,
+            "target": 7257
+        },
+        {
+            "actual": 3885,
+            "target": 0
+        }
+    ],
+    "loads": [126, 97, 41]
+  },
+  "source_validation": {
+    "safety_incident": {
+      "value": "Property damage Uv 0124",
+      "source_line": 382,
+      "source_quote": "Property damage Uv 0124",
+      "confidence": "HIGH"
+    },
+    "rom_saturday": {
+      "value": "Sat-5277 vs 8060",
+      "source_line": 385,
+      "source_quote": "Sat-5277 vs 8060",
+      "confidence": "HIGH"
+    },
+    "loads": {
+        "value": "126,97,41",
+        "source_line": 400,
+        "source_quote": "126,97,41",
+        "confidence": "HIGH"
+    }
+  }
+}
