@@ -1,0 +1,42 @@
+{
+  "report_metadata": {
+    "date": "2025-07-07",
+    "site": "Nchwaning 2",
+    "engineer": "Johan Kotze",
+    "report_type": "daily_production",
+    "timestamp": "07:28",
+    "source": "WhatsApp"
+  },
+  "safety": {
+    "status": "Clear",
+    "incidents": 0,
+    "notes": []
+  },
+  "production": {
+    "rom": { "actual": 8574, "target": 0, "variance": 8574, "unit": "tonnes" },
+    "product": { "actual": 7160, "target": 0, "variance": 7160, "unit": "tonnes" },
+    "decline": { "actual": 0, "target": 0, "variance": 0, "unit": "tonnes" },
+    "loads": []
+  },
+  "equipment_availability": {
+    "tmm": {
+      "dump_trucks": { "code": "DT", "availability_percent": 100 },
+      "front_loaders": { "code": "FL", "availability_percent": 100 },
+      "hydraulic_drills": { "code": "HD", "availability_percent": 100 },
+      "roof_bolters": { "code": "RT", "availability_percent": 100 },
+      "scalers": { "code": "SR", "availability_percent": 100 }
+    }
+  },
+  "shift_readiness": {
+    "production_tmm": [
+      { "type": "DT", "available": 9, "total": 9, "readiness_percent": 100 },
+      { "type": "FL", "available": 6, "total": 6, "readiness_percent": 100 }
+    ]
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      { "vehicle": "DT0099", "type": "dump_truck", "issues": ["oil cooler"] },
+      { "vehicle": "FL0085", "type": "front_loader", "issues": ["propshaft"] }
+    ]
+  }
+}
