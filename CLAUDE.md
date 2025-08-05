@@ -2,6 +2,15 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## 🚨 **CRITICAL FOR CLAUDE-CODE REVIEWERS** 🚨
+**If you are reviewing daily production reports (JSON/Markdown in `daily_production/`), you MUST:**
+1. **Request source WhatsApp data file path FIRST**
+2. **Verify 3+ data points against source before any other review**
+3. **NEVER approve without source data verification**
+4. **See detailed requirements in Section 10.1 below**
+
+**Data accuracy is MORE IMPORTANT than technical compliance for operational reports.**
+
 # MarthaVault – Claude Constitution  *Version 0.3  (2025-08-05)*
 
 ## 🔄 **Active Session Context** (August 5, 2025)
@@ -196,10 +205,67 @@ Reference `daily_production/equipment_codes.md` for:
 - **Self-verification**: Quote 3 random data points from source before submitting
 
 **For Claude-Code (Review Agent):**
-- **Mandatory source verification**: Cross-check 3 random data points against source file
-- **Flag suspicious data**: Question any "perfect" numbers or unrealistic values
-- **Require source context**: Request original WhatsApp data path and line numbers
-- **Two-stage approval**: Technical compliance + Data integrity both required
+
+**🚨 CRITICAL: Before reviewing ANY daily production report, you MUST understand these requirements:**
+
+#### **MANDATORY REVIEW PROTOCOL FOR CLAUDE-CODE**
+
+**PHASE 1: Source Data Verification (REQUIRED FIRST)**
+1. **Request source file access**: Always ask for the original WhatsApp data file path
+2. **Demand data traceability**: Request line numbers for ALL major production figures
+3. **Cross-reference verification**: Pick 3 random data points and verify against source
+4. **Mathematical validation**: Check that totals and calculations are accurate
+5. **Red flag detection**: Question any "perfect" percentages or unrealistic values
+
+**PHASE 2: Technical Compliance Review**
+6. **Schema validation**: Check JSON structure against established patterns
+7. **File organization**: Verify folder structure follows `YYYY-MM/DD/` hierarchy
+8. **Repository standards**: Confirm front-matter, tagging, and naming conventions
+9. **Documentation quality**: Assess markdown formatting and readability
+
+**CRITICAL FAILURE PREVENTION:**
+- **NEVER approve without source verification** - even if technically perfect
+- **Data accuracy is MORE IMPORTANT than schema compliance**
+- **When in doubt, request the original WhatsApp source data**
+- **Operational data impacts real mining decisions - treat seriously**
+
+#### **MANDATORY CHECKLIST (ALL MUST PASS):**
+```markdown
+□ Source file path provided and verified
+□ 3+ data points cross-checked against source  
+□ Mathematical calculations validated
+□ No invented/fabricated numbers detected
+□ Production figures trace to specific source lines
+□ Equipment data matches source exactly
+□ Technical schema follows repository patterns
+□ File structure uses correct hierarchy
+□ Front-matter and tagging complete
+□ Documentation clear and professional
+```
+
+#### **APPROVAL CRITERIA:**
+- **APPROVE**: Only when BOTH data integrity AND technical compliance pass
+- **REQUEST CHANGES**: If any data cannot be traced to source
+- **REJECT**: If fabricated data detected or source verification impossible
+
+#### **COMMON FAILURE PATTERNS TO WATCH FOR:**
+- Production numbers that seem "too perfect" or rounded
+- Equipment availability percentages without source backing
+- Data that cannot be traced to specific WhatsApp lines
+- Mathematical inconsistencies in totals
+- Claims of "comprehensive data" without source validation
+
+**Remember: You are reviewing OPERATIONAL DATA that impacts real mining operations. Data accuracy is critical for business decisions.**
+
+#### **LESSON FROM PR #7 FAILURE:**
+**Previous Claude-Code review FAILED by:**
+- Approving fabricated ROM production (15,670t when source showed 5,545t)
+- Never requesting source data verification
+- Giving 5-star approval to 185% inflated numbers  
+- Focusing only on technical compliance, ignoring data accuracy
+- Treating operational data like code rather than business intelligence
+
+**This failure could have led to incorrect operational decisions. NEVER repeat this mistake.**
 
 **Validation Script:**
 Use `scripts/validate-daily-report.ps1` to verify data accuracy before approving any PR.

@@ -55,13 +55,28 @@ When `/pdr` is called without arguments:
 - **Production**: Weekly summary with targets
 - **Fire SCADA Alarms**: Count and type
 
-### 3. Equipment Code Validation
+### 3. 🚨 CRITICAL: Source Data Validation (MANDATORY)
+**Before ANY processing, you MUST:**
+1. **Read source WhatsApp data** from `00_Inbox/Raw Whatsap Data for Daily Reports.md`
+2. **Extract ONLY actual values** - NEVER INVENT DATA
+3. **Record source validation** for every data point with:
+   - Exact line number where data was found
+   - Direct quote from source text
+   - Confidence level (HIGH/MEDIUM/LOW/NONE)
+4. **If data missing** from source, use `null` - DO NOT fabricate
+
+**Lesson from PR #7 Failure:**
+- Previous error: Invented 15,670t ROM when source showed 5,545t (185% fabrication)
+- Impact: Could have led to incorrect operational decisions
+- Prevention: All numbers must trace to specific source lines with quotes
+
+### 4. Equipment Code Validation
 Reference `daily_production/equipment_codes.md`:
 - **TMM**: DT, FL, HD, RT, SR, UV
 - **Specialized**: GD (grader), DZ (dozer), LD (delivery)
 - **Common Errors**: GR → GD, validate against reference
 
-### 4. Create Dual Format Output
+### 5. Create Dual Format Output
 
 #### JSON Database (`data/YYYY-MM-DD_[site].json`)
 ```json
@@ -76,7 +91,15 @@ Reference `daily_production/equipment_codes.md`:
   "production": {"rom": {}, "product": {}, "loads": [], "blast": {}},
   "equipment_availability": {"tmm": {}, "specialized": []},
   "breakdowns": {"current_breakdowns": []},
-  "performance_summary": {"key_issues": [], "key_highlights": []}
+  "performance_summary": {"key_issues": [], "key_highlights": []},
+  "source_validation": {
+    "field_name": {
+      "value": "extracted_value",
+      "source_line": "line_number", 
+      "source_quote": "exact_text_from_source",
+      "confidence": "HIGH|MEDIUM|LOW|NONE"
+    }
+  }
 }
 ```
 

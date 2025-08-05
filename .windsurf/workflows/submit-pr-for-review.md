@@ -34,7 +34,7 @@ inputs:
     required: true
   - name: pr_body
     type: string
-    description: "The detailed body/description for the Pull Request. Should tag @claude-cloud."
+    description: "The detailed body/description for the Pull Request. IMPORTANT: Must tag @claude or @claude-code to trigger the automated review."
     required: true
   - name: file_to_add
     type: string
@@ -52,11 +52,12 @@ steps:
         git checkout -b "${{ inputs.branch_name }}"
         if ($LASTEXITCODE -ne 0) { Write-Error "Failed to create new branch."; exit 1 }
         echo "Successfully created and switched to branch: ${{ inputs.branch_name }}"
-  - name: Wait and Execute Branch Script
-    run: |
-      Start-Sleep -Seconds 2
-      powershell.exe -ExecutionPolicy Bypass -File ./temp_branch_script.ps1
-      Remove-Item -Path "./temp_branch_script.ps1"
+  - name: Wait for file system
+    run: Start-Sleep -Seconds 2
+  - name: Execute Branch Script
+    run: powershell.exe -ExecutionPolicy Bypass -File ./temp_branch_script.ps1
+  - name: Clean up Branch Script
+    run: Remove-Item -Path "./temp_branch_script.ps1"
 
   # Step 2: Stage Changes
   - name: Create temporary script for staging
@@ -67,13 +68,12 @@ steps:
         git add '${{ inputs.file_to_add }}'
         if ($LASTEXITCODE -ne 0) { Write-Error "Failed to stage changes for file: ${{ inputs.file_to_add }}"; exit 1 }
         echo "Successfully staged changes."
-  - name: Wait and Execute Stage Script
-    run: |
-      Start-Sleep -Seconds 2
-      powershell.exe -ExecutionPolicy Bypass -File ./temp_stage_script.ps1
-      Remove-Item -Path "./temp_stage_script.ps1"
-
-  **ZERO-TOLERANCE AUTONOMY PROTOCOL IN EFFECT: ALL COMPLEXITY MUST BE OFFLOADED TO TEMP FILES CREATED WITH THE BUILT-IN `write_to_file` TOOL.**
+  - name: Wait for file system
+    run: Start-Sleep -Seconds 2
+  - name: Execute Stage Script
+    run: powershell.exe -ExecutionPolicy Bypass -File ./temp_stage_script.ps1
+  - name: Clean up Stage Script
+    run: Remove-Item -Path "./temp_stage_script.ps1"
 
   # Step 3: Commit Changes
   - name: Write commit message to temp file
@@ -90,12 +90,14 @@ steps:
         git commit -m "$commitMsg"
         if ($LASTEXITCODE -ne 0) { Write-Error "Failed to commit changes."; exit 1 }
         echo "Successfully committed changes."
-  - name: Wait and Execute Commit Script
-    run: |
-      Start-Sleep -Seconds 2
-      powershell.exe -ExecutionPolicy Bypass -File ./temp_commit_script.ps1
-      Remove-Item -Path "./temp_commit_script.ps1"
-      Remove-Item -Path "./temp_commit_msg.txt"
+  - name: Wait for file system
+    run: Start-Sleep -Seconds 2
+  - name: Execute Commit Script
+    run: powershell.exe -ExecutionPolicy Bypass -File ./temp_commit_script.ps1
+  - name: Clean up Commit Script
+    run: Remove-Item -Path "./temp_commit_script.ps1"
+  - name: Clean up Commit Message File
+    run: Remove-Item -Path "./temp_commit_msg.txt"
 
   # Step 4: Push Branch to Remote
   - name: Create temporary script for pushing
@@ -106,11 +108,12 @@ steps:
         git push -u origin ${{ inputs.branch_name }}
         if ($LASTEXITCODE -ne 0) { Write-Error "Failed to push branch to remote."; exit 1 }
         echo "Successfully pushed branch to remote."
-  - name: Wait and Execute Push Script
-    run: |
-      Start-Sleep -Seconds 2
-      powershell.exe -ExecutionPolicy Bypass -File ./temp_push_script.ps1
-      Remove-Item -Path "./temp_push_script.ps1"
+  - name: Wait for file system
+    run: Start-Sleep -Seconds 2
+  - name: Execute Push Script
+    run: powershell.exe -ExecutionPolicy Bypass -File ./temp_push_script.ps1
+  - name: Clean up Push Script
+    run: Remove-Item -Path "./temp_push_script.ps1"
 
   # Step 5: Create Pull Request
   - name: Write PR title to temp file
@@ -137,13 +140,16 @@ steps:
           exit 1
         }
         echo "Successfully created pull request."
-  - name: Wait and Execute PR Script
-    run: |
-      Start-Sleep -Seconds 2
-      powershell.exe -ExecutionPolicy Bypass -File ./temp_pr_script.ps1
-      Remove-Item -Path "./temp_pr_script.ps1"
-      Remove-Item -Path "./temp_pr_title.txt"
-      Remove-Item -Path "./temp_pr_body.txt"
+  - name: Wait for file system
+    run: Start-Sleep -Seconds 2
+  - name: Execute PR Script
+    run: powershell.exe -ExecutionPolicy Bypass -File ./temp_pr_script.ps1
+  - name: Clean up PR Script
+    run: Remove-Item -Path "./temp_pr_script.ps1"
+  - name: Clean up PR Title File
+    run: Remove-Item -Path "./temp_pr_title.txt"
+  - name: Clean up PR Body File
+    run: Remove-Item -Path "./temp_pr_body.txt"
 
   # Step 6: Return to Master Branch
   - name: Create temporary script for checkout
@@ -153,11 +159,12 @@ steps:
       content: |
         git checkout master
         echo "Returned to master branch."
-  - name: Wait and Execute Checkout Script
-    run: |
-      Start-Sleep -Seconds 2
-      powershell.exe -ExecutionPolicy Bypass -File ./temp_checkout_script.ps1
-      Remove-Item -Path "./temp_checkout_script.ps1"
+  - name: Wait for file system
+    run: Start-Sleep -Seconds 2
+  - name: Execute Checkout Script
+    run: powershell.exe -ExecutionPolicy Bypass -File ./temp_checkout_script.ps1
+  - name: Clean up Checkout Script
+    run: Remove-Item -Path "./temp_checkout_script.ps1"
 
   - name: Confirm Workflow Completion
     run: |

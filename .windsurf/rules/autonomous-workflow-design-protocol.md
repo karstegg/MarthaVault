@@ -21,11 +21,11 @@ All complex logic and arguments must be moved out of the command line and into t
 
 - **For Complex Logic (if/else, loops, variables):**
   - **DO NOT** run multi-line PowerShell scripts directly in a workflow step.
-  - **DO** use the `write_to_file` tool to create a temporary [.ps1](cci:7://file:///c:/Users/10064957/My%20Drive/GDVault/MarthaVault/temp_send_message.ps1:0:0-0:0) script containing the logic. Then, execute it with a simple `powershell.exe -File ...` command.
+  - **DO** use the `write_to_file` tool to create a temporary [.ps1](cci:7://file:///c:/Users/10064957/My%20Drive/GDVault/MarthaVault/temp_pr_script.ps1:0:0-0:0) script containing the logic. Then, execute it with a simple `powershell.exe -File ...` command.
 
 - **For Complex Arguments (strings with spaces, special characters):**
   - **DO NOT** pass complex strings directly as command-line arguments (e.g., `git commit -m "My detailed message"`).
-  - **DO** use the `write_to_file` tool to create a temporary [.txt](cci:7://file:///c:/Users/10064957/My%20Drive/GDVault/MarthaVault/temp_message_content.txt:0:0-0:0) file containing the argument. The corresponding [.ps1](cci:7://file:///c:/Users/10064957/My%20Drive/GDVault/MarthaVault/temp_send_message.ps1:0:0-0:0) script must then read from this file.
+  - **DO** use the `write_to_file` tool to create a temporary [.txt](cci:7://file:///c:/Users/10064957/My%20Drive/GDVault/MarthaVault/temp_pr_body.txt:0:0-0:0) file containing the argument. The corresponding [.ps1](cci:7://file:///c:/Users/10064957/My%20Drive/GDVault/MarthaVault/temp_pr_script.ps1:0:0-0:0) script must then read from this file.
 
 ### 3. The Principle of File System Resilience
 The file system (especially when synced with Google Drive) may have delays.
