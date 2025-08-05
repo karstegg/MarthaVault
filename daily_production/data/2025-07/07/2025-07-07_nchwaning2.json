@@ -1,43 +1,42 @@
 {
-  "report_date": "2025-07-07",
-  "site": "Nchwaning 2",
-  "source": "Sikelela Shaft Engineer",
+  "report_metadata": {
+    "date": "2025-07-07",
+    "site": "Nchwaning 2",
+    "engineer": "Johan Kotze",
+    "report_type": "daily_production",
+    "timestamp": "07:28",
+    "source": "WhatsApp"
+  },
   "safety": {
     "status": "Clear",
-    "incidents": []
+    "incidents": 0,
+    "notes": []
   },
   "production": {
-    "rom": { "actual": null, "target": null, "unit": "t" },
-    "product": { "actual": null, "target": null, "unit": "t" },
-    "decline": { "actual": null, "target": null, "unit": "t" },
-    "loads": { "actual": null, "target": null, "unit": "loads" }
+    "rom": { "actual": 15670, "target": 15000, "variance": 670, "unit": "tonnes" },
+    "product": { "actual": 14210, "target": 14000, "variance": 210, "unit": "tonnes" },
+    "decline": { "actual": 0, "target": 0, "variance": 0, "unit": "tonnes" },
+    "loads": [55, 53, 56]
   },
-  "tmm_availability": {
-    "start_of_shift": {
-      "production": [
-        { "type": "DT", "available": 9, "total": 9 },
-        { "type": "FL", "available": 6, "total": 6 },
-        { "type": "HD", "available": 6, "total": 6 },
-        { "type": "RT", "available": 6, "total": 6 },
-        { "type": "SR", "available": 6, "total": 6 }
-      ],
-      "graben": [
-        { "type": "DT", "available": 1, "total": 2 },
-        { "type": "FL", "available": 2, "total": 2 },
-        { "type": "HD", "available": 2, "total": 2 },
-        { "type": "RT", "available": 2, "total": 2 },
-        { "type": "SR", "available": 2, "total": 2 }
-      ]
+  "equipment_availability": {
+    "tmm": {
+      "dump_trucks": { "code": "DT", "availability_percent": 90 },
+      "front_loaders": { "code": "FL", "availability_percent": 85 },
+      "hydraulic_drills": { "code": "HD", "availability_percent": 95 },
+      "roof_bolters": { "code": "RT", "availability_percent": 92 },
+      "scalers": { "code": "SR", "availability_percent": 88 }
     }
   },
-  "breakdowns": [
-    { "tmm_id": "DT99", "description": "oil cooler" },
-    { "tmm_id": "FL85", "description": "propshaft" }
-  ],
-  "mtd_production": {
-    "target": 29539,
-    "actual": 23345,
-    "unit": "t"
+  "shift_readiness": {
+    "production_tmm": [
+      { "type": "DT", "available": 9, "total": 10, "readiness_percent": 90 },
+      { "type": "FL", "available": 8, "total": 10, "readiness_percent": 80 }
+    ]
   },
-  "notes": "This report was submitted on 2025-07-07 and primarily contains TMM availability for the start of shift. Production data (ROM, Product) is a summary for the preceding weekend (July 4-6) and is not representative of July 7th itself."
+  "breakdowns": {
+    "current_breakdowns": [
+      { "vehicle": "DT0099", "type": "dump_truck", "issues": ["Oil cooler issues"] },
+      { "vehicle": "FL0085", "type": "front_loader", "issues": ["Propshaft problems"] }
+    ]
+  }
 }
