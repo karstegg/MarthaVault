@@ -2,7 +2,7 @@
   "report_metadata": {
     "date": "2025-07-07",
     "site": "Nchwaning 3",
-    "engineer": "Stef Lourens",
+    "engineer": "Sello Sease",
     "report_type": "daily_production",
     "timestamp": "08:35",
     "source": "WhatsApp"
@@ -50,10 +50,10 @@
       "confidence": "HIGH"
     },
     "loads": {
-        "value": "126,97,41",
-        "source_line": 1314,
-        "source_quote": "126,97,41",
-        "confidence": "HIGH"
+      "value": "126,97,41",
+      "source_line": 1314,
+      "source_quote": "126,97,41",
+      "confidence": "HIGH"
     }
   }
 }

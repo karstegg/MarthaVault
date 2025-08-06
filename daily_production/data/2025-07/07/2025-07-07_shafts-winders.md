@@ -1,6 +1,6 @@
 Status:: #status/new
 Priority:: #priority/medium
-Assignee::
+Assignee:: [[Xavier Peterson]]
 DueDate::
 
 # Daily Report: Shafts & Winders - 2025-07-07
