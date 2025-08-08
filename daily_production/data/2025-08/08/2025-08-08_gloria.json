@@ -1,0 +1,141 @@
+{
+    "report_date": "2025-08-08",
+    "data_date": "2025-08-07",
+    "site": "Gloria",
+    "engineer": "[[Sipho Dubazane]]",
+    "safety": {
+        "status": "Clear",
+        "source_validation": {
+            "confidence": "HIGH",
+            "source_line": 4,
+            "quote": ".Clear"
+        }
+    },
+    "production": {
+        "rom_actual": 332,
+        "rom_target": 3873,
+        "rom_variance_tonnes": -3541,
+        "rom_variance_percentage": -91.43,
+        "decline_actual": 369,
+        "decline_target": 3873,
+        "product_actual": 1277,
+        "product_target": 3894,
+        "loads": [0, 0, 14],
+        "source_validation": {
+            "rom": {
+                "confidence": "HIGH",
+                "source_line": 7,
+                "quote": "- 332 vs 3873"
+            },
+            "decline": {
+                "confidence": "HIGH",
+                "source_line": 10,
+                "quote": "369 vs 3873"
+            },
+            "product": {
+                "confidence": "HIGH",
+                "source_line": 13,
+                "quote": "1277 vs  3894"
+            },
+            "loads": {
+                "confidence": "HIGH",
+                "source_line": 30,
+                "quote": "- 0;0;14"
+            }
+        }
+    },
+    "silos": {
+        "surface_silos_percentage": [
+            {
+                "silo_number": 1,
+                "percentage": 39
+            },
+            {
+                "silo_number": 2,
+                "percentage": 19
+            },
+            {
+                "silo_number": 3,
+                "percentage": 76
+            },
+            {
+                "silo_number": 4,
+                "percentage": 19
+            }
+        ],
+        "underground_silos_percentage": [
+            {
+                "silo_number": 74,
+                "percentage": 100
+            },
+            {
+                "silo_name": "HG",
+                "percentage": 20
+            },
+            {
+                "silo_name": "D",
+                "percentage": 15
+            },
+            {
+                "silo_name": "LG",
+                "percentage": 21
+            }
+        ]
+    },
+    "equipment": {
+        "tmms_availability_percentage": {
+            "dump_trucks": 99,
+            "fls": 85,
+            "hds": 94,
+            "rts": 70,
+            "srs": 93
+        },
+        "sos_production_tmms": {
+            "dump_trucks": {
+                "available": 6,
+                "total": 6
+            },
+            "fls": {
+                "available": 4,
+                "total": 5
+            },
+            "hds": {
+                "available": 4,
+                "total": 4
+            },
+            "rts": {
+                "available": 4,
+                "total": 4
+            },
+            "srs": {
+                "available": 4,
+                "total": 4
+            }
+        },
+        "support_equipment": {
+            "emulsion_uvs": {
+                "available": 2,
+                "total": 2
+            },
+            "manitou": {
+                "available": 1,
+                "total": 1
+            },
+            "manlifts": {
+                "available": 2,
+                "total": 2
+            }
+        },
+        "breakdowns": [
+            {
+                "equipment_id": "FL0118",
+                "description": "fire suppression"
+            }
+        ]
+    },
+    "operations": {
+        "main_fans_status": "In Order",
+        "plant_blockages": "None",
+        "fire_alarm_status": "None"
+    }
+}

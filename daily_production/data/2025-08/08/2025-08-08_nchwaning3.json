@@ -1,0 +1,92 @@
+{
+    "report_date": "2025-08-08",
+    "data_date": "2025-08-07",
+    "site": "Nchwaning 3",
+    "engineer": "[[Sello Sease]]",
+    "safety": {
+        "status": "All clear",
+        "source_validation": {
+            "confidence": "HIGH",
+            "source_line": 69,
+            "quote": "- All clear"
+        }
+    },
+    "production": {
+        "rom_actual": 6855,
+        "rom_target": 8060,
+        "rom_variance_tonnes": -1205,
+        "rom_variance_percentage": -14.95,
+        "decline_actual": 6923,
+        "decline_target": 7498,
+        "product_actual": 5497,
+        "product_target": 6618,
+        "loads": [103, 53, 62],
+        "blast_actual_manganese": 16,
+        "blast_actual_waste": 2,
+        "source_validation": {
+            "rom": {
+                "confidence": "HIGH",
+                "source_line": 72,
+                "quote": "6855 vs 8060"
+            },
+            "decline": {
+                "confidence": "HIGH",
+                "source_line": 75,
+                "quote": "6923 vs 7498"
+            },
+            "product": {
+                "confidence": "HIGH",
+                "source_line": 78,
+                "quote": "5497 vs 6618"
+            },
+            "loads": {
+                "confidence": "HIGH",
+                "source_line": 81,
+                "quote": "103, 53 & 62"
+            },
+            "blast": {
+                "confidence": "HIGH",
+                "source_line": 84,
+                "quote": "16 Mn & 2,Waste"
+            }
+        }
+    },
+    "equipment": {
+        "tmms_availability_percentage": {
+            "hds": 77,
+            "dts": 93,
+            "fls": 78,
+            "rts": 91,
+            "srs": 93,
+            "uvs": 85
+        },
+        "sos_production_tmms": {
+            "hds": {"available": 6, "total": 9},
+            "dts": {"available": 12, "total": 14},
+            "fls": {"available": 8, "total": 10},
+            "rts": {"available": 9, "total": 10},
+            "srs": {"available": 9, "total": 10},
+            "uvs": {"available": 8, "total": 9}
+        },
+        "support_equipment": {
+            "manlifts": {"available": 3, "total": 4},
+            "emulsion_uvs": {"available": 4, "total": 4}
+        },
+        "breakdowns": [
+            {"equipment_id": "DT0148", "description": "Bowl movement"},
+            {"equipment_id": "DT0150", "description": "Charging"},
+            {"equipment_id": "DT0161", "description": "Puncture RR tyre"},
+            {"equipment_id": "FL0098", "description": "EMS error"},
+            {"equipment_id": "FL0107", "description": "Oil leak"},
+            {"equipment_id": "HD0050", "description": "Service skip (Locked)"},
+            {"equipment_id": "HD0056", "description": "Weld hose frame"},
+            {"equipment_id": "HD0062", "description": "Centraliser"},
+            {"equipment_id": "RT0052", "description": "Drifter"},
+            {"equipment_id": "RT0054", "description": "Carousel not turning"},
+            {"equipment_id": "UV0045", "description": "FTS"},
+            {"equipment_id": "UV0047", "description": "Brakes release"},
+            {"equipment_id": "UV0081", "description": "Oil leak"},
+            {"equipment_id": "SR0030", "description": "Incident Repairs"}
+        ]
+    }
+}
