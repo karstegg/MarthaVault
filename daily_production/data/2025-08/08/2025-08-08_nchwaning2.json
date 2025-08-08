@@ -1,0 +1,76 @@
+{
+    "report_date": "2025-08-08",
+    "data_date": "2025-08-07",
+    "site": "Nchwaning 2",
+    "engineer": "[[Johan Kotze]] (acting for [[Sikilela Nzuza]])",
+    "safety": {
+        "status": "Clear",
+        "source_validation": {
+            "confidence": "HIGH",
+            "source_line": 221,
+            "quote": "Safety  Clear"
+        }
+    },
+    "production": {
+        "rom_actual": 4137,
+        "rom_target": 6903,
+        "rom_variance_tonnes": -2766,
+        "rom_variance_percentage": -40.07,
+        "product_actual": 5492,
+        "product_target": 6514,
+        "loads": [54, 41, 21],
+        "blast_actual": 24,
+        "blast_plan": 16,
+        "source_validation": {
+            "rom": {
+                "confidence": "HIGH",
+                "source_line": 223,
+                "quote": "ROM:             4137 v 6903t"
+            },
+            "product": {
+                "confidence": "HIGH",
+                "source_line": 224,
+                "quote": "Product:       5492 v 6514t"
+            },
+            "loads": {
+                "confidence": "HIGH",
+                "source_line": 225,
+                "quote": "Loads:          54, 41, 21"
+            },
+            "blast": {
+                "confidence": "HIGH",
+                "source_line": 228,
+                "quote": "Blast:Actual vs Plan 24 vs16"
+            }
+        }
+    },
+    "equipment": {
+        "tmms_availability_percentage": {
+            "dts": 93,
+            "fls": 79,
+            "hds": 92,
+            "rts": 93,
+            "srs": 78
+        },
+        "sos_production_tmms": {
+            "dts": {"available": 9, "total": 9},
+            "fls": {"available": 5, "total": 6},
+            "hds": {"available": 5, "total": 6},
+            "rts": {"available": 5, "total": 6},
+            "srs": {"available": 5, "total": 6}
+        },
+        "support_equipment": {
+            "emulsion_uvs_percentage": 88,
+            "logistics_uv_percentage": 33,
+            "manlifts_sampling_percentage": 0,
+            "survey_uv_percentage": 81
+        },
+        "breakdowns": [
+            {"equipment_id": "UV90", "description": "water pump & timing"},
+            {"equipment_id": "UV54", "description": "oil leak"},
+            {"equipment_id": "UV59", "description": "engine"},
+            {"equipment_id": "UV69", "description": "brakes"},
+            {"equipment_id": "UV102", "description": "...."}
+        ]
+    }
+}
