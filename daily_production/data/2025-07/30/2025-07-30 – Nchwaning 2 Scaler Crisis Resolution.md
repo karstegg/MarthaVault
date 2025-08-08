@@ -23,7 +23,7 @@ DueDate:: 2025-07-30
 **Recovery Time**: Overnight resolution
 
 ## Key Personnel
-- **[[Johan Kotze]]**: GES TMM Underground, Acting Engineer (covering for [[Sikilela Nzuza]] on leave)
+- **[[Johan Kotze]]**: GES TMM Underground, Acting Engineer (covering for [[Sikelela Nzuza]] on leave)
 - **Auto Electrician**: Deployed to resolve electrical issues
 
 ## Impact Assessment

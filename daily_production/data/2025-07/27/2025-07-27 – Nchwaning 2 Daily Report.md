@@ -89,6 +89,6 @@ DueDate::
 4. **📊** Analyze factors contributing to record performance
 
 ## Acting Engineer
-[[Johan Kotze]] - Acting for [[Sikilela Nzuza]]
+[[Johan Kotze]] - Acting for [[Sikelela Nzuza]]
 
 #daily-report #production #Nchwaning2 #record-breaking #sustained-excellence #load-record #blast-record #perfect-equipment #acting-engineer #year/2025

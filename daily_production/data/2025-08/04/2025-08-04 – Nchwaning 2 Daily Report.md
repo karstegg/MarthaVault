@@ -4,7 +4,7 @@ JSONData:: [[2025-08-04_nchwaning2.json]]
 
 # Nchwaning 2 Daily Report
 **Date**: August 4, 2025 (Data from August 3, 2025)  
-**Engineer**: [[Johan Kotze]] (acting for [[Sikilela Nzuza]])  
+**Engineer**: [[Johan Kotze]] (acting for [[Sikelela Nzuza]])  
 **Site**: Nchwaning 2  
 
 ## 🔴 PRODUCTION SIGNIFICANTLY BELOW TARGET

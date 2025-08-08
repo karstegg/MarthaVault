@@ -4,7 +4,7 @@ JSONData:: [[2025-07-30_nchwaning2.json]]
 
 # Nchwaning 2 Daily Report
 **Date**: July 30, 2025 (Data from July 29, 2025)  
-**Engineer**: [[Johan Kotze]] (Acting for [[Sikilela Nzuza]])  
+**Engineer**: [[Johan Kotze]] (Acting for [[Sikelela Nzuza]])  
 **Site**: Nchwaning 2  
 
 ## 🔴 CRITICAL SCALER CRISIS & PRODUCTION SHORTFALL

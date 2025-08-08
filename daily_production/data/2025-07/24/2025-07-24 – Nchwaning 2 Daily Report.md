@@ -76,6 +76,6 @@ DueDate::
 4. **📋** Document successful recovery procedures
 
 ## Acting Engineer
-[[Johan Kotze]] - Acting for [[Sikilela Nzuza]]
+[[Johan Kotze]] - Acting for [[Sikelela Nzuza]]
 
 #daily-report #production #Nchwaning2 #excellent-recovery #near-targets #equipment-fixed #acting-engineer #year/2025

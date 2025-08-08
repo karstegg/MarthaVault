@@ -1,0 +1,211 @@
+{
+  "report_metadata": {
+    "mine_site": "Nchwaning 2",
+    "report_date": "2025-08-07",
+    "data_date": "2025-08-06",
+    "engineer": "Johan Kotze",
+    "engineer_status": "acting for Sikilela Nzuza",
+    "shift_period": "Day shift operations and night shift preparation"
+  },
+  "safety_status": {
+    "status": "Clear",
+    "incidents": 0,
+    "description": "No safety incidents reported"
+  },
+  "production_metrics": {
+    "rom": {
+      "actual_tonnes": 5556,
+      "target_tonnes": 6903,
+      "variance_tonnes": -1347,
+      "performance_percent": 80.5
+    },
+    "product": {
+      "actual_tonnes": 5739,
+      "target_tonnes": 6514,
+      "variance_tonnes": -775,
+      "performance_percent": 88.1
+    },
+    "loads": {
+      "values": [24, 57, 78],
+      "total": 159,
+      "performance_rating": "Below expectations"
+    },
+    "blast": {
+      "actual": null,
+      "planned": 16,
+      "status": "Unknown - actual count not provided"
+    }
+  },
+  "operational_issues": [
+    {
+      "location": "2West tip",
+      "issue": "Grizzly liner came loose",
+      "impact": "Tipping stopped",
+      "shift": "Day shift",
+      "status": "Active"
+    }
+  ],
+  "equipment_availability": {
+    "production_tmm": {
+      "dt": {
+        "availability_percent": 98,
+        "operational": 9,
+        "total_fleet": 9,
+        "status": "Excellent"
+      },
+      "fl": {
+        "availability_percent": 91,
+        "operational": 5,
+        "total_fleet": 6,
+        "non_operational": ["FL114"],
+        "issues": ["FL114: hyd hose"]
+      },
+      "hd": {
+        "availability_percent": 86,
+        "operational": 6,
+        "total_fleet": 6,
+        "status": "Good"
+      },
+      "rt": {
+        "availability_percent": 91,
+        "operational": 4,
+        "total_fleet": 6,
+        "non_operational": ["RT50", "RT43"],
+        "issues": ["RT50: transmission", "RT43: Strata"]
+      },
+      "sr": {
+        "availability_percent": 53,
+        "operational": 4,
+        "total_fleet": 6,
+        "non_operational": ["SR27", "SR42"],
+        "issues": ["SR27: not starting", "SR42: boom"],
+        "status": "Critical - Below 60%"
+      }
+    },
+    "support_equipment": {
+      "dz13": {
+        "availability_percent": 100,
+        "status": "Operational"
+      },
+      "gd12": {
+        "availability_percent": 0,
+        "status": "Non-operational"
+      }
+    },
+    "utility_vehicles": {
+      "emulsion_uv": {
+        "units": ["UV62", "UV66", "UV108"],
+        "availability_percent": 99,
+        "status": "Excellent"
+      },
+      "logistics_uv": {
+        "units": ["UV54", "UV59", "UV120"],
+        "availability_percent": 33,
+        "status": "Critical - Below 50%"
+      },
+      "sampling_manlifts": {
+        "units": ["UV77", "UV123"],
+        "availability_percent": 17,
+        "status": "Critical - Below 50%"
+      },
+      "survey_manlifts": {
+        "units": ["UV98", "UV99"],
+        "availability_percent": 70,
+        "status": "Good"
+      }
+    }
+  },
+  "equipment_breakdowns": {
+    "active_breakdowns": [
+      {
+        "unit": "UV90",
+        "issue": "water pump & timing",
+        "category": "TMM Services & Graben"
+      },
+      {
+        "unit": "UV54",
+        "issue": "oil leak",
+        "category": "TMM Services & Graben"
+      },
+      {
+        "unit": "UV59",
+        "issue": "engine",
+        "category": "TMM Services & Graben"
+      },
+      {
+        "unit": "UV69",
+        "issue": "brakes",
+        "category": "TMM Services & Graben"
+      },
+      {
+        "unit": "UV102",
+        "issue": "low revs",
+        "category": "TMM Services & Graben"
+      },
+      {
+        "unit": "UV77",
+        "issue": "bucket movement",
+        "category": "TMM Services & Graben"
+      },
+      {
+        "unit": "UV98",
+        "issue": "basket",
+        "category": "TMM Services & Graben"
+      },
+      {
+        "unit": "UV119",
+        "issue": "warning sign",
+        "category": "TMM Services & Graben"
+      },
+      {
+        "unit": "UV123",
+        "issue": "outrigger",
+        "category": "TMM Services & Graben"
+      },
+      {
+        "unit": "FL114",
+        "issue": "hyd hose",
+        "category": "Production TMM"
+      },
+      {
+        "unit": "RT50",
+        "issue": "transmission",
+        "category": "Production TMM"
+      },
+      {
+        "unit": "RT43",
+        "issue": "Strata",
+        "category": "Production TMM"
+      },
+      {
+        "unit": "SR27",
+        "issue": "not starting",
+        "category": "Production TMM"
+      },
+      {
+        "unit": "SR42",
+        "issue": "boom",
+        "category": "Production TMM"
+      },
+      {
+        "unit": "GD12",
+        "issue": "Non-operational",
+        "category": "Support Equipment"
+      }
+    ]
+  },
+  "plant_operations": {
+    "blockages": 2,
+    "fire_alarms": 0
+  },
+  "summary": {
+    "production_performance": "Below target",
+    "equipment_status": "Mixed - DT fleet excellent, SR fleet critical",
+    "critical_issues": [
+      "SR fleet availability at 53% - critical threshold",
+      "Grizzly liner failure affecting tipping operations",
+      "Multiple UV breakdowns impacting logistics and sampling"
+    ],
+    "total_breakdowns": 15
+  }
+}

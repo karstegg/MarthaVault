@@ -1,0 +1,133 @@
+{
+  "report_metadata": {
+    "date": "2025-08-07",
+    "data_date": "2025-08-06",
+    "site": "Gloria",
+    "engineer": "Sipho Dubazane",
+    "timestamp": "07:00"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 1543,
+      "target": 3873,
+      "variance": -2330,
+      "variance_percentage": -60.2
+    },
+    "decline": {
+      "actual": 1696,
+      "target": 3873,
+      "variance": -2177,
+      "variance_percentage": -56.2
+    },
+    "product": {
+      "actual": 927,
+      "target": 0,
+      "variance": 927,
+      "variance_percentage": null
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 41, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 0, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 35, "target": null}
+    ],
+    "blast": {
+      "faces": null,
+      "breakdown": null,
+      "note": "Nothing Reported"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": 91,
+      "FL": 97,
+      "HD": 78,
+      "RT": 94,
+      "SR": 100
+    },
+    "specialized": []
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 5, "total": 6},
+      "FL": {"available": 5, "total": 5},
+      "HD": {"available": 4, "total": 4},
+      "RT": {"available": 4, "total": 4},
+      "SR": {"available": 4, "total": 4}
+    }
+  },
+  "support_equipment": {
+    "emulsion_uvs": {"available": 2, "total": 2, "availability": 100},
+    "manlifts": {"available": 1, "total": 2, "availability": 50}
+  },
+  "specialized_equipment": {
+    "manitou": {"available": 0, "total": 1, "availability": 0}
+  },
+  "silo_levels": {
+    "surface": {
+      "silo_1": 60,
+      "silo_2": 53,
+      "silo_3": 56,
+      "silo_4": 15
+    },
+    "underground": {
+      "silo_74": 100,
+      "silo_hg": 23,
+      "silo_d": 15,
+      "silo_lg": 32
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "DT0105", "issue": "nerospec"},
+      {"unit": "UV0076", "issue": "outrigger"}
+    ]
+  },
+  "operational": {
+    "main_fans": "in order",
+    "plant_blockages": 0,
+    "fire_alarms": ["CC0051"]
+  },
+  "performance_summary": {
+    "key_issues": [
+      "ROM production 60.2% below target - significant decline",
+      "Decline production 56.2% below target - significant decline",
+      "Production performance substantially worse than previous day",
+      "Manitou equipment completely unavailable (0/1)",
+      "Manlift availability reduced to 50% (UV0076 outrigger issue)",
+      "Fire alarm triggered: CC0051"
+    ],
+    "key_highlights": [
+      "FL equipment at excellent 97% availability - major improvement from 64%",
+      "SR equipment maintaining 100% availability",
+      "DT availability improved to 91%",
+      "RT equipment at good 94% availability",
+      "Total 76 truckloads tipped across all shifts",
+      "Surface silo 74 at maximum 100% capacity"
+    ]
+  },
+  "source_validation": {
+    "rom_actual": {
+      "value": 1543,
+      "source_line": 5,
+      "source_quote": "1543 vs 3873",
+      "confidence": "HIGH"
+    },
+    "decline_actual": {
+      "value": 1696,
+      "source_line": 8,
+      "source_quote": "1696 vs 3873",
+      "confidence": "HIGH"
+    },
+    "product_actual": {
+      "value": 927,
+      "source_line": 11,
+      "source_quote": "927 vs  0",
+      "confidence": "HIGH"
+    }
+  }
+}

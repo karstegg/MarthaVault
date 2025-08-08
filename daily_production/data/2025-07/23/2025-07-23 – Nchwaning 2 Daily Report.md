@@ -68,6 +68,6 @@ DueDate::
 4. **✅** Maintain current equipment performance levels
 
 ## Acting Engineer
-[[Johan Kotze]] - Acting for [[Sikilela Nzuza]]
+[[Johan Kotze]] - Acting for [[Sikelela Nzuza]]
 
 #daily-report #production #Nchwaning2 #equipment-recovery #improving #acting-engineer #year/2025

@@ -1,0 +1,116 @@
+{
+  "report_metadata": {
+    "report_date": "2025-08-08",
+    "data_date": "2025-08-08",
+    "site": "Gloria",
+    "engineer": "Sipho Dubazane",
+    "report_type": "daily_production",
+    "source_timestamp": "06:36",
+    "source": "WhatsApp"
+  },
+  "safety": {
+    "status": "Clear",
+    "incidents": 0,
+    "notes": "Nothing Reported"
+  },
+  "production": {
+    "rom": {
+      "actual": 332,
+      "target": 3873,
+      "variance": -3541,
+      "unit": "tonnes"
+    },
+    "decline": {
+      "actual": 369,
+      "target": 3873,
+      "variance": -3504,
+      "unit": "tonnes"
+    },
+    "product": {
+      "actual": 1277,
+      "target": 3894,
+      "variance": -2617,
+      "unit": "tonnes"
+    }
+  },
+  "silo_levels": {
+    "surface_percentage": {
+      "silo_1": 39,
+      "silo_2": 19,
+      "silo_3": 76,
+      "silo_4": 19
+    },
+    "underground_percentage": {
+      "silo_74": 100,
+      "hg": 20,
+      "d": 15,
+      "lg": 21
+    }
+  },
+  "load_performance": {
+    "loads": [
+      0,
+      0,
+      14
+    ]
+  },
+  "equipment_availability": {
+    "production_fleet_percentage": {
+      "dump_trucks": 99,
+      "front_loaders": 85,
+      "haul_drills": 94,
+      "roof_bolters": 70,
+      "scalers": 93
+    }
+  },
+  "shift_start_fleet": {
+    "dump_trucks": {
+      "available": 6,
+      "total": 6
+    }
+  },
+  "source_validation": {
+    "safety_status": {
+      "value": "Clear",
+      "source_line": 5,
+      "source_quote": ".Clear",
+      "confidence": "HIGH"
+    },
+    "rom_production": {
+      "value": 332,
+      "source_line": 8,
+      "source_quote": "- 332 vs 3873",
+      "confidence": "HIGH"
+    },
+    "decline_production": {
+      "value": 369,
+      "source_line": 11,
+      "source_quote": "369 vs 3873",
+      "confidence": "HIGH"
+    },
+    "product_production": {
+      "value": 1277,
+      "source_line": 14,
+      "source_quote": "1277 vs  3894",
+      "confidence": "HIGH"
+    },
+    "loads": {
+      "value": "0;0;14",
+      "source_line": 30,
+      "source_quote": "- 0;0;14",
+      "confidence": "HIGH"
+    },
+    "tmm_availability_dts": {
+      "value": 99,
+      "source_line": 33,
+      "source_quote": "- DTs: 99",
+      "confidence": "HIGH"
+    },
+    "shift_start_dts": {
+      "value": "6/6",
+      "source_line": 40,
+      "source_quote": "DT:  6/6",
+      "confidence": "HIGH"
+    }
+  }
+}

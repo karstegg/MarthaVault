@@ -1,0 +1,344 @@
+DAILY PRODUCTION RAW DATA - REPORT DATE: 06-08-2025
+DATA FROM: Production Engineering WhatsApp Group (27834418149-1537194373@g.us)
+REPORTS FOR: 05/08/2025 (August 5th, 2025)
+EXTRACTED: 06/08/2025
+
+===============================================================================
+SHAFTS & WINDERS REPORT
+===============================================================================
+[2025-08-05 05:57:39] From: Xavier Peterson (150800697426058)
+
+Good Day Team,
+S&W
+Tuesday  
+05 Aug 2025
+Monday Report
+
+Safety:
+Clear🙏🏽
+
+Power Supply:
+No Stoppages 
+
+Shafts & Winders 
+Nch2 PW
+No Stoppages
+
+Nch3 PW
+No Stoppages 
+
+GL PW
+No Stoppages
+
+Nch2 RW
+No Stoppages 
+
+Main Fans
+GL
+No Stoppages 
+
+Nch2
+No Stoppages 
+
+Nch3
+No Stoppages
+
+Lamprooms 
+GL
+No Stoppages
+
+Nch2 
+No Stoppages
+
+Nch3 
+No Stoppages
+
+Dam Levels
+DD01:
+Fri: 100,1%
+Sat: 100,1%
+Sun: 100,1%
+Mon: 100,1%
+Tue: %
+Wed: %
+Thu: %
+
+DD02:
+Fri: 88,6%
+Sat: 86,6%
+Sun: 83,1%
+Mon: 103,0%
+Tue: %
+Wed: %
+Thu: %
+
+Fire Scada Alarms:
+0
+
+Block Chutes:
+None
+
+Production:
+Fri: 5523/AWAITING TARGET
+Sat: 2690/1577
+Sun: 2150/1577
+Mon: 6191/5078
+Tue: /6623
+Wed: /6623
+Thu: /5204
+
+Ore pass Levels:
+Fri: 32,3%
+Sat: 12,2%
+Sun: 26,3%
+Mon: 41,1%
+Tue: %
+Wed: %
+Thu: %
+
+===============================================================================
+NCHWANING 2 REPORT
+===============================================================================
+[2025-08-05 06:32:08] From: Johan Kotze (219064991522977)
+
+*04-08-2025* 
+
+*Safety*  Clear
+ 
+*ROM:*   3717 t  vs 6903t 
+*Product  
+: 2439 t  vs 6514t
+*Loads:*         
+ D/S  68 vs 80
+ A/S  83 vs 68
+ N/S.    ?  vs 80
+
+ *Blast:Actual vs Plan* ? vs16 
+
+  *TMMs Availability:*
+DTs: 94%
+FLs: 89%  
+HDs: 89%    
+RTs: 93%     
+SRs: 92%    
+
+DZ13: 100% 
+GD12:  0%
+
+*Start of Shift-Production TMM*
+DT:  8/9   
+FL:  4/6  
+HD:5/6  
+RT:  4/6 
+SR:  6/6  
+*Emulsion UVs* 
+(UV137,138,108) = 100%
+
+*Logistics UV*
+(UV54,59,120,133)= 50%
+*Manlifts*
+Sampling (UV77, UV123) = 50% 
+Survey (UV98,99) = 100%
+
+*TMM
+*Breakdowns (Services & Graben)
+UV90- service/ maintenance
+UV54- FD oil leak 
+UV77 bucket movement
+UV133- brakes 
+GR12- warrenty again _ brakes
+DT128 CAS L 9
+FL87 boom movement
+FL86 engine cut
+HD53 service
+RT32 puncture
+RT50 damage TRM
+Plant blockages- 0
+Fire alarms- 0
+
+===============================================================================
+NCHWANING 2 CORRECTION
+===============================================================================
+[2025-08-05 06:51:03] From: Johan Kotze (219064991522977)
+
+Correction on ROM for NCH2 _ 7273 vs 6903
+
+===============================================================================
+NCHWANING 2 BLAST FOLLOW-UP
+===============================================================================
+[2025-08-05 07:00:19] From: Johan Kotze (219064991522977)
+
+Seems only 7 faces blasted. Emulsion did not arrive according to watsapp reports
+
+===============================================================================
+GLORIA REPORT
+===============================================================================
+[2025-08-05 06:34:53] From: Sipho Dubazane (134144797478985)
+
+*Gloria Report*
+*05-08-2025* 
+
+ *Safety* 
+.Clear 
+
+ **ROM* 
+- 2957 vs 3873
+
+ *Decline*
+     2942 vs 3873
+     
+  **Product*   
+      1016 vs  1947
+      
+         
+**Surface Silos* {%} 
+1 - 44
+2 - 96
+3 - 14
+4 - 19
+
+ **U/G SILOS* {%}
+ *74* - 30
+ *HG*- 20
+ *D*   - 15
+ *LG* - 20
+
+ **Loads*
+- 41;45;27
+
+  **TMMs Availability:* {%}
+- DTs: 98
+- FLs: 64
+- HDs: 88
+- RTs: 93
+- SRs: 89
+
+ **Start of Shift-Production TMM*
+DT:  6/6
+FL:   3/5
+HD:  3/4
+RT:   4/4 
+SR:   4/4
+
+**Emulsion Uv's**
+- 2/2
+
+**Manitou*
+- 0/1
+ 
+**Manlifts*
+- 2/2 
+
+ **TMM**
+- FL0083 Bucket line boring 
+- FL0064 exhaust to be replaced 
+- HD0048 tripping power 
+  
+ **Main Fans* 
+- ⁠In Order
+
+ **Plant blockages* 
+- None
+
+ **Fire alarm* 
+- None
+
+===============================================================================
+NCHWANING 3 REPORT
+===============================================================================
+[2025-08-05 06:46:27] From: Sello Sease (265033925812455)
+
+**Nchwaning 3* 
+ *05/08/2025*
+
+ *Safety* 
+- All clear
+
+*ROM*
+ 4738 vs 8060
+ 
+*Decline*
+5118 vs 5623
+ 
+*Product*
+4132 vs 4979
+
+ *LOADS* 
+93, 70 & 39
+
+*Blast*
+15 Mn, 5 waste
+ 
+*Previous day TMM availability* %
+HDs: 90
+DTs: 74
+FLs: 91
+RTs: 98
+SRs: 94
+UVs: 86
+
+GD11: 100
+DZ11:  100
+UV044: 80
+
+*TMMs for SOS:*
+HDs: 7/9
+DTs: 11/14
+FLs: 9/10
+RTs: 10/10
+SRs: 8/10
+UVs: 8/9
+
+Manlifts:4/4
+
+Emulsion UV: 4/4 
+
+ **CURRENT BREAK DOWNS*   
+
+- DT 0145 - Oil leak
+- ⁠DT 0148 - Gears
+- ⁠DT 0161 - Strata (Speed control)
+- ⁠FL 0108 - Red stop light
+- ⁠HD 0054 - Right boom movement 
+- ⁠HD 0061 - Slide (Damages)
+- ⁠SR 0030 - Incident 
+- ⁠SR 0039 - Refuelling 
+- ⁠UV 0045 - FTS
+- ⁠UV 0047 - Brakes release
+
+  *Fire Alarms** 
+- Crusher Area - sensor faulty
+- ⁠Surface MCC - Fault
+
+ *Crusher and chute        blockage**    
+None
+
+===============================================================================
+ADDITIONAL CONTEXT
+===============================================================================
+[2025-08-05 06:07:51] From: Greg Karsten (Me)
+Good morning team. I am not in today due to my Mother falling seriously ill. Busy making arrangements - I am available on phone
+
+[2025-08-05 06:51:53] From: Greg Karsten (Me)
+Thanks Johan. What were the blast no
+
+===============================================================================
+REPORT SUMMARY
+===============================================================================
+REPORTS RECEIVED: 4 complete reports
+- Shafts & Winders: Xavier Peterson
+- Nchwaning 2: Johan Kotze (with corrections)
+- Gloria: Sipho Dubazane  
+- Nchwaning 3: Sello Sease
+
+REPORT DATE: 05/08/2025 (August 5th, 2025)
+DATA PERIOD: Previous day operations (04/08/2025 for most sites)
+EXTRACTED: 06/08/2025
+
+KEY ISSUES NOTED:
+- Nchwaning 2: ROM correction from 3717t to 7273t
+- Nchwaning 2: Only 7 faces blasted due to emulsion delivery issue
+- Gloria: Manitou equipment down (0/1)
+- Nchwaning 3: Multiple equipment breakdowns listed
+
+===============================================================================

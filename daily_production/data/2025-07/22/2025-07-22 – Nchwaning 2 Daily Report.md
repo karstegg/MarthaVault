@@ -68,6 +68,6 @@ DueDate::
 5. **⚠️** Monitor production impact from equipment shortages
 
 ## Acting Engineer
-[[Johan Kotze]] - Acting for [[Sikilela Nzuza]]
+[[Johan Kotze]] - Acting for [[Sikelela Nzuza]]
 
 #daily-report #production #Nchwaning2 #equipment-crisis #scaler-shortage #critical #maintenance #acting-engineer #year/2025

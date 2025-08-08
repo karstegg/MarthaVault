@@ -1,0 +1,111 @@
+{
+  "report_metadata": {
+    "date": "2025-08-07",
+    "data_date": "2025-08-06",
+    "site": "Shafts & Winders",
+    "engineer": "Xavier Peterson",
+    "timestamp": "morning",
+    "report_type": "Daily Report"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "infrastructure": {
+    "power_supply": {
+      "stoppages": 0,
+      "status": "operational"
+    },
+    "winders": {
+      "nch2_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch3_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "gl_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch2_rw": {
+        "status": "delay resolved", 
+        "operational": true, 
+        "type": "rock_winder", 
+        "function": "ore_hoisting",
+        "issue": "Block Chute Detector Indication",
+        "resolution": "Banksman notified Control. Banksman and Team investigated and found that there was mud build-up on the detector and cleaned by spraying it with water"
+      }
+    },
+    "main_fans": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    },
+    "lamprooms": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    }
+  },
+  "dam_levels": {
+    "dd01": {
+      "friday": 100.1,
+      "saturday": 100.1,
+      "sunday": 100.1,
+      "monday": 100.1,
+      "tuesday": 100.0,
+      "wednesday": 100.0,
+      "thursday": null,
+      "status": "excellent"
+    },
+    "dd02": {
+      "friday": 88.6,
+      "saturday": 86.6,
+      "sunday": 83.1,
+      "monday": 103.0,
+      "tuesday": 84.8,
+      "wednesday": 87.3,
+      "thursday": null,
+      "status": "good"
+    }
+  },
+  "ore_pass_levels": {
+    "friday": 32.3,
+    "saturday": 12.2,
+    "sunday": 26.3,
+    "monday": 41.1,
+    "tuesday": 27.0,
+    "wednesday": 14.5,
+    "thursday": null,
+    "trend": "declining"
+  },
+  "production": {
+    "weekly_schedule": {
+      "friday": {"actual": 5523, "target": null, "variance": null, "note": "awaiting target"},
+      "saturday": {"actual": 2690, "target": 1577, "variance": 1113},
+      "sunday": {"actual": 2150, "target": 1577, "variance": 573},
+      "monday": {"actual": 6191, "target": 5078, "variance": 1113},
+      "tuesday": {"actual": 8216, "target": 6463, "variance": 1753},
+      "wednesday": {"actual": 5620, "target": 6463, "variance": -843},
+      "thursday": {"actual": null, "target": 5204, "variance": null}
+    }
+  },
+  "operational": {
+    "fire_scada_alarms": 0,
+    "block_chutes": 0
+  },
+  "source_validation": {
+    "safety_status": {
+      "value": "clear",
+      "source_line": 6,
+      "source_quote": "Clear🙏🏽",
+      "confidence": "HIGH"
+    },
+    "power_stoppages": {
+      "value": 0,
+      "source_line": 9,
+      "source_quote": "No Stoppages",
+      "confidence": "HIGH"
+    },
+    "nch2_rw_issue": {
+      "value": "Block Chute Detector Indication",
+      "source_line": 19,
+      "source_quote": "Block Chute Detector Indication",
+      "confidence": "HIGH"
+    }
+  }
+}

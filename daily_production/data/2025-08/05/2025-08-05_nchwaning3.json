@@ -1,0 +1,110 @@
+{
+  "report_metadata": {
+    "date": "2025-08-05",
+    "data_date": "2025-08-04",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "timestamp": "06:46"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 4738,
+      "target": 8060,
+      "variance": -3322,
+      "variance_percentage": -41.2
+    },
+    "decline": {
+      "actual": 5118,
+      "target": 5623,
+      "variance": -505,
+      "variance_percentage": -9.0
+    },
+    "product": {
+      "actual": 4132,
+      "target": 4979,
+      "variance": -847,
+      "variance_percentage": -17.0
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 93, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 70, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 39, "target": null}
+    ],
+    "blast": {
+      "faces": 20,
+      "breakdown": "15 Mn + 5 waste",
+      "note": "15 Mn, 5 waste faces blasted"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "HD": 90,
+      "DT": 74,
+      "FL": 91,
+      "RT": 98,
+      "SR": 94,
+      "UV": 86
+    },
+    "specialized": [
+      {"code": "GD11", "availability": 100},
+      {"code": "DZ11", "availability": 100},
+      {"code": "UV044", "availability": 80}
+    ]
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "HD": {"available": 7, "total": 9},
+      "DT": {"available": 11, "total": 14},
+      "FL": {"available": 9, "total": 10},
+      "RT": {"available": 10, "total": 10},
+      "SR": {"available": 8, "total": 10},
+      "UV": {"available": 8, "total": 9}
+    },
+    "support_equipment": {
+      "manlifts": {"available": 4, "total": 4},
+      "emulsion_uvs": {"available": 4, "total": 4}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "DT0145", "issue": "Oil leak"},
+      {"unit": "DT0148", "issue": "Gears"},
+      {"unit": "DT0161", "issue": "Strata (Speed control)"},
+      {"unit": "FL0108", "issue": "Red stop light"},
+      {"unit": "HD0054", "issue": "Right boom movement"},
+      {"unit": "HD0061", "issue": "Slide (Damages)"},
+      {"unit": "SR0030", "issue": "Incident"},
+      {"unit": "SR0039", "issue": "Refuelling"},
+      {"unit": "UV0045", "issue": "FTS"},
+      {"unit": "UV0047", "issue": "Brakes release"}
+    ]
+  },
+  "operational": {
+    "main_fans": "not reported",
+    "plant_blockages": 0,
+    "fire_alarms": 2,
+    "fire_alarm_details": [
+      {"location": "Crusher Area", "issue": "sensor faulty"},
+      {"location": "Surface MCC", "issue": "Fault"}
+    ]
+  },
+  "performance_summary": {
+    "key_issues": [
+      "ROM production critically below target (-41.2%)",
+      "DT equipment availability at 74% - below optimal threshold",
+      "10 equipment breakdowns affecting multiple TMM categories",
+      "2 fire alarms requiring attention (sensor and MCC faults)"
+    ],
+    "key_highlights": [
+      "20 faces blasted successfully (15 Mn + 5 waste)",
+      "RT equipment at excellent 98% availability",
+      "All support equipment operational (manlifts, emulsion UVs)",
+      "Total 202 truckloads tipped across all shifts"
+    ]
+  }
+}

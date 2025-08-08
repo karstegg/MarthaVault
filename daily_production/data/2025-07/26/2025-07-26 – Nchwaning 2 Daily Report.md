@@ -83,6 +83,6 @@ DueDate::
 4. **🔧** Preserve perfect equipment maintenance standards
 
 ## Acting Engineer
-[[Johan Kotze]] - Acting for [[Sikilela Nzuza]]
+[[Johan Kotze]] - Acting for [[Sikelela Nzuza]]
 
 #daily-report #production #Nchwaning2 #outstanding-performance #record-breaking #sustained-excellence #perfect-equipment #acting-engineer #year/2025

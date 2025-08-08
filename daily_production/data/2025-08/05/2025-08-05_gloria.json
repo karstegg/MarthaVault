@@ -1,0 +1,111 @@
+{
+  "report_metadata": {
+    "date": "2025-08-05",
+    "data_date": "2025-08-04",
+    "site": "Gloria",
+    "engineer": "Sipho Dubazane",
+    "timestamp": "06:34"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 2957,
+      "target": 3873,
+      "variance": -916,
+      "variance_percentage": -23.7
+    },
+    "decline": {
+      "actual": 2942,
+      "target": 3873,
+      "variance": -931,
+      "variance_percentage": -24.0
+    },
+    "product": {
+      "actual": 1016,
+      "target": 1947,
+      "variance": -931,
+      "variance_percentage": -47.8
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 41, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 45, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 27, "target": null}
+    ],
+    "blast": {
+      "faces": null,
+      "breakdown": null,
+      "note": "Nothing Reported"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": 98,
+      "FL": 64,
+      "HD": 88,
+      "RT": 93,
+      "SR": 89
+    },
+    "specialized": []
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 6, "total": 6},
+      "FL": {"available": 3, "total": 5},
+      "HD": {"available": 3, "total": 4},
+      "RT": {"available": 4, "total": 4},
+      "SR": {"available": 4, "total": 4}
+    }
+  },
+  "support_equipment": {
+    "emulsion_uvs": {"available": 2, "total": 2, "availability": 100},
+    "manlifts": {"available": 2, "total": 2, "availability": 100}
+  },
+  "specialized_equipment": {
+    "manitou": {"available": 0, "total": 1, "availability": 0}
+  },
+  "silo_levels": {
+    "surface": {
+      "silo_1": 44,
+      "silo_2": 96,
+      "silo_3": 14,
+      "silo_4": 19
+    },
+    "underground": {
+      "silo_74": 30,
+      "silo_hg": 20,
+      "silo_d": 15,
+      "silo_lg": 20
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "FL0083", "issue": "Bucket line boring"},
+      {"unit": "FL0064", "issue": "Exhaust to be replaced"},
+      {"unit": "HD0048", "issue": "Tripping power"}
+    ]
+  },
+  "operational": {
+    "main_fans": "in order",
+    "plant_blockages": 0,
+    "fire_alarms": 0
+  },
+  "performance_summary": {
+    "key_issues": [
+      "ROM production 23.7% below target",
+      "Decline production 24.0% below target", 
+      "Product production critically below target (-47.8%)",
+      "FL equipment availability at 64% - below optimal",
+      "Manitou equipment completely unavailable (0/1)"
+    ],
+    "key_highlights": [
+      "DT equipment at excellent 98% availability",
+      "All support equipment operational (emulsion UVs, manlifts)",
+      "All infrastructure systems functioning normally",
+      "Total 113 truckloads tipped across all shifts"
+    ]
+  }
+}

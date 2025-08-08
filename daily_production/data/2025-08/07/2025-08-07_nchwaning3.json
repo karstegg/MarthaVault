@@ -1,0 +1,129 @@
+{
+  "report_metadata": {
+    "date": "2025-08-07",
+    "data_date": "2025-08-06",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "timestamp": null
+  },
+  "safety": {
+    "status": "all clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 4105,
+      "target": 8060,
+      "variance": -3955,
+      "variance_percentage": -49.1
+    },
+    "decline": {
+      "actual": 1833,
+      "target": 3749,
+      "variance": -1916,
+      "variance_percentage": -51.1
+    },
+    "product": {
+      "actual": 2187,
+      "target": 397,
+      "variance": 1790,
+      "variance_percentage": 450.9
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 92, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 102, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 69, "target": null}
+    ],
+    "blast": {
+      "faces": 20,
+      "breakdown": "17 Mn + 3 waste",
+      "note": "17 Mn & 3 Waste faces blasted"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "HD": 86,
+      "DT": 80,
+      "FL": 97,
+      "RT": 93,
+      "SR": 90,
+      "UV": 81
+    },
+    "specialized": [
+      {"code": "GD11", "availability": 100},
+      {"code": "DZ11", "availability": 100},
+      {"code": "UV044", "availability": 79}
+    ]
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "HD": {"available": 6, "total": 9},
+      "DT": {"available": 11, "total": 14},
+      "FL": {"available": 9, "total": 10},
+      "RT": {"available": 10, "total": 10},
+      "SR": {"available": 9, "total": 10},
+      "UV": {"available": 7, "total": 9}
+    },
+    "support_equipment": {
+      "manlifts": {"available": 3, "total": 4},
+      "emulsion_uvs": {"available": 4, "total": 4}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "DT0148", "issue": "Bowl movement"},
+      {"unit": "DT0149", "issue": "Charging"},
+      {"unit": "DT0161", "issue": "Strata"},
+      {"unit": "FL0107", "issue": "Oil leak"},
+      {"unit": "HD0050", "issue": "Service overdue (locked)"},
+      {"unit": "HD0056", "issue": "Left outrigger faulty"},
+      {"unit": "UV0045", "issue": "FTS"},
+      {"unit": "UV0047", "issue": "Brakes release"},
+      {"unit": "UV0081", "issue": "Oil leak"},
+      {"unit": "SR0030", "issue": "Incident Repairs"}
+    ]
+  },
+  "operational": {
+    "main_fans": "not reported",
+    "plant_blockages": 0,
+    "fire_alarms": 3,
+    "fire_alarm_details": [
+      {"location": "Crusher Area", "issue": "sensor faulty"},
+      {"location": "65CV01", "issue": "Fault"},
+      {"location": "Surface MCC", "issue": "Fault"}
+    ]
+  },
+  "source_validation": {
+    "safety_status": {
+      "value": "all clear",
+      "source_line": 4,
+      "source_quote": "All clear",
+      "confidence": "HIGH"
+    },
+    "rom_actual": {
+      "value": 4105,
+      "source_line": 6,
+      "source_quote": "4105 vs 8060",
+      "confidence": "HIGH"
+    },
+    "blast_faces": {
+      "value": 20,
+      "source_line": 18,
+      "source_quote": "17 Mn & 3 Waste",
+      "confidence": "HIGH"
+    },
+    "dt_availability": {
+      "value": 80,
+      "source_line": 22,
+      "source_quote": "DTs: 80",
+      "confidence": "HIGH"
+    },
+    "current_breakdowns_count": {
+      "value": 10,
+      "source_line": 38,
+      "source_quote": "DT 0148 - Bowl movement... SR 0030 - Incident Repairs",
+      "confidence": "HIGH"
+    }
+  }
+}
