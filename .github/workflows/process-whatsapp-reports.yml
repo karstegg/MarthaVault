@@ -16,5 +16,5 @@ jobs:
         run: |
           gh codespace ssh --codespace ${{ vars.CODESPACE_NAME }} -- "cd /workspaces/MarthaVault && GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }} gemini --yolo --prompt 'Process WhatsApp production reports for date: ${{ inputs.date || 'today' }}. Engineers by site: Nchwaning 2: Johan Kotze, Nchwaning 3: Sello Sease, Gloria: Sipho Dubazane, Shafts & Winders: Xavier Peterson. Extract data from WhatsApp group: 27834418149-1537194373@g.us using the running WhatsApp MCP server. Create JSON files: daily_production/data/YYYY-MM-DD_[site].json. Create Markdown: daily_production/YYYY-MM-DD – [Site] Daily Report.md. Follow CLAUDE.md Section 10.1 requirements.'"
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
