@@ -1,0 +1,6 @@
+Daily Production: Nchwaning 3 — 2025-07-07
+
+Adds JSON and Markdown following the official Standard Mine Site template, with full source_validation (quotes, line numbers, confidence). Files placed under report date based on WhatsApp timestamp (07 Jul 2025).
+
+- JSON: daily_production/data/2025-07/07/2025-07-07_nchwaning3.json
+- Markdown: daily_production/data/2025-07/07/2025-07-07 - Nchwaning 3 Daily Report.md

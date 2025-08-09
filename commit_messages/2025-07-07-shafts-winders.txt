@@ -1,0 +1,6 @@
+Shafts & Winders Infrastructure — 2025-07-07
+
+Adds JSON and Markdown following the official S&W template, with full source_validation (quotes, line numbers, confidence) and normalized engineer name. Files placed by WhatsApp report date (07 Jul 2025).
+
+- JSON: daily_production/data/2025-07/07/2025-07-07_shafts_winders.json
+- Markdown: daily_production/data/2025-07/07/2025-07-07 - Shafts & Winders Daily Report.md
