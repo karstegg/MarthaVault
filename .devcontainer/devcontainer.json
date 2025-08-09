@@ -1,0 +1,11 @@
+{
+  "name": "MarthaVault WhatsApp",
+  "image": "mcr.microsoft.com/devcontainers/go:1.21",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {}
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "mounts": [
+    "source=whatsapp-sessions,target=/workspaces/sessions,type=volume"
+  ]
+}
