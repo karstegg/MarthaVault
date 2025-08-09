@@ -1,0 +1,40 @@
+name: WhatsApp Production Reports
+on:
+  schedule:
+    - cron: '30 5 * * *'  # 7:30 AM SAST
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Report date (YYYY-MM-DD)'
+        required: false
+
+jobs:
+  process-reports:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Process with Gemini
+        uses: google-github-actions/run-gemini-cli@v1
+        with:
+          prompt: |
+            Process WhatsApp production reports for date: ${{ inputs.date || 'today' }}
+            
+            Engineers by site:
+            - Nchwaning 2: Johan Kotze
+            - Nchwaning 3: Sello Sease  
+            - Gloria: Sipho Dubazane
+            - Shafts & Winders: Xavier Peterson
+            
+            Extract data from WhatsApp group: 27834418149-1537194373@g.us
+            
+            Create JSON files: daily_production/data/YYYY-MM-DD_[site].json
+            Create Markdown: daily_production/YYYY-MM-DD – [Site] Daily Report.md
+            
+            Follow CLAUDE.md Section 10.1 requirements:
+            - Use REPORT DATE (when received) not data date
+            - Include source validation with confidence scores
+            - Cross-reference equipment against fleet database
+            - Perform BEV vs diesel analysis for Nchwaning 3
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
