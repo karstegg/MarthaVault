@@ -2,7 +2,10 @@
   "name": "MarthaVault WhatsApp",
   "image": "mcr.microsoft.com/devcontainers/go:1.21",
   "features": {
-    "ghcr.io/devcontainers/features/python:1": {}
+    "ghcr.io/devcontainers/features/python:1": {},
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest"
+    }
   },
   "postCreateCommand": "bash .devcontainer/setup.sh",
   "mounts": [
