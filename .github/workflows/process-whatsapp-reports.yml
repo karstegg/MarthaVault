@@ -37,3 +37,4 @@ jobs:
             - Cross-reference equipment against fleet database
             - Perform BEV vs diesel analysis for Nchwaning 3
           gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
+          model: gemini-2.5-flash
