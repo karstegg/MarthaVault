@@ -1,7 +1,7 @@
 name: WhatsApp Production Reports
 on:
-  schedule:
-    - cron: '30 5 * * *'  # 7:30 AM SAST
+  repository_dispatch:
+    types: [process_whatsapp_reports]
   workflow_dispatch:
     inputs:
       date:
@@ -12,19 +12,104 @@ jobs:
   process-reports:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger Repository Dispatch
-        run: |
-          curl -X POST \
-            -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer ${{ secrets.GH_PAT }}" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            https://api.github.com/repos/karstegg/MarthaVault/dispatches \
-            -d '{
-              "event_type": "process-whatsapp-reports",
-              "client_payload": {
-                "date": "${{ inputs.date || 'today' }}",
-                "message": "Process WhatsApp production reports for date: ${{ inputs.date || 'today' }}. Engineers by site: Nchwaning 2: Johan Kotze, Nchwaning 3: Sello Sease, Gloria: Sipho Dubazane, Shafts & Winders: Xavier Peterson. Extract data from WhatsApp group: 27834418149-1537194373@g.us using the running WhatsApp MCP server. Create JSON files: daily_production/data/YYYY-MM-DD_[site].json. Create Markdown: daily_production/YYYY-MM-DD – [Site] Daily Report.md. Follow CLAUDE.md Section 10.1 requirements."
+      - uses: actions/checkout@v4
+      
+      - name: Process WhatsApp Data with Gemini
+        uses: google-github-actions/run-gemini-cli@main
+        with:
+          prompt: |
+            # WhatsApp Production Report Processing
+            
+            **Report Date**: ${{ github.event.client_payload.report_date || inputs.date || 'today' }}
+            **Group Chat**: ${{ github.event.client_payload.group_chat_id || '27834418149-1537194373@g.us' }}
+            
+            ## Raw WhatsApp Messages:
+            ${{ toJson(github.event.client_payload.messages) }}
+            
+            ## Engineers by Site:
+            - **Nchwaning 2**: Johan Kotze (diesel fleet)
+            - **Nchwaning 3**: Sello Sease (BEV testing: 7 BEV DTs, 6 BEV FLs)
+            - **Gloria**: Sipho Dubazane (silo management)
+            - **Shafts & Winders**: Xavier Peterson (infrastructure)
+            
+            ## Processing Instructions:
+            
+            1. **Parse Messages**: Identify which engineer sent which report
+            2. **Extract Data**: ROM tonnage, equipment status, safety info, site-specific metrics
+            3. **Apply Dating Rule**: Use REPORT DATE (when received), not operational data date
+            4. **Equipment Validation**: Cross-reference codes against fleet database
+            5. **BEV Analysis**: Special handling for Nchwaning 3 battery equipment
+            
+            ## Output Format:
+            
+            Create structured files following CLAUDE.md Section 10.1:
+            
+            **JSON Structure** (`daily_production/data/YYYY-MM-DD_[site].json`):
+            ```json
+            {
+              "metadata": {
+                "report_date": "YYYY-MM-DD",
+                "data_date": "[operational_date]",
+                "site": "[site_name]",
+                "engineer": "[engineer_name]",
+                "source": "WhatsApp Group Chat"
+              },
+              "safety": { "status": "GREEN/AMBER/RED", "incidents": [] },
+              "production": { "rom_tonnes": null, "loads_hauled": null },
+              "equipment": { 
+                "availability_percent": null,
+                "bev_analysis": { "bev_units_available": null, "diesel_units_available": null }
+              },
+              "source_validation": {
+                "field_name": {
+                  "value": "[extracted_value]",
+                  "source_quote": "[exact_message_text]",
+                  "confidence": "HIGH/MEDIUM/LOW"
+                }
               }
-            }'
-        env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
+            }
+            ```
+            
+            **Markdown Format** (`daily_production/YYYY-MM-DD – [Site] Daily Report.md`):
+            ```markdown
+            ---
+            Status:: #status/new
+            Priority:: #priority/medium
+            Assignee:: [[Engineer Name]]
+            JSONData:: [[daily_production/data/YYYY-MM-DD_site.json]]
+            ---
+            
+            # Site Daily Production Report
+            **Date**: YYYY-MM-DD | **Engineer**: [[Name]] | **Site**: Site
+            
+            ## Executive Summary
+            ## Safety Status  
+            ## Production Performance
+            ## Equipment Status
+            ## BEV vs Diesel Analysis
+            ## Source Validation
+            
+            #daily-report #site #year/2025
+            ```
+            
+            ## Critical Requirements:
+            - **NEVER INVENT DATA**: Only extract actual values from WhatsApp messages
+            - **Source Validation**: Quote exact message text for each data point
+            - **Equipment Codes**: Validate against TMM standards (DT, FL, HD, RT, SR)
+            - **BEV Classification**: Use fleet database for power type analysis
+            - **Missing Data**: Use `null` if not in source messages
+            
+            Process all available reports and create the structured output files.
+          gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
+          
+      - name: Commit processed reports
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add daily_production/
+          git commit -m "🤖 Process daily production reports from WhatsApp MCP
+          
+          Report Date: ${{ github.event.client_payload.report_date || inputs.date }}
+          Messages Processed: ${{ github.event.client_payload.messages && github.event.client_payload.messages.length || 0 }}
+          Source: WhatsApp Group Chat via Codespace MCP" || echo "No changes to commit"
+          git push
