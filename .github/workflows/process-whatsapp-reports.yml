@@ -12,13 +12,12 @@ jobs:
   process-reports:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      
-      - name: Process with Gemini
-        uses: google-github-actions/run-gemini-cli@main
+      - name: Run Gemini in Codespace
+        uses: github/codespaces-action@v1
         with:
-          prompt: |
-            Process WhatsApp production reports for date: ${{ inputs.date || 'today' }}
+          codespace-name: ${{ vars.CODESPACE_NAME }}
+          command: |
+            gemini --yolo --prompt "Process WhatsApp production reports for date: ${{ inputs.date || 'today' }}
             
             Engineers by site:
             - Nchwaning 2: Johan Kotze
@@ -26,7 +25,7 @@ jobs:
             - Gloria: Sipho Dubazane
             - Shafts & Winders: Xavier Peterson
             
-            Extract data from WhatsApp group: 27834418149-1537194373@g.us
+            Extract data from WhatsApp group: 27834418149-1537194373@g.us using the running WhatsApp MCP server.
             
             Create JSON files: daily_production/data/YYYY-MM-DD_[site].json
             Create Markdown: daily_production/YYYY-MM-DD – [Site] Daily Report.md
@@ -35,5 +34,6 @@ jobs:
             - Use REPORT DATE (when received) not data date
             - Include source validation with confidence scores
             - Cross-reference equipment against fleet database
-            - Perform BEV vs diesel analysis for Nchwaning 3
-          gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
+            - Perform BEV vs diesel analysis for Nchwaning 3"
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
