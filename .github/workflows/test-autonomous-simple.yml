@@ -1,0 +1,25 @@
+name: Test Autonomous Simple
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  test-autonomous:
+    runs-on: ubuntu-latest
+    if: |
+      (github.event_name == 'issues' && 
+       contains(github.event.issue.title, 'Autonomous Process WhatsApp Reports'))
+    
+    steps:
+    - name: Test Autonomous Trigger
+      run: |
+        echo "Autonomous workflow triggered successfully"
+        echo "Issue title: ${{ github.event.issue.title }}"
+        echo "Event name: ${{ github.event_name }}"
+        
+        # Test if we can access GitHub CLI
+        gh --version
+        
+        # Test basic functionality
+        echo "Test completed - autonomous trigger working"
