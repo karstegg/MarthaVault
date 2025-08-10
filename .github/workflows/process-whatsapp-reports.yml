@@ -36,18 +36,21 @@ jobs:
             
             ## Processing Instructions:
             
-            **CRITICAL**: You MUST follow the EXACT templates and specifications in `GEMINI.md` Section 8 "Daily Production Report Processing". This file contains all templates and requirements.
+            **CRITICAL**: You MUST follow the EXACT templates from the Report Templates folder as specified in `GEMINI.md` Section 8.
             
             **MANDATORY STEPS:**
-            1. **Read GEMINI.md Section 8** - Contains all template specifications
-            2. **Parse Messages** - Identify engineer reports by content
-            3. **Apply Section 8.1** - Critical dating rule (report date vs data date)
-            4. **Use Section 8.2** - Hierarchical folder structure `daily_production/data/YYYY-MM/DD/`
-            5. **Follow Section 8.3** - JSON template exactly
-            6. **Follow Section 8.4** - Markdown template exactly  
-            7. **Apply Section 8.5** - Data extraction rules
+            1. **Read GEMINI.md Section 8** - Contains template selection rules
+            2. **Read Report Templates folder** - Contains actual templates to use:
+               - `Report Templates/Shafts & Winders Report Template.md` (for Xavier Peterson)
+               - `Report Templates/Standard Mine Site Report Template.md` (for other engineers)
+            3. **Parse Messages** - Identify engineer and site from WhatsApp content
+            4. **Select Correct Template** - Based on engineer/site (Section 8.4)
+            5. **Apply Section 8.1** - Critical dating rule (report date vs data date)  
+            6. **Use Section 8.2** - Hierarchical folder structure `daily_production/data/YYYY-MM/DD/`
+            7. **Follow Template Exactly** - JSON and Markdown from Report Templates folder
+            8. **Apply Section 8.5** - Data extraction rules
             
-            **NO OTHER TEMPLATES OR FORMATS ARE ACCEPTABLE**
+            **USE REPORT TEMPLATES FOLDER - NOT GENERIC SCHEMAS**
             
             Process all available reports and create the structured output files.
           gemini_api_key: ${{ secrets.GEMINI_API_KEY }}

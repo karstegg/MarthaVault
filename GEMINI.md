@@ -124,72 +124,41 @@ daily_production/data/YYYY-MM/DD/
 └── YYYY-MM-DD - [Site] Daily Report.md
 ```
 
-### 8.3 JSON Template (EXACT SCHEMA REQUIRED)
-```json
-{
-  "metadata": {
-    "report_date": "YYYY-MM-DD",
-    "data_date": "YYYY-MM-DD", 
-    "site": "[site_name]",
-    "engineer": "[engineer_name]",
-    "source": "WhatsApp Group Chat"
-  },
-  "safety": {
-    "status": "GREEN/AMBER/RED",
-    "incidents": []
-  },
-  "production": {
-    "rom_tonnes": null,
-    "loads_hauled": null
-  },
-  "equipment": {
-    "availability_percent": null,
-    "bev_analysis": {
-      "bev_units_available": null,
-      "diesel_units_available": null  
-    }
-  },
-  "source_validation": {
-    "field_name": {
-      "value": "[extracted_value]",
-      "source_quote": "[exact_message_text]", 
-      "confidence": "HIGH/MEDIUM/LOW"
-    }
-  }
-}
+### 8.3 Templates (EXACT SCHEMA REQUIRED)
+**CRITICAL**: You MUST use the EXACT templates from the Report Templates folder based on the site:
+
+**For Standard Mine Sites (Nchwaning 2, Nchwaning 3, Gloria):**
+- Use templates from: `Report Templates/Standard Mine Site Report Template.md`
+
+**For Shafts & Winders:**
+- Use templates from: `Report Templates/Shafts & Winders Report Template.md`
+
+**IMPORTANT**: These templates contain:
+- Complete JSON schemas for each site type
+- Full Markdown structures with proper sections
+- Site-specific requirements (Dam Levels, Ore Pass, Infrastructure, BEV analysis, etc.)
+- Exact formatting and status indicators
+
+### 8.4 Site-Specific Template Selection
 ```
+IF engineer = "Xavier Peterson" OR site = "Shafts & Winders":
+    USE: Report Templates/Shafts & Winders Report Template.md
+    INCLUDE: Infrastructure, Dam Levels, Ore Pass, Winders, Main Fans, Lamprooms
+    EXCLUDE: BEV analysis, TMM breakdowns
 
-### 8.4 Markdown Template (EXACT FORMAT REQUIRED)
-```markdown
----
-Status:: #status/new
-Priority:: #priority/medium
-Assignee:: [[Engineer Name]]
-JSONData:: [[daily_production/data/YYYY-MM/DD/YYYY-MM-DD_site.json]]
----
-
-# [Site] Daily Production Report
-**Date**: YYYY-MM-DD | **Engineer**: [[Name]] | **Site**: Site
-
-## Executive Summary
-[Brief operational overview]
-
-## Safety Status
-[Safety information and incidents]
-
-## Production Performance
-[ROM, loads, targets vs actual]
-
-## Equipment Status
-[TMM availability, breakdowns]
-
-## BEV vs Diesel Analysis
-[Battery vs diesel fleet performance - Nchwaning 3 only]
-
-## Source Validation
-Data extracted from WhatsApp group chat with source verification.
-
-#daily-report #[site] #year/2025
+IF engineer = "Sello Sease" OR site = "Nchwaning 3":
+    USE: Report Templates/Standard Mine Site Report Template.md  
+    INCLUDE: BEV analysis (7 BEV DTs, 6 BEV FLs), TMM breakdowns, ROM/Product/Decline
+    
+IF engineer = "Johan Kotze" OR site = "Nchwaning 2":
+    USE: Report Templates/Standard Mine Site Report Template.md
+    INCLUDE: Diesel fleet analysis, TMM breakdowns, ROM/Product/Decline
+    EXCLUDE: BEV analysis
+    
+IF engineer = "Sipho Dubazane" OR site = "Gloria": 
+    USE: Report Templates/Standard Mine Site Report Template.md
+    INCLUDE: Silo levels (Surface + Underground), TMM breakdowns, ROM/Product/Decline
+    EXCLUDE: BEV analysis
 ```
 
 ### 8.5 Data Extraction Rules
