@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "report_date": "2025-08-08",
+    "data_date": "2025-08-08",
+    "site": "Nchwaning 2",
+    "engineer": "Johan Kotze",
+    "source": "WhatsApp Group Chat"
+  },
+  "safety": {
+    "status": "AMBER",
+    "incidents": [
+      "3 fire alarms reported"
+    ]
+  },
+  "production": {
+    "rom_tonnes": 4137,
+    "loads_hauled": 116
+  },
+  "equipment": {
+    "availability_percent": 87.0,
+    "bev_analysis": {
+      "bev_units_available": null,
+      "diesel_units_available": null
+    }
+  },
+  "source_validation": {
+    "safety_status": {
+      "value": "Clear",
+      "source_quote": "*Safety*  Clear",
+      "confidence": "HIGH"
+    },
+    "safety_incidents": {
+        "value": "3",
+        "source_quote": "Fire alarms- 3",
+        "confidence": "HIGH"
+    },
+    "rom_tonnes": {
+      "value": 4137,
+      "source_quote": "*ROM:*             4137 v 6903t",
+      "confidence": "HIGH"
+    },
+    "loads_hauled": {
+      "value": "54, 41, 21",
+      "source_quote": "*Loads:*          54, 41, 21",
+      "confidence": "HIGH"
+    },
+    "equipment_availability": {
+      "value": "DTs: 93%, FLs: 79%, HDs: 92%, RTs: 93%, SRs: 78%",
+      "source_quote": "*TMMs Availability:*
+DTs: 93%
+FLs: 79%  
+HDs: 92%    
+RTs: 93%     
+SRs: 78%",
+      "confidence": "HIGH"
+    }
+  }
+}
