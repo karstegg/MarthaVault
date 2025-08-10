@@ -10,8 +10,25 @@ jobs:
     if: contains(github.event.issue.title, 'Autonomous Process WhatsApp Reports')
     
     steps:
-    - name: Basic Test
+    - name: Parse Issue Date
+      id: parse
       run: |
         echo "Autonomous workflow triggered successfully"
         echo "Issue title: ${{ github.event.issue.title }}"
-        echo "Basic test completed"
+        
+        # Extract date from issue title
+        issue_title="${{ github.event.issue.title }}"
+        if [[ "$issue_title" =~ ([0-9]{4}-[0-9]{2}-[0-9]{2}) ]]; then
+          report_date="${BASH_REMATCH[1]}"
+          echo "Found report date: $report_date"
+          echo "report_date=$report_date" >> $GITHUB_OUTPUT
+        else
+          echo "No valid date found in issue title"
+          exit 1
+        fi
+        
+    - name: Report Success
+      run: |
+        echo "AUTONOMOUS BASIC WORKFLOW SUCCESS"
+        echo "Report Date: ${{ steps.parse.outputs.report_date }}"
+        echo "Ready to add next layer of complexity"
