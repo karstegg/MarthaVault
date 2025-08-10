@@ -1,0 +1,17 @@
+name: Autonomous Basic
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  basic-autonomous:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.title, 'Autonomous Process WhatsApp Reports')
+    
+    steps:
+    - name: Basic Test
+      run: |
+        echo "Autonomous workflow triggered successfully"
+        echo "Issue title: ${{ github.event.issue.title }}"
+        echo "Basic test completed"
