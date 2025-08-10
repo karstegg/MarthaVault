@@ -36,70 +36,18 @@ jobs:
             
             ## Processing Instructions:
             
-            1. **Parse Messages**: Identify which engineer sent which report
-            2. **Extract Data**: ROM tonnage, equipment status, safety info, site-specific metrics
-            3. **Apply Dating Rule**: Use REPORT DATE (when received), not operational data date
-            4. **Equipment Validation**: Cross-reference codes against fleet database
-            5. **BEV Analysis**: Special handling for Nchwaning 3 battery equipment
+            **CRITICAL**: You MUST follow the EXACT templates and specifications in `GEMINI.md` Section 8 "Daily Production Report Processing". This file contains all templates and requirements.
             
-            ## Output Format:
+            **MANDATORY STEPS:**
+            1. **Read GEMINI.md Section 8** - Contains all template specifications
+            2. **Parse Messages** - Identify engineer reports by content
+            3. **Apply Section 8.1** - Critical dating rule (report date vs data date)
+            4. **Use Section 8.2** - Hierarchical folder structure `daily_production/data/YYYY-MM/DD/`
+            5. **Follow Section 8.3** - JSON template exactly
+            6. **Follow Section 8.4** - Markdown template exactly  
+            7. **Apply Section 8.5** - Data extraction rules
             
-            Create structured files following CLAUDE.md Section 10.1:
-            
-            **JSON Structure** (`daily_production/data/YYYY-MM-DD_[site].json`):
-            ```json
-            {
-              "metadata": {
-                "report_date": "YYYY-MM-DD",
-                "data_date": "[operational_date]",
-                "site": "[site_name]",
-                "engineer": "[engineer_name]",
-                "source": "WhatsApp Group Chat"
-              },
-              "safety": { "status": "GREEN/AMBER/RED", "incidents": [] },
-              "production": { "rom_tonnes": null, "loads_hauled": null },
-              "equipment": { 
-                "availability_percent": null,
-                "bev_analysis": { "bev_units_available": null, "diesel_units_available": null }
-              },
-              "source_validation": {
-                "field_name": {
-                  "value": "[extracted_value]",
-                  "source_quote": "[exact_message_text]",
-                  "confidence": "HIGH/MEDIUM/LOW"
-                }
-              }
-            }
-            ```
-            
-            **Markdown Format** (`daily_production/YYYY-MM-DD – [Site] Daily Report.md`):
-            ```markdown
-            ---
-            Status:: #status/new
-            Priority:: #priority/medium
-            Assignee:: [[Engineer Name]]
-            JSONData:: [[daily_production/data/YYYY-MM-DD_site.json]]
-            ---
-            
-            # Site Daily Production Report
-            **Date**: YYYY-MM-DD | **Engineer**: [[Name]] | **Site**: Site
-            
-            ## Executive Summary
-            ## Safety Status  
-            ## Production Performance
-            ## Equipment Status
-            ## BEV vs Diesel Analysis
-            ## Source Validation
-            
-            #daily-report #site #year/2025
-            ```
-            
-            ## Critical Requirements:
-            - **NEVER INVENT DATA**: Only extract actual values from WhatsApp messages
-            - **Source Validation**: Quote exact message text for each data point
-            - **Equipment Codes**: Validate against TMM standards (DT, FL, HD, RT, SR)
-            - **BEV Classification**: Use fleet database for power type analysis
-            - **Missing Data**: Use `null` if not in source messages
+            **NO OTHER TEMPLATES OR FORMATS ARE ACCEPTABLE**
             
             Process all available reports and create the structured output files.
           gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
@@ -108,7 +56,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add daily_production/
+          git add daily_production/data/
           git commit -m "🤖 Process daily production reports from WhatsApp MCP
           
           Report Date: ${{ github.event.client_payload.report_date || inputs.date }}

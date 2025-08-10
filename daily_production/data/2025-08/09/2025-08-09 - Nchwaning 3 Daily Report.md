@@ -2,7 +2,7 @@
 Status:: #status/new
 Priority:: #priority/medium
 Assignee:: [[Sello Sease]]
-JSONData:: [[daily_production/data/2025-08-09_nchwaning3.json]]
+JSONData:: [[daily_production/data/2025-08/09/2025-08-09_nchwaning3.json]]
 ---
 
 # Nchwaning 3 Daily Production Report

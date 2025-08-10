@@ -105,6 +105,107 @@ To avoid conflicts with the existing slash commands used by Claude Code, your ow
 *(This section can be expanded with Gemini-specific commands as we develop them.)*
 
 ---
-## 8. Initialization & Context
+## 8. Daily Production Report Processing (WhatsApp → GitHub Actions)
+
+When processing daily production reports via GitHub Actions, you MUST follow these exact specifications:
+
+### 8.1 Critical Dating Rule
+**ALWAYS use REPORT DATE (when received) for file naming, NOT data date (operational period)**
+
+Example:
+- WhatsApp received July 10th → `2025-07-10_gloria.json`
+- Contains July 9th operations → documented as `data_date: 2025-07-09`
+
+### 8.2 Mandatory File Structure
+**Hierarchical Folder Organization:**
+```
+daily_production/data/YYYY-MM/DD/
+├── YYYY-MM-DD_[site].json
+└── YYYY-MM-DD - [Site] Daily Report.md
+```
+
+### 8.3 JSON Template (EXACT SCHEMA REQUIRED)
+```json
+{
+  "metadata": {
+    "report_date": "YYYY-MM-DD",
+    "data_date": "YYYY-MM-DD", 
+    "site": "[site_name]",
+    "engineer": "[engineer_name]",
+    "source": "WhatsApp Group Chat"
+  },
+  "safety": {
+    "status": "GREEN/AMBER/RED",
+    "incidents": []
+  },
+  "production": {
+    "rom_tonnes": null,
+    "loads_hauled": null
+  },
+  "equipment": {
+    "availability_percent": null,
+    "bev_analysis": {
+      "bev_units_available": null,
+      "diesel_units_available": null  
+    }
+  },
+  "source_validation": {
+    "field_name": {
+      "value": "[extracted_value]",
+      "source_quote": "[exact_message_text]", 
+      "confidence": "HIGH/MEDIUM/LOW"
+    }
+  }
+}
+```
+
+### 8.4 Markdown Template (EXACT FORMAT REQUIRED)
+```markdown
+---
+Status:: #status/new
+Priority:: #priority/medium
+Assignee:: [[Engineer Name]]
+JSONData:: [[daily_production/data/YYYY-MM/DD/YYYY-MM-DD_site.json]]
+---
+
+# [Site] Daily Production Report
+**Date**: YYYY-MM-DD | **Engineer**: [[Name]] | **Site**: Site
+
+## Executive Summary
+[Brief operational overview]
+
+## Safety Status
+[Safety information and incidents]
+
+## Production Performance
+[ROM, loads, targets vs actual]
+
+## Equipment Status
+[TMM availability, breakdowns]
+
+## BEV vs Diesel Analysis
+[Battery vs diesel fleet performance - Nchwaning 3 only]
+
+## Source Validation
+Data extracted from WhatsApp group chat with source verification.
+
+#daily-report #[site] #year/2025
+```
+
+### 8.5 Data Extraction Rules
+1. **NEVER INVENT DATA**: Extract only actual values from WhatsApp messages
+2. **USE NULL**: If data not in source, use `null` - DO NOT fabricate  
+3. **SOURCE QUOTES**: Include exact message text for validation
+4. **CONFIDENCE LEVELS**: HIGH/MEDIUM/LOW based on clarity
+5. **FACTUAL REPORTING**: No opinions, analysis, or recommendations
+
+### 8.6 Mine Sites & Engineers
+- **Nchwaning 2**: Johan Kotze (diesel fleet)
+- **Nchwaning 3**: Sello Sease (BEV testing: 7 BEV DTs, 6 BEV FLs) 
+- **Gloria**: Sipho Dubazane (silo management)
+- **Shafts & Winders**: Xavier Peterson (infrastructure)
+
+---
+## 9. Initialization & Context
 
 This `GEMINI.md` file is your primary source of truth. The Gemini CLI will load this file automatically in each session. You do not need to be reminded of its location. Your first priority upon activation is to ensure you are operating according to these directives.

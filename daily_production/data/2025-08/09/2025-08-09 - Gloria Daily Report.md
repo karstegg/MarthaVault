@@ -2,7 +2,7 @@
 Status:: #status/new
 Priority:: #priority/medium
 Assignee:: [[Sipho Dubazane]]
-JSONData:: [[daily_production/data/2025-08-09_gloria.json]]
+JSONData:: [[daily_production/data/2025-08/09/2025-08-09_gloria.json]]
 ---
 
 # Gloria Daily Production Report

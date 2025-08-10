@@ -2,7 +2,7 @@
 Status:: #status/new
 Priority:: #priority/medium
 Assignee:: [[Xavier Peterson]]
-JSONData:: [[daily_production/data/2025-08-09_shafts_winders.json]]
+JSONData:: [[daily_production/data/2025-08/09/2025-08-09_shafts_winders.json]]
 ---
 
 # Shafts & Winders Daily Production Report
