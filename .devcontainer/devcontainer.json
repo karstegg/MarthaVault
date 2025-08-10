@@ -8,7 +8,7 @@
     }
   },
   "postCreateCommand": "bash .devcontainer/setup.sh",
-  "postStartCommand": "bash .devcontainer/start-whatsapp-mcp.sh && bash .devcontainer/start-auto-sync.sh",
+  "postStartCommand": "bash .devcontainer/enforce-master-sync.sh && bash .devcontainer/start-whatsapp-mcp.sh && bash .devcontainer/start-auto-sync.sh",
   "mounts": [
     "source=whatsapp-sessions,target=/workspaces/sessions,type=volume"
   ],

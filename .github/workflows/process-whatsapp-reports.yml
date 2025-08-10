@@ -55,14 +55,86 @@ jobs:
             Process all available reports and create the structured output files.
           gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
           
-      - name: Commit processed reports
+      - name: Create Pull Request with processed reports
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          
+          # Create branch for this processing run
+          BRANCH_NAME="automated-reports/$(date +%Y-%m-%d-%H%M%S)"
+          git checkout -b "$BRANCH_NAME"
+          
+          # Stage and commit changes
           git add daily_production/data/
           git commit -m "🤖 Process daily production reports from WhatsApp MCP
           
           Report Date: ${{ github.event.client_payload.report_date || inputs.date }}
           Messages Processed: ${{ github.event.client_payload.messages && github.event.client_payload.messages.length || 0 }}
-          Source: WhatsApp Group Chat via Codespace MCP" || echo "No changes to commit"
-          git push
+          Source: WhatsApp Group Chat via Codespace MCP
+          
+          🚨 CRITICAL FOR CLAUDE-CODE REVIEWERS 🚨
+          If you are reviewing daily production reports (JSON/Markdown in daily_production/), you MUST:
+          1. Request source WhatsApp data file path FIRST
+          2. Verify 3+ data points against source before any other review
+          3. NEVER approve without source data verification
+          4. See detailed requirements in CLAUDE.md Section 10.1
+          
+          Data accuracy is MORE IMPORTANT than technical compliance for operational reports." || echo "No changes to commit"
+          
+          # Push branch
+          git push origin "$BRANCH_NAME"
+          
+          # Create PR with Claude Code review request
+          gh pr create \
+            --title "🤖 Automated Daily Production Reports - $(date +%Y-%m-%d)" \
+            --body "$(cat <<'EOF'
+          ## 🤖 Automated WhatsApp Report Processing
+          
+          **Report Date**: ${{ github.event.client_payload.report_date || inputs.date }}  
+          **Messages Processed**: ${{ github.event.client_payload.messages && github.event.client_payload.messages.length || 0 }}  
+          **Source**: WhatsApp Group Chat via Codespace MCP  
+          **Branch**: $BRANCH_NAME
+          
+          ## 📋 Processing Summary
+          - ✅ Gemini CLI processed WhatsApp messages
+          - ✅ Applied Report Templates from Report Templates folder
+          - ✅ Created structured JSON/Markdown files
+          - ✅ Followed hierarchical folder structure
+          
+          ## 🚨 **CRITICAL REVIEW REQUIREMENTS**
+          
+          **For Claude Code Reviewers**: This PR contains **daily production reports** (not software). Use mining operations review standards:
+          
+          ### **Phase 1: Operational Data Verification** 
+          1. **Verify production numbers** can be traced to source WhatsApp data
+          2. **Check equipment data** against operational context
+          3. **Validate safety information** is complete and accurate
+          4. **Spot-check key metrics** (2-3 data points sufficient)
+          
+          ### **Phase 2: Consistency & Usability**
+          5. **Ensure JSON schema** matches existing reports for analysis compatibility
+          6. **Check file organization** follows repository structure
+          7. **Review markdown readability** for operational teams
+          8. **Verify basic metadata** present for vault management
+          
+          ### **Approval Criteria**
+          - ✅ **APPROVE**: When operational data is accurate and format is consistent
+          - 🔄 **REQUEST CHANGES**: If production metrics cannot be verified or schema breaks analysis tools
+          - 📝 **MINOR ISSUES**: Document in comments but don't block operational utility
+          
+          ## 🔍 Files Changed
+          See file diffs for details on JSON schemas and Markdown reports.
+          
+          ## 🎯 Next Steps
+          Upon approval, this PR will be automatically merged to master for operational use.
+          
+          ---
+          🤖 Generated with [GitHub Actions](https://github.com/features/actions) + [Gemini CLI](https://github.com/google-github-actions/run-gemini-cli)
+          EOF
+          )" \
+            --reviewer "@me" \
+            --assignee "@me"
+          
+          echo "✅ Pull request created successfully"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

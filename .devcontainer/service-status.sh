@@ -4,13 +4,25 @@
 echo "📊 MarthaVault Services Status"
 echo "================================"
 
+# WhatsApp MCP Bridge
+echo "📱 WhatsApp MCP Bridge:"
+if pgrep -f "bridge" > /dev/null; then
+    PID=$(pgrep -f "bridge")
+    echo "   ✅ Running (PID: $PID)"
+    if [ -f /tmp/whatsapp-bridge.log ]; then
+        echo "   📋 Log: tail -f /tmp/whatsapp-bridge.log"
+    fi
+else
+    echo "   🔴 Not running"
+fi
+
 # WhatsApp MCP Server
 echo "📱 WhatsApp MCP Server:"
-if pgrep -f "whatsapp-mcp" > /dev/null; then
-    PID=$(pgrep -f "whatsapp-mcp")
+if pgrep -f "whatsapp.*mcp.*server" > /dev/null; then
+    PID=$(pgrep -f "whatsapp.*mcp.*server")
     echo "   ✅ Running (PID: $PID)"
-    if [ -f /tmp/whatsapp-mcp.log ]; then
-        echo "   📋 Log: tail -f /tmp/whatsapp-mcp.log"
+    if [ -f /tmp/whatsapp-mcp-server.log ]; then
+        echo "   📋 Log: tail -f /tmp/whatsapp-mcp-server.log"
     fi
 else
     echo "   🔴 Not running"
