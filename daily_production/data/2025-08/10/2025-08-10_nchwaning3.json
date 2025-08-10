@@ -1,36 +1,85 @@
 {
-  "metadata": {
-    "report_date": "2025-08-10",
+  "report_metadata": {
+    "date": "2025-08-10",
     "data_date": "2025-08-09",
-    "site": "nchwaning3",
+    "site": "Nchwaning 3",
     "engineer": "Sello Sease",
-    "source": "WhatsApp Group Chat"
+    "timestamp": "05:23",
+    "report_type": "Daily Plant Report"
   },
   "safety": {
-    "status": "GREEN",
-    "incidents": []
+    "status": "clear",
+    "incidents": 0,
+    "details": ["All clear"]
   },
   "production": {
-    "rom_tonnes": 4386,
-    "loads_hauled": null
-  },
-  "equipment": {
-    "availability_percent": null,
-    "bev_analysis": {
-      "bev_units_available": null,
-      "diesel_units_available": null
-    }
-  },
-  "source_validation": {
-    "safety_status": {
-      "value": "GREEN",
-      "source_quote": "Safety - All clear",
-      "confidence": "HIGH"
+    "rom": {
+      "actual": null,
+      "target": null,
+      "variance": null,
+      "variance_percentage": null
     },
-    "rom_tonnes": {
-      "value": 4386,
-      "source_quote": "Day: 4 386t vs 6 618t (66%)",
-      "confidence": "HIGH"
+    "decline": {
+      "actual": null,
+      "target": null,
+      "variance": null,
+      "variance_percentage": null
+    },
+    "product": {
+      "actual": 4386,
+      "target": 6618,
+      "variance": -2232,
+      "variance_percentage": 66.0
+    },
+    "breakdown": [
+        {"name": "High Grade", "actual": 761, "target": 3343, "variance_percentage": 22.0},
+        {"name": "Low Grade", "actual": 1592, "target": 1573, "variance_percentage": 101.0},
+        {"name": "Seam2", "actual": 2033, "target": 1702, "variance_percentage": 119.0}
+    ],
+    "weekly": {
+        "product": {"actual": 26584, "target": 35422, "variance_percentage": 75.0},
+        "high_grade": {"actual": 16126, "target": 17893, "variance_percentage": 90.0},
+        "low_grade": {"actual": 5408, "target": 8420, "variance_percentage": 64.0},
+        "seam2": {"actual": 5050, "target": 9108, "variance_percentage": 55.0}
+    },
+    "loads": [],
+    "blast": {
+      "note": "Nothing Reported"
     }
+  },
+  "inventory": {
+      "rom_bin": 1063,
+      "sat_tip_1": 219,
+      "sat_tip_2": 1886,
+      "underground_silo": 1953,
+      "seam_1_surface_silo": 3905,
+      "seam_2_quadrant_silo": 1028,
+      "stockpile": 0,
+      "total": 10054
+  },
+  "equipment_availability": {
+    "tmm": {},
+    "specialized": []
+  },
+  "shift_readiness": {
+    "production_tmm": {}
+  },
+  "breakdowns": {
+    "current_breakdowns": []
+  },
+  "operational": {
+    "main_fans": "Nothing Reported",
+    "plant_blockages": 0,
+    "fire_alarms": 0
+  },
+  "performance_summary": {
+    "key_issues": ["Plant product tonnes below target for the day."],
+    "key_highlights": ["Low grade and Seam2 daily production met or exceeded targets."]
+  },
+  "source_message": {
+    "content": "*NCH3 plant report up until 09 August 2025*\\n*Plant Product:*\\n\\n- Safety - All clear\\n\\nDay: 4 386t vs 6 618t (66%)\\nHigh grade 761t vs 3 343t (22%)\\nLow grade 1 592t vs 1 573t (101%)\\nSeam2  2 033t vs 1 702t (119%)\\n\\n*Weekly:* 26 584t vs 35 422t (75%)\\nHigh grade 16 126t vs 17 893t (90%)\\nLow grade 5 408t vs 8 420t (64%)\\nSeam2 5 050t vs 9 108t (55%)\\n\\n*Inventory (Inc waste)*\\n*ROM bin : 1 063t*\\nSat tip 1: 219t\\nSat tip 2: 1 886t\\nUndeground Silo: 1 953t\\nSeam 1 Surface Silo: 3 905t\\nSeam 2 Quadrant Silo: 1 028t\\nStockpile 0t\\n\\n*Total tonnes: 10 054t*",
+    "message_id": "3A1C97A83628AA2E51D8",
+    "sender": "265033925812455",
+    "timestamp": "2025-08-10 05:23:58+00:00"
   }
 }

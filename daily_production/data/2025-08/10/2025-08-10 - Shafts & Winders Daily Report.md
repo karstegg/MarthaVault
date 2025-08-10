@@ -1,33 +1,72 @@
 ---
-Status:: #status/new
-Priority:: #priority/medium
-Assignee:: [[Xavier Peterson]]
-JSONData:: [[daily_production/data/2025-08/10/2025-08-10_shafts-winders.json]]
+JSONData:: [[2025-08-10_shafts-winders.json]]
 ---
 
-# Shafts & Winders Daily Production Report
-**Date**: 2025-08-09 | **Engineer**: [[Xavier Peterson]] | **Site**: Shafts & Winders
+# Shafts & Winders Daily Report
+**Date**: August 10, 2025 (Data from August 09, 2025)
+**Engineer**: [[Xavier Peterson]]
 
-## Executive Summary
-No production occurred due to the ongoing SOLROCK shaft barrel repair project. All systems are clear and operational with no stoppages reported.
+## [🟢✅] [ALL SYSTEMS OPERATIONAL]
 
-## Safety Status
-All clear, no incidents reported.
+### Safety Status
+✅ **CLEAR** - No incidents reported
 
-## Production Performance
-- **Production**: 0 tonnes (Target: 1,539t)
-- **Reason**: SOLROCK SHAFT BARREL REPAIR PROJECT
+### Infrastructure Status
+[🟢] **All systems operational with no stoppages reported.**
 
-## Equipment Status
-- **Shafts & Winders**: No stoppages reported for Nch2 PW, Nch3 PW, GL PW, Nch2 RW.
-- **Main Fans**: No stoppages reported for GL, Nch2, Nch3.
-- **Lamprooms**: No stoppages reported for GL, Nch2, Nch3.
-- **Power Supply**: No stoppages.
+#### Power Supply
+- **Status**: No Stoppages [🟢]
+- **Operational**: All systems running normally.
 
-## BEV vs Diesel Analysis
-Not applicable for this site.
+#### Winders (All Sites)
+| Winder | Site | Type | Status |
+|--------|------|------|--------|
+| **Nch2 PW** | Nchwaning 2 | Manwinder | [🟢] Operational |
+| **Nch3 PW** | Nchwaning 3 | Manwinder | [🟢] Operational |
+| **GL PW** | Gloria | Manwinder | [🟢] Operational |
+| **Nch2 RW** | Nchwaning 2 | Rock Winder (Ore Hoisting) | [🟢] Operational |
 
-## Source Validation
-Data extracted from WhatsApp group chat with source verification.
+#### Main Fans (All Sites)
+| Site | Status |
+|------|--------|
+| **Gloria** | [🟢] Operational |
+| **Nchwaning 2** | [🟢] Operational |
+| **Nchwaning 3** | [🟢] Operational |
 
-#daily-report #shafts-winders #year/2025
+#### Lamprooms (All Sites)
+| Site | Status |
+|------|--------|
+| **Gloria** | [🟢] Operational |
+| **Nchwaning 2** | [🟢] Operational |
+| **Nchwaning 3** | [🟢] Operational |
+
+### Water Management
+
+#### Dam Levels (Daily Tracking)
+| Dam | Saturday | Status |
+|-----|-------------|--------|
+| **DD01** | **100.0%** | [🟢] |
+| **DD02** | **83.6%** | [🟢] |
+
+#### Ore Pass Levels
+- **Saturday**: 18.0%
+- **Trend**: Improved from 1.6% on Friday.
+
+### Production Performance
+
+#### Daily Production Summary
+| Day | Actual | Target | Variance | Performance | Status |
+|-----|--------|--------|----------|-------------|--------|
+| **Saturday** | **0t** | **1,539t** | **-1,539t** | **0.0%** | [🔴] No production due to SOLROCK SHAFT BARREL REPAIR PROJECT |
+
+### Operational Status
+- **Fire SCADA Alarms**: 0 [🟢]
+- **Block Chutes**: None [🟢]
+
+## Actions Required
+1. **[📋 ROUTINE]**: Monitor SOLROCK SHAFT BARREL REPAIR PROJECT progress.
+
+---
+*Report processed: 2025-08-10 | Data period: 2025-08-09 | Source: WhatsApp 06:10*
+
+#daily-production #shafts-winders #infrastructure #xavier-peterson #status-green #year/2025
