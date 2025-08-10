@@ -47,28 +47,82 @@ jobs:
           echo "codespace_name=$CODESPACE_NAME" >> $GITHUB_OUTPUT
         fi
         
-    - name: Execute WhatsApp Processing in Codespace
-      id: execute
+    - name: Extract WhatsApp Data from Codespace
+      id: extract
       if: steps.codespace.outputs.codespace_status == 'found'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        echo "Executing WhatsApp report processing in Codespace..."
+        echo "Extracting WhatsApp data from Codespace..."
         echo "Target Date: ${{ steps.parse.outputs.report_date }}"
         echo "Codespace: ${{ steps.codespace.outputs.codespace_name }}"
         
-        # Execute the processing script in Codespace
-        gh codespace ssh -c "${{ steps.codespace.outputs.codespace_name }}" -- "cd /workspaces/MarthaVault && python3 .devcontainer/codespace-direct-processing.py ${{ steps.parse.outputs.report_date }}"
+        # Extract WhatsApp messages via Codespace and save to file
+        gh codespace ssh -c "${{ steps.codespace.outputs.codespace_name }}" -- "cd /workspaces/MarthaVault && python3 -c \"
+import sys
+sys.path.append('.devcontainer')
+from codespace_direct_processing import WhatsAppDataExtractor
+extractor = WhatsAppDataExtractor()
+messages = extractor.extract_whatsapp_messages('${{ steps.parse.outputs.report_date }}')
+print('WHATSAPP_DATA_START')
+print(messages)
+print('WHATSAPP_DATA_END')
+\"" > whatsapp_data.txt
         
-        EXECUTION_STATUS=$?
-        
-        if [ $EXECUTION_STATUS -eq 0 ]; then
-          echo "Codespace processing completed successfully"
-          echo "execution_status=success" >> $GITHUB_OUTPUT
+        if [ -s whatsapp_data.txt ]; then
+          echo "WhatsApp data extracted successfully"
+          echo "extraction_status=success" >> $GITHUB_OUTPUT
         else
-          echo "Codespace processing failed"
-          echo "execution_status=failed" >> $GITHUB_OUTPUT
+          echo "WhatsApp data extraction failed"
+          echo "extraction_status=failed" >> $GITHUB_OUTPUT
           exit 1
+        fi
+
+    - name: Process Reports with Gemini
+      id: process
+      if: steps.extract.outputs.extraction_status == 'success'
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      run: |
+        echo "Processing reports with Gemini API..."
+        
+        # Extract WhatsApp data from file
+        WHATSAPP_DATA=$(sed -n '/WHATSAPP_DATA_START/,/WHATSAPP_DATA_END/p' whatsapp_data.txt | sed '1d;$d')
+        
+        # Process with Gemini API using existing Python script
+        python3 << 'EOF'
+import os
+import json
+import google.generativeai as genai
+from datetime import datetime
+
+# Configure Gemini
+genai.configure(api_key=os.environ['GEMINI_API_KEY'])
+model = genai.GenerativeModel('gemini-1.5-pro')
+
+# Get WhatsApp data
+whatsapp_data = """$WHATSAPP_DATA"""
+
+# Process with Gemini (simplified for autonomous workflow)
+response = model.generate_content(f"""
+Process this WhatsApp daily production data for 2025-07-06:
+
+{whatsapp_data}
+
+Create structured JSON and Markdown reports following the Report Templates.
+Output the results clearly marked for file creation.
+""")
+
+print("GEMINI_PROCESSING_COMPLETE")
+print(response.text)
+EOF
+        
+        if [ $? -eq 0 ]; then
+          echo "Gemini processing completed successfully"
+          echo "processing_status=success" >> $GITHUB_OUTPUT
+        else
+          echo "Gemini processing failed"
+          echo "processing_status=failed" >> $GITHUB_OUTPUT
         fi
         
     - name: Report Final Status
@@ -80,15 +134,15 @@ jobs:
         
         if [ "${{ steps.codespace.outputs.codespace_status }}" = "found" ]; then
           echo "Codespace Name: ${{ steps.codespace.outputs.codespace_name }}"
-          echo "Execution Status: ${{ steps.execute.outputs.execution_status }}"
+          echo "WhatsApp Extraction: ${{ steps.extract.outputs.extraction_status }}"
+          echo "Gemini Processing: ${{ steps.process.outputs.processing_status }}"
           
-          if [ "${{ steps.execute.outputs.execution_status }}" = "success" ]; then
-            echo "SUCCESS: WhatsApp MCP data extracted and processed"
-            echo "Files created in daily_production/data/"
-            echo "Ready for Claude Code review"
+          if [ "${{ steps.extract.outputs.extraction_status }}" = "success" ] && [ "${{ steps.process.outputs.processing_status }}" = "success" ]; then
+            echo "SUCCESS: WhatsApp data extracted and processed with Gemini"
+            echo "Ready for file creation and Claude Code review"
           else
             echo "FAILURE: Processing incomplete - check logs above"
           fi
         else
-          echo "Codespace required for full autonomous processing"
+          echo "Codespace required for WhatsApp MCP data extraction"
         fi
