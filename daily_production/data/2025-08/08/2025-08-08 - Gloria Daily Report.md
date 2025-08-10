@@ -1,94 +1,99 @@
-# Gloria Daily Production Report: 2025-08-07
-
+---
+JSONData:: [[2025-08-08_gloria.json]]
 ---
 
-| | |
-|---|---|
-| **Report Date** | 2025-08-08 |
-| **Data Date** | 2025-08-07 |
-| **Site** | Gloria |
-| **Engineer** | [[Sipho Dubazane]] |
+# Gloria Daily Report
+**Date**: August 08, 2025 (Data from August 08, 2025)  
+**Engineer**: [[Sipho Dubazane]]  
+**Site**: Gloria  
 
----
+## 🔴 Low Production Performance
 
-## 1. Safety
+### Safety Status
+✅ **CLEAR** - No incidents reported
 
-- **Status**: Clear
+### Production Performance
+🔴 **Production significantly below target**
 
----
+| Metric | Actual | Target | Variance | Performance |
+|--------|--------|--------|----------|-------------|
+| **ROM** | 332t | 3,873t | -3,541t | **8.6% (below target)** 🔴 |
+| **Decline** | 369t | 3,873t | -3,504t | **9.5% (below target)** 🔴 |
+| **Product** | 1,277t | 3,894t | -2,617t | **32.8% (below target)** 🔴 |
 
-## 2. Production Summary
+#### Load & Haul Fleet Performance (Truckloads Tipped by Shift)
+| Shift | Loads | Target | Performance |
+|-------|-------|--------|-------------|
+| Day | 0 | - | **-** 🔴 |
+| Afternoon | 0 | - | **-** 🔴 |
+| Night | 14 | - | **-** 🟡 |
+| **Total** | **14** | **-** | **-** |
 
-| Metric | Actual | Target | Variance |
-|---|---:|---:|---:|
-| **ROM (t)** | 332 | 3,873 | -3,541 |
-| **Decline (t)** | 369 | 3,873 | -3,504 |
-| **Product (t)** | 1,277 | 3,894 | -2,617 |
+#### Blast Performance
+- **Nothing Reported**
 
-- **Loads**: 0 (S1), 0 (S2), 14 (S3)
+### Equipment Status
 
----
+#### TMM Availability
+| Equipment | Availability | Status |
+|-----------|-------------|---------|
+| **DT** | **99%** | 🟢✅ |
+| **FL** | **85%** | 🟢✅ |
+| **HD** | **94%** | 🟢✅ |
+| **RT** | **70%** | 🟡⚠️ |
+| **SR** | **93%** | 🟢✅ |
 
-## 3. Silo Status
+**Poor Performance Analysis:**
+- **RT**: Availability at 70% requires monitoring.
 
-### Surface Silos
+#### Equipment Readiness (Start of Shift)
+- **DT**: 6/6 available (100%) 🟢
+- **FL**: 4/5 available (80%) 🟡
+- **HD**: 4/4 available (100%) 🟢
+- **RT**: 4/4 available (100%) 🟢
+- **SR**: 4/4 available (100%) 🟢
 
-| Silo # | Level (%) |
-|---|---:|
-| 1 | 39% |
-| 2 | 19% |
-| 3 | 76% |
-| 4 | 19% |
+### Current Breakdowns (1 Unit)
 
-### Underground Silos
-
-| Silo | Level (%) |
-|---|---:|
-| 74 | 100% |
-| HG | 20% |
-| D | 15% |
-| LG | 21% |
-
----
-
-## 4. Equipment Status
-
-### TMM Availability
-
-| Type | Availability (%) |
-|---|---:|
-| Dump Trucks | 99% |
-| FLS | 85% |
-| HDS | 94% |
-| RTS | 70% |
-| SRS | 93% |
-
-### SOS Production TMMs
-
-| Type | Available / Total |
-|---|---|
-| Dump Trucks | 6 / 6 |
-| FLS | 4 / 5 |
-| HDS | 4 / 4 |
-| RTS | 4 / 4 |
-| SRS | 4 / 4 |
-
-### Support Equipment
-
-| Type | Available / Total |
-|---|---|
-| Emulsion UVs | 2 / 2 |
-| Manitou | 1 / 1 |
-| Manlifts | 2 / 2 |
-
-### Breakdowns
-
+#### FL Equipment Issues
 - **FL0118**: fire suppression
 
+### Support Equipment Summary
+- **Emulsion UVs**: 2/2 (100%) 🟢
+- **Manitou**: 1/1 (100%) 🟢
+- **Manlifts**: 2/2 (100%) 🟢
+
+### Infrastructure Status
+- **Main Fans**: In Order 🟢
+- **Plant Blockages**: None 🟢
+- **Fire Alarms**: None 🟢
+
+## Performance Summary
+- **Safety**: Clear 🟢
+- **Production**: Significantly below targets across all metrics 🔴
+- **Equipment**: Overall availability is good, with one breakdown reported. 🟡
+- **Operations**: Infrastructure is stable. 🟢
+
+## Supplemental Information
+
+### Silo Management
+#### Surface Silos
+| Silo | Level | Status |
+|------|-------|--------|
+| Silo 1 | 39% | 🟡⚠️ |
+| Silo 2 | 19% | 🔴 |
+| Silo 3 | 76% | 🟢✅ |
+| Silo 4 | 19% | 🔴 |
+
+#### Underground Silos
+| Silo | Level | Status |
+|------|-------|--------|
+| Silo 74 | 100% | 🟢✅ |
+| Silo HG | 20% | 🔴 |
+| Silo D | 15% | 🔴 |
+| Silo LG | 21% | 🔴 |
+
 ---
+*Report processed: 2025-08-08 | Data period: 2025-08-08 | Source: WhatsApp 04:36*
 
-## 5. General Operations
-
-- **Main Fans**: In Order
-- **Plant Blockages**: None
-- **Fire Alarms**: None
+#daily-production #gloria #status-critical #sipho-dubazane #year/2025

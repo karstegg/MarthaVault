@@ -1,56 +1,58 @@
 {
-    "report_date": "2025-08-08",
+  "report_metadata": {
+    "date": "2025-08-08",
     "data_date": "2025-08-07",
     "site": "Shafts & Winders",
-    "engineer": "[[Xavier Peterson]]",
-    "safety": {
-        "status": "Clear",
-        "source_validation": {
-            "confidence": "HIGH",
-            "source_line": 154,
-            "quote": "Safety:\nClear🙏🏽"
-        }
-    },
+    "engineer": "Xavier Peterson",
+    "timestamp": "04:51",
+    "report_type": "Daily Report",
+    "source_message_id": "2838A9491BC4B8F87FE2CB270CD1F769"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "infrastructure": {
     "power_supply": {
-        "stoppages": "No Stoppages",
-        "source_validation": {
-            "confidence": "HIGH",
-            "source_line": 157,
-            "quote": "Power Supply:\nNo Stoppages"
-        }
+      "stoppages": 0,
+      "status": "No Stoppages"
     },
-    "infrastructure_status": {
-        "shafts_and_winders": {
-            "nch2_pw": "No Stoppages",
-            "nch3_pw": "No Stoppages",
-            "gl_pw": "No Stoppages",
-            "nch2_rw": "No Stoppages"
-        },
-        "main_fans": {
-            "gl": "No Stoppages",
-            "nch2": "No Stoppages",
-            "nch3": "No Stoppages"
-        },
-        "lamprooms": {
-            "gl": "No Stoppages",
-            "nch2": "No Stoppages",
-            "nch3": "No Stoppages"
-        }
+    "winders": {
+      "nch2_pw": {"status": "No Stoppages", "operational": true, "type": "manwinder"},
+      "nch3_pw": {"status": "No Stoppages", "operational": true, "type": "manwinder"},
+      "gl_pw": {"status": "No Stoppages", "operational": true, "type": "manwinder"},
+      "nch2_rw": {"status": "No Stoppages", "operational": true, "type": "rock_winder", "function": "ore_hoisting"}
     },
-    "weekly_performance": {
-        "dam_levels": [
-            {"dam": "DD01", "thu_percentage": 100.1},
-            {"dam": "DD02", "thu_percentage": 82.9}
-        ],
-        "production": [
-            {"day": "Thu", "actual": 4872, "target": 5204}
-        ],
-        "ore_pass_levels": [
-            {"day": "Thu", "percentage": 7.8}
-        ]
+    "main_fans": {
+      "gloria": {"status": "No Stoppages", "operational": true},
+      "nchwaning2": {"status": "No Stoppages", "operational": true},
+      "nchwaning3": {"status": "No Stoppages", "operational": true}
     },
-    "operations": {
-        "fire_scada_alarms": 0,
-        "block_chutes": "None"
+    "lamprooms": {
+      "gloria": {"status": "No Stoppages", "operational": true},
+      "nchwaning2": {"status": "No Stoppages", "operational": true},
+      "nchwaning3": {"status": "No Stoppages", "operational": true}
     }
+  },
+  "dam_levels": {
+    "dd01": {"level": 100.1},
+    "dd02": {"level": 82.9}
+  },
+  "ore_pass_levels": {
+    "current_level": 7.8
+  },
+  "production": {
+    "daily_summary": [
+      {"day": "Thursday", "actual": 4872, "target": 5204, "variance": -332, "variance_percentage": 93.6}
+    ]
+  },
+  "operational": {
+    "fire_scada_alarms": 0,
+    "block_chutes": 0
+  },
+  "performance_summary": {
+    "key_issues": [],
+    "key_highlights": []
+  }
 }
