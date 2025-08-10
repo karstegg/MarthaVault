@@ -1,7 +1,8 @@
-name: Claude Code Cloud Integration
+name: Claude Code Cloud Integration (DISABLED)
 on:
-  issues:
-    types: [opened, edited]
+  # TEMPORARILY DISABLED to fix autonomous processing conflicts
+  # issues:
+  #   types: [opened, edited]
   issue_comment:
     types: [created, edited]
   workflow_dispatch:
