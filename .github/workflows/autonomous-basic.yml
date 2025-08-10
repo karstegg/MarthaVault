@@ -27,8 +27,34 @@ jobs:
           exit 1
         fi
         
-    - name: Report Success
+    - name: Check Codespace Status
+      id: codespace
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        echo "AUTONOMOUS BASIC WORKFLOW SUCCESS"
+        echo "Checking for active Codespace..."
+        
+        # Look for active codespace
+        CODESPACE_NAME=$(gh codespace list --repo ${{ github.repository }} --json name,state | jq -r '.[] | select(.state=="Available") | .name' | head -1)
+        
+        if [ -z "$CODESPACE_NAME" ]; then
+          echo "No active Codespace found"
+          echo "codespace_status=not_found" >> $GITHUB_OUTPUT
+          echo "codespace_name=" >> $GITHUB_OUTPUT
+        else
+          echo "Found active Codespace: $CODESPACE_NAME"
+          echo "codespace_status=found" >> $GITHUB_OUTPUT  
+          echo "codespace_name=$CODESPACE_NAME" >> $GITHUB_OUTPUT
+        fi
+        
+    - name: Report Final Status
+      run: |
+        echo "AUTONOMOUS BASIC WORKFLOW COMPLETE"
         echo "Report Date: ${{ steps.parse.outputs.report_date }}"
-        echo "Ready to add next layer of complexity"
+        echo "Codespace Status: ${{ steps.codespace.outputs.codespace_status }}"
+        if [ "${{ steps.codespace.outputs.codespace_status }}" = "found" ]; then
+          echo "Codespace Name: ${{ steps.codespace.outputs.codespace_name }}"
+          echo "Ready for SSH execution layer"
+        else
+          echo "Codespace required for full autonomous processing"
+        fi
