@@ -58,16 +58,7 @@ jobs:
         echo "Codespace: ${{ steps.codespace.outputs.codespace_name }}"
         
         # Extract WhatsApp messages via Codespace and save to file
-        gh codespace ssh -c "${{ steps.codespace.outputs.codespace_name }}" -- "cd /workspaces/MarthaVault && python3 -c \"
-import sys
-sys.path.append('.devcontainer')
-from codespace_direct_processing import WhatsAppDataExtractor
-extractor = WhatsAppDataExtractor()
-messages = extractor.extract_whatsapp_messages('${{ steps.parse.outputs.report_date }}')
-print('WHATSAPP_DATA_START')
-print(messages)
-print('WHATSAPP_DATA_END')
-\"" > whatsapp_data.txt
+        gh codespace ssh -c "${{ steps.codespace.outputs.codespace_name }}" -- "cd /workspaces/MarthaVault && python3 .devcontainer/codespace-direct-processing.py ${{ steps.parse.outputs.report_date }} --extract-only" > whatsapp_data.txt
         
         if [ -s whatsapp_data.txt ]; then
           echo "WhatsApp data extracted successfully"
@@ -86,26 +77,20 @@ print('WHATSAPP_DATA_END')
       run: |
         echo "Processing reports with Gemini API..."
         
-        # Extract WhatsApp data from file
-        WHATSAPP_DATA=$(sed -n '/WHATSAPP_DATA_START/,/WHATSAPP_DATA_END/p' whatsapp_data.txt | sed '1d;$d')
-        
-        # Process with Gemini API using existing Python script
-        python3 << 'EOF'
+        # Create simple Gemini processing script
+        cat > process_gemini.py << 'EOF'
 import os
-import json
+import sys
 import google.generativeai as genai
-from datetime import datetime
 
-# Configure Gemini
 genai.configure(api_key=os.environ['GEMINI_API_KEY'])
 model = genai.GenerativeModel('gemini-1.5-pro')
 
-# Get WhatsApp data
-whatsapp_data = """$WHATSAPP_DATA"""
+with open('whatsapp_data.txt', 'r') as f:
+    whatsapp_data = f.read()
 
-# Process with Gemini (simplified for autonomous workflow)
 response = model.generate_content(f"""
-Process this WhatsApp daily production data for 2025-07-06:
+Process this WhatsApp daily production data for {sys.argv[1]}:
 
 {whatsapp_data}
 
@@ -116,6 +101,9 @@ Output the results clearly marked for file creation.
 print("GEMINI_PROCESSING_COMPLETE")
 print(response.text)
 EOF
+        
+        # Run Gemini processing
+        python3 process_gemini.py ${{ steps.parse.outputs.report_date }}
         
         if [ $? -eq 0 ]; then
           echo "Gemini processing completed successfully"

@@ -356,11 +356,14 @@ Sites: Gloria, Nchwaning 3, Shafts & Winders
         return success
 
 def main():
-    if len(sys.argv) != 2:
-        print("Usage: python codespace-direct-processing.py YYYY-MM-DD")
-        sys.exit(1)
+    import argparse
     
-    target_date = sys.argv[1]
+    parser = argparse.ArgumentParser(description='Process WhatsApp daily production reports')
+    parser.add_argument('date', help='Target date (YYYY-MM-DD)')
+    parser.add_argument('--extract-only', action='store_true', help='Only extract WhatsApp data, do not process')
+    
+    args = parser.parse_args()
+    target_date = args.date
     
     # Validate date format
     try:
@@ -376,9 +379,22 @@ def main():
         # Continue anyway for testing
     
     processor = CodespaceDirectProcessor()
-    success = processor.process_date(target_date)
     
-    sys.exit(0 if success else 1)
+    if args.extract_only:
+        # Only extract WhatsApp messages and print them
+        print("WHATSAPP_DATA_START")
+        messages = processor.extract_whatsapp_messages(target_date)
+        for msg in messages:
+            print(f"From: {msg.get('from_name', 'Unknown')}")
+            print(f"Time: {msg.get('timestamp', 'Unknown')}")
+            print(f"Content: {msg.get('content', '')}")
+            print("---")
+        print("WHATSAPP_DATA_END")
+        sys.exit(0)
+    else:
+        # Full processing
+        success = processor.process_date(target_date)
+        sys.exit(0 if success else 1)
 
 if __name__ == "__main__":
     main()
