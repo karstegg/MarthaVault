@@ -63,6 +63,8 @@ jobs:
         if [ -s whatsapp_data.txt ]; then
           echo "WhatsApp data extracted successfully"
           echo "extraction_status=success" >> $GITHUB_OUTPUT
+          echo "Data preview:"
+          head -20 whatsapp_data.txt
         else
           echo "WhatsApp data extraction failed"
           echo "extraction_status=failed" >> $GITHUB_OUTPUT
@@ -72,46 +74,12 @@ jobs:
     - name: Process Reports with Gemini
       id: process
       if: steps.extract.outputs.extraction_status == 'success'
-      env:
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       run: |
-        echo "Processing reports with Gemini API..."
-        
-        # Create simple Gemini processing script
-        cat > process_gemini.py << 'EOF'
-import os
-import sys
-import google.generativeai as genai
-
-genai.configure(api_key=os.environ['GEMINI_API_KEY'])
-model = genai.GenerativeModel('gemini-1.5-pro')
-
-with open('whatsapp_data.txt', 'r') as f:
-    whatsapp_data = f.read()
-
-response = model.generate_content(f"""
-Process this WhatsApp daily production data for {sys.argv[1]}:
-
-{whatsapp_data}
-
-Create structured JSON and Markdown reports following the Report Templates.
-Output the results clearly marked for file creation.
-""")
-
-print("GEMINI_PROCESSING_COMPLETE")
-print(response.text)
-EOF
-        
-        # Run Gemini processing
-        python3 process_gemini.py ${{ steps.parse.outputs.report_date }}
-        
-        if [ $? -eq 0 ]; then
-          echo "Gemini processing completed successfully"
-          echo "processing_status=success" >> $GITHUB_OUTPUT
-        else
-          echo "Gemini processing failed"
-          echo "processing_status=failed" >> $GITHUB_OUTPUT
-        fi
+        echo "Processing reports with Gemini would happen here..."
+        echo "For now, displaying extracted WhatsApp data"
+        echo "Full data:"
+        cat whatsapp_data.txt
+        echo "processing_status=success" >> $GITHUB_OUTPUT
         
     - name: Report Final Status
       if: always()
@@ -126,8 +94,7 @@ EOF
           echo "Gemini Processing: ${{ steps.process.outputs.processing_status }}"
           
           if [ "${{ steps.extract.outputs.extraction_status }}" = "success" ] && [ "${{ steps.process.outputs.processing_status }}" = "success" ]; then
-            echo "SUCCESS: WhatsApp data extracted and processed with Gemini"
-            echo "Ready for file creation and Claude Code review"
+            echo "SUCCESS: WhatsApp data extracted and ready for processing"
           else
             echo "FAILURE: Processing incomplete - check logs above"
           fi
