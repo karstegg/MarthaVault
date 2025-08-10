@@ -1,50 +1,87 @@
 {
-  "metadata": {
-    "report_date": "2025-08-09",
+  "report_metadata": {
+    "date": "2025-08-09",
     "data_date": "2025-08-09",
     "site": "Nchwaning 3",
     "engineer": "Sello Sease",
-    "source": "WhatsApp Group Chat"
+    "timestamp": null
   },
   "safety": {
-    "status": "GREEN",
-    "incidents": []
+    "status": "clear",
+    "incidents": 0,
+    "details": []
   },
   "production": {
-    "rom_tonnes": 6513,
-    "loads_hauled": [87, 70, 76]
+    "rom": {
+      "actual": 6513,
+      "target": 8060,
+      "variance": -1547,
+      "variance_percentage": -19.19
+    },
+    "decline": {
+      "actual": null,
+      "target": null,
+      "variance": null,
+      "variance_percentage": null
+    },
+    "product": {
+      "actual": null,
+      "target": null,
+      "variance": null,
+      "variance_percentage": null
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 87, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 70, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 76, "target": null}
+    ],
+    "blast": {
+      "faces": null,
+      "breakdown": null,
+      "note": "Nothing Reported"
+    }
   },
-  "equipment": {
-    "availability_percent": {
-      "HDs": 87,
-      "DTs": 95,
-      "FLs": 85,
-      "RTs": 92,
-      "SRs": 89,
-      "UVs": 89
+  "equipment_availability": {
+    "tmm": {
+      "HD": 87,
+      "DT": 95,
+      "FL": 85,
+      "RT": 92,
+      "SR": 89,
+      "UV": 89
     },
-    "bev_analysis": {
-      "bev_units_available": null,
-      "diesel_units_available": null
-    },
-    "breakdowns": [
-      "DT 0161 - Puncture RR tyre",
-      "DT0163 - Battery charging",
-      "FL 0098 - EMS error",
-      "FL 0101 - Tyre damage",
-      "HD 0050 - Service skip (Locked)",
-      "HD 0055 - Feedsling",
-      "RT 0055 - Nozzle (awaiting spares)",
-      "UV 0045 - FTS",
-      "UV 0047 - Brakes release",
-      "SR 0030 - Incident Repairs"
+    "specialized": []
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": null, "total": null},
+      "FL": {"available": null, "total": null},
+      "HD": {"available": null, "total": null},
+      "RT": {"available": null, "total": null},
+      "SR": {"available": null, "total": null}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "DT 0161", "issue": "Puncture RR tyre"},
+      {"unit": "DT0163", "issue": "Battery charging"},
+      {"unit": "FL 0098", "issue": "EMS error"},
+      {"unit": "FL 0101", "issue": "Tyre damage"},
+      {"unit": "HD 0050", "issue": "Service skip (Locked)"},
+      {"unit": "HD 0055", "issue": "Feedsling"},
+      {"unit": "RT 0055", "issue": "Nozzle (awaiting spares)"},
+      {"unit": "UV 0045", "issue": "FTS"},
+      {"unit": "UV 0047", "issue": "Brakes release"},
+      {"unit": "SR 0030", "issue": "Incident Repairs"}
     ]
   },
-  "source_validation": {
-    "rom_tonnes": {
-      "value": "6513",
-      "source_quote": "*ROM*\n 6513 vs 8060",
-      "confidence": "HIGH"
-    }
+  "operational": {
+    "main_fans": "Nothing Reported",
+    "plant_blockages": null,
+    "fire_alarms": null
+  },
+  "performance_summary": {
+    "key_issues": ["ROM production below target", "10 breakdowns reported"],
+    "key_highlights": []
   }
 }

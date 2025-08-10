@@ -1,45 +1,86 @@
 {
-  "metadata": {
-    "report_date": "2025-08-09",
+  "report_metadata": {
+    "date": "2025-08-09",
     "data_date": "2025-08-09",
     "site": "Gloria",
     "engineer": "Sipho Dubazane",
-    "source": "WhatsApp Group Chat"
+    "timestamp": null
   },
   "safety": {
-    "status": "GREEN",
-    "incidents": []
+    "status": "clear",
+    "incidents": 0,
+    "details": []
   },
   "production": {
-    "rom_tonnes": 3117,
-    "loads_hauled": [
-      26,
-      27,
-      47
+    "rom": {
+      "actual": 3117,
+      "target": 3873,
+      "variance": -756,
+      "variance_percentage": -19.52
+    },
+    "decline": {
+      "actual": null,
+      "target": null,
+      "variance": null,
+      "variance_percentage": null
+    },
+    "product": {
+      "actual": null,
+      "target": null,
+      "variance": null,
+      "variance_percentage": null
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 26, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 27, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 47, "target": null}
+    ],
+    "blast": {
+      "faces": null,
+      "breakdown": null,
+      "note": "Nothing Reported"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": 94,
+      "FL": 90,
+      "HD": 97,
+      "RT": 99,
+      "SR": 60
+    },
+    "specialized": []
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": null, "total": null},
+      "FL": {"available": null, "total": null},
+      "HD": {"available": null, "total": null},
+      "RT": {"available": null, "total": null},
+      "SR": {"available": null, "total": null}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "DT0174", "issue": "fire suppression"},
+      {"unit": "SR0037", "issue": "No movement"}
     ]
   },
-  "equipment": {
-    "availability_percent": {
-      "DTs": 94,
-      "FLs": 90,
-      "HDs": 97,
-      "RTs": 99,
-      "SRs": 60
-    },
-    "bev_analysis": {
-      "bev_units_available": null,
-      "diesel_units_available": null
-    },
-    "breakdowns": [
-      "DT0174 fire suppression",
-      "SR0037 No movement"
-    ]
+  "operational": {
+    "main_fans": "Nothing Reported",
+    "plant_blockages": null,
+    "fire_alarms": null
   },
-  "source_validation": {
-    "rom_tonnes": {
-      "value": "3117",
-      "source_quote": "**ROM* \n- 3117 vs 3873",
-      "confidence": "HIGH"
+  "performance_summary": {
+    "key_issues": ["ROM production below target"],
+    "key_highlights": []
+  },
+  "silo_levels": {
+    "surface": {
+      "silo_1": null, "silo_2": null, "silo_3": null, "silo_4": null
+    },
+    "underground": {
+      "silo_74": null, "silo_hg": null, "silo_d": null, "silo_lg": null
     }
   }
 }
