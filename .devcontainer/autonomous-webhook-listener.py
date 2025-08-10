@@ -19,8 +19,40 @@ class AutonomousWebhookListener:
         self.check_interval = 30  # Check every 30 seconds
         
     def check_for_processing_requests(self):
-        """Check GitHub repository for processing requests via issues or workflow runs"""
+        """Check for processing requests via signal files and GitHub issues"""
         
+        # Method 1: Check for extraction signal files (more reliable)
+        try:
+            signal_dir = "/workspaces/MarthaVault/extraction_requests"
+            if os.path.exists(signal_dir):
+                for filename in os.listdir(signal_dir):
+                    if filename.startswith("extract_") and filename.endswith(".json"):
+                        signal_file = os.path.join(signal_dir, filename)
+                        
+                        # Check if file is recent (within last 5 minutes)
+                        file_time = os.path.getmtime(signal_file)
+                        current_time = time.time()
+                        
+                        if (current_time - file_time) < 300:  # 5 minutes
+                            with open(signal_file, 'r') as f:
+                                signal_data = json.load(f)
+                                
+                            if signal_data.get('status') == 'pending':
+                                target_date = signal_data.get('target_date')
+                                print(f"📡 Found signal file for {target_date}")
+                                
+                                # Mark as processing
+                                signal_data['status'] = 'processing'
+                                signal_data['processing_started'] = datetime.now().isoformat()
+                                
+                                with open(signal_file, 'w') as f:
+                                    json.dump(signal_data, f, indent=2)
+                                    
+                                return target_date
+        except Exception as e:
+            print(f"⚠️  Error checking signal files: {e}")
+        
+        # Method 2: Fallback to GitHub Issues API
         headers = {
             'Authorization': f'token {self.github_token}',
             'Accept': 'application/vnd.github.v3+json'
@@ -57,13 +89,13 @@ class AutonomousWebhookListener:
                             date_match = re.search(r'(\d{4}-\d{2}-\d{2})', title)
                             if date_match:
                                 target_date = date_match.group(1)
-                                print(f"🎯 Found processing request for {target_date}")
+                                print(f"🎯 Found GitHub issue request for {target_date}")
                                 return target_date
                             
             return None
             
         except Exception as e:
-            print(f"❌ Error checking for processing requests: {e}")
+            print(f"❌ Error checking GitHub issues: {e}")
             return None
     
     def extract_whatsapp_data(self, target_date):
