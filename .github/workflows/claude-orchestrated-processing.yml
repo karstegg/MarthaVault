@@ -25,6 +25,12 @@ on:
 jobs:
   orchestrate-codespace-processing:
     runs-on: ubuntu-latest
+    # Only trigger for autonomous processing issues
+    if: |
+      (github.event_name == 'issues' && 
+       contains(github.event.issue.title, 'Autonomous Process WhatsApp Reports')) ||
+      github.event_name == 'repository_dispatch' ||
+      github.event_name == 'workflow_dispatch'
     
     steps:
     - name: 📋 Parse Claude Orchestration Request

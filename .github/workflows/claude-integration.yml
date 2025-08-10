@@ -9,7 +9,12 @@ on:
 jobs:
   claude-processor:
     runs-on: ubuntu-latest
-    if: contains(github.event.comment.body, '@claude') || github.event_name == 'issues'
+    # Only trigger for @claude mentions or non-autonomous issues
+    if: |
+      contains(github.event.comment.body, '@claude') || 
+      (github.event_name == 'issues' && 
+       !contains(github.event.issue.title, 'Autonomous Process WhatsApp Reports') &&
+       !contains(github.event.issue.body, 'autonomous processing pipeline'))
     
     steps:
       - name: Checkout repository
