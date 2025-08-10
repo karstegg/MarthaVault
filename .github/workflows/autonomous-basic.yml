@@ -47,14 +47,48 @@ jobs:
           echo "codespace_name=$CODESPACE_NAME" >> $GITHUB_OUTPUT
         fi
         
-    - name: Report Final Status
+    - name: Execute WhatsApp Processing in Codespace
+      id: execute
+      if: steps.codespace.outputs.codespace_status == 'found'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        echo "AUTONOMOUS BASIC WORKFLOW COMPLETE"
+        echo "Executing WhatsApp report processing in Codespace..."
+        echo "Target Date: ${{ steps.parse.outputs.report_date }}"
+        echo "Codespace: ${{ steps.codespace.outputs.codespace_name }}"
+        
+        # Execute the processing script in Codespace
+        gh codespace ssh -c "${{ steps.codespace.outputs.codespace_name }}" -- "cd /workspaces/MarthaVault && python3 .devcontainer/codespace-direct-processing.py ${{ steps.parse.outputs.report_date }}"
+        
+        EXECUTION_STATUS=$?
+        
+        if [ $EXECUTION_STATUS -eq 0 ]; then
+          echo "Codespace processing completed successfully"
+          echo "execution_status=success" >> $GITHUB_OUTPUT
+        else
+          echo "Codespace processing failed"
+          echo "execution_status=failed" >> $GITHUB_OUTPUT
+          exit 1
+        fi
+        
+    - name: Report Final Status
+      if: always()
+      run: |
+        echo "AUTONOMOUS WORKFLOW COMPLETE"
         echo "Report Date: ${{ steps.parse.outputs.report_date }}"
         echo "Codespace Status: ${{ steps.codespace.outputs.codespace_status }}"
+        
         if [ "${{ steps.codespace.outputs.codespace_status }}" = "found" ]; then
           echo "Codespace Name: ${{ steps.codespace.outputs.codespace_name }}"
-          echo "Ready for SSH execution layer"
+          echo "Execution Status: ${{ steps.execute.outputs.execution_status }}"
+          
+          if [ "${{ steps.execute.outputs.execution_status }}" = "success" ]; then
+            echo "SUCCESS: WhatsApp MCP data extracted and processed"
+            echo "Files created in daily_production/data/"
+            echo "Ready for Claude Code review"
+          else
+            echo "FAILURE: Processing incomplete - check logs above"
+          fi
         else
           echo "Codespace required for full autonomous processing"
         fi
