@@ -8,7 +8,31 @@
     }
   },
   "postCreateCommand": "bash .devcontainer/setup.sh",
+  "postStartCommand": "bash .devcontainer/start-whatsapp-mcp.sh && bash .devcontainer/start-auto-sync.sh",
   "mounts": [
     "source=whatsapp-sessions,target=/workspaces/sessions,type=volume"
-  ]
+  ],
+  "settings": {
+    "git.autofetch": true,
+    "git.autorefresh": true
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "git.autofetch": true,
+        "git.autorefresh": true,
+        "git.pullBeforeCheckout": true
+      },
+      "extensions": [
+        "ms-python.python",
+        "GitHub.vscode-pull-request-github"
+      ]
+    }
+  },
+  "portsAttributes": {
+    "8080": {
+      "label": "WhatsApp MCP Server",
+      "onAutoForward": "notify"
+    }
+  }
 }
