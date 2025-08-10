@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "report_date": "2025-08-09",
+    "data_date": "2025-08-08",
+    "site": "Shafts & Winders",
+    "engineer": "Xavier Peterson",
+    "source": "WhatsApp Group Chat"
+  },
+  "safety": {
+    "status": "GREEN",
+    "incidents": []
+  },
+  "production": {
+    "rom_tonnes": 4462,
+    "loads_hauled": null
+  },
+  "equipment": {
+    "availability_percent": null,
+    "bev_analysis": {
+      "bev_units_available": null,
+      "diesel_units_available": null
+    },
+    "breakdowns": [
+      "Main Fans GL: Fan No.1 Tripped"
+    ]
+  },
+  "source_validation": {
+    "rom_tonnes": {
+      "value": "4462",
+      "source_quote": "Production:\nFri: 4462/6463",
+      "confidence": "HIGH"
+    }
+  }
+}
