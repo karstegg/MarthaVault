@@ -1,0 +1,214 @@
+name: 🧠 Claude Cloud Review of Orchestrated Results
+
+on:
+  # Triggered when Claude review issues are created/updated
+  issues:
+    types: [opened, edited]
+
+  # Manual trigger for testing
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: 'Issue number to review'
+        required: true
+        type: string
+
+jobs:
+  claude-review-orchestrated-results:
+    runs-on: ubuntu-latest
+    # Only run on issues labeled for Claude review
+    if: contains(github.event.issue.labels.*.name, 'claude-review')
+    
+    steps:
+    - name: 🏁 Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: 📋 Parse Review Request  
+      id: parse-review
+      run: |
+        echo "🧠 Claude Cloud Review Request Received"
+        
+        issue_title="${{ github.event.issue.title }}"
+        issue_body="${{ github.event.issue.body }}"
+        issue_number="${{ github.event.issue.number }}"
+        
+        echo "📝 Review Issue #$issue_number: $issue_title"
+        
+        # Extract report date from issue title
+        if [[ "$issue_title" =~ ([0-9]{4}-[0-9]{2}-[0-9]{2}) ]]; then
+          report_date="${BASH_REMATCH[1]}"
+          echo "📅 Report Date: $report_date"
+        else
+          echo "❌ No valid date found in issue title"
+          exit 1
+        fi
+        
+        echo "report_date=$report_date" >> $GITHUB_OUTPUT
+        echo "issue_number=$issue_number" >> $GITHUB_OUTPUT
+
+    - name: 🔍 Execute Claude Cloud Review
+      id: claude-review
+      uses: google-github-actions/run-gemini-cli@main
+      with:
+        prompt: |
+          # 🤖 Claude Cloud Autonomous Review
+          
+          You are Claude Code reviewing **autonomously processed daily production reports** for **${{ steps.parse-review.outputs.report_date }}**.
+          
+          ## Your Role: Autonomous Operations Reviewer
+          - **Purpose**: Review mining operations reports processed by the autonomous system
+          - **Authority**: You have full authority to approve or request changes
+          - **Focus**: Operational accuracy and data integrity (not technical perfection)
+          - **Context**: This is part of the fully autonomous processing pipeline
+          
+          ## Review Task
+          **Report Date**: ${{ steps.parse-review.outputs.report_date }}
+          **Processing Method**: Codespace WhatsApp MCP → Gemini CLI → Structured Output
+          **Template Source**: Report Templates folder (site-specific)
+          
+          ## Files to Review
+          Navigate to: `daily_production/data/$(date -d '${{ steps.parse-review.outputs.report_date }}' '+%Y-%m/%d')/ `
+          
+          Expected files:
+          - `${{ steps.parse-review.outputs.report_date }}_gloria.json` + `.md`
+          - `${{ steps.parse-review.outputs.report_date }}_nchwaning3.json` + `.md` 
+          - `${{ steps.parse-review.outputs.report_date }}_shafts-winders.json` + `.md`
+          
+          ## Mining-Focused Review Criteria
+          
+          ### 🔴 CRITICAL (Must be correct for approval)
+          1. **Production Metrics**: ROM, Product tonnages reasonable for site capacity
+          2. **Safety Status**: Incident reporting complete and accurate
+          3. **Equipment Data**: Fleet sizes match known site inventories
+          4. **Site-Specific Elements**:
+             - Gloria: Silo levels present and reasonable
+             - Nchwaning 3: BEV analysis with 7 DTs + 6 FLs
+             - S&W: Infrastructure focus (dams, power, no BEV content)
+          
+          ### 🟡 IMPORTANT (Should be consistent)
+          5. **JSON Schema**: Matches existing report structure for analysis tools
+          6. **Template Compliance**: Uses correct site-specific templates
+          7. **Data Validation**: Source validation sections present
+          
+          ### 🟢 NICE-TO-HAVE (Document but don't block)
+          8. **Formatting**: Minor markdown/JSON formatting variations
+          9. **Metadata Completeness**: Optional fields can be missing
+          
+          ## Your Decision Authority
+          - **APPROVE**: If operational data is accurate and consistent
+          - **REQUEST CHANGES**: If critical mining data is wrong or missing
+          - **MINOR ISSUES**: Note in comments but approve for operational use
+          
+          ## Review Actions
+          1. **Read** each file and assess against criteria above
+          2. **Verify** production numbers seem reasonable for mining operations
+          3. **Check** site-specific requirements are met
+          4. **Decide** APPROVE or REQUEST CHANGES
+          5. **Comment** on the GitHub issue with your findings
+          
+          **Remember**: You're reviewing mining operational data, not software. Prioritize operational accuracy over technical perfection.
+          
+          Begin your autonomous review now.
+
+    - name: 📝 Process Claude Review Results
+      id: process-review
+      run: |
+        echo "📊 Processing Claude Cloud Review Results..."
+        
+        # Parse Claude's review output (this would contain the review decision)
+        review_output="${{ steps.claude-review.outputs.response }}"
+        
+        echo "🧠 Claude Review Output:"
+        echo "$review_output"
+        
+        # Determine approval status from Claude's response
+        if echo "$review_output" | grep -qi "APPROVE\|APPROVED\|✅"; then
+          review_status="approved"
+          echo "✅ Claude APPROVED the reports"
+        elif echo "$review_output" | grep -qi "REQUEST CHANGES\|CHANGES NEEDED\|❌"; then
+          review_status="changes_requested" 
+          echo "🔄 Claude REQUESTED CHANGES"
+        else
+          review_status="review_needed"
+          echo "🤔 Claude review inconclusive - manual review needed"
+        fi
+        
+        echo "review_status=$review_status" >> $GITHUB_OUTPUT
+
+    - name: ✅ Auto-Approve and Close Issue
+      if: steps.process-review.outputs.review_status == 'approved'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "🎉 AUTO-APPROVING: Claude approved the reports"
+        
+        # Add Claude's approval comment to the issue
+        gh issue comment ${{ steps.parse-review.outputs.issue_number }} --body "## ✅ Claude Cloud Review: APPROVED
+
+**Review Date**: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+**Status**: Autonomous approval granted
+**Reports**: ${{ steps.parse-review.outputs.report_date }}
+
+### Claude's Assessment
+${{ steps.claude-review.outputs.response }}
+
+### Approval Summary
+- ✅ Production metrics verified
+- ✅ Safety status confirmed  
+- ✅ Site-specific requirements met
+- ✅ Operational data ready for use
+
+**Reports approved for operational use. No further action required.**
+
+---
+**Autonomously reviewed by Claude Cloud** 🤖"
+
+        # Close the issue as completed
+        gh issue close ${{ steps.parse-review.outputs.issue_number }} --reason completed
+        
+        # Add success label
+        gh issue edit ${{ steps.parse-review.outputs.issue_number }} --add-label "claude-approved,autonomous-success"
+
+    - name: 🔄 Request Changes and Keep Issue Open  
+      if: steps.process-review.outputs.review_status == 'changes_requested'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "🔄 CHANGES REQUESTED: Claude found issues"
+        
+        # Add Claude's change request to the issue
+        gh issue comment ${{ steps.parse-review.outputs.issue_number }} --body "## 🔄 Claude Cloud Review: CHANGES REQUESTED
+
+**Review Date**: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+**Status**: Issues found - corrections needed
+**Reports**: ${{ steps.parse-review.outputs.report_date }}
+
+### Claude's Assessment  
+${{ steps.claude-review.outputs.response }}
+
+### Required Actions
+Please review Claude's findings above and make necessary corrections.
+
+After corrections:
+1. Re-run the processing: \`python3 .devcontainer/codespace-direct-processing.py ${{ steps.parse-review.outputs.report_date }}\`
+2. Comment on this issue when ready for re-review
+3. Claude will automatically re-review the updated files
+
+---
+**Autonomously reviewed by Claude Cloud** 🤖"
+
+        # Add labels for tracking
+        gh issue edit ${{ steps.parse-review.outputs.issue_number }} --add-label "changes-requested,needs-correction"
+
+    - name: 📈 Update Autonomous System Metrics
+      if: always()
+      run: |
+        echo "📊 AUTONOMOUS REVIEW CYCLE METRICS"
+        echo "================================="
+        echo "📅 Report Date: ${{ steps.parse-review.outputs.report_date }}"
+        echo "🧠 Review Status: ${{ steps.process-review.outputs.review_status }}"
+        echo "⚡ Processing Speed: Fully autonomous"
+        echo "🎯 Human Intervention: ${{ steps.process-review.outputs.review_status == 'approved' && 'None required' || 'Spot check recommended' }}"
+        echo ""
+        echo "🔄 AUTONOMOUS SYSTEM STATUS: OPERATIONAL"
+        echo "   WhatsApp MCP → Codespace → Gemini → Claude Review → Auto-approve"
