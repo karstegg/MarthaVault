@@ -339,3 +339,6 @@ Use `scripts/validate-daily-report.ps1` to verify data accuracy before approving
 - Use JSON files for queries and analysis of daily production reports
 - Implement standardized JSON schema for consistent data parsing
 - Leverage JSON's structured format for efficient data retrieval and trend analysis
+- remember to extract the text from handwritten notes and capture the points/actions
+- Please remember I created a folder for ideas, so move this particular idea there, give it an appropriate title, and move it to the ideas folder.
+- I like your idea. Please remember to create a memory regarding the ideas folder.

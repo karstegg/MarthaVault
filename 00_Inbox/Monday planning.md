@@ -1,0 +1,3 @@
+I'm going through my Outlook Inbox and I'm just going through all the mails, picking up tasks and things that must be done. I'm adding them all here as bullets, so it covers a lot of different aspects. You'll have to add them to the correct folders. There is a list of bullets for each item. I will start each bullet point with a prefix, e.g. "task", "project", etc. to indicate where it must go.
+- /Tasks: There must be a weekly fire system status report. - Charlie de Lange (Site Manager for Itireleng, our On site Fire Systems Service Provider )
+- 

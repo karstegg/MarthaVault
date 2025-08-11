@@ -1,11 +1,13 @@
 {
   "report_metadata": {
-    "date": "2025-08-08",
+    "date": "2025-08-09",
     "data_date": "2025-08-08",
     "site": "Nchwaning 2",
-    "engineer": "Johan Kotze",
-    "timestamp": "06:40",
-    "source_message_id": "3A346C4E9444BA9F1EF4"
+    "engineer": "Sikilela Nzuza",
+    "timestamp": "07:03",
+    "source_message_id": "weekend_report_corrected",
+    "note": "Updated with corrected Friday data from Sikilela's weekend report",
+    "previous_engineer": "Johan Kotze"
   },
   "safety": {
     "status": "clear",
@@ -14,26 +16,31 @@
   },
   "production": {
     "rom": {
-      "actual": 4137,
-      "target": 6903,
-      "variance": -2766,
-      "variance_percentage": 59.93
+      "actual": 6235,
+      "target": 6904,
+      "variance": -669,
+      "variance_percentage": 90.3
     },
-    "decline": null,
+    "decline": {
+      "actual": null,
+      "target": null,
+      "variance": null,
+      "variance_percentage": null,
+      "note": "Not reported separately"
+    },
     "product": {
-      "actual": 5492,
-      "target": 6514,
-      "variance": -1022,
-      "variance_percentage": 84.31
+      "actual": 4031,
+      "target": 6634,
+      "variance": -2603,
+      "variance_percentage": 60.8
     },
-    "loads": [
-      {"shift": "day", "load_number": 1, "truckloads_tipped": 54, "target": null},
-      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 41, "target": null},
-      {"shift": "night", "load_number": 3, "truckloads_tipped": 21, "target": null}
-    ],
+    "loads": {
+      "total": null,
+      "shift_breakdown": null,
+      "note": "Load data not available in corrected report"
+    },
     "blast": {
-        "actual": 24,
-        "plan": 16
+      "note": "Nothing Reported"
     }
   },
   "equipment_availability": {
@@ -49,46 +56,95 @@
         {"code": "GD12", "availability": 0}
     ]
   },
-  "shift_readiness": {
+  "equipment_readiness": {
     "production_tmm": {
-      "DT": {"available": 9, "total": 9},
-      "FL": {"available": 5, "total": 6},
-      "HD": {"available": 5, "total": 6},
-      "RT": {"available": 5, "total": 6},
-      "SR": {"available": 5, "total": 6}
+      "dt": {
+        "available": 9,
+        "total": 9,
+        "percentage": 100
+      },
+      "fl": {
+        "available": 4,
+        "total": 6,
+        "percentage": 66.7,
+        "issues": ["FL66 propshaft", "FL102 starting"]
+      },
+      "hd": {
+        "available": 6,
+        "total": 6,
+        "percentage": 100
+      },
+      "rt": {
+        "available": 5,
+        "total": 6,
+        "percentage": 83.3,
+        "issues": ["RT50 transmission (delivery to be made to BRMO today)"]
+      },
+      "sr": {
+        "available": 5,
+        "total": 6,
+        "percentage": 83.3,
+        "issues": ["SR27 oil leak"]
+      }
     },
-    "emulsion_uvs": {"availability": 88},
-    "logistics_uv": {"availability": 33},
-    "manlifts": {
-        "sampling": {"availability": 0},
-        "survey": {"availability": 81}
+    "graben_tmm": {
+      "dt": {
+        "available": 1,
+        "total": 2,
+        "percentage": 50.0,
+        "issues": ["DT176 CAS"]
+      },
+      "fl": {
+        "available": 2,
+        "total": 2,
+        "percentage": 100
+      },
+      "hd": {
+        "available": 2,
+        "total": 2,
+        "percentage": 100
+      },
+      "rt": {
+        "available": 2,
+        "total": 2,
+        "percentage": 100
+      },
+      "sr": {
+        "available": 1,
+        "total": 2,
+        "percentage": 50.0,
+        "issues": ["SR46 pump"]
+      }
     }
   },
   "breakdowns": {
     "current_breakdowns": [
-      {"unit": "UV90", "issue": "water pump & timing"},
-      {"unit": "UV54", "issue": "oil leak"},
-      {"unit": "UV59", "issue": "engine"},
-      {"unit": "UV69", "issue": "brakes"},
-      {"unit": "UV102", "issue": "low revs"},
-      {"unit": "UV108", "issue": "screen"},
-      {"unit": "UV77", "issue": "bucket movement"},
-      {"unit": "UV118", "issue": "diesel tank"},
-      {"unit": "UV119", "issue": "warning sign"},
-      {"unit": "UV123", "issue": "outrigger"},
-      {"unit": "DT99", "issue": "belly plate"},
-      {"unit": "GR12", "issue": "brakes"}
-    ]
+      {"unit": "FL66", "issue": "propshaft", "location": "production"},
+      {"unit": "FL102", "issue": "starting", "location": "production"},
+      {"unit": "RT50", "issue": "transmission (delivery to be made to BRMO today)", "location": "production"},
+      {"unit": "SR27", "issue": "oil leak", "location": "production"},
+      {"unit": "DT176", "issue": "CAS", "location": "graben"},
+      {"unit": "SR46", "issue": "pump", "location": "graben"}
+    ],
+    "total_units": 6
   },
-  "operational": {
-    "main_fans": null,
-    "plant_blockages": 0,
-    "fire_alarms": 3
+  "operational_status": {
+    "main_fans": "Nothing Reported",
+    "plant_blockages": "Nothing Reported", 
+    "fire_alarms": "Nothing Reported"
   },
   "performance_summary": {
-    "key_issues": [
-        "Breakdown on hydraulic hammer from 19:24 until 00:20. Hence low loads on afternoon and night shift"
+    "key_highlights": [
+      "Production: Good ROM performance at 90.3% (6,235t vs 6,904t target)",
+      "Safety: Clear operations with no incidents reported",
+      "Equipment: Production DT fleet at full availability (9/9 units)",
+      "Reporting: Detailed Friday data available from Sikilela's corrected report"
     ],
-    "key_highlights": []
+    "key_issues": [
+      "Product Performance: Significant gap at 60.8% (4,031t vs 6,634t target)",
+      "FL Fleet Capacity: Only 4/6 FL units available (propshaft, starting issues)",
+      "Graben Operations: Reduced capacity with DT and SR at 50% availability",
+      "Equipment Issues: 6 total units requiring maintenance across both areas"
+    ]
   }
 }

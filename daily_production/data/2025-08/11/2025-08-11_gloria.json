@@ -1,0 +1,151 @@
+{
+  "report_metadata": {
+    "date": "2025-08-11",
+    "data_date": "2025-08-09/2025-08-10",
+    "site": "Gloria",
+    "engineer": "Sipho Dubazane",
+    "report_type": "weekend",
+    "data_coverage": "Saturday-Sunday operations"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": ["Clear"]
+  },
+  "production": {
+    "rom": {
+      "saturday": {
+        "actual": 1361,
+        "target": 0,
+        "performance_percent": null,
+        "note": "Weekend production"
+      },
+      "sunday": {
+        "actual": 2102,
+        "target": 0,
+        "performance_percent": null,
+        "note": "Weekend production"
+      }
+    },
+    "decline": {
+      "saturday": {
+        "actual": 1170,
+        "target": 0,
+        "performance_percent": null
+      },
+      "sunday": {
+        "actual": 1934,
+        "target": 0,
+        "performance_percent": null
+      }
+    },
+    "product": {
+      "saturday": {
+        "actual": 0,
+        "target": 3894,
+        "performance_percent": 0.0
+      },
+      "sunday": {
+        "actual": 1764,
+        "target": 0,
+        "performance_percent": null
+      }
+    },
+    "loads": {
+      "saturday": 57,
+      "sunday": 73,
+      "total": 130
+    }
+  },
+  "silo_management": {
+    "surface_silos": {
+      "silo_1": 36,
+      "silo_2": 59,
+      "silo_3": 55,
+      "silo_4": 97
+    },
+    "underground_silos": {
+      "silo_74": 36,
+      "silo_hg": 26,
+      "silo_d": 34,
+      "silo_lg": 16
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "dt": 99,
+      "fl": 100,
+      "hd": 99,
+      "rt": 100,
+      "sr": 100
+    },
+    "equipment_readiness": {
+      "dt": {
+        "available": 6,
+        "total": 6,
+        "percentage": 100
+      },
+      "fl": {
+        "available": 5,
+        "total": 5,
+        "percentage": 100
+      },
+      "hd": {
+        "available": 4,
+        "total": 4,
+        "percentage": 100
+      },
+      "rt": {
+        "available": 4,
+        "total": 4,
+        "percentage": 100
+      },
+      "sr": {
+        "available": 4,
+        "total": 4,
+        "percentage": 100
+      }
+    },
+    "support_equipment": {
+      "emulsion_uvs": {
+        "available": 2,
+        "total": 2,
+        "percentage": 100
+      },
+      "manitou": {
+        "available": 1,
+        "total": 1,
+        "percentage": 100
+      },
+      "manlifts": {
+        "available": 2,
+        "total": 2,
+        "percentage": 100
+      }
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [],
+    "major_breakdowns": "none",
+    "status": "No major breakdowns reported"
+  },
+  "operational_status": {
+    "main_fans": "in_order",
+    "plant_blockages": "none",
+    "fire_alarms": "none"
+  },
+  "performance_summary": {
+    "key_highlights": [
+      "Safety: Clear status throughout weekend",
+      "Production: Good ROM production across both days (1,361t + 2,102t)",
+      "Equipment: Excellent TMM availability (99-100% across all types)",
+      "Infrastructure: All systems operational - no blockages or alarms"
+    ],
+    "key_issues": [
+      "Surface Silo 4 at high capacity (97%)",
+      "Underground Silo LG at low level (16%)",
+      "Saturday plant product zero vs 3,894t target",
+      "Silo level imbalance between surface and underground storage"
+    ]
+  }
+}
