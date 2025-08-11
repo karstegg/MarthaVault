@@ -47,8 +47,8 @@ jobs:
           STOPPED_CODESPACE=$(echo "$CODESPACE_DATA" | jq -r '.[] | select(.state=="Shutdown") | .name' | head -1)
           
           if [ -n "$STOPPED_CODESPACE" ]; then
-            echo "Starting stopped Codespace: $STOPPED_CODESPACE"
-            gh codespace start -c "$STOPPED_CODESPACE"
+            echo "Rebuilding stopped Codespace: $STOPPED_CODESPACE"
+            gh codespace rebuild -c "$STOPPED_CODESPACE"
             CODESPACE_NAME="$STOPPED_CODESPACE"
             
             echo "Waiting for Codespace to be ready..."
