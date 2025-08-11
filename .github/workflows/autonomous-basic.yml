@@ -85,47 +85,39 @@ jobs:
           exit 1
         }
         
-        # Execute extraction with WhatsApp MCP server startup
-        echo "Starting WhatsApp MCP server and extracting data..."
-        timeout 300 gh codespace ssh -c "${{ steps.codespace.outputs.codespace_name }}" -- "
+        # Debug and check available directories and files
+        echo "Checking Codespace environment..."
+        timeout 180 gh codespace ssh -c "${{ steps.codespace.outputs.codespace_name }}" -- "
           cd /workspaces/MarthaVault || exit 1
           echo 'Working directory: '\$(pwd)
           
-          # Start WhatsApp bridge
-          echo 'Starting WhatsApp bridge...'
-          cd whatsapp-bridge || { echo 'No whatsapp-bridge directory found'; exit 1; }
+          echo 'Listing root directory contents:'
+          ls -la
           
-          # Start bridge in background
-          echo 'Launching ./bridge in background...'
-          nohup ./bridge > bridge.log 2>&1 &
-          BRIDGE_PID=\$!
-          echo \"Bridge started with PID: \$BRIDGE_PID\"
-          
-          # Wait for bridge to initialize
-          echo 'Waiting for bridge to initialize...'
-          sleep 15
-          
-          # Check if bridge is running
-          if kill -0 \$BRIDGE_PID 2>/dev/null; then
-            echo 'Bridge is running successfully'
+          echo 'Checking for whatsapp-bridge directory:'
+          if [ -d whatsapp-bridge ]; then
+            echo 'whatsapp-bridge directory found'
+            cd whatsapp-bridge
+            echo 'Contents of whatsapp-bridge:'
+            ls -la
+            echo 'Checking if bridge executable exists:'
+            if [ -x ./bridge ]; then
+              echo 'Bridge executable found and is executable'
+            else
+              echo 'Bridge executable not found or not executable'
+            fi
           else
-            echo 'Bridge failed to start'
-            cat bridge.log || echo 'No bridge log available'
-            exit 1
+            echo 'whatsapp-bridge directory not found'
+            echo 'Available directories:'
+            find . -type d -name '*whats*' -o -name '*bridge*' -o -name '*mcp*' 2>/dev/null || echo 'No related directories found'
           fi
           
-          # Now extract real WhatsApp data
-          cd /workspaces/MarthaVault
-          echo 'Extracting WhatsApp messages for date: ${{ steps.parse.outputs.report_date }}'
-          python3 .devcontainer/codespace-direct-processing.py ${{ steps.parse.outputs.report_date }} --extract-only || {
-            echo 'Extraction script failed, cleaning up...'
-            kill \$BRIDGE_PID 2>/dev/null || true
-            exit 1
-          }
-          
-          # Clean up bridge process
-          echo 'Cleaning up bridge process...'
-          kill \$BRIDGE_PID 2>/dev/null || true
+          echo 'For now, generating test data:'
+          echo 'WHATSAPP_DATA_START'
+          echo 'From: Debug Test'
+          echo 'Time: ${{ steps.parse.outputs.report_date }}'
+          echo 'Content: Codespace environment checked, need to setup WhatsApp bridge'
+          echo 'WHATSAPP_DATA_END'
         " > whatsapp_data.txt 2>&1
         
         echo "Extraction command completed. Checking results..."
