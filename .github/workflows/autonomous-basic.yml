@@ -85,20 +85,47 @@ jobs:
           exit 1
         }
         
-        # Execute extraction with timeout and better error handling
-        echo "Executing data extraction..."
-        timeout 180 gh codespace ssh -c "${{ steps.codespace.outputs.codespace_name }}" -- "
+        # Execute extraction with WhatsApp MCP server startup
+        echo "Starting WhatsApp MCP server and extracting data..."
+        timeout 300 gh codespace ssh -c "${{ steps.codespace.outputs.codespace_name }}" -- "
           cd /workspaces/MarthaVault || exit 1
           echo 'Working directory: '\$(pwd)
-          echo 'Listing files...'
-          ls -la .devcontainer/ || echo 'No .devcontainer directory'
           
-          # Simple test - just list WhatsApp messages without MCP server complexity
-          echo 'WHATSAPP_DATA_START'
-          echo 'From: Test User'
-          echo 'Time: ${{ steps.parse.outputs.report_date }}'
-          echo 'Content: Test autonomous extraction working for date ${{ steps.parse.outputs.report_date }}'
-          echo 'WHATSAPP_DATA_END'
+          # Start WhatsApp bridge
+          echo 'Starting WhatsApp bridge...'
+          cd whatsapp-bridge || { echo 'No whatsapp-bridge directory found'; exit 1; }
+          
+          # Start bridge in background
+          echo 'Launching ./bridge in background...'
+          nohup ./bridge > bridge.log 2>&1 &
+          BRIDGE_PID=\$!
+          echo \"Bridge started with PID: \$BRIDGE_PID\"
+          
+          # Wait for bridge to initialize
+          echo 'Waiting for bridge to initialize...'
+          sleep 15
+          
+          # Check if bridge is running
+          if kill -0 \$BRIDGE_PID 2>/dev/null; then
+            echo 'Bridge is running successfully'
+          else
+            echo 'Bridge failed to start'
+            cat bridge.log || echo 'No bridge log available'
+            exit 1
+          fi
+          
+          # Now extract real WhatsApp data
+          cd /workspaces/MarthaVault
+          echo 'Extracting WhatsApp messages for date: ${{ steps.parse.outputs.report_date }}'
+          python3 .devcontainer/codespace-direct-processing.py ${{ steps.parse.outputs.report_date }} --extract-only || {
+            echo 'Extraction script failed, cleaning up...'
+            kill \$BRIDGE_PID 2>/dev/null || true
+            exit 1
+          }
+          
+          # Clean up bridge process
+          echo 'Cleaning up bridge process...'
+          kill \$BRIDGE_PID 2>/dev/null || true
         " > whatsapp_data.txt 2>&1
         
         echo "Extraction command completed. Checking results..."
