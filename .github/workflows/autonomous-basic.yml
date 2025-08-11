@@ -27,46 +27,101 @@ jobs:
           exit 1
         fi
         
-    - name: Check Codespace Status
+    - name: Manage Codespace
       id: codespace
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.CODESPACE_PAT }}
       run: |
-        echo "Checking for active Codespace..."
+        echo "Managing Codespace for autonomous processing..."
         
-        # Look for active codespace
-        CODESPACE_NAME=$(gh codespace list --repo ${{ github.repository }} --json name,state | jq -r '.[] | select(.state=="Available") | .name' | head -1)
+        # Check for existing Codespaces
+        echo "Checking Codespace status..."
+        CODESPACE_DATA=$(gh codespace list --repo ${{ github.repository }} --json name,state,displayName 2>/dev/null || echo "[]")
+        echo "Codespace data: $CODESPACE_DATA"
+        
+        # Look for available or starting Codespace
+        CODESPACE_NAME=$(echo "$CODESPACE_DATA" | jq -r '.[] | select(.state=="Available" or .state=="Starting") | .name' | head -1)
         
         if [ -z "$CODESPACE_NAME" ]; then
-          echo "No active Codespace found"
-          echo "codespace_status=not_found" >> $GITHUB_OUTPUT
-          echo "codespace_name=" >> $GITHUB_OUTPUT
-        else
-          echo "Found active Codespace: $CODESPACE_NAME"
-          echo "codespace_status=found" >> $GITHUB_OUTPUT  
-          echo "codespace_name=$CODESPACE_NAME" >> $GITHUB_OUTPUT
+          echo "No active Codespace found. Checking for stopped Codespaces..."
+          STOPPED_CODESPACE=$(echo "$CODESPACE_DATA" | jq -r '.[] | select(.state=="Shutdown") | .name' | head -1)
+          
+          if [ -n "$STOPPED_CODESPACE" ]; then
+            echo "Starting stopped Codespace: $STOPPED_CODESPACE"
+            gh codespace start -c "$STOPPED_CODESPACE"
+            CODESPACE_NAME="$STOPPED_CODESPACE"
+            
+            echo "Waiting for Codespace to be ready..."
+            for i in {1..24}; do
+              sleep 15
+              STATE=$(gh codespace list --repo ${{ github.repository }} --json name,state | jq -r ".[] | select(.name==\"$CODESPACE_NAME\") | .state")
+              echo "Attempt $i: Codespace state is $STATE"
+              
+              if [ "$STATE" = "Available" ]; then
+                echo "Codespace is ready!"
+                break
+              elif [ $i -eq 24 ]; then
+                echo "Timeout waiting for Codespace to be ready"
+                exit 1
+              fi
+            done
+          else
+            echo "No Codespaces found. This requires manual Codespace creation."
+            echo "Please create a Codespace for this repository first."
+            exit 1
+          fi
         fi
+        
+        echo "Using Codespace: $CODESPACE_NAME"
+        echo "codespace_status=ready" >> $GITHUB_OUTPUT
+        echo "codespace_name=$CODESPACE_NAME" >> $GITHUB_OUTPUT
         
     - name: Extract WhatsApp Data from Codespace
       id: extract
-      if: steps.codespace.outputs.codespace_status == 'found'
+      if: steps.codespace.outputs.codespace_status == 'ready'
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.CODESPACE_PAT }}
       run: |
         echo "Extracting WhatsApp data from Codespace..."
         echo "Target Date: ${{ steps.parse.outputs.report_date }}"
         echo "Codespace: ${{ steps.codespace.outputs.codespace_name }}"
         
-        # Extract WhatsApp messages via Codespace and save to file
-        gh codespace ssh -c "${{ steps.codespace.outputs.codespace_name }}" -- "cd /workspaces/MarthaVault && python3 .devcontainer/codespace-direct-processing.py ${{ steps.parse.outputs.report_date }} --extract-only" > whatsapp_data.txt
+        # Wait a moment for Codespace services to initialize
+        echo "Waiting for Codespace services to initialize..."
+        sleep 30
         
+        # Start MCP server and extract data using existing scripts
+        echo "Starting WhatsApp MCP server and extracting data..."
+        gh codespace ssh -c "${{ steps.codespace.outputs.codespace_name }}" -- "
+          cd /workspaces/MarthaVault && 
+          echo 'Starting MCP server...' &&
+          bash .devcontainer/startup-autonomous.sh &&
+          sleep 10 &&
+          echo 'Extracting WhatsApp data...' &&
+          python3 .devcontainer/codespace-direct-processing.py ${{ steps.parse.outputs.report_date }} --extract-only
+        " > whatsapp_data.txt 2>&1
+        
+        echo "Extraction command completed. Checking results..."
+        
+        # Check if we got valid data
         if [ -s whatsapp_data.txt ]; then
-          echo "WhatsApp data extracted successfully"
-          echo "extraction_status=success" >> $GITHUB_OUTPUT
-          echo "Data preview:"
-          head -20 whatsapp_data.txt
+          echo "WhatsApp data file created. Checking content..."
+          
+          # Look for data indicators
+          if grep -q "WHATSAPP_DATA_START\|From:\|Content:" whatsapp_data.txt; then
+            echo "✅ WhatsApp data extracted successfully"
+            echo "extraction_status=success" >> $GITHUB_OUTPUT
+            echo "📊 Data preview:"
+            head -20 whatsapp_data.txt
+          else
+            echo "❌ Data file exists but appears to contain errors"
+            echo "📄 Full output for debugging:"
+            cat whatsapp_data.txt
+            echo "extraction_status=failed" >> $GITHUB_OUTPUT
+            exit 1
+          fi
         else
-          echo "WhatsApp data extraction failed"
+          echo "❌ WhatsApp data extraction failed - no output file"
           echo "extraction_status=failed" >> $GITHUB_OUTPUT
           exit 1
         fi
@@ -88,16 +143,24 @@ jobs:
         echo "Report Date: ${{ steps.parse.outputs.report_date }}"
         echo "Codespace Status: ${{ steps.codespace.outputs.codespace_status }}"
         
-        if [ "${{ steps.codespace.outputs.codespace_status }}" = "found" ]; then
+        if [ "${{ steps.codespace.outputs.codespace_status }}" = "ready" ]; then
           echo "Codespace Name: ${{ steps.codespace.outputs.codespace_name }}"
           echo "WhatsApp Extraction: ${{ steps.extract.outputs.extraction_status }}"
           echo "Gemini Processing: ${{ steps.process.outputs.processing_status }}"
           
           if [ "${{ steps.extract.outputs.extraction_status }}" = "success" ] && [ "${{ steps.process.outputs.processing_status }}" = "success" ]; then
-            echo "SUCCESS: WhatsApp data extracted and ready for processing"
+            echo "🎉 SUCCESS: Complete autonomous processing pipeline working!"
+            echo "✅ Codespace activated and managed automatically"
+            echo "✅ WhatsApp MCP data extracted successfully"
+            echo "✅ Ready for future enhancement with Gemini processing"
           else
-            echo "FAILURE: Processing incomplete - check logs above"
+            echo "❌ FAILURE: Processing incomplete - check logs above"
+            echo "🔍 Codespace Status: ready"
+            echo "🔍 Extraction Status: ${{ steps.extract.outputs.extraction_status }}"
+            echo "🔍 Processing Status: ${{ steps.process.outputs.processing_status }}"
           fi
         else
-          echo "Codespace required for WhatsApp MCP data extraction"
+          echo "❌ Codespace management failed"
+          echo "🔍 Status: ${{ steps.codespace.outputs.codespace_status }}"
+          echo "💡 Check if Codespace exists and PAT token has proper permissions"
         fi
