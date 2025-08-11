@@ -47,24 +47,9 @@ jobs:
           STOPPED_CODESPACE=$(echo "$CODESPACE_DATA" | jq -r '.[] | select(.state=="Shutdown") | .name' | head -1)
           
           if [ -n "$STOPPED_CODESPACE" ]; then
-            echo "Rebuilding stopped Codespace: $STOPPED_CODESPACE"
-            gh codespace rebuild -c "$STOPPED_CODESPACE"
+            echo "Found stopped Codespace: $STOPPED_CODESPACE"
+            echo "SSH connection will automatically start the Codespace"
             CODESPACE_NAME="$STOPPED_CODESPACE"
-            
-            echo "Waiting for Codespace to be ready..."
-            for i in {1..24}; do
-              sleep 15
-              STATE=$(gh codespace list --repo ${{ github.repository }} --json name,state | jq -r ".[] | select(.name==\"$CODESPACE_NAME\") | .state")
-              echo "Attempt $i: Codespace state is $STATE"
-              
-              if [ "$STATE" = "Available" ]; then
-                echo "Codespace is ready!"
-                break
-              elif [ $i -eq 24 ]; then
-                echo "Timeout waiting for Codespace to be ready"
-                exit 1
-              fi
-            done
           else
             echo "No Codespaces found. This requires manual Codespace creation."
             echo "Please create a Codespace for this repository first."
