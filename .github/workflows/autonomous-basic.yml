@@ -30,7 +30,7 @@ jobs:
     - name: Manage Codespace
       id: codespace
       env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_PAT }}
       run: |
         echo "Managing Codespace for autonomous processing..."
         
@@ -80,7 +80,7 @@ jobs:
       id: extract
       if: steps.codespace.outputs.codespace_status == 'ready'
       env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_PAT }}
       run: |
         echo "Extracting WhatsApp data from Codespace..."
         echo "Target Date: ${{ steps.parse.outputs.report_date }}"
