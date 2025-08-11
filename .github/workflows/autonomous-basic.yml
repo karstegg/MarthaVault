@@ -48,7 +48,7 @@ jobs:
           
           if [ -n "$STOPPED_CODESPACE" ]; then
             echo "Starting stopped Codespace: $STOPPED_CODESPACE"
-            gh codespace start -c "$STOPPED_CODESPACE"
+            gh codespace start --codespace "$STOPPED_CODESPACE"
             CODESPACE_NAME="$STOPPED_CODESPACE"
             
             echo "Waiting for Codespace to be ready..."
@@ -92,7 +92,7 @@ jobs:
         
         # Start MCP server and extract data using existing scripts
         echo "Starting WhatsApp MCP server and extracting data..."
-        gh codespace ssh -c "${{ steps.codespace.outputs.codespace_name }}" -- "
+        gh codespace ssh --codespace "${{ steps.codespace.outputs.codespace_name }}" -- "
           cd /workspaces/MarthaVault && 
           echo 'Starting MCP server...' &&
           bash .devcontainer/startup-autonomous.sh &&
