@@ -16,7 +16,7 @@ on:
 
 jobs:
   process-reports:
-    if: contains(github.event.issue.labels.*.name, 'production-reports') || github.event_name == 'workflow_dispatch'
+    if: contains(github.event.issue.labels.*.name, 'trigger-now') || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     
     steps:
