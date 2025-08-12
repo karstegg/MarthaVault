@@ -27,10 +27,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "00_Inbox/BRMO weekly report LIVE 01 August 2025 - 06 August 2025.pdf"
+                "file": "00_Inbox/VFL Schedule - Aug 2025.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "BRMO weekly report LIVE 01 August 2025 - 06 August 2025"
+              "title": "VFL Schedule - Aug 2025"
             }
           }
         ],
@@ -183,26 +183,32 @@
   },
   "active": "b235547db7816bfe",
   "lastOpenFiles": [
+    "WHATSAPP_MCP_COMPLETE_SETUP.md",
+    "install-lharries-whatsapp-mcp.sh",
+    "install-lharries-whatsapp-mcp.sh.tmp.23364.1754962789125",
+    "WHATSAPP_MCP_SETUP_GUIDE.md.tmp.23364.1754962723699",
+    "whatsapp-mcp-server/requirements.txt",
+    "whatsapp-mcp-server/src/whatsapp_mcp_server/main.py",
+    "whatsapp-mcp-server/src/whatsapp_mcp_server/__init__.py",
+    "WHATSAPP_MCP_SETUP_GUIDE.md",
+    "00_Inbox/Tasks for today and this week.md",
+    "00_Inbox/Raw Whatsap Data for Daily Reports.md",
+    "00_Inbox/Monday planning.md",
+    "00_Inbox/Emailing Weekly Standby - 28 July - 03 August 2025.pdf",
+    "00_Inbox/Electrical review of safety and risk.md",
+    "00_Inbox/Document Reviews.md",
+    "00_Inbox/BRMO weekly report LIVE 01 August 2025 - 06 August 2025.pdf",
     "IDEAS/ideas.md",
     "projects/BEV/Invoicing/Completed/BRMO BaaS Invoicing - June 2025.msg",
     "projects/BEV/Invoicing/Completed",
-    "projects/BEV/Invoicing",
     "projects/Committee_Meetings/2025-08-11 – Adjudication Committee Meeting.md",
-    "projects/Committee_Meetings",
-    "00_Inbox/Prompting GPT5",
     "IDEAS/2025-08-11 – Integrate Load & Haul Production Reports.md",
     "reference/ideas/2025-08-11 – Integrate Load & Haul Production Reports.md",
-    "reference/ideas",
     "tasks/master_task_list.md",
     "00_Inbox/2025-08-02 – Barloworld Equipment Invoices Payment Urgent.md",
     "projects/Vendors/Barloworld-Equipment/2025-08-02 – Barloworld Equipment Invoices Payment Urgent.md",
-    "projects/Vendors/Barloworld-Equipment",
-    "projects/Vendors",
     "projects/WTW_Audit/2025-08-11 – WTW Audit 2025.md",
-    "projects/WTW_Audit/2024-10 – WTW Audit ARM Black Rock Final Report.pdf",
     "projects/WTW_Audit/2025-08-11 – WTW Audit Processing Summary.md",
-    "00_Inbox/Document Reviews.md",
-    "00_Inbox/BRMO weekly report LIVE 01 August 2025 - 06 August 2025.pdf",
     "daily_production/data/2025-08/11/2025-08-11 – Shafts & Winders Daily Report.md",
     "reference/equipment/BRMO_UG_Production_Fleet.md",
     "daily_production/equipment_codes.md",
@@ -212,13 +218,8 @@
     "00_Inbox/WTW Audit 2025.md",
     "daily_production/data/2025-08/11/2025-08-11 – Nchwaning 2 Daily Report.md",
     "daily_production/data/2025-08/11/2025-08-11 – Gloria Daily Report.md",
-    "00_Inbox/Monday planning.md",
     "daily_production/data/2025-08/11/2025-08-11 – Nchwaning 3 Daily Report.md",
     "daily_production/data/2025-08/10/2025-08-10 - Nchwaning 3 Daily Report.md",
-    "monitor-autonomous-test.md",
-    "test-autonomous-trigger.md",
-    "daily_production/data/2025-08/09/2025-08-09 - Gloria Daily Report.md",
-    "daily_production/data/2025-08/09/2025-08-09 - Nchwaning 3 Daily Report.md",
     "00_Inbox/IMG_20250730_203426_897.jpg"
   ]
 }
