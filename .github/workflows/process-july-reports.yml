@@ -46,7 +46,7 @@ jobs:
         
     - name: Start and connect to Codespace
       env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
       run: |
         echo "Connecting to Codespace for WhatsApp data access..."
         # Check if Codespace exists and start if needed
@@ -55,7 +55,7 @@ jobs:
         
     - name: Extract WhatsApp data
       env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
       run: |
         echo "Extracting WhatsApp production data for date range..."
         
