@@ -106,18 +106,8 @@ jobs:
               
               # Extract WhatsApp messages for the target date using direct SQL
               echo 'WHATSAPP_DATA_START'
-              sqlite3 \"\$DB_PATH\" \"
-                SELECT 
-                  'From: ' || COALESCE(sender_name, chat_jid) || char(10) ||
-                  'Time: ' || timestamp || char(10) ||
-                  'Content: ' || substr(content, 1, 500) || char(10) ||
-                  '---'
-                FROM messages 
-                WHERE date(timestamp) = '${{ steps.parse.outputs.report_date }}'
-                  AND (content LIKE '%ROM%' OR content LIKE '%Product%' OR content LIKE '%Production%' OR content LIKE '%Nchwaning%' OR content LIKE '%Gloria%')
-                ORDER BY timestamp DESC
-                LIMIT 20;
-              \" 2>/dev/null || echo 'SQL query failed'
+              # Test basic query first
+              sqlite3 \"\$DB_PATH\" \"SELECT 'From: ' || chat_jid, 'Time: ' || timestamp, 'Content: ' || substr(content, 1, 200) FROM messages WHERE content LIKE '%ROM%' OR content LIKE '%Product%' OR content LIKE '%Nchwaning%' OR content LIKE '%Gloria%' ORDER BY timestamp DESC LIMIT 10;\" 2>/dev/null || echo 'Production message query failed'
               echo 'WHATSAPP_DATA_END'
             else
               echo 'No recent messages found - may need bridge restart'
