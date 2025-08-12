@@ -6,7 +6,7 @@ on:
 
 jobs:
   process:
-    if: contains(github.event.issue.labels.*.name, 'production-reports')
+    if: contains(github.event.issue.labels.*.name, 'simple-test-disabled')
     runs-on: ubuntu-latest
     
     steps:
