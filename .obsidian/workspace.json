@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "INSTRUCTIONS_FOR_OTHER_CLAUDE_SESSION.md",
+                "file": "2025-08-05_Comprehensive_Session_Export.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "INSTRUCTIONS_FOR_OTHER_CLAUDE_SESSION"
+              "title": "2025-08-05_Comprehensive_Session_Export"
             }
           }
         ],
@@ -183,10 +183,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b235547db7816bfe",
+  "active": "759b14c2e47b40e6",
   "lastOpenFiles": [
-    "00_Inbox/VFL Schedule - Aug 2025.pdf",
+    "BACKUP_BRANCH_NOTES.md",
+    "IDEAS/2025-08-11 – Integrate Load & Haul Production Reports.md",
+    "IDEAS/2025-08-03 – GitHub Automation & Cloud Processing Ideas.md",
+    "IDEAS/2025-07-31 – Daily Executive Dashboard.md",
+    "IDEAS/2025-07-31 – Claude Code Automation Ideas.md",
     "INSTRUCTIONS_FOR_OTHER_CLAUDE_SESSION.md",
+    "00_Inbox/VFL Schedule - Aug 2025.pdf",
     "WHATSAPP_MCP_COMPLETE_SETUP.md",
     "install-lharries-whatsapp-mcp.sh",
     "install-lharries-whatsapp-mcp.sh.tmp.23364.1754962789125",
@@ -204,9 +209,7 @@
     "00_Inbox/BRMO weekly report LIVE 01 August 2025 - 06 August 2025.pdf",
     "IDEAS/ideas.md",
     "projects/BEV/Invoicing/Completed/BRMO BaaS Invoicing - June 2025.msg",
-    "projects/BEV/Invoicing/Completed",
     "projects/Committee_Meetings/2025-08-11 – Adjudication Committee Meeting.md",
-    "IDEAS/2025-08-11 – Integrate Load & Haul Production Reports.md",
     "reference/ideas/2025-08-11 – Integrate Load & Haul Production Reports.md",
     "tasks/master_task_list.md",
     "00_Inbox/2025-08-02 – Barloworld Equipment Invoices Payment Urgent.md",
@@ -219,9 +222,6 @@
     "pr_bodies/2025-07-07-nchwaning3.md",
     "media/image/2025/2025-08-11_1056_WTW-Audit-Kickoff-Meeting.jpg",
     "daily_production/data/2025-08/08/2025-08-08 - Nchwaning 2 Daily Report.md",
-    "00_Inbox/WTW Audit 2025.md",
-    "daily_production/data/2025-08/11/2025-08-11 – Nchwaning 2 Daily Report.md",
-    "daily_production/data/2025-08/11/2025-08-11 – Gloria Daily Report.md",
     "00_Inbox/IMG_20250730_203426_897.jpg"
   ]
 }
