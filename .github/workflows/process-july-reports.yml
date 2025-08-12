@@ -41,7 +41,7 @@ jobs:
           echo "end_date=${{ github.event.inputs.end_date }}" >> $GITHUB_OUTPUT
         else
           echo "start_date=2025-07-06" >> $GITHUB_OUTPUT
-          echo "end_date=2025-07-21" >> $GITHUB_OUTPUT
+          echo "end_date=2025-07-06" >> $GITHUB_OUTPUT
         fi
         
     - name: Start and connect to Codespace
