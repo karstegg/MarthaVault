@@ -1,0 +1,116 @@
+{
+  "report_metadata": {
+    "date": "2025-08-12",
+    "data_date": "2025-08-11", 
+    "site": "Nchwaning 2",
+    "engineer": "Johan Kotze",
+    "report_time": "05:30:01",
+    "source": "WhatsApp Main Production Group",
+    "note": "Acting for Sikilela Nzuza on leave"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 4779,
+      "target": 6903,
+      "variance_tons": -2124,
+      "variance_percent": -30.8
+    },
+    "product": {
+      "actual": 2702,
+      "target": 6514,
+      "variance_tons": -3812,
+      "variance_percent": -58.5
+    },
+    "loads": {
+      "day_shift": 13,
+      "afternoon_shift": 50,
+      "night_shift": 58,
+      "total_loads": 121,
+      "note": "Orepass full from weekend with Seam1. Day shift couldn't run plant until ore pass cleared"
+    },
+    "blast": {
+      "actual": "Not specified",
+      "planned": 16,
+      "note": "Actual vs Plan ? vs 16"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "dt": 97,
+      "fl": 94,
+      "hd": 84,
+      "rt": 91,
+      "sr": 93
+    },
+    "specialized": {
+      "dz13": 100,
+      "gd12": 0
+    },
+    "equipment_readiness": {
+      "dt": "9/9",
+      "fl": "6/6",
+      "hd": "5/6 (HD53 fuses)",
+      "rt": "5/6 (RT50 transmission - delay at stores)",
+      "sr": "5/6 (SR27 excessive smoke)"
+    },
+    "utility_vehicles": {
+      "emulsion_uvs": {
+        "units": ["UV62", "UV66", "UV108"],
+        "availability": 95
+      },
+      "logistics_uv": {
+        "units": ["UV54", "UV59", "UV120"],
+        "availability": 33
+      },
+      "sampling_manlifts": {
+        "units": ["UV77", "UV123"],
+        "availability": 0
+      },
+      "survey_uvs": {
+        "units": ["UV98", "UV99"],
+        "availability": 97
+      }
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "UV90", "issue": "water pump & timing"},
+      {"unit": "UV54", "issue": "oil leak"},
+      {"unit": "UV59", "issue": "engine"},
+      {"unit": "UV69", "issue": "brakes"},
+      {"unit": "UV77", "issue": "bucket movement"},
+      {"unit": "UV119", "issue": "warning sign"},
+      {"unit": "UV123", "issue": "outrigger"},
+      {"unit": "UV133", "issue": "propshaft"},
+      {"unit": "GR12", "issue": "brakes"},
+      {"unit": "SR46", "issue": "pump"}
+    ],
+    "breakdown_count": 10
+  },
+  "infrastructure": {
+    "plant_blockages": 0,
+    "fire_alarms": 0
+  },
+  "performance_summary": {
+    "key_issues": [
+      "Severe product underperformance (-58.5%, -3,812t shortfall)",
+      "ROM production significantly below target (-30.8%, -2,124t)",
+      "Orepass blockage from weekend Seam1 material disrupting day shift operations",
+      "Critical logistics UV availability at only 33%",
+      "Sampling manlifts completely unavailable (0%)",
+      "GD12 grader completely down (0% availability)"
+    ],
+    "key_highlights": [
+      "Safety status clear with no incidents",
+      "Strong afternoon and night shift load performance (50 + 58 = 108 loads)",
+      "Excellent DZ13 dozer availability (100%)",
+      "High emulsion UV availability (95%)",
+      "Good survey UV availability (97%)"
+    ]
+  }
+}

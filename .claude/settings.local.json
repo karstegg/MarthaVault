@@ -20,7 +20,12 @@
       "Bash(gh run view:*)",
       "Bash(gh issue create:*)",
       "Bash(gh auth refresh:*)",
-      "Bash(gh codespace:*)"
+      "Bash(gh codespace:*)",
+      "Bash(gh issue view:*)",
+      "Bash(gh workflow:*)",
+      "Bash(gh issue close:*)",
+      "Bash(gh issue reopen:*)",
+      "Bash(gh issue edit:*)"
     ],
     "deny": []
   },

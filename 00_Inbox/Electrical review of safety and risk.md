@@ -1,1 +1,0 @@
-There was a recent incident where someone was killed on another mine which triggered a review and audit of our local procedures and whether they are adequate for the risk. It was a failure of a pump, someone got electrocuted. We have to do some sort of review and audit of our processor system's procedures.
