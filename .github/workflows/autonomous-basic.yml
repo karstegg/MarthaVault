@@ -91,38 +91,44 @@ jobs:
           cd /workspaces/MarthaVault || exit 1
           echo 'Working directory: '\$(pwd)
           
-          # Check if WhatsApp bridge database exists
+          # Smart bridge management - check if running, start if needed
+          echo 'Checking if WhatsApp bridge is running...'
+          if curl -s http://localhost:8080 >/dev/null 2>&1; then
+            echo '✅ Bridge already running on port 8080'
+          else
+            echo '🔄 Bridge not running - starting fresh instance...'
+            cd /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge || exit 1
+            nohup go run main.go > bridge.log 2>&1 &
+            
+            echo '⏳ Waiting 30 seconds for WhatsApp connection...'
+            sleep 30
+            
+            # Verify startup
+            if curl -s http://localhost:8080 >/dev/null 2>&1; then
+              echo '✅ Bridge started successfully'
+            else
+              echo '❌ Bridge failed to start - check logs'
+              if [ -f bridge.log ]; then
+                echo 'Bridge log:'
+                tail -10 bridge.log
+              fi
+              exit 1
+            fi
+          fi
+          
+          # Extract messages from database (now that bridge is confirmed running)
           DB_PATH='/workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge/store/messages.db'
           if [ -f \"\$DB_PATH\" ]; then
-            echo 'WhatsApp database found at: '\$DB_PATH
-            
-            # Check database connectivity and recent messages
-            echo 'Testing database connectivity...'
-            RECENT_COUNT=\$(sqlite3 \"\$DB_PATH\" \"SELECT COUNT(*) FROM messages WHERE timestamp > datetime('now', '-24 hours');\" 2>/dev/null || echo 0)
-            echo \"Found \$RECENT_COUNT recent messages in last 24 hours\"
-            
-            if [ \"\$RECENT_COUNT\" -gt 0 ]; then
-              echo 'Database has recent data - extracting messages...'
-              
-              # Extract WhatsApp messages for the target date using direct SQL
-              echo 'WHATSAPP_DATA_START'
-              # Test basic query first
-              sqlite3 \"\$DB_PATH\" \"SELECT 'From: ' || chat_jid, 'Time: ' || timestamp, 'Content: ' || substr(content, 1, 200) FROM messages WHERE content LIKE '%ROM%' OR content LIKE '%Product%' OR content LIKE '%Nchwaning%' OR content LIKE '%Gloria%' ORDER BY timestamp DESC LIMIT 10;\" 2>/dev/null || echo 'Production message query failed'
-              echo 'WHATSAPP_DATA_END'
-            else
-              echo 'No recent messages found - may need bridge restart'
-              echo 'WHATSAPP_DATA_START'
-              echo 'From: System'
-              echo 'Time: ${{ steps.parse.outputs.report_date }}'
-              echo 'Content: WhatsApp database accessible but no recent production messages found for date'
-              echo 'WHATSAPP_DATA_END'
-            fi
-          else
-            echo 'WhatsApp database not found - using fallback'
+            echo 'WhatsApp database found - extracting production messages...'
             echo 'WHATSAPP_DATA_START'
-            echo 'From: System Fallback'
+            sqlite3 \"\$DB_PATH\" \"SELECT 'From: ' || chat_jid, 'Time: ' || timestamp, 'Content: ' || substr(content, 1, 200) FROM messages WHERE content LIKE '%ROM%' OR content LIKE '%Product%' OR content LIKE '%Nchwaning%' OR content LIKE '%Gloria%' ORDER BY timestamp DESC LIMIT 10;\" 2>/dev/null || echo 'Production message query failed'
+            echo 'WHATSAPP_DATA_END'
+          else
+            echo 'Database not found after bridge startup'
+            echo 'WHATSAPP_DATA_START'
+            echo 'From: System Error'
             echo 'Time: ${{ steps.parse.outputs.report_date }}'
-            echo 'Content: Database not available - autonomous system framework operational, needs WhatsApp setup'
+            echo 'Content: Bridge started but database not accessible'
             echo 'WHATSAPP_DATA_END'
           fi
         " > whatsapp_data.txt 2>&1
