@@ -67,44 +67,17 @@ jobs:
         from datetime import datetime, timedelta
         
         def extract_production_messages(start_date, end_date):
-            """Extract production messages from WhatsApp database via Codespace"""
-            
             # Convert dates to timestamp format for SQLite query
             start_ts = f"{start_date} 00:00:00+00:00"
             end_ts = f"{end_date} 23:59:59+00:00"
             
             # SQL query to extract production messages
-            sql_query = f'''
-            SELECT 
-                timestamp,
-                chat_jid,
-                sender,
-                content
-            FROM messages 
-            WHERE 
-                (chat_jid = '27834418149-1537194373@g.us' 
-                 OR chat_jid = '120363204285087803@g.us')
-                AND timestamp BETWEEN '{start_ts}' AND '{end_ts}'
-                AND (
-                    content LIKE '%ROM%' 
-                    OR content LIKE '%Safety%'
-                    OR content LIKE '%Production%'
-                    OR content LIKE '%Gloria%'
-                    OR content LIKE '%Nchwaning%'
-                    OR content LIKE '%S&W%'
-                    OR content LIKE '%Shafts%'
-                )
-            ORDER BY timestamp ASC
-            '''
+            sql_query = f"SELECT timestamp,chat_jid,sender,content FROM messages WHERE (chat_jid = '27834418149-1537194373@g.us' OR chat_jid = '120363204285087803@g.us') AND timestamp BETWEEN '{start_ts}' AND '{end_ts}' AND (content LIKE '%ROM%' OR content LIKE '%Safety%' OR content LIKE '%Production%' OR content LIKE '%Gloria%' OR content LIKE '%Nchwaning%' OR content LIKE '%S&W%' OR content LIKE '%Shafts%') ORDER BY timestamp ASC"
             
             # Execute query via Codespace SSH
             codespace_name = sys.argv[1] if len(sys.argv) > 1 else "cuddly-guacamole-496vp6p46wg39r"
             
-            cmd = [
-                'gh', 'codespace', 'ssh', '-c', codespace_name, '--',
-                'sqlite3', '/workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge/store/messages.db',
-                sql_query.replace('\n', ' ').strip()
-            ]
+            cmd = ['gh', 'codespace', 'ssh', '-c', codespace_name, '--', 'sqlite3', '/workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge/store/messages.db', sql_query]
             
             try:
                 result = subprocess.run(cmd, capture_output=True, text=True, check=True)
@@ -122,7 +95,6 @@ jobs:
             data = extract_production_messages(start_date, end_date)
             
             if data:
-                # Save raw data for processing
                 with open('raw_whatsapp_data.txt', 'w') as f:
                     f.write(data)
                 print(f"Extracted {len(data.splitlines())} lines of WhatsApp data")
