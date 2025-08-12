@@ -1,0 +1,45 @@
+name: July 6 Test - Data Extraction
+
+on:
+  issues:
+    types: [opened, reopened, labeled]
+
+jobs:
+  extract-july6:
+    if: contains(github.event.issue.labels.*.name, 'final-july6')
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Extract July 6 WhatsApp Data
+      env:
+        GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
+      run: |
+        echo "🚀 Starting July 6th WhatsApp data extraction..."
+        
+        # Connect to Codespace and extract July 6 data
+        CODESPACE_NAME="cuddly-guacamole-496vp6p46wg39r"
+        
+        echo "Extracting July 6, 2025 production messages..."
+        gh codespace ssh -c $CODESPACE_NAME -- \
+          "sqlite3 /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge/store/messages.db \
+          \"SELECT timestamp, chat_jid, sender, substr(content, 1, 100) 
+           FROM messages 
+           WHERE timestamp BETWEEN '2025-07-06 00:00:00+00:00' AND '2025-07-06 23:59:59+00:00' 
+           AND (content LIKE '%ROM%' OR content LIKE '%Production%' OR content LIKE '%Gloria%' OR content LIKE '%Nchwaning%' OR content LIKE '%S&W%') 
+           ORDER BY timestamp;\"" > july6_data.txt
+        
+        echo "✅ July 6 data extracted successfully!"
+        echo "📊 Data sample:"
+        head -10 july6_data.txt
+        
+        echo "📈 Total messages found:"
+        wc -l july6_data.txt
+        
+    - name: Upload extracted data
+      uses: actions/upload-artifact@v4
+      with:
+        name: july6-whatsapp-data
+        path: july6_data.txt
