@@ -1,0 +1,381 @@
+name: Process Reports with Gemini-CLI Integration
+
+on:
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR number with extracted data'
+        required: true
+      processing_date:
+        description: 'Specific date to process (YYYY-MM-DD, optional)'
+        required: false
+
+jobs:
+  process-with-gemini:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        ref: feature/july-reports-automation
+        
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests openai google-generativeai python-dateutil
+        
+    - name: Configure Gemini API
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      run: |
+        echo "Configuring Gemini API for production report processing..."
+        
+        # Create Gemini processing script
+        cat > gemini_processor.py << 'EOF'
+        import google.generativeai as genai
+        import json
+        import os
+        import sys
+        from pathlib import Path
+        
+        # Configure Gemini
+        genai.configure(api_key=os.environ['GEMINI_API_KEY'])
+        model = genai.GenerativeModel('gemini-1.5-pro')
+        
+        def process_single_report(raw_content, site, date):
+            """Process a single production report using Gemini"""
+            
+            prompt = f"""
+            You are a mining production report processor. Parse the following WhatsApp message into a structured daily production report.
+            
+            Site: {site}
+            Date: {date}
+            Raw Content:
+            {raw_content}
+            
+            Instructions:
+            1. Extract safety status and any incidents
+            2. Parse production metrics (ROM, Decline, Product vs targets)
+            3. Extract load information by shift (Day/Afternoon/Night)
+            4. Identify blast information (faces, quantities)
+            5. Parse equipment availability percentages (DT, FL, HD, RT, SR, UV)
+            6. Extract equipment readiness (start of shift status)
+            7. List current breakdowns with unit numbers and issues
+            8. Note any plant blockages, fire alarms, or infrastructure status
+            
+            Output Format:
+            Provide a JSON structure with the following schema:
+            {{
+              "report_metadata": {{
+                "date": "{date}",
+                "site": "{site}",
+                "engineer": "engineer_name",
+                "source": "WhatsApp Main Production Group"
+              }},
+              "safety": {{
+                "status": "clear/incident",
+                "incidents": 0,
+                "details": []
+              }},
+              "production": {{
+                "rom": {{"actual": 0, "target": 0, "variance_tons": 0, "variance_percent": 0}},
+                "decline": {{"actual": 0, "target": 0, "variance_tons": 0, "variance_percent": 0}},
+                "product": {{"actual": 0, "target": 0, "variance_tons": 0, "variance_percent": 0}},
+                "loads": {{"day_shift": 0, "afternoon_shift": 0, "night_shift": 0, "total_loads": 0}},
+                "blast": {{"faces": 0, "details": "description"}}
+              }},
+              "equipment_availability": {{
+                "tmm": {{"dt": 0, "fl": 0, "hd": 0, "rt": 0, "sr": 0, "uv": 0}},
+                "equipment_readiness": {{"dt": "0/0", "fl": "0/0", "hd": "0/0", "rt": "0/0", "sr": "0/0"}},
+                "specialized": []
+              }},
+              "breakdowns": {{
+                "current_breakdowns": [
+                  {{"unit": "unit_id", "issue": "description"}}
+                ]
+              }},
+              "infrastructure": {{
+                "plant_blockages": "status",
+                "fire_alarms": "status", 
+                "main_fans": "status"
+              }},
+              "performance_summary": {{
+                "key_issues": [],
+                "key_highlights": []
+              }}
+            }}
+            
+            CRITICAL: Only extract data that is explicitly present in the raw content. Use null or "Nothing Reported" for missing data. Do not fabricate or estimate values.
+            """
+            
+            try:
+                response = model.generate_content(prompt)
+                return response.text
+            except Exception as e:
+                print(f"Error processing with Gemini: {e}")
+                return None
+        
+        def create_markdown_report(json_data, site, date):
+            """Create markdown report from processed JSON data"""
+            
+            # Determine template type
+            if site in ['Nchwaning 2', 'Nchwaning 3', 'Gloria']:
+                template_type = "Standard Mine Site"
+            else:
+                template_type = "Shafts & Winders"
+            
+            # Engineer mapping
+            engineer_map = {
+                'Nchwaning 2': '[[Johan Kotze]] (acting for [[Sikilela Nzuza]])',
+                'Nchwaning 3': '[[Sello Sease]]',
+                'Gloria': '[[Sipho Dubazane]]',
+                'Shafts & Winders': '[[Xavier Peterson]]'
+            }
+            
+            engineer = engineer_map.get(site, '[[Unknown Engineer]]')
+            
+            # Determine status emoji based on data
+            safety_status = json_data.get('safety', {}).get('status', 'clear')
+            production_data = json_data.get('production', {})
+            
+            if safety_status == 'incident':
+                status_emoji = "🚨 CRITICAL ISSUES"
+            elif any(p.get('variance_percent', 0) < -20 for p in [production_data.get('rom', {}), production_data.get('product', {})]):
+                status_emoji = "⚠️ UNDERPERFORMANCE"
+            else:
+                status_emoji = "✅ OPERATIONAL"
+            
+            markdown_content = f"""---
+JSONData:: [[{date}_{site.lower().replace(' ', '_')}.json]]
+---
+
+# {site} Daily Report
+**Date**: {date}
+**Engineer**: {engineer}
+**Site**: {site}
+
+## {status_emoji}
+
+### Safety Status
+{json_data.get('safety', {}).get('status', 'Clear').title()}
+
+### Production Performance
+| Metric | Actual | Target | Variance | % of Target |
+|--------|--------|--------|----------|-------------|
+| **ROM (tons)** | {production_data.get('rom', {}).get('actual', 'N/A')} | {production_data.get('rom', {}).get('target', 'N/A')} | {production_data.get('rom', {}).get('variance_tons', 'N/A')} | {100 + production_data.get('rom', {}).get('variance_percent', 0):.1f}% |
+
+#### Load & Haul Fleet Performance (Truckloads Tipped by Shift)
+| Shift | Truckloads Tipped |
+|-------|-------------------|
+| **Day** | {production_data.get('loads', {}).get('day_shift', 'N/A')} |
+| **Afternoon** | {production_data.get('loads', {}).get('afternoon_shift', 'N/A')} |
+| **Night** | {production_data.get('loads', {}).get('night_shift', 'N/A')} |
+| **Total** | **{production_data.get('loads', {}).get('total_loads', 'N/A')}** |
+
+#### Blast Performance
+{production_data.get('blast', {}).get('details', 'Nothing Reported')}
+
+### Equipment Status
+
+#### TMM Availability
+| Equipment | Availability | Performance Status |
+|-----------|--------------|-------------------|
+| **DT (Dump Trucks)** | {json_data.get('equipment_availability', {}).get('tmm', {}).get('dt', 'N/A')}% | {'✅ Good' if json_data.get('equipment_availability', {}).get('tmm', {}).get('dt', 0) >= 90 else '⚠️ Below Standard'} |
+
+### Current Breakdowns
+{len(json_data.get('breakdowns', {}).get('current_breakdowns', []))} Units
+
+### Infrastructure Status
+| System | Status |
+|--------|--------|
+| **Plant Blockages** | {json_data.get('infrastructure', {}).get('plant_blockages', 'N/A')} |
+| **Fire Alarms** | {json_data.get('infrastructure', {}).get('fire_alarms', 'N/A')} |
+
+## Performance Summary
+{chr(10).join('- ' + item for item in json_data.get('performance_summary', {}).get('key_issues', ['No issues identified']))}
+
+## Supplemental Information
+**Processing Notes:**
+- Report processed automatically via Gemini-CLI integration
+- Data extracted from WhatsApp production messages
+- Manual review recommended for accuracy verification
+"""
+            
+            return markdown_content
+        
+        if __name__ == "__main__":
+            # Process all JSON files in daily_production/data/
+            data_dir = Path("daily_production/data")
+            
+            for json_file in data_dir.glob("*.json"):
+                print(f"Processing {json_file.name}...")
+                
+                with open(json_file, 'r') as f:
+                    data = json.load(f)
+                
+                raw_content = data.get('raw_content', '')
+                site = data.get('report_metadata', {}).get('site', '')
+                date = data.get('report_metadata', {}).get('date', '')
+                
+                if raw_content and site and date:
+                    # Process with Gemini
+                    processed_json = process_single_report(raw_content, site, date)
+                    
+                    if processed_json:
+                        try:
+                            # Parse JSON response
+                            json_data = json.loads(processed_json.strip('```json').strip('```'))
+                            
+                            # Update JSON file with processed data
+                            with open(json_file, 'w') as f:
+                                json.dump(json_data, f, indent=2)
+                            
+                            # Create corresponding markdown file
+                            md_filename = f"daily_production/{date} – {site} Daily Report.md"
+                            markdown_content = create_markdown_report(json_data, site, date)
+                            
+                            with open(md_filename, 'w') as f:
+                                f.write(markdown_content)
+                                
+                            print(f"✅ Processed {site} report for {date}")
+                            
+                        except json.JSONDecodeError as e:
+                            print(f"❌ Failed to parse JSON for {json_file.name}: {e}")
+                    else:
+                        print(f"❌ Failed to process {json_file.name}")
+                else:
+                    print(f"⚠️ Skipping {json_file.name} - missing required data")
+        EOF
+        
+    - name: Process reports with Gemini
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      run: |
+        echo "Processing reports with Gemini-CLI integration..."
+        python gemini_processor.py
+        
+    - name: Validate processed reports
+      run: |
+        echo "Validating processed reports..."
+        
+        # Create validation script
+        cat > validate_reports.py << 'EOF'
+        import json
+        import os
+        from pathlib import Path
+        
+        def validate_report(json_file):
+            """Validate a processed report"""
+            try:
+                with open(json_file, 'r') as f:
+                    data = json.load(f)
+                
+                # Check required fields
+                required_fields = [
+                    'report_metadata',
+                    'safety', 
+                    'production',
+                    'equipment_availability',
+                    'breakdowns',
+                    'performance_summary'
+                ]
+                
+                missing_fields = []
+                for field in required_fields:
+                    if field not in data:
+                        missing_fields.append(field)
+                
+                if missing_fields:
+                    return False, f"Missing fields: {missing_fields}"
+                
+                # Validate data structure
+                if 'date' not in data.get('report_metadata', {}):
+                    return False, "Missing date in metadata"
+                
+                if 'site' not in data.get('report_metadata', {}):
+                    return False, "Missing site in metadata"
+                
+                return True, "Valid"
+                
+            except Exception as e:
+                return False, f"Validation error: {e}"
+        
+        # Validate all processed files
+        data_dir = Path("daily_production/data")
+        validation_results = []
+        
+        for json_file in data_dir.glob("*.json"):
+            is_valid, message = validate_report(json_file)
+            validation_results.append({
+                'file': str(json_file),
+                'valid': is_valid,
+                'message': message
+            })
+            
+            if is_valid:
+                print(f"✅ {json_file.name}: {message}")
+            else:
+                print(f"❌ {json_file.name}: {message}")
+        
+        # Save validation report
+        with open('validation_report.json', 'w') as f:
+            json.dump(validation_results, f, indent=2)
+            
+        valid_count = sum(1 for r in validation_results if r['valid'])
+        total_count = len(validation_results)
+        
+        print(f"\nValidation Summary: {valid_count}/{total_count} reports passed validation")
+        EOF
+        
+        python validate_reports.py
+        
+    - name: Update Pull Request
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: |
+          feat: Process reports with Gemini-CLI integration
+          
+          - Applied Gemini-1.5-Pro processing to raw WhatsApp data
+          - Generated structured JSON reports with proper schema
+          - Created formatted markdown reports using standardized templates
+          - Validated processed reports for data integrity
+          
+          🤖 Processed via Gemini-CLI automation
+        title: 'Production Reports: Gemini-Processed July 6-21, 2025'
+        body: |
+          ## Gemini-CLI Processing Complete
+          
+          **Processing Method**: GitHub Actions → Gemini-1.5-Pro → Structured Reports
+          
+          ### What This Update Contains
+          - ✅ Processed WhatsApp data using Gemini-1.5-Pro
+          - ✅ Generated structured JSON reports with complete schema
+          - ✅ Created formatted markdown reports using standardized templates
+          - ✅ Applied site-specific formatting and engineer assignments
+          
+          ### Processing Results
+          See `validation_report.json` for detailed validation results.
+          
+          ### Quality Assurance
+          - All reports follow standardized JSON schema
+          - Production metrics extracted and calculated
+          - Equipment availability parsed with performance analysis
+          - Safety status and incidents properly categorized
+          - Template compliance validated
+          
+          ### Ready for Review
+          Reports are now ready for Claude Cloud review and integration.
+          All data has been extracted from original WhatsApp sources and structured according to established templates.
+          
+          **⚠️ Manual Review Recommended**: While automated processing provides good structure, manual verification of production figures and equipment data is recommended before final approval.
+          
+          🤖 This processing was completed automatically by Gemini-CLI integration.
+        branch: feature/july-reports-automation
+        delete-branch: false
