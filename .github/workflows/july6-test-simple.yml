@@ -6,7 +6,7 @@ on:
 
 jobs:
   extract-july6:
-    if: contains(github.event.issue.labels.*.name, 'final-july6')
+    if: contains(github.event.issue.labels.*.name, 'test-extraction')
     runs-on: ubuntu-latest
     
     steps:
