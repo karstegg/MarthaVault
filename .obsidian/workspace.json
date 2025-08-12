@@ -25,12 +25,14 @@
             "id": "b235547db7816bfe",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "00_Inbox/VFL Schedule - Aug 2025.pdf"
+                "file": "INSTRUCTIONS_FOR_OTHER_CLAUDE_SESSION.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "VFL Schedule - Aug 2025"
+              "icon": "lucide-file",
+              "title": "INSTRUCTIONS_FOR_OTHER_CLAUDE_SESSION"
             }
           }
         ],
@@ -183,6 +185,8 @@
   },
   "active": "b235547db7816bfe",
   "lastOpenFiles": [
+    "00_Inbox/VFL Schedule - Aug 2025.pdf",
+    "INSTRUCTIONS_FOR_OTHER_CLAUDE_SESSION.md",
     "WHATSAPP_MCP_COMPLETE_SETUP.md",
     "install-lharries-whatsapp-mcp.sh",
     "install-lharries-whatsapp-mcp.sh.tmp.23364.1754962789125",
@@ -218,8 +222,6 @@
     "00_Inbox/WTW Audit 2025.md",
     "daily_production/data/2025-08/11/2025-08-11 – Nchwaning 2 Daily Report.md",
     "daily_production/data/2025-08/11/2025-08-11 – Gloria Daily Report.md",
-    "daily_production/data/2025-08/11/2025-08-11 – Nchwaning 3 Daily Report.md",
-    "daily_production/data/2025-08/10/2025-08-10 - Nchwaning 3 Daily Report.md",
     "00_Inbox/IMG_20250730_203426_897.jpg"
   ]
 }

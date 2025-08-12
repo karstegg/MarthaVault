@@ -389,8 +389,43 @@ sqlite3 store/messages.db "SELECT timestamp, chat_jid, substr(content, 1, 100) F
 - **No MCP tools needed** - use standard SQL queries
 - **Database path**: `/workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge/store/messages.db`
 
+### 🔄 **Backup & Restore Codespace Setup**
+
+**Critical Files to Preserve:**
+- `whatsapp-mcp/whatsapp-bridge/store/messages.db` (authentication + data)
+- `whatsapp-mcp/whatsapp-bridge/main.go` (bridge executable)
+- `whatsapp-mcp/whatsapp-mcp-server/whatsapp_sqlite_extractor_final.py` (data extractor)
+
+**Quick Backup Commands:**
+```bash
+# Backup authentication and data
+gh codespace ssh -- "cd /workspaces/MarthaVault && tar -czf whatsapp-backup.tar.gz whatsapp-mcp/whatsapp-bridge/store/"
+
+# Verify Go version in Codespace
+gh codespace ssh -- "go version"  # Must be 1.24.1+
+```
+
+**Quick Restore Process:**
+```bash
+# 1. Clone repository in new Codespace
+git clone https://github.com/karstegg/MarthaVault.git /workspaces/MarthaVault
+
+# 2. Restore backup if available
+tar -xzf whatsapp-backup.tar.gz
+
+# 3. Start bridge
+cd /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge && go run main.go
+```
+
+**Recovery Documentation**: See `WHATSAPP_MCP_COMPLETE_SETUP.md` for full setup if backup unavailable
+
 # important-instruction-reminders
 Do what has been asked; nothing more, nothing less.
 NEVER create files unless they're absolutely necessary for achieving your goal.
 ALWAYS prefer editing an existing file to creating a new one.
 NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.
+- did you update your memory as requested
+- add section about backup and restore the codespace setup
+- please update your memory regarding the correct query format ans timezone cnversion
+- Please save this fix and process to memory
+- Excellent! now save this in your memory including the steps to follow for running queries at any time.

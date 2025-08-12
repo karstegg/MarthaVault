@@ -17,7 +17,10 @@
       "Bash(git push:*)",
       "Bash(git pull:*)",
       "mcp__whatsapp__list_messages",
-      "Bash(gh run view:*)"
+      "Bash(gh run view:*)",
+      "Bash(gh issue create:*)",
+      "Bash(gh auth refresh:*)",
+      "Bash(gh codespace:*)"
     ],
     "deny": []
   },
