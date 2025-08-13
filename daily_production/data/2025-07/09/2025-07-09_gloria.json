@@ -1,0 +1,138 @@
+{
+    "report_metadata": {
+        "date": "2025-07-09",
+        "site": "Gloria",
+        "engineer": "Sipho Dubazane",
+        "report_type": "daily_production", 
+        "timestamp": "07:02",
+        "source": "WhatsApp"
+    },
+    "safety": {
+        "status": "Clear",
+        "incidents": 0,
+        "notes": ["All clear"]
+    },
+    "production": {
+        "rom": {
+            "actual": 758,
+            "target": 3873,
+            "variance": -3115,
+            "unit": "tonnes"
+        },
+        "decline": {
+            "actual": 1735,
+            "target": 3873,
+            "variance": -2138,
+            "unit": "tonnes"
+        },
+        "product": {
+            "actual": 3114,
+            "target": 3773,
+            "variance": -659,
+            "unit": "tonnes"
+        },
+        "loads": [26, 40, 4]
+    },
+    "silo_levels": {
+        "surface_silos": {
+            "silo_1": "78%",
+            "silo_2": "23%",
+            "silo_3": "55%", 
+            "silo_4": "14%"
+        },
+        "underground_silos": {
+            "74": "43%",
+            "HG": "15%",
+            "D": "17%",
+            "LG": "19%"
+        }
+    },
+    "equipment_availability": {
+        "production_fleet": {
+            "dump_trucks": {
+                "code": "DT",
+                "available": 6,
+                "total": 6,
+                "percentage": 99
+            },
+            "front_loaders": {
+                "code": "FL",
+                "available": 4,
+                "total": 5,
+                "percentage": 75
+            },
+            "haul_trucks": {
+                "code": "HD", 
+                "available": 4,
+                "total": 4,
+                "percentage": 94
+            },
+            "roof_bolters": {
+                "code": "RT",
+                "available": 4,
+                "total": 4,
+                "percentage": 95
+            },
+            "scalers": {
+                "code": "SR",
+                "available": 3,
+                "total": 4,
+                "percentage": 65
+            }
+        },
+        "support_equipment": {
+            "emulsion_uv": "2/2",
+            "manitou": "1/1",
+            "manlifts": "2/2"
+        }
+    },
+    "breakdowns": {
+        "current_breakdowns": [
+            {
+                "vehicle": "FL0083",
+                "description": "Speed sensor"
+            },
+            {
+                "vehicle": "SR0037",
+                "description": "Tail frame"
+            }
+        ]
+    },
+    "infrastructure": {
+        "main_fans": "In Order",
+        "plant_blockages": "None",
+        "fire_alarms": "None"
+    },
+    "source_validation": {
+        "rom_production": {
+            "value": 758,
+            "source_line": 1,
+            "source_quote": "**ROM* \n- 758 vs 3873",
+            "confidence": "HIGH"
+        },
+        "decline_production": {
+            "value": 1735,
+            "source_line": 2,
+            "source_quote": "*Decline*\n     1735 vs 3873",
+            "confidence": "HIGH"
+        },
+        "product_production": {
+            "value": 3114,
+            "source_line": 3,
+            "source_quote": "**Product*   \n     3114  vs 3773",
+            "confidence": "HIGH"
+        },
+        "loads": {
+            "value": [26, 40, 4],
+            "source_line": 4,
+            "source_quote": "**Loads*\n- 26;40;4",
+            "confidence": "HIGH"
+        },
+        "surface_silo_1": {
+            "value": "78%",
+            "source_line": 5,
+            "source_quote": "1 -  78",
+            "confidence": "HIGH"
+        }
+    }
+}

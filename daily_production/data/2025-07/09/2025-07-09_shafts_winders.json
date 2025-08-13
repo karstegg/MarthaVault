@@ -1,0 +1,140 @@
+{
+    "report_metadata": {
+        "date": "2025-07-09",
+        "site": "Shafts & Winders",
+        "engineer": "Xavier Peterson",
+        "report_type": "daily_infrastructure",
+        "timestamp": "05:15",
+        "source": "WhatsApp"
+    },
+    "safety": {
+        "status": "Clear",
+        "incidents": 0,
+        "notes": []
+    },
+    "power_supply": {
+        "status": "No Stoppages"
+    },
+    "shaft_status": [
+        {
+            "name": "Nchwaning 2 PW",
+            "status": "Delay",
+            "details": "Winder Trip",
+            "resolution": "Winder Technician Electrician Reset"
+        },
+        {
+            "name": "Nchwaning 3 PW", 
+            "status": "No Stoppages"
+        },
+        {
+            "name": "Gloria PW",
+            "status": "No Stoppages"
+        },
+        {
+            "name": "Nchwaning 2 RW",
+            "status": "No Stoppages"
+        }
+    ],
+    "fan_status": [
+        {
+            "name": "Gloria Main Fan",
+            "status": "No Stoppages"
+        },
+        {
+            "name": "Nchwaning 2 Main Fan",
+            "status": "No Stoppages"
+        },
+        {
+            "name": "Nchwaning 3 Main Fan", 
+            "status": "No Stoppages"
+        }
+    ],
+    "lamproom_status": [
+        {
+            "name": "Gloria",
+            "status": "No Stoppages"
+        },
+        {
+            "name": "Nchwaning 2",
+            "status": "No Stoppages"
+        },
+        {
+            "name": "Nchwaning 3",
+            "status": "No Stoppages"
+        }
+    ],
+    "dam_levels": {
+        "DD01": {
+            "friday": "100.7%",
+            "saturday": "100.7%",
+            "sunday": "100.6%",
+            "monday": "100.6%",
+            "tuesday": "100.5%",
+            "wednesday": null,
+            "thursday": null
+        },
+        "DD02": {
+            "friday": "83.4%",
+            "saturday": "86.7%", 
+            "sunday": "82.9%",
+            "monday": "81.5%",
+            "tuesday": "86.1%",
+            "wednesday": null,
+            "thursday": null
+        }
+    },
+    "fire_scada_alarms": 0,
+    "block_chutes": "None",
+    "production": {
+        "daily_targets": [
+            {"day": "Friday", "actual": 5552, "target": 6623},
+            {"day": "Saturday", "actual": 2195, "target": 1648},
+            {"day": "Sunday", "actual": 1348, "target": 1648},
+            {"day": "Monday", "actual": 4187, "target": 5439},
+            {"day": "Tuesday", "actual": 7005, "target": 6623},
+            {"day": "Wednesday", "actual": null, "target": 6623},
+            {"day": "Thursday", "actual": null, "target": 5439}
+        ]
+    },
+    "ore_pass_levels": {
+        "friday": "38.1%",
+        "saturday": "33.3%",
+        "sunday": "20.1%",
+        "monday": "35.5%",
+        "tuesday": "4.8%",
+        "wednesday": null,
+        "thursday": null
+    },
+    "source_validation": {
+        "safety_status": {
+            "value": "Clear",
+            "source_line": 1,
+            "source_quote": "Safety:\nClear",
+            "confidence": "HIGH"
+        },
+        "nch2_pw_delay": {
+            "value": "Winder Trip",
+            "source_line": 10,
+            "source_quote": "Nch2 PW\nDelay: Winder Trip",
+            "confidence": "HIGH"
+        },
+        "nch2_pw_fix": {
+            "value": "Winder Technician Electrician Reset",
+            "source_line": 11,
+            "source_quote": "Fix: Winder Technician Electrician Reset",
+            "confidence": "HIGH"
+        },
+        "dd01_tuesday": {
+            "value": "100.5%",
+            "source_line": 25,
+            "source_quote": "Tue: 100,5%",
+            "confidence": "HIGH"
+        },
+        "production_tuesday": {
+            "value": "7005/6623",
+            "source_line": 35,
+            "source_quote": "Tue: 7005/6623",
+            "confidence": "HIGH"
+        }
+    }
+}
