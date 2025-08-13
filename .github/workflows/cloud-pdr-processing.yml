@@ -127,28 +127,18 @@ jobs:
         for i in $(seq 1 $TIMEOUT); do
           sleep 15
           
-          # Check if Claude has created a PR (multiple search patterns)
-          PR_LIST1=$(gh pr list --search "PDR $TARGET_DATE" --state open --json number,title)
-          PR_LIST2=$(gh pr list --search "Autonomous PDR" --state open --json number,title)  
-          PR_LIST3=$(gh pr list --search "$TARGET_DATE" --state open --json number,title)
+          # Check if Claude has created a PR for this specific date
+          # Look for PRs created recently (within last 2 hours) with specific patterns
+          PR_LIST=$(gh pr list --state open --json number,title,createdAt --jq '
+            map(select(
+              (.title | contains("Autonomous PDR processing for '$TARGET_DATE'")) or
+              (.title | contains("feat: Autonomous PDR processing for '$TARGET_DATE'")) or
+              (.title | contains("PDR processing for '$TARGET_DATE'")) or
+              (.title | contains("'$TARGET_DATE'") and (.title | contains("PDR") or .title | contains("production")))
+            ))
+          ')
           
-          # Combine results and get count
-          PR_COUNT1=$(echo "$PR_LIST1" | jq length)
-          PR_COUNT2=$(echo "$PR_LIST2" | jq length)
-          PR_COUNT3=$(echo "$PR_LIST3" | jq length)
-          
-          # Use the highest count found
-          PR_COUNT=$((PR_COUNT1 > PR_COUNT2 ? PR_COUNT1 : PR_COUNT2))
-          PR_COUNT=$((PR_COUNT > PR_COUNT3 ? PR_COUNT : PR_COUNT3))
-          
-          # Get the appropriate PR list
-          if [ "$PR_COUNT1" -gt 0 ]; then
-            PR_LIST="$PR_LIST1"
-          elif [ "$PR_COUNT2" -gt 0 ]; then
-            PR_LIST="$PR_LIST2"  
-          else
-            PR_LIST="$PR_LIST3"
-          fi
+          PR_COUNT=$(echo "$PR_LIST" | jq length)
           
           if [ "$PR_COUNT" -gt 0 ]; then
             PR_NUMBER=$(echo "$PR_LIST" | jq -r '.[0].number')
