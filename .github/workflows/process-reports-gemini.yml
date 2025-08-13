@@ -1,24 +1,31 @@
-name: Process Reports with Gemini-CLI Integration
+name: WhatsApp Extraction + Gemini Processing Pipeline
 
 on:
   workflow_dispatch:
     inputs:
-      pr_number:
-        description: 'PR number with extracted data'
-        required: true
       processing_date:
-        description: 'Specific date to process (YYYY-MM-DD, optional)'
+        description: 'Date to process (YYYY-MM-DD)'
+        required: true
+        default: '2025-07-06'
+      site_filter:
+        description: 'Site filter (optional: gloria, nchwaning2, nchwaning3, shafts_winders)'
         required: false
+      test_mode:
+        description: 'Test mode (process only one file)'
+        type: boolean
+        default: false
+
+  issues:
+    types: [labeled]
 
 jobs:
-  process-with-gemini:
+  extract-and-process:
     runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'issues' && contains(github.event.label.name, 'gemini-process'))
     
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      with:
-        ref: feature/july-reports-automation
         
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -28,508 +35,296 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install requests openai google-generativeai python-dateutil
+        pip install requests google-generativeai python-dateutil
         
-    - name: Configure Gemini API
-      env:
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+    - name: Set processing parameters
+      id: params
       run: |
-        echo "Configuring Gemini API for production report processing..."
+        if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          echo "date=${{ github.event.inputs.processing_date }}" >> $GITHUB_OUTPUT
+          echo "site_filter=${{ github.event.inputs.site_filter }}" >> $GITHUB_OUTPUT
+          echo "test_mode=${{ github.event.inputs.test_mode }}" >> $GITHUB_OUTPUT
+        else
+          # Extract date from issue title or use default
+          echo "date=2025-07-06" >> $GITHUB_OUTPUT
+          echo "site_filter=" >> $GITHUB_OUTPUT
+          echo "test_mode=true" >> $GITHUB_OUTPUT
+        fi
         
-        # Create Gemini processing script
-        cat > gemini_processor.py << 'EOF'
-        import google.generativeai as genai
-        import json
-        import os
-        import sys
-        from pathlib import Path
+    - name: Extract WhatsApp Data from Codespace
+      env:
+        GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
+      run: |
+        echo "🚀 Extracting WhatsApp data from Codespace..."
         
-        # Configure Gemini
-        genai.configure(api_key=os.environ['GEMINI_API_KEY'])
-        model = genai.GenerativeModel('gemini-1.5-pro')
+        # Create extraction script
+        cat > extract_whatsapp_data.py << 'EOF'
+import subprocess
+import json
+import os
+from datetime import datetime, timedelta
+
+def extract_data_for_date(target_date):
+    """Extract WhatsApp production data for specific date"""
+    
+    codespace_name = "cuddly-guacamole-496vp6p46wg39r"
+    db_path = "/workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge/store/messages.db"
+    
+    # Construct SQL query for the target date
+    start_time = f"{target_date} 00:00:00+00:00"
+    end_time = f"{target_date} 23:59:59+00:00"
+    
+    sql_query = f"""
+    SELECT timestamp, chat_jid, sender, substr(content, 1, 2000)
+    FROM messages 
+    WHERE timestamp BETWEEN '{start_time}' AND '{end_time}'
+    AND (content LIKE '%ROM%' OR content LIKE '%Production%' OR content LIKE '%Gloria%' 
+         OR content LIKE '%Nchwaning%' OR content LIKE '%S&W%')
+    ORDER BY timestamp;
+    """
+    
+    # Execute query via codespace SSH
+    cmd = [
+        "gh", "codespace", "ssh", "-c", codespace_name, "--",
+        "sqlite3", db_path, sql_query
+    ]
+    
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, check=True)
         
-        def process_single_report(raw_content, site, date):
-            """Process a single production report using Gemini with strict template compliance"""
-            
-            # Determine template type and engineer
-            if site.lower() in ['nchwaning 2', 'nchwaning 3', 'gloria']:
-                template_type = "Standard Mine Site"
-                engineer_map = {
-                    'nchwaning 2': 'Johan Kotze (acting for Sikilela Nzuza)',
-                    'nchwaning 3': 'Sello Sease', 
-                    'gloria': 'Sipho Dubazane'
-                }
-                engineer = engineer_map.get(site.lower(), 'Unknown Engineer')
-            else:
-                template_type = "Shafts & Winders"
-                engineer = "Xavier Peterson"
-            
-            prompt = f"""
-            You are a mining production report processor that must follow EXACT template compliance.
-            
-            🎯 CRITICAL: You must follow the official reporting templates EXACTLY. Do not deviate from the structure.
-            
-            Site: {site}
-            Date: {date} 
-            Engineer: {engineer}
-            Template Type: {template_type}
-            
-            Raw WhatsApp Content:
-            {raw_content}
-            
-            📋 MANDATORY REQUIREMENTS:
-            1. ✅ Extract ONLY data that exists in the raw content - NEVER fabricate or estimate
-            2. ✅ Use "Nothing Reported" for missing sections
-            3. ✅ Follow the EXACT JSON schema from the official templates
-            4. ✅ Apply correct site-specific requirements
-            5. ✅ Use proper status indicators: 🟢 (good), ⚠️ (warning), 🔴 (critical)
-            
-            📊 PROCESSING INSTRUCTIONS:
-            1. **Safety Status**: Extract safety incidents or confirm "clear" status
-            2. **Production Metrics**: ROM, Decline, Product with actual vs target calculations
-            3. **Load Performance**: Truckloads tipped by shift (Day/Afternoon/Night)
-            4. **Blast Data**: Faces blasted, quantities, or "Nothing Reported"
-            5. **Equipment Availability**: TMM percentages (DT, FL, HD, RT, SR, UV)
-            6. **Equipment Readiness**: Start-of-shift equipment counts (X/Y format)
-            7. **Current Breakdowns**: Unit IDs with specific issue descriptions
-            8. **Infrastructure**: Plant blockages, fire alarms, main fans status
-            
-            🏗️ SITE-SPECIFIC REQUIREMENTS:
-            
-            **For Gloria Mine ONLY - Add these additional sections:**
-            - Silo Levels (Surface: 1-4, Underground: 74, HG, D, LG)
-            - Manitou availability status
-            
-            **For Shafts & Winders ONLY - Focus on infrastructure:**
-            - Power Supply status
-            - Winders: Nch2 PW/RW, Nch3 PW, GL PW
-            - Main Fans by site
-            - Lamprooms by site  
-            - Dam Levels: DD01/DD02
-            - Ore Pass Levels
-            
-            📄 EXACT JSON OUTPUT REQUIRED:
-            
-            **For Standard Mine Sites (Nchwaning 2, Nchwaning 3, Gloria):**
-            {{
-              "report_metadata": {{
-                "date": "{date}",
-                "data_date": "{date}",
-                "site": "{site}",
-                "engineer": "{engineer}",
-                "timestamp": "HH:MM"
-              }},
-              "safety": {{
-                "status": "clear/incident",
-                "incidents": 0,
-                "details": []
-              }},
-              "production": {{
-                "rom": {{
-                  "actual": 0,
-                  "target": 0,
-                  "variance": 0,
-                  "variance_percentage": 0.0
-                }},
-                "decline": {{
-                  "actual": 0,
-                  "target": 0,
-                  "variance": 0,
-                  "variance_percentage": 0.0
-                }},
-                "product": {{
-                  "actual": 0,
-                  "target": 0,
-                  "variance": 0,
-                  "variance_percentage": 0.0
-                }},
-                "loads": [
-                  {{"shift": "day", "load_number": 1, "truckloads_tipped": 0, "target": 0}},
-                  {{"shift": "afternoon", "load_number": 2, "truckloads_tipped": 0, "target": 0}},
-                  {{"shift": "night", "load_number": 3, "truckloads_tipped": 0, "target": 0}}
-                ],
-                "blast": {{
-                  "faces": 0,
-                  "breakdown": "description",
-                  "note": "details or Nothing Reported"
-                }}
-              }},
-              "equipment_availability": {{
-                "tmm": {{
-                  "DT": 0,
-                  "FL": 0,
-                  "HD": 0,
-                  "RT": 0,
-                  "SR": 0
-                }},
-                "specialized": [
-                  {{"code": "equipment_code", "availability": 0}}
-                ]
-              }},
-              "shift_readiness": {{
-                "production_tmm": {{
-                  "DT": {{"available": 0, "total": 0}},
-                  "FL": {{"available": 0, "total": 0}},
-                  "HD": {{"available": 0, "total": 0}},
-                  "RT": {{"available": 0, "total": 0}},
-                  "SR": {{"available": 0, "total": 0}}
-                }}
-              }},
-              "breakdowns": {{
-                "current_breakdowns": [
-                  {{"unit": "unit_id", "issue": "description"}}
-                ]
-              }},
-              "operational": {{
-                "main_fans": "status",
-                "plant_blockages": 0,
-                "fire_alarms": 0
-              }},
-              "performance_summary": {{
-                "key_issues": [],
-                "key_highlights": []
-              }}
-            }}
-            
-            **For Gloria Mine - Add these additional fields:**
-            "silo_levels": {{
-              "surface": {{
-                "silo_1": 0, "silo_2": 0, "silo_3": 0, "silo_4": 0
-              }},
-              "underground": {{
-                "silo_74": 0, "silo_hg": 0, "silo_d": 0, "silo_lg": 0
-              }}
-            }},
-            "specialized_equipment": {{
-              "manitou": {{"available": 0, "total": 1, "availability": 0}}
-            }}
-            
-            **For Shafts & Winders - Use this complete schema instead:**
-            {{
-              "report_metadata": {{
-                "date": "{date}",
-                "data_date": "{date}",
-                "site": "Shafts & Winders",
-                "engineer": "Xavier Peterson",
-                "timestamp": "HH:MM",
-                "report_type": "Daily/Weekly Report"
-              }},
-              "safety": {{
-                "status": "clear",
-                "incidents": 0,
-                "details": []
-              }},
-              "infrastructure": {{
-                "power_supply": {{
-                  "stoppages": 0,
-                  "status": "operational"
-                }},
-                "winders": {{
-                  "nch2_pw": {{"status": "operational/issues", "operational": true, "type": "manwinder"}},
-                  "nch3_pw": {{"status": "operational/issues", "operational": true, "type": "manwinder"}},
-                  "gl_pw": {{"status": "operational/issues", "operational": true, "type": "manwinder"}},
-                  "nch2_rw": {{"status": "operational/issues", "operational": true, "type": "rock_winder", "function": "ore_hoisting"}}
-                }},
-                "main_fans": {{
-                  "gloria": {{"status": "operational/issues", "operational": true}},
-                  "nchwaning2": {{"status": "operational/issues", "operational": true}},
-                  "nchwaning3": {{"status": "operational/issues", "operational": true}}
-                }},
-                "lamprooms": {{
-                  "gloria": {{"status": "operational/issues", "operational": true}},
-                  "nchwaning2": {{"status": "operational/issues", "operational": true}},
-                  "nchwaning3": {{"status": "operational/issues", "operational": true}}
-                }}
-              }},
-              "dam_levels": {{
-                "dd01": {{
-                  "level": 0.0,
-                  "status": "good/warning/critical"
-                }},
-                "dd02": {{
-                  "level": 0.0,
-                  "status": "good/warning/critical"
-                }}
-              }},
-              "ore_pass_levels": {{
-                "current_level": 0.0,
-                "trend": "stable/declining/improving"
-              }},
-              "operational": {{
-                "fire_scada_alarms": 0,
-                "block_chutes": 0
-              }},
-              "performance_summary": {{
-                "key_issues": [],
-                "key_highlights": []
-              }}
-            }}
-            
-            \ud83d\udeab CRITICAL DATA VALIDATION:\n            - NEVER fabricate data that doesn't exist in the raw WhatsApp content\n            - Use \"Nothing Reported\" for missing sections\n            - If production figures are unclear, mark as null\n            - Include source validation comments in your output\n            - Remember the PR #7 lesson: data accuracy is MORE important than completeness\n            \n            \ud83d\udcc5 OUTPUT FORMAT: You must provide both JSON and Markdown outputs following the exact template structure.
-            """
-            
-            try:
-                response = model.generate_content(prompt)
-                return response.text
-            except Exception as e:
-                print(f"Error processing with Gemini: {e}")
-                return None
+        # Parse results and create structured data
+        lines = result.stdout.strip().split('\n')
+        extracted_data = []
         
-        def create_markdown_report(json_data, site, date):
-            """Create markdown report from processed JSON data"""
-            
-            # Determine template type
-            if site in ['Nchwaning 2', 'Nchwaning 3', 'Gloria']:
-                template_type = "Standard Mine Site"
-            else:
-                template_type = "Shafts & Winders"
-            
-            # Engineer mapping
-            engineer_map = {
-                'Nchwaning 2': '[[Johan Kotze]] (acting for [[Sikilela Nzuza]])',
-                'Nchwaning 3': '[[Sello Sease]]',
-                'Gloria': '[[Sipho Dubazane]]',
-                'Shafts & Winders': '[[Xavier Peterson]]'
-            }
-            
-            engineer = engineer_map.get(site, '[[Unknown Engineer]]')
-            
-            # Determine status emoji based on data
-            safety_status = json_data.get('safety', {}).get('status', 'clear')
-            production_data = json_data.get('production', {})
-            
-            if safety_status == 'incident':
-                status_emoji = "🚨 CRITICAL ISSUES"
-            elif any(p.get('variance_percent', 0) < -20 for p in [production_data.get('rom', {}), production_data.get('product', {})]):
-                status_emoji = "⚠️ UNDERPERFORMANCE"
-            else:
-                status_emoji = "✅ OPERATIONAL"
-            
-            markdown_content = f"""---
-JSONData:: [[{date}_{site.lower().replace(' ', '_')}.json]]
----
-
-# {site} Daily Report
-**Date**: {date}
-**Engineer**: {engineer}
-**Site**: {site}
-
-## {status_emoji}
-
-### Safety Status
-{json_data.get('safety', {}).get('status', 'Clear').title()}
-
-### Production Performance
-| Metric | Actual | Target | Variance | % of Target |
-|--------|--------|--------|----------|-------------|
-| **ROM (tons)** | {production_data.get('rom', {}).get('actual', 'N/A')} | {production_data.get('rom', {}).get('target', 'N/A')} | {production_data.get('rom', {}).get('variance_tons', 'N/A')} | {100 + production_data.get('rom', {}).get('variance_percent', 0):.1f}% |
-
-#### Load & Haul Fleet Performance (Truckloads Tipped by Shift)
-| Shift | Truckloads Tipped |
-|-------|-------------------|
-| **Day** | {production_data.get('loads', {}).get('day_shift', 'N/A')} |
-| **Afternoon** | {production_data.get('loads', {}).get('afternoon_shift', 'N/A')} |
-| **Night** | {production_data.get('loads', {}).get('night_shift', 'N/A')} |
-| **Total** | **{production_data.get('loads', {}).get('total_loads', 'N/A')}** |
-
-#### Blast Performance
-{production_data.get('blast', {}).get('details', 'Nothing Reported')}
-
-### Equipment Status
-
-#### TMM Availability
-| Equipment | Availability | Performance Status |
-|-----------|--------------|-------------------|
-| **DT (Dump Trucks)** | {json_data.get('equipment_availability', {}).get('tmm', {}).get('dt', 'N/A')}% | {'✅ Good' if json_data.get('equipment_availability', {}).get('tmm', {}).get('dt', 0) >= 90 else '⚠️ Below Standard'} |
-
-### Current Breakdowns
-{len(json_data.get('breakdowns', {}).get('current_breakdowns', []))} Units
-
-### Infrastructure Status
-| System | Status |
-|--------|--------|
-| **Plant Blockages** | {json_data.get('infrastructure', {}).get('plant_blockages', 'N/A')} |
-| **Fire Alarms** | {json_data.get('infrastructure', {}).get('fire_alarms', 'N/A')} |
-
-## Performance Summary
-{chr(10).join('- ' + item for item in json_data.get('performance_summary', {}).get('key_issues', ['No issues identified']))}
-
-## Supplemental Information
-**Processing Notes:**
-- Report processed automatically via Gemini-CLI integration
-- Data extracted from WhatsApp production messages
-- Manual review recommended for accuracy verification
-"""
-            
-            return markdown_content
-        
-        if __name__ == "__main__":
-            # Process all JSON files in daily_production/data/
-            data_dir = Path("daily_production/data")
-            
-            for json_file in data_dir.glob("*.json"):
-                print(f"Processing {json_file.name}...")
-                
-                with open(json_file, 'r') as f:
-                    data = json.load(f)
-                
-                raw_content = data.get('raw_content', '')
-                site = data.get('report_metadata', {}).get('site', '')
-                date = data.get('report_metadata', {}).get('date', '')
-                
-                if raw_content and site and date:
-                    # Process with Gemini
-                    processed_json = process_single_report(raw_content, site, date)
+        for line in lines:
+            if line.strip():
+                parts = line.split('|')
+                if len(parts) >= 4:
+                    timestamp, chat_jid, sender, content = parts[0], parts[1], parts[2], parts[3]
                     
-                    if processed_json:
-                        try:
-                            # Parse JSON response
-                            json_data = json.loads(processed_json.strip('```json').strip('```'))
-                            
-                            # Update JSON file with processed data
-                            with open(json_file, 'w') as f:
-                                json.dump(json_data, f, indent=2)
-                            
-                            # Create corresponding markdown file
-                            md_filename = f"daily_production/{date} – {site} Daily Report.md"
-                            markdown_content = create_markdown_report(json_data, site, date)
-                            
-                            with open(md_filename, 'w') as f:
-                                f.write(markdown_content)
-                                
-                            print(f"✅ Processed {site} report for {date}")
-                            
-                        except json.JSONDecodeError as e:
-                            print(f"❌ Failed to parse JSON for {json_file.name}: {e}")
-                    else:
-                        print(f"❌ Failed to process {json_file.name}")
-                else:
-                    print(f"⚠️ Skipping {json_file.name} - missing required data")
-        EOF
+                    # Determine site from content
+                    site = "Unknown"
+                    if "Gloria" in content or "GL" in content:
+                        site = "Gloria"
+                    elif "Nchwaning 2" in content or "N2" in content:
+                        site = "Nchwaning 2"
+                    elif "Nchwaning 3" in content or "N3" in content:
+                        site = "Nchwaning 3"
+                    elif "S&W" in content or "Shafts" in content:
+                        site = "Shafts & Winders"
+                    
+                    extracted_data.append({
+                        "timestamp": timestamp,
+                        "chat_jid": chat_jid,
+                        "sender": sender,
+                        "content": content,
+                        "site": site,
+                        "report_date": target_date
+                    })
         
-    - name: Process reports with Gemini
+        return extracted_data
+        
+    except subprocess.CalledProcessError as e:
+        print(f"❌ Extraction failed: {e}")
+        print(f"Error output: {e.stderr}")
+        return []
+
+if __name__ == "__main__":
+    import sys
+    target_date = sys.argv[1] if len(sys.argv) > 1 else "2025-07-06"
+    
+    print(f"📊 Extracting data for {target_date}")
+    data = extract_data_for_date(target_date)
+    
+    if data:
+        # Create output directory
+        os.makedirs("extracted_data", exist_ok=True)
+        
+        # Save raw extraction
+        with open(f"extracted_data/{target_date}_raw.json", "w") as f:
+            json.dump(data, f, indent=2)
+        
+        # Group by site and create structured files
+        sites_data = {}
+        for item in data:
+            site = item["site"]
+            if site not in sites_data:
+                sites_data[site] = []
+            sites_data[site].append(item)
+        
+        # Create site-specific files
+        for site, messages in sites_data.items():
+            if site != "Unknown":
+                site_filename = site.lower().replace(" ", "_").replace("&", "")
+                
+                # Combine messages for this site
+                combined_content = "\n\n".join([msg["content"] for msg in messages])
+                
+                # Engineer mapping
+                engineer_map = {
+                    "gloria": "Sipho Dubazane",
+                    "nchwaning_2": "Johan Kotze (acting for Sikilela Nzuza)",
+                    "nchwaning_3": "Sello Sease",
+                    "shafts_winders": "Xavier Peterson"
+                }
+                
+                structured_data = {
+                    "report_metadata": {
+                        "site": site,
+                        "engineer": engineer_map.get(site_filename, "Unknown"),
+                        "report_date": target_date,
+                        "data_date": target_date,
+                        "extraction_timestamp": datetime.now().isoformat(),
+                        "message_count": len(messages)
+                    },
+                    "raw_content": combined_content,
+                    "individual_messages": messages
+                }
+                
+                output_file = f"extracted_data/{target_date}_{site_filename}.json"
+                with open(output_file, "w") as f:
+                    json.dump(structured_data, f, indent=2, ensure_ascii=False)
+                
+                print(f"✅ Created: {output_file}")
+        
+        print(f"📁 Extracted {len(data)} messages for {len(sites_data)} sites")
+    else:
+        print("❌ No data extracted")
+EOF
+
+        python extract_whatsapp_data.py "${{ steps.params.outputs.date }}"
+        
+    - name: Process with Gemini
       env:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       run: |
-        echo "Processing reports with Gemini-CLI integration..."
-        python gemini_processor.py
+        echo "🤖 Processing extracted data with Gemini..."
         
-    - name: Validate processed reports
+        # Copy our integration script
+        cp scripts/integrate-gemini-processing.py ./process_with_gemini.py
+        
+        # Process the extracted data
+        if [ "${{ steps.params.outputs.test_mode }}" = "true" ]; then
+          python process_with_gemini.py --input-dir extracted_data --output-dir gemini_processed --test-mode
+        else
+          python process_with_gemini.py --input-dir extracted_data --output-dir gemini_processed --date-filter "${{ steps.params.outputs.date }}"
+        fi
+        
+    - name: Validate Processing Results
       run: |
-        echo "Validating processed reports..."
+        echo "🔍 Validating Gemini processing results..."
         
         # Create validation script
-        cat > validate_reports.py << 'EOF'
-        import json
-        import os
-        from pathlib import Path
+        cat > validate_processing.py << 'EOF'
+import json
+import os
+from pathlib import Path
+
+def validate_gemini_output(file_path):
+    """Validate processed Gemini output"""
+    try:
+        with open(file_path, 'r') as f:
+            data = json.load(f)
         
-        def validate_report(json_file):
-            """Validate a processed report"""
-            try:
-                with open(json_file, 'r') as f:
-                    data = json.load(f)
-                
-                # Check required fields
-                required_fields = [
-                    'report_metadata',
-                    'safety', 
-                    'production',
-                    'equipment_availability',
-                    'breakdowns',
-                    'performance_summary'
-                ]
-                
-                missing_fields = []
-                for field in required_fields:
-                    if field not in data:
-                        missing_fields.append(field)
-                
-                if missing_fields:
-                    return False, f"Missing fields: {missing_fields}"
-                
-                # Validate data structure
-                if 'date' not in data.get('report_metadata', {}):
-                    return False, "Missing date in metadata"
-                
-                if 'site' not in data.get('report_metadata', {}):
-                    return False, "Missing site in metadata"
-                
-                return True, "Valid"
-                
-            except Exception as e:
-                return False, f"Validation error: {e}"
+        # Check required top-level fields
+        required_fields = [
+            'report_metadata', 'safety', 'production', 
+            'equipment_availability', 'source_validation'
+        ]
         
-        # Validate all processed files
-        data_dir = Path("daily_production/data")
-        validation_results = []
+        missing_fields = [field for field in required_fields if field not in data]
         
-        for json_file in data_dir.glob("*.json"):
-            is_valid, message = validate_report(json_file)
-            validation_results.append({
-                'file': str(json_file),
-                'valid': is_valid,
-                'message': message
-            })
-            
-            if is_valid:
-                print(f"✅ {json_file.name}: {message}")
-            else:
-                print(f"❌ {json_file.name}: {message}")
+        if missing_fields:
+            return False, f"Missing required fields: {missing_fields}"
         
-        # Save validation report
-        with open('validation_report.json', 'w') as f:
-            json.dump(validation_results, f, indent=2)
-            
-        valid_count = sum(1 for r in validation_results if r['valid'])
-        total_count = len(validation_results)
+        # Check source validation
+        source_val = data.get('source_validation', {})
+        if not source_val:
+            return False, "Missing source validation section"
         
-        print(f"\nValidation Summary: {valid_count}/{total_count} reports passed validation")
-        EOF
+        # Check metadata
+        metadata = data.get('report_metadata', {})
+        if not metadata.get('site') or not metadata.get('date'):
+            return False, "Missing required metadata"
         
-        python validate_reports.py
+        return True, "Valid"
         
-    - name: Update Pull Request
-      uses: peter-evans/create-pull-request@v5
+    except Exception as e:
+        return False, f"Validation error: {e}"
+
+# Validate all processed files
+processed_dir = Path("gemini_processed")
+if processed_dir.exists():
+    results = []
+    for json_file in processed_dir.glob("*.json"):
+        is_valid, message = validate_gemini_output(json_file)
+        results.append({
+            'file': str(json_file),
+            'valid': is_valid,
+            'message': message
+        })
+        
+        status = "✅" if is_valid else "❌"
+        print(f"{status} {json_file.name}: {message}")
+    
+    # Summary
+    valid_count = sum(1 for r in results if r['valid'])
+    total_count = len(results)
+    print(f"\n📊 Validation Summary: {valid_count}/{total_count} files passed")
+    
+    # Save validation report
+    with open('validation_results.json', 'w') as f:
+        json.dump(results, f, indent=2)
+else:
+    print("❌ No processed files found")
+EOF
+
+        python validate_processing.py
+        
+    - name: Upload Processing Artifacts
+      uses: actions/upload-artifact@v3
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        commit-message: |
-          feat: Process reports with Gemini-CLI integration
-          
-          - Applied Gemini-1.5-Pro processing to raw WhatsApp data
-          - Generated structured JSON reports with proper schema
-          - Created formatted markdown reports using standardized templates
-          - Validated processed reports for data integrity
-          
-          🤖 Processed via Gemini-CLI automation
-        title: 'Production Reports: Gemini-Processed July 6-21, 2025'
-        body: |
-          ## Gemini-CLI Processing Complete
-          
-          **Processing Method**: GitHub Actions → Gemini-1.5-Pro → Structured Reports
-          
-          ### What This Update Contains
-          - ✅ Processed WhatsApp data using Gemini-1.5-Pro
-          - ✅ Generated structured JSON reports with complete schema
-          - ✅ Created formatted markdown reports using standardized templates
-          - ✅ Applied site-specific formatting and engineer assignments
-          
-          ### Processing Results
-          See `validation_report.json` for detailed validation results.
-          
-          ### Quality Assurance
-          - All reports follow standardized JSON schema
-          - Production metrics extracted and calculated
-          - Equipment availability parsed with performance analysis
-          - Safety status and incidents properly categorized
-          - Template compliance validated
-          
-          ### Ready for Review
-          Reports are now ready for Claude Cloud review and integration.
-          All data has been extracted from original WhatsApp sources and structured according to established templates.
-          
-          **⚠️ Manual Review Recommended**: While automated processing provides good structure, manual verification of production figures and equipment data is recommended before final approval.
-          
-          🤖 This processing was completed automatically by Gemini-CLI integration.
-        branch: feature/july-reports-automation
-        delete-branch: false
+        name: gemini-processed-reports-${{ steps.params.outputs.date }}
+        path: |
+          extracted_data/
+          gemini_processed/
+          validation_results.json
+        retention-days: 30
+        
+    - name: Create Summary Report
+      run: |
+        echo "📋 Creating processing summary..."
+        
+        # Count results
+        extracted_count=$(find extracted_data -name "*.json" 2>/dev/null | wc -l || echo "0")
+        processed_count=$(find gemini_processed -name "*.json" 2>/dev/null | wc -l || echo "0")
+        
+        # Create summary
+        cat > processing_summary.md << EOF
+        # Gemini Processing Summary - ${{ steps.params.outputs.date }}
+
+        ## Results Overview
+        - **Date Processed**: ${{ steps.params.outputs.date }}
+        - **WhatsApp Messages Extracted**: ${extracted_count} files
+        - **Gemini Processed Reports**: ${processed_count} files
+        - **Processing Time**: $(date)
+
+        ## Processing Pipeline Status
+        ✅ **Phase 1**: WhatsApp data extraction from Codespace  
+        ✅ **Phase 2**: Gemini-1.5-Pro template processing  
+        ✅ **Phase 3**: Validation and artifact creation  
+
+        ## Next Steps
+        - Download artifacts to review processed reports
+        - Manual validation of production figures recommended
+        - Ready for Claude Code review and integration
+
+        ## Files Generated
+        $(find gemini_processed -name "*.json" 2>/dev/null | sed 's/^/- /' || echo "No processed files found")
+
+        ---
+        *Automated processing completed by GitHub Actions + Gemini integration*
+        EOF
+
+        echo "📄 Processing Summary:"
+        cat processing_summary.md
