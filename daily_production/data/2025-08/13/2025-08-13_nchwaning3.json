@@ -1,0 +1,86 @@
+{
+  "report_metadata": {
+    "date": "2025-08-13",
+    "data_date": "2025-08-12",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "timestamp": null,
+    "processing_notes": "No WhatsApp source data available for this date"
+  },
+  "safety": {
+    "status": "unknown",
+    "incidents": null,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": null,
+      "target": null,
+      "variance": null,
+      "variance_percentage": null
+    },
+    "decline": {
+      "actual": null,
+      "target": null,
+      "variance": null,
+      "variance_percentage": null
+    },
+    "product": {
+      "actual": null,
+      "target": null,
+      "variance": null,
+      "variance_percentage": null
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": null, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": null, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": null, "target": null}
+    ],
+    "blast": {
+      "faces": null,
+      "breakdown": null,
+      "note": "Nothing Reported"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": null,
+      "FL": null,
+      "HD": null,
+      "RT": null,
+      "SR": null
+    },
+    "specialized": []
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": null, "total": null},
+      "FL": {"available": null, "total": null},
+      "HD": {"available": null, "total": null},
+      "RT": {"available": null, "total": null},
+      "SR": {"available": null, "total": null}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": []
+  },
+  "operational": {
+    "main_fans": "unknown",
+    "plant_blockages": null,
+    "fire_alarms": null
+  },
+  "performance_summary": {
+    "key_issues": ["No source data available for this date"],
+    "key_highlights": []
+  },
+  "source_validation": {
+    "data_source": {
+      "value": "No WhatsApp messages found",
+      "source_line": null,
+      "source_quote": null,
+      "confidence": "NONE"
+    },
+    "validation_notes": "Autonomous processing requested but no WhatsApp source data available for 2025-08-13. All production metrics set to null.",
+    "processing_timestamp": "2025-08-13T11:13:00Z"
+  }
+}
