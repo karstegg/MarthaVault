@@ -1,0 +1,77 @@
+name: Basic Gemini CLI Test
+
+on:
+  workflow_dispatch:
+    inputs:
+      test_description:
+        description: 'Test description'
+        required: false
+        default: 'basic-summarization-test'
+
+jobs:
+  test-gemini-cli:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Load test content
+        id: content
+        run: |
+          echo "📝 Loading test content..."
+          CONTENT=$(cat testing/basic-test-content.txt)
+          echo "content<<EOF" >> $GITHUB_OUTPUT
+          echo "$CONTENT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          echo "✅ Content loaded successfully"
+      
+      - name: Test Gemini CLI Action
+        id: gemini
+        uses: google-github-actions/run-gemini-cli@v0.1
+        with:
+          prompt: |
+            Please summarize the following text in exactly 3 bullet points:
+            
+            ${{ steps.content.outputs.content }}
+            
+            Focus on the key operational aspects of the mining operations described.
+          gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
+      
+      - name: Display Results
+        run: |
+          echo "🎯 Gemini CLI Test Results"
+          echo "=========================="
+          echo "Test ID: ${{ github.event.inputs.test_description }}"
+          echo "Date: $(date)"
+          echo ""
+          echo "📋 Summary Output:"
+          echo "${{ steps.gemini.outputs.summary }}"
+          echo ""
+          echo "✅ Basic Gemini CLI test completed successfully"
+      
+      - name: Save Results
+        run: |
+          mkdir -p testing/gemini-cli-results
+          cat > testing/gemini-cli-results/basic-test-$(date +%Y%m%d-%H%M%S).txt << EOF
+          Gemini CLI Basic Test Results
+          ============================
+          Test ID: ${{ github.event.inputs.test_description }}
+          Date: $(date)
+          
+          Input Content:
+          ${{ steps.content.outputs.content }}
+          
+          Gemini Summary:
+          ${{ steps.gemini.outputs.summary }}
+          EOF
+          
+          echo "📁 Results saved to testing/gemini-cli-results/"
+      
+      - name: Upload Test Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: gemini-basic-test-${{ github.event.inputs.test_description }}
+          path: testing/gemini-cli-results/
+          retention-days: 7
