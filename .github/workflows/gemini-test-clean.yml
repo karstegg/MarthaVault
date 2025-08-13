@@ -63,33 +63,45 @@ jobs:
             - Use null for silo levels (not mentioned in message)
             - Include source validation section with exact quotes
             
-            **OUTPUT LOCATION**: Create files in `testing/gemini-output/` directory
+            **OUTPUT LOCATION**: Create files in the current working directory
             **Files to create**:
-            1. `testing/gemini-output/2025-08-12_gloria_test.json`
-            2. `testing/gemini-output/2025-08-12_gloria_test.md`
+            1. `2025-08-12_gloria_test.json`
+            2. `2025-08-12_gloria_test.md`
             
             Process this Gloria mine message following the Standard Mine Site template exactly.
           gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
           
-      - name: Verify Output Quality
+      - name: Organize and Verify Output
         run: |
-          echo "🔍 Verifying Gemini processing quality..."
-          echo "======================================="
+          echo "🔍 Organizing and verifying Gemini output..."
+          echo "============================================"
           
-          # Check if output files were created
-          if [ -d "testing/gemini-output" ]; then
-            echo "✅ Output directory created"
-            ls -la testing/gemini-output/
-          else
-            echo "❌ Output directory not created"
-            exit 1
+          # Create output directory
+          mkdir -p testing/gemini-output
+          
+          # Move any generated files to testing directory
+          if ls *.json >/dev/null 2>&1; then
+            mv *.json testing/gemini-output/
+            echo "✅ JSON files moved to testing/gemini-output/"
           fi
+          
+          if ls *.md >/dev/null 2>&1; then
+            mv *.md testing/gemini-output/
+            echo "✅ Markdown files moved to testing/gemini-output/"
+          fi
+          
+          # List all files in output directory
+          echo ""
+          echo "📁 Generated files:"
+          ls -la testing/gemini-output/
           
           # Look for JSON file
           if find testing/gemini-output -name "*.json" | grep -q .; then
+            echo ""
             echo "✅ JSON file created"
             json_file=$(find testing/gemini-output -name "*.json" | head -1)
             echo "📄 JSON file: $json_file"
+            echo "🔗 Full path: /home/runner/work/MarthaVault/MarthaVault/$json_file"
             
             # Validate key data points
             if command -v jq >/dev/null 2>&1; then
@@ -118,13 +130,19 @@ jobs:
           
           # Look for Markdown file
           if find testing/gemini-output -name "*.md" | grep -q .; then
+            echo ""
             echo "✅ Markdown file created"
             md_file=$(find testing/gemini-output -name "*.md" | head -1)
             echo "📄 Markdown file: $md_file"
+            echo "🔗 Full path: /home/runner/work/MarthaVault/MarthaVault/$md_file"
             
             echo ""
-            echo "📋 Markdown Preview (first 20 lines):"
-            head -20 "$md_file"
+            echo "📋 Markdown Preview (first 30 lines):"
+            head -30 "$md_file"
+            
+            echo ""
+            echo "📏 File size and line count:"
+            wc -l "$md_file"
           else
             echo "❌ No Markdown file created"
           fi
