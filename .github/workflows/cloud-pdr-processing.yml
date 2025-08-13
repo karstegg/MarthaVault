@@ -84,8 +84,10 @@ jobs:
         4. Use exact folder structure: \`daily_production/data/YYYY-MM/DD/\`
         5. Include proper engineer assignment based on site
         6. Add source validation sections in JSON files
-        7. **Create PR immediately** with all generated files
-        8. **This issue will auto-close** after successful processing
+        7. **CRITICAL: Create Pull Request immediately** after generating files - do not provide links, actually create the PR
+        8. **Use this exact PR creation command after committing files**:
+           \`gh pr create --title \"feat: Autonomous PDR processing for $TARGET_DATE\" --body \"Auto-processed daily production reports\" --head [your-branch] --base master\`
+        9. **This issue will auto-close** after successful processing
 
         **Expected Sites**: Gloria, Nchwaning 2, Nchwaning 3, Shafts & Winders
 
@@ -125,9 +127,28 @@ jobs:
         for i in $(seq 1 $TIMEOUT); do
           sleep 15
           
-          # Check if Claude has created a PR related to our date
-          PR_LIST=$(gh pr list --search "PDR $TARGET_DATE" --state open --json number,title)
-          PR_COUNT=$(echo "$PR_LIST" | jq length)
+          # Check if Claude has created a PR (multiple search patterns)
+          PR_LIST1=$(gh pr list --search "PDR $TARGET_DATE" --state open --json number,title)
+          PR_LIST2=$(gh pr list --search "Autonomous PDR" --state open --json number,title)  
+          PR_LIST3=$(gh pr list --search "$TARGET_DATE" --state open --json number,title)
+          
+          # Combine results and get count
+          PR_COUNT1=$(echo "$PR_LIST1" | jq length)
+          PR_COUNT2=$(echo "$PR_LIST2" | jq length)
+          PR_COUNT3=$(echo "$PR_LIST3" | jq length)
+          
+          # Use the highest count found
+          PR_COUNT=$((PR_COUNT1 > PR_COUNT2 ? PR_COUNT1 : PR_COUNT2))
+          PR_COUNT=$((PR_COUNT > PR_COUNT3 ? PR_COUNT : PR_COUNT3))
+          
+          # Get the appropriate PR list
+          if [ "$PR_COUNT1" -gt 0 ]; then
+            PR_LIST="$PR_LIST1"
+          elif [ "$PR_COUNT2" -gt 0 ]; then
+            PR_LIST="$PR_LIST2"  
+          else
+            PR_LIST="$PR_LIST3"
+          fi
           
           if [ "$PR_COUNT" -gt 0 ]; then
             PR_NUMBER=$(echo "$PR_LIST" | jq -r '.[0].number')
