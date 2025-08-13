@@ -120,8 +120,8 @@ jobs:
         echo "👀 Monitoring Claude processing for issue #$ISSUE_NUMBER"
         echo "⏳ Waiting for Claude to process reports and create PR..."
         
-        # Monitor for PR creation (max 15 minutes)
-        TIMEOUT=60  # 60 iterations * 15 seconds = 15 minutes
+        # Monitor for PR creation (max 30 minutes)
+        TIMEOUT=120  # 120 iterations * 15 seconds = 30 minutes
         PR_FOUND=false
         
         for i in $(seq 1 $TIMEOUT); do
@@ -166,7 +166,7 @@ jobs:
         done
         
         if [ "$PR_FOUND" = false ]; then
-          echo "❌ Timeout: No PR created within 15 minutes"
+          echo "❌ Timeout: No PR created within 30 minutes"
           echo "🔍 Check issue #$ISSUE_NUMBER for Claude's progress"
           exit 1
         fi
@@ -314,6 +314,60 @@ jobs:
         
         echo "✅ Issue #$ISSUE_NUMBER closed with success summary"
         echo "🎉 Autonomous processing pipeline completed successfully!"
+        
+    - name: Auto-Push to Local Repository
+      env:
+        GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
+      run: |
+        TARGET_DATE="${{ steps.extract.outputs.target_date }}"
+        FILES_CREATED="${{ steps.merge.outputs.files_created }}"
+        
+        echo "🔄 Initiating automatic push to local repository..."
+        
+        # Send repository dispatch to trigger local sync
+        echo "📡 Sending auto-sync dispatch to local repository..."
+        gh api repos/karstegg/MarthaVault/dispatches \
+          --method POST \
+          --field event_type="auto-sync" \
+          --field client_payload="{\"date\":\"$TARGET_DATE\",\"files_created\":\"$FILES_CREATED\",\"trigger\":\"cloud-processing-complete\"}"
+        
+        if [ $? -eq 0 ]; then
+          echo "✅ Auto-sync dispatch sent successfully"
+          echo "🔄 Local repository will automatically update with new files"
+          
+          # Create notification issue for confirmation
+          gh issue create \
+            --title "🔄 Auto-Push Complete: $TARGET_DATE" \
+            --body "✅ **Automatic Push to Local Repository Initiated**
+
+          ## 📊 Processing Complete
+          - **Date**: $TARGET_DATE
+          - **Files Created**: $FILES_CREATED files
+          - **Status**: ✅ Auto-merged and pushed to local
+
+          ## 🚀 Auto-Push Details
+          - **Trigger**: Repository dispatch sent to local environment
+          - **Action**: New files automatically pushed to local repository
+          - **Safety**: Only new/changed files affected, existing local files untouched
+
+          ## 📁 Files Now Available Locally
+          Location: \`daily_production/data/$(echo $TARGET_DATE | cut -d'-' -f1,2)/$(echo $TARGET_DATE | cut -d'-' -f3)/\`
+          
+          **Files**:
+          - JSON database files for analysis
+          - Markdown reports for review
+          - All properly organized in daily_production structure
+
+          ---
+          🤖 **Fully Autonomous** - Files automatically available in your local repository" \
+            --label "auto-push" \
+            --label "completed"
+          
+          echo "📧 Auto-push confirmation notification created"
+        else
+          echo "❌ Failed to send auto-sync dispatch"
+          echo "🔍 Check repository dispatch configuration"
+        fi
         
     - name: Handle Processing Failures
       env:

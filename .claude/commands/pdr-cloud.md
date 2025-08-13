@@ -124,6 +124,12 @@ fi
 - Deletes feature branch automatically
 - Updates master branch with processed reports
 
+### Auto-Push to Local
+- Automatically triggers local repository sync
+- Sends repository dispatch to auto-sync workflow
+- Files automatically appear in local repository
+- Only affects new/changed files, preserves local work
+
 ### Auto-Close
 - Closes processing issue with success summary
 - Includes processing statistics and file count
@@ -141,9 +147,22 @@ fi
 🚀 Triggering autonomous cloud processing for 2025-08-13...
 📡 Repository dispatch sent successfully
 ⏳ GitHub Actions workflow starting...
-📊 Workflow run ID: 16925678901
+🔗 Monitor progress: https://github.com/karstegg/MarthaVault/actions
+
+Expected workflow:
+  1. Extract WhatsApp messages from Codespace
+  2. Create processing issue with @claude mention
+  3. Claude processes reports and creates PR
+  4. Auto-validate and auto-merge PR
+  5. Auto-close issue with summary
+  6. Auto-push files to local repository
+
 ✅ Autonomous processing initiated for 2025-08-13
-📋 Files will be available after 'git pull' once complete
+📋 Files will automatically appear in your local repository
+
+🔄 Monitoring workflow progress...
+📊 Workflow run ID: 16925678901
+👀 Use 'gh run watch 16925678901' to monitor in real-time
 ```
 
 ## Integration

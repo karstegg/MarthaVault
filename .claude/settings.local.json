@@ -25,7 +25,13 @@
       "Bash(gh workflow:*)",
       "Bash(gh issue close:*)",
       "Bash(gh issue reopen:*)",
-      "Bash(gh issue edit:*)"
+      "Bash(gh issue edit:*)",
+      "Bash(git checkout:*)",
+      "Bash(gh pr list:*)",
+      "Bash(gh api:*)",
+      "Bash(gh pr create:*)",
+      "Bash(gh pr view:*)",
+      "Bash(..claudecommandspdr-cloud 2025-07-07)"
     ],
     "deny": []
   },
