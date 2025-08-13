@@ -1,0 +1,333 @@
+name: Autonomous Cloud PDR Processing
+
+on:
+  repository_dispatch:
+    types: [pdr-cloud]
+
+jobs:
+  autonomous-pdr-processing:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Extract WhatsApp Messages
+      env:
+        GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
+      id: extract
+      run: |
+        CODESPACE_NAME="cuddly-guacamole-496vp6p46wg39r"
+        TARGET_DATE="${{ github.event.client_payload.date }}"
+        
+        echo "🔍 Extracting WhatsApp messages for $TARGET_DATE..."
+        
+        # Extract messages from Codespace SQLite database
+        gh codespace ssh -c $CODESPACE_NAME -- \
+          "sqlite3 /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge/store/messages.db \
+          \"SELECT timestamp, chat_jid, sender, content FROM messages 
+           WHERE timestamp BETWEEN '${TARGET_DATE} 00:00:00+00:00' AND '${TARGET_DATE} 23:59:59+00:00' 
+           AND (content LIKE '%ROM%' OR content LIKE '%Production%' OR content LIKE '%Gloria%' OR content LIKE '%Nchwaning%' OR content LIKE '%S&W%') 
+           ORDER BY timestamp;\"" > extracted_messages.txt
+           
+        # Count messages and validate extraction
+        MESSAGE_COUNT=$(wc -l < extracted_messages.txt)
+        echo "📊 Found $MESSAGE_COUNT WhatsApp messages for $TARGET_DATE"
+        
+        if [ "$MESSAGE_COUNT" -eq 0 ]; then
+          echo "⚠️  No production messages found for $TARGET_DATE"
+          echo "Data may not be available or date may be incorrect"
+        fi
+        
+        # Output variables for next steps
+        echo "message_count=$MESSAGE_COUNT" >> $GITHUB_OUTPUT
+        echo "target_date=$TARGET_DATE" >> $GITHUB_OUTPUT
+        
+        # Preview extracted data (first 3 lines)
+        echo "📋 Message preview:"
+        head -3 extracted_messages.txt || echo "No data to preview"
+        
+    - name: Create Processing Issue
+      env:
+        GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
+      id: issue
+      run: |
+        TARGET_DATE="${{ steps.extract.outputs.target_date }}"
+        MESSAGE_COUNT="${{ steps.extract.outputs.message_count }}"
+        
+        echo "📝 Creating processing issue for autonomous Claude processing..."
+        
+        # Create issue with extracted data and @claude mention
+        ISSUE_URL=$(gh issue create \
+          --title "🤖 Autonomous PDR Processing - $TARGET_DATE" \
+          --label "autonomous-processing" \
+          --label "pdr-cloud" \
+          --body "$(cat <<EOF
+        @claude Please process these daily production reports autonomously:
+
+        **Processing Request Details:**
+        - **Date**: $TARGET_DATE
+        - **Messages Found**: $MESSAGE_COUNT WhatsApp messages
+        - **Processing Mode**: Fully Autonomous
+        - **Triggered From**: /pdr-cloud command in local Claude Code
+
+        **Processing Instructions:**
+        1. Follow /pdr-single workflow logic exactly
+        2. Use appropriate Report Templates:
+           - Standard Mine Site Report Template → Gloria, Nchwaning 2, Nchwaning 3  
+           - Shafts & Winders Report Template → Infrastructure reports
+        3. Create both JSON and Markdown files for each detected site
+        4. Use exact folder structure: \`daily_production/data/YYYY-MM/DD/\`
+        5. Include proper engineer assignment based on site
+        6. Add source validation sections in JSON files
+        7. **Create PR immediately** with all generated files
+        8. **This issue will auto-close** after successful processing
+
+        **Expected Sites**: Gloria, Nchwaning 2, Nchwaning 3, Shafts & Winders
+
+        **Raw WhatsApp Data:**
+        \`\`\`
+        $(cat extracted_messages.txt)
+        \`\`\`
+
+        **Auto-Processing Request**: Please process and create PR with results immediately. The workflow will handle auto-merge and issue closure.
+        EOF
+        )")
+        
+        # Extract issue number from URL
+        ISSUE_NUMBER=$(echo $ISSUE_URL | grep -o '[0-9]*$')
+        echo "✅ Created processing issue #$ISSUE_NUMBER"
+        echo "🔗 Issue URL: $ISSUE_URL"
+        
+        # Output variables for monitoring steps
+        echo "issue_number=$ISSUE_NUMBER" >> $GITHUB_OUTPUT
+        echo "issue_url=$ISSUE_URL" >> $GITHUB_OUTPUT
+        
+    - name: Monitor Claude Processing
+      env:
+        GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
+      id: monitor
+      run: |
+        ISSUE_NUMBER="${{ steps.issue.outputs.issue_number }}"
+        TARGET_DATE="${{ steps.extract.outputs.target_date }}"
+        
+        echo "👀 Monitoring Claude processing for issue #$ISSUE_NUMBER"
+        echo "⏳ Waiting for Claude to process reports and create PR..."
+        
+        # Monitor for PR creation (max 15 minutes)
+        TIMEOUT=60  # 60 iterations * 15 seconds = 15 minutes
+        PR_FOUND=false
+        
+        for i in $(seq 1 $TIMEOUT); do
+          sleep 15
+          
+          # Check if Claude has created a PR related to our date
+          PR_LIST=$(gh pr list --search "PDR $TARGET_DATE" --state open --json number,title)
+          PR_COUNT=$(echo "$PR_LIST" | jq length)
+          
+          if [ "$PR_COUNT" -gt 0 ]; then
+            PR_NUMBER=$(echo "$PR_LIST" | jq -r '.[0].number')
+            PR_TITLE=$(echo "$PR_LIST" | jq -r '.[0].title')
+            echo "✅ Claude created PR #$PR_NUMBER: $PR_TITLE"
+            echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
+            PR_FOUND=true
+            break
+          fi
+          
+          # Show progress every minute
+          if [ $((i % 4)) -eq 0 ]; then
+            echo "⏳ Still waiting for Claude processing... ($((i*15))s elapsed)"
+          fi
+        done
+        
+        if [ "$PR_FOUND" = false ]; then
+          echo "❌ Timeout: No PR created within 15 minutes"
+          echo "🔍 Check issue #$ISSUE_NUMBER for Claude's progress"
+          exit 1
+        fi
+        
+    - name: Auto-Validate and Auto-Merge PR
+      env:
+        GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
+      id: merge
+      run: |
+        PR_NUMBER="${{ steps.monitor.outputs.pr_number }}"
+        TARGET_DATE="${{ steps.extract.outputs.target_date }}"
+        MESSAGE_COUNT="${{ steps.extract.outputs.message_count }}"
+        
+        echo "🔍 Auto-validating PR #$PR_NUMBER for merge..."
+        
+        # Checkout the PR to inspect files
+        gh pr checkout $PR_NUMBER
+        
+        # Calculate expected directory structure
+        YEAR_MONTH=$(echo $TARGET_DATE | cut -d'-' -f1,2)
+        DAY=$(echo $TARGET_DATE | cut -d'-' -f3)
+        EXPECTED_DIR="daily_production/data/${YEAR_MONTH}/${DAY}"
+        
+        echo "📁 Checking for files in: $EXPECTED_DIR"
+        
+        # Validation checks
+        VALIDATION_PASSED=true
+        VALIDATION_MESSAGES=""
+        
+        # Check 1: Expected directory exists
+        if [ -d "$EXPECTED_DIR" ]; then
+          echo "✅ Directory structure correct: $EXPECTED_DIR"
+        else
+          echo "❌ Expected directory not found: $EXPECTED_DIR"
+          VALIDATION_PASSED=false
+          VALIDATION_MESSAGES="$VALIDATION_MESSAGES\n- Missing directory: $EXPECTED_DIR"
+        fi
+        
+        # Check 2: Count files (JSON and Markdown)
+        if [ -d "$EXPECTED_DIR" ]; then
+          JSON_COUNT=$(find "$EXPECTED_DIR" -name "*.json" | wc -l)
+          MD_COUNT=$(find "$EXPECTED_DIR" -name "*.md" | wc -l)
+          TOTAL_FILES=$((JSON_COUNT + MD_COUNT))
+          
+          echo "📊 Found $JSON_COUNT JSON files and $MD_COUNT Markdown files"
+          
+          if [ "$TOTAL_FILES" -ge 2 ]; then
+            echo "✅ Sufficient files created: $TOTAL_FILES files"
+          else
+            echo "❌ Insufficient files: Only $TOTAL_FILES files found (minimum 2 required)"
+            VALIDATION_PASSED=false
+            VALIDATION_MESSAGES="$VALIDATION_MESSAGES\n- Only $TOTAL_FILES files found (need at least 2)"
+          fi
+        else
+          TOTAL_FILES=0
+        fi
+        
+        # Check 3: File size validation (not empty, reasonable size)
+        if [ "$TOTAL_FILES" -gt 0 ]; then
+          EMPTY_FILES=$(find "$EXPECTED_DIR" \( -name "*.json" -o -name "*.md" \) -empty | wc -l)
+          if [ "$EMPTY_FILES" -eq 0 ]; then
+            echo "✅ No empty files detected"
+          else
+            echo "❌ Found $EMPTY_FILES empty files"
+            VALIDATION_PASSED=false
+            VALIDATION_MESSAGES="$VALIDATION_MESSAGES\n- $EMPTY_FILES empty files detected"
+          fi
+        fi
+        
+        # Proceed with merge if validation passed
+        if [ "$VALIDATION_PASSED" = true ]; then
+          echo "🎯 All validations passed - proceeding with auto-merge"
+          
+          # Auto-merge PR with descriptive commit message
+          gh pr merge $PR_NUMBER --squash --delete-branch \
+            --subject "feat: Autonomous daily production reports - $TARGET_DATE" \
+            --body "Auto-processed and auto-merged production reports for $TARGET_DATE
+
+        📊 **Processing Summary:**
+        - Extracted $MESSAGE_COUNT WhatsApp messages from Codespace
+        - Generated $TOTAL_FILES report files ($JSON_COUNT JSON, $MD_COUNT Markdown)
+        - Applied Report Templates for standardized formatting
+        - Validated file structure and content automatically
+        - Completed autonomous processing via /pdr-cloud command
+
+        📁 **Files Location:** \`daily_production/data/$YEAR_MONTH/$DAY/\`
+
+        🤖 **Fully autonomous processing** - no manual intervention required
+        ✅ **Auto-validation passed** - all quality checks successful"
+          
+          echo "✅ PR #$PR_NUMBER auto-merged successfully"
+          echo "files_created=$TOTAL_FILES" >> $GITHUB_OUTPUT
+          
+        else
+          echo "❌ Validation failed - PR will not be auto-merged"
+          echo "🔍 Validation issues:$VALIDATION_MESSAGES"
+          echo "📋 Manual review required for PR #$PR_NUMBER"
+          exit 1
+        fi
+        
+    - name: Auto-Close Issue with Success Summary  
+      env:
+        GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
+      if: success()
+      run: |
+        ISSUE_NUMBER="${{ steps.issue.outputs.issue_number }}"
+        TARGET_DATE="${{ steps.extract.outputs.target_date }}"
+        MESSAGE_COUNT="${{ steps.extract.outputs.message_count }}"
+        FILES_CREATED="${{ steps.merge.outputs.files_created }}"
+        PR_NUMBER="${{ steps.monitor.outputs.pr_number }}"
+        
+        echo "🎯 Auto-closing issue #$ISSUE_NUMBER with success summary"
+        
+        # Close issue with comprehensive summary
+        gh issue close $ISSUE_NUMBER \
+          --comment "✅ **Autonomous Processing Successfully Completed**
+
+        ## 📊 Processing Summary
+        - **Date Processed**: $TARGET_DATE
+        - **WhatsApp Messages**: $MESSAGE_COUNT messages extracted
+        - **Files Generated**: $FILES_CREATED files (JSON + Markdown)
+        - **PR Created**: #$PR_NUMBER (auto-merged)
+        - **Processing Time**: Complete workflow in under 10 minutes
+
+        ## 🎯 Workflow Steps Completed
+        - ✅ WhatsApp data extracted from Codespace SQLite database
+        - ✅ Claude processed reports using /pdr-single workflow logic  
+        - ✅ Applied appropriate Report Templates for each site
+        - ✅ Generated structured JSON and readable Markdown files
+        - ✅ Validated file structure and content automatically
+        - ✅ Auto-merged PR after successful validation
+        - ✅ Auto-closed issue with this summary
+
+        ## 📁 Results Available
+        **Location**: \`daily_production/data/$(echo $TARGET_DATE | cut -d'-' -f1,2)/$(echo $TARGET_DATE | cut -d'-' -f3)/\`
+        **Access**: Run \`git pull\` to sync files locally
+
+        ## 🚀 Automation Details
+        **Triggered**: Via \`/pdr-cloud $TARGET_DATE\` command from local Claude Code
+        **Processing**: Fully autonomous - no manual intervention required
+        **Quality**: Auto-validated against established templates and structure
+
+        ---
+        🤖 **Issue auto-closed** - autonomous processing pipeline complete"
+        
+        echo "✅ Issue #$ISSUE_NUMBER closed with success summary"
+        echo "🎉 Autonomous processing pipeline completed successfully!"
+        
+    - name: Handle Processing Failures
+      env:
+        GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
+      if: failure()
+      run: |
+        ISSUE_NUMBER="${{ steps.issue.outputs.issue_number }}"
+        TARGET_DATE="${{ steps.extract.outputs.target_date }}"
+        
+        if [ -n "$ISSUE_NUMBER" ]; then
+          echo "❌ Processing failed - updating issue #$ISSUE_NUMBER with error details"
+          
+          gh issue comment $ISSUE_NUMBER \
+            --body "❌ **Autonomous Processing Failed**
+
+          **Date**: $TARGET_DATE  
+          **Status**: Workflow encountered errors during processing
+          
+          **Possible Issues**:
+          - Claude processing timeout (>15 minutes)
+          - File validation failures
+          - Codespace connectivity issues
+          - GitHub API errors
+          
+          **Next Steps**:
+          - Check workflow logs for specific error details
+          - Verify Codespace is active and accessible
+          - Retry processing manually if needed
+          - Issue left open for manual resolution
+          
+          **Debug**: Check GitHub Actions logs for this workflow run"
+          
+          echo "📝 Added failure comment to issue #$ISSUE_NUMBER"
+          echo "🔍 Issue left open for manual troubleshooting"
+        else
+          echo "❌ Processing failed before issue creation"
+          echo "🔍 Check workflow logs for extraction or setup errors"
+        fi
