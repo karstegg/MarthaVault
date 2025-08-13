@@ -3,51 +3,63 @@
     "date": "2025-07-07",
     "site": "Nchwaning 2",
     "engineer": "Johan Kotze",
+    "engineer_role": "GES TMM Underground (acting for Sikilela Nzuza on leave)",
     "report_type": "daily_production",
-    "timestamp": "07:28",
-    "source": "WhatsApp"
+    "status": "NO REPORT RECEIVED",
+    "source": "WhatsApp",
+    "data_analysis_date": "2025-07-07",
+    "correction_reason": "Previous file contained Gloria mine data incorrectly assigned to Nchwaning 2"
   },
   "safety": {
-    "status": "Clear",
-    "incidents": 0,
-    "notes": ["Safety status reported as 'Clear' at the start of the shift on July 7th."]
+    "status": null,
+    "incidents": null,
+    "notes": ["No safety data available - report not received"]
   },
   "production": {
-    "notes": "Production data reflects weekend totals (Fri-Sun, July 4-6) as reported on Monday, July 7th. No production data for July 7th itself is present in this report.",
-    "weekend_rom_total": 8574,
-    "weekend_product_total": 7160
+    "rom": null,
+    "product": null,
+    "loads": null,
+    "blast_faces": null,
+    "notes": "No production data available for Nchwaning 2 on 2025-07-07"
   },
   "equipment_availability": {
-    "notes": "TMM availability reported at the start of the shift on July 7th.",
     "production_fleet": {
-      "dump_trucks": { "code": "DT", "available": 9, "total": 9 },
-      "front_loaders": { "code": "FL", "available": 6, "total": 6 },
-      "hydraulic_drills": { "code": "HD", "available": 6, "total": 6 },
-      "roof_bolters": { "code": "RT", "available": 6, "total": 6 },
-      "scalers": { "code": "SR", "available": 6, "total": 6 }
+      "dump_trucks": { "code": "DT", "available": null, "total": 9 },
+      "front_loaders": { "code": "FL", "available": null, "total": 6 },
+      "hydraulic_drills": { "code": "HD", "available": null, "total": 6 },
+      "roof_bolters": { "code": "RT", "available": null, "total": 6 },
+      "scalers": { "code": "SR", "available": null, "total": 6 },
+      "utility_vehicles": { "code": "UV", "available": null, "total": null }
     },
     "graben_fleet": {
-        "dump_trucks": { "code": "DT", "available": 1, "total": 2 },
-        "front_loaders": { "code": "FL", "available": 2, "total": 2 },
-        "hydraulic_drills": { "code": "HD", "available": 2, "total": 2 },
-        "roof_bolters": { "code": "RT", "available": 2, "total": 2 },
-        "scalers": { "code": "SR", "available": 2, "total": 2 }
-    }
+      "dump_trucks": { "code": "DT", "available": null, "total": 2 },
+      "front_loaders": { "code": "FL", "available": null, "total": 2 },
+      "hydraulic_drills": { "code": "HD", "available": null, "total": 2 },
+      "roof_bolters": { "code": "RT", "available": null, "total": 2 },
+      "scalers": { "code": "SR", "available": null, "total": 2 }
+    },
+    "notes": "No equipment availability data received"
   },
   "breakdowns": {
-    "current_breakdowns": [
-      { "vehicle": "DT0099", "description": "oil cooler" },
-      { "vehicle": "FL0085", "description": "propshaft" }
-    ]
+    "current_breakdowns": [],
+    "notes": "No breakdown information available"
   },
   "source_validation": {
-    "friday_rom": {"value": 5545, "source_line": 348, "source_quote": "ROM:          5545 v 6904t"},
-    "friday_product": {"value": 2359, "source_line": 349, "source_quote": "Product:     2359 v 6634t"},
-    "saturday_rom": {"value": 1486, "source_line": 352, "source_quote": "ROM:           1486 v 2844t"},
-    "saturday_product": {"value": 3565, "source_line": 353, "source_quote": "Product:      3565 v 1624t"},
-    "sunday_rom": {"value": 1543, "source_line": 356, "source_quote": "ROM:           1543v 2954t"},
-    "sunday_product": {"value": 1236, "source_line": 357, "source_quote": "Product:      1236 v 1703t"},
-    "breakdown_dt99": {"value": "DT99 oil cooler", "source_line": 366, "source_quote": "DT:  1/2   DT99 oil cooler"},
-    "breakdown_fl85": {"value": "FL85- propshaft", "source_line": 372, "source_quote": "FL85- propshaft"}
+    "analysis_method": "Raw WhatsApp data review for 2025-07-07",
+    "whatsapp_groups_checked": [
+      "27834418149-1537194373@g.us (main engineering group)",
+      "120363204285087803@g.us (N3 active group)"
+    ],
+    "nchwaning2_messages_found": 0,
+    "other_sites_found": ["Nchwaning 3", "Gloria", "Shafts & Winders"],
+    "conclusion": "No Nchwaning 2 specific content found in WhatsApp messages for 2025-07-07",
+    "confidence": "HIGH"
+  },
+  "data_quality": {
+    "completeness": "0% - No report received",
+    "accuracy": "N/A",
+    "timeliness": "Missing",
+    "issues": ["No daily report received from Johan Kotze for Nchwaning 2"],
+    "follow_up_required": true
   }
 }
