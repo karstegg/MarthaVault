@@ -1,0 +1,319 @@
+{
+    "report_metadata": {
+        "date": "2025-07-09",
+        "site": "Nchwaning 3",
+        "engineer": "Sello Sease",
+        "report_type": "daily_production",
+        "timestamp": "06:01",
+        "source": "WhatsApp"
+    },
+    "safety": {
+        "status": "Clear",
+        "incidents": 0,
+        "notes": []
+    },
+    "production": {
+        "rom": {
+            "actual": 5326,
+            "target": 8060,
+            "variance": -2734,
+            "unit": "tonnes"
+        },
+        "decline": {
+            "actual": 4285,
+            "target": 7881,
+            "variance": -3596,
+            "unit": "tonnes"
+        },
+        "product": {
+            "actual": 3249,
+            "target": 7250,
+            "variance": -4001,
+            "unit": "tonnes"
+        },
+        "loads": [76, 97, 42],
+        "blast": {
+            "faces": 16,
+            "hangwall_slipping": 1,
+            "footwall": 1
+        }
+    },
+    "equipment_availability": {
+        "production_fleet": {
+            "dump_trucks": {
+                "code": "DT",
+                "available": 11,
+                "total": 14,
+                "percentage": 81
+            },
+            "front_loaders": {
+                "code": "FL",
+                "available": 9,
+                "total": 10,
+                "percentage": 92
+            },
+            "haul_trucks": {
+                "code": "HD",
+                "available": 9,
+                "total": 9,
+                "percentage": 93
+            },
+            "roof_bolters": {
+                "code": "RT",
+                "available": 9,
+                "total": 10,
+                "percentage": 92
+            },
+            "scalers": {
+                "code": "SR",
+                "available": 6,
+                "total": 10,
+                "percentage": 84
+            },
+            "utility_vehicles": {
+                "code": "UV",
+                "available": 9,
+                "total": 9,
+                "percentage": 98
+            }
+        },
+        "support_equipment": {
+            "grader": {
+                "code": "GD11",
+                "status": "100%"
+            },
+            "dozer": {
+                "code": "DZ11", 
+                "status": "100%"
+            },
+            "utility": {
+                "code": "UV044",
+                "status": "88%"
+            }
+        },
+        "manlifts": "4/4",
+        "emulsion_uv": "4/4"
+    },
+    "breakdowns": {
+        "current_breakdowns": [
+            {
+                "vehicle": "DT0145",
+                "description": "Strata"
+            },
+            {
+                "vehicle": "DT0146", 
+                "description": "Strata"
+            },
+            {
+                "vehicle": "DT0147",
+                "description": "Electrical Breakdown split drive"
+            },
+            {
+                "vehicle": "DT0149",
+                "description": "Hyd oil temp"
+            },
+            {
+                "vehicle": "FL0091",
+                "description": "Aircon"
+            },
+            {
+                "vehicle": "FL0098",
+                "description": "Jhb repair"
+            },
+            {
+                "vehicle": "FL0099",
+                "description": "Transmission oil leak"
+            },
+            {
+                "vehicle": "HD0052",
+                "description": "Operational"
+            },
+            {
+                "vehicle": "RT0051",
+                "description": "Hyd oil low level"
+            },
+            {
+                "vehicle": "SR0024",
+                "description": "FTS"
+            },
+            {
+                "vehicle": "SR0026",
+                "description": "Park brake not releasing"
+            },
+            {
+                "vehicle": "SR0038",
+                "description": "Investigation"
+            },
+            {
+                "vehicle": "UV0047",
+                "description": "Brakes repair"
+            },
+            {
+                "vehicle": "UV0126",
+                "description": "Reverse camera"
+            }
+        ]
+    },
+    "incidents": {
+        "fire_alarms": 0,
+        "crusher_blockages": 0,
+        "chute_blockages": 0
+    },
+    "sections": [
+        {
+            "name": "Central Section",
+            "shift": "A",
+            "safety": "Zero harm",
+            "blocks": {
+                "Block C": {
+                    "faces": {
+                        "40e74n": "face marked",
+                        "75s40e": "support marked",
+                        "40e75s": "to be supported",
+                        "75s41w": "cleaned +water control",
+                        "75s42w": "1/4 cleaned arrange loader"
+                    }
+                },
+                "New Block": {
+                    "faces": {
+                        "51s59w": "f/w blasted",
+                        "51s60w": "supported",
+                        "60w51s": "incomplete support"
+                    }
+                },
+                "Block K": {
+                    "activities": "Loaded during shift, 55e40s drilled, 39s55e clean, 55e39s new breakaway"
+                }
+            },
+            "labour": {
+                "shift_boss": 1,
+                "miners": 2,
+                "hd_operators": 3,
+                "rt_operators": 2,
+                "multiskilled": 1,
+                "scaler_operators": 2,
+                "support_workers": 2
+            },
+            "challenges": [
+                "No face availability",
+                "All scalers found with B/down on faces to be drilled",
+                "SR26 park brake stuck on face had to be removed with loader",
+                "SR28 reverse levers not working",
+                "Late start due to loader needs to remove scaler on face to be drilled",
+                "HD52 face sequence from 22:33 to 23:55"
+            ]
+        },
+        {
+            "name": "Main West",
+            "shift": "Night",
+            "shift_boss": "Serero",
+            "safety": "Clear",
+            "blasted_faces": [
+                "19W-104S",
+                "105S-19W", 
+                "19W-105S",
+                "18E-103S"
+            ],
+            "plan_next_cycle": [
+                "87S-17W Supported",
+                "17W-87S Supported", 
+                "10W-110S Marked",
+                "110S-10W Marked"
+            ],
+            "challenges": [
+                "No Drilling place for HD55",
+                "No drilling water at 10E area where Support was marked",
+                "110s MW pumping water",
+                "110s N2W pumping water",
+                "15w 106s flooded job card made for new pump installation"
+            ]
+        },
+        {
+            "name": "South West Development",
+            "safety": "Clear",
+            "focus_faces": [
+                "52w-63s",
+                "63s-62w", 
+                "80e-32s"
+            ],
+            "priority_faces": [
+                "63s-52w",
+                "80e-32s"
+            ],
+            "challenges": [
+                "SR 44 b/down light off from 21:55 till 22:40",
+                "SR 44 fail to start from 01:40 till e o s",
+                "Ventilation stoping block",
+                "Air pressure low at 80e-32s"
+            ]
+        },
+        {
+            "name": "Seam 2 South", 
+            "safety": "Clear",
+            "blasted_faces": [
+                "71e25s critical",
+                "25s71e normal",
+                "61w24n critical",
+                "E1N54E critical",
+                "E1N53E critical", 
+                "53eE1N critical",
+                "53eMDN critical"
+            ],
+            "challenges": [
+                "HD started drilling at 22h50 due to no face prepared",
+                "Sr43 sos-23h30, low diesel and flat Tyre",
+                "Rt55 waited for scaler from 22h15-00h45 for support marking",
+                "LDO571 sos-eos not starting"
+            ]
+        },
+        {
+            "name": "Seam 2 North",
+            "shift": "Night",
+            "safety": "Clear",
+            "forecast": [
+                "11w 18N drilled",
+                "18N 11W 34 holes",
+                "18S-8E drilled"
+            ],
+            "challenges": [
+                "HD0058 power pack from S.O.S until E.O.S",
+                "SR0034 is not starting from 22h00-01h06",
+                "RT0058 shank from 22h10-22h40",
+                "HD0057 right boom hydraulic hose from 22h10-23h10 and again hydraulic hose 01h00-02h30",
+                "We did not charge nor prime due to HD0058, and HD0057 finished drilling 18S 8E at 02h45"
+            ]
+        }
+    ],
+    "source_validation": {
+        "rom_production": {
+            "value": 5326,
+            "source_line": 1,
+            "source_quote": "*ROM*\n5326 vs 8060",
+            "confidence": "HIGH"
+        },
+        "decline_production": {
+            "value": 4285,
+            "source_line": 2,
+            "source_quote": "*Decline*\n4285 vs 7881",
+            "confidence": "HIGH"
+        },
+        "product_production": {
+            "value": 3249,
+            "source_line": 3,
+            "source_quote": "*Product*\n3249 vs 7250",
+            "confidence": "HIGH"
+        },
+        "loads": {
+            "value": [76, 97, 42],
+            "source_line": 4,
+            "source_quote": "*LOADS* \n76,97,42",
+            "confidence": "HIGH"
+        },
+        "blast_faces": {
+            "value": "16faces 1h/wall slipping 1f/wall",
+            "source_line": 5,
+            "source_quote": "*Blast*\n16faces 1h/wall slipping 1f/wall",
+            "confidence": "HIGH"
+        }
+    }
+}
