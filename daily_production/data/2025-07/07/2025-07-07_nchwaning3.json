@@ -1,0 +1,148 @@
+{
+  "report_metadata": {
+    "date": "2025-07-07",
+    "data_date": "2025-07-06",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "timestamp": "06:35",
+    "report_type": "daily_production"
+  },
+  "safety": {
+    "status": "incident",
+    "incidents": 1,
+    "details": ["Property damage Uv 0124"]
+  },
+  "production": {
+    "rom": {
+      "saturday": {"actual": 5277, "target": 8060, "variance": -2783, "variance_percentage": -34.5},
+      "sunday": {"actual": 7252, "target": 0, "variance": 7252, "variance_percentage": null},
+      "monday": {"actual": 3347, "target": 0, "variance": 3347, "variance_percentage": null}
+    },
+    "decline": {
+      "saturday": {"actual": 4979, "target": 7889, "variance": -2910, "variance_percentage": -36.9},
+      "sunday": {"actual": 6804, "target": 7889, "variance": -1085, "variance_percentage": -13.8},
+      "monday": {"actual": 3843, "target": 0, "variance": 3843, "variance_percentage": null}
+    },
+    "product": {
+      "saturday": {"actual": 3843, "target": 7257, "variance": -3414, "variance_percentage": -47.0},
+      "sunday": {"actual": 6560, "target": 7257, "variance": -697, "variance_percentage": -9.6},
+      "monday": {"actual": 3885, "target": 0, "variance": 3885, "variance_percentage": null}
+    },
+    "loads": [
+      {"shift": "saturday", "load_number": 1, "truckloads_tipped": 126, "target": null},
+      {"shift": "sunday", "load_number": 2, "truckloads_tipped": 97, "target": null},
+      {"shift": "monday", "load_number": 3, "truckloads_tipped": 41, "target": null}
+    ],
+    "blast": {
+      "faces": 14,
+      "breakdown": "Sunday 7 faces, 1 h/wall, 2 F/wall",
+      "note": "14 Faces total"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "HD": 69,
+      "DT": 81,
+      "FL": 91,
+      "RT": 98,
+      "SR": 100,
+      "UV": 100
+    },
+    "specialized": [
+      {"code": "GD11", "availability": 100},
+      {"code": "DZ11", "availability": 100},
+      {"code": "UV044", "availability": 100}
+    ]
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "HD": {"available": 8, "total": 9, "availability": 89},
+      "DT": {"available": 13, "total": 15, "availability": 87},
+      "FL": {"available": 9, "total": 10, "availability": 90},
+      "RT": {"available": 9, "total": 10, "availability": 90},
+      "SR": {"available": 8, "total": 9, "availability": 89},
+      "UV": {"available": 9, "total": 9, "availability": 100}
+    },
+    "specialized": {
+      "manlifts": {"available": 4, "total": 4, "availability": 100},
+      "emulsion_uv": {"available": 3, "total": 4, "availability": 75}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "DT0109", "issue": "Strata, gears and spares"},
+      {"unit": "D0147", "issue": "Electrical Breakdown split drive"},
+      {"unit": "HD0052", "issue": "CABLE DAMAGE"},
+      {"unit": "HD0061", "issue": "Power pack"},
+      {"unit": "HD0057", "issue": "drifter"},
+      {"unit": "RT0057", "issue": "electrical"},
+      {"unit": "RT0058", "issue": "Mechanical"},
+      {"unit": "FL0098", "issue": "OEM crack welding"},
+      {"unit": "UV0047", "issue": "Brakes"}
+    ]
+  },
+  "operational": {
+    "main_fans": "operational",
+    "plant_blockages": 1,
+    "fire_alarms": 0,
+    "crusher_chute_blockage": "60cv01"
+  },
+  "performance_summary": {
+    "key_issues": [
+      "Property damage incident with UV0124",
+      "ROM production below target on Saturday",
+      "Product production below target Saturday and Sunday",
+      "Multiple equipment breakdowns affecting operations",
+      "Crusher and chute blockage at 60cv01"
+    ],
+    "key_highlights": [
+      "Sunday ROM production exceeded expectations with no target",
+      "RT and SR equipment showing excellent availability (98-100%)",
+      "All manlifts operational at 100%"
+    ]
+  },
+  "source_validation": {
+    "safety_incident": {
+      "value": "Property damage Uv 0124",
+      "source_line": 2,
+      "source_quote": "Property damage Uv 0124",
+      "confidence": "HIGH"
+    },
+    "saturday_rom": {
+      "value": 5277,
+      "source_line": 4,
+      "source_quote": "Sat-5277 vs 8060",
+      "confidence": "HIGH"
+    },
+    "sunday_rom": {
+      "value": 7252,
+      "source_line": 5,
+      "source_quote": "Sun-7252 vs 0",
+      "confidence": "HIGH"
+    },
+    "monday_rom": {
+      "value": 3347,
+      "source_line": 6,
+      "source_quote": "Mon-3347 vs 0",
+      "confidence": "HIGH"
+    },
+    "loads_data": {
+      "value": "126,97,41",
+      "source_line": 18,
+      "source_quote": "126,97,41",
+      "confidence": "HIGH"
+    },
+    "blast_faces": {
+      "value": 14,
+      "source_line": 21,
+      "source_quote": "14 Faces",
+      "confidence": "HIGH"
+    },
+    "hd_availability": {
+      "value": 69,
+      "source_line": 25,
+      "source_quote": "HDs: 69",
+      "confidence": "HIGH"
+    }
+  }
+}

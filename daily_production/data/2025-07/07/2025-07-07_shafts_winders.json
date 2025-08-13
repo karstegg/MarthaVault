@@ -1,0 +1,143 @@
+{
+  "report_metadata": {
+    "date": "2025-07-07",
+    "data_date": "2025-07-06",
+    "site": "Shafts & Winders",
+    "engineer": "Xavier Peterson",
+    "timestamp": "04:54",
+    "report_type": "daily_production"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "infrastructure": {
+    "power_supply": {
+      "stoppages": 0,
+      "status": "operational"
+    },
+    "winders": {
+      "nch2_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch3_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "gl_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch2_rw": {"status": "maintenance", "operational": true, "type": "rock_winder", "function": "ore_hoisting", "maintenance": ["3-7LVL Feeder Liner Replacement", "3-7LVL Measuring Flask Liner Replacement"]}
+    },
+    "main_fans": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    },
+    "lamprooms": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    }
+  },
+  "dam_levels": {
+    "dd01": {
+      "friday": 100.7,
+      "saturday": 100.7,
+      "sunday": 100.6,
+      "status": "good"
+    },
+    "dd02": {
+      "friday": 83.4,
+      "saturday": 86.7,
+      "sunday": 82.9,
+      "status": "good"
+    }
+  },
+  "ore_pass_levels": {
+    "friday": 38.1,
+    "saturday": 33.3,
+    "sunday": 20.1,
+    "trend": "declining"
+  },
+  "production": {
+    "daily_summary": [
+      {
+        "day": "friday",
+        "actual": 5552,
+        "target": 6623,
+        "variance": -1071,
+        "variance_percentage": -16.2
+      },
+      {
+        "day": "saturday",
+        "actual": 2195,
+        "target": 1648,
+        "variance": 547,
+        "variance_percentage": 33.2
+      },
+      {
+        "day": "sunday",
+        "actual": 1348,
+        "target": 1648,
+        "variance": -300,
+        "variance_percentage": -18.2
+      }
+    ]
+  },
+  "operational": {
+    "fire_scada_alarms": 0,
+    "block_chutes": 0
+  },
+  "performance_summary": {
+    "key_issues": [
+      "Ore pass levels showing significant decline from 38.1% to 20.1%",
+      "Friday and Sunday production below target",
+      "Nch2 RW undergoing maintenance activities"
+    ],
+    "key_highlights": [
+      "Safety status clear across all infrastructure",
+      "Saturday production exceeded target by 33.2%",
+      "All power supply systems operational with no stoppages",
+      "Dam levels stable and within good range"
+    ]
+  },
+  "source_validation": {
+    "safety_status": {
+      "value": "Clear",
+      "source_line": 2,
+      "source_quote": "Safety: Clear",
+      "confidence": "HIGH"
+    },
+    "power_supply": {
+      "value": "No Stoppages",
+      "source_line": 4,
+      "source_quote": "Power Supply: No Stoppages",
+      "confidence": "HIGH"
+    },
+    "friday_production": {
+      "value": 5552,
+      "source_line": 35,
+      "source_quote": "Fri: 5552/6623",
+      "confidence": "HIGH"
+    },
+    "saturday_production": {
+      "value": 2195,
+      "source_line": 36,
+      "source_quote": "Sat: 2195/1648",
+      "confidence": "HIGH"
+    },
+    "sunday_production": {
+      "value": 1348,
+      "source_line": 37,
+      "source_quote": "Sun: 1348/1648",
+      "confidence": "HIGH"
+    },
+    "dd01_sunday": {
+      "value": 100.6,
+      "source_line": 20,
+      "source_quote": "Sun: 100,6%",
+      "confidence": "HIGH"
+    },
+    "ore_pass_sunday": {
+      "value": 20.1,
+      "source_line": 44,
+      "source_quote": "Sun: 20,1%",
+      "confidence": "HIGH"
+    }
+  }
+}

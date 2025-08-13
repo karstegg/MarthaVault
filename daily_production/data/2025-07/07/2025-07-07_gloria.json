@@ -1,0 +1,125 @@
+{
+  "report_metadata": {
+    "date": "2025-07-07",
+    "data_date": "2025-07-06",
+    "site": "Gloria",
+    "engineer": "Sipho Dubazane",
+    "timestamp": "05:28",
+    "report_type": "daily_production"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "friday": {"actual": 5545, "target": 6904, "variance": -1359, "variance_percentage": -19.7},
+      "saturday": {"actual": 1486, "target": 2844, "variance": -1358, "variance_percentage": -47.8},
+      "sunday": {"actual": 1543, "target": 2954, "variance": -1411, "variance_percentage": -47.8}
+    },
+    "product": {
+      "friday": {"actual": 2359, "target": 6634, "variance": -4275, "variance_percentage": -64.4},
+      "saturday": {"actual": 3565, "target": 1624, "variance": 1941, "variance_percentage": 119.5},
+      "sunday": {"actual": 1236, "target": 1703, "variance": -467, "variance_percentage": -27.4}
+    },
+    "mtd_target": 29539,
+    "mtd_actual": 23345
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": {"available": 9, "total": 9, "availability": 100},
+      "FL": {"available": 6, "total": 6, "availability": 100},
+      "HD": {"available": 6, "total": 6, "availability": 100},
+      "RT": {"available": 6, "total": 6, "availability": 100},
+      "SR": {"available": 6, "total": 6, "availability": 100}
+    },
+    "graben": {
+      "DT": {"available": 1, "total": 2, "availability": 50},
+      "FL": {"available": 2, "total": 2, "availability": 100},
+      "HD": {"available": 2, "total": 2, "availability": 100},
+      "RT": {"available": 2, "total": 2, "availability": 100},
+      "SR": {"available": 2, "total": 2, "availability": 100}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "DT99", "issue": "oil cooler"},
+      {"unit": "FL85", "issue": "propshaft"}
+    ]
+  },
+  "operational": {
+    "main_fans": "operational",
+    "plant_blockages": 0,
+    "fire_alarms": 0
+  },
+  "performance_summary": {
+    "key_issues": [
+      "ROM production significantly below target for Friday and weekend",
+      "Product production below target Friday and Sunday",
+      "DT99 equipment down with oil cooler issue",
+      "FL85 equipment down with propshaft issue"
+    ],
+    "key_highlights": [
+      "Safety status clear",
+      "Saturday product production exceeded target by 119.5%",
+      "Most TMM equipment at 100% availability"
+    ]
+  },
+  "source_validation": {
+    "safety_status": {
+      "value": "Clear",
+      "source_line": 1,
+      "source_quote": "*Safety* Clear",
+      "confidence": "HIGH"
+    },
+    "friday_rom": {
+      "value": 5545,
+      "source_line": 2,
+      "source_quote": "*ROM:*          5545 v 6904t",
+      "confidence": "HIGH"
+    },
+    "friday_product": {
+      "value": 2359,
+      "source_line": 3,
+      "source_quote": "*Product:*     2359 v 6634t",
+      "confidence": "HIGH"
+    },
+    "saturday_rom": {
+      "value": 1486,
+      "source_line": 5,
+      "source_quote": "*ROM:*           1486 v 2844t",
+      "confidence": "HIGH"
+    },
+    "saturday_product": {
+      "value": 3565,
+      "source_line": 6,
+      "source_quote": "*Product:*      3565 v 1624t",
+      "confidence": "HIGH"
+    },
+    "sunday_rom": {
+      "value": 1543,
+      "source_line": 8,
+      "source_quote": "*ROM:*           1543v 2954t",
+      "confidence": "HIGH"
+    },
+    "sunday_product": {
+      "value": 1236,
+      "source_line": 9,
+      "source_quote": "*Product:*      1236 v 1703t",
+      "confidence": "HIGH"
+    },
+    "mtd_target": {
+      "value": 29539,
+      "source_line": 20,
+      "source_quote": "MTD target:  29 539t  plant product",
+      "confidence": "HIGH"
+    },
+    "mtd_actual": {
+      "value": 23345,
+      "source_line": 21,
+      "source_quote": "MTD actual:  23 345t  plant product",
+      "confidence": "HIGH"
+    }
+  }
+}
