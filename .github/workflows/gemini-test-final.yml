@@ -1,0 +1,220 @@
+name: Final Gemini Quality Test
+
+on:
+  workflow_dispatch:
+    inputs:
+      test_name:
+        description: 'Test identifier'
+        required: false
+        default: 'gloria-final-test'
+
+jobs:
+  test-gemini-output:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Load test message
+        run: |
+          echo "📝 Loading test WhatsApp message..."
+          cat testing/whatsapp-test-message.txt
+      
+      - name: Process with Gemini CLI (Output Only)
+        id: gemini
+        uses: google-github-actions/run-gemini-cli@main
+        with:
+          prompt: |
+            # WhatsApp Production Report Processing Test
+            
+            **Report Date**: 2025-08-12
+            **Site**: Gloria (identified by ore pass reference and equipment pattern)
+            **Engineer**: Sipho Dubazane
+            
+            ## Raw WhatsApp Message:
+            ```
+            $(cat testing/whatsapp-test-message.txt)
+            ```
+            
+            ## Processing Instructions:
+            
+            **CRITICAL**: You MUST follow the EXACT templates from the Report Templates folder as specified in `GEMINI.md` Section 8.
+            
+            **MANDATORY STEPS:**
+            1. **Read GEMINI.md Section 8** - Contains template selection rules
+            2. **Read Report Templates folder** - Contains actual templates to use:
+               - Use `Report Templates/Standard Mine Site Report Template.md` for Gloria
+            3. **Apply Section 8.1** - Dating rule: Report date (2025-08-12), Data date (2025-08-11)
+            4. **Follow Template Exactly** - JSON and Markdown from Report Templates folder
+            5. **Apply Section 8.5** - Data extraction rules
+            
+            **🚨 CRITICAL DATA VALIDATION:**
+            - Extract ONLY actual data from the WhatsApp message
+            - ROM: 4779 actual vs 6903 target
+            - Product: 2702 actual vs 6514 target  
+            - Equipment availability: DT 97%, FL 94%, HD 84%, RT 91%, SR 93%
+            - Breakdowns: UV90, UV54, UV59, UV69, UV77, UV119, UV123, UV133, GR12, SR46
+            - Use null for silo levels (not mentioned in message)
+            - Include source validation section with exact quotes
+            
+            **OUTPUT FORMAT**: 
+            Instead of creating files, provide the complete output in this format:
+            
+            ===== JSON OUTPUT =====
+            [Complete JSON following Standard Mine Site template]
+            
+            ===== MARKDOWN OUTPUT =====
+            [Complete Markdown following Standard Mine Site template]
+            
+            ===== END OUTPUT =====
+            
+            Process this Gloria mine message following the Standard Mine Site template exactly and provide the complete structured output above.
+          gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
+          
+      - name: Process Gemini Response
+        run: |
+          echo "🔍 Processing Gemini response..."
+          echo "================================"
+          
+          # Save the Gemini response to a file for processing
+          cat > gemini_response.txt << 'EOF'
+          ${{ steps.gemini.outputs.gemini_response }}
+          EOF
+          
+          # Create output directory
+          mkdir -p testing/gemini-output
+          
+          # Extract JSON section
+          if grep -q "===== JSON OUTPUT =====" gemini_response.txt; then
+            echo "✅ Found JSON section"
+            sed -n '/===== JSON OUTPUT =====/,/===== MARKDOWN OUTPUT =====/p' gemini_response.txt | \
+            sed '1d;$d' > testing/gemini-output/2025-08-12_gloria_test.json
+            echo "📄 JSON saved to: testing/gemini-output/2025-08-12_gloria_test.json"
+          else
+            echo "❌ JSON section not found"
+          fi
+          
+          # Extract Markdown section
+          if grep -q "===== MARKDOWN OUTPUT =====" gemini_response.txt; then
+            echo "✅ Found Markdown section"
+            sed -n '/===== MARKDOWN OUTPUT =====/,/===== END OUTPUT =====/p' gemini_response.txt | \
+            sed '1d;$d' > testing/gemini-output/2025-08-12_gloria_test.md
+            echo "📄 Markdown saved to: testing/gemini-output/2025-08-12_gloria_test.md"
+          else
+            echo "❌ Markdown section not found"
+          fi
+          
+      - name: Analyze Output Quality
+        run: |
+          echo "🎯 Analyzing Gemini processing quality..."
+          echo "========================================"
+          
+          # Check if files were created
+          ls -la testing/gemini-output/
+          
+          # Analyze JSON if it exists
+          if [ -f "testing/gemini-output/2025-08-12_gloria_test.json" ]; then
+            echo ""
+            echo "✅ JSON Analysis:"
+            echo "🔗 Full path: /home/runner/work/MarthaVault/MarthaVault/testing/gemini-output/2025-08-12_gloria_test.json"
+            
+            # Validate JSON syntax
+            if jq empty testing/gemini-output/2025-08-12_gloria_test.json 2>/dev/null; then
+              echo "✅ Valid JSON syntax"
+              
+              # Extract key data points
+              echo ""
+              echo "🎯 Key Data Validation:"
+              site=$(jq -r '.report_metadata.site // "missing"' testing/gemini-output/2025-08-12_gloria_test.json)
+              engineer=$(jq -r '.report_metadata.engineer // "missing"' testing/gemini-output/2025-08-12_gloria_test.json)
+              rom_actual=$(jq -r '.production.rom.actual // "missing"' testing/gemini-output/2025-08-12_gloria_test.json)
+              rom_target=$(jq -r '.production.rom.target // "missing"' testing/gemini-output/2025-08-12_gloria_test.json)
+              product_actual=$(jq -r '.production.product.actual // "missing"' testing/gemini-output/2025-08-12_gloria_test.json)
+              dt_availability=$(jq -r '.equipment_availability.tmm.dt // .equipment_availability.tmm.DT // "missing"' testing/gemini-output/2025-08-12_gloria_test.json)
+              
+              echo "  Site: $site (expected: Gloria)"
+              echo "  Engineer: $engineer (expected: Sipho Dubazane)"
+              echo "  ROM Actual: $rom_actual (expected: 4779)"
+              echo "  ROM Target: $rom_target (expected: 6903)"
+              echo "  Product Actual: $product_actual (expected: 2702)"
+              echo "  DT Availability: $dt_availability (expected: 97)"
+              
+              # Check for source validation
+              if jq -e '.source_validation' testing/gemini-output/2025-08-12_gloria_test.json >/dev/null 2>&1; then
+                echo "  ✅ Source validation section present"
+              else
+                echo "  ❌ Source validation section missing"
+              fi
+              
+              # Check silo levels (should be null since not in message)
+              silo_levels=$(jq -r '.silo_levels // "null"' testing/gemini-output/2025-08-12_gloria_test.json)
+              echo "  Silo levels: $silo_levels (expected: null or proper data structure)"
+              
+            else
+              echo "❌ Invalid JSON syntax"
+            fi
+          else
+            echo "❌ JSON file not created"
+          fi
+          
+          # Analyze Markdown if it exists
+          if [ -f "testing/gemini-output/2025-08-12_gloria_test.md" ]; then
+            echo ""
+            echo "✅ Markdown Analysis:"
+            echo "🔗 Full path: /home/runner/work/MarthaVault/MarthaVault/testing/gemini-output/2025-08-12_gloria_test.md"
+            echo "📏 Line count: $(wc -l < testing/gemini-output/2025-08-12_gloria_test.md)"
+            echo "📏 File size: $(wc -c < testing/gemini-output/2025-08-12_gloria_test.md) bytes"
+            
+            echo ""
+            echo "📋 Markdown Preview (first 40 lines):"
+            head -40 testing/gemini-output/2025-08-12_gloria_test.md
+            
+            echo ""
+            echo "📋 Template Compliance Check:"
+            if grep -q "JSONData::" testing/gemini-output/2025-08-12_gloria_test.md; then
+              echo "  ✅ Front-matter JSONData link present"
+            else
+              echo "  ❌ Front-matter JSONData link missing"
+            fi
+            
+            if grep -q "# Gloria Daily Report" testing/gemini-output/2025-08-12_gloria_test.md; then
+              echo "  ✅ Proper heading structure"
+            else
+              echo "  ❌ Missing Gloria Daily Report heading"
+            fi
+            
+            if grep -q "Sipho Dubazane" testing/gemini-output/2025-08-12_gloria_test.md; then
+              echo "  ✅ Engineer correctly assigned"
+            else
+              echo "  ❌ Engineer assignment missing or incorrect"
+            fi
+            
+          else
+            echo "❌ Markdown file not created"
+          fi
+          
+      - name: Upload Test Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: gemini-final-test-${{ github.event.inputs.test_name }}
+          path: |
+            testing/gemini-output/
+            gemini_response.txt
+          retention-days: 30
+          
+      - name: Final Test Summary
+        run: |
+          echo ""
+          echo "🎯 FINAL GEMINI QUALITY TEST COMPLETE"
+          echo "====================================="
+          echo "Date: $(date)"
+          echo "Test ID: ${{ github.event.inputs.test_name }}"
+          echo ""
+          echo "📁 Generated Files:"
+          find testing/gemini-output -type f 2>/dev/null | while read file; do
+            echo "  - $file"
+          done
+          echo ""
+          echo "🔗 Download artifacts to review full output"
+          echo "🎯 This test validates Gemini's ability to process WhatsApp data according to your templates"
