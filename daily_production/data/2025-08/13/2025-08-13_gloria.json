@@ -1,0 +1,131 @@
+{
+  "report_metadata": {
+    "date": "2025-08-13",
+    "data_date": "2025-08-12",
+    "site": "Gloria",
+    "engineer": "Sipho Dubazane",
+    "timestamp": "04:44"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": null,
+      "target": 3873,
+      "variance": null,
+      "variance_percentage": null
+    },
+    "decline": {
+      "actual": 3757,
+      "target": 3873,
+      "variance": -116,
+      "variance_percentage": -3.0
+    },
+    "product": {
+      "actual": null,
+      "target": 1947,
+      "variance": null,
+      "variance_percentage": null
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 30, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 75, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 65, "target": null}
+    ],
+    "blast": {
+      "faces": null,
+      "breakdown": null,
+      "note": "Nothing Reported"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": 100,
+      "FL": 100,
+      "HD": 99,
+      "RT": 95,
+      "SR": 95
+    },
+    "specialized": [
+      {"code": "UV", "availability": null}
+    ]
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 6, "total": 6},
+      "FL": {"available": 5, "total": 5},
+      "HD": {"available": 4, "total": 4},
+      "RT": {"available": 4, "total": 4},
+      "SR": {"available": 4, "total": 4}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": []
+  },
+  "operational": {
+    "main_fans": "In Order",
+    "plant_blockages": 0,
+    "fire_alarms": 1
+  },
+  "performance_summary": {
+    "key_issues": [
+      "ROM data not yet available",
+      "Product data not yet available", 
+      "Fire alarm panel fault: 55CV01",
+      "Decline below target: 3757 vs 3873 (-3.0%)"
+    ],
+    "key_highlights": [
+      "Safety clear",
+      "Excellent equipment availability (95-100%)",
+      "Full TMM fleet available for start of shift",
+      "Main fans operational"
+    ]
+  },
+  "silo_levels": {
+    "surface": {
+      "silo_1": 64,
+      "silo_2": 94,
+      "silo_3": 93,
+      "silo_4": 93
+    },
+    "underground": {
+      "silo_74": 20,
+      "silo_hg": 57,
+      "silo_d": 21,
+      "silo_lg": 16
+    }
+  },
+  "specialized_equipment": {
+    "emulsion_uvs": {"available": 2, "total": 2, "availability": 100},
+    "manitou": {"available": 1, "total": 1, "availability": 100},
+    "manlifts": {"available": 2, "total": 2, "availability": 100}
+  },
+  "fire_alarms": {
+    "active": [
+      {"location": "55CV01", "issue": "panel faulty"}
+    ]
+  },
+  "source_validation": {
+    "decline_production": {
+      "value": 3757,
+      "source_line": "Line referencing Decline",
+      "source_quote": "*Decline* 3757 vs 3873",
+      "confidence": "HIGH"
+    },
+    "safety_status": {
+      "value": "clear",
+      "source_line": "Line 4 of report",
+      "source_quote": "*Safety* .Clear",
+      "confidence": "HIGH"
+    },
+    "surface_silo_levels": {
+      "value": "64, 94, 93, 93",
+      "source_line": "Surface Silos section",
+      "source_quote": "**Surface Silos* {%} 1 - 64 2 - 94 3 - 93 4 - 93",
+      "confidence": "HIGH"
+    }
+  }
+}

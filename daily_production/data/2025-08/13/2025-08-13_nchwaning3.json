@@ -1,0 +1,179 @@
+{
+  "report_metadata": {
+    "date": "2025-08-13",
+    "data_date": "2025-08-12",
+    "site": "Nchwaning 3",
+    "engineer": "Johan Kotze",
+    "timestamp": "03:24"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": null,
+      "target": null,
+      "variance": null,
+      "variance_percentage": null
+    },
+    "decline": {
+      "actual": null,
+      "target": null,
+      "variance": null,
+      "variance_percentage": null
+    },
+    "product": {
+      "actual": null,
+      "target": null,
+      "variance": null,
+      "variance_percentage": null
+    },
+    "loads": [
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 72, "target": 90}
+    ],
+    "blast": {
+      "faces": 7,
+      "breakdown": "Total faces loaded: 07. Seam2 south faces and SW development",
+      "note": "Faces cleaned include Seam2 south and SW development areas with various load counts"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": null,
+      "FL": null,
+      "HD": null,
+      "RT": null,
+      "SR": null
+    },
+    "specialized": []
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 8, "total": null},
+      "FL": null,
+      "HD": null,
+      "RT": null,
+      "SR": null
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "DT145", "issue": "Breakdown (B/down)"},
+      {"unit": "DT147", "issue": "Puncher"},
+      {"unit": "DT148", "issue": "Auto problem"},
+      {"unit": "DT149", "issue": "BComms error"},
+      {"unit": "DT150", "issue": "Breakdown"},
+      {"unit": "DT154", "issue": "Fire suppression damaged"},
+      {"unit": "DT161", "issue": "Puncher"}
+    ]
+  },
+  "operational": {
+    "main_fans": null,
+    "plant_blockages": null,
+    "fire_alarms": null
+  },
+  "performance_summary": {
+    "key_issues": [
+      "Load target missed: 72 actual vs 90 target (80% performance)",
+      "Multiple DT breakdowns: 7 units down",
+      "SW development area flooded (74s63w 1/4 flooded)",
+      "Night shift timing issues: started 20 minutes late"
+    ],
+    "key_highlights": [
+      "Safety clear for night shift",
+      "7 faces loaded and cleaned",
+      "Shift completed 13 minutes early (01:47 vs 02:00)"
+    ]
+  },
+  "timing": {
+    "first_load": {
+      "planned": "20:30",
+      "actual": "20:50",
+      "variance": "+20 minutes"
+    },
+    "last_load": {
+      "planned": "02:00", 
+      "actual": "01:47",
+      "variance": "-13 minutes"
+    }
+  },
+  "face_operations": {
+    "faces_cleaned": [
+      {"location": "Seam2 south 51e-E1N", "loads": 12},
+      {"location": "51E-Mn", "loads": 13},
+      {"location": "Mn-54W", "loads": 14},
+      {"location": "E1N53E", "loads": 6},
+      {"location": "63w74n", "loads": 8},
+      {"location": "63w74s", "loads": 5},
+      {"location": "74s63w", "loads": 4},
+      {"location": "80e32South", "loads": 35, "type": "buckets"}
+    ],
+    "faces_incomplete": [
+      {"location": "74s63w", "status": "1/4 flooded"}
+    ]
+  },
+  "labor": {
+    "lhd_operators": 4,
+    "dt_operators": 10
+  },
+  "machinery_used": {
+    "lhds": 4,
+    "dts": 8
+  },
+  "dt_performance": [
+    {"unit": "DT118", "loads": 0, "reason": null},
+    {"unit": "DT119", "loads": 15, "reason": null},
+    {"unit": "DT131", "loads": 17, "reason": null},
+    {"unit": "DT145", "loads": 0, "reason": "B/down"},
+    {"unit": "DT146", "loads": 4, "reason": null},
+    {"unit": "DT147", "loads": 0, "reason": "Puncher"},
+    {"unit": "DT148", "loads": 0, "reason": "Auto problem"},
+    {"unit": "DT149", "loads": 0, "reason": "BComms error"},
+    {"unit": "DT150", "loads": 0, "reason": "B/down"},
+    {"unit": "DT154", "loads": 0, "reason": "Fire suppression damaged"},
+    {"unit": "DT160", "loads": 13, "reason": null},
+    {"unit": "DT161", "loads": 0, "reason": "Puncher"},
+    {"unit": "DT162", "loads": 3, "reason": null},
+    {"unit": "DT163", "loads": 4, "reason": null},
+    {"unit": "DT171", "loads": 3, "reason": null}
+  ],
+  "breakdown_details": [
+    {"unit": "DT161", "issue": "Puncher, standing the whole shift"},
+    {"unit": "DT148", "issue": "No refs, standing until 00H18 in workshop"},
+    {"unit": "DT149", "issue": "BComms error, from 20H00 until 22H19"},
+    {"unit": "DT147", "issue": "Puncher fixed, still on stands, waiting for compressor"},
+    {"unit": "DT145", "issue": "Gears, standing whole shift"},
+    {"unit": "DT154", "issue": "Fire suppression damaged from the afternoon shift"}
+  ],
+  "load_breakdown": {
+    "mn_loads": 45,
+    "dt_loads": 27,
+    "seam_loads": 45,
+    "hg_loads": 0,
+    "lg_loads": 0,
+    "waste_tipped": 27,
+    "waste_staged": 0
+  },
+  "source_validation": {
+    "total_loads": {
+      "value": 72,
+      "source_line": "Line referencing *Total loads:* and *Actual:* =72",
+      "source_quote": "*Loads Mn* *Target:* = 90 *Actual:* =72",
+      "confidence": "HIGH"
+    },
+    "safety_status": {
+      "value": "clear",
+      "source_line": "Line 2 of report",
+      "source_quote": "*Safety*: Clear.",
+      "confidence": "HIGH"
+    },
+    "faces_loaded": {
+      "value": 7,
+      "source_line": "Line 3 of report", 
+      "source_quote": "*Total Faces Loaded=* 07",
+      "confidence": "HIGH"
+    }
+  }
+}

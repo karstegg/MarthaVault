@@ -1,0 +1,150 @@
+{
+  "report_metadata": {
+    "date": "2025-08-13",
+    "data_date": "2025-08-12",
+    "site": "Nchwaning 2",
+    "engineer": "Johan Kotze",
+    "timestamp": "05:22"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": null,
+      "target": 6903,
+      "variance": null,
+      "variance_percentage": null
+    },
+    "decline": {
+      "actual": null,
+      "target": null,
+      "variance": null,
+      "variance_percentage": null
+    },
+    "product": {
+      "actual": null,
+      "target": 6514,
+      "variance": null,
+      "variance_percentage": null
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 66, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 54, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 57, "target": null}
+    ],
+    "blast": {
+      "faces": null,
+      "breakdown": "? vs 16",
+      "note": "Blast data incomplete"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": 95,
+      "FL": 97,
+      "HD": 95,
+      "RT": 92,
+      "SR": 78
+    },
+    "specialized": [
+      {"code": "DZ13", "availability": 100},
+      {"code": "GD12", "availability": 0}
+    ]
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 9, "total": 9},
+      "FL": {"available": 6, "total": 6},
+      "HD": {"available": 6, "total": 6},
+      "RT": {"available": 5, "total": 6},
+      "SR": {"available": 5, "total": 6}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "RT50", "issue": "transmission"},
+      {"unit": "SR27", "issue": "excessive smoke"},
+      {"unit": "UV90", "issue": "water pump & timing"},
+      {"unit": "UV77", "issue": "bucket movement"},
+      {"unit": "UV119", "issue": "warning sign"},
+      {"unit": "UV123", "issue": "outrigger"},
+      {"unit": "GD12", "issue": "brakes"},
+      {"unit": "SR46", "issue": "pump"}
+    ]
+  },
+  "operational": {
+    "main_fans": null,
+    "plant_blockages": 1,
+    "fire_alarms": 1
+  },
+  "performance_summary": {
+    "key_issues": [
+      "ROM and Product data missing",
+      "Orepass blockages causing delays: 13:32-14:05, 15:40-16:48, 17:45-19:08, 22:50-23:23",
+      "Feeder blockage requiring blasting: 01:29-02:17",
+      "Multiple equipment breakdowns affecting availability",
+      "SR availability critically low at 78%",
+      "GD12 completely down (0% availability)"
+    ],
+    "key_highlights": [
+      "Safety clear",
+      "Good FL availability at 97%",
+      "DZ13 at 100% availability",
+      "177 total loads across all shifts"
+    ]
+  },
+  "operational_issues": {
+    "orepass_full_periods": [
+      {"start": "13:32", "end": "14:05"},
+      {"start": "15:40", "end": "16:48"},
+      {"start": "17:45", "end": "19:08"},
+      {"start": "22:50", "end": "23:23"}
+    ],
+    "feeder_blockage": {
+      "start": "01:29",
+      "end": "02:17",
+      "action": "needed to be blasted"
+    }
+  },
+  "equipment_details": {
+    "emulsion_uvs": {
+      "units": ["UV62", "UV66", "UV108"],
+      "availability": 83
+    },
+    "logistics_uvs": {
+      "units": ["UV54", "UV59", "UV120"],
+      "availability": 71
+    },
+    "sampling_uvs": {
+      "units": ["UV77", "UV123"],
+      "availability": 0
+    },
+    "survey_uvs": {
+      "units": ["UV98", "UV99"],
+      "availability": 97
+    }
+  },
+  "source_validation": {
+    "safety_status": {
+      "value": "clear",
+      "source_line": "Line 2 of report",
+      "source_quote": "*Safety* Clear",
+      "confidence": "HIGH"
+    },
+    "loads_breakdown": {
+      "value": "66, 54, 57",
+      "source_line": "Loads section",
+      "source_quote": "*Loads:* 66, 54, 57",
+      "confidence": "HIGH"
+    },
+    "dt_availability": {
+      "value": 95,
+      "source_line": "TMMs Availability section",
+      "source_quote": "DTs: 95%",
+      "confidence": "HIGH"
+    }
+  }
+}
