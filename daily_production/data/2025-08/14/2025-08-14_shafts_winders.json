@@ -4,79 +4,140 @@
     "data_date": "2025-08-13",
     "site": "Shafts & Winders",
     "engineer": "Xavier Peterson",
-    "timestamp": "06:00",
-    "processing_mode": "autonomous",
-    "data_availability": "none",
-    "report_type": "Daily Report"
+    "report_type": "Weekly Report",
+    "report_day": "Thursday",
+    "data_period": "Fri-Thu",
+    "timestamp": "2025-08-14T08:16:29Z"
   },
   "safety": {
-    "status": "no_data",
-    "incidents": null,
-    "details": []
+    "status": "clear",
+    "incidents": 0,
+    "notes": "Clear"
   },
   "infrastructure": {
     "power_supply": {
-      "stoppages": null,
-      "status": null
+      "stoppages": 0,
+      "status": "operational"
     },
     "winders": {
-      "nch2_pw": {"status": null, "operational": null, "type": "manwinder"},
-      "nch3_pw": {"status": null, "operational": null, "type": "manwinder"},
-      "gl_pw": {"status": null, "operational": null, "type": "manwinder"},
-      "nch2_rw": {"status": null, "operational": null, "type": "rock_winder", "function": "ore_hoisting"}
+      "nch2_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch3_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "gl_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch2_rw": {"status": "operational", "operational": true, "type": "rock_winder", "function": "ore_hoisting"}
     },
     "main_fans": {
-      "gloria": {"status": null, "operational": null},
-      "nchwaning2": {"status": null, "operational": null},
-      "nchwaning3": {"status": null, "operational": null}
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
     },
     "lamprooms": {
-      "gloria": {"status": null, "operational": null},
-      "nchwaning2": {"status": null, "operational": null},
-      "nchwaning3": {"status": null, "operational": null}
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
     }
   },
   "dam_levels": {
     "dd01": {
-      "level": null,
-      "status": null
+      "friday": 99.9, "saturday": 100.0, "sunday": 99.9, "monday": 99.9, 
+      "tuesday": 99.9, "wednesday": 99.9, "thursday": null,
+      "status": "excellent"
     },
     "dd02": {
-      "level": null,
-      "status": null
+      "friday": 80.8, "saturday": 83.6, "sunday": 78.4, "monday": 86.9,
+      "tuesday": 77.0, "wednesday": 88.5, "thursday": null,
+      "status": "good"
     }
   },
   "ore_pass_levels": {
-    "current_level": null,
-    "trend": null
+    "friday": 1.6, "saturday": 18.0, "sunday": 32.3, "monday": 24.3,
+    "tuesday": 24.8, "wednesday": 27.3, "thursday": null,
+    "trend": "increasing"
   },
   "production": {
-    "daily_summary": [
-      {
-        "day": "2025-08-13",
-        "actual": null,
-        "target": null,
-        "variance": null,
-        "variance_percentage": null
-      }
-    ]
+    "weekly_schedule": {
+      "friday": {"actual": 4462, "target": 6463, "variance": -2001, "variance_percent": -31.0},
+      "saturday": {"actual": 0, "target": 1539, "variance": -1539, "variance_percent": -100.0, "note": "SOLROCK SHAFT BARREL REPAIR PROJECT"},
+      "sunday": {"actual": 1014, "target": 1539, "variance": -525, "variance_percent": -34.1, "note": "SOLROCK SHAFT BARREL REPAIR PROJECT"},
+      "monday": {"actual": 4894, "target": 5204, "variance": -310, "variance_percent": -6.0},
+      "tuesday": {"actual": 5959, "target": 6463, "variance": -504, "variance_percent": -7.8},
+      "wednesday": {"actual": 7664, "target": 6463, "variance": 1201, "variance_percent": 18.6},
+      "thursday": {"actual": null, "target": 5204, "variance": null, "variance_percent": null}
+    }
   },
   "operational": {
-    "fire_scada_alarms": null,
-    "block_chutes": null
+    "fire_scada_alarms": 0,
+    "block_chutes": 0
   },
   "performance_summary": {
-    "key_issues": ["No WhatsApp data available for processing"],
-    "key_highlights": ["Autonomous processing completed with placeholder structure"]
+    "key_highlights": [
+      "Safety clear for all infrastructure operations",
+      "All winders operational across all sites",
+      "All main fans operational across all sites", 
+      "All lamprooms operational across all sites",
+      "Power supply: No stoppages",
+      "Wednesday production exceeded target by 18.6% (7,664t vs 6,463t)",
+      "DD01 dam levels excellent (99.9-100.0%)",
+      "Zero fire SCADA alarms and block chutes"
+    ],
+    "key_issues": [
+      "Saturday production completely down due to SOLROCK SHAFT BARREL REPAIR PROJECT",
+      "Sunday production significantly impacted by repair project (-34.1%)",
+      "Friday production 31% below target",
+      "DD02 dam levels variable (77.0-88.5%)",
+      "Ore pass levels trending upward (1.6% to 27.3%)",
+      "Thursday data incomplete"
+    ],
+    "overall_status": "infrastructure_excellent_production_variable",
+    "priority_level": "medium"
   },
   "source_validation": {
-    "data_source": {
-      "value": "None provided",
-      "source_line": 0,
-      "source_quote": "Empty WhatsApp data section",
-      "confidence": "NONE"
+    "safety": {
+      "value": "Clear",
+      "source_line": 4,
+      "source_quote": "Safety: Clear",
+      "confidence": "HIGH"
     },
-    "processing_note": "No source data available - created placeholder report structure",
-    "validation_status": "NO_DATA_AVAILABLE"
+    "power_supply": {
+      "value": "No Stoppages",
+      "source_line": 4,
+      "source_quote": "Power Supply: No Stoppages",
+      "confidence": "HIGH"
+    },
+    "winders": {
+      "value": "All No Stoppages",
+      "source_line": 4,
+      "source_quote": "Nch2 PW No Stoppages, Nch3 PW No Stoppages, GL PW No Stoppages, Nch2 RW No Stoppages",
+      "confidence": "HIGH"
+    },
+    "main_fans": {
+      "value": "All No Stoppages",
+      "source_line": 4,
+      "source_quote": "GL No Stoppages, Nch2 No Stoppages, Nch3 No Stoppages",
+      "confidence": "HIGH"
+    },
+    "dam_levels_dd01": {
+      "value": "Fri: 99.9%, Sat: 100.0%, Sun: 99.9%, Mon: 99.9%, Tue: 99.9%, Wed: 99.9%",
+      "source_line": 4,
+      "source_quote": "DD01: Fri: 99,9% Sat: 100,0% Sun: 99,9% Mon: 99,9% Tue: 99,9% Wed: 99,9%",
+      "confidence": "HIGH"
+    },
+    "dam_levels_dd02": {
+      "value": "Fri: 80.8%, Sat: 83.6%, Sun: 78.4%, Mon: 86.9%, Tue: 77.0%, Wed: 88.5%",
+      "source_line": 4,
+      "source_quote": "DD02: Fri: 80,8% Sat: 83,6% Sun: 78,4% Mon: 86,9% Tue: 77,0% Wed: 88,5%",
+      "confidence": "HIGH"
+    },
+    "production": {
+      "value": "Fri: 4462/6463, Sat: 0/1539, Sun: 1014/1539, Mon: 4894/5204, Tue: 5959/6463, Wed: 7664/6463",
+      "source_line": 4,
+      "source_quote": "Production: Fri: 4462/6463 Sat: 0/1539 SOLROCK SHAFT BARREL REPAIR PROJECT Sun: 1014/1539 SOLROCK SHAFT BARREL REPAIR PROJECT Mon: 4894/5204 Tue: 5959/6463 Wed: 7664/6463",
+      "confidence": "HIGH"
+    },
+    "ore_pass_levels": {
+      "value": "Fri: 1.6%, Sat: 18.0%, Sun: 32.3%, Mon: 24.3%, Tue: 24.8%, Wed: 27.3%",
+      "source_line": 4,
+      "source_quote": "Ore pass Levels: Fri: 1,6% Sat: 18,0% Sun: 32,3% Mon: 24,3% Tue: 24,8% Wed: 27,3%",
+      "confidence": "HIGH"
+    }
   }
 }
