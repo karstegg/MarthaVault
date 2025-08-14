@@ -4,96 +4,156 @@
     "data_date": "2025-08-13",
     "site": "Gloria",
     "engineer": "Sipho Dubazane",
-    "timestamp": "06:00",
-    "processing_mode": "autonomous",
-    "data_availability": "none"
+    "report_type": "daily_production",
+    "report_day": "Wednesday",
+    "data_day": "Tuesday",
+    "timestamp": "2025-08-14T04:31:20Z"
   },
   "safety": {
-    "status": "no_data",
-    "incidents": null,
-    "details": []
+    "status": "clear",
+    "incidents": 0,
+    "notes": "Clear"
   },
   "production": {
-    "rom": {
-      "actual": null,
-      "target": null,
-      "variance": null,
-      "variance_percentage": null
+    "rom": {"actual": 4070, "target": 3873, "variance": 197, "variance_percent": 5.1, "unit": "tonnes"},
+    "decline": {"actual": 4536, "target": 3873, "variance": 663, "variance_percent": 17.1, "unit": "tonnes"},
+    "product": {"actual": 3690, "target": 0, "variance": 3690, "variance_percent": null, "unit": "tonnes"},
+    "loads": {
+      "load_1": 64,
+      "load_2": 49,
+      "load_3": 48,
+      "total": 161,
+      "performance": "good"
     },
-    "decline": {
-      "actual": null,
-      "target": null,
-      "variance": null,
-      "variance_percentage": null
-    },
-    "product": {
-      "actual": null,
-      "target": null,
-      "variance": null,
-      "variance_percentage": null
-    },
-    "loads": [
-      {"shift": "day", "load_number": 1, "truckloads_tipped": null, "target": null},
-      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": null, "target": null},
-      {"shift": "night", "load_number": 3, "truckloads_tipped": null, "target": null}
-    ],
     "blast": {
-      "faces": null,
+      "faces_blasted": null,
+      "tonnes_blasted": null,
       "breakdown": null,
-      "note": "No data available"
+      "note": "Nothing Reported"
+    }
+  },
+  "silo_levels": {
+    "surface_silos": {
+      "silo_1": 93,
+      "silo_2": 98,
+      "silo_3": 66,
+      "silo_4": 97,
+      "unit": "percent"
+    },
+    "underground_silos": {
+      "silo_74": 43,
+      "silo_HG": 39,
+      "silo_D": 21,
+      "silo_LG": 16,
+      "unit": "percent"
     }
   },
   "equipment_availability": {
     "tmm": {
-      "DT": null,
-      "FL": null,
-      "HD": null,
-      "RT": null,
-      "SR": null
+      "DT": {"available": null, "total": null, "percentage": 95.0},
+      "FL": {"available": null, "total": null, "percentage": 100.0},
+      "HD": {"available": null, "total": null, "percentage": 88.0},
+      "RT": {"available": null, "total": null, "percentage": 92.0},
+      "SR": {"available": null, "total": null, "percentage": 97.0}
     },
-    "specialized": []
+    "specialized": [
+      {"type": "Emulsion UV", "available": 2, "total": 2, "percentage": 100, "status": "operational"},
+      {"type": "Manitou", "available": 1, "total": 1, "percentage": 100, "status": "operational"},
+      {"type": "Manlifts", "available": 2, "total": 2, "percentage": 100, "status": "operational"}
+    ]
   },
   "shift_readiness": {
-    "production_tmm": {
-      "DT": {"available": null, "total": null},
-      "FL": {"available": null, "total": null},
-      "HD": {"available": null, "total": null},
-      "RT": {"available": null, "total": null},
-      "SR": {"available": null, "total": null}
-    }
+    "production_tmm": [
+      {"type": "DT", "name": "Dump Trucks", "available": 6, "total": 6, "readiness_percent": 100.0},
+      {"type": "FL", "name": "Front Loaders", "available": 5, "total": 5, "readiness_percent": 100.0},
+      {"type": "HD", "name": "Hydraulic Drills", "available": 4, "total": 4, "readiness_percent": 100.0},
+      {"type": "RT", "name": "Roof Bolters", "available": 4, "total": 4, "readiness_percent": 100.0},
+      {"type": "SR", "name": "Scalers", "available": 4, "total": 4, "readiness_percent": 100.0}
+    ]
   },
   "breakdowns": {
-    "current_breakdowns": []
+    "production_issues": [],
+    "notes": "No major breakdowns"
+  },
+  "infrastructure": {
+    "main_fans": {"status": "operational", "issues": 0},
+    "ventilation": {"status": "operational"}
   },
   "operational": {
-    "main_fans": null,
-    "plant_blockages": null,
-    "fire_alarms": null
-  },
-  "silo_levels": {
-    "surface": {
-      "silo_1": null, "silo_2": null, "silo_3": null, "silo_4": null
-    },
-    "underground": {
-      "silo_74": null, "silo_hg": null, "silo_d": null, "silo_lg": null
-    }
-  },
-  "specialized_equipment": {
-    "manitou": {"available": null, "total": 1, "availability": null},
-    "manlifts": {"available": null, "total": null, "availability": null}
+    "fire_alarms": 2,
+    "fire_alarm_locations": ["55CV01 panel faulty", "78 CV01 panel faulty"],
+    "crusher_blockages": 0,
+    "chute_blockages": 0,
+    "plant_blockages": 0,
+    "plant_status": "operational"
   },
   "performance_summary": {
-    "key_issues": ["No WhatsApp data available for processing"],
-    "key_highlights": ["Autonomous processing completed with placeholder structure"]
+    "key_highlights": [
+      "Safety clear for Tuesday operations",
+      "ROM production 5.1% above target (4,070t vs 3,873t)",
+      "Decline production strong at 17.1% above target",
+      "Product production 3,690t achieved",
+      "Surface silos excellent levels (93-98% except Silo 3 at 66%)",
+      "All TMM equipment showing strong availability (88-100%)",
+      "No major TMM breakdowns reported",
+      "Total 161 loads across three shifts"
+    ],
+    "key_issues": [
+      "Fire alarm panels faulty: 55CV01 and 78CV01",
+      "Underground silo levels moderate (16-43%)",
+      "Silo 3 surface level at 66% - lowest of surface silos"
+    ],
+    "overall_status": "production_above_target_fire_alarms",
+    "priority_level": "medium"
   },
   "source_validation": {
-    "data_source": {
-      "value": "None provided",
-      "source_line": 0,
-      "source_quote": "Empty WhatsApp data section",
-      "confidence": "NONE"
+    "rom": {
+      "value": 4070,
+      "source_line": 1,
+      "source_quote": "*ROM* - 4070 vs 3873",
+      "confidence": "HIGH"
     },
-    "processing_note": "No source data available - created placeholder report structure",
-    "validation_status": "NO_DATA_AVAILABLE"
+    "decline": {
+      "value": 4536,
+      "source_line": 1,
+      "source_quote": "*Decline* 4536 vs 3873",
+      "confidence": "HIGH"
+    },
+    "product": {
+      "value": 3690,
+      "source_line": 1,
+      "source_quote": "**Product* 3690 vs 0",
+      "confidence": "HIGH"
+    },
+    "loads": {
+      "value": "64;49;48",
+      "source_line": 1,
+      "source_quote": "**Loads* - 64;49;48",
+      "confidence": "HIGH"
+    },
+    "surface_silos": {
+      "value": "1-93, 2-98, 3-66, 4-97",
+      "source_line": 1,
+      "source_quote": "**Surface Silos* {%} 1 - 93, 2 - 98, 3 - 66, 4 - 97",
+      "confidence": "HIGH"
+    },
+    "underground_silos": {
+      "value": "74-43, HG-39, D-21, LG-16",
+      "source_line": 1,
+      "source_quote": "**U/G SILOS* {%} *74* - 43, *HG*- 39, *D* - 21, *LG* - 16",
+      "confidence": "HIGH"
+    },
+    "tmm_availability": {
+      "value": "DTs: 95, FLs: 100, HDs: 88, RTs: 92, SRs: 97",
+      "source_line": 1,
+      "source_quote": "**TMMs Availability:* {%} - DTs: 95 - FLs: 100 - HDs: 88 - RTs: 92 - SRs: 97",
+      "confidence": "HIGH"
+    },
+    "fire_alarms": {
+      "value": "55CV01 and 78 CV01 panel faulty",
+      "source_line": 1,
+      "source_quote": "**Fire alarm* - 55CV01 and 78 CV01 panel faulty",
+      "confidence": "HIGH"
+    }
   }
 }
