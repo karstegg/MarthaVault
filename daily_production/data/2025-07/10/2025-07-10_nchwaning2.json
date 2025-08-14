@@ -1,0 +1,133 @@
+{
+  "report_metadata": {
+    "date": "2025-07-10",
+    "data_date": "2025-07-09",
+    "site": "Nchwaning 2",
+    "engineer": "Johan Kotze",
+    "timestamp": "15:56"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 5913,
+      "target": 6903,
+      "variance": -990,
+      "variance_percentage": -14.3
+    },
+    "decline": {
+      "actual": null,
+      "target": null,
+      "variance": null,
+      "variance_percentage": null
+    },
+    "product": {
+      "actual": 4967,
+      "target": 6514,
+      "variance": -1547,
+      "variance_percentage": -23.7
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 46, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 62, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 69, "target": null}
+    ],
+    "blast": {
+      "faces": null,
+      "breakdown": "? vs 16 planned",
+      "note": "Blast data incomplete - planned 16 faces"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": 79,
+      "FL": 90,
+      "HD": 96,
+      "RT": 74,
+      "SR": 84
+    },
+    "specialized": [
+      {"code": "DZ13", "availability": 100},
+      {"code": "GD12", "availability": 100},
+      {"code": "UV62_66_108", "availability": 89},
+      {"code": "UV54_59_120", "availability": 33}
+    ]
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 7, "total": 9},
+      "FL": {"available": 5, "total": 6},
+      "HD": {"available": 6, "total": 6},
+      "RT": {"available": 4, "total": 6},
+      "SR": {"available": 5, "total": 6}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "DT120", "issue": "Door sensor"},
+      {"unit": "DT159", "issue": "Door sensor"},
+      {"unit": "FL66", "issue": "Oil leak"},
+      {"unit": "RT43", "issue": "Boom movement"},
+      {"unit": "RT50", "issue": "Sprocket"},
+      {"unit": "SR42", "issue": "Exhaust"},
+      {"unit": "UV90", "issue": "Water pump & timing"},
+      {"unit": "UV59", "issue": "Engine"},
+      {"unit": "UV54", "issue": "Oil leak"},
+      {"unit": "UV118", "issue": "Not starting"},
+      {"unit": "UV133", "issue": "Brakes"},
+      {"unit": "UV137", "issue": "Hydraulic fan"},
+      {"unit": "FL85", "issue": "Propshaft"},
+      {"unit": "HD35", "issue": "Coupling"},
+      {"unit": "SR46", "issue": "Oil leak"}
+    ]
+  },
+  "operational": {
+    "main_fans": "operational",
+    "plant_blockages": 1,
+    "fire_alarms": 0
+  },
+  "specialized_equipment": {
+    "sampling_uv": {"available": 2, "total": 2, "availability": 100},
+    "survey_uv": {"available": 2, "total": 2, "availability": 100}
+  },
+  "performance_summary": {
+    "key_issues": [
+      "ROM production below target (-14.3%)",
+      "Product output significantly below target (-23.7%)",
+      "RT equipment availability at 74%",
+      "Logistics UV equipment at only 33% availability",
+      "Multiple equipment breakdowns affecting all categories",
+      "Plant blockage requiring blasting intervention"
+    ],
+    "key_highlights": [
+      "Safety clear - no incidents",
+      "HD equipment at 96% availability",
+      "DZ13 and GD12 at 100% availability",
+      "Consistent load performance across all shifts",
+      "Sampling and survey UV equipment fully operational"
+    ]
+  },
+  "source_validation": {
+    "rom_actual": {
+      "value": 5913,
+      "source_line": "Nchwaning 2 line",
+      "source_quote": "ROM: 5913 v 6903t",
+      "confidence": "HIGH"
+    },
+    "product_actual": {
+      "value": 4967,
+      "source_line": "Nchwaning 2 line",
+      "source_quote": "Product: 4967 v 6514t",
+      "confidence": "HIGH"
+    },
+    "loads_data": {
+      "value": "46, 62, 69",
+      "source_line": "Nchwaning 2 line",
+      "source_quote": "Loads: 46, 62, 69",
+      "confidence": "HIGH"
+    }
+  }
+}

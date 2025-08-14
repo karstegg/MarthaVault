@@ -1,0 +1,118 @@
+{
+  "report_metadata": {
+    "date": "2025-07-10",
+    "data_date": "2025-07-09",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "timestamp": "08:12"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 5688,
+      "target": 8060,
+      "variance": -2372,
+      "variance_percentage": -29.4
+    },
+    "decline": {
+      "actual": 5189,
+      "target": 3940,
+      "variance": 1249,
+      "variance_percentage": 31.7
+    },
+    "product": {
+      "actual": 2912,
+      "target": 3625,
+      "variance": -713,
+      "variance_percentage": -19.7
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": null, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": null, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": null, "target": null}
+    ],
+    "blast": {
+      "faces": 16,
+      "breakdown": "1 hanging wall slipping, 1 footwall",
+      "note": "16 faces blasted with hanging wall and footwall issues"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": 63,
+      "FL": 87,
+      "HD": 93,
+      "RT": 91,
+      "SR": 89
+    },
+    "specialized": [
+      {"code": "UV", "availability": 98},
+      {"code": "GD11", "availability": 100},
+      {"code": "DZ11", "availability": null},
+      {"code": "UV044", "availability": 84}
+    ]
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 7, "total": 14},
+      "FL": {"available": 9, "total": 10},
+      "HD": {"available": 8, "total": 9},
+      "RT": {"available": 9, "total": 10},
+      "SR": {"available": 9, "total": 10}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "DT", "issue": "Various issues from Strata, charging and Aircons - performance below par"}
+    ]
+  },
+  "operational": {
+    "main_fans": "operational",
+    "plant_blockages": 0,
+    "fire_alarms": 0
+  },
+  "specialized_equipment": {
+    "manlifts": {"available": 4, "total": 4, "availability": 100},
+    "emulsion_uv": {"available": 4, "total": 4, "availability": 100}
+  },
+  "performance_summary": {
+    "key_issues": [
+      "ROM production below target (-29.4%)",
+      "Product output below target (-19.7%)",
+      "DT equipment availability very low at 63%",
+      "DT performance issues with strata, charging, and aircon problems",
+      "Hanging wall slipping affecting blast operations"
+    ],
+    "key_highlights": [
+      "Safety clear - no incidents",
+      "Decline production exceeded target (+31.7%)",
+      "HD equipment at 93% availability",
+      "UV equipment at 98% availability",
+      "All manlifts and emulsion UVs operational"
+    ]
+  },
+  "source_validation": {
+    "rom_actual": {
+      "value": 5688,
+      "source_line": "Nchwaning 3 line",
+      "source_quote": "ROM 5688 vs 8060",
+      "confidence": "HIGH"
+    },
+    "decline_actual": {
+      "value": 5189,
+      "source_line": "Nchwaning 3 line",
+      "source_quote": "Decline 5189 vs 3940",
+      "confidence": "HIGH"
+    },
+    "product_actual": {
+      "value": 2912,
+      "source_line": "Nchwaning 3 line",
+      "source_quote": "Product 2912 vs 3625",
+      "confidence": "HIGH"
+    }
+  }
+}

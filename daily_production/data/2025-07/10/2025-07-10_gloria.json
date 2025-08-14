@@ -1,0 +1,132 @@
+{
+  "report_metadata": {
+    "date": "2025-07-10",
+    "data_date": "2025-07-09",
+    "site": "Gloria",
+    "engineer": "Sipho Dubazane",
+    "timestamp": "05:05"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 2404,
+      "target": 3873,
+      "variance": -1469,
+      "variance_percentage": -37.9
+    },
+    "decline": {
+      "actual": 1143,
+      "target": 3873,
+      "variance": -2730,
+      "variance_percentage": -70.5
+    },
+    "product": {
+      "actual": 1633,
+      "target": 3773,
+      "variance": -2140,
+      "variance_percentage": -56.7
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 37, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 0, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 47, "target": null}
+    ],
+    "blast": {
+      "faces": null,
+      "breakdown": null,
+      "note": "Nothing Reported"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": 100,
+      "FL": 73,
+      "HD": 77,
+      "RT": 95,
+      "SR": 65
+    },
+    "specialized": [
+      {"code": "UV", "availability": 50},
+      {"code": "Manitou", "availability": 100},
+      {"code": "Manlifts", "availability": 100}
+    ]
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 6, "total": 6},
+      "FL": {"available": 4, "total": 5},
+      "HD": {"available": 4, "total": 4},
+      "RT": {"available": 4, "total": 4},
+      "SR": {"available": 3, "total": 4}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "UV0068", "issue": "Drive line flex plate"},
+      {"unit": "FL0083", "issue": "Speed sensor/Bucket movement"},
+      {"unit": "SR0037", "issue": "Tail frame"}
+    ]
+  },
+  "operational": {
+    "main_fans": "operational",
+    "plant_blockages": 0,
+    "fire_alarms": 0
+  },
+  "silo_levels": {
+    "surface": {
+      "silo_1": 83,
+      "silo_2": 22,
+      "silo_3": 20,
+      "silo_4": 14
+    },
+    "underground": {
+      "silo_74": 26,
+      "silo_hg": 82,
+      "silo_d": 17,
+      "silo_lg": 18
+    }
+  },
+  "specialized_equipment": {
+    "manitou": {"available": 1, "total": 1, "availability": 100},
+    "manlifts": {"available": 2, "total": 2, "availability": 100}
+  },
+  "performance_summary": {
+    "key_issues": [
+      "ROM production significantly below target (-37.9%)",
+      "Product output below target (-56.7%)",
+      "FL equipment availability at 73%",
+      "SR equipment availability at 65%",
+      "Multiple equipment breakdowns affecting operations"
+    ],
+    "key_highlights": [
+      "Safety clear - no incidents",
+      "DT equipment at 100% availability",
+      "Manitou and manlifts fully operational",
+      "Main fans operational"
+    ]
+  },
+  "source_validation": {
+    "rom_actual": {
+      "value": 2404,
+      "source_line": "Gloria Report line",
+      "source_quote": "ROM - 2404 vs 3873",
+      "confidence": "HIGH"
+    },
+    "product_actual": {
+      "value": 1633,
+      "source_line": "Gloria Report line",
+      "source_quote": "Product - 1633 vs 3773",
+      "confidence": "HIGH"
+    },
+    "equipment_dt": {
+      "value": 100,
+      "source_line": "Gloria Report line",
+      "source_quote": "DTs: 100",
+      "confidence": "HIGH"
+    }
+  }
+}
