@@ -8,80 +8,109 @@ DueDate::
 
 # Nchwaning 2 Daily Report
 **Date**: August 14, 2025 (Data from August 13, 2025)  
-**Engineer**: [[Johan Kotze]]  
+**Engineer**: [[Johan Kotze]] (GES TMM Underground, acting for [[Sikilela Nzuza]])  
 **Site**: Nchwaning 2  
 
-## ⚠️ NO DATA AVAILABLE
+## 🟢 PRODUCTION ON TARGET - EQUIPMENT CONCERNS
 
 ### Safety Status
-⚠️ **NO DATA** - No WhatsApp source data provided for processing
+✅ **CLEAR** - No incidents reported
 
 ### Production Performance
-⚠️ **NO DATA AVAILABLE**
+🟢 **ON-TARGET PERFORMANCE**
 
 | Metric | Actual | Target | Variance | Performance |
 |--------|--------|--------|----------|-------------|
-| **ROM** | No data | No data | No data | **No data available** ⚠️ |
-| **Decline** | No data | No data | No data | **No data available** ⚠️ |
-| **Product** | No data | No data | No data | **No data available** ⚠️ |
+| **ROM** | 6,847t | 6,903t | -56t | **-0.8% (close to target)** 🟢 |
+| **Product** | 6,886t | 6,514t | +372t | **+5.7% (above target)** 🟢 |
 
-#### Load & Haul Fleet Performance (Truckloads Tipped by Shift)
-| Shift | Loads | Target | Performance |
-|-------|-------|--------|-------------|
-| Day | No data | No data | **No data** ⚠️ |
-| Afternoon | No data | No data | **No data** ⚠️ |
-| Night | No data | No data | **No data** ⚠️ |
-| **Total** | **No data** | **No data** | **No data** |
+#### Load & Haul Fleet Performance (Truckloads by Shift)
+| Shift | Loads | Performance |
+|-------|-------|-------------|
+| Shift 1 | 58 | **Good performance** 🟢 |
+| Shift 2 | 66 | **Good performance** 🟢 |
+| Shift 3 | 70 | **Good performance** 🟢 |
+| **Total** | **194** | **Strong total performance** |
 
 #### Blast Performance
-- **No data available**
+- **Planned**: 16 faces
+- **Actual**: ? (unclear from source)
+- **Status**: Blast actual vs plan unclear
 
 ### Equipment Status
 
 #### TMM Availability
 | Equipment | Availability | Status |
-|-----------|-------------|---------|
-| **DT** | **No data** | ⚠️ No data available |
-| **FL** | **No data** | ⚠️ No data available |
-| **HD** | **No data** | ⚠️ No data available |
-| **RT** | **No data** | ⚠️ No data available |
-| **SR** | **No data** | ⚠️ No data available |
+|-----------|--------------|---------|
+| **DT** | **89%** | 🟢 Good availability |
+| **FL** | **94%** | 🟢 Excellent availability |
+| **HD** | **93%** | 🟢 Excellent availability |
+| **RT** | **94%** | 🟢 Excellent availability |
+| **SR** | **78%** | ⚠️ Lowest performing equipment |
 
 #### Equipment Readiness (Start of Shift)
-- **DT**: No data available ⚠️
-- **FL**: No data available ⚠️
-- **HD**: No data available ⚠️
-- **RT**: No data available ⚠️
-- **SR**: No data available ⚠️
+- **DT**: 9/9 available (100%) 🟢
+- **FL**: 6/6 available (100%) 🟢
+- **HD**: 6/6 available (100%) 🟢
+- **RT**: 6/6 available (100%) 🟢
+- **SR**: 5/6 available (83.3%) ⚠️
 
-### Current Breakdowns
-**No data available** - Unable to report on equipment breakdowns without source data
+#### Specialized Equipment
+| Equipment | Availability | Status |
+|-----------|--------------|---------|
+| **DZ13** | **100%** | ✅ Full availability |
+| **GD12** | **0%** | 🔴 Completely unavailable |
+
+### Current Breakdowns (7 Units)
+⚠️ **Multiple breakdowns across equipment types**
+
+| Unit | Issue |
+|------|-------|
+| UV90 | Water pump & timing |
+| UV77 | Bucket movement |
+| UV119 | Warning sign |
+| UV123 | Outrigger |
+| GR12 | Brakes |
+| SR46 | Pump |
+| SR27 | Excessive smoke |
 
 ### Support Equipment Summary
-- **Emulsion UV**: **No data available** ⚠️
-- **Logistics UV**: **No data available** ⚠️
-- **Sampling UV**: **No data available** ⚠️
-- **Survey UV**: **No data available** ⚠️
+#### Emulsion Equipment
+- **UV62, 66, 108**: 99% availability 🟢
+- **UV54, 59, 120**: 100% availability 🟢
+
+#### Specialized Support
+- **Sampling (UV77, 123)**: 0% availability 🔴
+- **Survey (UV98, 99)**: 96% availability 🟢
 
 ### Infrastructure Status
-- **Main Fans**: **No data available** ⚠️
-- **Plant Blockages**: **No data available** ⚠️
-- **Fire Alarms**: **No data available** ⚠️
+- **Main Fans**: In Order 🟢
+- **Fire Alarms**: 1 active alarm ⚠️
 
 ## Performance Summary
-- **Safety**: No data available ⚠️
-- **Production**: No data available ⚠️
-- **Equipment**: No data available ⚠️
-- **Operations**: No data available ⚠️
+- **Safety**: Clear - no incidents 🟢
+- **Production**: On-target ROM (-0.8%), above-target Product (+5.7%) 🟢
+- **Equipment**: Good availability but SR equipment concerns at 78% ⚠️
+- **Operations**: 7 current breakdowns require attention 🔴
 
-## Supplemental Information
+## Key Highlights
+- ROM production close to target: -0.8% (6,847t vs 6,903t)
+- Product production above target: +5.7% (6,886t vs 6,514t)
+- Strong load performance with 194 total loads
+- Excellent TMM availability (89-94% except SR at 78%)
+- Start of shift readiness strong (83-100%)
+- DZ13 at 100% availability
 
-### Processing Note
-This report was generated autonomously on 2025-08-14 with no WhatsApp source data provided. All fields show "No data available" as no production information was available for extraction. This represents a placeholder report structure following the Standard Mine Site Report Template format.
-
-**Note**: Johan Kotze is acting for Sikilela Nzuza who is on leave.
+## Key Issues for Follow-up
+- 7 current breakdowns across multiple equipment types
+- SR equipment availability at 78% - lowest performing
+- GD12 completely unavailable (0%)
+- Sampling equipment completely down (0%)
+- 1 fire alarm active
+- SR27 excessive smoke issue
+- Blast actual vs plan unclear (? vs 16)
 
 ---
-*Report processed: 2025-08-14 | Data period: 2025-08-13 | Source: Autonomous processing - no WhatsApp data provided*
+*Report processed: 2025-08-14 | Data period: 2025-08-13 | Source: WhatsApp 05:41*
 
-#daily-production #nchwaning2 #no-data #johan-kotze #status/placeholder #year/2025
+#daily-production #nchwaning2 #production-on-target #johan-kotze #equipment-concerns #status/processed #year/2025
