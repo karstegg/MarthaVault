@@ -4,83 +4,185 @@
     "data_date": "2025-08-12",
     "site": "Nchwaning 3",
     "engineer": "Sello Sease",
-    "timestamp": null,
-    "processing_notes": "No WhatsApp source data available for this date"
+    "timestamp": "03:24 & 06:58",
+    "processing_notes": "Autonomous processing from dual WhatsApp source data (Night + Day shift reports)"
   },
   "safety": {
-    "status": "unknown",
-    "incidents": null,
+    "status": "clear",
+    "incidents": 0,
     "details": []
   },
   "production": {
     "rom": {
-      "actual": null,
-      "target": null,
-      "variance": null,
-      "variance_percentage": null
+      "actual": 5466,
+      "target": 8060,
+      "variance": -2594,
+      "variance_percentage": -32.2
     },
     "decline": {
-      "actual": null,
-      "target": null,
-      "variance": null,
-      "variance_percentage": null
+      "actual": 6742,
+      "target": 3749,
+      "variance": 2993,
+      "variance_percentage": 79.9
     },
     "product": {
-      "actual": null,
-      "target": null,
-      "variance": null,
-      "variance_percentage": null
+      "actual": 6196,
+      "target": 6618,
+      "variance": -422,
+      "variance_percentage": -6.4
     },
     "loads": [
-      {"shift": "day", "load_number": 1, "truckloads_tipped": null, "target": null},
-      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": null, "target": null},
-      {"shift": "night", "load_number": 3, "truckloads_tipped": null, "target": null}
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 100, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 66, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 62, "target": null}
     ],
     "blast": {
-      "faces": null,
-      "breakdown": null,
-      "note": "Nothing Reported"
+      "faces": 16,
+      "breakdown": "14 Mn & 2 Waste",
+      "note": "14 faces Manganese, 2 faces Waste"
+    },
+    "night_shift_details": {
+      "total_faces_loaded": 7,
+      "faces_cleaned": [
+        "Seam2 south 51e-E1N (12 Loads)",
+        "51E-Mn (13 loads)",
+        "Mn-54W (14 Loads)",
+        "E1N53E (6 loads)",
+        "63w74n (8 loads)",
+        "63w74s (5 Loads)", 
+        "74s63w (4 loads)",
+        "80e32South (35 Buckets)"
+      ],
+      "faces_incomplete": ["74s63w (1/4) Flooded"],
+      "timing": {
+        "first_load_plan": "20h30",
+        "first_load_actual": "20h50",
+        "last_load_plan": "02h00", 
+        "last_load_actual": "01H47"
+      },
+      "loads_manganese": {
+        "target": 90,
+        "actual": 72,
+        "breakdown": "45mn + 27Dt (wst)"
+      },
+      "loads_waste": {
+        "target": 20,
+        "actual": 27
+      }
     }
   },
   "equipment_availability": {
     "tmm": {
-      "DT": null,
-      "FL": null,
-      "HD": null,
-      "RT": null,
-      "SR": null
+      "HD": 92,
+      "DT": 77,
+      "FL": 81,
+      "RT": 94,
+      "SR": 65,
+      "UV": 89
     },
-    "specialized": []
+    "specialized": [
+      {"code": "GD11", "availability": 100},
+      {"code": "DZ11", "availability": 68},
+      {"code": "UV044", "availability": 73}
+    ]
   },
   "shift_readiness": {
     "production_tmm": {
-      "DT": {"available": null, "total": null},
-      "FL": {"available": null, "total": null},
-      "HD": {"available": null, "total": null},
-      "RT": {"available": null, "total": null},
-      "SR": {"available": null, "total": null}
+      "HD": {"available": 9, "total": 9},
+      "DT": {"available": 10, "total": 14},
+      "FL": {"available": 9, "total": 10},
+      "RT": {"available": 9, "total": 10},
+      "SR": {"available": 8, "total": 10},
+      "UV": {"available": 8, "total": 9}
+    },
+    "support_equipment": {
+      "manlifts": {"available": 4, "total": 4},
+      "emulsion_uv": {"available": 4, "total": 4}
+    },
+    "night_shift_labor": {
+      "lhd_operators": 4,
+      "dt_operators": 10,
+      "lhds_used": 4,
+      "dts_used": 8
     }
   },
   "breakdowns": {
-    "current_breakdowns": []
+    "current_breakdowns": [
+      {"unit": "DT0145", "issue": "Gears & Aircon"},
+      {"unit": "DT0147", "issue": "Puncture repair, to lower from stands"},
+      {"unit": "DT0161", "issue": "Puncture"},
+      {"unit": "DT0154", "issue": "Fire suppression system"},
+      {"unit": "FL0091", "issue": "Engine cut off"},
+      {"unit": "FL0098", "issue": "FTS"},
+      {"unit": "SR0024", "issue": "Boom cracked"},
+      {"unit": "UV0045", "issue": "Not starting"},
+      {"unit": "UV0047", "issue": "Brakes release"},
+      {"unit": "SR0030", "issue": "Incident Repairs"}
+    ],
+    "night_shift_breakdowns": [
+      {"unit": "DT118", "loads": 0, "reason": "breakdown"},
+      {"unit": "DT119", "loads": 15, "reason": "operational"},
+      {"unit": "DT131", "loads": 17, "reason": "operational"},
+      {"unit": "DT145", "loads": 0, "reason": "B/down"},
+      {"unit": "DT146", "loads": 4, "reason": "limited operation"},
+      {"unit": "DT147", "loads": 0, "reason": "Puncher"},
+      {"unit": "DT148", "loads": 0, "reason": "Auto problem"},
+      {"unit": "DT149", "loads": 0, "reason": "breakdown"},
+      {"unit": "DT150", "loads": 0, "reason": "B/down"},
+      {"unit": "DT154", "loads": 0, "reason": "Fire suppression damaged"},
+      {"unit": "DT160", "loads": 13, "reason": "operational"},
+      {"unit": "DT161", "loads": 0, "reason": "Puncher"},
+      {"unit": "DT162", "loads": 3, "reason": "limited operation"},
+      {"unit": "DT163", "loads": 4, "reason": "limited operation"},
+      {"unit": "DT171", "loads": 3, "reason": "limited operation"}
+    ]
   },
   "operational": {
-    "main_fans": "unknown",
-    "plant_blockages": null,
-    "fire_alarms": null
+    "main_fans": null,
+    "plant_blockages": 0,
+    "fire_alarms": 2,
+    "fire_alarm_locations": [
+      "Crusher area - sensor faulty",
+      "65CV01 - Panel fault"
+    ]
   },
   "performance_summary": {
-    "key_issues": ["No source data available for this date"],
-    "key_highlights": []
+    "key_issues": [
+      "ROM significantly below target (-32.2%, -2,594t)",
+      "Product below target (-6.4%, -422t)",
+      "Poor DT availability (77%) with multiple breakdowns",
+      "Poor SR availability (65%)",
+      "Multiple fire alarm faults",
+      "Night shift target missed (72 vs 90 Mn loads)"
+    ],
+    "key_highlights": [
+      "Decline significantly above target (+79.9%, +2,993t)",
+      "RT availability excellent (94%)",
+      "Good blast performance (16 faces)",
+      "Night shift completed early (01:47 vs 02:00 plan)",
+      "Good day shift load performance (100 loads)"
+    ]
   },
   "source_validation": {
-    "data_source": {
-      "value": "No WhatsApp messages found",
-      "source_line": null,
-      "source_quote": null,
-      "confidence": "NONE"
+    "safety_status": {
+      "value": "clear",
+      "source_line": 2,
+      "source_quote": "*Safety*: Clear.",
+      "confidence": "HIGH"
     },
-    "validation_notes": "Autonomous processing requested but no WhatsApp source data available for 2025-08-13. All production metrics set to null.",
-    "processing_timestamp": "2025-08-13T11:13:00Z"
+    "rom_production": {
+      "value": "5466 vs 8060",
+      "source_line": 4,
+      "source_quote": "*ROM* 5466 vs 8060",
+      "confidence": "HIGH"
+    },
+    "loads_data": {
+      "value": "100, 66 & 62",
+      "source_line": 8,
+      "source_quote": "*LOADS* 100, 66 & 62",
+      "confidence": "HIGH"
+    },
+    "validation_notes": "Data extracted from dual WhatsApp messages: Night shift report (03:24:59) and Day shift summary (06:58:19). Combined for comprehensive daily overview.",
+    "processing_timestamp": "2025-08-14T03:19:00Z"
   }
 }

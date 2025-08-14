@@ -4,18 +4,18 @@
     "data_date": "2025-08-12",
     "site": "Nchwaning 2",
     "engineer": "Johan Kotze",
-    "timestamp": null,
-    "processing_notes": "No WhatsApp source data available for this date"
+    "timestamp": "05:22",
+    "processing_notes": "Autonomous processing from WhatsApp source data"
   },
   "safety": {
-    "status": "unknown",
-    "incidents": null,
+    "status": "clear",
+    "incidents": 0,
     "details": []
   },
   "production": {
     "rom": {
       "actual": null,
-      "target": null,
+      "target": 6903,
       "variance": null,
       "variance_percentage": null
     },
@@ -27,60 +27,110 @@
     },
     "product": {
       "actual": null,
-      "target": null,
+      "target": 6514,
       "variance": null,
       "variance_percentage": null
     },
     "loads": [
-      {"shift": "day", "load_number": 1, "truckloads_tipped": null, "target": null},
-      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": null, "target": null},
-      {"shift": "night", "load_number": 3, "truckloads_tipped": null, "target": null}
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 66, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 54, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 57, "target": null}
     ],
     "blast": {
       "faces": null,
-      "breakdown": null,
-      "note": "Nothing Reported"
+      "breakdown": "? vs 16",
+      "note": "Actual vs Plan not reported"
     }
   },
   "equipment_availability": {
     "tmm": {
-      "DT": null,
-      "FL": null,
-      "HD": null,
-      "RT": null,
-      "SR": null
+      "DT": 95,
+      "FL": 97,
+      "HD": 95,
+      "RT": 92,
+      "SR": 78
     },
-    "specialized": []
+    "specialized": [
+      {"code": "DZ13", "availability": 100},
+      {"code": "GD12", "availability": 0}
+    ]
   },
   "shift_readiness": {
     "production_tmm": {
-      "DT": {"available": null, "total": null},
-      "FL": {"available": null, "total": null},
-      "HD": {"available": null, "total": null},
-      "RT": {"available": null, "total": null},
-      "SR": {"available": null, "total": null}
+      "DT": {"available": 9, "total": 9},
+      "FL": {"available": 6, "total": 6},
+      "HD": {"available": 6, "total": 6},
+      "RT": {"available": 5, "total": 6},
+      "SR": {"available": 5, "total": 6}
     }
   },
   "breakdowns": {
-    "current_breakdowns": []
+    "current_breakdowns": [
+      {"unit": "RT50", "issue": "transmission"},
+      {"unit": "SR27", "issue": "excessive smoke"},
+      {"unit": "UV90", "issue": "water pump & timing"},
+      {"unit": "UV77", "issue": "bucket movement"},
+      {"unit": "UV119", "issue": "warning sign"},
+      {"unit": "UV123", "issue": "outrigger"},
+      {"unit": "GD12", "issue": "brakes"},
+      {"unit": "SR46", "issue": "pump"}
+    ]
   },
   "operational": {
-    "main_fans": "unknown",
-    "plant_blockages": null,
-    "fire_alarms": null
+    "main_fans": null,
+    "plant_blockages": 1,
+    "fire_alarms": 1,
+    "operational_issues": [
+      "Orepass full 13:32-14:05",
+      "Orepass full 15:40-16:48", 
+      "Orepass full 17:45-19:08",
+      "Orepass full 22:50-23:23",
+      "Feeder blocked 01:29-02:17 and needed to be blasted"
+    ]
+  },
+  "support_equipment": {
+    "emulsion_uv": {"availability": 83, "units": ["UV62", "UV66", "UV108"]},
+    "logistics_uv": {"availability": 71, "units": ["UV54", "UV59", "UV120"]},
+    "sampling_uv": {"availability": 0, "units": ["UV77", "UV123"]},
+    "survey_uv": {"availability": 97, "units": ["UV98", "UV99"]}
   },
   "performance_summary": {
-    "key_issues": ["No source data available for this date"],
-    "key_highlights": []
+    "key_issues": [
+      "ROM production not reported",
+      "Product production not reported", 
+      "Poor SR availability (78%)",
+      "GD12 completely unavailable (0%)",
+      "Multiple orepass blockages throughout shift",
+      "Feeder blockage requiring blasting",
+      "8 equipment units under breakdown"
+    ],
+    "key_highlights": [
+      "Safety clear status",
+      "Strong FL availability (97%)",
+      "Good load performance (177 total loads)",
+      "DZ13 at 100% availability"
+    ]
   },
   "source_validation": {
-    "data_source": {
-      "value": "No WhatsApp messages found",
-      "source_line": null,
-      "source_quote": null,
-      "confidence": "NONE"
+    "safety_status": {
+      "value": "clear",
+      "source_line": 3,
+      "source_quote": "*Safety*  Clear",
+      "confidence": "HIGH"
     },
-    "validation_notes": "Autonomous processing requested but no WhatsApp source data available for 2025-08-13. All production metrics set to null.",
-    "processing_timestamp": "2025-08-13T11:13:00Z"
+    "tmm_availability": {
+      "value": "DTs: 95%, FLs: 97%, HDs: 95%, RTs: 92%, SRs: 78%",
+      "source_line": 9,
+      "source_quote": "DTs: 95% FLs: 97% HDs: 95% RTs: 92% SRs: 78%",
+      "confidence": "HIGH"
+    },
+    "loads_data": {
+      "value": "66, 54, 57",
+      "source_line": 7,
+      "source_quote": "*Loads:* 66, 54, 57",
+      "confidence": "HIGH"
+    },
+    "validation_notes": "Data extracted from WhatsApp message timestamp 2025-08-13 05:22:30+00:00. ROM and Product production figures not reported in source.",
+    "processing_timestamp": "2025-08-14T03:17:00Z"
   }
 }

@@ -10,79 +10,114 @@ JSONData:: [[2025-08-13_nchwaning2.json]]
 **Engineer**: [[Johan Kotze]]  
 **Site**: Nchwaning 2  
 
-## 🔴 NO SOURCE DATA AVAILABLE
+## 🔴⚠️ OPERATIONAL CHALLENGES
 
 ### Safety Status
-⚠️ **UNKNOWN** - No data available (no WhatsApp messages found)
+✅ **CLEAR** - No incidents reported
 
 ### Production Performance
-🔴 **NO DATA AVAILABLE**
+🔴 **CRITICAL ISSUES** - Multiple operational challenges
 
 | Metric | Actual | Target | Variance | Performance |
 |--------|--------|--------|----------|-------------|
-| **ROM** | No Data | No Data | No Data | **No Data Available** 🔴 |
-| **Decline** | No Data | No Data | No Data | **No Data Available** 🔴 |
-| **Product** | No Data | No Data | No Data | **No Data Available** 🔴 |
+| **ROM** | Not reported | 6,903t | - | **Unable to assess** 🔴 |
+| **Decline** | Not reported | - | - | **Unable to assess** 🔴 |
+| **Product** | Not reported | 6,514t | - | **Unable to assess** 🔴 |
 
 #### Load & Haul Fleet Performance (Truckloads Tipped by Shift)
 | Shift | Loads | Target | Performance |
 |-------|-------|--------|-------------|
-| Day | No Data | No Data | **No Data** 🔴 |
-| Afternoon | No Data | No Data | **No Data** 🔴 |
-| Night | No Data | No Data | **No Data** 🔴 |
-| **Total** | **No Data** | **No Data** | **No Data** |
+| Day | 66 | - | **-** 🟢 |
+| Afternoon | 54 | - | **-** 🟡 |
+| Night | 57 | - | **-** 🟢 |
+| **Total** | **177** | **-** | **Good performance despite issues** |
+
+Good load performance with 177 total truckloads despite multiple operational challenges. Day shift led with 66 loads.
+
+**Operational Disruptions:**
+- Orepass full: 13:32-14:05, 15:40-16:48, 17:45-19:08, 22:50-23:23
+- Feeder blocked: 01:29-02:17 (required blasting)
 
 #### Blast Performance
-- **Nothing Reported**
+- **Actual vs Plan**: Not reported vs 16 planned
 
 ### Equipment Status
 
 #### TMM Availability
 | Equipment | Availability | Status |
 |-----------|-------------|---------|
-| **DT** | **No Data** | 🔴 No source data available |
-| **FL** | **No Data** | 🔴 No source data available |
-| **HD** | **No Data** | 🔴 No source data available |
-| **RT** | **No Data** | 🔴 No source data available |
-| **SR** | **No Data** | 🔴 No source data available |
+| **DT** | **95%** | 🟢 Good availability |
+| **FL** | **97%** | 🟢✅ Excellent availability |
+| **HD** | **95%** | 🟢 Good availability |
+| **RT** | **92%** | 🟡⚠️ Below optimal |
+| **SR** | **78%** | 🔴 Poor availability |
+
+**Poor Performance Analysis:**
+- **SR**: Only 78% availability - multiple pump issues affecting performance
+- **RT**: 92% availability - transmission problems with RT50
 
 #### Equipment Readiness (Start of Shift)
-- **DT**: No Data (No Data) 🔴
-- **FL**: No Data (No Data) 🔴
-- **HD**: No Data (No Data) 🔴
-- **RT**: No Data (No Data) 🔴
-- **SR**: No Data (No Data) 🔴
+- **DT**: 9/9 available (100%) 🟢
+- **FL**: 6/6 available (100%) 🟢
+- **HD**: 6/6 available (100%) 🟢
+- **RT**: 5/6 available (83%) 🟡 (RT50 transmission)
+- **SR**: 5/6 available (83%) 🟡 (SR27 excessive smoke)
 
-### Current Breakdowns
-**No Data Available** - Unable to determine breakdown status without source data
+### Current Breakdowns (8 Units)
+
+#### RT Equipment Issues
+- **RT50**: transmission
+
+#### SR Equipment Issues
+- **SR27**: excessive smoke
+- **SR46**: pump
+
+#### UV Equipment Issues
+- **UV90**: water pump & timing
+- **UV77**: bucket movement
+- **UV119**: warning sign
+- **UV123**: outrigger
+
+#### Specialized Equipment Issues
+- **GD12**: brakes (0% availability)
 
 ### Support Equipment Summary
-- **Emulsion UV**: **No Data** 🔴
-- **Logistics UV**: **No Data** 🔴
-- **Sampling UV**: **No Data** 🔴
-- **Survey UV**: **No Data** 🔴
+- **Emulsion UV**: 83% 🟡 (UV62, UV66, UV108)
+- **Logistics UV**: 71% 🟡 (UV54, UV59, UV120)
+- **Sampling UV**: 0% 🔴 (UV77, UV123 - both broken)
+- **Survey UV**: 97% 🟢 (UV98, UV99)
+- **DZ13**: 100% 🟢 Excellent availability
 
 ### Infrastructure Status
-- **Main Fans**: **No Data** 🔴
-- **Plant Blockages**: **No Data** 🔴
-- **Fire Alarms**: **No Data** 🔴
+- **Main Fans**: Not reported
+- **Plant Blockages**: 1 active 🔴
+- **Fire Alarms**: 1 active 🔴
 
 ## Performance Summary
-- **Safety**: Unknown - No source data available 🔴
-- **Production**: No data available - Unable to assess performance 🔴
-- **Equipment**: No data available - Unable to assess availability 🔴
-- **Operations**: No data available - Unable to assess status 🔴
+- **Safety**: Clear status - excellent safety performance 🟢
+- **Production**: Critical issues - multiple operational disruptions 🔴
+- **Equipment**: Mixed performance - good FL/DT/HD, poor SR availability 🟡
+- **Operations**: Significant challenges - blockages and equipment failures 🔴
 
 ## Supplemental Information
 
-### Data Availability Issue
-**CRITICAL ISSUE**: No WhatsApp messages were found for 2025-08-13, preventing normal data extraction and analysis. This autonomous processing request resulted in placeholder reports with null values.
+### Critical Issues Requiring Immediate Attention
+1. **🔴 Sampling Equipment**: Complete failure (0% availability) - UV77 and UV123 both down
+2. **🔴 SR Fleet**: Poor availability (78%) - affecting productivity
+3. **🔴 GD12**: Completely unavailable (0%) - brake issues  
+4. **🔴 Operational Flow**: Multiple orepass blockages disrupting production
+5. **🔴 Feeder System**: Required blasting to clear blockage
 
+### Engineering Notes
 **Note**: [[Johan Kotze]] is currently acting GES TMM Underground for [[Sikilela Nzuza]] who is on leave.
 
-**Recommendation**: Verify WhatsApp data availability or contact [[Johan Kotze]] directly for Nchwaning 2 site status.
+### Equipment Priorities
+1. **Urgent**: Restore sampling equipment (UV77, UV123)
+2. **High**: Address SR fleet pump issues (SR27, SR46)
+3. **High**: Repair GD12 brake system
+4. **Medium**: RT50 transmission repair
 
 ---
-*Report processed: 2025-08-13 | Data period: 2025-08-12 | Source: No WhatsApp data available*
+*Report processed: 2025-08-14 | Data period: 2025-08-12 | Source: WhatsApp 05:22*
 
-#daily-production #nchwaning2 #johan-kotze #status/no-data #priority/high #year/2025
+#daily-production #nchwaning2 #johan-kotze #operational-challenges #priority/high #year/2025

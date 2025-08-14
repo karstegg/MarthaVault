@@ -10,27 +10,29 @@ JSONData:: [[2025-08-13_gloria.json]]
 **Engineer**: [[Sipho Dubazane]]  
 **Site**: Gloria  
 
-## 🔴 NO SOURCE DATA AVAILABLE
+## 🟡⚠️ PARTIAL DATA REPORTING
 
 ### Safety Status
-⚠️ **UNKNOWN** - No data available (no WhatsApp messages found)
+✅ **CLEAR** - No incidents reported
 
 ### Production Performance
-🔴 **NO DATA AVAILABLE**
+🟡 **PARTIAL REPORTING** - ROM and Product figures not provided
 
 | Metric | Actual | Target | Variance | Performance |
 |--------|--------|--------|----------|-------------|
-| **ROM** | No Data | No Data | No Data | **No Data Available** 🔴 |
-| **Decline** | No Data | No Data | No Data | **No Data Available** 🔴 |
-| **Product** | No Data | No Data | No Data | **No Data Available** 🔴 |
+| **ROM** | Not reported | 3,873t | - | **Unable to assess** 🟡 |
+| **Decline** | 3,757t | 3,873t | -116t | **97.0% (below target)** 🟡 |
+| **Product** | Not reported | 1,947t | - | **Unable to assess** 🟡 |
 
 #### Load & Haul Fleet Performance (Truckloads Tipped by Shift)
 | Shift | Loads | Target | Performance |
 |-------|-------|--------|-------------|
-| Day | No Data | No Data | **No Data** 🔴 |
-| Afternoon | No Data | No Data | **No Data** 🔴 |
-| Night | No Data | No Data | **No Data** 🔴 |
-| **Total** | **No Data** | **No Data** | **No Data** |
+| Day | 30 | - | **-** 🟢 |
+| Afternoon | 75 | - | **-** 🟢 |
+| Night | 65 | - | **-** 🟢 |
+| **Total** | **170** | **-** | **Strong performance** |
+
+Excellent load performance with 170 total truckloads across all shifts. Afternoon shift particularly productive with 75 loads.
 
 #### Blast Performance
 - **Nothing Reported**
@@ -40,40 +42,42 @@ JSONData:: [[2025-08-13_gloria.json]]
 #### TMM Availability
 | Equipment | Availability | Status |
 |-----------|-------------|---------|
-| **DT** | **No Data** | 🔴 No source data available |
-| **FL** | **No Data** | 🔴 No source data available |
-| **HD** | **No Data** | 🔴 No source data available |
-| **RT** | **No Data** | 🔴 No source data available |
-| **SR** | **No Data** | 🔴 No source data available |
+| **DT** | **100%** | 🟢✅ Excellent availability |
+| **FL** | **100%** | 🟢✅ Excellent availability |
+| **HD** | **99%** | 🟢✅ Excellent availability |
+| **RT** | **95%** | 🟢✅ Good availability |
+| **SR** | **95%** | 🟢✅ Good availability |
+
+**Poor Performance Analysis:**
+- All TMM categories performing excellently with 95-100% availability
 
 #### Equipment Readiness (Start of Shift)
-- **DT**: No Data (No Data) 🔴
-- **FL**: No Data (No Data) 🔴
-- **HD**: No Data (No Data) 🔴
-- **RT**: No Data (No Data) 🔴
-- **SR**: No Data (No Data) 🔴
+- **DT**: 6/6 available (100%) 🟢
+- **FL**: 5/5 available (100%) 🟢
+- **HD**: 4/4 available (100%) 🟢
+- **RT**: 4/4 available (100%) 🟢
+- **SR**: 4/4 available (100%) 🟢
 
-### Current Breakdowns
-**No Data Available** - Unable to determine breakdown status without source data
+### Current Breakdowns (1 Unit)
+
+#### Fire Safety Equipment Issues
+- **55CV01**: panel faulty
 
 ### Support Equipment Summary
-- **Emulsion UV**: **No Data** 🔴
-- **Logistics UV**: **No Data** 🔴
-- **Sampling UV**: **No Data** 🔴
-- **Survey UV**: **No Data** 🔴
-- **Manitou**: **No Data** 🔴
-- **Manlifts**: **No Data** 🔴
+- **Emulsion UV**: 100% 🟢
+- **Manitou**: 100% 🟢 (1/1 available)
+- **Manlifts**: 100% 🟢 (2/2 available)
 
 ### Infrastructure Status
-- **Main Fans**: **No Data** 🔴
-- **Plant Blockages**: **No Data** 🔴
-- **Fire Alarms**: **No Data** 🔴
+- **Main Fans**: In Order 🟢
+- **Plant Blockages**: None 🟢
+- **Fire Alarms**: 1 active (55CV01 panel fault) 🟡
 
 ## Performance Summary
-- **Safety**: Unknown - No source data available 🔴
-- **Production**: No data available - Unable to assess performance 🔴
-- **Equipment**: No data available - Unable to assess availability 🔴
-- **Operations**: No data available - Unable to assess status 🔴
+- **Safety**: Clear status - excellent safety performance 🟢
+- **Production**: Partial reporting - decline below target, ROM/Product not reported 🟡
+- **Equipment**: Excellent availability across all TMM categories 🟢
+- **Operations**: Good operational status with minor fire alarm issue 🟢
 
 ## Supplemental Information
 
@@ -81,25 +85,26 @@ JSONData:: [[2025-08-13_gloria.json]]
 #### Surface Silos
 | Silo | Level | Status |
 |------|-------|--------|
-| Silo 1 | No Data | 🔴 No source data |
-| Silo 2 | No Data | 🔴 No source data |
-| Silo 3 | No Data | 🔴 No source data |
-| Silo 4 | No Data | 🔴 No source data |
+| Silo 1 | 64% | 🟢 Good level |
+| Silo 2 | 94% | 🟢 High level |
+| Silo 3 | 93% | 🟢 High level |
+| Silo 4 | 93% | 🟢 High level |
 
 #### Underground Silos
 | Silo | Level | Status |
 |------|-------|--------|
-| Silo 74 | No Data | 🔴 No source data |
-| Silo HG | No Data | 🔴 No source data |
-| Silo D | No Data | 🔴 No source data |
-| Silo LG | No Data | 🔴 No source data |
+| Silo 74 | 20% | 🟡 Low level |
+| Silo HG | 57% | 🟢 Good level |
+| Silo D | 21% | 🟡 Low level |
+| Silo LG | 16% | 🟡 Low level |
 
-### Data Availability Issue
-**CRITICAL ISSUE**: No WhatsApp messages were found for 2025-08-13, preventing normal data extraction and analysis. This autonomous processing request resulted in placeholder reports with null values.
-
-**Recommendation**: Verify WhatsApp data availability or contact [[Sipho Dubazane]] directly for Gloria site status.
+### Key Issues Requiring Follow-up
+- **ROM Production**: Not reported in source data - follow up required
+- **Product Production**: Not reported in source data - follow up required  
+- **Fire Alarm Panel**: 55CV01 panel fault needs repair
+- **Underground Silos**: Three silos (74, D, LG) at low levels (16-21%)
 
 ---
-*Report processed: 2025-08-13 | Data period: 2025-08-12 | Source: No WhatsApp data available*
+*Report processed: 2025-08-14 | Data period: 2025-08-12 | Source: WhatsApp 04:44*
 
-#daily-production #gloria #sipho-dubazane #status/no-data #priority/high #year/2025
+#daily-production #gloria #sipho-dubazane #partial-reporting #year/2025
