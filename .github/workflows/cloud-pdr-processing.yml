@@ -58,37 +58,10 @@ jobs:
         MESSAGE_COUNT=$(wc -l < extracted_messages.txt)
         echo "📊 Found $MESSAGE_COUNT WhatsApp messages for $TARGET_DATE"
         
-        # Early exit if no data found
+        # Log if no data found (but don't exit - let conditional handle it)
         if [ "$MESSAGE_COUNT" -eq 0 ]; then
           echo "⚠️  No production messages found for $TARGET_DATE"
-          echo "🛑 STOPPING PROCESSING - No data available for this date"
-          echo "Possible reasons:"
-          echo "  - Date may be a weekend/holiday with no reports"
-          echo "  - Bridge may have been offline during report time"
-          echo "  - Reports may use different keywords not in search filter"
-          echo "  - Date format may be incorrect (use YYYY-MM-DD)"
-          
-          # Create a no-data notification issue and exit
-          gh issue create \
-            --title "❌ No Data Found: $TARGET_DATE" \
-            --body "**No production data available for $TARGET_DATE**
-
-          📊 **Search Results**: $MESSAGE_COUNT messages found
-          🔍 **Search Criteria**: ROM, Production, Gloria, Nchwaning, S&W keywords
-          ⏰ **Time Range**: Full day (00:00-23:59 UTC)
-          
-          **Possible Reasons**:
-          - Weekend/holiday - no production reports sent
-          - WhatsApp bridge offline during report time (4:00-6:00 AM SAST)
-          - Engineers used different messaging keywords
-          - Date format incorrect or date does not exist
-          
-          **Bridge Status**: Checked and restarted if needed
-          **Recommendation**: Verify date and retry, or process manually if reports exist" \
-            --label "no-data" \
-            --label "pdr-cloud"
-            
-          exit 0  # Exit successfully but stop processing
+          echo "Data may not be available or date may be incorrect"
         fi
         
         # Output variables for next steps
@@ -98,6 +71,41 @@ jobs:
         # Preview extracted data (first 3 lines)
         echo "📋 Message preview:"
         head -3 extracted_messages.txt || echo "No data to preview"
+    
+    - name: Handle No Data Found
+      env:
+        GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
+      if: steps.extract.outputs.message_count == '0'
+      run: |
+        TARGET_DATE="${{ steps.extract.outputs.target_date }}"
+        echo "🛑 STOPPING PROCESSING - No data available for $TARGET_DATE"
+        echo "Possible reasons:"
+        echo "  - Date may be a weekend/holiday with no reports"
+        echo "  - Bridge may have been offline during report time"
+        echo "  - Reports may use different keywords not in search filter"
+        echo "  - Date format may be incorrect (use YYYY-MM-DD)"
+        
+        # Create a no-data notification issue
+        gh issue create \
+          --title "❌ No Data Found: $TARGET_DATE" \
+          --body "**No production data available for $TARGET_DATE**
+
+        📊 **Search Results**: 0 messages found
+        🔍 **Search Criteria**: ROM, Production, Gloria, Nchwaning, S&W keywords
+        ⏰ **Time Range**: Full day (00:00-23:59 UTC)
+        
+        **Possible Reasons**:
+        - Weekend/holiday - no production reports sent
+        - WhatsApp bridge offline during report time (4:00-6:00 AM SAST)
+        - Engineers used different messaging keywords
+        - Date format incorrect or date does not exist
+        
+        **Bridge Status**: Checked and restarted if needed
+        **Recommendation**: Verify date and retry, or process manually if reports exist" \
+          --label "no-data" \
+          --label "pdr-cloud"
+        
+        echo "✅ Created no-data notification issue"
         
     - name: Create Processing Issue
       env:
@@ -252,7 +260,7 @@ jobs:
           VALIDATION_MESSAGES="$VALIDATION_MESSAGES\n- Missing directory: $EXPECTED_DIR"
         fi
         
-        # Check 2: Count files (JSON and Markdown)
+        # Check 2: Validate paired JSON+Markdown files for each site
         if [ -d "$EXPECTED_DIR" ]; then
           JSON_COUNT=$(find "$EXPECTED_DIR" -name "*.json" | wc -l)
           MD_COUNT=$(find "$EXPECTED_DIR" -name "*.md" | wc -l)
@@ -260,12 +268,39 @@ jobs:
           
           echo "📊 Found $JSON_COUNT JSON files and $MD_COUNT Markdown files"
           
-          if [ "$TOTAL_FILES" -ge 2 ]; then
-            echo "✅ Sufficient files created: $TOTAL_FILES files"
-          else
-            echo "❌ Insufficient files: Only $TOTAL_FILES files found (minimum 2 required)"
+          # Check for paired files - each JSON should have matching Markdown
+          JSON_SITES=$(find "$EXPECTED_DIR" -name "*_*.json" -exec basename {} \; | sed 's/.*_\(.*\)\.json/\1/' | sort)
+          MD_SITES=$(find "$EXPECTED_DIR" -name "*Daily Report.md" -o -name "*Weekly Report.md" | wc -l)
+          
+          # Verify each site has both JSON and Markdown
+          MISSING_PAIRS=""
+          for site in gloria nchwaning2 nchwaning3 shafts_winders; do
+            JSON_FILE="$EXPECTED_DIR/${TARGET_DATE}_${site}.json"
+            if [ -f "$JSON_FILE" ]; then
+              # Check for corresponding markdown file
+              MD_EXISTS=false
+              for md_file in "$EXPECTED_DIR"/*Daily\ Report.md "$EXPECTED_DIR"/*Weekly\ Report.md; do
+                if [ -f "$md_file" ] && echo "$md_file" | grep -q -i "$(echo $site | sed 's/shafts_winders/shafts.*winders/g; s/nchwaning/nchwaning/g')"; then
+                  MD_EXISTS=true
+                  break
+                fi
+              done
+              if [ "$MD_EXISTS" = false ]; then
+                MISSING_PAIRS="$MISSING_PAIRS $site"
+                echo "❌ Missing Markdown report for site: $site (JSON exists)"
+              else
+                echo "✅ Complete pair for site: $site"
+              fi
+            fi
+          done
+          
+          if [ -n "$MISSING_PAIRS" ]; then
+            echo "❌ CRITICAL: Missing Markdown reports for sites:$MISSING_PAIRS"
             VALIDATION_PASSED=false
-            VALIDATION_MESSAGES="$VALIDATION_MESSAGES\n- Only $TOTAL_FILES files found (need at least 2)"
+            VALIDATION_MESSAGES="$VALIDATION_MESSAGES\n- Missing Markdown reports for:$MISSING_PAIRS"
+            VALIDATION_MESSAGES="$VALIDATION_MESSAGES\n- This indicates Claude Cloud partial failure - JSON generated but Markdown creation failed"
+          else
+            echo "✅ All sites have complete JSON+Markdown pairs"
           fi
         else
           TOTAL_FILES=0
