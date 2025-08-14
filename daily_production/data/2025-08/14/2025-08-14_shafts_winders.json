@@ -1,0 +1,82 @@
+{
+  "report_metadata": {
+    "date": "2025-08-14",
+    "data_date": "2025-08-13",
+    "site": "Shafts & Winders",
+    "engineer": "Xavier Peterson",
+    "timestamp": "06:00",
+    "processing_mode": "autonomous",
+    "data_availability": "none",
+    "report_type": "Daily Report"
+  },
+  "safety": {
+    "status": "no_data",
+    "incidents": null,
+    "details": []
+  },
+  "infrastructure": {
+    "power_supply": {
+      "stoppages": null,
+      "status": null
+    },
+    "winders": {
+      "nch2_pw": {"status": null, "operational": null, "type": "manwinder"},
+      "nch3_pw": {"status": null, "operational": null, "type": "manwinder"},
+      "gl_pw": {"status": null, "operational": null, "type": "manwinder"},
+      "nch2_rw": {"status": null, "operational": null, "type": "rock_winder", "function": "ore_hoisting"}
+    },
+    "main_fans": {
+      "gloria": {"status": null, "operational": null},
+      "nchwaning2": {"status": null, "operational": null},
+      "nchwaning3": {"status": null, "operational": null}
+    },
+    "lamprooms": {
+      "gloria": {"status": null, "operational": null},
+      "nchwaning2": {"status": null, "operational": null},
+      "nchwaning3": {"status": null, "operational": null}
+    }
+  },
+  "dam_levels": {
+    "dd01": {
+      "level": null,
+      "status": null
+    },
+    "dd02": {
+      "level": null,
+      "status": null
+    }
+  },
+  "ore_pass_levels": {
+    "current_level": null,
+    "trend": null
+  },
+  "production": {
+    "daily_summary": [
+      {
+        "day": "2025-08-13",
+        "actual": null,
+        "target": null,
+        "variance": null,
+        "variance_percentage": null
+      }
+    ]
+  },
+  "operational": {
+    "fire_scada_alarms": null,
+    "block_chutes": null
+  },
+  "performance_summary": {
+    "key_issues": ["No WhatsApp data available for processing"],
+    "key_highlights": ["Autonomous processing completed with placeholder structure"]
+  },
+  "source_validation": {
+    "data_source": {
+      "value": "None provided",
+      "source_line": 0,
+      "source_quote": "Empty WhatsApp data section",
+      "confidence": "NONE"
+    },
+    "processing_note": "No source data available - created placeholder report structure",
+    "validation_status": "NO_DATA_AVAILABLE"
+  }
+}
