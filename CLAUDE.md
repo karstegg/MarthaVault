@@ -374,7 +374,14 @@ WhatsApp Web ←→ Go Bridge ←→ SQLite Database ←→ Direct SQL Queries
 
 **Essential Commands:**
 ```bash
-# Start bridge (if not running)
+# 24/7 Service Management (RECOMMENDED)
+cd /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge
+./start-bridge-service.sh start    # Start with monitoring
+./start-bridge-service.sh status   # Check if running
+./start-bridge-service.sh restart  # Restart if issues
+./start-bridge-service.sh monitor  # Manual monitoring mode
+
+# Manual Bridge Start (LEGACY - use service instead)
 cd /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge && go run main.go
 
 # Check live data
@@ -418,6 +425,40 @@ cd /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge && go run main.go
 ```
 
 **Recovery Documentation**: See `WHATSAPP_MCP_COMPLETE_SETUP.md` for full setup if backup unavailable
+
+### 🚨 **CRITICAL BRIDGE CONNECTIVITY ISSUE (2025-08-14)**
+
+**Issue Discovered**: WhatsApp bridge WebSocket connections drop during inactivity periods, causing missing production reports during automated processing.
+
+**Timeline & Impact**:
+- **August 13, 2025**: `/pdr-cloud today` workflow found zero messages despite engineers confirming reports were sent 7:30-8:30 AM SAST
+- **Root Cause**: Bridge service shuts down during inactivity periods (overnight/weekends)
+- **Business Impact**: Missing daily production reports, failed autonomous processing workflows
+
+**Investigation Results**:
+- Bridge was running when checked, but had restarted automatically 
+- WebSocket connections to WhatsApp Web drop after extended idle periods
+- Manual `go run main.go` requires constant connection maintenance
+- Production report time window (4:00-6:00 AM SAST) often occurs during bridge downtime
+
+**Solution Implemented**: 24/7 Service Management
+- **Service Script**: `/workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge/start-bridge-service.sh`
+- **Features**: Start, stop, restart, monitor, status functions
+- **Auto-Restart**: Detects bridge failures and restarts automatically
+- **Health Checks**: 5-minute monitoring intervals with failure detection
+- **Background Operation**: Runs independently of terminal sessions
+
+**Integration with Cloud Processing**:
+- **Bridge Health Check**: Workflow now checks bridge status before processing
+- **Auto-Restart**: Automatically starts bridge if not running
+- **Early Exit**: Stops processing with informative message if no data found
+- **Status Validation**: Confirms bridge operation before data extraction
+
+**Prevention Strategy**:
+- Use service management script instead of manual `go run main.go`
+- Monitor bridge health in all automation workflows
+- Implement "no data found" early exit to avoid blank report processing
+- Regular bridge connectivity verification in production workflows
 
 ## 14 GitHub Actions + Codespace Integration - ✅ PRODUCTION READY
 
@@ -497,6 +538,13 @@ ORDER BY timestamp;
 - **Cause**: Missing `codespace` scope in token
 - **Solution**: Use PAT with `codespace` scope, not `GITHUB_TOKEN`
 
+**🚨 CRITICAL ISSUE DISCOVERED (2025-08-14)**: WhatsApp Bridge Connection Drops
+- **Symptom**: Bridge stops capturing messages during inactivity periods
+- **Impact**: Missing production reports during processing workflows
+- **Root Cause**: WebSocket connection drops when bridge idle for extended periods
+- **Detection**: No data found when reports should exist (engineers confirmed sending reports)
+- **Solution**: Implemented 24/7 service monitoring with automatic restart capabilities
+
 **Debug Commands:**
 ```bash
 # Test Codespace connectivity
@@ -543,3 +591,26 @@ NEVER proactively create documentation files (*.md) or README files. Only create
 - please update your memory regarding the correct query format ans timezone cnversion
 - Please save this fix and process to memory
 - Excellent! now save this in your memory including the steps to follow for running queries at any time.
+
+## 🚨 CRITICAL BRIDGE CONNECTIVITY MEMORY (2025-08-14)
+**NEVER FORGET**: WhatsApp bridge service shuts down during inactivity periods, causing missing production reports.
+
+**Key Memory Points:**
+- **Always check bridge health FIRST** before any WhatsApp data queries
+- **Bridge service location**: `/workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge/start-bridge-service.sh`
+- **Service commands**: `./start-bridge-service.sh start|status|restart|monitor`
+- **Critical timing**: Production reports sent 4:00-6:00 AM SAST, bridge often down overnight
+- **Detection pattern**: Zero messages found when engineers confirm reports were sent
+- **Solution**: Use service management script, NOT manual `go run main.go`
+- **Integration**: All cloud processing workflows now include automatic bridge health checks
+- **Early exit**: Workflows stop with notification if no data found (prevents blank reports)
+
+**Emergency Recovery Process**:
+1. SSH into Codespace: `gh codespace ssh -c "cuddly-guacamole-496vp6p46wg39r"`
+2. Check status: `cd /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge && ./start-bridge-service.sh status`
+3. Start if needed: `./start-bridge-service.sh start`
+4. Monitor: `./start-bridge-service.sh monitor` (runs in background)
+5. Verify data: Query SQLite for recent messages
+
+**This issue cost us missing production reports - NEVER let bridge run without service management again.**
+- we are in a region with timezone UCT+2

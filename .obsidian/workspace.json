@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "daily_production/data/2025-08/11/2025-08-11 – Nchwaning 2 Daily Report.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-08-11 – Nchwaning 2 Daily Report"
-            }
-          },
-          {
-            "id": "b235547db7816bfe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "daily_production/data/2025-07/08/2025-07-08 - Gloria Daily Report.md",
+                "file": "daily_production/data/2025-07/10/2025-07-10 – Gloria Daily Report.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-07-08 - Gloria Daily Report"
+              "title": "2025-07-10 – Gloria Daily Report"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -183,44 +168,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b235547db7816bfe",
+  "active": "1eab43d07412c743",
   "lastOpenFiles": [
+    "daily_production/data/2025-08/12/2025-08-12 – Gloria Daily Report.md",
+    "daily_production/data/2025-07/07/2025-07-07 – Nchwaning 3 Daily Report.md",
+    "daily_production/data/2025-07/07/2025-07-07 – Gloria Daily Report.md",
     "daily_production/data/2025-07/07/2025-07-07 – Nchwaning 2 Daily Report.md",
-    "daily_production/data/2025-07/06/2025-07-06 – Nchwaning 3 Daily Report.md",
-    "2025-08-05_Comprehensive_Session_Export.md",
-    "daily_production/data/2025-07/06/2025-07-06_shafts_winders.json",
-    "daily_production/data/2025-07/06/2025-07-06_nchwaning3.json",
-    "daily_production/data/2025-07/06/2025-07-06 – Shafts & Winders Daily Report.md",
-    "testing/basic-test-content.txt",
-    "testing/README.md",
+    "daily_production/equipment_codes.md",
+    "daily_production/README.md",
+    "daily_production/data/2025-07/10/2025-07-10 – Shafts & Winders Daily Report.md",
+    "daily_production/data/2025-08/12/2025-08-12_shafts_winders.json",
+    "daily_production/data/2025-08/12/2025-08-12_nchwaning3.json",
+    "daily_production/data/2025-08/12/2025-08-12_nchwaning2.json",
+    "daily_production/data/2025-08/12/2025-08-12_gloria.json",
+    "daily_production/data/2025-08/12/2025-08-12 – Shafts & Winders Daily Report.md",
+    "daily_production/data/2025-08/12/2025-08-12 – Nchwaning 3 Daily Report.md",
     "daily_production/2025-08-12 – Gloria Daily Report.md",
-    "testing/whatsapp-test-message.txt",
-    "testing",
-    "projects/WTW_Audit/2025-08-11 – WTW Audit 2025.md",
-    "test-single-message.json",
-    "scripts/test-pr-workflow.py",
-    "scripts/test-gemini-integration.py",
-    "scripts/integrate-gemini-processing.py",
-    "test_gemini_template.py",
-    "GITHUB_ACTIONS_CODESPACE_INTEGRATION_GUIDE.md",
-    "projects/WTW_Audit/2025-08-11 – WTW Audit Processing Summary.md",
-    "00_Inbox/Tasks for today and this week.md",
-    "tasks/2025-08-06 – Weekly Tasks List.md",
-    "personal/prompt engineering/2025-08-06 – GPT-5 Prompting Tips Reference.md",
-    "IDEAS/2025-08-06 – WhatsApp Claude Code Integration Idea.md",
-    "tasks/2025-08-06 – BRMO BaaS Invoicing Task (RECURRING).md",
-    "personal/daily_devotions/2025-08-06 – Double-Mindedness Devotion.md",
-    "00_Inbox/Monday planning.md",
-    "Standby lists/2025-07-28 – Weekly Standby List Summary.md",
-    "tasks/2025-08-06 – Electrical Safety Review Following Fatal Incident.md",
-    "00_Inbox/Electrical review of safety and risk.md",
-    "tasks/2025-08-06 – Document Reviews SharePoint Task.md",
-    "00_Inbox/Document Reviews.md",
-    "projects/personal/2025-08-06 – Claude Code GitHub Integration Workflow.md",
-    "daily_production/2025-08-12 – Nchwaning 3 Daily Report.md",
-    "daily_production/2025-08-12 – Nchwaning 2 Daily Report.md",
+    "daily_production/data/2025-08/12/2025-08-12 – Nchwaning 2 Daily Report.md",
+    "daily_production/data/2025-08/12",
+    "daily_production/data/2025-08/08/2025-08-08 - Gloria Daily Report (duplicate).md",
+    "daily_production/data/2025-07/10/2025-07-10 – Gloria Daily Report.md",
+    "daily_production/data/2025-07/10/2025-07-10 – Nchwaning 3 Daily Report.md",
+    "daily_production/data/2025-07/10/2025-07-10 – Nchwaning 2 Daily Report.md",
+    "daily_production/2025-07-10 – Shafts & Winders Daily Report.md",
+    "daily_production/data/2025-07/10/2025-07-10_nchwaning2.json",
+    "daily_production/data/2025-07/10/2025-07-10_nchwaning3.json",
+    "daily_production/data/2025-07/10/2025-07-10_gloria.json",
+    "daily_production/data/2025-07/10/2025-07-10_shafts_winders.json",
+    "daily_production/2025-07-10 – Nchwaning 2 Daily Report.md",
+    "daily_production/2025-07-10 – Nchwaning 3 Daily Report.md",
+    "daily_production/data/2025-08/13/2025-08-13_shafts_winders.json",
+    "daily_production/data/2025-08/13/2025-08-13 – Shafts & Winders Daily Report.md",
+    "daily_production/data/2025-08/13/2025-08-13 – Nchwaning 3 Daily Report.md",
+    "daily_production/data/2025-08/13/2025-08-13 – Gloria Daily Report.md",
+    "daily_production/data/2025-08/13/2025-08-13 – Nchwaning 2 Daily Report.md",
+    "daily_production/2025-07-10 – Gloria Daily Report.md",
     "daily_production/2025-08-08 - Gloria Daily Report.md",
-    "daily_production/data/2025-08/11/2025-08-11 – Gloria Daily Report.md",
+    "daily_production/2025-08-12 – Nchwaning 2 Daily Report.md",
+    "daily_production/2025-08-12 – Nchwaning 3 Daily Report.md",
     "media/image/2025/2025-08-11_1056_WTW-Audit-Kickoff-Meeting.jpg",
     "00_Inbox/IMG_20250730_203426_897.jpg"
   ]

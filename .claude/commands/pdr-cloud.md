@@ -10,13 +10,17 @@ Trigger fully autonomous cloud-based daily production report processing.
 ## Process Flow
 1. **Validate Date**: Parse and validate date format
 2. **Trigger GitHub Actions**: Send repository dispatch with date payload
-3. **WhatsApp Extraction**: GitHub Actions extracts messages from Codespace
-4. **Issue Creation**: Create processing issue with @claude mention
-5. **Claude Processing**: Claude processes reports and creates PR
-6. **Auto-Validation**: Validate file structure and content
-7. **Auto-Merge**: Merge PR after successful validation
-8. **Auto-Close**: Close issue with processing summary
-9. **Complete Autonomy**: No manual intervention required
+3. **Bridge Health Check**: Verify WhatsApp bridge is running in Codespace
+4. **Auto-Restart Bridge**: Start bridge service if not running
+5. **WhatsApp Extraction**: Extract messages from Codespace SQLite database
+6. **Data Validation**: Check if production data exists for the date
+7. **Early Exit**: Stop processing with notification if no data found
+8. **Issue Creation**: Create processing issue with @claude mention (only if data exists)
+9. **Claude Processing**: Claude processes reports and creates PR
+10. **Auto-Validation**: Validate file structure and content
+11. **Auto-Merge**: Merge PR after successful validation
+12. **Auto-Close**: Close issue with processing summary
+13. **Complete Autonomy**: No manual intervention required
 
 ## Implementation
 
@@ -100,10 +104,13 @@ fi
 ## Auto-Processing Features
 
 ### WhatsApp Data Extraction
-- Connects to Codespace: `cuddly-guacamole-496vp6p46wg39r`
-- Queries SQLite database for production messages
-- Filters by date range and content keywords
-- Extracts full message content for processing
+- **Bridge Health Check**: Verifies bridge service is running
+- **Auto-Restart**: Starts bridge if not running (prevents missing data)
+- **Connection**: Connects to Codespace `cuddly-guacamole-496vp6p46wg39r`
+- **Database Query**: Queries SQLite database for production messages
+- **Filtering**: Filters by date range and content keywords (ROM, Production, Gloria, Nchwaning, S&W)
+- **Data Validation**: Checks if any production data exists for the target date
+- **Early Exit**: Stops processing with informative notification if no data found
 
 ### Claude Processing
 - Creates issue with extracted WhatsApp data
@@ -139,8 +146,10 @@ fi
 ## Error Handling
 - **Invalid Date**: Shows usage and exits
 - **Network Issues**: Reports authentication problems
-- **Processing Failures**: Workflow handles gracefully
-- **Validation Failures**: Prevents auto-merge, keeps issue open
+- **Bridge Offline**: Automatically detects and restarts bridge service
+- **No Data Found**: Creates notification issue, stops processing (prevents blank reports)
+- **Processing Failures**: Workflow handles gracefully with error details
+- **Validation Failures**: Prevents auto-merge, keeps issue open for manual review
 
 ## Expected Output
 ```
@@ -150,12 +159,14 @@ fi
 🔗 Monitor progress: https://github.com/karstegg/MarthaVault/actions
 
 Expected workflow:
-  1. Extract WhatsApp messages from Codespace
-  2. Create processing issue with @claude mention
-  3. Claude processes reports and creates PR
-  4. Auto-validate and auto-merge PR
-  5. Auto-close issue with summary
-  6. Auto-push files to local repository
+  1. Check WhatsApp bridge health (auto-restart if needed)
+  2. Extract WhatsApp messages from Codespace
+  3. Validate production data exists (early exit if none found)
+  4. Create processing issue with @claude mention
+  5. Claude processes reports and creates PR
+  6. Auto-validate and auto-merge PR
+  7. Auto-close issue with summary
+  8. Auto-push files to local repository
 
 ✅ Autonomous processing initiated for 2025-08-13
 📋 Files will automatically appear in your local repository

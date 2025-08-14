@@ -1,0 +1,119 @@
+{
+  "report_metadata": {
+    "date": "2025-08-12",
+    "data_date": "2025-08-11", 
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "report_time": "04:58:14",
+    "source": "WhatsApp Main Production Group",
+    "note": "Corrected report - replaced earlier incomplete version"
+  },
+  "safety": {
+    "status": "incident",
+    "incidents": 1,
+    "details": [
+      {
+        "type": "Non-conformance",
+        "location": "Decline belt chute",
+        "description": "Supervisor found on top of conveyor belt without locking out, whilst inspecting a blocked chute"
+      }
+    ]
+  },
+  "production": {
+    "rom": {
+      "actual": 6354,
+      "target": 8060,
+      "variance_tons": -1706,
+      "variance_percent": -21.2
+    },
+    "decline": {
+      "actual": 4230,
+      "target": 5623,
+      "variance_tons": -1393,
+      "variance_percent": -24.8
+    },
+    "product": {
+      "actual": 3089,
+      "target": 4979,
+      "variance_tons": -1890,
+      "variance_percent": -38.0
+    },
+    "loads": {
+      "day_shift": 104,
+      "afternoon_shift": 80,
+      "night_shift": 57,
+      "total_loads": 241
+    },
+    "blast": {
+      "manganese": 8,
+      "waste": 3,
+      "total_faces": 11
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "hd": 94,
+      "dt": 86,
+      "fl": 87,
+      "rt": 89,
+      "sr": 69,
+      "uv": 82
+    },
+    "specialized": {
+      "gd11": 100,
+      "dz11": 66,
+      "uv044": 74
+    },
+    "equipment_readiness": {
+      "hd": "9/9",
+      "dt": "10/14",
+      "fl": "8/10",
+      "rt": "8/10",
+      "sr": "2/9",
+      "uv": "8/9",
+      "manlifts": "4/4",
+      "emulsion_uv": "4/4"
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "DT0145", "issue": "Gears"},
+      {"unit": "DT0147", "issue": "Puncture"},
+      {"unit": "DT0161", "issue": "Puncture"},
+      {"unit": "DT0163", "issue": "Cylinder oil leak"},
+      {"unit": "FL0091", "issue": "Engine cut off"},
+      {"unit": "FL0098", "issue": "FTS"},
+      {"unit": "RT0048", "issue": "Compressor rubbers"},
+      {"unit": "RT0049", "issue": "Carousel damage"},
+      {"unit": "SR0024", "issue": "Boom cracked / Aircon pipe"},
+      {"unit": "SR0028", "issue": "Tyre replacement"},
+      {"unit": "SR0030", "issue": "Incident Repairs"},
+      {"unit": "SR0035", "issue": "Replace worn tyres / Tyres"},
+      {"unit": "SR0038", "issue": "Counterweight bolts loose"},
+      {"unit": "SR0039", "issue": "Strata"},
+      {"unit": "UV0045", "issue": "Not starting"},
+      {"unit": "UV0047", "issue": "Brakes release"}
+    ],
+    "breakdown_count": 16
+  },
+  "infrastructure": {
+    "fire_alarms": "No CCR reports - 06:30",
+    "crusher_blockages": "x1 at Decline Conveyor Belt",
+    "chute_blockages": "x1 at Decline Conveyor Belt"
+  },
+  "performance_summary": {
+    "key_issues": [
+      "Safety incident: Supervisor unsafe work on conveyor belt without lockout",
+      "Significant production underperformance: ROM -21.2%, Decline -24.8%, Product -38.0%",
+      "High breakdown count: 16 units currently down",
+      "Poor SR availability at 69% with only 2/9 units available for start of shift",
+      "Decline conveyor belt blockage affecting operations"
+    ],
+    "key_highlights": [
+      "Strong day shift load performance: 104 truckloads",
+      "Successful blast operations: 8 Mn + 3 Waste faces",
+      "GD11 at 100% availability",
+      "All manlifts and emulsion UVs available"
+    ]
+  }
+}

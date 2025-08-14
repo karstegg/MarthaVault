@@ -31,7 +31,8 @@
       "Bash(gh api:*)",
       "Bash(gh pr create:*)",
       "Bash(gh pr view:*)",
-      "Bash(..claudecommandspdr-cloud 2025-07-07)"
+      "Bash(..claudecommandspdr-cloud 2025-07-07)",
+      "Bash(bash:*)"
     ],
     "deny": []
   },

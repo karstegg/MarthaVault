@@ -16,7 +16,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       
-    - name: Extract WhatsApp Messages
+    - name: Check Bridge Health & Extract WhatsApp Messages
       env:
         GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
       id: extract
@@ -24,23 +24,71 @@ jobs:
         CODESPACE_NAME="cuddly-guacamole-496vp6p46wg39r"
         TARGET_DATE="${{ github.event.client_payload.date }}"
         
-        echo "🔍 Extracting WhatsApp messages for $TARGET_DATE..."
+        echo "🔍 Checking WhatsApp bridge health and extracting messages for $TARGET_DATE..."
+        
+        # Check if bridge service is running and restart if needed
+        echo "🔧 Checking bridge service status..."
+        BRIDGE_STATUS=$(gh codespace ssh -c $CODESPACE_NAME -- \
+          "cd /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge && ./start-bridge-service.sh status" 2>/dev/null || echo "Bridge not running")
+        
+        if [[ "$BRIDGE_STATUS" == *"not running"* ]]; then
+          echo "🚨 Bridge not running - starting service..."
+          gh codespace ssh -c $CODESPACE_NAME -- \
+            "cd /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge && ./start-bridge-service.sh start"
+          sleep 10  # Give bridge time to start
+          echo "✅ Bridge service started"
+        else
+          echo "✅ Bridge service is running"
+        fi
         
         # Extract messages from Codespace SQLite database
+        echo "📋 Extracting messages with production keywords..."
         gh codespace ssh -c $CODESPACE_NAME -- \
-          "sqlite3 /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge/store/messages.db \
-          \"SELECT timestamp, chat_jid, sender, content FROM messages 
-           WHERE timestamp BETWEEN '${TARGET_DATE} 00:00:00+00:00' AND '${TARGET_DATE} 23:59:59+00:00' 
-           AND (content LIKE '%ROM%' OR content LIKE '%Production%' OR content LIKE '%Gloria%' OR content LIKE '%Nchwaning%' OR content LIKE '%S&W%') 
-           ORDER BY timestamp;\"" > extracted_messages.txt
+          "sqlite3 /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge/store/messages.db \"SELECT timestamp, chat_jid, sender, content FROM messages WHERE timestamp BETWEEN '${TARGET_DATE} 00:00:00+00:00' AND '${TARGET_DATE} 23:59:59+00:00' AND chat_jid = '27834418149-1537194373@g.us' AND (content LIKE '%ROM%' OR content LIKE '%Safety%' OR content LIKE '%Gloria Report%' OR content LIKE '%Nchwaning%' OR content LIKE '%S&W%' OR content LIKE '%Decline%' OR content LIKE '%Product%' OR content LIKE '%Loads%') ORDER BY timestamp;\"" > extracted_messages.txt
+        
+        # Debug: Check if file was created and has content
+        if [ -f extracted_messages.txt ]; then
+          echo "✅ Extraction file created"
+          echo "📄 File size: $(stat -c%s extracted_messages.txt 2>/dev/null || stat -f%z extracted_messages.txt 2>/dev/null || echo 'unknown') bytes"
+        else
+          echo "❌ Extraction file not created"
+        fi
            
         # Count messages and validate extraction
         MESSAGE_COUNT=$(wc -l < extracted_messages.txt)
         echo "📊 Found $MESSAGE_COUNT WhatsApp messages for $TARGET_DATE"
         
+        # Early exit if no data found
         if [ "$MESSAGE_COUNT" -eq 0 ]; then
           echo "⚠️  No production messages found for $TARGET_DATE"
-          echo "Data may not be available or date may be incorrect"
+          echo "🛑 STOPPING PROCESSING - No data available for this date"
+          echo "Possible reasons:"
+          echo "  - Date may be a weekend/holiday with no reports"
+          echo "  - Bridge may have been offline during report time"
+          echo "  - Reports may use different keywords not in search filter"
+          echo "  - Date format may be incorrect (use YYYY-MM-DD)"
+          
+          # Create a no-data notification issue and exit
+          gh issue create \
+            --title "❌ No Data Found: $TARGET_DATE" \
+            --body "**No production data available for $TARGET_DATE**
+
+          📊 **Search Results**: $MESSAGE_COUNT messages found
+          🔍 **Search Criteria**: ROM, Production, Gloria, Nchwaning, S&W keywords
+          ⏰ **Time Range**: Full day (00:00-23:59 UTC)
+          
+          **Possible Reasons**:
+          - Weekend/holiday - no production reports sent
+          - WhatsApp bridge offline during report time (4:00-6:00 AM SAST)
+          - Engineers used different messaging keywords
+          - Date format incorrect or date does not exist
+          
+          **Bridge Status**: Checked and restarted if needed
+          **Recommendation**: Verify date and retry, or process manually if reports exist" \
+            --label "no-data" \
+            --label "pdr-cloud"
+            
+          exit 0  # Exit successfully but stop processing
         fi
         
         # Output variables for next steps
@@ -55,11 +103,18 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
       id: issue
+      if: steps.extract.outputs.message_count > 0
       run: |
         TARGET_DATE="${{ steps.extract.outputs.target_date }}"
         MESSAGE_COUNT="${{ steps.extract.outputs.message_count }}"
         
         echo "📝 Creating processing issue for autonomous Claude processing..."
+        
+        # Debug: Show what data we're about to include
+        echo "🔍 Data to include in issue (first 5 lines):"
+        head -5 extracted_messages.txt || echo "No data to preview"
+        echo "📄 Full data file content:"
+        cat extracted_messages.txt | wc -l
         
         # Create issue with extracted data and @claude mention
         ISSUE_URL=$(gh issue create \
@@ -113,6 +168,7 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
       id: monitor
+      if: steps.extract.outputs.message_count > 0
       run: |
         ISSUE_NUMBER="${{ steps.issue.outputs.issue_number }}"
         TARGET_DATE="${{ steps.extract.outputs.target_date }}"
@@ -165,6 +221,7 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
       id: merge
+      if: steps.extract.outputs.message_count > 0
       run: |
         PR_NUMBER="${{ steps.monitor.outputs.pr_number }}"
         TARGET_DATE="${{ steps.extract.outputs.target_date }}"
@@ -260,7 +317,7 @@ jobs:
     - name: Auto-Close Issue with Success Summary  
       env:
         GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
-      if: success()
+      if: success() && steps.extract.outputs.message_count > 0
       run: |
         ISSUE_NUMBER="${{ steps.issue.outputs.issue_number }}"
         TARGET_DATE="${{ steps.extract.outputs.target_date }}"
@@ -308,6 +365,7 @@ jobs:
     - name: Auto-Push to Local Repository
       env:
         GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
+      if: success() && steps.extract.outputs.message_count > 0
       run: |
         TARGET_DATE="${{ steps.extract.outputs.target_date }}"
         FILES_CREATED="${{ steps.merge.outputs.files_created }}"
@@ -316,10 +374,7 @@ jobs:
         
         # Send repository dispatch to trigger local sync
         echo "📡 Sending auto-sync dispatch to local repository..."
-        gh api repos/karstegg/MarthaVault/dispatches \
-          --method POST \
-          --field event_type="auto-sync" \
-          --field client_payload="{\"date\":\"$TARGET_DATE\",\"files_created\":\"$FILES_CREATED\",\"trigger\":\"cloud-processing-complete\"}"
+        echo '{"event_type": "auto-sync", "client_payload": {"date": "'$TARGET_DATE'", "files_created": "'$FILES_CREATED'", "trigger": "cloud-processing-complete"}}' | gh api repos/karstegg/MarthaVault/dispatches --method POST --input -
         
         if [ $? -eq 0 ]; then
           echo "✅ Auto-sync dispatch sent successfully"
