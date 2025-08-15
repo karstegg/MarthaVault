@@ -1,0 +1,146 @@
+{
+  "report_metadata": {
+    "date": "2025-07-11",
+    "data_date": "2025-07-10",
+    "site": "Gloria",
+    "engineer": "Sipho Dubazane",
+    "timestamp": "04:40:52"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 2183,
+      "target": 3873,
+      "variance": -1690,
+      "variance_percentage": -43.6
+    },
+    "decline": {
+      "actual": 4180,
+      "target": 3873,
+      "variance": 307,
+      "variance_percentage": 7.9
+    },
+    "product": {
+      "actual": 3262,
+      "target": 3773,
+      "variance": -511,
+      "variance_percentage": -13.5
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 35, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 35, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 54, "target": null}
+    ],
+    "blast": {
+      "faces": null,
+      "breakdown": null,
+      "note": "Nothing Reported"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": 100,
+      "FL": 79,
+      "HD": 82,
+      "RT": 97,
+      "SR": 35
+    },
+    "specialized": []
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 6, "total": 6},
+      "FL": {"available": 4, "total": 5},
+      "HD": {"available": 4, "total": 4},
+      "RT": {"available": 4, "total": 4},
+      "SR": {"available": 3, "total": 4}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "UV0068", "issue": "Drive line flex plate from 10/01/25 02:13"},
+      {"unit": "UV0067", "issue": "Internal error from 01H25 -EOS"},
+      {"unit": "FL0083", "issue": "Speed sensor/ Bucket movement"},
+      {"unit": "SR0037", "issue": "Tail frame"}
+    ]
+  },
+  "silo_levels": {
+    "surface": {
+      "silo_1": 52,
+      "silo_2": 94,
+      "silo_3": 19,
+      "silo_4": 14
+    },
+    "underground": {
+      "silo_74": 28,
+      "silo_hg": 17,
+      "silo_d": 17,
+      "silo_lg": 20
+    }
+  },
+  "specialized_equipment": {
+    "manitou": {"available": 1, "total": 1, "availability": 100},
+    "manlifts": {"available": 2, "total": 2, "availability": 100}
+  },
+  "operational": {
+    "main_fans": "In Order",
+    "plant_blockages": 0,
+    "fire_alarms": 0
+  },
+  "performance_summary": {
+    "key_issues": [
+      "ROM production significantly below target (-43.6%)",
+      "Product output below target (-13.5%)",
+      "SR availability critically low (35%)",
+      "Multiple UV equipment breakdowns"
+    ],
+    "key_highlights": [
+      "Safety status clear",
+      "DT availability excellent (100%)",
+      "Main fans operational",
+      "No plant blockages or fire alarms"
+    ]
+  },
+  "source_validation": {
+    "rom_production": {
+      "value": 2183,
+      "source_line": 1,
+      "source_quote": "ROM: 2183 vs 3873",
+      "confidence": "HIGH"
+    },
+    "decline_production": {
+      "value": 4180,
+      "source_line": 1,
+      "source_quote": "Decline: 4180 vs 3873",
+      "confidence": "HIGH"
+    },
+    "product_output": {
+      "value": 3262,
+      "source_line": 1,
+      "source_quote": "Product: 3262 vs 3773",
+      "confidence": "HIGH"
+    },
+    "dt_availability": {
+      "value": 100,
+      "source_line": 1,
+      "source_quote": "DTs: 100",
+      "confidence": "HIGH"
+    },
+    "fl_availability": {
+      "value": 79,
+      "source_line": 1,
+      "source_quote": "FLs: 79",
+      "confidence": "HIGH"
+    },
+    "surface_silo_1": {
+      "value": 52,
+      "source_line": 1,
+      "source_quote": "1 - 52",
+      "confidence": "HIGH"
+    }
+  }
+}
