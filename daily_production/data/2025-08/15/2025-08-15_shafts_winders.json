@@ -1,0 +1,211 @@
+{
+  "report_metadata": {
+    "date": "2025-08-15",
+    "data_date": "2025-08-14",
+    "site": "Shafts & Winders",
+    "engineer": "Xavier Peterson",
+    "timestamp": "05:30",
+    "report_type": "Weekly Report"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "infrastructure": {
+    "power_supply": {
+      "stoppages": 0,
+      "status": "operational"
+    },
+    "winders": {
+      "nch2_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch3_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "gl_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch2_rw": {"status": "operational", "operational": true, "type": "rock_winder", "function": "ore_hoisting"}
+    },
+    "main_fans": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    },
+    "lamprooms": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    }
+  },
+  "dam_levels": {
+    "dd01": {
+      "friday": 99.9, "saturday": 100.0, "sunday": 99.9, "monday": 99.9,
+      "tuesday": 99.9, "wednesday": 99.9, "thursday": 99.8
+    },
+    "dd02": {
+      "friday": 80.8, "saturday": 83.6, "sunday": 78.4, "monday": 86.9,
+      "tuesday": 77.0, "wednesday": 88.5, "thursday": 78.8
+    }
+  },
+  "ore_pass_levels": {
+    "friday": 1.6, "saturday": 18.0, "sunday": 32.3, "monday": 24.3,
+    "tuesday": 24.8, "wednesday": 27.3, "thursday": 32.0
+  },
+  "production": {
+    "weekly_schedule": {
+      "friday": {"actual": 4462, "target": 6463, "variance": -2001, "variance_percentage": -31.0},
+      "saturday": {"actual": 0, "target": 1539, "variance": -1539, "variance_percentage": -100.0, "note": "SOLROCK SHAFT BARREL REPAIR PROJECT"},
+      "sunday": {"actual": 1014, "target": 1539, "variance": -525, "variance_percentage": -34.1, "note": "SOLROCK SHAFT BARREL REPAIR PROJECT"},
+      "monday": {"actual": 4894, "target": 5204, "variance": -310, "variance_percentage": -6.0},
+      "tuesday": {"actual": 5959, "target": 6463, "variance": -504, "variance_percentage": -7.8},
+      "wednesday": {"actual": 7664, "target": 6463, "variance": 1201, "variance_percentage": 18.6},
+      "thursday": {"actual": 7310, "target": 5204, "variance": 2106, "variance_percentage": 40.5}
+    }
+  },
+  "operational": {
+    "fire_scada_alarms": 0,
+    "block_chutes": 0
+  },
+  "performance_summary": {
+    "key_issues": [
+      "Saturday production shutdown for Solrock Shaft barrel repair",
+      "Sunday production limited (34% below target) during repair project",
+      "Friday production 31% below target",
+      "DD02 dam levels fluctuating (77-89%)",
+      "Ore pass levels increasing throughout week (1.6% to 32.0%)"
+    ],
+    "key_highlights": [
+      "Safety status clear throughout week",
+      "All critical infrastructure operational",
+      "Wednesday and Thursday exceeded targets significantly",
+      "DD01 dam levels stable at 99.8-100%",
+      "No fire alarms or blockages",
+      "Successful completion of major maintenance project"
+    ]
+  },
+  "source_validation": {
+    "safety_status": {
+      "value": "clear",
+      "source_line": 1,
+      "source_quote": "Safety: Clear🙏🏽",
+      "confidence": "HIGH"
+    },
+    "power_supply": {
+      "value": "No Stoppages",
+      "source_line": 2,
+      "source_quote": "Power Supply: No Stoppages",
+      "confidence": "HIGH"
+    },
+    "nch2_pw": {
+      "value": "No Stoppages",
+      "source_line": 3,
+      "source_quote": "Nch2 PW No Stoppages",
+      "confidence": "HIGH"
+    },
+    "nch3_pw": {
+      "value": "No Stoppages",
+      "source_line": 3,
+      "source_quote": "Nch3 PW No Stoppages",
+      "confidence": "HIGH"
+    },
+    "gl_pw": {
+      "value": "No Stoppages",
+      "source_line": 3,
+      "source_quote": "GL PW No Stoppages",
+      "confidence": "HIGH"
+    },
+    "nch2_rw": {
+      "value": "No Stoppages",
+      "source_line": 3,
+      "source_quote": "Nch2 RW No Stoppages",
+      "confidence": "HIGH"
+    },
+    "main_fans_gl": {
+      "value": "No Stoppages",
+      "source_line": 4,
+      "source_quote": "GL No Stoppages",
+      "confidence": "HIGH"
+    },
+    "main_fans_nch2": {
+      "value": "No Stoppages",
+      "source_line": 4,
+      "source_quote": "Nch2 No Stoppages",
+      "confidence": "HIGH"
+    },
+    "main_fans_nch3": {
+      "value": "No Stoppages",
+      "source_line": 4,
+      "source_quote": "Nch3 No Stoppages",
+      "confidence": "HIGH"
+    },
+    "dd01_friday": {
+      "value": 99.9,
+      "source_line": 5,
+      "source_quote": "Fri: 99,9%",
+      "confidence": "HIGH"
+    },
+    "dd01_thursday": {
+      "value": 99.8,
+      "source_line": 5,
+      "source_quote": "Thu: 99,8%",
+      "confidence": "HIGH"
+    },
+    "dd02_friday": {
+      "value": 80.8,
+      "source_line": 6,
+      "source_quote": "Fri: 80,8%",
+      "confidence": "HIGH"
+    },
+    "dd02_thursday": {
+      "value": 78.8,
+      "source_line": 6,
+      "source_quote": "Thu: 78,8%",
+      "confidence": "HIGH"
+    },
+    "fire_scada_alarms": {
+      "value": 0,
+      "source_line": 7,
+      "source_quote": "Fire Scada Alarms: 0",
+      "confidence": "HIGH"
+    },
+    "block_chutes": {
+      "value": "None",
+      "source_line": 7,
+      "source_quote": "Block Chutes: None",
+      "confidence": "HIGH"
+    },
+    "production_friday": {
+      "value": "4462/6463",
+      "source_line": 8,
+      "source_quote": "Fri: 4462/6463",
+      "confidence": "HIGH"
+    },
+    "production_saturday": {
+      "value": "0/1539",
+      "source_line": 8,
+      "source_quote": "Sat: 0/1539 SOLROCK SHAFT BARREL REPAIR PROJECT",
+      "confidence": "HIGH"
+    },
+    "production_wednesday": {
+      "value": "7664/6463",
+      "source_line": 8,
+      "source_quote": "Wed: 7664/6463",
+      "confidence": "HIGH"
+    },
+    "production_thursday": {
+      "value": "7310/5204",
+      "source_line": 8,
+      "source_quote": "Thu: 7310/5204",
+      "confidence": "HIGH"
+    },
+    "ore_pass_friday": {
+      "value": 1.6,
+      "source_line": 9,
+      "source_quote": "Fri: 1,6%",
+      "confidence": "HIGH"
+    },
+    "ore_pass_thursday": {
+      "value": 32.0,
+      "source_line": 9,
+      "source_quote": "Thu: 32,0%",
+      "confidence": "HIGH"
+    }
+  }
+}
