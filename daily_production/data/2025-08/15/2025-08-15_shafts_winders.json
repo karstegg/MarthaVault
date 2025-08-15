@@ -1,0 +1,173 @@
+{
+  "report_metadata": {
+    "date": "2025-08-15",
+    "data_date": "2025-08-14",
+    "site": "Shafts & Winders",
+    "engineer": "Xavier Peterson",
+    "timestamp": "05:30",
+    "report_type": "Weekly Report"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "infrastructure": {
+    "power_supply": {
+      "stoppages": 0,
+      "status": "operational"
+    },
+    "winders": {
+      "nch2_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch3_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "gl_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch2_rw": {"status": "operational", "operational": true, "type": "rock_winder", "function": "ore_hoisting"}
+    },
+    "main_fans": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    },
+    "lamprooms": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    }
+  },
+  "dam_levels": {
+    "dd01": {
+      "friday": 99.9,
+      "saturday": 100.0,
+      "sunday": 99.9,
+      "monday": 99.9,
+      "tuesday": 99.9,
+      "wednesday": 99.9,
+      "thursday": 99.8
+    },
+    "dd02": {
+      "friday": 80.8,
+      "saturday": 83.6,
+      "sunday": 78.4,
+      "monday": 86.9,
+      "tuesday": 77.0,
+      "wednesday": 88.5,
+      "thursday": 78.8
+    }
+  },
+  "ore_pass_levels": {
+    "friday": 1.6,
+    "saturday": 18.0,
+    "sunday": 32.3,
+    "monday": 24.3,
+    "tuesday": 24.8,
+    "wednesday": 27.3,
+    "thursday": 32.0
+  },
+  "production": {
+    "weekly_schedule": {
+      "friday": {"actual": 4462, "target": 6463, "variance": -2001},
+      "saturday": {"actual": 0, "target": 1539, "variance": -1539, "note": "SOLROCK SHAFT BARREL REPAIR PROJECT"},
+      "sunday": {"actual": 1014, "target": 1539, "variance": -525, "note": "SOLROCK SHAFT BARREL REPAIR PROJECT"},
+      "monday": {"actual": 4894, "target": 5204, "variance": -310},
+      "tuesday": {"actual": 5959, "target": 6463, "variance": -504},
+      "wednesday": {"actual": 7664, "target": 6463, "variance": 1201},
+      "thursday": {"actual": 7310, "target": 5204, "variance": 2106}
+    }
+  },
+  "operational": {
+    "fire_scada_alarms": 0,
+    "block_chutes": 0
+  },
+  "performance_summary": {
+    "key_issues": [
+      "Saturday production shutdown for SOLROCK SHAFT BARREL REPAIR PROJECT",
+      "Sunday production still impacted by shaft repairs (-525t)",
+      "DD02 dam levels fluctuating (77.0% - 88.5%)",
+      "Ore pass levels elevated (18.0% - 32.3%)"
+    ],
+    "key_highlights": [
+      "Safety clear throughout the week",
+      "All winders operational - no stoppages",
+      "All main fans operational - no stoppages", 
+      "All lamprooms operational - no stoppages",
+      "No fire SCADA alarms",
+      "No block chutes",
+      "Strong production recovery Wed-Thu (above target)",
+      "DD01 dam maintaining excellent levels (99.8% - 100.0%)"
+    ]
+  },
+  "source_validation": {
+    "safety_status": {
+      "value": "clear",
+      "source_line": 1,
+      "source_quote": "Safety: Clear🙏🏽",
+      "confidence": "HIGH"
+    },
+    "power_supply": {
+      "value": "No Stoppages",
+      "source_line": 2,
+      "source_quote": "Power Supply: No Stoppages",
+      "confidence": "HIGH"
+    },
+    "nch2_pw": {
+      "value": "No Stoppages",
+      "source_line": 3,
+      "source_quote": "Nch2 PW No Stoppages",
+      "confidence": "HIGH"
+    },
+    "nch3_pw": {
+      "value": "No Stoppages",
+      "source_line": 3,
+      "source_quote": "Nch3 PW No Stoppages",
+      "confidence": "HIGH"
+    },
+    "gl_pw": {
+      "value": "No Stoppages",
+      "source_line": 3,
+      "source_quote": "GL PW No Stoppages",
+      "confidence": "HIGH"
+    },
+    "nch2_rw": {
+      "value": "No Stoppages",
+      "source_line": 3,
+      "source_quote": "Nch2 RW No Stoppages",
+      "confidence": "HIGH"
+    },
+    "dd01_thursday": {
+      "value": 99.8,
+      "source_line": 4,
+      "source_quote": "DD01: Thu: 99,8%",
+      "confidence": "HIGH"
+    },
+    "dd02_thursday": {
+      "value": 78.8,
+      "source_line": 4,
+      "source_quote": "DD02: Thu: 78,8%",
+      "confidence": "HIGH"
+    },
+    "fire_scada_alarms": {
+      "value": 0,
+      "source_line": 5,
+      "source_quote": "Fire Scada Alarms: 0",
+      "confidence": "HIGH"
+    },
+    "block_chutes": {
+      "value": "None",
+      "source_line": 5,
+      "source_quote": "Block Chutes: None",
+      "confidence": "HIGH"
+    },
+    "thursday_production": {
+      "value": "7310/5204",
+      "source_line": 6,
+      "source_quote": "Thu: 7310/5204",
+      "confidence": "HIGH"
+    },
+    "ore_pass_thursday": {
+      "value": 32.0,
+      "source_line": 7,
+      "source_quote": "Thu: 32,0%",
+      "confidence": "HIGH"
+    }
+  }
+}
