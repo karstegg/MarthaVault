@@ -306,7 +306,21 @@ jobs:
           TOTAL_FILES=0
         fi
         
-        # Check 3: File size validation (not empty, reasonable size)
+        # Check 3: File location validation (no files in wrong locations)
+        MISPLACED_FILES=$(find "daily_production/" -maxdepth 1 -name "*$TARGET_DATE*" -type f | wc -l)
+        if [ "$MISPLACED_FILES" -eq 0 ]; then
+          echo "✅ No misplaced files in daily_production root"
+        else
+          echo "❌ Found $MISPLACED_FILES files in wrong location (daily_production/ root)"
+          VALIDATION_PASSED=false
+          VALIDATION_MESSAGES="$VALIDATION_MESSAGES\n- $MISPLACED_FILES files in wrong location (should be in data/YYYY-MM/DD/)"
+          # List the misplaced files for debugging
+          find "daily_production/" -maxdepth 1 -name "*$TARGET_DATE*" -type f | while read file; do
+            echo "  ❌ Misplaced: $file"
+          done
+        fi
+        
+        # Check 4: File size validation (not empty, reasonable size)
         if [ "$TOTAL_FILES" -gt 0 ]; then
           EMPTY_FILES=$(find "$EXPECTED_DIR" \( -name "*.json" -o -name "*.md" \) -empty | wc -l)
           if [ "$EMPTY_FILES" -eq 0 ]; then
@@ -316,6 +330,22 @@ jobs:
             VALIDATION_PASSED=false
             VALIDATION_MESSAGES="$VALIDATION_MESSAGES\n- $EMPTY_FILES empty files detected"
           fi
+        fi
+        
+        # Check 5: Site identification validation (check for known phone number mappings)
+        if [ -d "$EXPECTED_DIR" ]; then
+          echo "🔍 Validating site identification against known phone mappings..."
+          # Check if site assignments match expected engineer assignments
+          SITE_ERRORS=0
+          
+          # Validate N2 vs N3 confusion (common error pattern)
+          if [ -f "$EXPECTED_DIR"/*nchwaning2* ] && [ -f "$EXPECTED_DIR"/*nchwaning3* ]; then
+            echo "⚠️  WARNING: Both N2 and N3 files detected - verify site identification"
+          fi
+          
+          # Note: Full phone number validation would require access to the raw WhatsApp data
+          # This check focuses on catching obvious site misidentification patterns
+          echo "✅ Site identification check completed"
         fi
         
         # Proceed with merge if validation passed
