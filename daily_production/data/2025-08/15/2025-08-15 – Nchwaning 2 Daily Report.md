@@ -2,13 +2,13 @@
 JSONData:: [[2025-08-15_nchwaning2.json]]
 Status:: #status/processed
 Priority:: #priority/medium
-Assignee:: [[Sikelela Nzuza]]
+Assignee:: [[Johan Kotze]]
 DueDate::
 ---
 
 # Nchwaning 2 Daily Report
 **Date**: August 15, 2025 (Data from August 14, 2025)  
-**Engineer**: [[Sikelela Nzuza]] (GES TMM Underground)  
+**Engineer**: [[Johan Kotze]] (GES TMM Underground, acting for [[Sikilela Nzuza]] on leave)  
 **Site**: Nchwaning 2  
 
 ## 🟢✅ EXCEEDING TARGET PERFORMANCE
@@ -115,4 +115,4 @@ DueDate::
 ---
 *Report processed: 2025-08-15 | Data period: 2025-08-14 | Source: WhatsApp 04:54*
 
-#daily-production #nchwaning3 #above-target #sello-sease #year/2025
+#daily-production #nchwaning2 #above-target #johan-kotze #year/2025
