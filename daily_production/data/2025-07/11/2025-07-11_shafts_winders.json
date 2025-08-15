@@ -1,0 +1,138 @@
+{
+  "report_metadata": {
+    "date": "2025-07-11",
+    "data_date": "2025-07-10",
+    "site": "Shafts & Winders",
+    "engineer": "Xavier Peterson",
+    "timestamp": "05:05:35",
+    "report_type": "Daily Report"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "infrastructure": {
+    "power_supply": {
+      "stoppages": 0,
+      "status": "operational"
+    },
+    "winders": {
+      "nch2_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch3_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "gl_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch2_rw": {"status": "operational", "operational": true, "type": "rock_winder", "function": "ore_hoisting"}
+    },
+    "main_fans": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    },
+    "lamprooms": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    }
+  },
+  "dam_levels": {
+    "dd01": {
+      "friday": 100.7,
+      "saturday": 100.7,
+      "sunday": 100.6,
+      "monday": 100.6,
+      "tuesday": 100.5,
+      "wednesday": 100.6,
+      "thursday": 100.5,
+      "level": 100.5,
+      "status": "excellent"
+    },
+    "dd02": {
+      "friday": 83.4,
+      "saturday": 86.7,
+      "sunday": 82.9,
+      "monday": 81.5,
+      "tuesday": 86.1,
+      "wednesday": 82.4,
+      "thursday": 81.0,
+      "level": 81.0,
+      "status": "good"
+    }
+  },
+  "ore_pass_levels": {
+    "friday": 38.1,
+    "saturday": 33.3,
+    "sunday": 20.1,
+    "monday": 35.5,
+    "tuesday": 4.8,
+    "wednesday": 0.4,
+    "thursday": 38.2,
+    "current_level": 38.2,
+    "trend": "improving"
+  },
+  "production": {
+    "weekly_schedule": {
+      "friday": {"actual": 5552, "target": 6623, "variance": -1071},
+      "saturday": {"actual": 2195, "target": 1648, "variance": 547},
+      "sunday": {"actual": 1348, "target": 1648, "variance": -300},
+      "monday": {"actual": 4187, "target": 5439, "variance": -1252},
+      "tuesday": {"actual": 7005, "target": 6623, "variance": 382},
+      "wednesday": {"actual": 5810, "target": 6623, "variance": -813},
+      "thursday": {"actual": 5183, "target": 5439, "variance": -256}
+    }
+  },
+  "operational": {
+    "fire_scada_alarms": 0,
+    "block_chutes": 0
+  },
+  "performance_summary": {
+    "key_issues": [
+      "Ore pass levels dropped significantly mid-week (4.8% Tuesday, 0.4% Wednesday)",
+      "Production under target on multiple days (Friday, Sunday, Monday, Wednesday, Thursday)"
+    ],
+    "key_highlights": [
+      "Safety status clear",
+      "All infrastructure systems operational",
+      "Dam levels stable and adequate",
+      "No fire alarms or blockages",
+      "Tuesday production exceeded target by 382t"
+    ]
+  },
+  "source_validation": {
+    "dd01_thursday": {
+      "value": 100.5,
+      "source_line": 3,
+      "source_quote": "DD01: Thu: 100,5%",
+      "confidence": "HIGH"
+    },
+    "dd02_thursday": {
+      "value": 81.0,
+      "source_line": 3,
+      "source_quote": "DD02: Thu: 81,0%",
+      "confidence": "HIGH"
+    },
+    "thursday_production": {
+      "value": [5183, 5439],
+      "source_line": 3,
+      "source_quote": "Thu: 5183/5439",
+      "confidence": "HIGH"
+    },
+    "ore_pass_thursday": {
+      "value": 38.2,
+      "source_line": 3,
+      "source_quote": "Thu: 38,2%",
+      "confidence": "HIGH"
+    },
+    "fire_alarms": {
+      "value": 0,
+      "source_line": 3,
+      "source_quote": "Fire Scada Alarms: 0",
+      "confidence": "HIGH"
+    },
+    "block_chutes": {
+      "value": 0,
+      "source_line": 3,
+      "source_quote": "Block Chutes: None",
+      "confidence": "HIGH"
+    }
+  }
+}
