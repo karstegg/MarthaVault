@@ -23,6 +23,7 @@ jobs:
       run: |
         CODESPACE_NAME="cuddly-guacamole-496vp6p46wg39r"
         TARGET_DATE="${{ github.event.client_payload.date }}"
+        ADDITIONAL_INSTRUCTIONS="${{ github.event.client_payload.instructions }}"
         
         echo "🔍 Checking WhatsApp bridge health and extracting messages for $TARGET_DATE..."
         
@@ -151,6 +152,12 @@ jobs:
         8. **Use this exact PR creation command after committing files**:
            \`gh pr create --title \"feat: Autonomous PDR processing for $TARGET_DATE\" --body \"Auto-processed daily production reports\" --head [your-branch] --base master\`
         9. **This issue will auto-close** after successful processing
+        
+        $(if [ -n "$ADDITIONAL_INSTRUCTIONS" ]; then echo "
+        **🎯 ADDITIONAL PROCESSING INSTRUCTIONS:**
+        $ADDITIONAL_INSTRUCTIONS
+        
+        **IMPORTANT**: Follow the above additional instructions while still adhering to all standard processing requirements."; fi)
 
         **Expected Sites**: Gloria, Nchwaning 2, Nchwaning 3, Shafts & Winders
 

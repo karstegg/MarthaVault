@@ -3,8 +3,10 @@
 # /pdr-cloud command implementation
 # Trigger fully autonomous cloud-based daily production report processing
 
-# Parse date argument
+# Parse date argument and additional instructions
 TARGET_DATE="$1"
+shift # Remove first argument (date) so $@ contains remaining arguments
+ADDITIONAL_INSTRUCTIONS="$*" # Capture all remaining arguments as instructions
 
 # Handle relative dates
 case "$TARGET_DATE" in
@@ -16,7 +18,11 @@ case "$TARGET_DATE" in
         ;;
     "")
         echo "❌ Error: Date required"
-        echo "Usage: /pdr-cloud YYYY-MM-DD|today|yesterday"
+        echo "Usage: /pdr-cloud YYYY-MM-DD|today|yesterday [additional instructions]"
+        echo "Examples:"
+        echo "  /pdr-cloud 2025-08-15"
+        echo "  /pdr-cloud 2025-08-15 please process N3 and S&W only"
+        echo "  /pdr-cloud today focus on missing reports, ignore existing files"
         exit 1
         ;;
 esac
@@ -29,8 +35,13 @@ fi
 
 echo "🚀 Triggering autonomous cloud processing for $TARGET_DATE..."
 
-# Send repository dispatch to trigger GitHub Actions
-echo '{"event_type": "pdr-cloud", "client_payload": {"date": "'$TARGET_DATE'"}}' | gh api repos/karstegg/MarthaVault/dispatches --method POST --input -
+# Send repository dispatch to trigger GitHub Actions (with optional instructions)
+if [ -n "$ADDITIONAL_INSTRUCTIONS" ]; then
+    echo '{"event_type": "pdr-cloud", "client_payload": {"date": "'$TARGET_DATE'", "instructions": "'"$ADDITIONAL_INSTRUCTIONS"'"}}' | gh api repos/karstegg/MarthaVault/dispatches --method POST --input -
+    echo "📝 Additional instructions: $ADDITIONAL_INSTRUCTIONS"
+else
+    echo '{"event_type": "pdr-cloud", "client_payload": {"date": "'$TARGET_DATE'"}}' | gh api repos/karstegg/MarthaVault/dispatches --method POST --input -
+fi
 
 if [ $? -eq 0 ]; then
     echo "📡 Repository dispatch sent successfully"
