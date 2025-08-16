@@ -148,7 +148,7 @@ jobs:
         cat > gemini_prompt.txt << 'EOF'
         You are processing daily production reports for Assmang's Black Rock mining operations.
         
-        **TASK**: Process the WhatsApp production data below and create JSON and Markdown files for each detected mine site.
+        **TASK**: Process the WhatsApp production data below and output structured file content for each detected mine site.
         
         **SITES TO PROCESS**:
         - Gloria Mine (Engineer: Sipho Dubazane)
@@ -157,16 +157,23 @@ jobs:
         - Shafts & Winders (Engineer: Xavier Peterson)
         
         **REQUIREMENTS**:
-        1. Create both JSON and Markdown files for each site detected in the data
+        1. Analyze data for each site and output both JSON and Markdown content
         2. Follow the exact JSON schema and Markdown template provided in GEMINI.md
-        3. Use target directory: daily_production/data/\${TARGET_DATE:0:7}/\${TARGET_DATE:8:2}/ (format: YYYY-MM/DD/)
-        4. NEVER INVENT DATA - extract only actual values from source
-        5. Include source_validation section for all extracted data
-        6. Use null for missing data, do not fabricate
+        3. NEVER INVENT DATA - extract only actual values from source
+        4. Include source_validation section for all extracted data
+        5. Use null for missing data, do not fabricate
+        6. Use target date: ${TARGET_DATE} for all file content
         
-        **FILE NAMING**:
-        - JSON: ${TARGET_DATE}_sitename.json
-        - Markdown: ${TARGET_DATE} – Site Name Daily Report.md
+        **OUTPUT FORMAT**: For each site detected, output in this exact format:
+        ```
+        === SITE: [site_name] ===
+        === JSON_START ===
+        [complete JSON content here]
+        === JSON_END ===
+        === MARKDOWN_START ===
+        [complete Markdown content here]
+        === MARKDOWN_END ===
+        ```
         
         **CRITICAL**: Follow GEMINI.md configuration exactly. Every data point must be traceable to source.
         
@@ -181,31 +188,40 @@ jobs:
         cat >> gemini_prompt.txt << 'EOF'
         ```
         
-        **IMPORTANT**: You must create the actual files directly in the GitHub repository using your tools. 
+        **IMPORTANT**: You cannot create files directly. Instead, output the complete file content in the format specified above.
+        The workflow will parse your output and create the actual files.
         
         **TASK BREAKDOWN**:
         1. Analyze the WhatsApp data and identify mine sites (Gloria, Nchwaning 2, Nchwaning 3, Shafts & Winders)
         2. For each site found in the data:
-           a. Create JSON file: daily_production/data/\${TARGET_DATE:0:7}/\${TARGET_DATE:8:2}/\${TARGET_DATE}_site.json
-           b. Create Markdown file: daily_production/data/\${TARGET_DATE:0:7}/\${TARGET_DATE:8:2}/\${TARGET_DATE} – Site Daily Report.md
-        3. Use exact GEMINI.md templates and schema
-        4. Include comprehensive source validation
-        5. Follow proper file naming conventions
-        
-        **USE YOUR GITHUB TOOLS** to create these files directly in the repository:
-        - Use file creation tools to write JSON and Markdown files
-        - Create proper directory structure for target date: ${TARGET_DATE}
-        - Ensure both file formats are created for each detected site
+           a. Generate complete JSON content following GEMINI.md schema
+           b. Generate complete Markdown content following GEMINI.md template
+           c. Use exact site identification and engineer assignment
+           d. Include comprehensive source validation sections
+        3. Output everything in the specified delimited format for parsing
         EOF
         
-        # Process with Gemini
+        # Process with Gemini and capture output
         export GEMINI_API_KEY="${{ secrets.GEMINI_API_KEY }}"
-        gemini --prompt "$(cat gemini_prompt.txt)"
+        echo "🤖 Running Gemini AI processing..."
+        gemini --prompt "$(cat gemini_prompt.txt)" > gemini_output.txt 2>&1
         
-        echo "✅ Gemini processing completed"
+        echo "📄 Gemini processing completed - checking output..."
+        
+        # Check if output contains expected format
+        if grep -q "=== SITE:" gemini_output.txt; then
+          echo "✅ Gemini generated structured output"
+          echo "📋 Preview of Gemini output:"
+          head -20 gemini_output.txt
+        else
+          echo "❌ Gemini output format issue - no site delimiters found"
+          echo "📄 Raw Gemini output:"
+          cat gemini_output.txt
+          exit 1
+        fi
     
-    - name: Verify File Creation
-      id: verify_files
+    - name: Parse Gemini Output and Create Files
+      id: parse_output
       if: steps.gemini_process.conclusion == 'success'
       run: |
         TARGET_DATE="${{ github.event.client_payload.date }}"
@@ -213,13 +229,101 @@ jobs:
         DAY=$(echo $TARGET_DATE | cut -d'-' -f3)
         TARGET_DIR="daily_production/data/${YEAR_MONTH}/${DAY}"
         
-        echo "🔍 Verifying files were created by Gemini in: $TARGET_DIR"
+        echo "📂 Creating target directory: $TARGET_DIR"
+        mkdir -p "$TARGET_DIR"
         
-        # Count files created
+        echo "🔍 Parsing Gemini output to create files..."
+        
+        # Parse the structured output and create files
+        python3 << 'PYTHON_EOF'
+        import re
+        import json
+        import os
+        
+        target_date = os.environ['TARGET_DATE']
+        target_dir = os.environ['TARGET_DIR']
+        
+        # Read Gemini output
+        with open('gemini_output.txt', 'r') as f:
+            content = f.read()
+        
+        # Extract site sections
+        site_pattern = r'=== SITE: ([^=]+) ===\s*=== JSON_START ===\s*(.*?)\s*=== JSON_END ===\s*=== MARKDOWN_START ===\s*(.*?)\s*=== MARKDOWN_END ==='
+        sites = re.findall(site_pattern, content, re.DOTALL)
+        
+        files_created = 0
+        
+        for site_name, json_content, markdown_content in sites:
+            site_name = site_name.strip()
+            site_slug = site_name.lower().replace(' ', '_').replace('&', '').replace('  ', '_')
+            
+            # Map site names to standard slugs
+            if 'gloria' in site_slug:
+                site_slug = 'gloria'
+            elif 'nchwaning_2' in site_slug or 'nchwaning2' in site_slug:
+                site_slug = 'nchwaning2'
+            elif 'nchwaning_3' in site_slug or 'nchwaning3' in site_slug:
+                site_slug = 'nchwaning3'
+            elif 'shafts' in site_slug and 'winders' in site_slug:
+                site_slug = 'shafts_winders'
+            
+            print(f"📄 Processing site: {site_name} -> {site_slug}")
+            
+            # Create JSON file
+            json_filename = f"{target_date}_{site_slug}.json"
+            json_path = os.path.join(target_dir, json_filename)
+            
+            try:
+                # Validate JSON
+                json.loads(json_content.strip())
+                with open(json_path, 'w') as f:
+                    f.write(json_content.strip())
+                print(f"✅ Created JSON: {json_path}")
+                files_created += 1
+            except json.JSONDecodeError as e:
+                print(f"❌ Invalid JSON for {site_name}: {e}")
+                continue
+            
+            # Create Markdown file
+            md_filename = f"{target_date} – {site_name} Daily Report.md"
+            md_path = os.path.join(target_dir, md_filename)
+            
+            with open(md_path, 'w') as f:
+                f.write(markdown_content.strip())
+            print(f"✅ Created Markdown: {md_path}")
+            files_created += 1
+        
+        print(f"📊 Total files created: {files_created}")
+        
+        # Output for workflow
+        with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+            f.write(f"files_created={files_created}\n")
+            f.write(f"sites_processed={len(sites)}\n")
+        
+        PYTHON_EOF
+        
+        echo "✅ File parsing and creation completed"
+    
+    - name: Verify File Creation
+      id: verify_files
+      if: steps.parse_output.conclusion == 'success'
+      run: |
+        TARGET_DATE="${{ github.event.client_payload.date }}"
+        YEAR_MONTH=$(echo $TARGET_DATE | cut -d'-' -f1,2)
+        DAY=$(echo $TARGET_DATE | cut -d'-' -f3)
+        TARGET_DIR="daily_production/data/${YEAR_MONTH}/${DAY}"
+        FILES_CREATED="${{ steps.parse_output.outputs.files_created }}"
+        SITES_PROCESSED="${{ steps.parse_output.outputs.sites_processed }}"
+        
+        echo "🔍 Verifying files were created by parsing step in: $TARGET_DIR"
+        echo "📊 Parser reported: $FILES_CREATED files created from $SITES_PROCESSED sites"
+        
+        # Count actual files created
         JSON_FILES=$(find "$TARGET_DIR" -name "*.json" 2>/dev/null | wc -l || echo "0")
         MD_FILES=$(find "$TARGET_DIR" -name "*.md" 2>/dev/null | wc -l || echo "0")
+        TOTAL_FILES=$((JSON_FILES + MD_FILES))
         
-        echo "📊 Files found: $JSON_FILES JSON, $MD_FILES Markdown"
+        echo "📊 Verification: $JSON_FILES JSON, $MD_FILES Markdown = $TOTAL_FILES total files"
         
         # List created files
         if [ -d "$TARGET_DIR" ]; then
@@ -229,75 +333,23 @@ jobs:
           echo "⚠️ Target directory does not exist"
         fi
         
+        # Validation check
+        if [ "$TOTAL_FILES" -eq "$FILES_CREATED" ] && [ "$TOTAL_FILES" -gt 0 ]; then
+          echo "✅ File count verification passed"
+        else
+          echo "❌ File count mismatch: Expected $FILES_CREATED, Found $TOTAL_FILES"
+        fi
+        
         echo "json_files_count=$JSON_FILES" >> $GITHUB_OUTPUT
         echo "md_files_count=$MD_FILES" >> $GITHUB_OUTPUT
+        echo "total_files=$TOTAL_FILES" >> $GITHUB_OUTPUT
         echo "target_dir=$TARGET_DIR" >> $GITHUB_OUTPUT
-        
-    - name: Create Directory Structure
-      id: create_dir
-      run: |
-        TARGET_DATE="${{ steps.extract.outputs.target_date }}"
-        YEAR_MONTH=$(echo $TARGET_DATE | cut -d'-' -f1,2)
-        DAY=$(echo $TARGET_DATE | cut -d'-' -f3)
-        TARGET_DIR="daily_production/data/${YEAR_MONTH}/${DAY}"
-        
-        echo "📁 Creating directory structure: $TARGET_DIR"
-        mkdir -p "$TARGET_DIR"
-        
-        # Output for next steps
-        echo "target_dir=$TARGET_DIR" >> $GITHUB_OUTPUT
-        
-    - name: Organize Generated Files
-      id: organize
-      run: |
-        TARGET_DATE="${{ steps.extract.outputs.target_date }}"
-        TARGET_DIR="${{ steps.create_dir.outputs.target_dir }}"
-        
-        echo "📂 Organizing generated files into correct directory structure..."
-        
-        # Move any generated files to correct location
-        # Gemini may create files in workspace root - move them to proper location
-        FILES_MOVED=0
-        
-        # Look for JSON files
-        for json_file in ${TARGET_DATE}_*.json; do
-          if [ -f "$json_file" ]; then
-            echo "📄 Moving JSON file: $json_file → $TARGET_DIR/"
-            mv "$json_file" "$TARGET_DIR/"
-            FILES_MOVED=$((FILES_MOVED + 1))
-          fi
-        done
-        
-        # Look for Markdown files
-        for md_file in "${TARGET_DATE} –"*.md; do
-          if [ -f "$md_file" ]; then
-            echo "📄 Moving Markdown file: $md_file → $TARGET_DIR/"
-            mv "$md_file" "$TARGET_DIR/"
-            FILES_MOVED=$((FILES_MOVED + 1))
-          fi
-        done
-        
-        # Look for any other related files
-        for file in *"$TARGET_DATE"*; do
-          if [ -f "$file" ] && [[ "$file" == *.json || "$file" == *.md ]]; then
-            echo "📄 Moving additional file: $file → $TARGET_DIR/"
-            mv "$file" "$TARGET_DIR/"
-            FILES_MOVED=$((FILES_MOVED + 1))
-          fi
-        done
-        
-        echo "✅ Moved $FILES_MOVED files to correct location"
-        echo "files_moved=$FILES_MOVED" >> $GITHUB_OUTPUT
-        
-        # List what we have now
-        echo "📋 Files in target directory:"
-        ls -la "$TARGET_DIR/" || echo "Directory empty or not found"
         
     - name: Validate Generated Files
       id: validate
       run: |
         TARGET_DATE="${{ steps.extract.outputs.target_date }}"
-        TARGET_DIR="${{ steps.create_dir.outputs.target_dir }}"
+        TARGET_DIR="${{ steps.verify_files.outputs.target_dir }}"
         MESSAGE_COUNT="${{ steps.extract.outputs.message_count }}"
         
         echo "🔍 Validating generated files..."
@@ -316,10 +368,11 @@ jobs:
         fi
         
         # Check 2: Count generated files
+        JSON_COUNT="${{ steps.verify_files.outputs.json_files_count }}"
+        MD_COUNT="${{ steps.verify_files.outputs.md_files_count }}"
+        TOTAL_FILES="${{ steps.verify_files.outputs.total_files }}"
+        
         if [ -d "$TARGET_DIR" ]; then
-          JSON_COUNT=$(find "$TARGET_DIR" -name "*.json" | wc -l)
-          MD_COUNT=$(find "$TARGET_DIR" -name "*.md" | wc -l)
-          TOTAL_FILES=$((JSON_COUNT + MD_COUNT))
           
           echo "📊 Found $JSON_COUNT JSON files and $MD_COUNT Markdown files"
           
