@@ -131,7 +131,7 @@ jobs:
           **REQUIREMENTS**:
           1. Create both JSON and Markdown files for each site detected in the data
           2. Follow the exact JSON schema and Markdown template provided in GEMINI.md
-          3. Use target directory: daily_production/data/${{ steps.extract.outputs.target_date | replace('-', '/') | replace('/', '-', 1) | replace('/', '/') }}/${{ steps.extract.outputs.target_date | split('-') | last }}/
+          3. Use target directory: daily_production/data/2025-07/12/ (format: YYYY-MM/DD/)
           4. NEVER INVENT DATA - extract only actual values from source
           5. Include source_validation section for all extracted data
           6. Use null for missing data, do not fabricate
