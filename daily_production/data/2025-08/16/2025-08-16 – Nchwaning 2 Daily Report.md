@@ -1,15 +1,15 @@
 ---
-JSONData:: [[2025-08-16_nchwaning3.json]]
+JSONData:: [[2025-08-16_nchwaning2.json]]
 Status:: #status/new
 Priority:: #priority/medium
 Assignee:: 
 DueDate::
 ---
 
-# Nchwaning 3 Daily Report
+# Nchwaning 2 Daily Report
 **Date**: August 16, 2025 (Data from August 16, 2025)  
-**Engineer**: [[Sello Sease]]  
-**Site**: Nchwaning 3  
+**Engineer**: [[Sikilela Nzuza]]  
+**Site**: Nchwaning 2  
 
 ## 🔴 PRODUCTION SIGNIFICANTLY BELOW TARGET
 
