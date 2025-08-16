@@ -118,110 +118,72 @@ jobs:
         
         echo "✅ Created no-data notification issue"
         
-    - name: Install Gemini CLI
-      if: steps.extract.outputs.message_count > 0
-      run: |
-        echo "📦 Installing Gemini CLI..."
-        npm install --silent --no-audit --prefer-offline --global @google/gemini-cli@latest
-        
-        echo "🔍 Verifying installation..."
-        if command -v gemini >/dev/null 2>&1; then
-          gemini --version || echo "Gemini CLI installed successfully (version command not available)"
-        else
-          echo "Error: Gemini CLI not found in PATH"
-          exit 1
-        fi
-        
-    - name: Read WhatsApp Data and Process with Gemini AI
+    - name: Process with Gemini AI (Direct File Creation)
+      uses: 'google-github-actions/run-gemini-cli@v0'
       id: gemini_process
       if: steps.extract.outputs.message_count > 0
-      run: |
-        TARGET_DATE="${{ github.event.client_payload.date }}"
-        MESSAGE_COUNT="${{ steps.extract.outputs.message_count }}"
-        
-        echo "📋 Reading WhatsApp data for Gemini processing..."
-        WHATSAPP_DATA=$(cat whatsapp_data_for_gemini.txt)
-        
-        echo "🤖 Processing with Gemini AI..."
-        
-        # Create the full prompt with embedded data
-        cat > gemini_prompt.txt << 'EOF'
-        You are processing daily production reports for Assmang's Black Rock mining operations.
-        
-        **TASK**: Process the WhatsApp production data below and output structured file content for each detected mine site.
-        
-        **SITES TO PROCESS**:
-        - Gloria Mine (Engineer: Sipho Dubazane)
-        - Nchwaning 2 (Engineer: Sikelela Nzuza) 
-        - Nchwaning 3 (Engineer: Sello Sease)
-        - Shafts & Winders (Engineer: Xavier Peterson)
-        
-        **REQUIREMENTS**:
-        1. Analyze data for each site and output both JSON and Markdown content
-        2. Follow the exact JSON schema and Markdown template provided in GEMINI.md
-        3. NEVER INVENT DATA - extract only actual values from source
-        4. Include source_validation section for all extracted data
-        5. Use null for missing data, do not fabricate
-        6. Use target date: ${TARGET_DATE} for all file content
-        
-        **OUTPUT FORMAT**: For each site detected, output in this exact format:
-        ```
-        === SITE: [site_name] ===
-        === JSON_START ===
-        [complete JSON content here]
-        === JSON_END ===
-        === MARKDOWN_START ===
-        [complete Markdown content here]
-        === MARKDOWN_END ===
-        ```
-        
-        **CRITICAL**: Follow GEMINI.md configuration exactly. Every data point must be traceable to source.
-        
-        **WhatsApp Data to Process**:
-        ```
-        EOF
-        
-        # Append the actual data
-        cat whatsapp_data_for_gemini.txt >> gemini_prompt.txt
-        
-        # Complete the prompt
-        cat >> gemini_prompt.txt << 'EOF'
-        ```
-        
-        **IMPORTANT**: You cannot create files directly. Instead, output the complete file content in the format specified above.
-        The workflow will parse your output and create the actual files.
-        
-        **TASK BREAKDOWN**:
-        1. Analyze the WhatsApp data and identify mine sites (Gloria, Nchwaning 2, Nchwaning 3, Shafts & Winders)
-        2. For each site found in the data:
-           a. Generate complete JSON content following GEMINI.md schema
-           b. Generate complete Markdown content following GEMINI.md template
-           c. Use exact site identification and engineer assignment
-           d. Include comprehensive source validation sections
-        3. Output everything in the specified delimited format for parsing
-        EOF
-        
-        # Process with Gemini and capture output
-        export GEMINI_API_KEY="${{ secrets.GEMINI_API_KEY }}"
-        echo "🤖 Running Gemini AI processing..."
-        gemini --prompt "$(cat gemini_prompt.txt)" > gemini_output.txt 2>&1
-        
-        echo "📄 Gemini processing completed - checking output..."
-        
-        # Check if output contains expected format
-        if grep -q "=== SITE:" gemini_output.txt; then
-          echo "✅ Gemini generated structured output"
-          echo "📋 Preview of Gemini output:"
-          head -20 gemini_output.txt
-        else
-          echo "❌ Gemini output format issue - no site delimiters found"
-          echo "📄 Raw Gemini output:"
-          cat gemini_output.txt
-          exit 1
-        fi
+      env:
+        TARGET_DATE: ${{ github.event.client_payload.date }}
+        MESSAGE_COUNT: ${{ steps.extract.outputs.message_count }}
+        WHATSAPP_DATA_FILE: whatsapp_data_for_gemini.txt
+      with:
+        gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
+        settings: |
+          {
+            "maxSessionTurns": 20,
+            "coreTools": [
+              "run_shell_command(echo)",
+              "run_shell_command(cat)",
+              "run_shell_command(head)",
+              "run_shell_command(tail)",
+              "run_shell_command(mkdir)",
+              "run_shell_command(printf)",
+              "run_shell_command(tee)"
+            ],
+            "telemetry": {
+              "enabled": false
+            }
+          }
+        prompt: |
+          You are processing daily production reports for Assmang's Black Rock mining operations.
+          
+          **TASK**: Process the WhatsApp production data and create actual JSON and Markdown files for each detected mine site.
+          
+          **SITES TO PROCESS**:
+          - Gloria Mine (Engineer: Sipho Dubazane)
+          - Nchwaning 2 (Engineer: Sikelela Nzuza) 
+          - Nchwaning 3 (Engineer: Sello Sease)
+          - Shafts & Winders (Engineer: Xavier Peterson)
+          
+          **REQUIREMENTS**:
+          1. Use available shell commands to create actual files in the repository
+          2. Follow the exact JSON schema and Markdown template provided in GEMINI.md  
+          3. NEVER INVENT DATA - extract only actual values from source
+          4. Include source_validation section for all extracted data
+          5. Use null for missing data, do not fabricate
+          6. Use target date: ${{ env.TARGET_DATE }} for all file content and naming
+          
+          **FILE CREATION INSTRUCTIONS**:
+          1. First run: `mkdir -p daily_production/data/${{ env.TARGET_DATE:0:7 }}/${{ env.TARGET_DATE:8:2 }}`
+          2. For each site detected in the data:
+             - Create JSON file: `printf '%s' '[json_content]' | tee daily_production/data/${{ env.TARGET_DATE:0:7 }}/${{ env.TARGET_DATE:8:2 }}/${{ env.TARGET_DATE }}_[site].json`
+             - Create Markdown file: `printf '%s' '[markdown_content]' | tee "daily_production/data/${{ env.TARGET_DATE:0:7 }}/${{ env.TARGET_DATE:8:2 }}/${{ env.TARGET_DATE }} – [Site Name] Daily Report.md"`
+          
+          **CRITICAL**: 
+          - Follow GEMINI.md configuration exactly
+          - Every data point must be traceable to source
+          - Use your shell command tools to create actual files
+          - Start by reading the WhatsApp data: `cat ${{ env.WHATSAPP_DATA_FILE }}`
+          
+          **TASK STEPS**:
+          1. Read WhatsApp data file to understand the content
+          2. Read GEMINI.md to understand templates and schemas
+          3. Create target directory structure
+          4. For each site found in data: create both JSON and Markdown files
+          5. Verify files were created successfully
     
-    - name: Parse Gemini Output and Create Files
-      id: parse_output
+    - name: Verify File Creation
+      id: verify_files
       if: steps.gemini_process.conclusion == 'success'
       run: |
         TARGET_DATE="${{ github.event.client_payload.date }}"
@@ -229,94 +191,7 @@ jobs:
         DAY=$(echo $TARGET_DATE | cut -d'-' -f3)
         TARGET_DIR="daily_production/data/${YEAR_MONTH}/${DAY}"
         
-        echo "📂 Creating target directory: $TARGET_DIR"
-        mkdir -p "$TARGET_DIR"
-        
-        echo "🔍 Parsing Gemini output to create files..."
-        
-        # Parse the structured output and create files
-        python3 << 'PYTHON_EOF'
-        import re
-        import json
-        import os
-        
-        target_date = os.environ['TARGET_DATE']
-        target_dir = os.environ['TARGET_DIR']
-        
-        # Read Gemini output
-        with open('gemini_output.txt', 'r') as f:
-            content = f.read()
-        
-        # Extract site sections
-        site_pattern = r'=== SITE: ([^=]+) ===\s*=== JSON_START ===\s*(.*?)\s*=== JSON_END ===\s*=== MARKDOWN_START ===\s*(.*?)\s*=== MARKDOWN_END ==='
-        sites = re.findall(site_pattern, content, re.DOTALL)
-        
-        files_created = 0
-        
-        for site_name, json_content, markdown_content in sites:
-            site_name = site_name.strip()
-            site_slug = site_name.lower().replace(' ', '_').replace('&', '').replace('  ', '_')
-            
-            # Map site names to standard slugs
-            if 'gloria' in site_slug:
-                site_slug = 'gloria'
-            elif 'nchwaning_2' in site_slug or 'nchwaning2' in site_slug:
-                site_slug = 'nchwaning2'
-            elif 'nchwaning_3' in site_slug or 'nchwaning3' in site_slug:
-                site_slug = 'nchwaning3'
-            elif 'shafts' in site_slug and 'winders' in site_slug:
-                site_slug = 'shafts_winders'
-            
-            print(f"📄 Processing site: {site_name} -> {site_slug}")
-            
-            # Create JSON file
-            json_filename = f"{target_date}_{site_slug}.json"
-            json_path = os.path.join(target_dir, json_filename)
-            
-            try:
-                # Validate JSON
-                json.loads(json_content.strip())
-                with open(json_path, 'w') as f:
-                    f.write(json_content.strip())
-                print(f"✅ Created JSON: {json_path}")
-                files_created += 1
-            except json.JSONDecodeError as e:
-                print(f"❌ Invalid JSON for {site_name}: {e}")
-                continue
-            
-            # Create Markdown file
-            md_filename = f"{target_date} – {site_name} Daily Report.md"
-            md_path = os.path.join(target_dir, md_filename)
-            
-            with open(md_path, 'w') as f:
-                f.write(markdown_content.strip())
-            print(f"✅ Created Markdown: {md_path}")
-            files_created += 1
-        
-        print(f"📊 Total files created: {files_created}")
-        
-        # Output for workflow
-        with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
-            f.write(f"files_created={files_created}\n")
-            f.write(f"sites_processed={len(sites)}\n")
-        
-        PYTHON_EOF
-        
-        echo "✅ File parsing and creation completed"
-    
-    - name: Verify File Creation
-      id: verify_files
-      if: steps.parse_output.conclusion == 'success'
-      run: |
-        TARGET_DATE="${{ github.event.client_payload.date }}"
-        YEAR_MONTH=$(echo $TARGET_DATE | cut -d'-' -f1,2)
-        DAY=$(echo $TARGET_DATE | cut -d'-' -f3)
-        TARGET_DIR="daily_production/data/${YEAR_MONTH}/${DAY}"
-        FILES_CREATED="${{ steps.parse_output.outputs.files_created }}"
-        SITES_PROCESSED="${{ steps.parse_output.outputs.sites_processed }}"
-        
-        echo "🔍 Verifying files were created by parsing step in: $TARGET_DIR"
-        echo "📊 Parser reported: $FILES_CREATED files created from $SITES_PROCESSED sites"
+        echo "🔍 Verifying files were created by Gemini direct creation in: $TARGET_DIR"
         
         # Count actual files created
         JSON_FILES=$(find "$TARGET_DIR" -name "*.json" 2>/dev/null | wc -l || echo "0")
@@ -334,10 +209,10 @@ jobs:
         fi
         
         # Validation check
-        if [ "$TOTAL_FILES" -eq "$FILES_CREATED" ] && [ "$TOTAL_FILES" -gt 0 ]; then
-          echo "✅ File count verification passed"
+        if [ "$TOTAL_FILES" -gt 0 ]; then
+          echo "✅ Files were created by Gemini ($TOTAL_FILES total)"
         else
-          echo "❌ File count mismatch: Expected $FILES_CREATED, Found $TOTAL_FILES"
+          echo "❌ No files were created by Gemini"
         fi
         
         echo "json_files_count=$JSON_FILES" >> $GITHUB_OUTPUT
