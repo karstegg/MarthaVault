@@ -1,0 +1,1 @@
+<% tp.user.scan_current_note() %>

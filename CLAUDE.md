@@ -614,3 +614,4 @@ NEVER proactively create documentation files (*.md) or README files. Only create
 
 **This issue cost us missing production reports - NEVER let bridge run without service management again.**
 - we are in a region with timezone UCT+2
+- memory please update claude.md and any other applicable file to reflect the new calender plugin methods and rules

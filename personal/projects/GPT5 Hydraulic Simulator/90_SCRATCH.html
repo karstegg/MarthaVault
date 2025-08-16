@@ -1,0 +1,86 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>Hydraulic Scratch</title>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto; margin: 1.25rem; }
+  #bar { display:flex; gap:.75rem; align-items:center; flex-wrap:wrap; margin-bottom:1rem; }
+  .pill { padding:.2rem .5rem; border-radius:999px; background:#111827; color:#cbd5e1; font-size:12px; }
+  input[type=range]{ width:220px; }
+</style>
+<div id="bar">
+  <button id="pump">Pump: On</button>
+  <label>Valve <input id="valve" type="range" min="0" max="100" value="100"></label>
+  <span id="vp" class="pill">P=0.0 bar</span>
+  <span id="va" class="pill">A=0.0 bar</span>
+  <span id="vb" class="pill">B=0.0 bar</span>
+  <span id="xx" class="pill">x=0.000 m</span>
+</div>
+<canvas id="scope" width="900" height="200" style="border:1px solid #e5e7eb"></canvas>
+<script>
+  // Parameters (SI)
+  let pumpOn = true, valve = 1.0, spool = +1;
+  const bp = 2e5, relief = 180e5;
+  const tau = 0.05; // s visual smoothing
+  const A_cap = Math.PI*(0.05**2), A_rod = Math.PI*(0.03**2);
+  const m = 150, visc = 500, coul = 200;
+
+  // State
+  let pP=0, pA=0, pB=0, x=0, v=0;
+
+  // UI
+  const $ = id => document.getElementById(id);
+  $('pump').onclick = () => { pumpOn=!pumpOn; $('pump').textContent = `Pump: ${pumpOn?'On':'Off'}`; };
+  $('valve').oninput = e => { valve = Math.max(0, Math.min(1, e.target.value/100)); };
+
+  // Scope
+  const S = $('scope'), ctx = S.getContext('2d');
+  const buf = { pA:[], pB:[], x:[] }, N=900;
+  function pushBuf(arr, v){ if(arr.length>=N) arr.shift(); arr.push(v); }
+  function drawScope(){
+    ctx.clearRect(0,0,S.width,S.height);
+    ctx.font='12px system-ui'; ctx.fillStyle='#334155';
+    ctx.fillText('pA (bar), pB (bar), x (m)', 8, 14);
+    const ymin=-10, ymax=200; // plot p in bar and x scaled
+    const scale = y => (1 - (y - ymin)/(ymax - ymin)) * (S.height-20) + 10;
+    // axes
+    ctx.strokeStyle='#e5e7eb'; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(40,10); ctx.lineTo(40,S.height-10); ctx.lineTo(S.width-10,S.height-10); ctx.stroke();
+    // pA
+    ctx.strokeStyle='#ef4444'; ctx.beginPath(); buf.pA.forEach((v,i)=>{ const x=i+40; const y=scale(v); i?ctx.lineTo(x,y):ctx.moveTo(x,y); }); ctx.stroke();
+    // pB
+    ctx.strokeStyle='#3b82f6'; ctx.beginPath(); buf.pB.forEach((v,i)=>{ const x=i+40; const y=scale(v); i?ctx.lineTo(x,y):ctx.moveTo(x,y); }); ctx.stroke();
+    // x (m) scaled to bar range for display
+    ctx.strokeStyle='#10b981'; ctx.beginPath(); buf.x.forEach((v,i)=>{ const x1=i+40; const y=scale(v*1000); i?ctx.lineTo(x1,y):ctx.moveTo(x1,y); }); ctx.stroke();
+  }
+
+  function step(dt){
+    const target = (pumpOn && valve>0.01) ? Math.max(bp, relief) : bp;
+    pP += (target - pP) * (1 - Math.exp(-dt/tau));
+    const eff = valve;
+    const dirA = spool >= 0 ? 1 : 0;
+    const dirB = spool <  0 ? 1 : 0;
+    pA = dirA ? (pP*eff + bp*(1-eff)) : bp;
+    pB = dirB ? (pP*eff + bp*(1-eff)) : bp;
+
+    const F = A_cap*pA - A_rod*pB;
+    const sign = x => x===0 ? 0 : (x>0 ? 1 : -1);
+    const Fe = Math.abs(F) > coul ? (F - sign(F)*coul) : 0;
+    const a = (Fe - visc*v) / m;
+    v += a*dt;
+    x += v*dt;
+  }
+
+  let last = performance.now();
+  (function loop(){
+    const now = performance.now();
+    const dt = Math.min(0.02, Math.max(0, (now-last)/1000));
+    last = now;
+    step(dt);
+    $('vp').textContent = `P=${(pP/1e5).toFixed(1)} bar`;
+    $('va').textContent = `A=${(pA/1e5).toFixed(1)} bar`;
+    $('vb').textContent = `B=${(pB/1e5).toFixed(1)} bar`;
+    $('xx').textContent = `x=${x.toFixed(3)} m`;
+    pushBuf(buf.pA, pA/1e5); pushBuf(buf.pB, pB/1e5); pushBuf(buf.x, x);
+    drawScope();
+    requestAnimationFrame(loop);
+  })();
+</script>

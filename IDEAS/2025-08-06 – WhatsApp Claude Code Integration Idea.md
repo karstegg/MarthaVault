@@ -93,4 +93,4 @@ Use WhatsApp as a communication interface for Claude Code interactions, enabling
 
 ## Related Files
 - [[CLAUDE.md]] - Current WhatsApp MCP setup documentation
-- [[projects/personal/2025-08-06 – Claude Code GitHub Integration Workflow.md]] - Related automation concepts
+- [[2025-08-06 – Claude Code GitHub Integration Workflow]] - Related automation concepts

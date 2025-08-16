@@ -28,6 +28,7 @@ For each item in sequence:
 #### **B. Intelligent Suggestions**
 Based on content analysis, suggest:
 - **File Type Classification**: Meeting, task, idea, decision, reference, etc.
+- **Calendar Events**: Detect dates in content and suggest calendar events to create
 - **Destination Folder**: `projects/`, `people/`, `reference/`, etc.
 - **Filename Format**: Proper `YYYY-MM-DD – Title.md` naming
 - **Task Extraction**: Any checkboxes or action items found
@@ -45,6 +46,15 @@ Present options for each item:
 
 #### **D. Execute Action**
 Based on user choice:
+- **Create calendar events** in `Schedule/` folder using proper format:
+  ```yaml
+  ---
+  title: Event Title
+  allDay: true
+  date: YYYY-MM-DD
+  completed: null
+  ---
+  ```
 - Move and rename files appropriately
 - Create or update front-matter with Status, Priority, Assignee, DueDate
 - Extract and sync tasks to `tasks/master_task_list.md`  
@@ -75,6 +85,7 @@ Special processing for media files following existing triage rules:
 ### 5. **Completion Summary**
 After processing all items, provide:
 - **Items Processed**: Count and types
+- **Calendar Events Created**: Events added to Schedule folder
 - **Files Moved**: Source → Destination mapping
 - **Tasks Created**: New entries in master task list  
 - **Projects Created**: New project folders established
@@ -124,6 +135,7 @@ Meeting with John about project X...
 
 💡 Suggestions:
 - Type: Meeting note  
+- Calendar Event: "Meeting with John about Project X" (2025-08-10)
 - Destination: projects/Project_X/
 - Filename: 2025-08-10 – Meeting with John about Project X.md
 - Tasks: 2 action items detected
@@ -134,6 +146,7 @@ Options: [A]ccept, [M]odify, [S]kip, [D]elete, [C]ustom, [I]nfo
 Your choice: A
 
 ✅ Processed: Meeting note → projects/Project_X/2025-08-10 – Meeting with John about Project X.md
+📅 Created calendar event: Schedule/2025-08-10 - Meeting with John about Project X.md
 ✅ Added 2 tasks to master task list
 ✅ Created person note: people/John Smith.md
 

@@ -2,6 +2,8 @@
 - [x] test task this #task #year/2025
 - [x] add a test task #task #year/2025
 
+- [ ] Explore UI-TARS desktop automation possibilities and technical feasibility #task #automation #personal #priority/low #year/2025
+
 - [ ] **Xavier Peterson - Finalize SP Mine Safety Lamp Room Contract** - Submit contract before end of August 2025 #task #contracts #safety #xavier #priority/high #year/2025
   - Due: 2025-08-31
   - Context: Follow-up from Adjudication Committee meeting - confirmed with Hennie that Xavier is handling

@@ -5,10 +5,20 @@ Scan every item in **00_inbox/** and process according to type.
 
 ## 1 ║ Text / Markdown files (`*.md`, `*.txt`)
 1. **Analyse intent** → meeting, task, idea, etc.  
-2. **Move** file to the correct folder (`projects/…`, `people/…`, etc.).  
-3. **Rename** `YYYY-MM-DD – Title.md` if needed.  
-4. **Add / update front-matter** (Status, Priority, Assignee, DueDate).  
-5. **Mirror check-boxes** to `tasks/master_task_list.md`.
+2. **Scan for dates & create calendar events** → detect dates in content and create properly formatted calendar events in `Schedule/YYYY-MM-DD - Event Title.md` using format:
+   ```yaml
+   ---
+   title: Event Title
+   allDay: true
+   date: YYYY-MM-DD
+   completed: null
+   ---
+   ```
+3. **Move** file to the correct folder (`projects/…`, `people/…`, etc.).  
+4. **Rename** `YYYY-MM-DD – Title.md` if needed.  
+5. **Add / update front-matter** (Status, Priority, Assignee, DueDate).  
+6. **Mirror check-boxes** to `tasks/master_task_list.md`.
+7. **Link calendar events** → ensure created events reference source note via `**Source**: [[note title]]`.
 
 ---
 
@@ -61,19 +71,12 @@ Edit
 ## 3 ║ Echo report
 For each processed item output:
 
-[✓] <old path> → <new path or note> (#tags…)
-
-css
-Copy
-Edit
+[✓] <old path> → <new path or note> (#tags…)  
+[📅] Created calendar event: <event title> (<date>)
 
 At the end, report a summary count:
 
-Moved 3 notes, 1 image, 1 audio. Inbox empty.
-
-yaml
-Copy
-Edit
+Moved 3 notes, 1 image, 1 audio. Created 2 calendar events. Inbox empty.
 
 ---
 
