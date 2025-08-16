@@ -69,6 +69,16 @@ jobs:
         echo "message_count=$MESSAGE_COUNT" >> $GITHUB_OUTPUT
         echo "target_date=$TARGET_DATE" >> $GITHUB_OUTPUT
         
+        # CRITICAL FIX: Output the extracted data for Gemini processing
+        if [ "$MESSAGE_COUNT" -gt 0 ]; then
+          echo "extracted_data<<EOF" >> $GITHUB_OUTPUT
+          cat extracted_messages.txt >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          echo "whatsapp_data<<EOF" >> $GITHUB_OUTPUT
+          cat extracted_messages.txt >> $GITHUB_OUTPUT  
+          echo "EOF" >> $GITHUB_OUTPUT
+        fi
+        
         # Preview extracted data (first 3 lines)
         echo "📋 Message preview:"
         head -3 extracted_messages.txt || echo "No data to preview"
@@ -133,7 +143,7 @@ jobs:
           **REQUIREMENTS**:
           1. Create both JSON and Markdown files for each site detected in the data
           2. Follow the exact JSON schema and Markdown template provided in GEMINI.md
-          3. Use target directory: daily_production/data/2025-07/12/ (format: YYYY-MM/DD/)
+          3. Use target directory based on date: daily_production/data/YYYY-MM/DD/ (e.g., for 2025-07-14 use daily_production/data/2025-07/14/)
           4. NEVER INVENT DATA - extract only actual values from source
           5. Include source_validation section for all extracted data
           6. Use null for missing data, do not fabricate
@@ -154,15 +164,15 @@ jobs:
           **TASK BREAKDOWN**:
           1. Analyze the WhatsApp data and identify mine sites (Gloria, Nchwaning 2, Nchwaning 3, Shafts & Winders)
           2. For each site found in the data:
-             a. Create JSON file: daily_production/data/2025-07/12/YYYY-MM-DD_site.json
-             b. Create Markdown file: daily_production/data/2025-07/12/YYYY-MM-DD – Site Daily Report.md
+             a. Create JSON file in appropriate date directory: daily_production/data/YYYY-MM/DD/YYYY-MM-DD_site.json
+             b. Create Markdown file in same directory: daily_production/data/YYYY-MM/DD/YYYY-MM-DD – Site Daily Report.md
           3. Use exact GEMINI.md templates and schema
           4. Include comprehensive source validation
           5. Follow proper file naming conventions
           
           **USE YOUR GITHUB TOOLS** to create these files directly in the repository:
           - Use file creation tools to write JSON and Markdown files
-          - Place files in correct directory: daily_production/data/2025-07/12/
+          - Create proper directory structure for target date: ${{ steps.extract.outputs.target_date }}
           - Ensure both file formats are created for each detected site
     
     - name: Verify File Creation
