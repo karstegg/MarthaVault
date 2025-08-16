@@ -199,7 +199,8 @@ jobs:
         EOF
         
         # Process with Gemini
-        gemini --api-key="${{ secrets.GEMINI_API_KEY }}" "$(cat gemini_prompt.txt)"
+        export GEMINI_API_KEY="${{ secrets.GEMINI_API_KEY }}"
+        gemini --prompt "$(cat gemini_prompt.txt)"
         
         echo "✅ Gemini processing completed"
     
