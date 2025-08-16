@@ -1,0 +1,71 @@
+#!/bin/bash
+
+# /pdr-gemini - Process Daily Reports using FREE Gemini AI
+# Usage: /pdr-gemini YYYY-MM-DD [additional instructions]
+# Example: /pdr-gemini 2025-07-12
+# Example: /pdr-gemini 2025-07-12 "Focus on equipment analysis"
+
+# Check if date argument is provided
+if [ -z "$1" ]; then
+    echo "❌ Error: Date argument required"
+    echo "Usage: /pdr-gemini YYYY-MM-DD [additional instructions]"
+    echo "Example: /pdr-gemini 2025-07-12"
+    echo "Example: /pdr-gemini 2025-07-12 \"Focus on equipment breakdown analysis\""
+    exit 1
+fi
+
+# Parse date argument and additional instructions
+TARGET_DATE="$1"
+shift # Remove first argument (date) so $@ contains remaining arguments
+ADDITIONAL_INSTRUCTIONS="$*" # Capture all remaining arguments as instructions
+
+# Validate date format (basic check)
+if ! echo "$TARGET_DATE" | grep -qE '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'; then
+    echo "❌ Error: Invalid date format. Use YYYY-MM-DD"
+    echo "Example: /pdr-gemini 2025-07-12"
+    exit 1
+fi
+
+# Check if gh CLI is available
+if ! command -v gh &> /dev/null; then
+    echo "❌ Error: GitHub CLI (gh) not found. Please install it first."
+    exit 1
+fi
+
+echo "🤖 Starting FREE Gemini AI PDR processing for $TARGET_DATE"
+
+if [ -n "$ADDITIONAL_INSTRUCTIONS" ]; then
+    echo "📋 Additional instructions: $ADDITIONAL_INSTRUCTIONS"
+fi
+
+echo "🚀 Triggering Gemini AI workflow..."
+
+# Send repository dispatch to trigger Gemini AI workflow (with optional instructions)
+if [ -n "$ADDITIONAL_INSTRUCTIONS" ]; then
+    echo '{"event_type": "pdr-gemini", "client_payload": {"date": "'$TARGET_DATE'", "instructions": "'"$ADDITIONAL_INSTRUCTIONS"'"}}' | gh api repos/karstegg/MarthaVault/dispatches --method POST --input -
+else
+    echo '{"event_type": "pdr-gemini", "client_payload": {"date": "'$TARGET_DATE'"}}' | gh api repos/karstegg/MarthaVault/dispatches --method POST --input -
+fi
+
+if [ $? -eq 0 ]; then
+    echo "✅ Gemini AI workflow triggered successfully"
+    echo ""
+    echo "📊 What happens next:"
+    echo "1. 🔍 WhatsApp data extraction from Codespace"
+    echo "2. 🤖 FREE Gemini AI processing (Google AI Studio)"
+    echo "3. ⚙️  JSON and Markdown file generation"
+    echo "4. 📝 Automatic validation and file organization"
+    echo "5. 🔄 Automatic PR creation for review"
+    echo ""
+    echo "⏱️  Expected completion: 5-15 minutes (much faster than Claude!)"
+    echo "🔗 Monitor progress: https://github.com/karstegg/MarthaVault/actions"
+    echo "📋 Issues will be created for tracking and notifications"
+    echo ""
+    echo "💡 Benefits: FREE processing vs Claude (\$0.39/day savings)"
+    echo "💰 Cost: \$0 (Gemini) vs \$0.39/day (Claude) vs \$10/month (Copilot)"
+    echo "⚡ Speed: Faster processing with Gemini 2.0 Flash Exp model"
+else
+    echo "❌ Failed to trigger Gemini AI workflow"
+    echo "🔍 Check GitHub CLI authentication and repository access"
+    exit 1
+fi
