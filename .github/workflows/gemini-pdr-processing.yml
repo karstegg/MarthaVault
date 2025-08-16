@@ -69,14 +69,13 @@ jobs:
         echo "message_count=$MESSAGE_COUNT" >> $GITHUB_OUTPUT
         echo "target_date=$TARGET_DATE" >> $GITHUB_OUTPUT
         
-        # CRITICAL FIX: Output the extracted data for Gemini processing
+        # CRITICAL FIX: Save extracted data for Gemini processing (GitHub Actions has multiline output limits)
         if [ "$MESSAGE_COUNT" -gt 0 ]; then
-          echo "extracted_data<<EOF" >> $GITHUB_OUTPUT
-          cat extracted_messages.txt >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-          echo "whatsapp_data<<EOF" >> $GITHUB_OUTPUT
-          cat extracted_messages.txt >> $GITHUB_OUTPUT  
-          echo "EOF" >> $GITHUB_OUTPUT
+          # Copy data to workspace for Gemini access
+          cp extracted_messages.txt whatsapp_data_for_gemini.txt
+          echo "data_file_created=true" >> $GITHUB_OUTPUT
+        else
+          echo "data_file_created=false" >> $GITHUB_OUTPUT
         fi
         
         # Preview extracted data (first 3 lines)
@@ -119,61 +118,76 @@ jobs:
         
         echo "✅ Created no-data notification issue"
         
-    - name: Process with Gemini AI
+    - name: Read WhatsApp Data and Process with Gemini AI
       id: gemini_process
       if: steps.extract.outputs.message_count > 0
-      uses: google-github-actions/run-gemini-cli@v0
-      env:
-        TARGET_DATE: ${{ github.event.client_payload.date }}
-        WHATSAPP_DATA: ${{ steps.extract.outputs.whatsapp_data }}
-        MESSAGE_COUNT: ${{ steps.extract.outputs.message_count }}
-      with:
-        gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
-        prompt: |-
-          You are processing daily production reports for Assmang's Black Rock mining operations.
-          
-          **TASK**: Process the WhatsApp production data below and create JSON and Markdown files for each detected mine site.
-          
-          **SITES TO PROCESS**:
-          - Gloria Mine (Engineer: Sipho Dubazane)
-          - Nchwaning 2 (Engineer: Sikelela Nzuza) 
-          - Nchwaning 3 (Engineer: Sello Sease)
-          - Shafts & Winders (Engineer: Xavier Peterson)
-          
-          **REQUIREMENTS**:
-          1. Create both JSON and Markdown files for each site detected in the data
-          2. Follow the exact JSON schema and Markdown template provided in GEMINI.md
-          3. Use target directory based on date: daily_production/data/YYYY-MM/DD/ (e.g., for 2025-07-14 use daily_production/data/2025-07/14/)
-          4. NEVER INVENT DATA - extract only actual values from source
-          5. Include source_validation section for all extracted data
-          6. Use null for missing data, do not fabricate
-          
-          **FILE NAMING**:
-          - JSON: ${{ steps.extract.outputs.target_date }}_sitename.json
-          - Markdown: ${{ steps.extract.outputs.target_date }} – Site Name Daily Report.md
-          
-          **CRITICAL**: Follow GEMINI.md configuration exactly. Every data point must be traceable to source.
-          
-          **WhatsApp Data to Process**:
-          ```
-          ${{ steps.extract.outputs.extracted_data }}
-          ```
-          
-          **IMPORTANT**: You must create the actual files directly in the GitHub repository using your tools. 
-          
-          **TASK BREAKDOWN**:
-          1. Analyze the WhatsApp data and identify mine sites (Gloria, Nchwaning 2, Nchwaning 3, Shafts & Winders)
-          2. For each site found in the data:
-             a. Create JSON file in appropriate date directory: daily_production/data/YYYY-MM/DD/YYYY-MM-DD_site.json
-             b. Create Markdown file in same directory: daily_production/data/YYYY-MM/DD/YYYY-MM-DD – Site Daily Report.md
-          3. Use exact GEMINI.md templates and schema
-          4. Include comprehensive source validation
-          5. Follow proper file naming conventions
-          
-          **USE YOUR GITHUB TOOLS** to create these files directly in the repository:
-          - Use file creation tools to write JSON and Markdown files
-          - Create proper directory structure for target date: ${{ steps.extract.outputs.target_date }}
-          - Ensure both file formats are created for each detected site
+      run: |
+        TARGET_DATE="${{ github.event.client_payload.date }}"
+        MESSAGE_COUNT="${{ steps.extract.outputs.message_count }}"
+        
+        echo "📋 Reading WhatsApp data for Gemini processing..."
+        WHATSAPP_DATA=$(cat whatsapp_data_for_gemini.txt)
+        
+        echo "🤖 Processing with Gemini AI..."
+        
+        # Create the full prompt with embedded data
+        cat > gemini_prompt.txt << 'EOF'
+        You are processing daily production reports for Assmang's Black Rock mining operations.
+        
+        **TASK**: Process the WhatsApp production data below and create JSON and Markdown files for each detected mine site.
+        
+        **SITES TO PROCESS**:
+        - Gloria Mine (Engineer: Sipho Dubazane)
+        - Nchwaning 2 (Engineer: Sikelela Nzuza) 
+        - Nchwaning 3 (Engineer: Sello Sease)
+        - Shafts & Winders (Engineer: Xavier Peterson)
+        
+        **REQUIREMENTS**:
+        1. Create both JSON and Markdown files for each site detected in the data
+        2. Follow the exact JSON schema and Markdown template provided in GEMINI.md
+        3. Use target directory: daily_production/data/${TARGET_DATE:0:7}/${TARGET_DATE:8:2}/ (format: YYYY-MM/DD/)
+        4. NEVER INVENT DATA - extract only actual values from source
+        5. Include source_validation section for all extracted data
+        6. Use null for missing data, do not fabricate
+        
+        **FILE NAMING**:
+        - JSON: ${TARGET_DATE}_sitename.json
+        - Markdown: ${TARGET_DATE} – Site Name Daily Report.md
+        
+        **CRITICAL**: Follow GEMINI.md configuration exactly. Every data point must be traceable to source.
+        
+        **WhatsApp Data to Process**:
+        ```
+        EOF
+        
+        # Append the actual data
+        cat whatsapp_data_for_gemini.txt >> gemini_prompt.txt
+        
+        # Complete the prompt
+        cat >> gemini_prompt.txt << 'EOF'
+        ```
+        
+        **IMPORTANT**: You must create the actual files directly in the GitHub repository using your tools. 
+        
+        **TASK BREAKDOWN**:
+        1. Analyze the WhatsApp data and identify mine sites (Gloria, Nchwaning 2, Nchwaning 3, Shafts & Winders)
+        2. For each site found in the data:
+           a. Create JSON file: daily_production/data/YYYY-MM/DD/YYYY-MM-DD_site.json
+           b. Create Markdown file: daily_production/data/YYYY-MM/DD/YYYY-MM-DD – Site Daily Report.md
+        3. Use exact GEMINI.md templates and schema
+        4. Include comprehensive source validation
+        5. Follow proper file naming conventions
+        
+        **USE YOUR GITHUB TOOLS** to create these files directly in the repository:
+        - Use file creation tools to write JSON and Markdown files
+        - Create proper directory structure for target date: ${TARGET_DATE}
+        - Ensure both file formats are created for each detected site
+        EOF
+        
+        # Process with Gemini
+        gemini --api-key="${{ secrets.GEMINI_API_KEY }}" "$(cat gemini_prompt.txt)"
+        
+        echo "✅ Gemini processing completed"
     
     - name: Verify File Creation
       id: verify_files
