@@ -132,13 +132,13 @@ jobs:
           {
             "maxSessionTurns": 20,
             "coreTools": [
-              "run_shell_command(echo)",
+              "ReadFileTool",
+              "WriteFileTool",
+              "GlobTool",
+              "EditTool",
               "run_shell_command(cat)",
               "run_shell_command(head)",
-              "run_shell_command(tail)",
-              "run_shell_command(mkdir)",
-              "run_shell_command(printf)",
-              "run_shell_command(tee)"
+              "run_shell_command(mkdir)"
             ],
             "telemetry": {
               "enabled": false
@@ -164,23 +164,23 @@ jobs:
           6. Use target date: ${{ env.TARGET_DATE }} for all file content and naming
           
           **FILE CREATION INSTRUCTIONS**:
-          1. First run: `mkdir -p daily_production/data/${{ env.TARGET_DATE:0:7 }}/${{ env.TARGET_DATE:8:2 }}`
+          1. Use the `write_file` tool to create files directly in the repository
           2. For each site detected in the data:
-             - Create JSON file: `printf '%s' '[json_content]' | tee daily_production/data/${{ env.TARGET_DATE:0:7 }}/${{ env.TARGET_DATE:8:2 }}/${{ env.TARGET_DATE }}_[site].json`
-             - Create Markdown file: `printf '%s' '[markdown_content]' | tee "daily_production/data/${{ env.TARGET_DATE:0:7 }}/${{ env.TARGET_DATE:8:2 }}/${{ env.TARGET_DATE }} – [Site Name] Daily Report.md"`
+             - Create JSON file using: write_file(path="daily_production/data/${{ env.TARGET_DATE:0:7 }}/${{ env.TARGET_DATE:8:2 }}/${{ env.TARGET_DATE }}_[site].json", content="[json_content]")
+             - Create Markdown file using: write_file(path="daily_production/data/${{ env.TARGET_DATE:0:7 }}/${{ env.TARGET_DATE:8:2 }}/${{ env.TARGET_DATE }} – [Site Name] Daily Report.md", content="[markdown_content]")
           
           **CRITICAL**: 
           - Follow GEMINI.md configuration exactly
           - Every data point must be traceable to source
-          - Use your shell command tools to create actual files
-          - Start by reading the WhatsApp data: `cat ${{ env.WHATSAPP_DATA_FILE }}`
+          - Use your write_file tool to create actual files in the repository
+          - NEVER INVENT DATA - extract only actual values from source
           
           **TASK STEPS**:
-          1. Read WhatsApp data file to understand the content
-          2. Read GEMINI.md to understand templates and schemas
-          3. Create target directory structure
-          4. For each site found in data: create both JSON and Markdown files
-          5. Verify files were created successfully
+          1. Use read_file tool to read WhatsApp data file: ${{ env.WHATSAPP_DATA_FILE }}
+          2. Use read_file tool to read GEMINI.md to understand templates and schemas
+          3. Analyze the data and identify mine sites (Gloria, Nchwaning 2, Nchwaning 3, Shafts & Winders)
+          4. For each site found in data: use write_file tool to create both JSON and Markdown files
+          5. Follow exact JSON schema and Markdown template from GEMINI.md
     
     - name: Verify File Creation
       id: verify_files
