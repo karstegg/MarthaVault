@@ -118,6 +118,20 @@ jobs:
         
         echo "✅ Created no-data notification issue"
         
+    - name: Install Gemini CLI
+      if: steps.extract.outputs.message_count > 0
+      run: |
+        echo "📦 Installing Gemini CLI..."
+        npm install --silent --no-audit --prefer-offline --global @google/gemini-cli@latest
+        
+        echo "🔍 Verifying installation..."
+        if command -v gemini >/dev/null 2>&1; then
+          gemini --version || echo "Gemini CLI installed successfully (version command not available)"
+        else
+          echo "Error: Gemini CLI not found in PATH"
+          exit 1
+        fi
+        
     - name: Read WhatsApp Data and Process with Gemini AI
       id: gemini_process
       if: steps.extract.outputs.message_count > 0
