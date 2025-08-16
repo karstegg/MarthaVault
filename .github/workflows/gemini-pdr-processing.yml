@@ -393,6 +393,10 @@ jobs:
         YEAR_MONTH=$(echo $TARGET_DATE | cut -d'-' -f1,2)
         DAY=$(echo $TARGET_DATE | cut -d'-' -f3)
         
+        # Configure git
+        git config --global user.email "noreply@google.com"
+        git config --global user.name "Gemini AI"
+        
         # Create feature branch
         BRANCH_NAME="gemini/pdr-processing-$TARGET_DATE"
         git checkout -b "$BRANCH_NAME"
