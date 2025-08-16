@@ -148,6 +148,51 @@ jobs:
           ```
           ${{ steps.extract.outputs.extracted_data }}
           ```
+          
+          **IMPORTANT**: You must create the actual files directly in the GitHub repository using your tools. 
+          
+          **TASK BREAKDOWN**:
+          1. Analyze the WhatsApp data and identify mine sites (Gloria, Nchwaning 2, Nchwaning 3, Shafts & Winders)
+          2. For each site found in the data:
+             a. Create JSON file: daily_production/data/2025-07/12/YYYY-MM-DD_site.json
+             b. Create Markdown file: daily_production/data/2025-07/12/YYYY-MM-DD – Site Daily Report.md
+          3. Use exact GEMINI.md templates and schema
+          4. Include comprehensive source validation
+          5. Follow proper file naming conventions
+          
+          **USE YOUR GITHUB TOOLS** to create these files directly in the repository:
+          - Use file creation tools to write JSON and Markdown files
+          - Place files in correct directory: daily_production/data/2025-07/12/
+          - Ensure both file formats are created for each detected site
+    
+    - name: Verify File Creation
+      id: verify_files
+      if: steps.gemini_process.conclusion == 'success'
+      run: |
+        TARGET_DATE="${{ github.event.client_payload.date }}"
+        YEAR_MONTH=$(echo $TARGET_DATE | cut -d'-' -f1,2)
+        DAY=$(echo $TARGET_DATE | cut -d'-' -f3)
+        TARGET_DIR="daily_production/data/${YEAR_MONTH}/${DAY}"
+        
+        echo "🔍 Verifying files were created by Gemini in: $TARGET_DIR"
+        
+        # Count files created
+        JSON_FILES=$(find "$TARGET_DIR" -name "*.json" 2>/dev/null | wc -l || echo "0")
+        MD_FILES=$(find "$TARGET_DIR" -name "*.md" 2>/dev/null | wc -l || echo "0")
+        
+        echo "📊 Files found: $JSON_FILES JSON, $MD_FILES Markdown"
+        
+        # List created files
+        if [ -d "$TARGET_DIR" ]; then
+          echo "📂 Files in $TARGET_DIR:"
+          ls -la "$TARGET_DIR" || echo "Directory exists but is empty"
+        else
+          echo "⚠️ Target directory does not exist"
+        fi
+        
+        echo "json_files_count=$JSON_FILES" >> $GITHUB_OUTPUT
+        echo "md_files_count=$MD_FILES" >> $GITHUB_OUTPUT
+        echo "target_dir=$TARGET_DIR" >> $GITHUB_OUTPUT
         
     - name: Create Directory Structure
       run: |
