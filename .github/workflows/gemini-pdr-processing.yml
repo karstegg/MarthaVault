@@ -3,6 +3,12 @@ name: 🤖 Gemini AI PDR Processing # Force registration 2025-08-17
 on:
   repository_dispatch:
     types: [gemini-pdr-production]
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Target date (YYYY-MM-DD)'
+        required: true
+        default: '2025-07-14'
 
 jobs:
   gemini-pdr-processing:
