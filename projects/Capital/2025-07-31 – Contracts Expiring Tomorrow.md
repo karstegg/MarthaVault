@@ -22,7 +22,7 @@ DueDate:: 2025-08-01
 **Impact**: All SA Cranes work will stop if extension not approved  
 
 ## Immediate Actions Required
-- [ ] Follow up with [[Chris Ross]] on Perfect Filtration signature status
+- [x] Follow up with [[Chris Ross]] on Perfect Filtration signature status ✅ 2025-08-16
 - [ ] Route SA Cranes extension deviation note immediately
 - [ ] Ensure both contracts processed before expiration
 - [ ] Prepare contingency plans if either contract expires

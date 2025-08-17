@@ -11,11 +11,11 @@ DueDate:: 2025-08-01
 Fast-track finalization of GES (Graduate Entry Scheme) appointments at two locations. Psychometric assessment review scheduled for Friday requires urgent completion.
 
 ## Locations
-- [ ] Finalize GES appointment at 23
-- [ ] Finalize GES appointment at Gloria
+- [x] Finalize GES appointment at 23 ✅ 2025-08-16
+- [x] Finalize GES appointment at Gloria ✅ 2025-08-16
 
 ## Key Milestone
-- [ ] Review psychometric assessments on Friday (2025-08-01)
+- [x] Review psychometric assessments on Friday (2025-08-01) ✅ 2025-08-16
 
 ## Responsible Parties
 - [[Sipo]] - Area responsibility

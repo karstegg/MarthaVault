@@ -11,15 +11,15 @@ DueDate::
 **Days Left: 3**
 
 ### GES Appointments (CRITICAL - Friday Review)
-- [ ] **Finalize GES appointment at 23** - *DUE: Aug 1* ⏰ 3 days left
+- [x] **Finalize GES appointment at 23** - *DUE: Aug 1* ⏰ 3 days left ✅ 2025-08-16
   - Assignee: [[Sipo]], [[Selom]], [[Simon Sease]]
   - Status: Fast-track required
   
-- [ ] **Finalize GES appointment at Gloria** - *DUE: Aug 1* ⏰ 3 days left  
+- [x] **Finalize GES appointment at Gloria** - *DUE: Aug 1* ⏰ 3 days left ✅ 2025-08-16
   - Assignee: [[Sipo]], [[Selom]], [[Simon Sease]]
   - Status: Fast-track required
 
-- [ ] **Review psychometric assessments** - *DUE: Friday Aug 1* ⏰ 3 days left
+- [x] **Review psychometric assessments** - *DUE: Friday Aug 1* ⏰ 3 days left ✅ 2025-08-16
   - Critical milestone for GES process
 
 ### SA Cranes Process (URGENT START)

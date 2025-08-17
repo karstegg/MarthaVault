@@ -68,11 +68,11 @@ Compiling annual performance assessments for engineering team across multiple ev
 - **Amelia** = Engineer (assumed)
 
 ## Action Items
-- [ ] Complete missing assessments for each element
-- [ ] Follow up with Ronnie for Availability data
-- [ ] Gather N2 and S&W data for Labour Optimisation
-- [ ] Ensure all team members covered in each applicable element
-- [ ] Review and finalize completed assessments
+- [x] Complete missing assessments for each element ✅ 2025-08-16
+- [x] Follow up with Ronnie for Availability data ✅ 2025-08-16
+- [x] Gather N2 and S&W data for Labour Optimisation ✅ 2025-08-16
+- [x] Ensure all team members covered in each applicable element ✅ 2025-08-16
+- [x] Review and finalize completed assessments ✅ 2025-08-16
 
 ## Notes
 - Assessment matrix shows significant gaps in coverage

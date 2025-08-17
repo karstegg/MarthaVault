@@ -13,7 +13,7 @@ DueDate:: 2025-08-08
 **Replacing**: DT0105 and DT0106  
 
 ### Current Status
-- [ ] Jeremiah to confirm delivery status and availability of 2 trucks
+- [x] Jeremiah to confirm delivery status and availability of 2 trucks ✅ 2025-08-16
 - [ ] Capital approval required (Greg + [[Sello Taku]])
 - [ ] Orders need sign-off authorization
 

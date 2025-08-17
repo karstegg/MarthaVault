@@ -14,9 +14,9 @@ DueDate:: 2025-08-31
 **Related**: [[BEV]] project, [[Epiroc]] billing
 
 ## Action Required
-- [ ] Locate June battery invoices
-- [ ] Review and validate invoice details  
-- [ ] Process for payment approval
-- [ ] Set up recurring monthly reminder system
+- [x] Locate June battery invoices ✅ 2025-08-16
+- [x] Review and validate invoice details ✅ 2025-08-16
+- [x] Process for payment approval ✅ 2025-08-16
+- [x] Set up recurring monthly reminder system ✅ 2025-08-16
 
 #battery #invoices #monthly #critical #BEV #priority/high #year/2025

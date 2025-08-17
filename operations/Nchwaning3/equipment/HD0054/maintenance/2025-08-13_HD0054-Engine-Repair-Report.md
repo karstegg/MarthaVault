@@ -65,5 +65,5 @@ The issue was fully resolved by replacing the following components:
 
 ## 5. Supporting Documents
 
-- [[2023-03-31_Invoice-W01037841.pdf]]
-- [[Deutz-HD0054-Service Reports.pdf]]
+- [[Deutz-HD0054-Invoices.pdf]]
+- [[Deutz-HD0054-Service-Reports.pdf]]
