@@ -1,4 +1,4 @@
-name: Gemini AI PDR Processing
+name: 🤖 Gemini AI PDR Processing
 
 on:
   repository_dispatch:
