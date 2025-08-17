@@ -1,0 +1,7 @@
+HEre are some ideas for weekly report generator project
+
+Edit the slides in the interface either directly or through a chat interface
+Collaboratively edit slides together with the coding assistant. Uploading more information to add to slides.
+Add slides from the interface
+Currently each week is "saved" in a repo fork. Is it better to create a database / json to store prior weeks.
+Add a dropdown to the main page where one can select any saved prior weekly report.

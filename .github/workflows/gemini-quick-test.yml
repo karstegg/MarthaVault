@@ -1,0 +1,53 @@
+name: Gemini Quick File Creation Test
+
+on:
+  repository_dispatch:
+    types: [gemini-test]
+
+jobs:
+  gemini-test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Quick Gemini File Creation Test
+      uses: 'google-github-actions/run-gemini-cli@v0'
+      with:
+        gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
+        settings: |
+          {
+            "maxSessionTurns": 5,
+            "coreTools": [
+              "list_directory",
+              "read_file", 
+              "write_file",
+              "glob"
+            ],
+            "telemetry": {
+              "enabled": false
+            }
+          }
+        prompt: |
+          Create a simple test file at ./test-file.txt with the content "Hello from Gemini AI - Test successful!"
+          
+          Use the write_file tool with these exact parameters:
+          - file_path: "./test-file.txt"  
+          - content: "Hello from Gemini AI - Test successful!"
+          
+          Just create this one file and confirm it worked.
+          
+    - name: Verify File Creation
+      run: |
+        echo "🔍 Checking if test file was created..."
+        if [ -f "test-file.txt" ]; then
+          echo "✅ File created successfully!"
+          echo "📄 Content:"
+          cat test-file.txt
+        else
+          echo "❌ File was not created"
+          exit 1
+        fi
