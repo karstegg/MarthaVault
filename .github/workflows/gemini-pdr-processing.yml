@@ -132,13 +132,12 @@ jobs:
           {
             "maxSessionTurns": 20,
             "coreTools": [
-              "ReadFileTool",
-              "WriteFileTool",
-              "GlobTool",
-              "EditTool",
-              "run_shell_command(cat)",
-              "run_shell_command(head)",
-              "run_shell_command(mkdir)"
+              "list_directory",
+              "read_file",
+              "write_file",
+              "glob",
+              "search_file_content",
+              "replace"
             ],
             "telemetry": {
               "enabled": false
@@ -166,8 +165,8 @@ jobs:
           **FILE CREATION INSTRUCTIONS**:
           1. Use the `write_file` tool to create files directly in the repository
           2. For each site detected in the data:
-             - Create JSON file using: write_file(path="daily_production/data/${{ env.TARGET_DATE:0:7 }}/${{ env.TARGET_DATE:8:2 }}/${{ env.TARGET_DATE }}_[site].json", content="[json_content]")
-             - Create Markdown file using: write_file(path="daily_production/data/${{ env.TARGET_DATE:0:7 }}/${{ env.TARGET_DATE:8:2 }}/${{ env.TARGET_DATE }} – [Site Name] Daily Report.md", content="[markdown_content]")
+             - Create JSON file using: write_file(file_path="daily_production/data/${{ env.TARGET_DATE:0:7 }}/${{ env.TARGET_DATE:8:2 }}/${{ env.TARGET_DATE }}_[site].json", content="[json_content]")
+             - Create Markdown file using: write_file(file_path="daily_production/data/${{ env.TARGET_DATE:0:7 }}/${{ env.TARGET_DATE:8:2 }}/${{ env.TARGET_DATE }} – [Site Name] Daily Report.md", content="[markdown_content]")
           
           **CRITICAL**: 
           - Follow GEMINI.md configuration exactly
@@ -181,6 +180,7 @@ jobs:
           3. Analyze the data and identify mine sites (Gloria, Nchwaning 2, Nchwaning 3, Shafts & Winders)
           4. For each site found in data: use write_file tool to create both JSON and Markdown files
           5. Follow exact JSON schema and Markdown template from GEMINI.md
+          6. Confirm file creation success for each file created
     
     - name: Verify File Creation
       id: verify_files
