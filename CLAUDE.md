@@ -210,7 +210,14 @@ Reference `daily_production/equipment_codes.md` for:
 
 #### **MANDATORY REVIEW PROTOCOL FOR CLAUDE-CODE**
 
-**PHASE 1: Source Data Verification (REQUIRED FIRST)**
+**PHASE 0: Site Identification Verification (CRITICAL FIRST)**
+1. **Verify engineer-site mapping**: Confirm engineer assignments match known site mappings
+2. **Check sender validation**: Verify WhatsApp sender ID matches claimed engineer if available
+3. **Flag ambiguous identification**: Question any site assignment that lacks clear evidence
+4. **Cross-reference patterns**: Compare production data patterns with historical site data
+5. **Validate headers**: Ensure site identification was explicit in source message or properly inferred
+
+**PHASE 1: Source Data Verification (REQUIRED SECOND)**
 1. **Request source file access**: Always ask for the original WhatsApp data file path
 2. **Demand data traceability**: Request line numbers for ALL major production figures
 3. **Cross-reference verification**: Pick 3 random data points and verify against source
@@ -591,6 +598,40 @@ NEVER proactively create documentation files (*.md) or README files. Only create
 - please update your memory regarding the correct query format ans timezone cnversion
 - Please save this fix and process to memory
 - Excellent! now save this in your memory including the steps to follow for running queries at any time.
+
+## 🚨 CRITICAL SITE MISIDENTIFICATION MEMORY (2025-08-16)
+**NEVER FORGET**: WhatsApp messages without site headers cause incorrect site identification in autonomous processing.
+
+**Critical Site Misidentification Case Study - August 16, 2025:**
+- **Error**: Message from Sikilela Nzuza (N2) incorrectly processed as "Nchwaning 3" with "Sello Sease"
+- **Root Cause**: 10:47:35 WhatsApp message had NO site identifier ("N2", "N3", etc.)
+- **Group Chat Limitation**: All messages show same group JID, individual sender IDs not mapped
+- **AI Failure**: Content analysis guessed wrong site instead of flagging ambiguous message
+- **Impact**: Nearly caused operational confusion and missing N3 report detection failure
+
+**Engineer-to-Site Mapping (CRITICAL REFERENCE):**
+- **N2 (Nchwaning 2)**: Sikilela Nzuza (primary) / Johan Kotze (acting when on leave)
+- **N3 (Nchwaning 3)**: Sello Sease / Stef Lourens
+- **Gloria**: Sipho Dubazane
+- **S&W**: Xavier Peterson
+
+**Sender ID Mapping (When Available):**
+- **278575940939844**: Sikilela Nzuza (N2) - **CONFIRMED 2025-08-16**
+
+**MANDATORY VALIDATION PROTOCOL:**
+1. **Always verify site identification** when processing autonomous reports
+2. **Flag ambiguous messages** that lack clear site headers
+3. **Map sender IDs to engineers** when possible  
+4. **Cross-reference production data patterns** with known site characteristics
+5. **Never guess** - mark as "REQUIRES_MANUAL_REVIEW" if uncertain
+
+**Prevention Measures:**
+- **Enforce site headers**: Request engineers use "N2:", "N3:", "Gloria:", "S&W:" prefixes
+- **Sender mapping database**: Build WhatsApp sender ID → engineer mapping
+- **Validation enhancement**: Auto-flag messages missing site identification
+- **Manual review queue**: Route ambiguous messages for human verification
+
+**This error could have led to incorrect operational decisions and missed safety reports - NEVER allow unvalidated site guessing again.**
 
 ## 🚨 CRITICAL BRIDGE CONNECTIVITY MEMORY (2025-08-14)
 **NEVER FORGET**: WhatsApp bridge service shuts down during inactivity periods, causing missing production reports.
