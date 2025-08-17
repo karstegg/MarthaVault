@@ -1,8 +1,8 @@
-name: 🤖 Gemini AI PDR Processing
+name: 🤖 Gemini AI PDR Processing # Force registration 2025-08-17
 
 on:
   repository_dispatch:
-    types: [gemini-test]
+    types: [gemini-pdr-production]
 
 jobs:
   gemini-pdr-processing:
