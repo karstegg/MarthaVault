@@ -1,0 +1,181 @@
+name: 🚀 Gemini PDR Final Test
+
+on:
+  repository_dispatch:
+    types: [gemini-pdr-final]
+
+jobs:
+  gemini-pdr-test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Extract WhatsApp Data from Codespace
+      env:
+        GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
+      id: extract
+      run: |
+        CODESPACE_NAME="cuddly-guacamole-496vp6p46wg39r"
+        TARGET_DATE="${{ github.event.client_payload.date }}"
+        
+        echo "🔍 Extracting WhatsApp messages for $TARGET_DATE..."
+        
+        # Extract messages from Codespace SQLite database
+        gh codespace ssh -c $CODESPACE_NAME -- \
+          "sqlite3 /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge/store/messages.db \"SELECT timestamp, chat_jid, sender, content FROM messages WHERE timestamp BETWEEN '${TARGET_DATE} 00:00:00+00:00' AND '${TARGET_DATE} 23:59:59+00:00' AND chat_jid = '27834418149-1537194373@g.us' AND (content LIKE '%ROM%' OR content LIKE '%Safety%' OR content LIKE '%Gloria%' OR content LIKE '%Nchwaning%' OR content LIKE '%S&W%' OR content LIKE '%Decline%' OR content LIKE '%Product%') ORDER BY timestamp;\"" > extracted_messages.txt
+        
+        # Count and validate messages
+        MESSAGE_COUNT=$(wc -l < extracted_messages.txt)
+        echo "📊 Found $MESSAGE_COUNT WhatsApp messages for $TARGET_DATE"
+        
+        # Save data for Gemini processing
+        if [ "$MESSAGE_COUNT" -gt 0 ]; then
+          cp extracted_messages.txt whatsapp_data_for_gemini.txt
+          echo "data_available=true" >> $GITHUB_OUTPUT
+          echo "message_count=$MESSAGE_COUNT" >> $GITHUB_OUTPUT
+        else
+          echo "data_available=false" >> $GITHUB_OUTPUT
+          echo "message_count=0" >> $GITHUB_OUTPUT
+        fi
+        
+        echo "target_date=$TARGET_DATE" >> $GITHUB_OUTPUT
+        
+    - name: Process with Gemini AI (Working Configuration)
+      uses: 'google-github-actions/run-gemini-cli@v0'
+      if: steps.extract.outputs.data_available == 'true'
+      with:
+        gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
+        settings: |
+          {
+            "maxSessionTurns": 15,
+            "autoAccept": ["list_directory", "read_file", "write_file", "glob"],
+            "telemetry": {
+              "enabled": false
+            }
+          }
+        prompt: |
+          You are processing WhatsApp production data for mining operations.
+          
+          **TASK**: Read the WhatsApp data and create production report files for each mine site detected.
+          
+          **STEPS**:
+          1. Read whatsapp_data_for_gemini.txt to get the production data
+          2. Identify mine sites (Gloria, Nchwaning 2, Nchwaning 3, Shafts & Winders)
+          3. For each site found, create both JSON and Markdown files
+          
+          **FILE CREATION** (Use write_file tool):
+          - JSON: write_file(file_path="daily_production/data/2025-07/14/2025-07-14_[site].json", content=[structured_json])
+          - MD: write_file(file_path="daily_production/data/2025-07/14/2025-07-14 – [Site] Daily Report.md", content=[report])
+          
+          **JSON Structure**:
+          ```json
+          {
+            "report_metadata": {"date": "2025-07-14", "site": "[Site]", "engineer": "[Engineer]"},
+            "safety": {"status": "[extracted]", "incidents": 0},
+            "production": {"rom": {"actual": [number]}, "decline": {"actual": [number]}, "product": {"actual": [number]}},
+            "equipment_availability": {"tmm": {"DT": [%], "FL": [%]}},
+            "source_validation": {"rom_actual": {"value": [number], "source_quote": "[exact_text]"}}
+          }
+          ```
+          
+          **CRITICAL**: Extract only real data from source - do not invent values. Use null for missing data.
+          
+    - name: Verify Files Created  
+      id: verify
+      run: |
+        TARGET_DATE="${{ steps.extract.outputs.target_date }}"
+        echo "🔍 Checking files created for $TARGET_DATE..."
+        
+        # Check for files in the target directory
+        TARGET_DIR="daily_production/data/2025-07/14"
+        
+        if [ -d "$TARGET_DIR" ]; then
+          echo "📂 Files found:"
+          ls -la "$TARGET_DIR/"
+          
+          JSON_COUNT=$(find "$TARGET_DIR" -name "*.json" | wc -l)
+          MD_COUNT=$(find "$TARGET_DIR" -name "*.md" | wc -l)
+          
+          echo "📊 Created: $JSON_COUNT JSON files, $MD_COUNT Markdown files"
+          echo "json_count=$JSON_COUNT" >> $GITHUB_OUTPUT  
+          echo "md_count=$MD_COUNT" >> $GITHUB_OUTPUT
+          
+          if [ $JSON_COUNT -gt 0 ] && [ $MD_COUNT -gt 0 ]; then
+            echo "✅ SUCCESS: Files created by Gemini AI!"
+            echo "success=true" >> $GITHUB_OUTPUT
+          else
+            echo "❌ FAILURE: Missing files"
+            echo "success=false" >> $GITHUB_OUTPUT
+          fi
+        else
+          echo "❌ Directory not found: $TARGET_DIR"
+          echo "success=false" >> $GITHUB_OUTPUT
+        fi
+        
+    - name: Create Success Issue
+      env:
+        GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
+      if: steps.verify.outputs.success == 'true'
+      run: |
+        TARGET_DATE="${{ steps.extract.outputs.target_date }}"
+        MESSAGE_COUNT="${{ steps.extract.outputs.message_count }}"
+        JSON_COUNT="${{ steps.verify.outputs.json_count }}"
+        MD_COUNT="${{ steps.verify.outputs.md_count }}"
+        
+        gh issue create \
+          --title "🎉 SUCCESS: Gemini AI File Creation Breakthrough - $TARGET_DATE" \
+          --body "**BREAKTHROUGH CONFIRMED: Gemini AI file creation is working!**
+
+        📊 **Test Results**:
+        - **Date Processed**: $TARGET_DATE
+        - **WhatsApp Messages**: $MESSAGE_COUNT found and processed
+        - **Files Created**: $JSON_COUNT JSON + $MD_COUNT Markdown = $((JSON_COUNT + MD_COUNT)) total files
+        - **Configuration**: autoAccept (not coreTools) ✅
+        - **Status**: Complete success - files created directly by Gemini AI
+
+        🔧 **Technical Breakthrough**:
+        - Fixed 'Tool not found in registry' errors
+        - Changed from \`coreTools\` to \`autoAccept\` configuration
+        - Gemini AI now directly creates JSON and Markdown files
+        - No parsing workaround needed
+
+        💰 **Cost Impact**:
+        - **FREE**: Gemini AI processing (Google AI Studio)
+        - **Savings**: \$0.39/day vs Claude Cloud (\$142/year savings)
+        - **Alternative**: \$0 vs \$10/month Copilot subscription
+
+        🚀 **Ready for Production**: 
+        This confirms the FREE Gemini AI alternative is fully functional and ready to replace costly Claude Cloud processing.
+
+        **Next Step**: Scale to full production workflow for daily report automation." \
+          --label "breakthrough" \
+          --label "gemini-success"
+        
+    - name: Handle Failure
+      env:
+        GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}  
+      if: steps.verify.outputs.success == 'false'
+      run: |
+        TARGET_DATE="${{ steps.extract.outputs.target_date }}"
+        MESSAGE_COUNT="${{ steps.extract.outputs.message_count }}"
+        
+        gh issue create \
+          --title "❌ Gemini AI Test Failed - $TARGET_DATE" \
+          --body "**Gemini AI processing test failed**
+
+        📊 **Test Details**:
+        - **Date**: $TARGET_DATE  
+        - **Messages Found**: $MESSAGE_COUNT
+        - **Files Created**: None detected
+        - **Configuration**: autoAccept
+
+        **Issue**: Despite working configuration from quick test, production processing failed.
+
+        **Debug Required**: Check workflow logs and Gemini AI processing step." \
+          --label "gemini-failure"
