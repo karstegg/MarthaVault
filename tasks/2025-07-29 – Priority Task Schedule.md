@@ -23,27 +23,27 @@ DueDate::
   - Critical milestone for GES process
 
 ### SA Cranes Process (URGENT START)
-- [ ] **Get Lawrence Van Gieren approval** - *DUE: This week* ⏰ URGENT
+- [ ] **Get Lawrence Van Gieren approval** - *DUE: This week* ⏰ URGENT ⏫ 
   - Must approve email before sending to SA Cranes
   - Contact: [[Lawrence Van Gieren]]
 
-- [ ] **Contact SA Cranes for proposal** - *DUE: This week* ⏰ URGENT  
+- [ ] **Contact SA Cranes for proposal** - *DUE: This week* ⏰ URGENT   ⏫ 
   - Email: skulk@sacranes.com
   - Depends on: Lawrence approval
 
 ## 🟡 HIGH PRIORITY - Next 1-2 Weeks
 
 ### BEV Fire Safety (HIGH)
-- [ ] **Review BEV fire risk assessment** - *DUE: Aug 5* ⏰ 7 days left
+- [ ] **Review BEV fire risk assessment** - *DUE: Aug 5* ⏰ 7 days left ⏫ 
   - Identify outstanding actions
   
-- [ ] **Complete immediate fire risk actions** - *DUE: Aug 8* ⏰ 10 days left
+- [ ] **Complete immediate fire risk actions** - *DUE: Aug 8* ⏰ 10 days left ⏫ 
   - Implementation required
   
-- [ ] **Finalize fire procedure for operators** - *DUE: Aug 8* ⏰ 10 days left
+- [ ] **Finalize fire procedure for operators** - *DUE: Aug 8* ⏰ 10 days left ⏫ 
   - Document operator actions for fire emergencies
   
-- [ ] **Coordinate fire training with Billy** - *DUE: Aug 12* ⏰ 14 days left
+- [ ] **Coordinate fire training with Billy** - *DUE: Aug 12* ⏰ 14 days left ⏫ 
   - Contact: [[Billy]] (Training Department)
 
 ## 🟢 MEDIUM PRIORITY - 2+ Weeks

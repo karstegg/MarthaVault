@@ -2,7 +2,7 @@ name: 🤖 Gemini AI PDR Processing
 
 on:
   repository_dispatch:
-    types: [pdr-gemini]
+    types: [gemini-test]
 
 jobs:
   gemini-pdr-processing:

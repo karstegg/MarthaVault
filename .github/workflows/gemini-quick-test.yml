@@ -27,22 +27,40 @@ jobs:
             }
           }
         prompt: |
-          Create a simple test file at ./test-file.txt with the content "Hello from Gemini AI - Test successful!"
+          Create a test file in the daily_production structure to validate file creation works.
           
           Use the write_file tool with these exact parameters:
-          - file_path: "./test-file.txt"  
-          - content: "Hello from Gemini AI - Test successful!"
+          - file_path: "daily_production/test-gemini-2025-07-14.json"
+          - content: '{"test": "success", "date": "2025-07-14", "created_by": "gemini_ai"}'
           
-          Just create this one file and confirm it worked.
+          Then create a markdown file:
+          - file_path: "daily_production/test-gemini-2025-07-14.md"  
+          - content: "# Test Report\n\nThis file was created by Gemini AI to test file creation capabilities.\n\n**Status**: SUCCESS"
+          
+          Create both files and confirm they were created successfully.
           
     - name: Verify File Creation
       run: |
-        echo "🔍 Checking if test file was created..."
-        if [ -f "test-file.txt" ]; then
-          echo "✅ File created successfully!"
-          echo "📄 Content:"
-          cat test-file.txt
+        echo "🔍 Checking if test files were created..."
+        
+        if [ -f "daily_production/test-gemini-2025-07-14.json" ]; then
+          echo "✅ JSON file created successfully!"
+          echo "📄 JSON Content:"
+          cat daily_production/test-gemini-2025-07-14.json
         else
-          echo "❌ File was not created"
+          echo "❌ JSON file was not created"
+        fi
+        
+        if [ -f "daily_production/test-gemini-2025-07-14.md" ]; then
+          echo "✅ Markdown file created successfully!"
+          echo "📄 Markdown Content:"
+          cat daily_production/test-gemini-2025-07-14.md
+        else
+          echo "❌ Markdown file was not created"
+        fi
+        
+        # Exit with error if either file is missing
+        if [ ! -f "daily_production/test-gemini-2025-07-14.json" ] || [ ! -f "daily_production/test-gemini-2025-07-14.md" ]; then
+          echo "❌ Test failed - files missing"
           exit 1
         fi

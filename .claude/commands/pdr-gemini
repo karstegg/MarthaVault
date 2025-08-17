@@ -42,9 +42,9 @@ echo "🚀 Triggering Gemini AI workflow..."
 
 # Send repository dispatch to trigger Gemini AI workflow (with optional instructions)
 if [ -n "$ADDITIONAL_INSTRUCTIONS" ]; then
-    echo '{"event_type": "pdr-gemini", "client_payload": {"date": "'$TARGET_DATE'", "instructions": "'"$ADDITIONAL_INSTRUCTIONS"'"}}' | gh api repos/karstegg/MarthaVault/dispatches --method POST --input -
+    echo '{"event_type": "gemini-test", "client_payload": {"date": "'$TARGET_DATE'", "instructions": "'"$ADDITIONAL_INSTRUCTIONS"'"}}' | gh api repos/karstegg/MarthaVault/dispatches --method POST --input -
 else
-    echo '{"event_type": "pdr-gemini", "client_payload": {"date": "'$TARGET_DATE'"}}' | gh api repos/karstegg/MarthaVault/dispatches --method POST --input -
+    echo '{"event_type": "gemini-test", "client_payload": {"date": "'$TARGET_DATE'"}}' | gh api repos/karstegg/MarthaVault/dispatches --method POST --input -
 fi
 
 if [ $? -eq 0 ]; then
