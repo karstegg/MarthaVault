@@ -1,66 +1,207 @@
-name: Gemini Quick File Creation Test
+name: 🤖 Gemini AI Production PDR Processing
 
 on:
   repository_dispatch:
     types: [gemini-test]
 
 jobs:
-  gemini-test:
+  gemini-pdr-processing:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      issues: write
+      pull-requests: write
       
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
       
-    - name: Quick Gemini File Creation Test
+    - name: Check Bridge Health & Extract WhatsApp Messages
+      env:
+        GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
+      id: extract
+      run: |
+        CODESPACE_NAME="cuddly-guacamole-496vp6p46wg39r"
+        TARGET_DATE="${{ github.event.client_payload.date }}"
+        
+        echo "🔍 Checking WhatsApp bridge health and extracting messages for $TARGET_DATE..."
+        
+        # Check if bridge service is running and restart if needed
+        echo "🔧 Checking bridge service status..."
+        BRIDGE_STATUS=$(gh codespace ssh -c $CODESPACE_NAME -- \
+          "cd /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge && ./start-bridge-service.sh status" 2>/dev/null || echo "Bridge not running")
+        
+        if [[ "$BRIDGE_STATUS" == *"not running"* ]]; then
+          echo "🚨 Bridge not running - starting service..."
+          gh codespace ssh -c $CODESPACE_NAME -- \
+            "cd /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge && ./start-bridge-service.sh start"
+          sleep 10  # Give bridge time to start
+          echo "✅ Bridge service started"
+        else
+          echo "✅ Bridge service is running"
+        fi
+        
+        # Extract messages from Codespace SQLite database
+        echo "📋 Extracting messages with production keywords..."
+        gh codespace ssh -c $CODESPACE_NAME -- \
+          "sqlite3 /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge/store/messages.db \"SELECT timestamp, chat_jid, sender, content FROM messages WHERE timestamp BETWEEN '${TARGET_DATE} 00:00:00+00:00' AND '${TARGET_DATE} 23:59:59+00:00' AND chat_jid = '27834418149-1537194373@g.us' AND (content LIKE '%ROM%' OR content LIKE '%Safety%' OR content LIKE '%Gloria Report%' OR content LIKE '%Nchwaning%' OR content LIKE '%S&W%' OR content LIKE '%Decline%' OR content LIKE '%Product%' OR content LIKE '%Loads%') ORDER BY timestamp;\"" > extracted_messages.txt
+        
+        # Count messages and validate extraction
+        MESSAGE_COUNT=$(wc -l < extracted_messages.txt)
+        echo "📊 Found $MESSAGE_COUNT WhatsApp messages for $TARGET_DATE"
+        
+        # Output variables for next steps
+        echo "message_count=$MESSAGE_COUNT" >> $GITHUB_OUTPUT
+        echo "target_date=$TARGET_DATE" >> $GITHUB_OUTPUT
+        
+        # Save extracted data for Gemini processing
+        if [ "$MESSAGE_COUNT" -gt 0 ]; then
+          cp extracted_messages.txt whatsapp_data_for_gemini.txt
+          echo "data_file_created=true" >> $GITHUB_OUTPUT
+        else
+          echo "data_file_created=false" >> $GITHUB_OUTPUT
+        fi
+        
+        # Preview extracted data (first 3 lines)
+        echo "📋 Message preview:"
+        head -3 extracted_messages.txt || echo "No data to preview"
+    
+    - name: Handle No Data Found
+      env:
+        GH_TOKEN: ${{ secrets.PAT_WITH_CODESPACE }}
+      if: steps.extract.outputs.message_count == '0'
+      run: |
+        TARGET_DATE="${{ steps.extract.outputs.target_date }}"
+        echo "🛑 STOPPING PROCESSING - No data available for $TARGET_DATE"
+        echo "Possible reasons:"
+        echo "  - Date may be a weekend/holiday with no reports"
+        echo "  - Bridge may have been offline during report time"
+        echo "  - Reports may use different keywords not in search filter"
+        echo "  - Date format may be incorrect (use YYYY-MM-DD)"
+        
+        # Create a no-data notification issue
+        gh issue create \
+          --title "❌ No Data Found (Gemini Production): $TARGET_DATE" \
+          --body "**No production data available for $TARGET_DATE**
+
+        📊 **Search Results**: 0 messages found
+        🔍 **Search Criteria**: ROM, Production, Gloria, Nchwaning, S&W keywords
+        ⏰ **Time Range**: Full day (00:00-23:59 UTC)
+        🤖 **Processing**: Gemini AI Production workflow
+        
+        **Possible Reasons**:
+        - Weekend/holiday - no production reports sent
+        - WhatsApp bridge offline during report time (4:00-6:00 AM SAST)
+        - Engineers used different messaging keywords
+        - Date format incorrect or date does not exist
+        
+        **Bridge Status**: Checked and restarted if needed
+        **Recommendation**: Verify date and retry, or process manually if reports exist" \
+          --label "no-data" \
+          --label "pdr-gemini"
+        
+        echo "✅ Created no-data notification issue"
+        
+    - name: Process with Gemini AI (Production Logic)
       uses: 'google-github-actions/run-gemini-cli@v0'
+      id: gemini_process
+      if: steps.extract.outputs.message_count > 0
+      env:
+        TARGET_DATE: ${{ github.event.client_payload.date }}
+        MESSAGE_COUNT: ${{ steps.extract.outputs.message_count }}
       with:
         gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
         settings: |
           {
-            "maxSessionTurns": 5,
+            "maxSessionTurns": 20,
             "autoAccept": ["list_directory", "read_file", "write_file", "glob"],
             "telemetry": {
               "enabled": false
             }
           }
         prompt: |
-          Create a test file in the daily_production structure to validate file creation works.
+          You are processing daily production reports for Assmang's Black Rock mining operations.
           
-          Use the write_file tool with these exact parameters:
-          - file_path: "daily_production/test-gemini-2025-07-14.json"
-          - content: '{"test": "success", "date": "2025-07-14", "created_by": "gemini_ai"}'
+          **TASK**: Process the WhatsApp production data and create actual JSON and Markdown files for each detected mine site.
           
-          Then create a markdown file:
-          - file_path: "daily_production/test-gemini-2025-07-14.md"  
-          - content: "# Test Report\n\nThis file was created by Gemini AI to test file creation capabilities.\n\n**Status**: SUCCESS"
+          **SITES TO PROCESS**:
+          - Gloria Mine (Engineer: Sipho Dubazane)
+          - Nchwaning 2 (Engineer: Sikelela Nzuza) 
+          - Nchwaning 3 (Engineer: Sello Sease)
+          - Shafts & Winders (Engineer: Xavier Peterson)
           
-          Create both files and confirm they were created successfully.
+          **REQUIREMENTS**:
+          1. Use write_file tool to create actual files in the repository
+          2. Follow the exact JSON schema and Markdown template
+          3. NEVER INVENT DATA - extract only actual values from source
+          4. Include source_validation section for all extracted data
+          5. Use null for missing data, do not fabricate
+          6. Use target date: ${{ env.TARGET_DATE }} for all file content and naming
           
+          **FILE CREATION INSTRUCTIONS**:
+          1. First, use read_file to read the WhatsApp data: whatsapp_data_for_gemini.txt
+          2. For each site detected in the data, create both JSON and Markdown files:
+             - JSON: write_file(file_path="daily_production/data/2025-07/${DAY}/2025-07-${DAY}_[site].json", content="[json_content]")
+             - MD: write_file(file_path="daily_production/data/2025-07/${DAY}/2025-07-${DAY} – [Site Name] Daily Report.md", content="[markdown_content]")
+          
+          **JSON Structure** (use this exact format):
+          ```json
+          {
+            "report_metadata": {"date": "2025-07-${DAY}", "site": "[Site]", "engineer": "[Engineer]"},
+            "safety": {"status": "[extracted]", "incidents": 0},
+            "production": {"rom": {"actual": [number]}, "decline": {"actual": [number]}, "product": {"actual": [number]}},
+            "equipment_availability": {"tmm": {"DT": [%], "FL": [%]}},
+            "source_validation": {"rom_actual": {"value": [number], "source_quote": "[exact_text]"}}
+          }
+          ```
+          
+          **CRITICAL**: 
+          - Extract only real data from source WhatsApp messages
+          - Every data point must be traceable to source
+          - Use your write_file tool to create actual files in the repository
+          - NEVER INVENT DATA - extract only actual values from source
+          
+          **TASK STEPS**:
+          1. Use read_file tool to read WhatsApp data file: whatsapp_data_for_gemini.txt
+          2. Analyze the data and identify mine sites (Gloria, Nchwaning 2, Nchwaning 3, Shafts & Winders)
+          3. For each site found in data: use write_file tool to create both JSON and Markdown files
+          4. Follow exact JSON schema and include proper source validation
+          5. Confirm file creation success for each file created
+    
     - name: Verify File Creation
+      id: verify_files
+      if: steps.gemini_process.conclusion == 'success'
       run: |
-        echo "🔍 Checking if test files were created..."
+        TARGET_DATE="${{ github.event.client_payload.date }}"
+        YEAR_MONTH=$(echo $TARGET_DATE | cut -d'-' -f1,2)
+        DAY=$(echo $TARGET_DATE | cut -d'-' -f3)
+        TARGET_DIR="daily_production/data/${YEAR_MONTH}/${DAY}"
         
-        if [ -f "daily_production/test-gemini-2025-07-14.json" ]; then
-          echo "✅ JSON file created successfully!"
-          echo "📄 JSON Content:"
-          cat daily_production/test-gemini-2025-07-14.json
+        echo "🔍 Verifying files were created by Gemini production processing in: $TARGET_DIR"
+        
+        # Count actual files created
+        JSON_FILES=$(find "$TARGET_DIR" -name "*.json" 2>/dev/null | wc -l || echo "0")
+        MD_FILES=$(find "$TARGET_DIR" -name "*.md" 2>/dev/null | wc -l || echo "0")
+        TOTAL_FILES=$((JSON_FILES + MD_FILES))
+        
+        echo "📊 Verification: $JSON_FILES JSON, $MD_FILES Markdown = $TOTAL_FILES total files"
+        
+        # List created files
+        if [ -d "$TARGET_DIR" ]; then
+          echo "📂 Files in $TARGET_DIR:"
+          ls -la "$TARGET_DIR" || echo "Directory exists but is empty"
         else
-          echo "❌ JSON file was not created"
+          echo "⚠️ Target directory does not exist"
         fi
         
-        if [ -f "daily_production/test-gemini-2025-07-14.md" ]; then
-          echo "✅ Markdown file created successfully!"
-          echo "📄 Markdown Content:"
-          cat daily_production/test-gemini-2025-07-14.md
+        # Validation check
+        if [ "$TOTAL_FILES" -gt 0 ]; then
+          echo "✅ Files were created by Gemini ($TOTAL_FILES total)"
         else
-          echo "❌ Markdown file was not created"
+          echo "❌ No files were created by Gemini"
         fi
         
-        # Exit with error if either file is missing
-        if [ ! -f "daily_production/test-gemini-2025-07-14.json" ] || [ ! -f "daily_production/test-gemini-2025-07-14.md" ]; then
-          echo "❌ Test failed - files missing"
-          exit 1
-        fi
+        echo "json_files_count=$JSON_FILES" >> $GITHUB_OUTPUT
+        echo "md_files_count=$MD_FILES" >> $GITHUB_OUTPUT
+        echo "total_files=$TOTAL_FILES" >> $GITHUB_OUTPUT
+        echo "target_dir=$TARGET_DIR" >> $GITHUB_OUTPUT
