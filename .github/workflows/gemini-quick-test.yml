@@ -1,14 +1,16 @@
 name: 🤖 Gemini AI Production PDR Processing
 
 on:
-  repository_dispatch:
-    types: [gemini-pdr-production]
   workflow_dispatch:
     inputs:
       date:
         description: 'Target date (YYYY-MM-DD)'
         required: true
         default: '2025-07-14'
+      instructions:
+        description: 'Additional processing instructions (optional)'
+        required: false
+        default: ''
 
 jobs:
   gemini-pdr-processing:
