@@ -15,7 +15,7 @@ date: 2025-08-16
 # Capital Application: Nchwaning 3 BEV Charging Bay 2
 
 **Project Title**: N3 BEV CHARGING BAY 2
-**Project Leader**: [[Jacques Breet]]
+**Project Leader**: [[Gregory Karsten]]
 **Application Date**: 2024-11-13
 **Project Value**: R 106,153,799.00
 **Project Start Date**: February 2025

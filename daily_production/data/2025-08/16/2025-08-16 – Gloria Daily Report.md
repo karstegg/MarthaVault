@@ -7,7 +7,7 @@ DueDate::
 ---
 
 # Gloria Daily Report
-**Date**: August 16, 2025 (Data from August 16, 2025)  
+**Date**: August 16, 2025 (Data from August 15, 2025)  
 **Engineer**: [[Sipho Dubazane]]  
 **Site**: Gloria  
 

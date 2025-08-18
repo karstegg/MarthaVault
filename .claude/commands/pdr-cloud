@@ -66,10 +66,10 @@ if [ $? -eq 0 ]; then
     # Wait a moment for workflow to start
     sleep 5
     
-    # Get latest workflow run
-    LATEST_RUN=$(gh run list --workflow="cloud-pdr-processing.yml" --limit=1 --json databaseId --jq '.[0].databaseId')
+    # Get latest workflow run (avoid jq dependency)
+    LATEST_RUN=$(gh run list --workflow="cloud-pdr-processing.yml" --limit=1 --json databaseId 2>/dev/null | grep -o '"databaseId":[0-9]*' | grep -o '[0-9]*' | head -1)
     
-    if [ -n "$LATEST_RUN" ]; then
+    if [ -n "$LATEST_RUN" ] && [ "$LATEST_RUN" != "" ]; then
         echo "📊 Workflow run ID: $LATEST_RUN"
         echo "👀 Use 'gh run watch $LATEST_RUN' to monitor in real-time"
     else

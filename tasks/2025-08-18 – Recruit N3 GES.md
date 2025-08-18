@@ -1,8 +1,9 @@
 ---
-Status:: #status/new
-Priority:: #priority/critical
-Assignee:: [[Greg Karsten]]
-DueDate:: 2025-08-31
+"Status:": In progress
+"Priority:": Critical
+"Assignee:":
+  - - Greg Karsten
+"DueDate:": 2025-08-31
 ---
 
 # Recruit N3 GES (General Engineering Supervisor)

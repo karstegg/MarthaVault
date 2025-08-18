@@ -15,7 +15,7 @@ date: 2025-08-16
 # Equipping Sub-Project: Nchwaning 3 BEV Charging Bay 2
 
 **Project Title**: Equipping of N3 BEV CHARGING BAY 2
-**Project Leader**: [[Your Name]]
+**Project Leader**: [[Gregory Karsten]]
 
 ## Executive Summary
 
@@ -25,7 +25,7 @@ This document outlines the scope and details for the equipping sub-project of th
 
 ### Key People
 
-- **Project Lead (Equipping)**: [[Your Name]]
+- **Project Lead (Equipping)**: [[Gregory Karsten]]
 
 ### High-Level Timeline & Milestones
 

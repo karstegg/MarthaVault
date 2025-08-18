@@ -40,6 +40,9 @@ jobs:
           additional_permissions: |
             actions: read
           
+          # Allow Claude bot to trigger workflows (fixes auto-merge permissions)
+          allowed_bots: 'claude'
+          
           # Optional: Specify model (defaults to Claude Sonnet 4, uncomment for Claude Opus 4)
           # model: "claude-opus-4-20250514"
           

@@ -678,6 +678,10 @@ NEVER proactively create documentation files (*.md) or README files. Only create
 
 **Sender ID Mapping (When Available):**
 - **278575940939844**: Sikilela Nzuza (N2) - **CONFIRMED 2025-08-16**
+- **219064991522977**: Sikilela Nzuza (N2) - **CONFIRMED 2025-08-18** (Weekend maintenance reports)
+- **265033925812455**: Sello Sease (N3) - **CONFIRMED 2025-08-18** (From morning N3 report)
+- **134144797478985**: Sipho Dubazane (Gloria) - **CONFIRMED 2025-08-18** (From morning Gloria report)
+- **150800697426058**: Xavier Peterson (S&W) - **CONFIRMED 2025-08-18** (From morning S&W report)
 
 **MANDATORY VALIDATION PROTOCOL:**
 1. **Always verify site identification** when processing autonomous reports
@@ -717,3 +721,4 @@ NEVER proactively create documentation files (*.md) or README files. Only create
 **This issue cost us missing production reports - NEVER let bridge run without service management again.**
 - we are in a region with timezone UCT+2
 - memory please update claude.md and any other applicable file to reflect the new calender plugin methods and rules
+- remember that my timezone is utc+2

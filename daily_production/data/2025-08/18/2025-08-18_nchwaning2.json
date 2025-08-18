@@ -1,0 +1,201 @@
+{
+  "report_metadata": {
+    "site_name": "Nchwaning 2",
+    "report_date": "2025-08-18",
+    "data_date": "2025-08-17",
+    "engineer": "Sikilela Nzuza",
+    "report_time": "04:11:00",
+    "timezone": "SAST",
+    "operational_mode": "weekend_maintenance",
+    "whatsapp_sender": "219064991522977",
+    "processing_timestamp": "2025-08-18T08:54:38Z",
+    "validation_status": "verified_manual"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": [],
+    "fire_alarms": 0,
+    "notes": "No safety incidents reported during maintenance weekend"
+  },
+  "production": {
+    "rom": {
+      "actual": 0,
+      "target": 6903,
+      "variance": -6903,
+      "unit": "tonnes",
+      "reason": "scheduled_maintenance_weekend"
+    },
+    "product": {
+      "actual": 0,
+      "target": null,
+      "unit": "tonnes"
+    },
+    "loads": {
+      "actual": 0,
+      "target": null
+    },
+    "blasting": {
+      "actual": "pending",
+      "plan": 16,
+      "status": "query_pending"
+    }
+  },
+  "equipment_availability": {
+    "dump_trucks": {
+      "availability_percent": 100,
+      "equipment_type": "DT",
+      "status": "operational"
+    },
+    "front_loaders": {
+      "availability_percent": 100,
+      "equipment_type": "FL", 
+      "status": "operational"
+    },
+    "haul_trucks": {
+      "availability_percent": 97,
+      "equipment_type": "HD",
+      "status": "mostly_operational"
+    },
+    "roof_bolters": {
+      "availability_percent": 100,
+      "equipment_type": "RT",
+      "status": "operational"
+    },
+    "service_rigs": {
+      "availability_percent": 83,
+      "equipment_type": "SR",
+      "status": "reduced_availability"
+    },
+    "dozer": {
+      "unit_id": "DZ13",
+      "availability_percent": 100,
+      "status": "operational"
+    },
+    "grader": {
+      "unit_id": "GD12", 
+      "availability_percent": 0,
+      "status": "breakdown",
+      "issue": "brake_problems"
+    }
+  },
+  "specialized_equipment": {
+    "emulsion_uvs": {
+      "units": ["UV137", "UV138", "UV108"],
+      "availability_percent": 100,
+      "status": "operational"
+    },
+    "logistics_uvs": {
+      "units": ["UV54", "UV59", "UV120"],
+      "availability_percent": 100,
+      "status": "operational"
+    },
+    "sampling_manlifts": {
+      "units": ["UV77", "UV123"],
+      "availability_percent": 0,
+      "status": "breakdown",
+      "issues": ["bucket_movement", "outrigger_basket_problems"]
+    },
+    "survey_uvs": {
+      "units": ["UV98", "UV99"],
+      "availability_percent": 100,
+      "status": "operational"
+    }
+  },
+  "equipment_breakdowns": {
+    "active_issues": [
+      {
+        "unit_id": "UV123",
+        "issue": "outrigger and basket problems",
+        "category": "manlift_sampling",
+        "priority": "high"
+      },
+      {
+        "unit_id": "UV90", 
+        "issue": "EMR on order",
+        "category": "specialized_equipment",
+        "priority": "medium",
+        "status": "parts_ordered"
+      },
+      {
+        "unit_id": "UV77",
+        "issue": "bucket movement problems",
+        "category": "manlift_sampling", 
+        "priority": "high"
+      },
+      {
+        "unit_id": "UV119",
+        "issue": "warning sign required",
+        "category": "safety_compliance",
+        "priority": "medium"
+      },
+      {
+        "unit_id": "GR12",
+        "issue": "brake problems", 
+        "category": "support_equipment",
+        "priority": "medium"
+      },
+      {
+        "unit_id": "SR46",
+        "issue": "pump problems",
+        "category": "service_rig",
+        "priority": "medium"
+      }
+    ],
+    "total_breakdowns": 6,
+    "critical_issues": 2,
+    "impact_assessment": "sampling_equipment_offline_affects_production_readiness"
+  },
+  "infrastructure": {
+    "plant_blockages": 0,
+    "fire_alarm_activations": 0,
+    "general_status": "normal"
+  },
+  "operational_notes": {
+    "maintenance_weekend": true,
+    "production_suspended": true,
+    "equipment_servicing_active": true,
+    "readiness_concerns": [
+      "Multiple UV equipment issues require resolution",
+      "Sampling manlifts offline affects production capability",
+      "Road maintenance capability reduced (grader offline)"
+    ]
+  },
+  "source_validation": {
+    "rom_production": {
+      "value": 0,
+      "source_line": 21,
+      "source_quote": "*ROM:*             0 v 6903t",
+      "confidence": "HIGH"
+    },
+    "product_output": {
+      "value": 0, 
+      "source_line": 22,
+      "source_quote": "*Product:*     0",
+      "confidence": "HIGH"
+    },
+    "loads_transported": {
+      "value": 0,
+      "source_line": 23, 
+      "source_quote": "*Loads:*     0",
+      "confidence": "HIGH"
+    },
+    "dump_truck_availability": {
+      "value": "100%",
+      "source_line": 29,
+      "source_quote": "DTs: 100 %",
+      "confidence": "HIGH"
+    },
+    "equipment_breakdown_count": {
+      "value": 6,
+      "source_line": 48,
+      "source_quote": "*TMM* *Breakdowns (Services & Graben)*",
+      "confidence": "HIGH"
+    },
+    "maintenance_reason": {
+      "value": "weekend_maintenance",
+      "source_line": 24,
+      "source_quote": "Maint weekend_ no production",
+      "confidence": "HIGH"
+    }
+  }
+}

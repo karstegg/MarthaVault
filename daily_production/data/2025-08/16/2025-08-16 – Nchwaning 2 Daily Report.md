@@ -7,7 +7,7 @@ DueDate::
 ---
 
 # Nchwaning 2 Daily Report
-**Date**: August 16, 2025 (Data from August 16, 2025)  
+**Date**: August 16, 2025 (Data from August 15, 2025)  
 **Engineer**: [[Sikilela Nzuza]]  
 **Site**: Nchwaning 2  
 

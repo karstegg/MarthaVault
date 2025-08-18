@@ -27,25 +27,59 @@ jobs:
         
         echo "🔍 Checking WhatsApp bridge health and extracting messages for $TARGET_DATE..."
         
-        # Check if bridge service is running and restart if needed
+        # Check if bridge service is running and restart if needed (with retry logic)
         echo "🔧 Checking bridge service status..."
-        BRIDGE_STATUS=$(gh codespace ssh -c $CODESPACE_NAME -- \
-          "cd /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge && ./start-bridge-service.sh status" 2>/dev/null || echo "Bridge not running")
+        BRIDGE_RETRY_COUNT=0
+        MAX_BRIDGE_RETRIES=3
+        BRIDGE_SUCCESS=false
         
-        if [[ "$BRIDGE_STATUS" == *"not running"* ]]; then
-          echo "🚨 Bridge not running - starting service..."
-          gh codespace ssh -c $CODESPACE_NAME -- \
-            "cd /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge && ./start-bridge-service.sh start"
-          sleep 10  # Give bridge time to start
-          echo "✅ Bridge service started"
-        else
-          echo "✅ Bridge service is running"
+        while [ $BRIDGE_RETRY_COUNT -lt $MAX_BRIDGE_RETRIES ] && [ "$BRIDGE_SUCCESS" = false ]; do
+          BRIDGE_STATUS=$(gh codespace ssh -c $CODESPACE_NAME -- \
+            "cd /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge && ./start-bridge-service.sh status" 2>/dev/null || echo "Bridge not running")
+          
+          if [[ "$BRIDGE_STATUS" == *"not running"* ]] || [[ "$BRIDGE_STATUS" == *"error"* ]]; then
+            echo "🚨 Bridge not running (attempt $((BRIDGE_RETRY_COUNT + 1))/$MAX_BRIDGE_RETRIES) - starting service..."
+            gh codespace ssh -c $CODESPACE_NAME -- \
+              "cd /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge && ./start-bridge-service.sh restart"
+            sleep 15  # Give bridge more time to start properly
+            BRIDGE_RETRY_COUNT=$((BRIDGE_RETRY_COUNT + 1))
+          else
+            echo "✅ Bridge service is running"
+            BRIDGE_SUCCESS=true
+          fi
+        done
+        
+        if [ "$BRIDGE_SUCCESS" = false ]; then
+          echo "❌ Failed to start bridge after $MAX_BRIDGE_RETRIES attempts"
+          echo "🔍 This may indicate Codespace connectivity issues or bridge configuration problems"
         fi
         
-        # Extract messages from Codespace SQLite database
+        # Extract messages from Codespace SQLite database (with retry and error handling)
         echo "📋 Extracting messages with production keywords..."
-        gh codespace ssh -c $CODESPACE_NAME -- \
-          "sqlite3 /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge/store/messages.db \"SELECT timestamp, chat_jid, sender, content FROM messages WHERE timestamp BETWEEN '${TARGET_DATE} 00:00:00+00:00' AND '${TARGET_DATE} 23:59:59+00:00' AND chat_jid = '27834418149-1537194373@g.us' AND (content LIKE '%ROM%' OR content LIKE '%Safety%' OR content LIKE '%Gloria Report%' OR content LIKE '%Nchwaning%' OR content LIKE '%S&W%' OR content LIKE '%Decline%' OR content LIKE '%Product%' OR content LIKE '%Loads%') ORDER BY timestamp;\"" > extracted_messages.txt
+        EXTRACTION_SUCCESS=false
+        EXTRACTION_RETRIES=0
+        MAX_EXTRACTION_RETRIES=2
+        
+        while [ $EXTRACTION_RETRIES -lt $MAX_EXTRACTION_RETRIES ] && [ "$EXTRACTION_SUCCESS" = false ]; do
+          if gh codespace ssh -c $CODESPACE_NAME -- \
+            "sqlite3 /workspaces/MarthaVault/whatsapp-mcp/whatsapp-bridge/store/messages.db \"SELECT timestamp, chat_jid, sender, content FROM messages WHERE timestamp BETWEEN '${TARGET_DATE} 00:00:00+00:00' AND '${TARGET_DATE} 23:59:59+00:00' AND chat_jid = '27834418149-1537194373@g.us' AND (content LIKE '%ROM%' OR content LIKE '%Safety%' OR content LIKE '%Gloria Report%' OR content LIKE '%Nchwaning%' OR content LIKE '%S&W%' OR content LIKE '%Decline%' OR content LIKE '%Product%' OR content LIKE '%Loads%') ORDER BY timestamp;\"" > extracted_messages.txt 2>&1; then
+            echo "✅ Data extraction completed successfully"
+            EXTRACTION_SUCCESS=true
+          else
+            echo "❌ Data extraction failed (attempt $((EXTRACTION_RETRIES + 1))/$MAX_EXTRACTION_RETRIES)"
+            EXTRACTION_RETRIES=$((EXTRACTION_RETRIES + 1))
+            if [ $EXTRACTION_RETRIES -lt $MAX_EXTRACTION_RETRIES ]; then
+              echo "🔄 Retrying data extraction in 10 seconds..."
+              sleep 10
+            fi
+          fi
+        done
+        
+        if [ "$EXTRACTION_SUCCESS" = false ]; then
+          echo "❌ CRITICAL: Data extraction failed after $MAX_EXTRACTION_RETRIES attempts"
+          echo "🔍 Check Codespace connectivity and database accessibility"
+          exit 1
+        fi
         
         # Debug: Check if file was created and has content
         if [ -f extracted_messages.txt ]; then
@@ -55,14 +89,22 @@ jobs:
           echo "❌ Extraction file not created"
         fi
            
-        # Count messages and validate extraction
-        MESSAGE_COUNT=$(wc -l < extracted_messages.txt)
-        echo "📊 Found $MESSAGE_COUNT WhatsApp messages for $TARGET_DATE"
+        # Count messages and validate extraction (exclude empty file or header-only cases)
+        if [ -s extracted_messages.txt ]; then
+          # File exists and has content - count actual data lines
+          MESSAGE_COUNT=$(grep -c '|' extracted_messages.txt || echo "0")
+          echo "📊 Found $MESSAGE_COUNT WhatsApp messages for $TARGET_DATE"
+        else
+          # File is empty or doesn't exist
+          MESSAGE_COUNT=0
+          echo "📊 Found 0 WhatsApp messages for $TARGET_DATE (empty extraction)"
+        fi
         
         # Log if no data found (but don't exit - let conditional handle it)
         if [ "$MESSAGE_COUNT" -eq 0 ]; then
           echo "⚠️  No production messages found for $TARGET_DATE"
           echo "Data may not be available or date may be incorrect"
+          echo "🔍 Debug: File size $(stat -c%s extracted_messages.txt 2>/dev/null || echo '0') bytes"
         fi
         
         # Output variables for next steps
@@ -192,44 +234,55 @@ jobs:
         echo "👀 Monitoring Claude processing for issue #$ISSUE_NUMBER"
         echo "⏳ Waiting for Claude to process reports and create PR..."
         
-        # Monitor for PR creation (max 30 minutes)
+        # Monitor for PR creation (max 30 minutes) with improved error handling
         TIMEOUT=120  # 120 iterations * 15 seconds = 30 minutes
         PR_FOUND=false
+        CHECK_FAILURES=0
+        MAX_CHECK_FAILURES=5
         
         for i in $(seq 1 $TIMEOUT); do
           sleep 15
           
-          # Check if Claude has created a PR for this specific date
-          # Look for PRs created recently (within last 2 hours) with specific patterns
-          PR_LIST=$(gh pr list --state open --json number,title,createdAt --jq '
-            map(select(
-              (.title | contains("Autonomous PDR processing for '$TARGET_DATE'")) or
-              (.title | contains("feat: Autonomous PDR processing for '$TARGET_DATE'")) or
-              (.title | contains("PDR processing for '$TARGET_DATE'")) or
-              (.title | contains("'$TARGET_DATE'") and (.title | contains("PDR") or .title | contains("production")))
-            ))
-          ')
-          
-          PR_COUNT=$(echo "$PR_LIST" | jq length)
-          
-          if [ "$PR_COUNT" -gt 0 ]; then
-            PR_NUMBER=$(echo "$PR_LIST" | jq -r '.[0].number')
-            PR_TITLE=$(echo "$PR_LIST" | jq -r '.[0].title')
-            echo "✅ Claude created PR #$PR_NUMBER: $PR_TITLE"
-            echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
-            PR_FOUND=true
-            break
+          # Check if Claude has created a PR for this specific date (avoid jq dependency)
+          if PR_LIST=$(gh pr list --state open --json number,title,createdAt 2>/dev/null); then
+            # Reset failure counter on successful API call
+            CHECK_FAILURES=0
+            
+            # Search for PR with target date (without jq)
+            if echo "$PR_LIST" | grep -q "$TARGET_DATE" && (echo "$PR_LIST" | grep -q "PDR\|production\|Autonomous"); then
+              # Extract PR number from the matching line
+              PR_NUMBER=$(echo "$PR_LIST" | grep "$TARGET_DATE" | grep -o '"number":[0-9]*' | head -1 | grep -o '[0-9]*')
+              if [ -n "$PR_NUMBER" ]; then
+                PR_TITLE=$(gh pr view $PR_NUMBER --json title --template '{{.title}}' 2>/dev/null || echo "PR #$PR_NUMBER")
+                echo "✅ Claude created PR #$PR_NUMBER: $PR_TITLE"
+                echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
+                PR_FOUND=true
+                break
+              fi
+            fi
+          else
+            # Handle API failures gracefully
+            CHECK_FAILURES=$((CHECK_FAILURES + 1))
+            echo "⚠️  GitHub API check failed ($CHECK_FAILURES/$MAX_CHECK_FAILURES)"
+            
+            if [ $CHECK_FAILURES -ge $MAX_CHECK_FAILURES ]; then
+              echo "❌ Too many API failures - monitoring may be unreliable"
+              echo "🔍 Continuing with extended timeout but check issue #$ISSUE_NUMBER manually"
+            fi
           fi
           
           # Show progress every minute
           if [ $((i % 4)) -eq 0 ]; then
             echo "⏳ Still waiting for Claude processing... ($((i*15))s elapsed)"
+            echo "🔍 Check issue #$ISSUE_NUMBER for current progress"
           fi
         done
         
         if [ "$PR_FOUND" = false ]; then
           echo "❌ Timeout: No PR created within 30 minutes"
           echo "🔍 Check issue #$ISSUE_NUMBER for Claude's progress"
+          echo "💡 This may indicate Claude processing is taking longer than expected"
+          echo "📋 Issue will remain open for manual completion if needed"
           exit 1
         fi
         
@@ -494,33 +547,93 @@ jobs:
       run: |
         ISSUE_NUMBER="${{ steps.issue.outputs.issue_number }}"
         TARGET_DATE="${{ steps.extract.outputs.target_date }}"
+        MESSAGE_COUNT="${{ steps.extract.outputs.message_count }}"
+        
+        # Determine failure category based on available information
+        if [ -z "$TARGET_DATE" ]; then
+          FAILURE_CATEGORY="Configuration Error"
+          FAILURE_DETAILS="Workflow configuration or GitHub Actions setup issue"
+        elif [ -z "$MESSAGE_COUNT" ] || [ "$MESSAGE_COUNT" = "0" ]; then
+          FAILURE_CATEGORY="Data Extraction Error"
+          FAILURE_DETAILS="WhatsApp bridge connectivity or database access issue"
+        elif [ -z "$ISSUE_NUMBER" ]; then
+          FAILURE_CATEGORY="Issue Creation Error" 
+          FAILURE_DETAILS="GitHub API permissions or repository access issue"
+        else
+          FAILURE_CATEGORY="Processing Timeout"
+          FAILURE_DETAILS="Claude processing or PR creation timeout"
+        fi
+        
+        echo "❌ Autonomous processing failed: $FAILURE_CATEGORY"
+        echo "🔍 Details: $FAILURE_DETAILS"
         
         if [ -n "$ISSUE_NUMBER" ]; then
-          echo "❌ Processing failed - updating issue #$ISSUE_NUMBER with error details"
+          echo "📝 Updating issue #$ISSUE_NUMBER with failure details..."
           
+          # Create comprehensive failure report
           gh issue comment $ISSUE_NUMBER \
-            --body "❌ **Autonomous Processing Failed**
+            --body "❌ **Autonomous Processing Failed - $FAILURE_CATEGORY**
 
-          **Date**: $TARGET_DATE  
-          **Status**: Workflow encountered errors during processing
+          ## 📊 Failure Summary
+          - **Date**: $TARGET_DATE  
+          - **Category**: $FAILURE_CATEGORY
+          - **Details**: $FAILURE_DETAILS
+          - **Messages Found**: ${MESSAGE_COUNT:-'Unknown'}
+          - **Workflow Run**: [View Logs](https://github.com/karstegg/MarthaVault/actions/runs/$GITHUB_RUN_ID)
           
-          **Possible Issues**:
-          - Claude processing timeout (>15 minutes)
-          - File validation failures
-          - Codespace connectivity issues
-          - GitHub API errors
+          ## 🔍 Troubleshooting Guide
           
-          **Next Steps**:
-          - Check workflow logs for specific error details
-          - Verify Codespace is active and accessible
-          - Retry processing manually if needed
-          - Issue left open for manual resolution
+          ### $FAILURE_CATEGORY
+          $(if [ "$FAILURE_CATEGORY" = "Data Extraction Error" ]; then
+            echo "- **Check Bridge Status**: Verify WhatsApp bridge is running in Codespace"
+            echo "- **Verify Date**: Ensure $TARGET_DATE has actual production reports"
+            echo "- **Database Access**: Check Codespace connectivity and SQLite database"
+            echo "- **Retry Command**: Try \`/pdr-cloud $TARGET_DATE\` again"
+          elif [ "$FAILURE_CATEGORY" = "Processing Timeout" ]; then
+            echo "- **Check Claude Processing**: Look for @claude response in this issue"
+            echo "- **GitHub Actions**: Verify Claude Code Action permissions"
+            echo "- **Manual Processing**: Use \`/pdr-single\` as fallback"
+            echo "- **PR Creation**: Check if PR was created but not detected"
+          elif [ "$FAILURE_CATEGORY" = "Issue Creation Error" ]; then
+            echo "- **GitHub Permissions**: Verify PAT_WITH_CODESPACE token scope"
+            echo "- **Repository Access**: Check workflow permissions"
+            echo "- **API Limits**: Verify GitHub API quota availability"
+          else
+            echo "- **Workflow Configuration**: Check .github/workflows/cloud-pdr-processing.yml"
+            echo "- **GitHub Actions**: Verify repository dispatch configuration"
+            echo "- **Token Permissions**: Check PAT_WITH_CODESPACE scopes"
+          fi)
           
-          **Debug**: Check GitHub Actions logs for this workflow run"
+          ## ⚡ Recovery Options
+          1. **Retry Automated**: Use \`/pdr-cloud $TARGET_DATE\` command again
+          2. **Manual Processing**: Use \`/pdr-single\` with WhatsApp data
+          3. **Debug Mode**: Check Codespace and bridge health manually
+          4. **Escalate**: Tag @karstegg for investigation
           
-          echo "📝 Added failure comment to issue #$ISSUE_NUMBER"
-          echo "🔍 Issue left open for manual troubleshooting"
+          **Issue Status**: ⏳ Left open for manual resolution or retry"
+          
+          echo "✅ Comprehensive failure report added to issue #$ISSUE_NUMBER"
         else
-          echo "❌ Processing failed before issue creation"
-          echo "🔍 Check workflow logs for extraction or setup errors"
+          echo "❌ Processing failed before issue creation - check workflow configuration"
+          
+          # Create emergency notification issue
+          gh issue create \
+            --title "🚨 Emergency: Cloud Processing Failure - $TARGET_DATE" \
+            --body "**Critical Workflow Failure**
+          
+          **Date**: $TARGET_DATE
+          **Category**: $FAILURE_CATEGORY  
+          **Details**: $FAILURE_DETAILS
+          **Workflow**: [View Logs](https://github.com/karstegg/MarthaVault/actions/runs/$GITHUB_RUN_ID)
+          
+          **Impact**: Autonomous processing pipeline completely failed before issue creation.
+          
+          **Action Required**: 
+          - Verify workflow configuration
+          - Check GitHub Actions permissions  
+          - Test \`/pdr-cloud\` command manually
+          
+          @karstegg" \
+            --label "emergency" \
+            --label "pdr-cloud" || echo "Failed to create emergency issue"
         fi
