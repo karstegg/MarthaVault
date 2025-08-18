@@ -75,11 +75,11 @@ ISSUE_URL=$(gh issue create \
 
 echo "✅ Created processing issue: $ISSUE_URL"
 
-# Add comment with @gemini-cli to trigger workflow
+# Add comment with @gemini-pdr to trigger complete workflow
 ISSUE_NUMBER=$(echo "$ISSUE_URL" | grep -o '[0-9]*$')
-gh issue comment "$ISSUE_NUMBER" --body "@gemini-cli Please process the daily production reports for $TARGET_DATE as requested above."
+gh issue comment "$ISSUE_NUMBER" --body "@gemini-pdr Please process the daily production reports for $TARGET_DATE with complete data extraction and file creation."
 
-echo "✅ Added @gemini-cli trigger comment"
+echo "✅ Added @gemini-pdr trigger comment"
 
 if [ $? -eq 0 ]; then
     echo "✅ Gemini AI workflow triggered successfully"
