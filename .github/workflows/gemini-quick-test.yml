@@ -2,7 +2,13 @@ name: 🤖 Gemini AI Production PDR Processing
 
 on:
   repository_dispatch:
-    types: [gemini-test]
+    types: [gemini-pdr-production]
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Target date (YYYY-MM-DD)'
+        required: true
+        default: '2025-07-14'
 
 jobs:
   gemini-pdr-processing:
@@ -22,7 +28,7 @@ jobs:
       id: extract
       run: |
         CODESPACE_NAME="cuddly-guacamole-496vp6p46wg39r"
-        TARGET_DATE="${{ github.event.client_payload.date }}"
+        TARGET_DATE="${{ github.event.client_payload.date || github.event.inputs.date }}"
         
         echo "🔍 Checking WhatsApp bridge health and extracting messages for $TARGET_DATE..."
         
@@ -282,7 +288,7 @@ jobs:
       id: verify_files
       if: steps.gemini_process.conclusion == 'success'
       run: |
-        TARGET_DATE="${{ github.event.client_payload.date }}"
+        TARGET_DATE="${{ github.event.client_payload.date || github.event.inputs.date }}"
         YEAR_MONTH=$(echo $TARGET_DATE | cut -d'-' -f1,2)
         DAY=$(echo $TARGET_DATE | cut -d'-' -f3)
         TARGET_DIR="daily_production/data/${YEAR_MONTH}/${DAY}"
