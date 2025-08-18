@@ -42,9 +42,9 @@ echo "🚀 Triggering Gemini AI workflow..."
 
 # Send workflow dispatch to trigger Gemini AI workflow (with optional instructions)
 if [ -n "$ADDITIONAL_INSTRUCTIONS" ]; then
-    gh workflow run "🤖 Gemini AI Production PDR Processing" --ref master --raw-field date="$TARGET_DATE" --raw-field instructions="$ADDITIONAL_INSTRUCTIONS"
+    gh workflow run "gemini-enhanced-pdr.yml" --ref master --raw-field date="$TARGET_DATE" --raw-field instructions="$ADDITIONAL_INSTRUCTIONS"
 else
-    gh workflow run "🤖 Gemini AI Production PDR Processing" --ref master --raw-field date="$TARGET_DATE"
+    gh workflow run "gemini-enhanced-pdr.yml" --ref master --raw-field date="$TARGET_DATE"
 fi
 
 if [ $? -eq 0 ]; then
