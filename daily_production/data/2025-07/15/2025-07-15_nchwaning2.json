@@ -1,0 +1,172 @@
+{
+  "report_metadata": {
+    "date": "2025-07-15",
+    "data_date": "2025-07-15",
+    "site": "Nchwaning 2",
+    "engineer": "Johan Kotze",
+    "timestamp": "05:10",
+    "timezone": "UTC+00:00",
+    "site_identification_note": "INFERRED - No explicit site header in source message"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 6390,
+      "target": 6903,
+      "variance": -513,
+      "variance_percentage": -7.4
+    },
+    "product": {
+      "actual": 4677,
+      "target": 6514,
+      "variance": -1837,
+      "variance_percentage": -28.2
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 67, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 83, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 58, "target": null}
+    ],
+    "blast": {
+      "faces": null,
+      "breakdown": "? vs 16",
+      "note": "Blast data partially reported"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": 84,
+      "FL": 74,
+      "HD": 95,
+      "RT": 95,
+      "SR": 99
+    },
+    "specialized": [
+      {"code": "DZ13", "description": "Dozer", "availability": 100},
+      {"code": "GD12", "description": "Grader", "availability": 100},
+      {"code": "UV", "description": "Emulsion UV", "availability": 100, "available": 3, "total": 3},
+      {"code": "UV_LOGISTICS", "description": "Logistics UV", "availability": 33, "available": 1, "total": 3},
+      {"code": "UV_SAMPLING", "description": "Sampling Manlifts", "availability": 100, "available": 2, "total": 2},
+      {"code": "UV_SURVEY", "description": "Survey Manlifts", "availability": 100, "available": 2, "total": 2}
+    ]
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 8, "total": 9, "availability_percentage": 89, "note": "DT120 door controller"},
+      "FL": {"available": 5, "total": 6, "availability_percentage": 83, "note": "FL86 bucket pin"},
+      "HD": {"available": 6, "total": 6, "availability_percentage": 100},
+      "RT": {"available": 6, "total": 6, "availability_percentage": 100},
+      "SR": {"available": 6, "total": 6, "availability_percentage": 100}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "DT120", "issue": "door controller"},
+      {"unit": "FL86", "issue": "bucket pin"},
+      {"unit": "UV90", "issue": "water pump & timing"},
+      {"unit": "UV37", "issue": "gears"},
+      {"unit": "UV59", "issue": "engine"},
+      {"unit": "UV54", "issue": "oil leak"},
+      {"unit": "UV133", "issue": "brakes"},
+      {"unit": "FL85", "issue": "propshaft"},
+      {"unit": "SR46", "issue": "oil leak"}
+    ]
+  },
+  "operational": {
+    "main_fans": null,
+    "plant_blockages": 0,
+    "fire_alarms": "no report"
+  },
+  "performance_summary": {
+    "key_issues": [
+      "ROM below target by 7.4% (-513t)",
+      "Product significantly below target by 28.2% (-1,837t)",
+      "FL equipment availability at 74% (below optimal)",
+      "DT equipment availability at 84% (below optimal)",
+      "9 equipment breakdowns requiring attention",
+      "Logistics UV availability critical at 33%"
+    ],
+    "key_highlights": [
+      "Safety status clear",
+      "Good load performance: 67, 83, 58 truckloads",
+      "Excellent SR availability at 99%",
+      "RT and HD availability good at 95%",
+      "Specialized equipment mostly operational",
+      "No plant blockages reported"
+    ]
+  },
+  "source_validation": {
+    "rom": {
+      "value": 6390,
+      "source_line": 4,
+      "source_quote": "*ROM:*             6390 v 6903t",
+      "confidence": "HIGH"
+    },
+    "product": {
+      "value": 4677,
+      "source_line": 5,
+      "source_quote": "*Product:*       4677 v 6514t",
+      "confidence": "HIGH"
+    },
+    "loads": {
+      "value": [67, 83, 58],
+      "source_line": 6,
+      "source_quote": "*Loads:*          67, 83, 58",
+      "confidence": "HIGH"
+    },
+    "blast": {
+      "value": "? vs16",
+      "source_line": 8,
+      "source_quote": "*Blast:Actual vs Plan* ? vs16",
+      "confidence": "MEDIUM"
+    },
+    "tmm_availability": {
+      "DT": {
+        "value": 84,
+        "source_line": 11,
+        "source_quote": "DTs: 84%",
+        "confidence": "HIGH"
+      },
+      "FL": {
+        "value": 74,
+        "source_line": 12,
+        "source_quote": "FLs: 74%",
+        "confidence": "HIGH"
+      },
+      "HD": {
+        "value": 95,
+        "source_line": 13,
+        "source_quote": "HDs: 95%",
+        "confidence": "HIGH"
+      },
+      "RT": {
+        "value": 95,
+        "source_line": 14,
+        "source_quote": "RTs: 95%",
+        "confidence": "HIGH"
+      },
+      "SR": {
+        "value": 99,
+        "source_line": 15,
+        "source_quote": "SRs: 99%",
+        "confidence": "HIGH"
+      }
+    },
+    "shift_readiness": {
+      "value": "Multiple equipment counts",
+      "source_line": 21,
+      "source_quote": "DT:  8/9    DT120 door controller\nFL:  5/6     FL86 bucket pin\nHD: 6/6\nRT:  6/6\nSR:  6/6",
+      "confidence": "HIGH"
+    },
+    "breakdowns": {
+      "value": "9 units listed",
+      "source_line": 38,
+      "source_quote": "UV90- water pump & timing\nUV37- gears\nUV59- engine\nUV54- oil leak\nUV133- brakes\nFL85- propshaft\nSR46- oil leak",
+      "confidence": "HIGH"
+    }
+  }
+}

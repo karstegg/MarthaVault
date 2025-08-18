@@ -1,0 +1,185 @@
+{
+  "report_metadata": {
+    "date": "2025-07-15",
+    "data_date": "2025-07-15",
+    "site": "Gloria",
+    "engineer": "Sipho Dubazane",
+    "timestamp": "04:36",
+    "timezone": "UTC+00:00"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 4188,
+      "target": 3873,
+      "variance": 315,
+      "variance_percentage": 8.1
+    },
+    "decline": {
+      "actual": 4939,
+      "target": 3873,
+      "variance": 1066,
+      "variance_percentage": 27.5
+    },
+    "product": {
+      "actual": 2767,
+      "target": 1887,
+      "variance": 880,
+      "variance_percentage": 46.6
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 76, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 62, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 55, "target": null}
+    ],
+    "blast": {
+      "faces": null,
+      "breakdown": null,
+      "note": "Nothing Reported"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": 99,
+      "FL": 79,
+      "HD": 99,
+      "RT": 55,
+      "SR": 35
+    },
+    "specialized": [
+      {"code": "UV", "description": "Emulsion UV", "availability": 100, "available": 2, "total": 2},
+      {"code": "MANITOU", "description": "Manitou", "availability": 100, "available": 1, "total": 1},
+      {"code": "MANLIFT", "description": "Manlifts", "availability": 100, "available": 2, "total": 2}
+    ]
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 6, "total": 6, "availability_percentage": 100},
+      "FL": {"available": 4, "total": 5, "availability_percentage": 80},
+      "HD": {"available": 4, "total": 4, "availability_percentage": 100},
+      "RT": {"available": 2, "total": 4, "availability_percentage": 50},
+      "SR": {"available": 3, "total": 4, "availability_percentage": 75}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "FL0083", "issue": "Speed sensor/ Bucket movement"},
+      {"unit": "SR0037", "issue": "Tail frame"},
+      {"unit": "RT0045", "issue": "Boom not moving"},
+      {"unit": "RT0046", "issue": "Percussion"}
+    ]
+  },
+  "operational": {
+    "main_fans": "In Order",
+    "plant_blockages": 0,
+    "fire_alarms": 0
+  },
+  "silo_levels": {
+    "surface": {
+      "silo_1": 16,
+      "silo_2": 21,
+      "silo_3": 95,
+      "silo_4": 81
+    },
+    "underground": {
+      "silo_74": 22,
+      "silo_hg": 18,
+      "silo_d": 17,
+      "silo_lg": 19
+    }
+  },
+  "specialized_equipment": {
+    "manitou": {"available": 1, "total": 1, "availability": 100},
+    "manlifts": {"available": 2, "total": 2, "availability": 100}
+  },
+  "performance_summary": {
+    "key_issues": [
+      "RT equipment availability at 55% (critical)",
+      "SR equipment availability at 35% (critical)",
+      "FL equipment availability at 79% (below optimal)",
+      "4 equipment breakdowns requiring attention"
+    ],
+    "key_highlights": [
+      "ROM exceeded target by 8.1% (+315t)",
+      "Decline exceeded target by 27.5% (+1,066t)",
+      "Product exceeded target by 46.6% (+880t)",
+      "Excellent load performance: 76, 62, 55 truckloads",
+      "No safety incidents reported",
+      "Main fans operational"
+    ]
+  },
+  "source_validation": {
+    "rom": {
+      "value": 4188,
+      "source_line": 7,
+      "source_quote": "- 4188 vs 3873",
+      "confidence": "HIGH"
+    },
+    "decline": {
+      "value": 4939,
+      "source_line": 9,
+      "source_quote": "4939 vs 3873",
+      "confidence": "HIGH"
+    },
+    "product": {
+      "value": 2767,
+      "source_line": 13,
+      "source_quote": "2767 vs 1887",
+      "confidence": "HIGH"
+    },
+    "loads": {
+      "value": [76, 62, 55],
+      "source_line": 32,
+      "source_quote": "- 76;62;55",
+      "confidence": "HIGH"
+    },
+    "tmm_availability": {
+      "DT": {
+        "value": 99,
+        "source_line": 34,
+        "source_quote": "- DTs: 99",
+        "confidence": "HIGH"
+      },
+      "FL": {
+        "value": 79,
+        "source_line": 35,
+        "source_quote": "- FLs: 79",
+        "confidence": "HIGH"
+      },
+      "HD": {
+        "value": 99,
+        "source_line": 36,
+        "source_quote": "- HDs: 99",
+        "confidence": "HIGH"
+      },
+      "RT": {
+        "value": 55,
+        "source_line": 37,
+        "source_quote": "- RTs: 55",
+        "confidence": "HIGH"
+      },
+      "SR": {
+        "value": 35,
+        "source_line": 38,
+        "source_quote": "- SRs: 35",
+        "confidence": "HIGH"
+      }
+    },
+    "silo_surface": {
+      "value": [16, 21, 95, 81],
+      "source_line": 16,
+      "source_quote": "1 -  16\n2 - 21\n3 - 95\n4 - 81",
+      "confidence": "HIGH"
+    },
+    "silo_underground": {
+      "value": [22, 18, 17, 19],
+      "source_line": 20,
+      "source_quote": "*74* - 22\n *HG* - 18\n *D*    - 17\n *LG* - 19",
+      "confidence": "HIGH"
+    }
+  }
+}

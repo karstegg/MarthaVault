@@ -1,0 +1,153 @@
+{
+  "report_metadata": {
+    "date": "2025-07-15",
+    "data_date": "2025-07-15",
+    "site": "Shafts & Winders",
+    "engineer": "Xavier Peterson",
+    "timestamp": "04:59",
+    "timezone": "UTC+00:00",
+    "report_type": "Daily Report"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "infrastructure": {
+    "power_supply": {
+      "stoppages": 0,
+      "status": "operational"
+    },
+    "winders": {
+      "nch2_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch3_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "gl_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch2_rw": {"status": "operational", "operational": true, "type": "rock_winder", "function": "ore_hoisting"}
+    },
+    "main_fans": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    },
+    "lamprooms": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    }
+  },
+  "dam_levels": {
+    "dd01": {
+      "monday": 100.4,
+      "status": "good"
+    },
+    "dd02": {
+      "monday": 82.1,
+      "status": "good"
+    }
+  },
+  "ore_pass_levels": {
+    "monday": 43.2,
+    "trend": "stable"
+  },
+  "production": {
+    "daily_summary": [
+      {
+        "day": "Friday",
+        "actual": 7207,
+        "target": 6621,
+        "variance": 586,
+        "variance_percentage": 8.8
+      },
+      {
+        "day": "Saturday",
+        "actual": 259,
+        "target": 1577,
+        "variance": -1318,
+        "variance_percentage": -83.6
+      },
+      {
+        "day": "Sunday",
+        "actual": 1384,
+        "target": 1577,
+        "variance": -193,
+        "variance_percentage": -12.2
+      },
+      {
+        "day": "Monday",
+        "actual": 5798,
+        "target": 5202,
+        "variance": 596,
+        "variance_percentage": 11.5
+      }
+    ]
+  },
+  "operational": {
+    "fire_scada_alarms": 4,
+    "block_chutes": 0
+  },
+  "performance_summary": {
+    "key_issues": [
+      "4 NON-EMERGENCY COMMS FAILURE ALARMS on Fire SCADA",
+      "Saturday production severely below target (-83.6%)",
+      "Sunday production below target (-12.2%)"
+    ],
+    "key_highlights": [
+      "Friday production exceeded target by 8.8% (+586t)",
+      "Monday production exceeded target by 11.5% (+596t)",
+      "All winders operational across all sites",
+      "All main fans operational",
+      "No stoppages on power supply",
+      "Dam levels stable - DD01: 100.4%, DD02: 82.1%"
+    ]
+  },
+  "source_validation": {
+    "power_supply": {
+      "value": "No Stoppages",
+      "source_line": 8,
+      "source_quote": "Power Supply:\nNo Stoppages",
+      "confidence": "HIGH"
+    },
+    "winders_status": {
+      "value": "All operational",
+      "source_line": 11,
+      "source_quote": "Nch2 PW\nNo Stoppages\n\nNch3 PW\nNo Stoppages\n\nGL PW\nNo Stoppages\n\nNch2 RW\nNo Stoppages",
+      "confidence": "HIGH"
+    },
+    "main_fans_status": {
+      "value": "All operational",
+      "source_line": 22,
+      "source_quote": "GL\nNo Stoppages\n\nNch2\nNo Stoppages\n\nNch3\nNo Stoppages",
+      "confidence": "HIGH"
+    },
+    "lamprooms_status": {
+      "value": "All operational",
+      "source_line": 31,
+      "source_quote": "GL\nNo Stoppages\n\nNch2\nNo Stoppages\n\nNch3\nNo Stoppages",
+      "confidence": "HIGH"
+    },
+    "dam_levels": {
+      "value": {"DD01": 100.4, "DD02": 82.1},
+      "source_line": 39,
+      "source_quote": "DD01:\nMon: 100,4%\n\nDD02:\nMon: 82,1%",
+      "confidence": "HIGH"
+    },
+    "fire_scada_alarms": {
+      "value": 4,
+      "source_line": 51,
+      "source_quote": "Fire Scada Alarms:\n4 x NON-EMERGENCY COMMS FAILURE ALARMS",
+      "confidence": "HIGH"
+    },
+    "production_data": {
+      "value": "Multi-day schedule",
+      "source_line": 56,
+      "source_quote": "Production:\nFri: 7207/6621\nSat: 259/1577\nSun: 1384/1577\nMon: 5798/5202",
+      "confidence": "HIGH"
+    },
+    "ore_pass_levels": {
+      "value": 43.2,
+      "source_line": 65,
+      "source_quote": "Ore pass Levels:\nMon: 43,2%",
+      "confidence": "HIGH"
+    }
+  }
+}
