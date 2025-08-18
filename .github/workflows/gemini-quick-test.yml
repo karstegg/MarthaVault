@@ -1,4 +1,5 @@
 name: 🤖 Gemini AI Production PDR Processing
+# Force workflow re-registration after cache clearing - 2025-08-18
 
 on:
   workflow_dispatch:
