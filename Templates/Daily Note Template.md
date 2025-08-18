@@ -1,10 +1,15 @@
-# {{date:YYYY-MM-DD}}
+# <% tp.file.title %>
 
-## Notes
-![[{{date:YYYY-MM-DD}}.excalidraw]]
+## ✍️ Handwritten
+![[{{date:YYYY-MM-DD}}.excalidraw.md]]
 
-## Tasks
-- [ ] 
 
-## Meetings
+
+## ✅ Tasks
+- [ ]
+
+## 📝 Notes
+-
+
+## 📅 Meetings
 - [ ]
