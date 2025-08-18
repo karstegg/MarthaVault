@@ -40,12 +40,46 @@ fi
 
 echo "🚀 Triggering Gemini AI workflow..."
 
-# Send workflow dispatch to trigger Gemini AI workflow (with optional instructions)
+# Trigger Gemini AI via comment on issue (bypassing workflow dispatch cache issues)
+echo "Creating issue to trigger Gemini AI processing via comment..."
+
+# Create processing request text
 if [ -n "$ADDITIONAL_INSTRUCTIONS" ]; then
-    gh workflow run "gemini-production-pdr.yml" --ref master --raw-field date="$TARGET_DATE" --raw-field instructions="$ADDITIONAL_INSTRUCTIONS"
+    PROCESSING_REQUEST="@gemini-cli Process daily production reports for $TARGET_DATE
+
+**Additional Instructions:** $ADDITIONAL_INSTRUCTIONS
+
+**Requirements:**
+- Extract WhatsApp production data from Codespace SQLite database
+- Create JSON and Markdown files for each mine site detected
+- Use proper directory structure: daily_production/data/YYYY-MM/DD/
+- Follow all data integrity validation rules
+
+**Processing Date:** $TARGET_DATE"
 else
-    gh workflow run "gemini-production-pdr.yml" --ref master --raw-field date="$TARGET_DATE"
+    PROCESSING_REQUEST="@gemini-cli Process daily production reports for $TARGET_DATE
+
+**Requirements:**
+- Extract WhatsApp production data from Codespace SQLite database  
+- Create JSON and Markdown files for each mine site detected
+- Use proper directory structure: daily_production/data/YYYY-MM/DD/
+- Follow all data integrity validation rules
+
+**Processing Date:** $TARGET_DATE"
 fi
+
+# Create issue to trigger Gemini CLI workflow
+ISSUE_URL=$(gh issue create \
+  --title "🤖 Gemini PDR Processing: $TARGET_DATE" \
+  --body "$PROCESSING_REQUEST")
+
+echo "✅ Created processing issue: $ISSUE_URL"
+
+# Add comment with @gemini-cli to trigger workflow
+ISSUE_NUMBER=$(echo "$ISSUE_URL" | grep -o '[0-9]*$')
+gh issue comment "$ISSUE_NUMBER" --body "@gemini-cli Please process the daily production reports for $TARGET_DATE as requested above."
+
+echo "✅ Added @gemini-cli trigger comment"
 
 if [ $? -eq 0 ]; then
     echo "✅ Gemini AI workflow triggered successfully"
