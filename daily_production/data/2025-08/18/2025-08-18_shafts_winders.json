@@ -1,0 +1,127 @@
+{
+  "report_metadata": {
+    "date": "2025-08-18",
+    "data_date": "2025-08-17",
+    "site": "Shafts & Winders",
+    "engineer": "Xavier Peterson",
+    "timestamp": "04:55",
+    "timezone": "UTC+00:00",
+    "report_type": "Weekly Report"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "infrastructure": {
+    "power_supply": {
+      "stoppages": 0,
+      "status": "operational"
+    },
+    "winders": {
+      "nch2_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch3_pw": {"status": "planned maintenance - water rings installation", "operational": false, "type": "manwinder", "maintenance": "water rings installation Sat-Sun"},
+      "gl_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch2_rw": {"status": "maintenance project", "operational": false, "type": "rock_winder", "function": "ore_hoisting", "maintenance": "Solrock shaft barrel repair + accumulator replacement"}
+    },
+    "main_fans": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "planned maintenance", "operational": false, "maintenance": "fan washing + pyroshield cylinder/cage replacement"},
+      "nchwaning3": {"status": "operational", "operational": true}
+    },
+    "lamprooms": {
+      "gloria": {"status": "infrastructure upgrade", "operational": true, "maintenance": "old lamproom infrastructure strip-out"},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    }
+  },
+  "dam_levels": {
+    "dd01": {
+      "friday": 99.7,
+      "saturday": 99.8,
+      "sunday": 99.8,
+      "status": "excellent"
+    },
+    "dd02": {
+      "friday": 80.1,
+      "saturday": 88.8,
+      "sunday": 82.6,
+      "status": "good"
+    }
+  },
+  "ore_pass_levels": {
+    "friday": 7.9,
+    "saturday": 8.0,
+    "sunday": 82.6
+  },
+  "production": {
+    "weekly_schedule": {
+      "friday": {"actual": 6883, "target": 6463, "variance": 420},
+      "saturday": {"actual": 0, "target": 1577, "variance": -1577, "note": "Solrock shaft barrel repair project"},
+      "sunday": {"actual": 0, "target": 1577, "variance": -1577, "note": "Solrock shaft barrel repair project"},
+      "monday": {"actual": null, "target": 5204, "variance": null},
+      "tuesday": {"actual": null, "target": 6623, "variance": null},
+      "wednesday": {"actual": null, "target": 6623, "variance": null},
+      "thursday": {"actual": null, "target": 5204, "variance": null}
+    }
+  },
+  "operational": {
+    "fire_scada_alarms": 0,
+    "block_chutes": 0
+  },
+  "performance_summary": {
+    "key_issues": [
+      "Nch2 RW out of service for Solrock shaft barrel repair",
+      "Nch3 PW planned maintenance (water rings installation)",
+      "Nch2 main fans planned maintenance (washing + pyroshield work)",
+      "Gloria lamproom infrastructure upgrade in progress",
+      "Weekend production lost due to infrastructure maintenance"
+    ],
+    "key_highlights": [
+      "Safety clear across all sites",
+      "Power supply stable - no stoppages",
+      "DD01 dam levels excellent (99.8%)",
+      "DD02 dam levels good (82.6%)",
+      "Friday exceeded target by 420t before maintenance period",
+      "Coordinated maintenance activities across multiple sites"
+    ]
+  },
+  "source_validation": {
+    "power_supply": {
+      "value": "No Stoppages",
+      "source_line": 9,
+      "source_quote": "No Stoppages",
+      "confidence": "HIGH"
+    },
+    "nch3_pw_maintenance": {
+      "value": "Water rings installation",
+      "source_line": 17,
+      "source_quote": "PLANNED INSTALLATION OF WATER RINGS",
+      "confidence": "HIGH"
+    },
+    "nch2_rw_maintenance": {
+      "value": "Solrock shaft barrel repair + accumulators",
+      "source_line": 23,
+      "source_quote": "1) SOLROCK SHAFT BARREL REPAIR PROJECT\n2) REPLACEMENT OF ACCUMULATORS AT TIPPING ARRANGEMENT",
+      "confidence": "HIGH"
+    },
+    "dam_levels_dd01": {
+      "value": [99.7, 99.8, 99.8],
+      "source_line": 42,
+      "source_quote": "Fri: 99,7%\nSat: 99,8%\nSun: 99,8%",
+      "confidence": "HIGH"
+    },
+    "dam_levels_dd02": {
+      "value": [80.1, 88.8, 82.6],
+      "source_line": 49,
+      "source_quote": "Fri: 80,1%\nSat: 88,8%\nSun: 82,6%",
+      "confidence": "HIGH"
+    },
+    "production_weekend": {
+      "value": [6883, 0, 0],
+      "source_line": 58,
+      "source_quote": "Fri: 6883/6463\nSat: 0/1577 SOLROCK SHAFT BARREL REPAIR PROJECT\nSun: 0/1577 SOLROCK SHAFT BARREL REPAIR PROJECT",
+      "confidence": "HIGH"
+    }
+  }
+}
