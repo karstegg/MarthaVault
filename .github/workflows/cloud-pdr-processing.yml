@@ -341,9 +341,21 @@ jobs:
               # Check for corresponding markdown file
               MD_EXISTS=false
               for md_file in "$EXPECTED_DIR"/*Daily\ Report.md "$EXPECTED_DIR"/*Weekly\ Report.md; do
-                if [ -f "$md_file" ] && echo "$md_file" | grep -q -i "$(echo $site | sed 's/shafts_winders/shafts.*winders/g; s/nchwaning/nchwaning/g')"; then
-                  MD_EXISTS=true
-                  break
+                if [ -f "$md_file" ]; then
+                  case "$site" in
+                    "gloria")
+                      if echo "$md_file" | grep -q -i "gloria"; then MD_EXISTS=true; break; fi
+                      ;;
+                    "nchwaning2")
+                      if echo "$md_file" | grep -q -i "nchwaning.*2"; then MD_EXISTS=true; break; fi
+                      ;;
+                    "nchwaning3")
+                      if echo "$md_file" | grep -q -i "nchwaning.*3"; then MD_EXISTS=true; break; fi
+                      ;;
+                    "shafts_winders")
+                      if echo "$md_file" | grep -q -i "shafts.*winders"; then MD_EXISTS=true; break; fi
+                      ;;
+                  esac
                 fi
               done
               if [ "$MD_EXISTS" = false ]; then
