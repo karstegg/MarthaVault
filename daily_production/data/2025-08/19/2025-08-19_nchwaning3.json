@@ -1,0 +1,144 @@
+{
+  "report_metadata": {
+    "date": "2025-08-19",
+    "data_date": "2025-08-19",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "timestamp": "04:44",
+    "whatsapp_sender_id": "265033925812455"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 3751,
+      "target": 8060,
+      "variance": -4309,
+      "variance_percentage": -53.5
+    },
+    "decline": {
+      "actual": 2724,
+      "target": 5623,
+      "variance": -2899,
+      "variance_percentage": -51.6
+    },
+    "product": {
+      "actual": 1408,
+      "target": 4979,
+      "variance": -3571,
+      "variance_percentage": -71.7
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 108, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 70, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 51, "target": null}
+    ],
+    "blast": {
+      "faces": 24,
+      "breakdown": "15 Mn, 7 Waste & 2 F/wall",
+      "note": "15 mining faces, 7 waste faces, 2 footwall faces"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": 67,
+      "FL": 91,
+      "HD": 86,
+      "RT": 91,
+      "SR": 77
+    },
+    "specialized": [
+      {"code": "GD11", "availability": 100},
+      {"code": "DZ11", "availability": 0},
+      {"code": "UV044", "availability": 75}
+    ]
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 10, "total": 14},
+      "FL": {"available": 9, "total": 10},
+      "HD": {"available": 9, "total": 9},
+      "RT": {"available": 9, "total": 10},
+      "SR": {"available": 7, "total": 10}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "DT0145", "issue": "Gears"},
+      {"unit": "DT0154", "issue": "Coolant leak"},
+      {"unit": "DT0162", "issue": "Bucket not tipping"},
+      {"unit": "DT0171", "issue": "Hyd oil leak"},
+      {"unit": "FL0098", "issue": "Battery changing"},
+      {"unit": "HD0061", "issue": "Extension plug damaged"},
+      {"unit": "RT0048", "issue": "Diesel Empty"},
+      {"unit": "SR0024", "issue": "Boom cracked"},
+      {"unit": "SR0035", "issue": "Hyd oil leak"},
+      {"unit": "UV0045", "issue": "Not starting"},
+      {"unit": "UV0047", "issue": "Brakes release (Spares)"},
+      {"unit": "SR0030", "issue": "Incident Repairs"},
+      {"unit": "DZ0011", "issue": "Transmission oil"}
+    ]
+  },
+  "operational": {
+    "main_fans": "no report at 06:43",
+    "plant_blockages": 0,
+    "fire_alarms": 0
+  },
+  "performance_summary": {
+    "key_issues": [
+      "Severe production underperformance across all metrics - ROM 53.5% below target",
+      "Product output 71.7% below target (1,408t vs 4,979t)",
+      "Night shift BEV workshop understaffed - person off sick impacting loads",
+      "13 equipment units currently broken down including critical DTs and FLs",
+      "Poor DT availability at 67% due to multiple breakdowns",
+      "Fire alarms and rescue bay comms not reported at 06:43"
+    ],
+    "key_highlights": [
+      "Strong blast performance with 24 total faces (15 mining, 7 waste, 2 footwall)",
+      "Day shift loads performing well at 108 truckloads",
+      "FL availability good at 91%",
+      "HD and RT availability acceptable at 86% and 91%"
+    ]
+  },
+  "source_validation": {
+    "rom_actual": {
+      "value": 3751,
+      "source_line": 7,
+      "source_quote": "3751 vs 8060",
+      "confidence": "HIGH"
+    },
+    "rom_target": {
+      "value": 8060,
+      "source_line": 7,
+      "source_quote": "3751 vs 8060",
+      "confidence": "HIGH"
+    },
+    "product_actual": {
+      "value": 1408,
+      "source_line": 11,
+      "source_quote": "1408 vs 4979",
+      "confidence": "HIGH"
+    },
+    "dt_availability": {
+      "value": 67,
+      "source_line": 19,
+      "source_quote": "DTs: 67",
+      "confidence": "HIGH"
+    },
+    "loads_day": {
+      "value": 108,
+      "source_line": 13,
+      "source_quote": "108, 70 & 51",
+      "confidence": "HIGH"
+    },
+    "blast_mining_faces": {
+      "value": 15,
+      "source_line": 17,
+      "source_quote": "15 Mn, 7 Waste & 2 F/wall",
+      "confidence": "HIGH"
+    }
+  }
+}
