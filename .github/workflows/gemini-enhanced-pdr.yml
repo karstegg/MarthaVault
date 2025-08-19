@@ -336,8 +336,8 @@ jobs:
         echo "md_files_count=$MD_FILES" >> $GITHUB_OUTPUT
         echo "total_files=$TOTAL_FILES" >> $GITHUB_OUTPUT
         echo "target_dir=$TARGET_DIR" >> $GITHUB_OUTPUT
-    
-    - name: Commit and Push Generated Reports
+  
+  - name: Commit and Push Generated Reports
       if: always()
       run: |
         TARGET_DATE="${{ github.event.inputs.date }}"
