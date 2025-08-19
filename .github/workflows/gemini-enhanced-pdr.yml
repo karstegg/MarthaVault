@@ -136,8 +136,8 @@ jobs:
           ## Context
           
           - **Repository**: `${{ github.repository }}`
-          - **Processing Date**: `${{ env.TARGET_DATE }}`
-          - **Messages Found**: `${{ env.MESSAGE_COUNT }}`
+          - **Processing Date**: `${{ github.event.inputs.date }}`
+          - **Messages Found**: `${{ steps.extract.outputs.message_count }}`
           - **Data Source**: WhatsApp production reports from mine engineers
           - **Output Required**: JSON and Markdown files for each mine site
           
@@ -189,7 +189,7 @@ jobs:
              ```json
              {
                "report_metadata": {
-                 "date": "${{ env.TARGET_DATE }}",
+                 "date": "${{ github.event.inputs.date }}",
                  "site": "[Site Name]",
                  "engineer": "[Engineer Name]",
                  "processing_method": "gemini_ai_automated"
@@ -261,7 +261,7 @@ jobs:
           - [ ] Files properly organized in directory structure
           - [ ] Processing plan completed and verified
           
-          **Begin processing the production data for ${{ env.TARGET_DATE }} now.**
+          **Begin processing the production data for ${{ github.event.inputs.date }} now.**
           
           ## Available Tools
           
