@@ -338,14 +338,37 @@ jobs:
         echo "target_dir=$TARGET_DIR" >> $GITHUB_OUTPUT
     
     - name: Commit and Push Generated Reports
-      if: steps.verify_files.outputs.total_files != '0'
+      if: always()
       run: |
         TARGET_DATE="${{ github.event.inputs.date }}"
         TOTAL_FILES="${{ steps.verify_files.outputs.total_files }}"
         JSON_FILES="${{ steps.verify_files.outputs.json_files_count }}"
         MD_FILES="${{ steps.verify_files.outputs.md_files_count }}"
         
-        echo "📝 Committing $TOTAL_FILES generated reports for $TARGET_DATE..."
+        echo "🔍 DEBUG: total_files='$TOTAL_FILES', json_files='$JSON_FILES', md_files='$MD_FILES'"
+        
+        # Check if any files were actually created by looking in the target directory
+        YEAR_MONTH=$(echo $TARGET_DATE | cut -d'-' -f1,2)
+        DAY=$(echo $TARGET_DATE | cut -d'-' -f3)
+        TARGET_DIR="daily_production/data/${YEAR_MONTH}/${DAY}"
+        
+        echo "🔍 Checking for files in: $TARGET_DIR"
+        
+        if [ ! -d "$TARGET_DIR" ]; then
+          echo "📂 Directory $TARGET_DIR does not exist - no files to commit"
+          exit 0
+        fi
+        
+        # Count actual files
+        ACTUAL_FILES=$(find "$TARGET_DIR" -type f | wc -l)
+        echo "📊 Found $ACTUAL_FILES files to commit"
+        
+        if [ "$ACTUAL_FILES" -eq 0 ]; then
+          echo "⚠️ No files found - nothing to commit"
+          exit 0
+        fi
+        
+        echo "📝 Committing $ACTUAL_FILES generated reports for $TARGET_DATE..."
         
         # Configure git
         git config --local user.email "actions@github.com"
@@ -356,21 +379,25 @@ jobs:
         
         # Check if there are changes to commit
         if git diff --staged --quiet; then
-          echo "⚠️ No changes to commit"
+          echo "⚠️ No changes to commit (files may already be committed)"
           exit 0
         fi
+        
+        # Count JSON and Markdown files separately for better reporting
+        JSON_COUNT=$(find "$TARGET_DIR" -name "*.json" | wc -l)
+        MD_COUNT=$(find "$TARGET_DIR" -name "*.md" | wc -l)
         
         # Create commit with detailed message
         git commit -m "$(cat <<EOF
         feat: Autonomous daily production reports - $TARGET_DATE
         
-        📊 **Generated Reports**: $JSON_FILES JSON, $MD_FILES Markdown = $TOTAL_FILES total files
+        📊 **Generated Reports**: $JSON_COUNT JSON, $MD_COUNT Markdown = $ACTUAL_FILES total files
         🤖 **Processing Method**: Gemini AI autonomous workflow
         📅 **Report Date**: $TARGET_DATE
         🔍 **Data Source**: WhatsApp production messages from mine engineers
         
         **Sites Processed**:
-        $(if [ "$JSON_FILES" -gt 0 ]; then find daily_production/data/ -name "*$TARGET_DATE*.json" -exec basename {} \; | sed 's/.*_\([^_]*\)\.json$/- \1/' | sort; fi)
+        $(if [ "$JSON_COUNT" -gt 0 ]; then find "$TARGET_DIR" -name "*.json" -exec basename {} \; | sed 's/.*_\([^_]*\)\.json$/- \1/' | sort; fi)
         
         **Workflow Features**:
         - Automatic WhatsApp bridge health checking
