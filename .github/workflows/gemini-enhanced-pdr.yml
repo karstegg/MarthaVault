@@ -121,7 +121,7 @@ jobs:
         gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
         settings: |-
           {
-            "maxSessionTurns": 50,
+            "maxSessionTurns": 20,
             "autoAccept": ["list_directory", "read_file", "write_file", "glob"],
             "telemetry": {
               "enabled": false,
@@ -237,10 +237,22 @@ jobs:
           
           ### Step 5: File Organization and Verification
           
-          1. **Create proper directory structure**: Use tools to ensure `daily_production/data/YYYY-MM/DD/` exists
-          2. **Write files**: Use appropriate file writing tools to create both JSON and Markdown files
-          3. **Verify creation**: List directory contents to confirm files were created successfully
-          4. **Validate structure**: Check that file paths follow the expected naming convention
+          **CRITICAL FILE PATH REQUIREMENTS**:
+          - **Use ABSOLUTE paths only**: All file paths must start with `/github/workspace/` or be relative to repository root
+          - **Example JSON path**: `/github/workspace/daily_production/data/2025-07/16/2025-07-16_gloria.json`
+          - **Example MD path**: `/github/workspace/daily_production/data/2025-07/16/2025-07-16 – Gloria Daily Report.md`
+          
+          **MANDATORY CREATION STEPS**:
+          1. **Create directory structure**: Use `mkdir -p` to ensure `daily_production/data/YYYY-MM/DD/` exists
+          2. **Create JSON file FIRST** for each site with absolute path
+          3. **Create Markdown file SECOND** for each site with absolute path
+          4. **Verify both files exist** using `ls` command
+          5. **Keep processing simple**: Create files for available sites only, skip missing data
+          
+          **RATE LIMIT HANDLING**:
+          - Work efficiently to minimize API calls
+          - Focus on data extraction first, then file creation
+          - If you hit rate limits, create files with the data already extracted
           
           ## Guidelines
           
@@ -324,3 +336,56 @@ jobs:
         echo "md_files_count=$MD_FILES" >> $GITHUB_OUTPUT
         echo "total_files=$TOTAL_FILES" >> $GITHUB_OUTPUT
         echo "target_dir=$TARGET_DIR" >> $GITHUB_OUTPUT
+    
+    - name: Commit and Push Generated Reports
+      if: steps.verify_files.outputs.total_files > 0
+      run: |
+        TARGET_DATE="${{ github.event.inputs.date }}"
+        TOTAL_FILES="${{ steps.verify_files.outputs.total_files }}"
+        JSON_FILES="${{ steps.verify_files.outputs.json_files_count }}"
+        MD_FILES="${{ steps.verify_files.outputs.md_files_count }}"
+        
+        echo "📝 Committing $TOTAL_FILES generated reports for $TARGET_DATE..."
+        
+        # Configure git
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions (Gemini AI)"
+        
+        # Add generated files
+        git add daily_production/data/
+        
+        # Check if there are changes to commit
+        if git diff --staged --quiet; then
+          echo "⚠️ No changes to commit"
+          exit 0
+        fi
+        
+        # Create commit with detailed message
+        git commit -m "$(cat <<EOF
+        feat: Autonomous daily production reports - $TARGET_DATE
+        
+        📊 **Generated Reports**: $JSON_FILES JSON, $MD_FILES Markdown = $TOTAL_FILES total files
+        🤖 **Processing Method**: Gemini AI autonomous workflow
+        📅 **Report Date**: $TARGET_DATE
+        🔍 **Data Source**: WhatsApp production messages from mine engineers
+        
+        **Sites Processed**:
+        $(if [ "$JSON_FILES" -gt 0 ]; then find daily_production/data/ -name "*$TARGET_DATE*.json" -exec basename {} \; | sed 's/.*_\([^_]*\)\.json$/- \1/' | sort; fi)
+        
+        **Workflow Features**:
+        - Automatic WhatsApp bridge health checking
+        - Real-time data extraction from Codespace SQLite database
+        - AI-powered data structuring with source validation
+        - Professional JSON schema with comprehensive metadata
+        - Human-readable Markdown reports for operational review
+        
+        🤖 Generated with [Claude Code](https://claude.ai/code)
+        
+        Co-Authored-By: Claude <noreply@anthropic.com>
+        EOF
+        )"
+        
+        # Push changes
+        git push origin master
+        
+        echo "✅ Successfully committed and pushed $TOTAL_FILES reports for $TARGET_DATE"
