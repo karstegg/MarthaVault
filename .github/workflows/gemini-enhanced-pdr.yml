@@ -338,8 +338,8 @@ jobs:
         echo "target_dir=$TARGET_DIR" >> $GITHUB_OUTPUT
   
   - name: Commit and Push Generated Reports
-      if: always()
-      run: |
+    if: always()
+    run: |
         TARGET_DATE="${{ github.event.inputs.date }}"
         TOTAL_FILES="${{ steps.verify_files.outputs.total_files }}"
         JSON_FILES="${{ steps.verify_files.outputs.json_files_count }}"
