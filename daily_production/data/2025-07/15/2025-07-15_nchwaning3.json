@@ -1,0 +1,194 @@
+{
+  "report_metadata": {
+    "date": "2025-07-15",
+    "data_date": "2025-07-15",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "timestamp": "05:15",
+    "timezone": "UTC+00:00"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 3632,
+      "target": 8060,
+      "variance": -4428,
+      "variance_percentage": -55.0
+    },
+    "decline": {
+      "actual": 5238,
+      "target": 5911,
+      "variance": -673,
+      "variance_percentage": -11.4
+    },
+    "product": {
+      "actual": 7364,
+      "target": 5438,
+      "variance": 1926,
+      "variance_percentage": 35.4
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 72, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 90, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 51, "target": null}
+    ],
+    "blast": {
+      "faces": 15,
+      "breakdown": "15 Mn faces, 3 foot walls",
+      "note": "Detailed blast information provided"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "HD": 91,
+      "DT": 80,
+      "FL": 82,
+      "RT": 91,
+      "SR": 84
+    },
+    "specialized": [
+      {"code": "UV", "description": "General UV", "availability": 100},
+      {"code": "GD11", "description": "Grader", "availability": 100},
+      {"code": "DZ11", "description": "Dozer", "availability": 100},
+      {"code": "UV044", "description": "Specialized UV", "availability": 78}
+    ]
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "HD": {"available": 8, "total": 9, "availability_percentage": 89},
+      "DT": {"available": 10, "total": 14, "availability_percentage": 71},
+      "FL": {"available": 7, "total": 10, "availability_percentage": 70},
+      "RT": {"available": 10, "total": 10, "availability_percentage": 100},
+      "SR": {"available": 6, "total": 10, "availability_percentage": 60}
+    },
+    "support_equipment": {
+      "manlifts": {"available": 4, "total": 4, "availability_percentage": 100},
+      "emulsion_uv": {"available": 4, "total": 4, "availability_percentage": 100}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "DT0147", "issue": "Awaiting electrical communication cable"},
+      {"unit": "DT0146", "issue": "Charging"},
+      {"unit": "DT0150", "issue": "Gears"},
+      {"unit": "DT0161", "issue": "Gears"},
+      {"unit": "FL0107", "issue": "Half arrows repair"},
+      {"unit": "HD0062", "issue": "Front centre LHB"},
+      {"unit": "SR0030", "issue": "Tag system faulty"},
+      {"unit": "UV0047", "issue": "Brakes not releasing"}
+    ]
+  },
+  "operational": {
+    "main_fans": null,
+    "plant_blockages": 0,
+    "fire_alarms": 0,
+    "crusher_blockages": 1,
+    "crusher_details": "60CV01 - x1 reported"
+  },
+  "performance_summary": {
+    "key_issues": [
+      "ROM significantly below target by 55.0% (-4,428t)",
+      "Decline below target by 11.4% (-673t)",
+      "8 equipment breakdowns requiring attention",
+      "1 crusher blockage (60CV01)",
+      "DT availability at 80% (below optimal)",
+      "FL availability at 82% (below optimal)",
+      "SR availability at 84% (below optimal)"
+    ],
+    "key_highlights": [
+      "Product exceeded target by 35.4% (+1,926t)",
+      "Excellent load performance: 72, 90, 51 truckloads",
+      "Good HD and RT availability at 91%",
+      "All support equipment operational (manlifts, emulsion UV)",
+      "Detailed blast information: 15 Mn faces, 3 foot walls",
+      "No fire alarms reported",
+      "Safety status clear"
+    ]
+  },
+  "source_validation": {
+    "rom": {
+      "value": 3632,
+      "source_line": 5,
+      "source_quote": "*ROM*\n3632 vs 8060",
+      "confidence": "HIGH"
+    },
+    "decline": {
+      "value": 5238,
+      "source_line": 8,
+      "source_quote": "*Decline*\n5238 vs 5911",
+      "confidence": "HIGH"
+    },
+    "product": {
+      "value": 7364,
+      "source_line": 11,
+      "source_quote": "*Product*\n7364 vs 5438",
+      "confidence": "HIGH"
+    },
+    "loads": {
+      "value": [72, 90, 51],
+      "source_line": 14,
+      "source_quote": "*LOADS*\n72, 90, 51",
+      "confidence": "HIGH"
+    },
+    "blast": {
+      "value": "15 Mn faces, 3 foot walls",
+      "source_line": 16,
+      "source_quote": "*Blast*\n15 Mn faces, 3 foot walls",
+      "confidence": "HIGH"
+    },
+    "tmm_availability": {
+      "HD": {
+        "value": 91,
+        "source_line": 19,
+        "source_quote": "HDs: 91",
+        "confidence": "HIGH"
+      },
+      "DT": {
+        "value": 80,
+        "source_line": 20,
+        "source_quote": "DTs: 80",
+        "confidence": "HIGH"
+      },
+      "FL": {
+        "value": 82,
+        "source_line": 21,
+        "source_quote": "FLs: 82",
+        "confidence": "HIGH"
+      },
+      "RT": {
+        "value": 91,
+        "source_line": 22,
+        "source_quote": "RTs: 91",
+        "confidence": "HIGH"
+      },
+      "SR": {
+        "value": 84,
+        "source_line": 23,
+        "source_quote": "SRs: 84",
+        "confidence": "HIGH"
+      }
+    },
+    "shift_readiness": {
+      "value": "Multiple equipment counts",
+      "source_line": 29,
+      "source_quote": "HDs: 8/9\nDTs: 10/14\nFLs: 7/10\nRTs: 10/10\nSRs: 6/10",
+      "confidence": "HIGH"
+    },
+    "breakdowns": {
+      "value": "8 units listed",
+      "source_line": 41,
+      "source_quote": "DT0147 - Awaiting electrical communication cable\nDT0146 - Charging\nDT0150 - Gears\nDT0161 - Gears\nFL0107 - Half arrows repair\nHD0062 - Front centre LHB\nSR0030 - Tag system faulty\nUV0047 - Brakes not releasing",
+      "confidence": "HIGH"
+    },
+    "crusher_blockage": {
+      "value": 1,
+      "source_line": 57,
+      "source_quote": "*Crusher and chute        blockage**\n60CV01 - x1 reported",
+      "confidence": "HIGH"
+    }
+  }
+}
