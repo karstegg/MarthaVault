@@ -1,0 +1,93 @@
+Machine_id;ProdYear Hierarchy - Date;All Delays Levels;Comment;Hours
+HD0054;19 Aug 2025;/Equipment/Breakdown Fitter/Refills/Coolant Refill;51n58w r5;0,73
+HD0054;15 Aug 2025;/Equipment/Breakdown Fitter/Hydraulic System/Hoses;@ WPLACE R5;1,33
+HD0054;15 Aug 2025;/Equipment/Breakdown Fitter/Hydraulic System/Hoses;L BOOM (R5 BOX);1,25
+HD0054;15 Aug 2025;/Equipment/Breakdown Fitter/Hydraulic System/Oil;R5 BOX;1,23
+HD0054;15 Aug 2025;/Equipment/Breakdown Fitter/Power Unit/Engine Not Starting;FAIL TO START STARTING @CENTRAL WAITING PLACE.;0,27
+HD0054;07 Aug 2025;/Equipment/Breakdown Electrical;Pump2 cut out- 41w76s R5;1,28
+HD0054;07 Aug 2025;/Equipment/Breakdown Fitter/Hydraulic System/Cylinders;Rear outriggers (42W 75S R5;0,80
+HD0054;07 Aug 2025;/Equipment/Operational Delays/No Face Available/Waiting For Mining Activity;Pump water;1,28
+HD0054;06 Aug 2025;/Equipment/Breakdown Electrical;no elect @ 63w60n swd;0,97
+HD0054;06 Aug 2025;/Equipment/Breakdown Fitter/Hydraulic System/Hoses;Fitting broken (63n52w swd);0,82
+HD0054;05 Aug 2025;/Equipment/Breakdown Fitter/Right Boom;@ 58w52n r5;6,05
+HD0054;04 Aug 2025;/Equipment/Breakdown Auto Electrical;LH BOOM WATER FLUSHING PROBLEM - DRILL WITH ONE BOOM @ 41W 75S;4,67
+HD0054;04 Aug 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/Starter;no display on dashboard @ 41w75s r5;0,25
+HD0054;04 Aug 2025;/Equipment/Breakdown Fitter/Leaks;FITTING LEAKING @ R5 41W 75S;1,25
+HD0054;04 Aug 2025;/Equipment/Breakdown Fitter/Right Boom;@ 58w52n r5;4,15
+HD0054;04 Aug 2025;/Equipment/Operational Delays/No Face Available;WAIT FOR MARKING AND SCALER;1,40
+HD0054;03 Aug 2025;/Equipment/Breakdown Fitter;water coolant @ R5,41w 73n;4,50
+HD0054;02 Aug 2025;/Equipment/Breakdown Fitter;water coolant @ R5,41w 73n;24,00
+HD0054;01 Aug 2025;/Equipment/Breakdown Fitter;water coolant @ R5,41w 73n;17,08
+HD0054;31 Jul 2025;/Equipment/Breakdown Auto Electrical;aircon not working @ R5,42w 76s;3,80
+HD0054;31 Jul 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/Camera;Rear camera (63w52n swd);1,33
+HD0054;30 Jul 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/Air Conditioner;aircon faulty @ mw w/place;1,57
+HD0054;30 Jul 2025;/Equipment/Breakdown Fitter/Hydraulic System/Hoses;hydraulic hose burst @ mw w/place;1,63
+HD0054;28 Jul 2025;/Equipment/Breakdown Auto Electrical;fan not working (88s20w mw);0,13
+HD0054;28 Jul 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/Air Conditioner;aircon faulty @ mw,20e 88s;0,92
+HD0054;28 Jul 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/Air Conditioner;aircon faulty @ mw,88s 20e;1,80
+HD0054;28 Jul 2025;/Equipment/Breakdown Fitter/Hydraulic System/Hoses;Fitting leaking (88s20w mw);0,38
+HD0054;28 Jul 2025;/Equipment/Breakdown Fitter/Leaks/Coolants Leak;NEED COOLINT (MW BOX) Was filled did not go far from w/p then it overheated;1,12
+HD0054;24 Jul 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/Air Conditioner;aircon + camera @ 88s18w mw;1,38
+HD0054;24 Jul 2025;/Equipment/Breakdown Fitter/Hydraulic System/Hoses;Main W Wplace- #12x 3.4m;0,90
+HD0054;17 Jul 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/Petro Man;94S20E NW;3,50
+HD0054;17 Jul 2025;/Equipment/Breakdown Fitter/Refills/Hydraulic Refill;NW 94S 20W;3,50
+HD0054;16 Jul 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/Petro Man;94S20E NW;5,35
+HD0054;16 Jul 2025;/Equipment/Breakdown Electrical;ELECT IS TRIPPING @ NW 95S 20W;0,92
+HD0054;16 Jul 2025;/Equipment/Breakdown Fitter/Hydraulic System/Hoses;95S 20W NW;0,60
+HD0054;16 Jul 2025;/Equipment/Breakdown Fitter/Hydraulic System/Hoses;HYD HOSE BURST UNDER MACHINE @ NW 94S 20W;4,13
+HD0054;16 Jul 2025;/Equipment/Breakdown Fitter/Refills/Hydraulic Refill;NW 94S 20W;9,50
+HD0054;11 Jul 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/Air Conditioner;Air Con- 63W74N SWD;1,95
+HD0054;11 Jul 2025;/Equipment/Breakdown Fitter;low water flushing @ swd,63w 74s;0,95
+HD0054;11 Jul 2025;/Equipment/Breakdown Fitter/Hydraulic System/Hoses;Hyd Hose LH Boom- 64W60S SWD;1,03
+HD0054;11 Jul 2025;/Equipment/Breakdown Fitter/Refills/Coolant Refill;Coolant- SWD BOX;1,10
+HD0054;07 Jul 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/Air Conditioner;aircon and no water @ boom 2 in 41w75n r5;2,62
+HD0054;07 Jul 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/Petro Man;diesel empty @ 42w 72s r5;0,50
+HD0054;03 Jul 2025;/Equipment/Breakdown Auto Electrical;not drilling @ sim2s,7s 81e;0,68
+HD0054;01 Jul 2025;/Equipment/Breakdown Electrical/Electrical System - 525v/Cable;CHANGE CABLE @ ELECT W/SHOP;12,17
+HD0054;25 Jun 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/Air Conditioner;R5 BOX;0,85
+HD0054;24 Jun 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/Air Conditioner;aircon faulty @ R5,51n 60w;1,52
+HD0054;24 Jun 2025;/Equipment/Breakdown Electrical;power trip @ r5,51n 60w;1,60
+HD0054;20 Jun 2025;/Equipment/Breakdown Fitter/Power Unit/Engine Not Starting;not starting  @ xcut w/place (new location w/s);7,55
+HD0054;19 Jun 2025;/Equipment/Breakdown Fitter/Power Unit/Engine Not Starting;not starting  @ xcut w/place (new location w/s);17,50
+HD0054;17 Jun 2025;/Equipment/Breakdown Auto Electrical;Not switching on (32s 80e swd;8,50
+HD0054;16 Jun 2025;/Equipment/Breakdown Auto Electrical;Not switching on (32s 80e swd;24,00
+HD0054;15 Jun 2025;/Equipment/Breakdown Auto Electrical;Not switching on (32s 80e swd;24,00
+HD0054;14 Jun 2025;/Equipment/Breakdown Auto Electrical;Not switching on (32s 80e swd;9,97
+HD0054;13 Jun 2025;/Equipment/Breakdown Fitter/Brake System/Park Brake;swd box;1,67
+HD0054;13 Jun 2025;/Equipment/Breakdown Fitter/Hydraulic System/Hoses;hydraulic hose burst @ swd,32s 80e;2,83
+HD0054;13 Jun 2025;/Equipment/Breakdown Fitter/Power Unit/Engine Not Starting;not starting @ swd,w/place;1,30
+HD0054;10 Jun 2025;/Equipment/Breakdown Fitter/Power Unit/Engine Not Starting;not starting @ swd,70w 40s New location swd box;6,98
+HD0054;09 Jun 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/Air Conditioner;aircon faulty @ swd,42s 70w;2,00
+HD0054;09 Jun 2025;/Equipment/Breakdown Fitter/Hydraulic System/Hoses;swd hose-42s 70w;11,17
+HD0054;09 Jun 2025;/Equipment/Breakdown Fitter/Power Unit/Engine Not Starting;not starting @ swd,70w 40s New location swd box;6,08
+HD0054;07 Jun 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/Air Conditioner;@ 72w40s swd;1,30
+HD0054;06 Jun 2025;/Equipment/Breakdown Auto Electrical;WIRING BURNING WHEN STARTING THE ENGINE @ R5 BOX;2,15
+HD0054;06 Jun 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/Air Conditioner;@SWD 63w 74s straight;1,35
+HD0054;06 Jun 2025;/Equipment/Operational Delays/No Face Available;;2,07
+HD0054;05 Jun 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/Air Conditioner;R5 BOX;1,92
+HD0054;05 Jun 2025;/Equipment/Breakdown Fitter/Hydraulic System/Hoses;74N63W SWD;0,82
+HD0054;04 Jun 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/Battery;63w 74s swd;1,70
+HD0054;04 Jun 2025;/Equipment/Breakdown Fitter/Brake System/Park Brake;63w 74s swd (new location r5 box);1,72
+HD0054;04 Jun 2025;/Equipment/Breakdown Fitter/Hydraulic System/Oil;No hyd oil (w/s);0,52
+HD0054;03 Jun 2025;/Equipment/Breakdown Fitter/Hydraulic System/Hoses;DACH 12 HOSE 3.4 M (27W 95N NW);1,43
+HD0054;03 Jun 2025;/Equipment/Breakdown Fitter/Hydraulic System/Hoses;dash 16 hose 2m (27W 95N NW);1,15
+HD0054;02 Jun 2025;/Equipment/Operational Delays/No Face Available;;1,52
+HD0054;02 Jun 2025;/Equipment/Operational Delays/No Face Available/Waiting For Mining Activity;waiting marking;0,65
+HD0054;29 May 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/Air Conditioner;79n4w nw;4,08
+HD0054;29 May 2025;/Equipment/Breakdown Fitter/Hydraulic System/Hoses;hydraulic hose burst water sensor@ mw,79s 3e;1,15
+HD0054;29 May 2025;/Equipment/Breakdown Fitter/Left Boom;L boom not drilling 79n4w nw;3,55
+HD0054;28 May 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/STRATA Breakdown;w/s;3,33
+HD0054;28 May 2025;/Equipment/Breakdown Fitter;water box +no percussion on left boom @ mw 79n 4w;2,25
+HD0054;27 May 2025;/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/STRATA Breakdown;w/s;20,77
+HD0054;26 May 2025;/Equipment;Waiting Harness;2,72
+HD0054;25 May 2025;/Equipment;Waiting Harness;24,00
+HD0054;24 May 2025;/Equipment;Waiting Harness;24,00
+HD0054;23 May 2025;/Equipment;Waiting Harness;5,58
+Total;;;;374,02
+;;;;
+"Applied filters:
+Machine_id is HD0054
+Date is on or after 01 May 2025 and is before 21 Aug 2025
+Prod Day is YES
+Production(JB) is YES
+Equipment Type is HD";;;;
