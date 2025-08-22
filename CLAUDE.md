@@ -151,6 +151,11 @@ Located in `daily_production/` folder with dual format:
 - **Shift readiness**: Current day preparation (e.g., 30th July shift status)
 - **File naming**: Use report date (when received), not data date
 
+**CRITICAL DATING RULE**: 
+- **Report Date**: Day when report received (e.g., 19/08/2025)
+- **Data Date**: Previous day's operations (e.g., 18/08/2025)
+- **Example**: Report received 19th August morning contains 18th August production data
+
 #### Report Processing Workflow
 1. **Receive WhatsApp reports** from engineers each morning
 2. **Auto-detect multiple reports** and launch parallel processing when applicable:
@@ -173,9 +178,13 @@ Located in `daily_production/` folder with dual format:
 
 #### Equipment Code Validation & BEV Classification
 Reference `daily_production/equipment_codes.md` for:
-- TMM codes: DT, FL, HD, RT, SR, UV
+- TMM codes: DT (Dump Truck), FL (Front Loader), HD (Haul Truck), RT (Roof Bolter), SR (Service Rig), UV (Utility Vehicle)
 - Specialized: GD (grader), DZ (dozer), LD (delivery vehicles)
 - Watch for common errors: GR should be GD
+
+**CRITICAL EQUIPMENT CORRECTION**:
+- **RT = Roof Bolter** (NOT Rock Truck - no such equipment exists)
+- This is specified in equipment database and must be consistent
 
 **Equipment Database**: `reference/equipment/brmo_fleet_database.json`
 - Complete fleet inventory with BEV/diesel classification
@@ -660,7 +669,29 @@ NEVER proactively create documentation files (*.md) or README files. Only create
 - Please save this fix and process to memory
 - Excellent! now save this in your memory including the steps to follow for running queries at any time.
 
-## 🚨 CRITICAL SITE MISIDENTIFICATION MEMORY (2025-08-16)
+## 🚨 CRITICAL DATA QUALITY MEMORIES 
+
+### **DATING ERROR MEMORY (2025-08-19)**
+**NEVER FORGET**: Reports show PREVIOUS DAY's production data, not same-day data.
+
+**Critical Dating Rule**:
+- **Report received**: 19/08/2025 morning (report date)
+- **Data content**: 18/08/2025 operations (data date)
+- **Common error**: Setting data_date = report_date instead of report_date - 1 day
+
+**Example Fix**: Report received 19th August contains 18th August production data.
+
+### **EQUIPMENT CODE MEMORY (2025-08-19)**
+**NEVER FORGET**: RT = Roof Bolter (NOT Rock Truck - no such equipment exists)
+
+**Critical Equipment Codes**:
+- **RT = Roof Bolter** (roof bolting equipment)
+- **DT = Dump Truck** (material transport)
+- **FL = Front Loader** (loading equipment)
+- **HD = Haul Truck** (heavy transport)
+- **SR = Service Rig** (maintenance equipment)
+
+### **SITE MISIDENTIFICATION MEMORY (2025-08-16)**
 **NEVER FORGET**: WhatsApp messages without site headers cause incorrect site identification in autonomous processing.
 
 **Critical Site Misidentification Case Study - August 16, 2025:**
