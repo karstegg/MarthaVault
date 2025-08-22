@@ -1,0 +1,153 @@
+{
+  "report_metadata": {
+    "date": "2025-08-20",
+    "data_date": "2025-08-19",
+    "site": "Gloria",
+    "engineer": "Sipho Dubazane",
+    "timestamp": "04:30",
+    "whatsapp_sender_id": "134144797478985"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": 4545,
+      "target": 3873,
+      "variance": 672,
+      "variance_percentage": 17.4
+    },
+    "decline": {
+      "actual": 3521,
+      "target": 3873,
+      "variance": -352,
+      "variance_percentage": -9.1
+    },
+    "product": {
+      "actual": 2514,
+      "target": 3894,
+      "variance": -1380,
+      "variance_percentage": -35.4
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 44, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 67, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 62, "target": null}
+    ],
+    "blast": {
+      "faces": 10,
+      "breakdown": "10 vs 11",
+      "note": "Blast performance 10 actual vs 11 planned"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": 99,
+      "FL": 97,
+      "HD": 78,
+      "RT": 99,
+      "SR": 91
+    },
+    "specialized": []
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 6, "total": 6},
+      "FL": {"available": 5, "total": 5},
+      "HD": {"available": 4, "total": 4},
+      "RT": {"available": 3, "total": 4},
+      "SR": {"available": 4, "total": 4}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "RT0046", "issue": "prop shaft"}
+    ]
+  },
+  "operational": {
+    "main_fans": "in order",
+    "plant_blockages": 1,
+    "fire_alarms": 0
+  },
+  "silo_levels": {
+    "surface": {
+      "silo_1": 88,
+      "silo_2": 100,
+      "silo_3": 59,
+      "silo_4": 96
+    },
+    "underground": {
+      "silo_74": 27,
+      "silo_hg": 67,
+      "silo_d": 24,
+      "silo_lg": 15
+    }
+  },
+  "specialized_equipment": {
+    "manitou": {"available": 1, "total": 1, "availability": 100},
+    "manlifts": {"available": 2, "total": 2, "availability": 100},
+    "emulsion_uvs": {"available": 2, "total": 2, "availability": 100}
+  },
+  "performance_summary": {
+    "key_issues": [
+      "Product production significantly below target (2,514t vs 3,894t, -35.4%)",
+      "Decline production below target by 352t (-9.1%)",
+      "Plant blockage at CV53",
+      "RT0046 prop shaft issue affecting rock truck availability",
+      "Low underground silo levels: LG (15%), D (24%), 74 (27%)"
+    ],
+    "key_highlights": [
+      "ROM production exceeded target by 672t (17.4% above target)",
+      "Strong equipment availability across most TMM categories (DT 99%, RT 99%)",
+      "Good load performance with 173 total truckloads tipped",
+      "No safety incidents reported",
+      "Main fans operational"
+    ]
+  },
+  "source_validation": {
+    "rom_actual": {
+      "value": 4545,
+      "source_line": 1,
+      "source_quote": "4545 vs 3873",
+      "confidence": "HIGH"
+    },
+    "rom_target": {
+      "value": 3873,
+      "source_line": 1,
+      "source_quote": "4545 vs 3873",
+      "confidence": "HIGH"
+    },
+    "decline_actual": {
+      "value": 3521,
+      "source_line": 1,
+      "source_quote": "3521 vs 3873",
+      "confidence": "HIGH"
+    },
+    "product_actual": {
+      "value": 2514,
+      "source_line": 1,
+      "source_quote": "2514 vs  3894",
+      "confidence": "HIGH"
+    },
+    "loads": {
+      "value": "44;67;62",
+      "source_line": 1,
+      "source_quote": "44;67;62",
+      "confidence": "HIGH"
+    },
+    "dt_availability": {
+      "value": 99,
+      "source_line": 1,
+      "source_quote": "DTs: 99",
+      "confidence": "HIGH"
+    },
+    "silo_1_level": {
+      "value": 88,
+      "source_line": 1,
+      "source_quote": "1 - 88",
+      "confidence": "HIGH"
+    }
+  }
+}

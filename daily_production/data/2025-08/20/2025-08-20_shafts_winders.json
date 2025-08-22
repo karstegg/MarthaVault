@@ -1,0 +1,146 @@
+{
+  "report_metadata": {
+    "date": "2025-08-20",
+    "data_date": "2025-08-19",
+    "site": "Shafts & Winders",
+    "engineer": "Xavier Peterson",
+    "timestamp": "04:54",
+    "whatsapp_sender_id": "150800697426058",
+    "report_type": "Daily Report"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "infrastructure": {
+    "power_supply": {
+      "stoppages": 1,
+      "status": "repaired",
+      "details": "Loose Connection on the Overhead Line Feeding Nch2 UG and Winders - repaired by Winder Technician Electrician Team and Contractor (Thusano)"
+    },
+    "winders": {
+      "nch2_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch3_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "gl_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch2_rw": {"status": "operational", "operational": true, "type": "rock_winder", "function": "ore_hoisting"}
+    },
+    "main_fans": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    },
+    "lamprooms": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    }
+  },
+  "dam_levels": {
+    "dd01": {
+      "level": 99.7,
+      "status": "excellent",
+      "trend": "stable"
+    },
+    "dd02": {
+      "level": 85.0,
+      "status": "good",
+      "trend": "stable"
+    }
+  },
+  "ore_pass_levels": {
+    "current_level": 33.2,
+    "trend": "declining from 41.7% Monday"
+  },
+  "production": {
+    "daily_summary": [
+      {
+        "day": "Friday",
+        "actual": 6883,
+        "target": 6463,
+        "variance": 420,
+        "variance_percentage": 6.5
+      },
+      {
+        "day": "Saturday",
+        "actual": 0,
+        "target": 1577,
+        "variance": -1577,
+        "variance_percentage": -100.0,
+        "note": "SOLROCK SHAFT BARREL REPAIR PROJECT"
+      },
+      {
+        "day": "Sunday",
+        "actual": 0,
+        "target": 1577,
+        "variance": -1577,
+        "variance_percentage": -100.0,
+        "note": "SOLROCK SHAFT BARREL REPAIR PROJECT"
+      },
+      {
+        "day": "Monday",
+        "actual": 5217,
+        "target": 5204,
+        "variance": 13,
+        "variance_percentage": 0.2
+      },
+      {
+        "day": "Tuesday",
+        "actual": 7785,
+        "target": 6623,
+        "variance": 1162,
+        "variance_percentage": 17.5
+      }
+    ]
+  },
+  "operational": {
+    "fire_scada_alarms": 0,
+    "block_chutes": 0
+  },
+  "performance_summary": {
+    "key_issues": [
+      "Power supply interruption to Nch2 UG and Winders (resolved)",
+      "Ore pass levels declining from 41.7% to 33.2%",
+      "Weekend production halted for SOLROCK SHAFT BARREL REPAIR PROJECT"
+    ],
+    "key_highlights": [
+      "All critical infrastructure operational after power repair",
+      "Dam levels excellent: DD01 (99.7%), DD02 (85.0%)",
+      "Strong weekday production: Tuesday exceeded target by 17.5%",
+      "No fire alarms or block chutes",
+      "All winders and main fans operational"
+    ]
+  },
+  "source_validation": {
+    "power_issue": {
+      "value": "Loose Connection on the Overhead Line Feeding Nch2 UG and Winders",
+      "source_line": 1,
+      "source_quote": "Loose Connection on the Overhead Line Feeding Nch2 UG and Winders",
+      "confidence": "HIGH"
+    },
+    "dd01_level": {
+      "value": 99.7,
+      "source_line": 1,
+      "source_quote": "DD01: Tue: 99,7%",
+      "confidence": "HIGH"
+    },
+    "dd02_level": {
+      "value": 85.0,
+      "source_line": 1,
+      "source_quote": "DD02: Tue: 85,0%",
+      "confidence": "HIGH"
+    },
+    "ore_pass_level": {
+      "value": 33.2,
+      "source_line": 1,
+      "source_quote": "Tue: 33,2%",
+      "confidence": "HIGH"
+    },
+    "tuesday_production": {
+      "value": "7785/6623",
+      "source_line": 1,
+      "source_quote": "Tue: 7785/6623",
+      "confidence": "HIGH"
+    }
+  }
+}
