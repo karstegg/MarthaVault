@@ -1,0 +1,172 @@
+{
+  "report_metadata": {
+    "date": "2025-08-20",
+    "data_date": "2025-08-19",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "timestamp": "06:27",
+    "whatsapp_sender_id": "163226021064705"
+  },
+  "safety": {
+    "status": "incident",
+    "incidents": 1,
+    "details": ["Smoke was observe at HD0054"]
+  },
+  "production": {
+    "rom": {
+      "actual": 2856,
+      "target": 8060,
+      "variance": -5204,
+      "variance_percentage": -64.6
+    },
+    "decline": {
+      "actual": 2999,
+      "target": 7498,
+      "variance": -4499,
+      "variance_percentage": -60.0
+    },
+    "product": {
+      "actual": 1100,
+      "target": 6618,
+      "variance": -5518,
+      "variance_percentage": -83.4
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 87, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 82, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 98, "target": null}
+    ],
+    "blast": {
+      "faces": 0,
+      "breakdown": "0",
+      "note": "No blasting activity"
+    },
+    "waste": {
+      "rom_waste": 2305,
+      "decline_waste": 662
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": 75,
+      "FL": 94,
+      "HD": 82,
+      "RT": 88,
+      "SR": 71
+    },
+    "specialized": [
+      {"code": "GD11", "availability": 100},
+      {"code": "DZ11", "availability": 0},
+      {"code": "UV044", "availability": 75}
+    ]
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 9, "total": 14},
+      "FL": {"available": 9, "total": 10},
+      "HD": {"available": 7, "total": 9},
+      "RT": {"available": 9, "total": 10},
+      "SR": {"available": 7, "total": 10}
+    },
+    "specialized": {
+      "manlifts": {"available": 2, "total": 4},
+      "emulsion_uv": {"available": 3, "total": 4}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "DT0149", "issue": "Battery charging"},
+      {"unit": "DT0150", "issue": "Gears"},
+      {"unit": "DT0154", "issue": "Coolant leak"},
+      {"unit": "DT0169", "issue": "Oil Leak"},
+      {"unit": "DT0171", "issue": "Hyd oil leak, spares"},
+      {"unit": "FL0108", "issue": "Damage window"},
+      {"unit": "HD0052", "issue": "Waterbox seals"},
+      {"unit": "HD0062", "issue": "Drifter"},
+      {"unit": "HD0054", "issue": "Observe smoke"},
+      {"unit": "RT0057", "issue": "Electrical"},
+      {"unit": "SR0024", "issue": "Boom"},
+      {"unit": "SR0030", "issue": "Damage"},
+      {"unit": "SR0038", "issue": "Smoke"},
+      {"unit": "UV0045", "issue": "Not starting"},
+      {"unit": "UV0047", "issue": "Brakes release (Spares)"},
+      {"unit": "UV0074", "issue": "Gears, front lights"},
+      {"unit": "DZ0011", "issue": "Drive line"},
+      {"unit": "UV0134", "issue": "OEM bme screen"}
+    ]
+  },
+  "operational": {
+    "main_fans": "operational",
+    "plant_blockages": 2,
+    "fire_alarms": 0,
+    "rescue_bay_communications": 3,
+    "details": {
+      "plant_blockages": ["60CV01 x 1 block chute", "65CV01 x 1 block chute"],
+      "rescue_bay_comms": [
+        "RB 13 no radio communication",
+        "RB 15 telephone not working", 
+        "Maf 138 Radio not working"
+      ]
+    }
+  },
+  "special_notes": {
+    "bev_workshop_impact": "Night shift BEV w/shop didn't have person to assist with changing of batteries - off sick! Impacting loads."
+  },
+  "performance_summary": {
+    "key_issues": [
+      "Critical production failure across all metrics (ROM -64.6%, Product -83.4%)",
+      "Major safety incident: Smoke observed at HD0054",
+      "Extensive equipment breakdowns (18 units down)",
+      "BEV workshop understaffing impacting night shift loads",
+      "Poor TMM availability: DT (75%), SR (71%)",
+      "Communication failures at rescue bays (3 locations)",
+      "Plant blockages at multiple conveyor locations",
+      "DZ11 dozer completely unavailable"
+    ],
+    "key_highlights": [
+      "Strong load performance despite challenges (267 total truckloads)",
+      "FL equipment showing good availability (94%)",
+      "GD11 grader fully operational (100%)",
+      "No fire alarms reported",
+      "Good afternoon and night shift load performance"
+    ]
+  },
+  "source_validation": {
+    "smoke_incident": {
+      "value": "Smoke was observe at HD0054",
+      "source_line": 1,
+      "source_quote": "Smoke was observe at HD0054",
+      "confidence": "HIGH"
+    },
+    "rom_actual": {
+      "value": 2856,
+      "source_line": 1,
+      "source_quote": "2856 vs 8060",
+      "confidence": "HIGH"
+    },
+    "rom_waste": {
+      "value": 2305,
+      "source_line": 1,
+      "source_quote": "Waste 2305",
+      "confidence": "HIGH"
+    },
+    "loads": {
+      "value": "87, 82 & 98",
+      "source_line": 1,
+      "source_quote": "87, 82 & 98",
+      "confidence": "HIGH"
+    },
+    "bev_impact": {
+      "value": "Night shift BEV w/shop didn't have person to assist with changing of batteries - off sick! Impacting loads.",
+      "source_line": 1,
+      "source_quote": "Night shift BEV w/shop didn't have person to assist with changing of batteries - off sick! Impacting loads.",
+      "confidence": "HIGH"
+    },
+    "dt_availability": {
+      "value": 75,
+      "source_line": 1,
+      "source_quote": "DTs: 75",
+      "confidence": "HIGH"
+    }
+  }
+}
