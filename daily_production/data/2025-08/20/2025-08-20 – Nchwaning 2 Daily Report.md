@@ -15,10 +15,10 @@ JSONData:: [[2025-08-20_nchwaning2.json]]
 ### Production Performance
 🟡 **MIXED RESULTS** - Product exceeds, ROM below target
 
-| Metric | Actual | Target | Variance | Performance |
-|--------|--------|--------|----------|-------------|
-| **ROM** | 6,558t | 6,903t | -345t | **95.0% (below target)** ⚠️ |
-| **Product** | 6,783t | 6,514t | +269t | **104.1% (above target)** 🟢 |
+| Metric      | Actual | Target | Variance | Performance                  |
+| ----------- | ------ | ------ | -------- | ---------------------------- |
+| **ROM**     | 6,558t | 6,903t | -345t    | **95.0% (below target)** ⚠️  |
+| **Product** | 6,783t | 6,514t | +269t    | **104.1% (above target)** 🟢 |
 
 #### Load & Haul Fleet Performance (Truckloads Tipped by Shift)
 | Shift | Loads | Target | Performance |
@@ -60,7 +60,7 @@ Consistent load performance across all shifts.
 #### Front-End Loader Equipment Issues
 - **FL66**: engine cut off
 
-#### Rock Truck Equipment Issues
+#### Roof Bolter Equipment Issues
 - **RT50**: axle (axle received from stores failed within 100m from leaving workshop after installation)
 
 #### Utility Vehicle Equipment Issues

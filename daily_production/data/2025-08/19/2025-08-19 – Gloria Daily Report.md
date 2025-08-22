@@ -3,7 +3,7 @@ JSONData:: [[2025-08-19_gloria.json]]
 ---
 
 # Gloria Daily Report
-**Date**: August 19, 2025 (Data from August 19, 2025)  
+**Date**: August 19, 2025 (Data from August 18, 2025)  
 **Engineer**: [[Sipho Dubazane]]  
 **Site**: Gloria  
 
@@ -13,7 +13,7 @@ JSONData:: [[2025-08-19_gloria.json]]
 ✅ **CLEAR** - No incidents reported
 
 ### Production Performance
-🔴 **CRITICAL PRODUCTION SHORTFALL - ZERO PRODUCT OUTPUT**
+🔴 **CRITICAL PRODUCTION SHORTFALL - ZERO PRODUCT OUTPUT**: This was due to a fire suppression system that when were activated in the surface plant main sub. Conveyor belts could not start that is why the product is showing zero.
 
 | Metric | Actual | Target | Variance | Performance |
 |--------|--------|--------|----------|-------------|
@@ -57,7 +57,7 @@ Strong load performance across all shifts with consistent truckload delivery.
 
 ### Current Breakdowns (1 Unit)
 
-#### Rock Truck Equipment Issues
+#### Roof Bolter Equipment Issues
 - **RT0046**: prop shaft
 
 ### Support Equipment Summary

@@ -3,7 +3,7 @@ JSONData:: [[2025-08-19_nchwaning2.json]]
 ---
 
 # Nchwaning 2 Daily Report
-**Date**: August 19, 2025 (Data from August 15, 2025)  
+**Date**: August 19, 2025 (Data from August 18, 2025)  
 **Engineer**: [[Sikilela Nzuza]]  
 **Site**: Nchwaning 2  
 
@@ -61,7 +61,7 @@ JSONData:: [[2025-08-19_nchwaning2.json]]
 #### Front Loader Equipment Issues
 - **FL66**: engine cut off (machine location unknown and hence couldn't be attended to on time)
 
-#### Rock Truck Equipment Issues
+#### Roof Bolter Equipment Issues
 - **RT50**: brakes locked
 
 #### Service Rig Equipment Issues

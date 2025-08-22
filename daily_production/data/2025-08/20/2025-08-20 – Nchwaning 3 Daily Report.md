@@ -76,7 +76,7 @@ JSONData:: [[2025-08-20_nchwaning3.json]]
 - **HD0062**: Drifter
 - **HD0054**: Observe smoke 🚨
 
-#### Rock Truck Equipment Issues
+#### Roof Bolter Equipment Issues
 - **RT0057**: Electrical
 
 #### Service Rig Equipment Issues

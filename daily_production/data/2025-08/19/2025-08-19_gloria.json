@@ -1,7 +1,7 @@
 {
   "report_metadata": {
     "date": "2025-08-19",
-    "data_date": "2025-08-19",
+    "data_date": "2025-08-18",
     "site": "Gloria",
     "engineer": "Sipho Dubazane",
     "timestamp": "04:35",
@@ -96,7 +96,7 @@
   "performance_summary": {
     "key_issues": [
       "No product produced vs target of 1,947t - critical production failure",
-      "RT0046 prop shaft breakdown affecting rock truck availability",
+      "RT0046 prop shaft breakdown affecting roof bolter availability",
       "Low silo levels in Silo 4 (20%) and underground D silo (15%)"
     ],
     "key_highlights": [

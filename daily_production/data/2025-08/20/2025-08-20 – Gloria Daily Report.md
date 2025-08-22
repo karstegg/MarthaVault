@@ -57,7 +57,7 @@ Strong load performance with consistent delivery across all shifts.
 
 ### Current Breakdowns (1 Unit)
 
-#### Rock Truck Equipment Issues
+#### Roof Bolter Equipment Issues
 - **RT0046**: prop shaft
 
 ### Support Equipment Summary
