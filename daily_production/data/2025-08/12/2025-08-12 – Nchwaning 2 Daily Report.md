@@ -41,7 +41,7 @@ Planned: 16 faces | Actual: Not specified
 | **DT (Dump Trucks)** | 97% | ✅ Excellent |
 | **FL (Front Loaders)** | 94% | ✅ Good |
 | **HD (Haul Trucks)** | 84% | ⚠️ Below Standard |
-| **RT (Rock Trucks)** | 91% | ✅ Good |
+| **RT (Roof Bolters)** | 91% | ✅ Good |
 | **SR (Service Rigs)** | 93% | ✅ Good |
 
 #### Equipment Readiness (Start of Shift)

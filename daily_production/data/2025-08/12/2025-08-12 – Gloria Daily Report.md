@@ -38,7 +38,7 @@ Nothing Reported
 | **DT (Dump Trucks)** | 99% | ✅ Excellent |
 | **FL (Front Loaders)** | 100% | ✅ Excellent |
 | **HD (Haul Trucks)** | 97% | ✅ Excellent |
-| **RT (Rock Trucks)** | 98% | ✅ Excellent |
+| **RT (Roof Bolters)** | 98% | ✅ Excellent |
 | **SR (Service Rigs)** | 90% | ✅ Good |
 
 #### Equipment Readiness (Start of Shift)

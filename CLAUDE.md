@@ -681,15 +681,17 @@ NEVER proactively create documentation files (*.md) or README files. Only create
 
 **Example Fix**: Report received 19th August contains 18th August production data.
 
-### **EQUIPMENT CODE MEMORY (2025-08-19)**
+### **EQUIPMENT CODE MEMORY (2025-08-19, REINFORCED 2025-08-22)**
 **NEVER FORGET**: RT = Roof Bolter (NOT Rock Truck - no such equipment exists)
 
 **Critical Equipment Codes**:
-- **RT = Roof Bolter** (roof bolting equipment)
+- **RT = Roof Bolter** (roof bolting equipment) - CRITICAL: NO ROCK TRUCKS EXIST!
 - **DT = Dump Truck** (material transport)
 - **FL = Front Loader** (loading equipment)
-- **HD = Haul Truck** (heavy transport)
-- **SR = Service Rig** (maintenance equipment)
+- **HD = Hydraulic Drill** (drilling equipment, NOT haul truck)
+- **SR = Scaler** (scaling equipment, NOT service rig)
+
+**RECURRING ERROR ALERT**: This RT=Rock Truck error occurred AGAIN on 2025-08-20 Nchwaning 2 report. MANDATORY validation required for ALL equipment references.
 
 ### **SITE MISIDENTIFICATION MEMORY (2025-08-16)**
 **NEVER FORGET**: WhatsApp messages without site headers cause incorrect site identification in autonomous processing.

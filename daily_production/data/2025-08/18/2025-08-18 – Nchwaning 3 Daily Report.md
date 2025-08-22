@@ -72,7 +72,7 @@ Strong daily load performance with 72 truckloads completed despite equipment cha
 - **HD 0051**: Electrical cable
 - **HD 0061**: Extension plug damaged
 
-#### Rock Truck Equipment Issues
+#### Roof Bolter Equipment Issues
 - **RT 0049**: Strata ooo
 - **RT 0054**: Cable box damaged
 

@@ -38,7 +38,7 @@ JSONData:: [[2025-08-12_nchwaning3.json]]
 | **HD (Haul Trucks)** | 94% | ✅ Good |
 | **DT (Dump Trucks)** | 86% | ⚠️ Below Standard |
 | **FL (Front Loaders)** | 87% | ⚠️ Below Standard |
-| **RT (Rock Trucks)** | 89% | ✅ Good |
+| **RT (Roof Bolters)** | 89% | ✅ Good |
 | **SR (Service Rigs)** | 69% | 🔴 **Poor Performance** |
 | **UV (Utility Vehicles)** | 82% | ⚠️ Below Standard |
 
@@ -68,7 +68,7 @@ JSONData:: [[2025-08-12_nchwaning3.json]]
 - FL0091: Engine cut off
 - FL0098: FTS
 
-**Rock Trucks (2 units):**
+**Roof Bolters (2 units):**
 - RT0048: Compressor rubbers
 - RT0049: Carousel damage
 

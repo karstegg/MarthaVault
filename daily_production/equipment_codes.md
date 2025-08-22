@@ -16,6 +16,7 @@
 ## Common Reporting Errors
 ⚠️ **Watch for incorrect codes in reports:**
 - **GR** ❌ → Should be **GD** ✅ (Grader)
+- **RT = Rock Truck** ❌ → **RT = Roof Bolter** ✅ (Critical: NO rock trucks exist!)
 - Always validate equipment codes against this reference
 
 ## Equipment Categories by Function

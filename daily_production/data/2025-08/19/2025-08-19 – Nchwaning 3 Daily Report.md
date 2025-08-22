@@ -70,7 +70,7 @@ JSONData:: [[2025-08-19_nchwaning3.json]]
 #### Hauler Equipment Issues
 - **HD0061**: Extension plug damaged
 
-#### Rock Truck Equipment Issues
+#### Roof Bolter Equipment Issues
 - **RT0048**: Diesel Empty
 
 #### Service Rig Equipment Issues

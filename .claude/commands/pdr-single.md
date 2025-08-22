@@ -36,6 +36,15 @@ When `/pdr-single` is called without arguments:
 - **Breakdowns**: Current equipment issues with specific unit numbers
 - **Operational**: Plant blockages, fire alarms
 
+#### 🚨 CRITICAL EQUIPMENT CODE VALIDATION
+**MANDATORY BEFORE PROCESSING**: Validate ALL equipment codes against reference
+- **RT = Roof Bolter** (NOT Rock Truck - no such equipment exists!)
+- **DT = Dump Truck** (material transport)
+- **FL = Front Loader** (loading equipment)
+- **HD = Hydraulic Drill** (drilling equipment)
+- **SR = Scaler** (scaling equipment)
+- **REJECT any reference to "Rock Truck" - use "Roof Bolter" for RT codes**
+
 #### Gloria-Specific Elements
 - **Silo Levels**: Surface (1-4) and Underground (74, HG, D, LG) percentages
 - **Manitou**: Availability status (rare when operational)
