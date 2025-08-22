@@ -56,10 +56,11 @@ fi
 echo "🚀 Triggering autonomous cloud processing for $TARGET_DATE..."
 
 # Send repository dispatch to trigger GitHub Actions
+# NOTE: Use nested field syntax, not JSON string (fixes HTTP 422 errors)
 gh api repos/karstegg/MarthaVault/dispatches \
   --method POST \
-  --field event_type="pdr-cloud" \
-  --field client_payload="{\"date\":\"$TARGET_DATE\"}"
+  --field event_type=pdr-cloud \
+  --field "client_payload[date]=$TARGET_DATE"
 
 if [ $? -eq 0 ]; then
     echo "📡 Repository dispatch sent successfully"
