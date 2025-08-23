@@ -116,7 +116,7 @@ jobs:
       id: gemini_process
       if: steps.extract.outputs.message_count > 0
       env:
-        TARGET_DATE: ${{ github.event.client_payload.date }}
+        TARGET_DATE: ${{ github.event.client_payload.date || github.event.inputs.date }}
         MESSAGE_COUNT: ${{ steps.extract.outputs.message_count }}
       with:
         gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
