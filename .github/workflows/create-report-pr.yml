@@ -239,6 +239,7 @@ EOF
           **USE REPORT TEMPLATES FOLDER - NOT GENERIC SCHEMAS**
           
           Process all available reports for ${{ steps.params.outputs.date }} and create the structured output files in the correct repository hierarchy.
+        model: 'gemini-2.5-flash'
         gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
         
     - name: Create Repository Structure
