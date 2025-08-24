@@ -1,6 +1,0 @@
-Feat: Address all security and documentation feedback from Claude
-
-- Fix hardcoded file path in send-claude-message.yml.
-- Prevent command injection in submit-pr-for-review.yml by using environment variables for user inputs.
-- Add robust error handling and a simple rollback mechanism to submit-pr-for-review.yml.
-- Update WORKFLOWS.md with sections on Platform Requirements and Troubleshooting.

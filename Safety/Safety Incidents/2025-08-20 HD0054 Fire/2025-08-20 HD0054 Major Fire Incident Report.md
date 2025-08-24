@@ -1,150 +1,47 @@
 ---
-Status:: #status/investigation
-Priority:: #priority/critical
-Assignee:: [[Sello Sease]]
+Status:: #status/resolved
+Priority:: #priority/high
+Assignee:: [[Rudi Opperman]]
 DueDate:: 
 ---
 
-# HD0054 Major Fire Incident Report
-**Date**: August 20, 2025  
-**Time**: 03:00 SAST  
-**Location**: Nchwaning 3 Underground  
-**Equipment**: HD0054 (Hydraulic Drill)  
-**Incident Type**: Catastrophic Engine Fire  
-**Severity**: Major - Total Equipment Loss  
+# HD0054 Fire Incident Report - 2025-08-20
 
-## 🔥 INCIDENT SUMMARY
-**Catastrophic engine fire resulting in total machine loss**
+## Initial Incident (August 20, 2025 - ~03:00)
 
-### Timeline of Events
-- **Start of Shift**: Mechanic topped up 2.5 liters water/coolant due to overheating issues
-- **03:00+**: Operator completed drilling, machine cut out on return to waiting place
-- **03:0X**: Operator exited to report engine cut out to control room
-- **03:0X**: Colleague walking past observed smoke from machine
-- **03:0X**: Called operator back - machine already in flames
-- **03:0X**: Emergency evacuation, reported to control supervisor
-- **03:0X**: Control room emergency call initiated
-- **05:00-06:00**: Emergency control room established, prototeam deployed
-- **All Day**: Ventilation fan issues discovered - main evacuation fan offline
-- **16:00**: Fans restored, gas levels acceptable (below 6 ppm vs 30 ppm limit)
-- **16:00+**: Underground assessment commenced
-- **Ongoing**: Investigation activities
+Okay, so it was a very long day. This morning, just after three, I was phoned by from control room that there was a fire underground. We established that one of the drill rigs, HD54, caught fire at the time. So we came out, established the center or the emergency control room with the appropriate rules and protocols in place. The prototeam was called out. They got ready and went down to go and assess the situation. There was a lot of smoke underground. They couldn't find a place to enter. From the monitors and the measurements, we could see that the smoke was, or the gas levels, carbon dioxide levels and the carbon gas levels were not coming down quickly. The prototeam reported that the gas, you know, the smoke was moving very slowly. It was almost hanging in the air. So it was almost like a diffusion process. So it sounded like the fans were not running. So we established, through talking to the various responsible people in the area, the electricians, electrical foreman, the ventilation people, the mining people, that certainly there were two fans in the area that were supposed to evacuate smoke or fumes, but somehow they were not working. So it was either one or both of them were not working. And eventually we got to a stage where we've established that the fan, that one fan was running, but the other fan was actually off and actually cut off, not in use. So that one was the main one. It was down to earth and it was supposed to actually evacuate the fumes. So it took us from about say 5 or 6 this morning till about 4 to establish that the fan was out. By this time the gas levels have also now gone down to an acceptable level. The limit is 30 ppm. We're sitting at below 6 ppm. Visibility is also good. So we're gonna go down and assess the situation. The initial reports from the prototype team was that the machine basically burnt out completely. Tires were burnt. The cable rail at the back were burnt. The report from the operator was that there were some issues with overheating. The mechanic came to top up water, about 10 liters of water or coolant at the start of shift. And when he went back at the waiting place, the machine cut out again. And that's where the fire started. He got out to report, or let's say before the fire started, he got out to report the engine cut out to the control room for the technician to come and repair. At that time another employee, a colleague, walked past and saw the actual smoke. He called the operator and when they came there, the machine was already in flames. So they just left everything. Reported to control supervisor and they came out. Yeah, so quite a significant event. We are now going underground to do the initial pre-in-local investigation.
 
-## 🚨 SAFETY STATUS
-✅ **NO INJURIES** - All personnel safe  
-🔴 **OPERATIONAL IMPACT** - Lost time for smoke clearance and inspection  
-🔴 **EQUIPMENT LOSS** - HD0054 completely destroyed  
+## Follow-up Actions & Resolution
 
-## 📋 INCIDENT DETAILS
+### Section 54 Notice Issued (August 23, 2025)
+- **DMR Section 54 issued** impacting all TMM operations across BRMO
+- **Complete shutdown** of HD, RT, DT, FL, SR equipment
+- **Regulatory engagement** with Principal Inspector initiated
 
-### Equipment Information
-- **Unit**: HD0054
-- **Type**: Hydraulic Drill
-- **Location**: Nchwaning 3 Underground
-- **Status**: Total Loss - Machine completely burned down
+### ✅ PARTIAL UPLIFTMENT RECEIVED (August 23, 07:49)
+**Major Update from Rudi:**
+> "We have received partial upliftment from the DMR on the instruction which stopped all underground TMM at BRMO. All TMM and activities can resume normal operations, except for the S2 drill rigs at Nchwaning 3."
 
-### Operational Context
-- **Pre-incident**: Overheating issues noted, 2.5L coolant added at start of shift
-- **Operations**: Normal drilling operations completed successfully
-- **Return Journey**: Machine cut out while returning to waiting area
-- **Initial Response**: Operator exited to report mechanical issue to control room
-- **Discovery**: Colleague observed smoke, alerted operator
-- **Escalation**: Machine already fully engulfed when operator returned
-- **Damage**: Complete destruction - tires, cable rail, entire machine burned
+**Current Status:**
+- ✅ **General Operations**: All TMM activities resumed
+- 🔴 **S2 Drill Rigs at N3**: Still restricted pending independent expert audit
+- ✅ **DMR Response**: Partial upliftment granted
 
-### Response Actions
-- **Immediate**: Operator evacuation (safe), reported to control supervisor
-- **Emergency**: Control room emergency protocols activated at 03:00+
-- **05:00-06:00**: Emergency control room established, prototeam deployed
-- **Critical Issue**: Main evacuation fan offline, secondary issues with ventilation
-- **Extended**: All-day smoke clearance operations (gas monitoring)
-- **16:00**: Fans restored, CO levels reduced to 6 ppm (limit: 30 ppm)
-- **Safety**: Underground assessment commenced once safe levels achieved
+### Required Compliance Actions
+1. Mine-wide independent fire-risk audit on every underground TMM
+2. Maintenance personnel review system implementation
+3. Fire detection & suppression audit (independent expert)
+4. Lamproom personnel training compliance
+5. Regulation 8.13.66 compliance
+6. Illumination survey across BRMO
+7. Electrical panel labelling and bund wall audits
+8. Employee appointments familiarity verification
 
-## 🔍 INVESTIGATION STATUS
-**ONGOING** - Investigation currently in progress
+### Implementation Progress
+- ✅ **Kenru Fire Audits**: N2 and Gloria complete, N3 finalizing
+- 📅 **Independent Fire System Audit**: Henk Erasmus (MSTA) starting Tuesday at N3
+- 📋 **Coordination**: Teams channel "DMRE Section 54 - 23 August 2025" created
 
-### Key Investigation Areas
-1. **Root Cause Analysis**: Engine compartment fire origin and overheating issues
-2. **Maintenance History**: Pre-incident equipment condition and coolant issues
-3. **Operational Factors**: Drilling operations and return journey procedures
-4. **Equipment Design**: Fire prevention systems and early warning systems
-5. **Response Effectiveness**: Emergency procedures and evacuation protocols
-6. **Ventilation Systems**: Fan failure impact on smoke clearance and safety
+**Resolution Timeline:** From complete shutdown (Aug 23 early morning) to partial restoration (Aug 23 morning) - Excellent regulatory engagement and swift response.
 
-## 📊 OPERATIONAL IMPACT
-
-### Production Impact
-- **Lost Time**: Smoke clearance and safety inspection
-- **Equipment**: Complete loss of HD0054 drilling capacity
-- **Operations**: Nchwaning 3 drilling operations affected
-
-### Safety Impact
-- **Personnel**: No injuries - successful evacuation
-- **Underground**: Smoke management procedures activated
-- **Operations**: Safety inspection protocols followed
-
-## 📁 SUPPORTING DOCUMENTATION
-
-### Available Records
-- **JDE Work Orders**: Maintenance history and work orders
-- **JDE Records**: Equipment service records (01-05-2025 to 20-08-2025)
-- **Breakdown Records**: Historical breakdown data
-- **Daily Reports**: Production impact documentation
-- **First-hand Account**: [[00_Inbox/HD0054 Fire Incident 20-08-2025.md]] - Detailed incident narrative
-
-### Investigation Documentation
-- Investigation report (pending)
-- Root cause analysis (pending)
-- Recommendations report (pending)
-
-## 🎯 KEY LEARNINGS (Preliminary)
-
-### Positive Outcomes
-- **No injuries** - Emergency response effective
-- **Safe evacuation** - Operator responded correctly
-- **Containment** - Fire control measures successful
-- **Safety protocols** - Smoke clearance procedures followed
-
-### Areas for Review
-- **Pre-fire indicators** - Early warning systems
-- **Fire suppression** - Equipment fire prevention
-- **Response time** - Emergency response optimization
-- **Recovery time** - Smoke clearance efficiency
-
-## 📋 ACTION ITEMS
-
-### Immediate
-- [ ] Complete investigation report
-- [ ] Finalize root cause analysis
-- [ ] Review fire prevention systems
-- [ ] Update emergency procedures if needed
-
-### Short-term
-- [ ] Replace HD0054 drilling capacity
-- [ ] Implement investigation recommendations
-- [ ] Review maintenance procedures
-- [ ] Update safety training if required
-
-### Long-term
-- [ ] Equipment fire prevention review
-- [ ] Emergency response procedure updates
-- [ ] Underground fire safety enhancements
-
-## 🔗 RELATED DOCUMENTS
-- [[2025-08-20 – Nchwaning 3 Daily Report]] - Production impact
-- [[2025-08-20_nchwaning3.json]] - Incident data
-- [[Sello Sease]] - Site engineer and incident reporter
-
-## 📞 KEY CONTACTS
-- **Site Engineer**: [[Sello Sease]] (Nchwaning 3)
-- **Safety Manager**: [Name TBD]
-- **Operations Manager**: [[Rudy Opperman]]
-- **Engineering Manager**: [[Sello Taku]]
-
----
-*Incident Report Created: 2025-08-22*  
-*Status: Investigation Ongoing*  
-*Next Review: TBD*
-
-#safety #incident #fire #investigation #nchwaning3 #equipment-loss #year/2025
+#safety #fire-incident #HD54 #section-54 #year/2025 #resolved #nchwaning-3

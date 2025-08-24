@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "7b6a332738dd5bd2",
+        "id": "80786d12d2e3203e",
         "type": "tabs",
         "children": [
           {
-            "id": "9efcaa8077d60f25",
+            "id": "7683182f67f96450",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "daily_production/data/2025-07/17/2025-07-17 – Gloria Daily Report.md",
-                "mode": "preview",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2025-07-17 – Gloria Daily Report"
+              "title": "New tab"
             }
           }
         ]
@@ -142,13 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily_production/data/2025-07/17/2025-07-17 – Gloria Daily Report.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-07-17 – Gloria Daily Report"
+              "title": "Outline"
             }
           },
           {
@@ -183,44 +178,44 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "9efcaa8077d60f25",
+  "active": "7683182f67f96450",
   "lastOpenFiles": [
-    "daily_production/data/2025-07/17/2025-07-17 - Gloria Daily Report.md",
-    "daily_production/data/2025-07/17/2025-07-17 – Gloria Daily Report.md",
-    "daily_production/data/2025-07/17/2025-07-17 - Shafts & Winders Daily Report.md",
-    "daily_production/data/2025-07/17/2025-07-17 - Nchwaning 3 Daily Report.md",
-    "daily_production/data/2025-07/17/2025-07-17 - Nchwaning 2 Daily Report.md",
-    "daily_production/data/2025-07/16/2025-07-16 – Gloria Daily Report.md",
-    "daily_production/data/2025-07/17/2025-07-17 – Shafts & Winders Daily Report.md",
-    "daily_production/data/2025-07/17/2025-07-17 – Nchwaning 3 Daily Report.md",
-    "daily_production/data/2025-07/17/2025-07-17 – Nchwaning 2 Daily Report.md",
-    "daily_production/data/2025-07/15/2025-07-15 – Gloria Daily Report.md",
-    "daily_production/data/2025-08/20/2025-08-20 – Gloria Daily Report.md",
-    "daily_production/data/2025-08/21/2025-08-21 – Gloria Daily Report.md",
-    "daily_production/data/2025-08/22/2025-08-22 – Gloria Daily Report.md",
-    "daily_production/data/2025-07/16/2025-07-16 – Shafts & Winders Daily Report.md",
-    "daily_production/data/2025-08/22/2025-08-22_shafts_winders.json",
-    "daily_production/data/2025-08/22/2025-08-22_nchwaning3.json",
-    "daily_production/data/2025-08/22/2025-08-22_nchwaning2.json",
-    "daily_production/data/2025-08/22/2025-08-22_gloria.json",
-    "daily_production/data/2025-08/22/2025-08-22 – Shafts & Winders Daily Report.md",
-    "daily_production/data/2025-08/22/2025-08-22 – Nchwaning 3 Daily Report.md",
-    "daily_production/data/2025-08/22/2025-08-22 – Nchwaning 2 Daily Report.md",
-    "daily_production/data/2025-08/22",
-    "daily_production/data/2025-07/16/2025-07-16 – Nchwaning 3 Daily Report.md",
-    "daily_production/data/2025-07/16/2025-07-16 – Nchwaning 2 Daily Report.md",
-    "daily_production/data/2025-07/21/2025-07-21 – Gloria Daily Report.md",
-    "daily_production/data/2025-07/16/2025-07-16_shafts_winders.json",
-    "daily_production/data/2025-07/16/2025-07-16_nchwaning3.json",
-    "daily_production/data/2025-07/16/2025-07-16_nchwaning2.json",
-    "daily_production/data/2025-07/16/2025-07-16_gloria.json",
-    "daily_production/data/2025-07/16",
+    "IDEAS/2025-08-24 – MarthaVault Repository Split Implementation Plan.md",
+    "00_Inbox/IDEAS - Autonomous WhatsApp Production Report Monitoring.md",
+    "MarthaVault.zip",
+    "MarthaVault.zip.tmp",
+    "zia32452",
+    "00_Inbox/IDEA - Split MarthaVault.md",
+    "00_Inbox/IDEAS - GitHub-WhatsApp Automation.md",
+    "00_Inbox/2025-08-19.md",
+    "00_Inbox/Quote for Chargers for BEV Bay 2.pdf",
+    "00_Inbox/Update on section 54 - 23-08-2025.md",
+    "00_Inbox/Komatsu GHH.md",
+    "00_Inbox/~$Logistics Planning Summary Project.xlsx",
+    "00_Inbox/Jacques Breet.md",
+    "00_Inbox/HD0054 Fire Incident 20-08-2025.md",
+    "00_Inbox/BRMO weekly report LIVE 06 August 2025 - 13 August 2025.pdf",
+    "00_Inbox/~$Estimate Charging Bay 2 v7.xlsx",
+    "daily_production/data/2025-08/23/2025-08-23 – Section 54 Safety Notice.md",
+    "daily_production/data/2025-08/23/2025-08-23 – Shafts & Winders Daily Report.md",
+    "daily_production/data/2025-08/23/2025-08-23 – Nchwaning 2 Daily Report.md",
+    "daily_production/data/2025-08/23/2025-08-23 – Gloria Daily Report.md",
+    "daily_production/data/2025-08/24/2025-08-24 – Shafts & Winders Daily Report.md",
+    "daily_production/data/2025-08/24/2025-08-24_shafts_winders.json",
+    "daily_production/data/2025-08/24",
+    "daily_production/data/2025-07/20/2025-07-20 – Shafts & Winders Daily Report.md",
+    "daily_production/data/2025-08/22/2025-08-22_Gloria Daily Report.md",
+    "daily_production/data/2025-08/22/2025-08-22_Nchwaning 2 Daily Report.md",
+    "daily_production/data/2025-08/22/2025-08-22_Nchwaning 3 Daily Report.md",
+    "daily_production/data/2025-08/22/2025-08-22_Shafts & Winders Daily Report.md",
+    "daily_production/data/2025-08/23/2025-08-23_shafts_winders.json",
+    "daily_production/data/2025-07/18/2025-07-18 – Gloria Daily Report.md",
     "daily_production/data/2025-07/20/2025-07-20 – Gloria Daily Report.md",
     "daily_production/data/2025-07/19/2025-07-19 – Shafts & Winders Daily Report.md",
-    "daily_production/data/2025-07/18/2025-07-18 – Gloria Daily Report.md",
-    "daily_production/data/2025-08/21/2025-08-21 – Nchwaning 2 Daily Report.md",
-    "daily_production/data/2025-07/20/2025-07-20 – Shafts & Winders Daily Report.md",
-    "daily_production/data/2025-08/21/2025-08-21 – Shafts & Winders Daily Report.md",
+    "daily_production/data/2025-07/18/2025-07-18 – Shafts & Winders Daily Report.md",
+    "daily_production/data/2025-07/18/2025-07-18 – Nchwaning 3 Daily Report.md",
+    "daily_production/data/2025-07/18/2025-07-18 – Nchwaning 2 Daily Report.md",
+    "daily_production/data/2025-07/31/2025-07-31 – Gloria Daily Report.md",
     "Untitled.canvas",
     "media/image/2025/2025-08-11_1056_WTW-Audit-Kickoff-Meeting.jpg",
     "00_Inbox/IMG_20250730_203426_897.jpg"
