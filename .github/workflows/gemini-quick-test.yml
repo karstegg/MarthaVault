@@ -123,7 +123,7 @@ jobs:
         settings: |-
           {
             "model": "gemini-2.5-flash",
-            "maxSessionTurns": 5,
+            "maxSessionTurns": 15,
             "autoAccept": ["list_directory", "read_file", "write_file", "glob"],
             "telemetry": {"enabled": false}
           }
@@ -323,3 +323,35 @@ jobs:
         echo "md_files_count=$MD_FILES" >> $GITHUB_OUTPUT
         echo "total_files=$TOTAL_FILES" >> $GITHUB_OUTPUT
         echo "target_dir=$TARGET_DIR" >> $GITHUB_OUTPUT
+
+    - name: Commit and Push Generated Files
+      if: steps.verify_files.outputs.total_files > 0
+      run: |
+        TARGET_DATE="${{ github.event.client_payload.date || github.event.inputs.date }}"
+        
+        # Configure git user
+        git config --local user.name "gemini-ai[bot]"
+        git config --local user.email "gemini-ai[bot]@users.noreply.github.com"
+        
+        # Add generated files
+        git add daily_production/data/ || echo "No files to add"
+        
+        # Check if there are changes to commit
+        if git diff --cached --quiet; then
+          echo "ℹ️ No changes to commit"
+        else
+          # Commit the generated files
+          git commit -m "feat: Add Gemini-generated daily reports for $TARGET_DATE
+
+📊 Generated Files:
+- JSON: ${{ steps.verify_files.outputs.json_files_count }} files
+- Markdown: ${{ steps.verify_files.outputs.md_files_count }} files
+- Total: ${{ steps.verify_files.outputs.total_files }} files
+
+🤖 Generated with Gemini 2.5 Flash via GitHub Actions
+🔗 Workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          
+          # Push to repository
+          git push origin master
+          echo "✅ Files committed and pushed to repository"
+        fi
