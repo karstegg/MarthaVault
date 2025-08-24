@@ -10,82 +10,107 @@
   "safety": {
     "status": "clear",
     "incidents": 0,
-    "details": [],
-    "source_validation": {
-      "status": {
-        "value": "Clear",
-        "source_line": "9",
-        "source_quote": "Safety:\nClear",
-        "confidence": "HIGH"
-      }
+    "details": []
+  },
+  "infrastructure": {
+    "power_supply": {
+      "stoppages": 0,
+      "status": "operational"
+    },
+    "winders": {
+      "nch2_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch3_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "gl_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch2_rw": {"status": "Solrock Shaft Barrel Repair Project", "operational": false, "type": "rock_winder", "function": "ore_hoisting"}
+    },
+    "main_fans": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    },
+    "lamprooms": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
     }
+  },
+  "dam_levels": {
+    "dd01": {
+      "level_fri": 100.4,
+      "level_sat": 100.3,
+      "status": "good"
+    },
+    "dd02": {
+      "level_fri": 79.0,
+      "level_sat": 79.5,
+      "status": "warning"
+    }
+  },
+  "ore_pass_levels": {
+    "level_fri": 10.6,
+    "level_sat": 12.8,
+    "trend": "improving"
   },
   "production": {
-    "rom": {"actual": 130, "target": 1576, "variance": -1446, "variance_percentage": -91.75, "source_validation": {
-      "actual": {
-        "value": 130,
-        "source_line": "39",
-        "source_quote": "Sat: 130/1576",
-        "confidence": "HIGH"
+    "daily_summary": [
+      {
+        "day": "Friday",
+        "actual": 5676,
+        "target": 6621,
+        "variance": -945,
+        "variance_percentage": -14.27
       },
-      "target": {
-        "value": 1576,
-        "source_line": "39",
-        "source_quote": "Sat: 130/1576",
-        "confidence": "HIGH"
+      {
+        "day": "Saturday",
+        "actual": 130,
+        "target": 1576,
+        "variance": -1446,
+        "variance_percentage": -91.75
       }
-    }},
-    "decline": {"actual": null, "target": null, "variance": null, "variance_percentage": null},
-    "product": {"actual": null, "target": null, "variance": null, "variance_percentage": null},
-    "loads": [],
-    "blast": {"faces": null, "breakdown": null, "note": "Nothing Reported"}
-  },
-  "equipment_availability": {
-    "tmm": {"DT": null, "FL": null, "HD": null, "RT": null, "SR": null},
-    "specialized": []
-  },
-  "shift_readiness": {
-    "production_tmm": {
-      "DT": {"available": null, "total": null}, "FL": {"available": null, "total": null},
-      "HD": {"available": null, "total": null}, "RT": {"available": null, "total": null}, "SR": {"available": null, "total": null}
-    }
-  },
-  "breakdowns": {
-    "current_breakdowns": [
-      {"unit": "Nch2 RW", "issue": "Solrock Shaft Barrel Repair Project", "source_validation": {
-        "issue": {
-          "value": "Solrock Shaft Barrel Repair Project",
-          "source_line": "20",
-          "source_quote": "Nch2 RW\nSolrock Shaft Barrel Repair Project",
-          "confidence": "HIGH"
-        }
-      }}
     ]
   },
   "operational": {
-    "main_fans": "operational",
-    "plant_blockages": 0,
-    "fire_alarms": 4,
-    "source_validation": {
-      "main_fans": {
-        "value": "No Stoppages",
-        "source_line": "23",
-        "source_quote": "Main Fans\nGL\nNo Stoppages",
-        "confidence": "HIGH"
-      },
-      "plant_blockages": {
-        "value": "None",
-        "source_line": "36",
-        "source_quote": "Block Chutes:\nNone",
-        "confidence": "HIGH"
-      },
-      "fire_alarms": {
-        "value": "4 x NON-EMERGENCY COMMS ALARMS",
-        "source_line": "34",
-        "source_quote": "Fire Scada Alarms:\n4 x NON-EMERGENCY COMMS ALARMS",
-        "confidence": "HIGH"
-      }
-    }
+    "fire_scada_alarms": 4,
+    "block_chutes": 0
   },
-  "source_validation": {}
+  "performance_summary": {
+    "key_issues": [
+      "Nch2 RW: Solrock Shaft Barrel Repair Project",
+      "Saturday Production significantly below target",
+      "4 x NON-EMERGENCY COMMS ALARMS"
+    ],
+    "key_highlights": [
+      "Safety: Clear",
+      "Power Supply: No Stoppages",
+      "Manwinders (Nch2 PW, Nch3 PW, GL PW): Operational",
+      "Main Fans (GL, Nch2, Nch3): Operational",
+      "Lamprooms (GL, Nch2, Nch3): Operational"
+    ]
+  },
+  "source_validation": {
+    "safety_status": {"value": "Clear", "source_line": 8, "source_quote": "Clear", "confidence": "HIGH"},
+    "power_supply_status": {"value": "No Stoppages", "source_line": 11, "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "nch2_pw_status": {"value": "No Stoppages", "source_line": 14, "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "nch3_pw_status": {"value": "No Stoppages", "source_line": 17, "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "gl_pw_status": {"value": "No Stoppages", "source_line": 20, "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "nch2_rw_status": {"value": "Solrock Shaft Barrel Repair Project", "source_line": 23, "source_quote": "Solrock Shaft Barrel Repair Project", "confidence": "HIGH"},
+    "gl_main_fans_status": {"value": "No Stoppages", "source_line": 26, "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "nch2_main_fans_status": {"value": "No Stoppages", "source_line": 29, "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "nch3_main_fans_status": {"value": "No Stoppages", "source_line": 32, "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "gl_lamprooms_status": {"value": "No Stoppages", "source_line": 35, "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "nch2_lamprooms_status": {"value": "No Stoppages", "source_line": 38, "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "nch3_lamprooms_status": {"value": "No Stoppages", "source_line": 41, "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "dd01_fri_level": {"value": 100.4, "source_line": 45, "source_quote": "Fri: 100,4%", "confidence": "HIGH"},
+    "dd01_sat_level": {"value": 100.3, "source_line": 46, "source_quote": "Sat: 100,3%", "confidence": "HIGH"},
+    "dd02_fri_level": {"value": 79.0, "source_line": 52, "source_quote": "Fri: 79,0%", "confidence": "HIGH"},
+    "dd02_sat_level": {"value": 79.5, "source_line": 53, "source_quote": "Sat: 79,5%", "confidence": "HIGH"},
+    "fire_scada_alarms_count": {"value": 4, "source_line": 58, "source_quote": "4 x NON-EMERGENCY COMMS ALARMS", "confidence": "HIGH"},
+    "block_chutes_status": {"value": "None", "source_line": 61, "source_quote": "None", "confidence": "HIGH"},
+    "production_fri_actual": {"value": 5676, "source_line": 64, "source_quote": "Fri: 5676/6621", "confidence": "HIGH"},
+    "production_fri_target": {"value": 6621, "source_line": 64, "source_quote": "Fri: 5676/6621", "confidence": "HIGH"},
+    "production_sat_actual": {"value": 130, "source_line": 65, "source_quote": "Sat: 130/1576", "confidence": "HIGH"},
+    "production_sat_target": {"value": 1576, "source_line": 65, "source_quote": "Sat: 130/1576", "confidence": "HIGH"},
+    "ore_pass_fri_level": {"value": 10.6, "source_line": 70, "source_quote": "Fri: 10,6%", "confidence": "HIGH"},
+    "ore_pass_sat_level": {"value": 12.8, "source_line": 71, "source_quote": "Sat: 12,8%", "confidence": "HIGH"}
+  }
 }
