@@ -13,13 +13,58 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 # MarthaVault – Claude Constitution  *Version 0.3  (2025-08-05)*
 
-## 🔄 **Active Session Context** (August 5, 2025)
-**Current Project**: Daily Production Report Automation (July 5-20, 2025)
-- **Test Status**: July 7th processing via Gemini → GitHub PR → Claude Cloud review
-- **Integration**: Claude Code (G:\) + Gemini (C:\) + GitHub Cloud workflow  
-- **BEV Analysis**: Completed equipment database with 13 BEV units (7 DTs, 6 FLs)
-- **Next**: Batch process missing reports after successful test run
-- **Session State**: See `.claude/session_state.md` for full context
+## 🔄 **Active Session Context** (August 24, 2025)
+**BREAKTHROUGH ACHIEVED**: ✅ **Gemini 2.5 Flash Complete Solution**
+- **Status**: Production-ready autonomous daily production report generation
+- **Cost Impact**: $0/day (FREE alternative to Claude API)
+- **Capability**: End-to-end WhatsApp → JSON/Markdown → Repository automation
+- **Integration**: GitHub Actions + Gemini CLI + Auto-commit workflows
+- **Documentation**: See `GEMINI_2.5_FLASH_BREAKTHROUGH_COMPLETE_SOLUTION.md` for full technical details
+- **Next**: Scale to batch processing (July 6-21 date ranges)
+
+---
+## 0 🚀 **GEMINI 2.5 FLASH BREAKTHROUGH SOLUTION**
+
+**✅ PRODUCTION READY**: Complete autonomous daily production report generation using FREE Gemini 2.5 Flash
+
+### **Technical Achievement**
+Successfully implemented Gemini 2.5 Flash as a complete replacement for expensive Claude API processing, achieving:
+- **End-to-end automation**: WhatsApp data → Structured JSON/Markdown reports → Repository commits
+- **Zero cost operation**: Uses generous Gemini 2.5 Flash free quotas vs. expensive Claude API
+- **Production quality**: Enterprise-grade data integrity with proper validation and audit trails
+- **Complete automation**: GitHub Actions workflows with automatic file commits
+
+### **Critical Success Configuration**
+```yaml
+# Working Solution - GitHub Actions Workflow
+uses: 'google-github-actions/run-gemini-cli@v0.1.11'
+with:
+  gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
+  settings: |-
+    {
+      "model": "gemini-2.5-flash",
+      "maxSessionTurns": 15,
+      "autoAccept": ["list_directory", "read_file", "write_file", "glob"],
+      "telemetry": {"enabled": false}
+    }
+```
+
+### **Key Technical Discoveries**
+1. **❌ WRONG**: `gemini_model` parameter (unsupported) → **✅ RIGHT**: Model in `settings` JSON
+2. **❌ WRONG**: `@v0` GitHub Action → **✅ RIGHT**: `@v0.1.11` for proper tool support  
+3. **❌ WRONG**: 5 session turns → **✅ RIGHT**: 15 turns for multi-site processing
+4. **❌ WRONG**: Files created but not committed → **✅ RIGHT**: Auto-commit integration
+
+### **Data Quality Excellence** 
+Perfect data integrity demonstrated: when source data missing, system uses `null` values and documents absence rather than fabricating data. Self-validates and questions data quality.
+
+### **Current Capability**
+- **Workflow**: `.github/workflows/gemini-quick-test.yml` 
+- **Trigger**: `gh workflow run gemini-quick-test.yml --field date=YYYY-MM-DD`
+- **Output**: Complete JSON/Markdown reports for all mine sites automatically committed
+- **Processing Time**: ~2.5 minutes end-to-end
+
+**📖 Complete Technical Documentation**: `GEMINI_2.5_FLASH_BREAKTHROUGH_COMPLETE_SOLUTION.md`
 
 ---
 ## 1 Identity & Operating Modes
@@ -730,6 +775,27 @@ NEVER proactively create documentation files (*.md) or README files. Only create
 - **Manual review queue**: Route ambiguous messages for human verification
 
 **This error could have led to incorrect operational decisions and missed safety reports - NEVER allow unvalidated site guessing again.**
+
+### **OPERATIONAL CONTEXT MEMORY (2025-08-22)**
+**NEVER FORGET**: Production operations context for daily report language and priorities
+
+**Critical Language Guidelines**:
+- **RESERVE "Critical/Extreme"** for genuine emergencies only (fires, evacuations, safety incidents)
+- **Avoid hyperbolic language** for normal operational variations
+- **Below-target production ≠ critical failure** - use measured language
+
+**Silo Levels Context (Gloria)**:
+- **NOT a critical daily parameter** for UG Mining Department monitoring
+- **Low silo levels = NORMAL operations** (ore flowing to surface plant)  
+- **High silo levels = PRODUCTION CONCERN** (surface plant bottleneck, UG standstill risk)
+- **Trend analysis required** - only concerning if consistently high/low over week periods
+- **Daily reports**: Treat as informational metric, NOT critical alert
+- **User perspective**: UG Mining Department (UG plant + TMM operations under Greg's oversight)
+
+**Reporting Tone**:
+- Measured, professional operational language
+- Context-aware criticality assessment
+- Reserve urgent language for genuine safety/operational emergencies
 
 ## 🚨 CRITICAL BRIDGE CONNECTIVITY MEMORY (2025-08-14)
 **NEVER FORGET**: WhatsApp bridge service shuts down during inactivity periods, causing missing production reports.
