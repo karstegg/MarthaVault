@@ -32,7 +32,12 @@
       "Bash(gh pr create:*)",
       "Bash(gh pr view:*)",
       "Bash(..claudecommandspdr-cloud 2025-07-07)",
-      "Bash(bash:*)"
+      "Bash(bash:*)",
+      "Bash(timeout 120 gh run watch 17183424132)",
+      "Bash(timeout 120 gh run watch 17183563271)",
+      "Bash(gh issue list:*)",
+      "Bash(timeout 180 gh run watch 17184223204)",
+      "Bash(timeout 180 gh run watch 17184356062)"
     ],
     "deny": []
   },

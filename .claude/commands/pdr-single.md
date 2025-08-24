@@ -45,6 +45,13 @@ When `/pdr-single` is called without arguments:
 - **SR = Scaler** (scaling equipment)
 - **REJECT any reference to "Rock Truck" - use "Roof Bolter" for RT codes**
 
+#### 🎯 OPERATIONAL CONTEXT & LANGUAGE
+**MANDATORY TONE GUIDELINES**: Reserve "Critical/Extreme" for genuine emergencies only
+- **Silo Levels**: NOT critical daily parameter - low levels = normal operations
+- **Production Variance**: Below-target ≠ critical failure - use measured language
+- **Emergency Language**: Only for safety incidents requiring mine evacuation/shutdown
+- **Professional Tone**: Context-aware criticality assessment for UG Mining Department
+
 #### Gloria-Specific Elements
 - **Silo Levels**: Surface (1-4) and Underground (74, HG, D, LG) percentages
 - **Manitou**: Availability status (rare when operational)

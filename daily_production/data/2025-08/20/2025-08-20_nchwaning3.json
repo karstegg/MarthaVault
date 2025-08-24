@@ -8,9 +8,9 @@
     "whatsapp_sender_id": "163226021064705"
   },
   "safety": {
-    "status": "incident",
+    "status": "major_incident",
     "incidents": 1,
-    "details": ["Smoke was observe at HD0054"]
+    "details": ["HD0054 catastrophic engine fire at 03:00 - total machine loss, completed drilling before fire, underground smoke clearance required all day, investigation ongoing"]
   },
   "production": {
     "rom": {
@@ -83,7 +83,7 @@
       {"unit": "FL0108", "issue": "Damage window"},
       {"unit": "HD0052", "issue": "Waterbox seals"},
       {"unit": "HD0062", "issue": "Drifter"},
-      {"unit": "HD0054", "issue": "Observe smoke"},
+      {"unit": "HD0054", "issue": "TOTAL LOSS - Major engine fire at 03:00, machine completely burned down"},
       {"unit": "RT0057", "issue": "Electrical"},
       {"unit": "SR0024", "issue": "Boom"},
       {"unit": "SR0030", "issue": "Damage"},

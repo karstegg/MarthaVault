@@ -175,6 +175,8 @@ The following commands are implemented in `.claude/commands/`:
 - **`/new-note $ARGUMENTS`** - Creates structured notes with automatic project folder placement and tagging
 - **`/nn $ARGUMENTS`** - Alias for `/new-note`
 - **`/pdr $ARGUMENTS`** - Process Daily Reports: Converts WhatsApp production reports to structured JSON/Markdown format (uses parallel agents for multiple reports)
+- **`/pdr-cloud $ARGUMENTS`** - Autonomous cloud-based daily production report processing using Claude
+- **`/pdr-gemini $ARGUMENTS`** - Autonomous cloud-based daily production report processing using FREE Gemini 2.5 Flash
 
 ---
 ## 10 Common Operations

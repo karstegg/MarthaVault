@@ -10,7 +10,7 @@ JSONData:: [[2025-08-20_nchwaning3.json]]
 ## 🔴🚨 CRITICAL OPERATIONAL CRISIS
 
 ### Safety Status
-🔴 **INCIDENT** - Smoke observed at HD0054
+🔴 **MAJOR FIRE INCIDENT** - HD0054 catastrophic engine fire at 03:00, total machine loss
 
 ### Production Performance
 🔴 **CRITICAL FAILURE** - All metrics significantly below target
@@ -74,7 +74,7 @@ JSONData:: [[2025-08-20_nchwaning3.json]]
 #### Haul Dump Equipment Issues
 - **HD0052**: Waterbox seals
 - **HD0062**: Drifter
-- **HD0054**: Observe smoke 🚨
+- **HD0054**: 🔥 **TOTAL LOSS** - Major engine fire at 03:00, machine completely burned down
 
 #### Roof Bolter Equipment Issues
 - **RT0057**: Electrical
@@ -112,7 +112,7 @@ JSONData:: [[2025-08-20_nchwaning3.json]]
 - **Maf 138**: Radio not working
 
 ## Performance Summary
-- **Safety**: Critical incident with HD0054 smoke 🔴
+- **Safety**: Major fire incident - HD0054 total machine loss, operational impact 🔴
 - **Production**: Complete operational failure across all metrics 🔴
 - **Equipment**: Extensive breakdowns affecting 18 units 🔴
 - **Operations**: Multiple system failures and communication issues 🔴
@@ -120,7 +120,7 @@ JSONData:: [[2025-08-20_nchwaning3.json]]
 ## Supplemental Information
 
 ### Critical Operational Issues
-1. **Safety Emergency**: HD0054 smoke incident requires immediate investigation
+1. **Major Fire Incident**: HD0054 catastrophic fire at 03:00 - total machine loss, investigation ongoing
 2. **Production Crisis**: All production metrics critically below target
 3. **Equipment Reliability**: 18 units in breakdown status
 4. **Staffing Impact**: BEV workshop night shift shortage affecting operations
@@ -131,7 +131,7 @@ JSONData:: [[2025-08-20_nchwaning3.json]]
 Night shift operations compromised due to absent staff member (sick leave), preventing battery changing assistance for BEV equipment.
 
 ### Immediate Actions Required
-1. **🚨 URGENT**: Investigate HD0054 smoke incident - safety priority
+1. **🔥 CRITICAL**: HD0054 fire investigation ongoing - total machine loss, smoke clearance required
 2. **🔴 URGENT**: Restore rescue bay communications - safety critical
 3. **🔴 HIGH**: Address BEV workshop staffing for night shift operations
 4. **🔴 HIGH**: Clear plant blockages at 60CV01 and 65CV01
