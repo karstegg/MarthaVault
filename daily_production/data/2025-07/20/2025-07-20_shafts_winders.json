@@ -1,0 +1,91 @@
+{
+  "report_metadata": {
+    "date": "2025-07-20",
+    "data_date": "2025-07-19",
+    "site": "Shafts & Winders",
+    "engineer": "Xavier Peterson",
+    "timestamp": "08:35",
+    "report_type": "Daily Report"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": [],
+    "source_validation": {
+      "status": {
+        "value": "Clear",
+        "source_line": "9",
+        "source_quote": "Safety:\nClear",
+        "confidence": "HIGH"
+      }
+    }
+  },
+  "production": {
+    "rom": {"actual": 130, "target": 1576, "variance": -1446, "variance_percentage": -91.75, "source_validation": {
+      "actual": {
+        "value": 130,
+        "source_line": "39",
+        "source_quote": "Sat: 130/1576",
+        "confidence": "HIGH"
+      },
+      "target": {
+        "value": 1576,
+        "source_line": "39",
+        "source_quote": "Sat: 130/1576",
+        "confidence": "HIGH"
+      }
+    }},
+    "decline": {"actual": null, "target": null, "variance": null, "variance_percentage": null},
+    "product": {"actual": null, "target": null, "variance": null, "variance_percentage": null},
+    "loads": [],
+    "blast": {"faces": null, "breakdown": null, "note": "Nothing Reported"}
+  },
+  "equipment_availability": {
+    "tmm": {"DT": null, "FL": null, "HD": null, "RT": null, "SR": null},
+    "specialized": []
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": null, "total": null}, "FL": {"available": null, "total": null},
+      "HD": {"available": null, "total": null}, "RT": {"available": null, "total": null}, "SR": {"available": null, "total": null}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "Nch2 RW", "issue": "Solrock Shaft Barrel Repair Project", "source_validation": {
+        "issue": {
+          "value": "Solrock Shaft Barrel Repair Project",
+          "source_line": "20",
+          "source_quote": "Nch2 RW\nSolrock Shaft Barrel Repair Project",
+          "confidence": "HIGH"
+        }
+      }}
+    ]
+  },
+  "operational": {
+    "main_fans": "operational",
+    "plant_blockages": 0,
+    "fire_alarms": 4,
+    "source_validation": {
+      "main_fans": {
+        "value": "No Stoppages",
+        "source_line": "23",
+        "source_quote": "Main Fans\nGL\nNo Stoppages",
+        "confidence": "HIGH"
+      },
+      "plant_blockages": {
+        "value": "None",
+        "source_line": "36",
+        "source_quote": "Block Chutes:\nNone",
+        "confidence": "HIGH"
+      },
+      "fire_alarms": {
+        "value": "4 x NON-EMERGENCY COMMS ALARMS",
+        "source_line": "34",
+        "source_quote": "Fire Scada Alarms:\n4 x NON-EMERGENCY COMMS ALARMS",
+        "confidence": "HIGH"
+      }
+    }
+  },
+  "source_validation": {}
+}

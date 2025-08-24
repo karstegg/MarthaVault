@@ -1,0 +1,55 @@
+{
+  "report_metadata": {
+    "date": "2025-07-20",
+    "data_date": "2025-07-19",
+    "site": "Nchwaning 2",
+    "engineer": "Sikelela Nzuza",
+    "timestamp": "08:35",
+    "report_type": "Daily Report"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": [],
+    "source_validation": {
+      "status": {
+        "value": "Clear",
+        "source_line": "9",
+        "source_quote": "Safety:\nClear",
+        "confidence": "MEDIUM"
+      }
+    }
+  },
+  "production": {
+    "rom": {"actual": null, "target": null, "variance": null, "variance_percentage": null},
+    "decline": {"actual": null, "target": null, "variance": null, "variance_percentage": null},
+    "product": {"actual": null, "target": null, "variance": null, "variance_percentage": null},
+    "loads": [],
+    "blast": {"faces": null, "breakdown": null, "note": "No Production Report"}
+  },
+  "equipment_availability": {
+    "tmm": {"DT": null, "FL": null, "HD": null, "RT": null, "SR": null},
+    "specialized": []
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": null, "total": null}, "FL": {"available": null, "total": null},
+      "HD": {"available": null, "total": null}, "RT": {"available": null, "total": null}, "SR": {"available": null, "total": null}
+    }
+  },
+  "breakdowns": {"current_breakdowns": []},
+  "operational": {
+    "main_fans": "operational",
+    "plant_blockages": null,
+    "fire_alarms": null,
+    "source_validation": {
+      "main_fans": {
+        "value": "No Stoppages",
+        "source_line": "26",
+        "source_quote": "Nch2\nNo Stoppages",
+        "confidence": "HIGH"
+      }
+    }
+  },
+  "source_validation": {}
+}
