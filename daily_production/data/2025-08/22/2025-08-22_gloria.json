@@ -1,7 +1,7 @@
 {
   "report_metadata": {
     "date": "2025-08-22",
-    "data_date": "2025-08-22",
+    "data_date": "2025-08-21",
     "site": "Gloria Mine",
     "engineer": "Sipho Dubazane",
     "timestamp": "04:54",
@@ -13,50 +13,91 @@
     "details": []
   },
   "production": {
-    "rom": {"actual": 3085, "target": 3873, "variance": -788, "variance_percentage": -20.35},
-    "decline": {"actual": 4198, "target": 3873, "variance": 325, "variance_percentage": 8.39},
-    "product": {"actual": 5678, "target": 3894, "variance": 1784, "variance_percentage": 45.81},
-    "loads": [{"shift": "day", "load_number": 1, "truckloads_tipped": 53, "target": null}, {"shift": "day", "load_number": 2, "truckloads_tipped": 35, "target": null}, {"shift": "day", "load_number": 3, "truckloads_tipped": 60, "target": null}],
+    "rom": {"actual": 3085, "target": 3873, "variance": -788, "variance_percentage": 79.65, "unit": "tonnes"},
+    "decline": {"actual": 4198, "target": 3873, "variance": 325, "variance_percentage": 108.39, "unit": "tonnes"},
+    "product": {"actual": 5678, "target": 3894, "variance": 1784, "variance_percentage": 145.82, "unit": "tonnes"},
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": 53, "target": null},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 35, "target": null},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": 60, "target": null}
+    ],
     "blast": {"faces": 9, "breakdown": null, "note": "9 Faces"}
   },
   "equipment_availability": {
     "tmm": {"DT": 96, "FL": 100, "HD": 79, "RT": 58, "SR": 91},
-    "specialized": []
+    "specialized": [
+      {"code": "Manitou", "availability": 100},
+      {"code": "Manlifts", "availability": 100}
+    ]
   },
   "shift_readiness": {
     "production_tmm": {
-      "DT": {"available": 6, "total": 6}, "FL": {"available": 5, "total": 5},
-      "HD": {"available": 4, "total": 4}, "RT": {"available": 4, "total": 5}, "SR": {"available": 4, "total": 4}
+      "DT": {"available": 6, "total": 6},
+      "FL": {"available": 5, "total": 5},
+      "HD": {"available": 4, "total": 4},
+      "RT": {"available": 4, "total": 5},
+      "SR": {"available": 4, "total": 4}
     }
   },
-  "breakdowns": {"current_breakdowns": []},
-  "operational": {"main_fans": "operational", "plant_blockages": 0, "fire_alarms": 0},
+  "breakdowns": {
+    "current_breakdowns": []
+  },
+  "operational": {
+    "main_fans": "in order",
+    "plant_blockages": 0,
+    "fire_alarms": 0
+  },
+  "silo_levels": {
+    "surface": {
+      "silo_1": 66, "silo_2": 100, "silo_3": 46, "silo_4": 96
+    },
+    "underground": {
+      "silo_74": 0, "silo_hg": 0, "silo_d": 0, "silo_lg": 0
+    }
+  },
   "source_validation": {
-    "safety_status": {"value": "Clear", "source_line": "52", "source_quote": "Safety - Clear", "confidence": "HIGH"},
-    "rom_actual": {"value": 3085, "source_line": "55", "source_quote": "3085 vs 3873", "confidence": "HIGH"},
-    "rom_target": {"value": 3873, "source_line": "55", "source_quote": "3085 vs 3873", "confidence": "HIGH"},
-    "decline_actual": {"value": 4198, "source_line": "58", "source_quote": "4198 vs 3873", "confidence": "HIGH"},
-    "decline_target": {"value": 3873, "source_line": "58", "source_quote": "4198 vs 3873", "confidence": "HIGH"},
-    "product_actual": {"value": 5678, "source_line": "61", "source_quote": "5678 vs 3894", "confidence": "HIGH"},
-    "product_target": {"value": 3894, "source_line": "61", "source_quote": "5678 vs 3894", "confidence": "HIGH"},
-    "loads": {"value": "53, 35, 60", "source_line": "72", "source_quote": "53, 35, 60", "confidence": "HIGH"},
-    "blast_faces": {"value": 9, "source_line": "75", "source_quote": "9 Faces", "confidence": "HIGH"},
-    "dt_availability": {"value": 96, "source_line": "78", "source_quote": "DT- 96%", "confidence": "HIGH"},
-    "fl_availability": {"value": 100, "source_line": "79", "source_quote": "FL- 100%", "confidence": "HIGH"},
-    "hd_availability": {"value": 79, "source_line": "80", "source_quote": "HD- 79%", "confidence": "HIGH"},
-    "rt_availability": {"value": 58, "source_line": "81", "source_quote": "RT- 58%", "confidence": "HIGH"},
-    "sr_availability": {"value": 91, "source_line": "82", "source_quote": "SR-91%", "confidence": "HIGH"},
-    "shift_readiness_dt": {"value": "6/6", "source_line": "85", "source_quote": "DT: 6/6", "confidence": "HIGH"},
-    "shift_readiness_fl": {"value": "5/5", "source_line": "86", "source_quote": "FL: 5/5", "confidence": "HIGH"},
-    "shift_readiness_hd": {"value": "4/4", "source_line": "87", "source_quote": "HD: 4/4", "confidence": "HIGH"},
-    "shift_readiness_rt": {"value": "4/5", "source_line": "88", "source_quote": "RT: 4/5", "confidence": "HIGH"},
-    "shift_readiness_sr": {"value": "4/4", "source_line": "89", "source_quote": "SR: 4/4", "confidence": "HIGH"},
-    "emulsion_uv": {"value": "2/2", "source_line": "92", "source_quote": "2/2", "confidence": "HIGH"},
-    "manitou": {"value": "1/1", "source_line": "95", "source_quote": "1/1", "confidence": "HIGH"},
-    "manlifts": {"value": "2/2", "source_line": "98", "source_quote": "2/2", "confidence": "HIGH"},
-    "tmm_breakdowns": {"value": "None", "source_line": "101", "source_quote": "None", "confidence": "HIGH"},
-    "main_fans": {"value": "In order", "source_line": "104", "source_quote": "In order", "confidence": "HIGH"},
-    "plant_blockages": {"value": "None", "source_line": "107", "source_quote": "None", "confidence": "HIGH"},
-    "fire_alarm": {"value": "None", "source_line": "110", "source_quote": "None", "confidence": "HIGH"}
+    "safety_status": {"value": "Clear", "source_line": "54", "source_quote": "Safety - Clear", "confidence": "HIGH"},
+    "rom_actual": {"value": 3085, "source_line": "56", "source_quote": "3085 vs 3873", "confidence": "HIGH"},
+    "rom_target": {"value": 3873, "source_line": "56", "source_quote": "3085 vs 3873", "confidence": "HIGH"},
+    "decline_actual": {"value": 4198, "source_line": "59", "source_quote": "4198 vs 3873", "confidence": "HIGH"},
+    "decline_target": {"value": 3873, "source_line": "59", "source_quote": "4198 vs 3873", "confidence": "HIGH"},
+    "product_actual": {"value": 5678, "source_line": "62", "source_quote": "5678 vs 3894", "confidence": "HIGH"},
+    "product_target": {"value": 3894, "source_line": "62", "source_quote": "5678 vs 3894", "confidence": "HIGH"},
+    "silo1_level": {"value": 66, "source_line": "65", "source_quote": "1-66", "confidence": "HIGH"},
+    "silo2_level": {"value": 100, "source_line": "66", "source_quote": "2-100", "confidence": "HIGH"},
+    "silo3_level": {"value": 46, "source_line": "67", "source_quote": "3-46", "confidence": "HIGH"},
+    "silo4_level": {"value": 96, "source_line": "68", "source_quote": "4-96", "confidence": "HIGH"},
+    "silo74_level": {"value": "empty", "source_line": "71", "source_quote": "74-empty", "confidence": "HIGH"},
+    "silohg_level": {"value": "empty", "source_line": "72", "source_quote": "HG-empty", "confidence": "HIGH"},
+    "silolg_level": {"value": "empty", "source_line": "73", "source_quote": "LG-empty", "confidence": "HIGH"},
+    "silod_level": {"value": "empty", "source_line": "74", "source_quote": "D-empty", "confidence": "HIGH"},
+    "loads_day": {"value": 53, "source_line": "76", "source_quote": "53, 35, 60", "confidence": "HIGH"},
+    "loads_afternoon": {"value": 35, "source_line": "76", "source_quote": "53, 35, 60", "confidence": "HIGH"},
+    "loads_night": {"value": 60, "source_line": "76", "source_quote": "53, 35, 60", "confidence": "HIGH"},
+    "blast_faces": {"value": 9, "source_line": "79", "source_quote": "9 Faces", "confidence": "HIGH"},
+    "dt_availability": {"value": 96, "source_line": "82", "source_quote": "DT- 96%", "confidence": "HIGH"},
+    "fl_availability": {"value": 100, "source_line": "83", "source_quote": "FL- 100%", "confidence": "HIGH"},
+    "hd_availability": {"value": 79, "source_line": "84", "source_quote": "HD- 79%", "confidence": "HIGH"},
+    "rt_availability": {"value": 58, "source_line": "85", "source_quote": "RT- 58%", "confidence": "HIGH"},
+    "sr_availability": {"value": 91, "source_line": "86", "source_quote": "SR-91%", "confidence": "HIGH"},
+    "dt_sos_available": {"value": 6, "source_line": "89", "source_quote": "DT: 6/6", "confidence": "HIGH"},
+    "dt_sos_total": {"value": 6, "source_line": "89", "source_quote": "DT: 6/6", "confidence": "HIGH"},
+    "fl_sos_available": {"value": 5, "source_line": "90", "source_quote": "FL: 5/5", "confidence": "HIGH"},
+    "fl_sos_total": {"value": 5, "source_line": "90", "source_quote": "FL: 5/5", "confidence": "HIGH"},
+    "hd_sos_available": {"value": 4, "source_line": "91", "source_quote": "HD: 4/4", "confidence": "HIGH"},
+    "hd_sos_total": {"value": 4, "source_line": "91", "source_quote": "HD: 4/4", "confidence": "HIGH"},
+    "rt_sos_available": {"value": 4, "source_line": "92", "source_quote": "RT: 4/5", "confidence": "HIGH"},
+    "rt_sos_total": {"value": 5, "source_line": "92", "source_quote": "RT: 4/5", "confidence": "HIGH"},
+    "sr_sos_available": {"value": 4, "source_line": "93", "source_quote": "SR: 4/4", "confidence": "HIGH"},
+    "sr_sos_total": {"value": 4, "source_line": "93", "source_quote": "SR: 4/4", "confidence": "HIGH"},
+    "emulsion_uv_available": {"value": 2, "source_line": "95", "source_quote": "2/2", "confidence": "HIGH"},
+    "emulsion_uv_total": {"value": 2, "source_line": "95", "source_quote": "2/2", "confidence": "HIGH"},
+    "manitou_available": {"value": 1, "source_line": "97", "source_quote": "1/1", "confidence": "HIGH"},
+    "manitou_total": {"value": 1, "source_line": "97", "source_quote": "1/1", "confidence": "HIGH"},
+    "manlifts_available": {"value": 2, "source_line": "99", "source_quote": "2/2", "confidence": "HIGH"},
+    "manlifts_total": {"value": 2, "source_line": "99", "source_quote": "2/2", "confidence": "HIGH"},
+    "main_fans_status": {"value": "In order", "source_line": "103", "source_quote": "In order", "confidence": "HIGH"},
+    "plant_blockages": {"value": 0, "source_line": "105", "source_quote": "None", "confidence": "HIGH"},
+    "fire_alarms": {"value": 0, "source_line": "107", "source_quote": "None", "confidence": "HIGH"}
   }
 }
