@@ -1,0 +1,116 @@
+{
+  "report_metadata": {
+    "date": "2025-06-30",
+    "data_date": "2025-06-29",
+    "site": "Gloria",
+    "engineer": "Sipho Dubazane",
+    "timestamp": "04:34"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "saturday": {"actual": 1675, "target": 0, "variance": 1675},
+      "sunday": {"actual": 1968, "target": 0, "variance": 1968}
+    },
+    "decline": {
+      "saturday": {"actual": 2082, "target": 0, "variance": 2082},
+      "sunday": {"actual": 1960, "target": 0, "variance": 1960}
+    },
+    "product": {
+      "saturday": {"actual": 4050, "target": 4432, "variance": -382},
+      "sunday": {"actual": 1913, "target": 0, "variance": 1913}
+    },
+    "loads": [
+      {"shift": "saturday", "truckloads_tipped": 61},
+      {"shift": "sunday", "truckloads_tipped": 78}
+    ],
+    "blast": {
+      "note": "Nothing Reported"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "DT": 100,
+      "FL": 75,
+      "HD": 67,
+      "RT": 100,
+      "SR": 67
+    }
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 6, "total": 6},
+      "FL": {"available": 3, "total": 4},
+      "HD": {"available": 3, "total": 4},
+      "RT": {"available": 4, "total": 4},
+      "SR": {"available": 3, "total": 4}
+    },
+    "specialized_equipment": {
+      "emulsion_uv": {"available": 2, "total": 2},
+      "manitou": {"available": 1, "total": 1},
+      "manlifts": {"available": 2, "total": 2}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "FL0081", "issue": "Tyre bay"},
+      {"unit": "HD0060", "issue": "waiting cylinder from nch 2"},
+      {"unit": "SR0037", "issue": "Tail frame"}
+    ]
+  },
+  "silo_levels": {
+    "surface": {
+      "silo_1": 92,
+      "silo_2": 24,
+      "silo_3": 54,
+      "silo_4": 21
+    },
+    "underground": {
+      "silo_74": 18,
+      "silo_hg": 16,
+      "silo_d": 15,
+      "silo_lg": 35
+    }
+  },
+  "operational": {
+    "main_fans": "In Order",
+    "plant_blockages": 0,
+    "fire_alarms": 0
+  },
+  "source_validation": {
+    "rom_saturday": {
+      "value": 1675,
+      "source_line": 8,
+      "source_quote": "- 1675 vs 0",
+      "confidence": "HIGH"
+    },
+    "silo_1_level": {
+      "value": 92,
+      "source_line": 19,
+      "source_quote": "1 - 92",
+      "confidence": "HIGH"
+    },
+    "dt_availability": {
+      "value": 100,
+      "source_line": 25,
+      "source_quote": "- DTs: 100",
+      "confidence": "HIGH"
+    }
+  },
+  "performance_summary": {
+    "key_issues": [
+      "FL0081 - Tyre bay maintenance",
+      "HD0060 - Waiting cylinder from Nchwaning 2",
+      "SR0037 - Tail frame issues"
+    ],
+    "key_highlights": [
+      "Safety status clear",
+      "Weekend production activities maintained",
+      "DT and RT equipment at 100% availability"
+    ]
+  }
+}

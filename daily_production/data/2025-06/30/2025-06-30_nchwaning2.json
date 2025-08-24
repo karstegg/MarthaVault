@@ -1,0 +1,102 @@
+{
+  "report_metadata": {
+    "date": "2025-06-30",
+    "data_date": "2025-06-29",
+    "site": "Nchwaning 2",
+    "engineer": "Sikilela Nzuza",
+    "timestamp": "05:00"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "multi_day_data": {
+      "thursday_26june": {
+        "rom": {"actual": 3225, "target": 6903, "variance": -3678},
+        "product": {"actual": 2140, "target": 6064, "variance": -3924}
+      },
+      "friday_27june": {
+        "rom": {"actual": 0, "target": null, "variance": null},
+        "product": {"actual": 1260, "target": 0, "variance": 1260}
+      },
+      "saturday_28june": {
+        "rom": {"actual": 0, "target": 0, "variance": 0},
+        "product": {"actual": 0, "target": 4548, "variance": -4548}
+      },
+      "sunday_29june": {
+        "rom": {"actual": 0, "target": 0, "variance": 0},
+        "product": {"actual": 1305, "target": 4548, "variance": -3243}
+      }
+    },
+    "monthly_target": {
+      "mtd_target": 113705,
+      "mtd_actual": 91674,
+      "variance": -22031,
+      "percentage": 80.6
+    }
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 9, "total": 9},
+      "FL": {"available": 6, "total": 6},
+      "HD": {"available": 6, "total": 6},
+      "RT": {"available": 4, "total": 6},
+      "SR": {"available": 6, "total": 6}
+    },
+    "graben_equipment": {
+      "DT": {"available": 2, "total": 2},
+      "FL": {"available": 2, "total": 2},
+      "HD": {"available": 2, "total": 2},
+      "RT": {"available": 1, "total": 2},
+      "SR": {"available": 2, "total": 2}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "RT43", "issue": "percussion"},
+      {"unit": "RT56", "issue": "transmission"},
+      {"unit": "RT32", "issue": "starting", "location": "graben"},
+      {"unit": "FL85", "issue": "propshaft"},
+      {"unit": "FL100", "issue": "Nerospec"}
+    ]
+  },
+  "operational": {
+    "note": "Multi-day production summary provided"
+  },
+  "source_validation": {
+    "thursday_rom": {
+      "value": 3225,
+      "source_line": 4,
+      "source_quote": "*ROM:*          3225 v 6903t",
+      "confidence": "HIGH"
+    },
+    "mtd_actual": {
+      "value": 91674,
+      "source_line": 32,
+      "source_quote": "MTD actual:  91 674t  plant product",
+      "confidence": "HIGH"
+    },
+    "rt43_breakdown": {
+      "value": "percussion",
+      "source_line": 18,
+      "source_quote": "RT43 percussion",
+      "confidence": "HIGH"
+    }
+  },
+  "performance_summary": {
+    "key_issues": [
+      "MTD performance at 80.6% of target (22,031t shortfall)",
+      "Weekend ROM production at zero",
+      "Multiple equipment breakdowns: RT43, RT56, RT32, FL85, FL100",
+      "Significant product target misses on Saturday and Sunday"
+    ],
+    "key_highlights": [
+      "Safety status clear",
+      "Main production fleet at full readiness (DT, FL, HD, SR)",
+      "Strong Thursday ROM production: 3,225t",
+      "Graben equipment mostly operational"
+    ]
+  }
+}

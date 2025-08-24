@@ -1,0 +1,112 @@
+{
+  "report_metadata": {
+    "date": "2025-06-30",
+    "data_date": "2025-06-29",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "timestamp": "04:54"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {
+      "actual": null,
+      "target": 0,
+      "variance": null,
+      "note": "ROM data not clearly specified in source"
+    },
+    "decline": {
+      "actual": 2707,
+      "target": 0,
+      "variance": 2707
+    },
+    "product": {
+      "actual": 2675,
+      "target": 0,
+      "variance": 2675
+    },
+    "loads": [
+      {"shift": "saturday", "truckloads_tipped": 81},
+      {"shift": "sunday", "truckloads_tipped": 76}
+    ],
+    "blast": {
+      "faces": 7,
+      "note": "7 faces"
+    }
+  },
+  "equipment_availability": {
+    "tmm": {
+      "HD": null,
+      "DT": null,
+      "FL": null,
+      "RT": null,
+      "SR": null,
+      "note": "Previous day availability not specified"
+    },
+    "specialized": [
+      {"code": "GD11", "availability": null},
+      {"code": "DZ11", "availability": null},
+      {"code": "UV044", "availability": null}
+    ]
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "HD": {"available": 8, "total": 9},
+      "DT": {"available": 12, "total": 15},
+      "FL": {"available": 8, "total": 10},
+      "RT": {"available": 9, "total": 10},
+      "SR": {"available": 8, "total": 9},
+      "UU": {"available": 8, "total": 9}
+    },
+    "specialized_equipment": {
+      "manlifts": {"available": 4, "total": 4},
+      "emulsion_uv": {"available": 3, "total": 4}
+    }
+  },
+  "breakdowns": {
+    "current_breakdowns": [
+      {"unit": "DT0109", "issue": "Strata, gears and spares"}
+    ]
+  },
+  "operational": {
+    "fire_alarms": 0,
+    "crusher_chute_blockages": 0,
+    "note": "No crusher and chute blockages reported"
+  },
+  "source_validation": {
+    "decline_production": {
+      "value": 2707,
+      "source_line": 4,
+      "source_quote": "2707 vs 0",
+      "confidence": "HIGH"
+    },
+    "loads_saturday": {
+      "value": 81,
+      "source_line": 9,
+      "source_quote": "81 Sat",
+      "confidence": "HIGH"
+    },
+    "dt0109_breakdown": {
+      "value": "Strata, gears and spares",
+      "source_line": 31,
+      "source_quote": "DT0109 - Strata, gears and spares",
+      "confidence": "HIGH"
+    }
+  },
+  "performance_summary": {
+    "key_issues": [
+      "DT0109 breakdown - Strata, gears and spares required",
+      "Previous day TMM availability data not provided",
+      "Some equipment availability percentages missing"
+    ],
+    "key_highlights": [
+      "Safety status clear",
+      "Strong decline production: 2707t",
+      "Good product output: 2675t",
+      "7 blast faces completed"
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "report_metadata": {
+    "date": "2025-06-30",
+    "data_date": "2025-06-29",
+    "site": "Shafts & Winders",
+    "engineer": "Xavier Peterson",
+    "timestamp": "04:53",
+    "report_type": "Daily Report"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "infrastructure": {
+    "power_supply": {
+      "stoppages": 0,
+      "status": "operational"
+    },
+    "winders": {
+      "nch2_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch3_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "gl_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch2_rw": {"status": "Shaft Barrel Repair Project", "operational": false, "type": "rock_winder", "function": "ore_hoisting"}
+    },
+    "main_fans": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    },
+    "lamprooms": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    }
+  },
+  "dam_levels": {
+    "dd01": {
+      "friday": 101.0,
+      "saturday": 101.0,
+      "sunday": 100.9,
+      "status": "good"
+    },
+    "dd02": {
+      "friday": 78.8,
+      "saturday": 88.1,
+      "sunday": 87.8,
+      "status": "good"
+    }
+  },
+  "ore_pass_levels": {
+    "friday": 36.4,
+    "saturday": 36.4,
+    "sunday": 19.7,
+    "trend": "declining"
+  },
+  "production": {
+    "daily_summary": [
+      {
+        "day": "friday",
+        "actual": 183,
+        "target": null,
+        "note": "Shaft Barrel Repair Project"
+      },
+      {
+        "day": "saturday", 
+        "actual": 0,
+        "target": 1640,
+        "variance": -1640,
+        "note": "Shaft Barrel Repair Project"
+      },
+      {
+        "day": "sunday",
+        "actual": 1276,
+        "target": 1640,
+        "variance": -364,
+        "note": "Shaft Barrel Repair Project"
+      }
+    ]
+  },
+  "operational": {
+    "fire_scada_alarms": 0,
+    "block_chutes": 0
+  },
+  "source_validation": {
+    "dd01_sunday": {
+      "value": 100.9,
+      "source_line": 34,
+      "source_quote": "Sun: 100,9%",
+      "confidence": "HIGH"
+    },
+    "dd02_saturday": {
+      "value": 88.1,
+      "source_line": 40,
+      "source_quote": "Sat: 88,1%",
+      "confidence": "HIGH"
+    },
+    "sunday_production": {
+      "value": 1276,
+      "source_line": 47,
+      "source_quote": "Sun: 1276/1640 Shaft Barrel Repair Project",
+      "confidence": "HIGH"
+    }
+  },
+  "performance_summary": {
+    "key_issues": [
+      "Nch2 RW - Shaft Barrel Repair Project ongoing",
+      "Saturday production stopped due to repair project",
+      "Ore pass levels declining from 36.4% to 19.7%"
+    ],
+    "key_highlights": [
+      "All power supply systems operational",
+      "All manwinders operational",
+      "All main fans operational",
+      "Dam levels stable and adequate"
+    ]
+  }
+}
