@@ -1,0 +1,42 @@
+{
+  "report_metadata": {
+    "date": "2025-07-17",
+    "data_date": "2025-07-17",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "timestamp": null,
+    "report_type": "Daily Report"
+  },
+  "safety": {
+    "status": "no report",
+    "incidents": null,
+    "details": []
+  },
+  "production": {
+    "rom": {"actual": null, "target": null, "variance": null, "variance_percentage": null},
+    "decline": {"actual": null, "target": null, "variance": null, "variance_percentage": null},
+    "product": {"actual": null, "target": null, "variance": null, "variance_percentage": null},
+    "loads": [],
+    "blast": {"faces": null, "breakdown": null, "note": "No specific report found"}
+  },
+  "equipment_availability": {
+    "tmm": {"DT": null, "FL": null, "HD": null, "RT": null, "SR": null},
+    "specialized": []
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": null, "total": null}, "FL": {"available": null, "total": null},
+      "HD": {"available": null, "total": null}, "RT": {"available": null, "total": null}, "SR": {"available": null, "total": null}
+    }
+  },
+  "breakdowns": {"current_breakdowns": []},
+  "operational": {"main_fans": "no report", "plant_blockages": null, "fire_alarms": null},
+  "source_validation": {
+    "report_status": {
+      "value": "No specific report found for Nchwaning 3 in the provided WhatsApp data.",
+      "source_line": "N/A",
+      "source_quote": "N/A",
+      "confidence": "HIGH"
+    }
+  }
+}
