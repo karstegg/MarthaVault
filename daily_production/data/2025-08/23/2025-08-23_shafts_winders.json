@@ -1,0 +1,122 @@
+{
+  "report_metadata": {
+    "date": "2025-08-23",
+    "data_date": "2025-08-22",
+    "site": "Shafts & Winders",
+    "engineer": "Xavier Peterson", 
+    "timestamp": "04:47",
+    "report_type": "Weekly Report"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "infrastructure": {
+    "power_supply": {
+      "stoppages": 0,
+      "status": "operational"
+    },
+    "winders": {
+      "nch2_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch3_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "gl_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch2_rw": {"status": "operational", "operational": true, "type": "rock_winder", "function": "ore_hoisting"}
+    },
+    "main_fans": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    },
+    "lamprooms": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    }
+  },
+  "dam_levels": {
+    "dd01": {
+      "friday": 99.7,
+      "saturday": null,
+      "sunday": null,
+      "monday": null,
+      "tuesday": null,
+      "wednesday": null,
+      "thursday": null,
+      "status": "excellent"
+    },
+    "dd02": {
+      "friday": 82.4,
+      "saturday": null,
+      "sunday": null,
+      "monday": null,
+      "tuesday": null,
+      "wednesday": null,
+      "thursday": null,
+      "status": "good"
+    }
+  },
+  "ore_pass_levels": {
+    "friday": 47.3,
+    "saturday": null,
+    "sunday": null,
+    "monday": null,
+    "tuesday": null,
+    "wednesday": null,
+    "thursday": null
+  },
+  "production": {
+    "weekly_schedule": {
+      "friday": {"actual": 5567, "target": 6463, "variance": -896},
+      "saturday": {"actual": null, "target": 1577, "variance": null},
+      "sunday": {"actual": null, "target": 1577, "variance": null},
+      "monday": {"actual": null, "target": 5204, "variance": null},
+      "tuesday": {"actual": null, "target": 6623, "variance": null},
+      "wednesday": {"actual": null, "target": 6623, "variance": null},
+      "thursday": {"actual": null, "target": 5204, "variance": null}
+    }
+  },
+  "operational": {
+    "fire_scada_alarms": 0,
+    "block_chutes": 0
+  },
+  "operational_impact": {
+    "section_54_notice": true,
+    "infrastructure_status": "operational",
+    "note": "All infrastructure systems operational despite Section 54 safety restrictions on TMM operations"
+  },
+  "performance_summary": {
+    "key_issues": [
+      "Section 54 safety notice impacting operations due to N3 drill rig fire",
+      "Friday production below target (5,567t vs 6,463t target)"
+    ],
+    "key_highlights": [
+      "All critical infrastructure systems fully operational",
+      "No power stoppages across any sites",
+      "All winders operational (personnel transport and ore hoisting)",
+      "Main fans operational at all three sites",
+      "Excellent dam levels: DD01 at 99.7%, DD02 at 82.4%",
+      "No fire SCADA alarms or block chutes"
+    ]
+  },
+  "source_validation": {
+    "dam_levels": {
+      "value": "DD01: Fri: 99,7%, DD02: Fri: 82,4%",
+      "source_line": 2,
+      "source_quote": "DD01: Fri: 99,7% ... DD02: Fri: 82,4%",
+      "confidence": "HIGH"
+    },
+    "production_friday": {
+      "value": "5567/6463",
+      "source_line": 2, 
+      "source_quote": "Production: Fri: 5567/6463",
+      "confidence": "HIGH"
+    },
+    "ore_pass_levels": {
+      "value": "Fri: 47,3%",
+      "source_line": 2,
+      "source_quote": "Ore pass Levels: Fri: 47,3%",
+      "confidence": "HIGH"
+    }
+  }
+}
