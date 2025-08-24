@@ -10,34 +10,99 @@
   "safety": {
     "status": "clear",
     "incidents": 0,
-    "details": []
-  },
-  "production": {
-    "rom": {"actual": 4980, "target": 5202, "variance": -222, "variance_percentage": -4.27},
-    "decline": {"actual": null, "target": null, "variance": null, "variance_percentage": null},
-    "product": {"actual": null, "target": null, "variance": null, "variance_percentage": null},
-    "loads": [],
-    "blast": {"faces": null, "breakdown": null, "note": "Nothing Reported"}
-  },
-  "equipment_availability": {
-    "tmm": {"DT": null, "FL": null, "HD": null, "RT": null, "SR": null},
-    "specialized": []
-  },
-  "shift_readiness": {
-    "production_tmm": {
-      "DT": {"available": null, "total": null}, "FL": {"available": null, "total": null},
-      "HD": {"available": null, "total": null}, "RT": {"available": null, "total": null}, "SR": {"available": null, "total": null}
+    "details": [],
+    "source_validation": {
+      "status": {"value": "clear", "source_line": "7", "source_quote": "Safety:\nClear", "confidence": "HIGH"}
     }
   },
-  "breakdowns": {"current_breakdowns": [{"unit": "Nch3 PW", "issue": "Driver's Desk Bells Out of Order. Fix: Winder Technician Electrician Team did fault finding and were able to reset relay"}]},
-  "operational": {"main_fans": "operational", "plant_blockages": 0, "fire_alarms": 0},
-  "source_validation": {
-    "safety_status": {"value": "clear", "source_line": "7", "source_quote": "Safety:\nClear", "confidence": "HIGH"},
-    "rom_actual": {"value": 4980, "source_line": "45", "source_quote": "Thu: 4980/5202", "confidence": "HIGH"},
-    "rom_target": {"value": 5202, "source_line": "45", "source_quote": "Thu: 4980/5202", "confidence": "HIGH"},
-    "nch3_pw_breakdown": {"value": "Driver's Desk Bells Out of Order", "source_line": "15", "source_quote": "Delay:\nDriver's Desk Bells Out of Order \nFix:\nWinder Technician Electrician Team did fault finding and were able to reset relay", "confidence": "HIGH"},
-    "fire_alarms": {"value": 0, "source_line": "40", "source_quote": "Fire Scada Alarms:\n0", "confidence": "HIGH"},
-    "plant_blockages": {"value": 0, "source_line": "42", "source_quote": "Block Chutes:\nNone", "confidence": "HIGH"},
-    "main_fans_status": {"value": "operational", "source_line": "25", "source_quote": "Main Fans\nGL\nNo Stoppages \n\nNch2\nNo Stoppages \n\nNch3\nNo Stoppages", "confidence": "HIGH"}
+  "infrastructure": {
+    "power_supply": {
+      "stoppages": 0,
+      "status": "operational",
+      "details": "No Stoppages",
+      "source_validation": {
+        "status": {"value": "operational", "source_line": "10", "source_quote": "Power Supply:\nNo Stoppages", "confidence": "HIGH"}
+      }
+    },
+    "winders": {
+      "nch2_pw": {"status": "operational", "operational": true, "type": "manwinder", "details": "No Stoppages", "source_validation": {"status": {"value": "operational", "source_line": "13", "source_quote": "Nch2 PW\nNo Stoppages", "confidence": "HIGH"}}}, 
+      "nch3_pw": {"status": "issues", "operational": false, "type": "manwinder", "details": "Delay: Driver's Desk Bells Out of Order. Fix: Winder Technician Electrician Team did fault finding and were able to reset relay", "source_validation": {"status": {"value": "issues", "source_line": "16", "source_quote": "Nch3 PW\nDelay:\nDriver's Desk Bells Out of Order \nFix:\nWinder Technician Electrician Team did fault finding and were able to reset relay", "confidence": "HIGH"}}}, 
+      "gl_pw": {"status": "operational", "operational": true, "type": "manwinder", "details": "No Stoppages", "source_validation": {"status": {"value": "operational", "source_line": "21", "source_quote": "GL PW\nNo Stoppages", "confidence": "HIGH"}}}, 
+      "nch2_rw": {"status": "operational", "operational": true, "type": "rock_winder", "function": "ore_hoisting", "details": "No Stoppages", "source_validation": {"status": {"value": "operational", "source_line": "24", "source_quote": "Nch2 RW\nNo Stoppages", "confidence": "HIGH"}}}
+    },
+    "main_fans": {
+      "gloria": {"status": "operational", "operational": true, "details": "No Stoppages", "source_validation": {"status": {"value": "operational", "source_line": "27", "source_quote": "GL\nNo Stoppages", "confidence": "HIGH"}}}, 
+      "nchwaning2": {"status": "operational", "operational": true, "details": "No Stoppages", "source_validation": {"status": {"value": "operational", "source_line": "30", "source_quote": "Nch2 \nNo Stoppages", "confidence": "HIGH"}}}, 
+      "nchwaning3": {"status": "operational", "operational": true, "details": "No Stoppages", "source_validation": {"status": {"value": "operational", "source_line": "33", "source_quote": "Nch3 \nNo Stoppages", "confidence": "HIGH"}}}
+    },
+    "lamprooms": {
+      "gloria": {"status": "operational", "operational": true, "details": "No Stoppages", "source_validation": {"status": {"value": "operational", "source_line": "36", "source_quote": "GL\nNo Stoppages", "confidence": "HIGH"}}}, 
+      "nchwaning2": {"status": "operational", "operational": true, "details": "No Stoppages", "source_validation": {"status": {"value": "operational", "source_line": "39", "source_quote": "Nch2 \nNo Stoppages", "confidence": "HIGH"}}}, 
+      "nchwaning3": {"status": "operational", "operational": true, "details": "No Stoppages", "source_validation": {"status": {"value": "operational", "source_line": "42", "source_quote": "Nch3 \nNo Stoppages", "confidence": "HIGH"}}}
+    }
+  },
+  "dam_levels": {
+    "dd01": {
+      "level": 100.4,
+      "status": "good",
+      "daily_levels": {
+        "fri": 100.5, "sat": 100.5, "sun": 100.5, "mon": 100.4, "tue": 100.4, "wed": 100.4, "thu": 100.4
+      },
+      "source_validation": {
+        "level": {"value": 100.4, "source_line": "49", "source_quote": "Thu: 100,4%", "confidence": "HIGH"}
+      }
+    },
+    "dd02": {
+      "level": 86.7,
+      "status": "warning",
+      "daily_levels": {
+        "fri": 84.1, "sat": 82.5, "sun": 88.2, "mon": 82.1, "tue": 88.7, "wed": 82.3, "thu": 86.7
+      },
+      "source_validation": {
+        "level": {"value": 86.7, "source_line": "57", "source_quote": "Thu: 86,7%", "confidence": "HIGH"}
+      }
+    }
+  },
+  "ore_pass_levels": {
+    "current_level": 14.2,
+    "trend": "declining",
+    "daily_levels": {
+      "fri": 33.8, "sat": 22.1, "sun": 19.2, "mon": 43.2, "tue": 42.3, "wed": 14.4, "thu": 14.2
+    },
+    "source_validation": {
+      "current_level": {"value": 14.2, "source_line": "72", "source_quote": "Thu: 14,2%", "confidence": "HIGH"}
+    }
+  },
+  "production": {
+    "daily_summary": [
+      {"day": "Friday", "actual": 7207, "target": 6621, "variance": 586, "variance_percentage": 8.85, "source_validation": {"actual": {"value": 7207, "source_line": "63", "source_quote": "Fri: 7207/6621", "confidence": "HIGH"}}}, 
+      {"day": "Saturday", "actual": 259, "target": 1577, "variance": -1318, "variance_percentage": -83.58, "source_validation": {"actual": {"value": 259, "source_line": "64", "source_quote": "Sat: 259/1577", "confidence": "HIGH"}}}, 
+      {"day": "Sunday", "actual": 1384, "target": 1577, "variance": -193, "variance_percentage": -12.24, "source_validation": {"actual": {"value": 1384, "source_line": "65", "source_quote": "Sun: 1384/1577", "confidence": "HIGH"}}}, 
+      {"day": "Monday", "actual": 5798, "target": 5202, "variance": 596, "variance_percentage": 11.46, "source_validation": {"actual": {"value": 5798, "source_line": "66", "source_quote": "Mon: 5798/5202", "confidence": "HIGH"}}}, 
+      {"day": "Tuesday", "actual": 6562, "target": 6621, "variance": -59, "variance_percentage": -0.89, "source_validation": {"actual": {"value": 6562, "source_line": "67", "source_quote": "Tue: 6562/6621", "confidence": "HIGH"}}}, 
+      {"day": "Wednesday", "actual": 6703, "target": 6621, "variance": 82, "variance_percentage": 1.24, "source_validation": {"actual": {"value": 6703, "source_line": "68", "source_quote": "Wed: 6703/6621", "confidence": "HIGH"}}}, 
+      {"day": "Thursday", "actual": 4980, "target": 5202, "variance": -222, "variance_percentage": -4.27, "source_validation": {"actual": {"value": 4980, "source_line": "69", "source_quote": "Thu: 4980/5202", "confidence": "HIGH"}}}
+    ]
+  },
+  "operational": {
+    "fire_scada_alarms": 0,
+    "block_chutes": 0,
+    "source_validation": {
+      "fire_scada_alarms": {"value": 0, "source_line": "59", "source_quote": "Fire Scada Alarms:\n0", "confidence": "HIGH"},
+      "block_chutes": {"value": 0, "source_line": "61", "source_quote": "Block Chutes:\nNone", "confidence": "HIGH"}
+    }
+  },
+  "performance_summary": {
+    "key_issues": [
+      {"priority": "⚠️ MEDIUM", "issue": "Nch3 PW Driver's Desk Bells Out of Order, now resolved."}, 
+      {"priority": "🔴 HIGH", "issue": "Dam DD02 level at 86.7%, below optimal."}, 
+      {"priority": "🔴 URGENT", "issue": "Ore pass levels are critically low at 14.2% and declining, indicating potential material flow issues."}, 
+      {"priority": "🔴 HIGH", "issue": "Production significantly below target on Saturday and Sunday."}
+    ],
+    "key_highlights": [
+      {"highlight": "Safety clear with no incidents reported."}, 
+      {"highlight": "Power supply, Nch2 PW, GL PW, Nch2 RW, Main Fans, and Lamprooms all operational with no stoppages."}, 
+      {"highlight": "Dam DD01 maintained at 100.4%."}
+    ]
   }
 }

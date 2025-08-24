@@ -1,50 +1,107 @@
+
 ---
 JSONData:: [[2025-07-18_nchwaning2.json]]
 ---
 
 # Nchwaning 2 Daily Report
-**Date**: 2025-07-18 (Data from 2025-07-18)
-**Engineer**: [[Sikelela Nzuza]]
-**Site**: Nchwaning 2
+**Date**: July 18, 2025 (Data from July 17, 2025)  
+**Engineer**: [[Sikelela Nzuza]]  
+**Site**: Nchwaning 2  
 
-## Safety Status
-✅ **Status** - Clear
+## 📊 NO REPORT RECEIVED
 
-## Production Performance
+### Safety Status
+⚠️ **NO REPORT** - No safety information was reported for this period.
+
+### Production Performance
+⚠️ **PERFORMANCE SUMMARY** - No production data was reported for Nchwaning 2.
+
 | Metric | Actual | Target | Variance | Performance |
 |--------|--------|--------|----------|-------------|
-| **ROM** | 4574t | 6903t | -2329t | **66.26% (-33.74% variance)** 🔴 |
-| **Product** | 4920t | 6514t | -1594t | **75.53% (-24.47% variance)** ⚠️ |
+| **ROM** | Nothing Reported | Nothing Reported | Nothing Reported | **Nothing Reported** [⚠️] |
+| **Decline** | Nothing Reported | Nothing Reported | Nothing Reported | **Nothing Reported** [⚠️] |
+| **Product** | Nothing Reported | Nothing Reported | Nothing Reported | **Nothing Reported** [⚠️] |
+
+#### Load & Haul Fleet Performance (Truckloads Tipped by Shift)
+| Shift | Loads | Target | Performance |
+|-------|-------|--------|-------------|
+| Day | Nothing Reported | - | **Nothing Reported** [⚠️] |
+| Afternoon | Nothing Reported | - | **Nothing Reported** [⚠️] |
+| Night | Nothing Reported | - | **Nothing Reported** [⚠️] |
+| **Total** | **Nothing Reported** | **-** | **Nothing Reported** [⚠️] |
+
+Additional load performance details, staging information, or shift-specific notes: No load and haul performance details were reported.
+
+#### Blast Performance
+- **Nothing Reported**
 
 ### Equipment Status
+
+#### TMM Availability
 | Equipment | Availability | Status |
 |-----------|-------------|---------|
-| **DT** | **93%** | 🟢 Good performance |
-| **FL** | **80%** | ⚠️ Needs attention |
-| **HD** | **91%** | 🟢 Good performance |
-| **RT** | **91%** | 🟢 Good performance |
-| **SR** | **95%** | 🟢 Good performance |
-| **DZ** | **100%** | 🟢 Good performance |
-| **GD** | **100%** | 🟢 Good performance |
+| **DT** | **Nothing Reported** | [⚠️] Nothing Reported |
+| **FL** | **Nothing Reported** | [⚠️] Nothing Reported |
+| **HD** | **Nothing Reported** | [⚠️] Nothing Reported |
+| **RT** | **Nothing Reported** | [⚠️] Nothing Reported |
+| **SR** | **Nothing Reported** | [⚠️] Nothing Reported |
+
+**Poor Performance Analysis:**
+- No equipment availability data was reported.
+
+#### Equipment Readiness (Start of Shift)
+- **DT**: Nothing Reported [⚠️]
+- **FL**: Nothing Reported [⚠️]
+- **HD**: Nothing Reported [⚠️]
+- **RT**: Nothing Reported [⚠️]
+- **SR**: Nothing Reported [⚠️]
+
+### Current Breakdowns (0 Units)
+
+#### Equipment Issues
+- No breakdowns were reported.
+
+### Support Equipment Summary
+- **Emulsion UV**: Nothing Reported [⚠️] Nothing Reported.
+- **Logistics UV**: Nothing Reported [⚠️] Nothing Reported.
+- **Sampling UV**: Nothing Reported [⚠️] Nothing Reported.
+- **Survey UV**: Nothing Reported [⚠️] Nothing Reported.
+- **Specialized Equipment**: Nothing Reported [⚠️] Nothing Reported.
+
+### Infrastructure Status
+- **Main Fans**: Nothing Reported [⚠️]
+- **Plant Blockages**: Nothing Reported [⚠️]
+- **Fire Alarms**: Nothing Reported [⚠️]
+
+## Performance Summary
+- **Safety**: No report received [⚠️]
+- **Production**: No report received [⚠️]
+- **Equipment**: No report received [⚠️]
+- **Operations**: No report received [⚠️]
+
+## Supplemental Information
+
+### Silo Management
+#### Surface Silos
+| Silo | Level | Status |
+|------|-------|--------|
+| Silo 1 | Nothing Reported | [⚠️] Nothing Reported |
+| Silo 2 | Nothing Reported | [⚠️] Nothing Reported |
+| Silo 3 | Nothing Reported | [⚠️] Nothing Reported |
+| Silo 4 | Nothing Reported | [⚠️] Nothing Reported |
+
+#### Underground Silos
+| Silo | Level | Status |
+|------|-------|--------|
+| Silo 74 | Nothing Reported | [⚠️] Nothing Reported |
+| Silo HG | Nothing Reported | [⚠️] Nothing Reported |
+| Silo D | Nothing Reported | [⚠️] Nothing Reported |
+| Silo LG | Nothing Reported | [⚠️] Nothing Reported |
 
 ### Critical Issues
-1. **🔴 URGENT**: ROM Production shortfall of 33.74%
-2. **⚠️ MEDIUM**: Product Production shortfall of 24.47%
-3. **⚠️ MEDIUM**: FL Availability at 80%
-4. **⚠️ MEDIUM**: DT120 - door controller
-5. **⚠️ MEDIUM**: HD65 - hyd hose
-6. **⚠️ MEDIUM**: RT38 - oil sensor
-7. **⚠️ MEDIUM**: RT40 - drifter
-8. **⚠️ MEDIUM**: SR25 - wheel frame
-9. **⚠️ MEDIUM**: UV90 - water pump & timing
-10. **⚠️ MEDIUM**: UV37 - steering
-11. **⚠️ MEDIUM**: UV54 - oil leak
-12. **⚠️ MEDIUM**: UV84 - engine cut off
-13. **⚠️ MEDIUM**: UV137 - CAS level 9
-14. **⚠️ MEDIUM**: UV133 - brakes
-15. **⚠️ MEDIUM**: SR46 - hyd pump crack
+1. **📊 FOLLOW-UP**: No daily production report was received for Nchwaning 2. This requires follow-up to ensure all operational data is captured.
 
 ---
-*Report processed: 2025-08-24 | Data period: 2025-07-18 | Source: WhatsApp 05:49*
+*Report processed: 2025-07-18 | Data period: 2025-07-17 | Source: WhatsApp N/A*
 
-#daily-production #nchwaning2 #sikelela-nzuza #year/2025
+#daily-production #nchwaning2 #no-report #sikelela-nzuza #year/2025

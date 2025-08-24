@@ -1,38 +1,116 @@
+
 {
   "report_metadata": {
     "date": "2025-07-18",
     "data_date": "2025-07-17",
     "site": "Nchwaning 3",
     "engineer": "Sello Sease",
-    "timestamp": "04:51",
+    "timestamp": null,
     "report_type": "Daily Report"
   },
   "safety": {
-    "status": "clear",
-    "incidents": 0,
-    "details": []
+    "status": "no_report",
+    "incidents": null,
+    "details": [],
+    "source_validation": {
+      "status": {"value": "no_report", "source_line": null, "source_quote": "No report available", "confidence": "LOW"}
+    }
   },
   "production": {
-    "rom": {"actual": null, "target": null, "variance": null, "variance_percentage": null},
-    "decline": {"actual": null, "target": null, "variance": null, "variance_percentage": null},
-    "product": {"actual": null, "target": null, "variance": null, "variance_percentage": null},
-    "loads": [],
-    "blast": {"faces": null, "breakdown": null, "note": "Nothing Reported"}
+    "rom": {
+      "actual": null,
+      "target": null,
+      "variance": null,
+      "variance_percentage": null,
+      "unit": "tonnes",
+      "source_validation": {
+        "actual": {"value": null, "source_line": null, "source_quote": "No report available", "confidence": "LOW"}
+      }
+    },
+    "decline": {
+      "actual": null,
+      "target": null,
+      "variance": null,
+      "variance_percentage": null,
+      "unit": "tonnes",
+      "source_validation": {
+        "actual": {"value": null, "source_line": null, "source_quote": "No report available", "confidence": "LOW"}
+      }
+    },
+    "product": {
+      "actual": null,
+      "target": null,
+      "variance": null,
+      "variance_percentage": null,
+      "unit": "tonnes",
+      "source_validation": {
+        "actual": {"value": null, "source_line": null, "source_quote": "No report available", "confidence": "LOW"}
+      }
+    },
+    "loads": [
+      {"shift": "day", "load_number": 1, "truckloads_tipped": null, "target": null, "source_validation": {"truckloads_tipped": {"value": null, "source_line": null, "source_quote": "No report available", "confidence": "LOW"}}},
+      {"shift": "afternoon", "load_number": 2, "truckloads_tipped": null, "target": null, "source_validation": {"truckloads_tipped": {"value": null, "source_line": null, "source_quote": "No report available", "confidence": "LOW"}}},
+      {"shift": "night", "load_number": 3, "truckloads_tipped": null, "target": null, "source_validation": {"truckloads_tipped": {"value": null, "source_line": null, "source_quote": "No report available", "confidence": "LOW"}}}
+    ],
+    "blast": {
+      "faces": null,
+      "breakdown": null,
+      "note": "No report available",
+      "source_validation": {
+        "faces": {"value": null, "source_line": null, "source_quote": "No report available", "confidence": "LOW"}
+      }
+    }
   },
   "equipment_availability": {
-    "tmm": {"DT": null, "FL": null, "HD": null, "RT": null, "SR": null},
+    "tmm": {
+      "DT": null,
+      "FL": null,
+      "HD": null,
+      "RT": null,
+      "SR": null,
+      "source_validation": {
+        "DT": {"value": null, "source_line": null, "source_quote": "No report available", "confidence": "LOW"}
+      }
+    },
     "specialized": []
   },
   "shift_readiness": {
     "production_tmm": {
-      "DT": {"available": null, "total": null}, "FL": {"available": null, "total": null},
-      "HD": {"available": null, "total": null}, "RT": {"available": null, "total": null}, "SR": {"available": null, "total": null}
+      "DT": {"available": null, "total": null},
+      "FL": {"available": null, "total": null},
+      "HD": {"available": null, "total": null},
+      "RT": {"available": null, "total": null},
+      "SR": {"available": null, "total": null}
+    },
+    "support_uvs": []
+  },
+  "breakdowns": {
+    "current_breakdowns": []
+  },
+  "operational": {
+    "main_fans": null,
+    "plant_blockages": null,
+    "fire_alarms": null,
+    "source_validation": {
+      "plant_blockages": {"value": null, "source_line": null, "source_quote": "No report available", "confidence": "LOW"}
     }
   },
-  "breakdowns": {"current_breakdowns": []},
-  "operational": {"main_fans": "operational", "plant_blockages": null, "fire_alarms": null},
-  "source_validation": {
-    "safety_status": {"value": "clear", "source_line": "7", "source_quote": "Safety:\nClear", "confidence": "HIGH"},
-    "main_fans_status": {"value": "operational", "source_line": "25", "source_quote": "Main Fans\nGL\nNo Stoppages \n\nNch2\nNo Stoppages \n\nNch3\nNo Stoppages", "confidence": "HIGH"}
+  "silo_levels": {
+    "surface": {
+      "silo_1": null, "silo_2": null, "silo_3": null, "silo_4": null
+    },
+    "underground": {
+      "silo_74": null, "silo_hg": null, "silo_d": null, "silo_lg": null
+    }
+  },
+  "specialized_equipment": {
+    "manitou": {"available": null, "total": 1, "availability": null},
+    "manlifts": {"available": null, "total": 0, "availability": null}
+  },
+  "performance_summary": {
+    "key_issues": [
+      {"priority": "📊 FOLLOW-UP", "issue": "No daily production report was received for Nchwaning 3."}
+    ],
+    "key_highlights": []
   }
 }
