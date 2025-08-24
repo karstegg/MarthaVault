@@ -2,34 +2,32 @@
 JSONData:: [[2025-07-15_gloria.json]]
 ---
 
-# Gloria Daily Report
-**Date**: July 15, 2025 (Data from July 15, 2025)  
+# Gloria Mine Daily Report
+**Date**: July 15, 2025 (Data from July 14, 2025)  
 **Engineer**: [[Sipho Dubazane]]  
-**Site**: Gloria  
+**Site**: Gloria Mine  
 
-## 🟢✅ STRONG PRODUCTION PERFORMANCE
+## ⚠️ Production Performance Below Target, Critical Equipment Issues
 
 ### Safety Status
 ✅ **CLEAR** - No incidents reported
 
 ### Production Performance
-🟢 **EXCELLENT PERFORMANCE - ALL METRICS EXCEED TARGETS**
+⚠️ **Mixed performance with strong ROM, Decline, and Product, but some equipment availability concerns.**
 
 | Metric | Actual | Target | Variance | Performance |
 |--------|--------|--------|----------|-------------|
-| **ROM** | 4,188t | 3,873t | +315t | **8.1% above target** 🟢 |
-| **Decline** | 4,939t | 3,873t | +1,066t | **27.5% above target** 🟢 |
-| **Product** | 2,767t | 1,887t | +880t | **46.6% above target** 🟢 |
+| **ROM** | 4,188t | 3,873t | +315t | **108.1% (8.1% above target)** 🟢 |
+| **Decline** | 4,939t | 3,873t | +1,066t | **127.5% (27.5% above target)** 🟢 |
+| **Product** | 2,767t | 1,887t | +880t | **146.6% (46.6% above target)** 🟢 |
 
 #### Load & Haul Fleet Performance (Truckloads Tipped by Shift)
 | Shift | Loads | Target | Performance |
 |-------|-------|--------|-------------|
-| Day | 76 | - | **Excellent** 🟢 |
-| Afternoon | 62 | - | **Good** 🟢 |
-| Night | 55 | - | **Good** 🟢 |
-| **Total** | **193** | **-** | **Strong Load Performance** |
-
-Excellent truckload performance across all shifts with consistent production flow.
+| Day | 76 | - | **Strong performance** 🟢 |
+| Afternoon | 62 | - | **Good performance** 🟢 |
+| Night | 55 | - | **Good performance** 🟢 |
+| **Total** | **193** | **-** | **Consistent load tipping across shifts** |
 
 #### Blast Performance
 - **Nothing Reported**
@@ -39,16 +37,16 @@ Excellent truckload performance across all shifts with consistent production flo
 #### TMM Availability
 | Equipment | Availability | Status |
 |-----------|-------------|---------|
-| **DT** | **99%** | 🟢✅ Excellent availability |
-| **FL** | **79%** | ⚠️ Below optimal - needs attention |
-| **HD** | **99%** | 🟢✅ Excellent availability |
-| **RT** | **55%** | 🔴 Critical - significant issues |
-| **SR** | **35%** | 🔴 Critical - major problems |
+| **DT** | **99%** | 🟢 **Excellent availability** |
+| **FL** | **79%** | ⚠️ **Below optimal, requires attention** |
+| **HD** | **99%** | 🟢 **Excellent availability** |
+| **RT** | **55%** | 🔴 **Critical availability issues** |
+| **SR** | **35%** | 🔴 **Critical availability issues** |
 
 **Poor Performance Analysis:**
-- **FL**: Below optimal at 79% - FL0083 speed sensor/bucket movement issue
-- **RT**: Critical availability at 55% - RT0045 boom not moving, RT0046 percussion issues
-- **SR**: Critical availability at 35% - SR0037 tail frame problem
+- **FL**: Availability at 79% indicates some units were out of service.
+- **RT**: Critical availability at 55% due to multiple breakdowns (Boom not moving, Percussion).
+- **SR**: Critical availability at 35% due to tail frame issues.
 
 #### Equipment Readiness (Start of Shift)
 - **DT**: 6/6 available (100%) 🟢
@@ -59,31 +57,31 @@ Excellent truckload performance across all shifts with consistent production flo
 
 ### Current Breakdowns (4 Units)
 
-#### FL Equipment Issues
-- **FL0083**: Speed sensor/ Bucket movement
+#### Front-end Loader Equipment Issues
+- **FL0083**: Speed sensor/Bucket movement
 
-#### SR Equipment Issues
+#### Scraper Equipment Issues
 - **SR0037**: Tail frame
 
-#### RT Equipment Issues
+#### Roof Bolter Equipment Issues
 - **RT0045**: Boom not moving
 - **RT0046**: Percussion
 
 ### Support Equipment Summary
-- **Emulsion UV**: 100% 🟢 (2/2 available)
-- **Manitou**: 100% 🟢 (1/1 available)
-- **Manlifts**: 100% 🟢 (2/2 available)
+- **Emulsion UV**: 100% 🟢 Operational
+- **Manitou**: 100% 🟢 Operational
+- **Manlifts**: 100% 🟢 Operational
 
 ### Infrastructure Status
-- **Main Fans**: In Order 🟢
+- **Main Fans**: Operational 🟢
 - **Plant Blockages**: None 🟢
 - **Fire Alarms**: None 🟢
 
 ## Performance Summary
-- **Safety**: Clear status - no incidents 🟢
-- **Production**: Exceptional performance - all targets exceeded 🟢
-- **Equipment**: Mixed - excellent DT/HD, critical RT/SR issues 🔴⚠️
-- **Operations**: All infrastructure operational 🟢
+- **Safety**: Clear 🟢
+- **Production**: Strong ROM, Decline, and Product figures, exceeding targets. 🟢
+- **Equipment**: Significant availability issues with Roof Bolters (RT) and Scrapers (SR), impacting overall fleet readiness. 🔴
+- **Operations**: Main fans, plant blockages, and fire alarms all clear. Silo levels are being managed. 🟢
 
 ## Supplemental Information
 
@@ -91,32 +89,25 @@ Excellent truckload performance across all shifts with consistent production flo
 #### Surface Silos
 | Silo | Level | Status |
 |------|-------|--------|
-| Silo 1 | 16% | 🔴 Low level - requires attention |
-| Silo 2 | 21% | 🔴 Low level - requires attention |
-| Silo 3 | 95% | 🟢 Excellent level |
-| Silo 4 | 81% | 🟢 Good level |
+| Silo 1 | 16% | 🔴 Low |
+| Silo 2 | 21% | 🔴 Low |
+| Silo 3 | 95% | 🟢 Optimal |
+| Silo 4 | 81% | ⚠️ Moderate |
 
 #### Underground Silos
 | Silo | Level | Status |
 |------|-------|--------|
-| Silo 74 | 22% | ⚠️ Below optimal level |
-| Silo HG | 18% | 🔴 Low level - requires attention |
-| Silo D | 17% | 🔴 Low level - requires attention |
-| Silo LG | 19% | 🔴 Low level - requires attention |
+| Silo 74 | 22% | 🔴 Low |
+| Silo HG | 18% | 🔴 Low |
+| Silo D | 17% | 🔴 Low |
+| Silo LG | 19% | 🔴 Low |
 
-### Key Operational Notes
-**Strengths:**
-- Outstanding production performance with all metrics exceeding targets
-- Excellent DT and HD equipment reliability
-- Perfect support equipment availability
-- Strong load & haul performance across all shifts
-
-**Areas Requiring Immediate Attention:**
-- RT and SR equipment critical availability issues
-- Multiple silo levels below optimal (particularly surface silos 1 & 2)
-- Underground silo levels generally low across all units
+### Critical Issues Section
+1. **🔴 URGENT**: **Roof Bolter (RT) Availability**: Only 55% available due to multiple breakdowns. This directly impacts drilling and bolting operations.
+2. **🔴 URGENT**: **Scraper (SR) Availability**: Only 35% available due to tail frame issues. This significantly affects scraping and cleaning activities.
+3. **⚠️ MEDIUM**: **Front-end Loader (FL) Availability**: At 79%, it requires attention to prevent further decline and ensure optimal loading capacity.
 
 ---
-*Report processed: 2025-07-15 | Data period: 2025-07-15 | Source: WhatsApp 04:36*
+*Report processed: 2025-07-15 | Data period: 2025-07-14 | Source: WhatsApp 04:36*
 
-#daily-production #gloria #excellent-performance #equipment-issues #sipho-dubazane #year/2025
+#daily-production #gloria #critical-equipment #sipho-dubazane #year/2025

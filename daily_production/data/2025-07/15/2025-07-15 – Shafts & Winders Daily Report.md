@@ -3,74 +3,69 @@ JSONData:: [[2025-07-15_shafts_winders.json]]
 ---
 
 # Shafts & Winders Daily Report
-**Date**: July 15, 2025 (Daily Report - Data covering Monday July 15, 2025)  
+**Date**: July 15, 2025 (Daily Report - Data from July 14, 2025)  
 **Engineer**: [[Xavier Peterson]]  
 
-## 🟢✅ INFRASTRUCTURE OPERATIONAL STATUS
+## 🟢 INFRASTRUCTURE STATUS SUMMARY
 
 ### Safety Status
 ✅ **CLEAR** - No incidents reported
 
 ### Infrastructure Status
-🟢 **ALL SYSTEMS OPERATIONAL**
+🟢 **All critical infrastructure systems are operational with no major stoppages.**
 
 #### Power Supply
 - **Status**: No Stoppages 🟢
-- **Operational**: All systems running normally
+- **Operational**: Power supply was stable with no reported interruptions.
 
 #### Winders (All Sites)
 | Winder | Site | Type | Status |
 |--------|------|------|--------|
-| **Nch2 PW** | Nchwaning 2 | Manwinder | 🟢 No Stoppages |
-| **Nch3 PW** | Nchwaning 3 | Manwinder | 🟢 No Stoppages |
-| **GL PW** | Gloria | Manwinder | 🟢 No Stoppages |
-| **Nch2 RW** | Nchwaning 2 | Rock Winder (Ore Hoisting) | 🟢 No Stoppages |
+| **Nch2 PW** | Nchwaning 2 | Manwinder | 🟢 Operational |
+| **Nch3 PW** | Nchwaning 3 | Manwinder | 🟢 Operational |
+| **GL PW** | Gloria | Manwinder | 🟢 Operational |
+| **Nch2 RW** | Nchwaning 2 | Rock Winder (Ore Hoisting) | 🟢 Operational |
 
 #### Main Fans (All Sites)
 | Site | Status |
 |------|--------|
-| **Gloria** | 🟢 No Stoppages |
-| **Nchwaning 2** | 🟢 No Stoppages |
-| **Nchwaning 3** | 🟢 No Stoppages |
+| **Gloria** | 🟢 Operational |
+| **Nchwaning 2** | 🟢 Operational |
+| **Nchwaning 3** | 🟢 Operational |
 
 #### Lamprooms (All Sites)
 | Site | Status |
 |------|--------|
-| **Gloria** | 🟢 No Stoppages |
-| **Nchwaning 2** | 🟢 No Stoppages |
-| **Nchwaning 3** | 🟢 No Stoppages |
+| **Gloria** | 🟢 Operational |
+| **Nchwaning 2** | 🟢 Operational |
+| **Nchwaning 3** | 🟢 Operational |
 
 ### Water Management
 
 #### Dam Levels (Daily Tracking)
-| Dam | Monday | Status |
-|-----|--------|--------|
-| **DD01** | **100.4%** | 🟢 Excellent level |
-| **DD02** | **82.1%** | 🟢 Good level |
+| Dam | Mon | Status |
+|-----|-------------|--------|
+| **DD01** | **100.4%** | 🟢 Optimal |
+| **DD02** | **82.1%** | ⚠️ Moderate |
 
 #### Ore Pass Levels
-- **Monday**: 43.2%
-- **Status**: Stable operational level
+- **Mon**: 43.2%
+- **Tracking Period**: Levels show an improving trend.
 
 ### Production Daily Performance
 
-#### Multi-Day Production Summary
+#### Daily Production Summary
 | Day | Actual | Target | Variance | Performance | Status |
 |-----|--------|--------|----------|-------------|--------|
-| **Friday** | **7,207t** | **6,621t** | **+586t** | **108.8%** | 🟢 Excellent |
-| **Saturday** | **259t** | **1,577t** | **-1,318t** | **16.4%** | 🔴 Critical underperformance |
-| **Sunday** | **1,384t** | **1,577t** | **-193t** | **87.8%** | ⚠️ Below target |
-| **Monday** | **5,798t** | **5,202t** | **+596t** | **111.5%** | 🟢 Excellent |
+| **Monday** | **5,798t** | **5,202t** | **+596t** | **111.5%** | 🟢 Above Target |
 
 ### Operational Status
-- **Fire SCADA Alarms**: 4 🔴 (NON-EMERGENCY COMMS FAILURE ALARMS)
+- **Fire SCADA Alarms**: 4 x NON-EMERGENCY COMMS FAILURE ALARMS ⚠️
 - **Block Chutes**: None 🟢
 
 ## Actions Required
 
-1. **🔴 URGENT**: Investigate and resolve 4 NON-EMERGENCY COMMS FAILURE ALARMS on Fire SCADA system
-2. **📊 FOLLOW-UP**: Review Saturday production critical underperformance (-83.6%)
-3. **📋 ROUTINE**: Monitor dam levels - maintain DD01 and DD02 operational ranges
+1. **⚠️ MEDIUM**: **Investigate Non-Emergency Comms Failure Alarms**: Four non-emergency SCADA communication failure alarms were reported. While not critical, these should be investigated to ensure system integrity.
 
 ## Supplemental Information
 
@@ -81,31 +76,20 @@ JSONData:: [[2025-07-15_shafts_winders.json]]
 - **Main Fans**: Ventilation systems essential for underground safety
 - **Support Infrastructure**: Power supply, lamprooms, and related systems
 
-### Daily Infrastructure Overview
-- **Power Systems**: Operational - no stoppages 🟢
-- **Winding Systems**: All operational - no stoppages 🟢
-- **Ventilation**: All main fans operational 🟢
-- **Safety Systems**: Fire SCADA alarms require attention 🔴
-- **Water Management**: Dam levels excellent and good 🟢
+### Daily Details
+- **Power Systems**: Stable with no reported stoppages. 🟢
+- **Winding Systems**: All winders across Nchwaning 2, Nchwaning 3, and Gloria are operational. 🟢
+- **Ventilation**: Main fans at all sites are operational. 🟢
+- **Safety Systems**: Lamprooms are operational. Fire SCADA alarms indicate non-emergency comms failures, requiring follow-up. ⚠️
+- **Water Management**: DD01 dam level is optimal, DD02 is moderate. Ore pass levels are improving. 🟢
 
-### Performance Analysis
-**Strengths:**
-- All critical infrastructure systems operational
-- Excellent dam level management
-- Strong Monday and Friday production performance
-- No stoppages across power, winder, fan, or lamproom systems
-
-**Areas Requiring Attention:**
-- Fire SCADA communication failures need immediate investigation
-- Weekend production significantly impacted (Saturday critical)
-- Production consistency between weekdays and weekends
-
-**Trends:**
-- Weekday production excellent (Friday 108.8%, Monday 111.5%)
-- Weekend production problematic (Saturday 16.4%, Sunday 87.8%)
-- Infrastructure reliability maintaining high standards
+### Analysis/Trends Section
+- Overall infrastructure performance is strong, with all critical systems operational.
+- Production from the Nchwaning 2 Rock Winder exceeded its target for Monday, July 14, 2025.
+- Dam levels are stable, with DD01 at full capacity and DD02 at a healthy level.
+- The non-emergency SCADA alarms require investigation to maintain system reliability.
 
 ---
-*Report processed: 2025-07-15 | Data period: July 12-15, 2025 | Source: WhatsApp 04:59*
+*Report processed: 2025-07-15 | Data period: 2025-07-14 | Source: WhatsApp 04:59*
 
-#daily-production #shafts-winders #infrastructure #fire-scada-alarms #xavier-peterson #operational #year/2025
+#daily-production #shafts-winders #infrastructure #xavier-peterson #operational #year/2025

@@ -1,11 +1,11 @@
 {
   "report_metadata": {
     "date": "2025-07-15",
-    "data_date": "2025-07-15",
+    "data_date": "2025-07-14",
     "site": "Nchwaning 3",
     "engineer": "Sello Sease",
     "timestamp": "05:15",
-    "timezone": "UTC+00:00"
+    "report_type": "Daily Report"
   },
   "safety": {
     "status": "clear",
@@ -13,61 +13,32 @@
     "details": []
   },
   "production": {
-    "rom": {
-      "actual": 3632,
-      "target": 8060,
-      "variance": -4428,
-      "variance_percentage": -55.0
-    },
-    "decline": {
-      "actual": 5238,
-      "target": 5911,
-      "variance": -673,
-      "variance_percentage": -11.4
-    },
-    "product": {
-      "actual": 7364,
-      "target": 5438,
-      "variance": 1926,
-      "variance_percentage": 35.4
-    },
+    "rom": {"actual": 3632, "target": 8060, "variance": -4428, "variance_percentage": 45.06, "unit": "tonnes"},
+    "decline": {"actual": 5238, "target": 5911, "variance": -673, "variance_percentage": 88.61, "unit": "tonnes"},
+    "product": {"actual": 7364, "target": 5438, "variance": 1926, "variance_percentage": 135.42, "unit": "tonnes"},
     "loads": [
       {"shift": "day", "load_number": 1, "truckloads_tipped": 72, "target": null},
       {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 90, "target": null},
       {"shift": "night", "load_number": 3, "truckloads_tipped": 51, "target": null}
     ],
-    "blast": {
-      "faces": 15,
-      "breakdown": "15 Mn faces, 3 foot walls",
-      "note": "Detailed blast information provided"
-    }
+    "blast": {"faces": 15, "breakdown": "3 foot walls", "note": "15 Mn faces, 3 foot walls"}
   },
   "equipment_availability": {
-    "tmm": {
-      "HD": 91,
-      "DT": 80,
-      "FL": 82,
-      "RT": 91,
-      "SR": 84
-    },
+    "tmm": {"DT": 80, "FL": 82, "HD": 91, "RT": 91, "SR": 84},
     "specialized": [
-      {"code": "UV", "description": "General UV", "availability": 100},
-      {"code": "GD11", "description": "Grader", "availability": 100},
-      {"code": "DZ11", "description": "Dozer", "availability": 100},
-      {"code": "UV044", "description": "Specialized UV", "availability": 78}
+      {"code": "UV", "availability": 100},
+      {"code": "GD", "availability": 100},
+      {"code": "DZ", "availability": 100},
+      {"code": "UV044", "availability": 78}
     ]
   },
   "shift_readiness": {
     "production_tmm": {
-      "HD": {"available": 8, "total": 9, "availability_percentage": 89},
-      "DT": {"available": 10, "total": 14, "availability_percentage": 71},
-      "FL": {"available": 7, "total": 10, "availability_percentage": 70},
-      "RT": {"available": 10, "total": 10, "availability_percentage": 100},
-      "SR": {"available": 6, "total": 10, "availability_percentage": 60}
-    },
-    "support_equipment": {
-      "manlifts": {"available": 4, "total": 4, "availability_percentage": 100},
-      "emulsion_uv": {"available": 4, "total": 4, "availability_percentage": 100}
+      "DT": {"available": 10, "total": 14},
+      "FL": {"available": 7, "total": 10},
+      "HD": {"available": 8, "total": 9},
+      "RT": {"available": 10, "total": 10},
+      "SR": {"available": 6, "total": 10}
     }
   },
   "breakdowns": {
@@ -83,112 +54,57 @@
     ]
   },
   "operational": {
-    "main_fans": null,
-    "plant_blockages": 0,
-    "fire_alarms": 0,
-    "crusher_blockages": 1,
-    "crusher_details": "60CV01 - x1 reported"
-  },
-  "performance_summary": {
-    "key_issues": [
-      "ROM significantly below target by 55.0% (-4,428t)",
-      "Decline below target by 11.4% (-673t)",
-      "8 equipment breakdowns requiring attention",
-      "1 crusher blockage (60CV01)",
-      "DT availability at 80% (below optimal)",
-      "FL availability at 82% (below optimal)",
-      "SR availability at 84% (below optimal)"
-    ],
-    "key_highlights": [
-      "Product exceeded target by 35.4% (+1,926t)",
-      "Excellent load performance: 72, 90, 51 truckloads",
-      "Good HD and RT availability at 91%",
-      "All support equipment operational (manlifts, emulsion UV)",
-      "Detailed blast information: 15 Mn faces, 3 foot walls",
-      "No fire alarms reported",
-      "Safety status clear"
-    ]
+    "main_fans": "no report",
+    "plant_blockages": 1,
+    "fire_alarms": 0
   },
   "source_validation": {
-    "rom": {
-      "value": 3632,
-      "source_line": 5,
-      "source_quote": "*ROM*\n3632 vs 8060",
-      "confidence": "HIGH"
-    },
-    "decline": {
-      "value": 5238,
-      "source_line": 8,
-      "source_quote": "*Decline*\n5238 vs 5911",
-      "confidence": "HIGH"
-    },
-    "product": {
-      "value": 7364,
-      "source_line": 11,
-      "source_quote": "*Product*\n7364 vs 5438",
-      "confidence": "HIGH"
-    },
-    "loads": {
-      "value": [72, 90, 51],
-      "source_line": 14,
-      "source_quote": "*LOADS*\n72, 90, 51",
-      "confidence": "HIGH"
-    },
-    "blast": {
-      "value": "15 Mn faces, 3 foot walls",
-      "source_line": 16,
-      "source_quote": "*Blast*\n15 Mn faces, 3 foot walls",
-      "confidence": "HIGH"
-    },
-    "tmm_availability": {
-      "HD": {
-        "value": 91,
-        "source_line": 19,
-        "source_quote": "HDs: 91",
-        "confidence": "HIGH"
-      },
-      "DT": {
-        "value": 80,
-        "source_line": 20,
-        "source_quote": "DTs: 80",
-        "confidence": "HIGH"
-      },
-      "FL": {
-        "value": 82,
-        "source_line": 21,
-        "source_quote": "FLs: 82",
-        "confidence": "HIGH"
-      },
-      "RT": {
-        "value": 91,
-        "source_line": 22,
-        "source_quote": "RTs: 91",
-        "confidence": "HIGH"
-      },
-      "SR": {
-        "value": 84,
-        "source_line": 23,
-        "source_quote": "SRs: 84",
-        "confidence": "HIGH"
-      }
-    },
-    "shift_readiness": {
-      "value": "Multiple equipment counts",
-      "source_line": 29,
-      "source_quote": "HDs: 8/9\nDTs: 10/14\nFLs: 7/10\nRTs: 10/10\nSRs: 6/10",
-      "confidence": "HIGH"
-    },
-    "breakdowns": {
-      "value": "8 units listed",
-      "source_line": 41,
-      "source_quote": "DT0147 - Awaiting electrical communication cable\nDT0146 - Charging\nDT0150 - Gears\nDT0161 - Gears\nFL0107 - Half arrows repair\nHD0062 - Front centre LHB\nSR0030 - Tag system faulty\nUV0047 - Brakes not releasing",
-      "confidence": "HIGH"
-    },
-    "crusher_blockage": {
-      "value": 1,
-      "source_line": 57,
-      "source_quote": "*Crusher and chute        blockage**\n60CV01 - x1 reported",
-      "confidence": "HIGH"
-    }
+    "safety_status": {"value": "Clear", "source_line": "196", "source_quote": "Clear", "confidence": "HIGH"},
+    "rom_actual": {"value": 3632, "source_line": "199", "source_quote": "3632", "confidence": "HIGH"},
+    "rom_target": {"value": 8060, "source_line": "199", "source_quote": "8060", "confidence": "HIGH"},
+    "decline_actual": {"value": 5238, "source_line": "202", "source_quote": "5238", "confidence": "HIGH"},
+    "decline_target": {"value": 5911, "source_line": "202", "source_quote": "5911", "confidence": "HIGH"},
+    "product_actual": {"value": 7364, "source_line": "205", "source_quote": "7364", "confidence": "HIGH"},
+    "product_target": {"value": 5438, "source_line": "205", "source_quote": "5438", "confidence": "HIGH"},
+    "loads_day": {"value": 72, "source_line": "208", "source_quote": "72", "confidence": "HIGH"},
+    "loads_afternoon": {"value": 90, "source_line": "208", "source_quote": "90", "confidence": "HIGH"},
+    "loads_night": {"value": 51, "source_line": "208", "source_quote": "51", "confidence": "HIGH"},
+    "blast_faces": {"value": 15, "source_line": "211", "source_quote": "15 Mn faces", "confidence": "HIGH"},
+    "blast_breakdown": {"value": "3 foot walls", "source_line": "211", "source_quote": "3 foot walls", "confidence": "HIGH"},
+    "tmm_hds_availability": {"value": 91, "source_line": "214", "source_quote": "91", "confidence": "HIGH"},
+    "tmm_dts_availability": {"value": 80, "source_line": "215", "source_quote": "80", "confidence": "HIGH"},
+    "tmm_fls_availability": {"value": 82, "source_line": "216", "source_quote": "82", "confidence": "HIGH"},
+    "tmm_rts_availability": {"value": 91, "source_line": "217", "source_quote": "91", "confidence": "HIGH"},
+    "tmm_srs_availability": {"value": 84, "source_line": "218", "source_quote": "84", "confidence": "HIGH"},
+    "tmm_uvs_availability": {"value": 100, "source_line": "219", "source_quote": "100", "confidence": "HIGH"},
+    "gd11_availability": {"value": 100, "source_line": "221", "source_quote": "100", "confidence": "HIGH"},
+    "dz11_availability": {"value": 100, "source_line": "222", "source_quote": "100", "confidence": "HIGH"},
+    "uv044_availability": {"value": 78, "source_line": "223", "source_quote": "78", "confidence": "HIGH"},
+    "sos_hds_available": {"value": 8, "source_line": "226", "source_quote": "8", "confidence": "HIGH"},
+    "sos_hds_total": {"value": 9, "source_line": "226", "source_quote": "9", "confidence": "HIGH"},
+    "sos_dts_available": {"value": 10, "source_line": "227", "source_quote": "10", "confidence": "HIGH"},
+    "sos_dts_total": {"value": 14, "source_line": "227", "source_quote": "14", "confidence": "HIGH"},
+    "sos_fls_available": {"value": 7, "source_line": "228", "source_quote": "7", "confidence": "HIGH"},
+    "sos_fls_total": {"value": 10, "source_line": "228", "source_quote": "10", "confidence": "HIGH"},
+    "sos_rts_available": {"value": 10, "source_line": "229", "source_quote": "10", "confidence": "HIGH"},
+    "sos_rts_total": {"value": 10, "source_line": "229", "source_quote": "10", "confidence": "HIGH"},
+    "sos_srs_available": {"value": 6, "source_line": "230", "source_quote": "6", "confidence": "HIGH"},
+    "sos_srs_total": {"value": 10, "source_line": "230", "source_quote": "10", "confidence": "HIGH"},
+    "sos_uvs_available": {"value": 9, "source_line": "231", "source_quote": "9", "confidence": "HIGH"},
+    "sos_uvs_total": {"value": 9, "source_line": "231", "source_quote": "9", "confidence": "HIGH"},
+    "manlifts_available": {"value": 4, "source_line": "233", "source_quote": "4", "confidence": "HIGH"},
+    "manlifts_total": {"value": 4, "source_line": "233", "source_quote": "4", "confidence": "HIGH"},
+    "emulsion_uv_available": {"value": 4, "source_line": "235", "source_quote": "4", "confidence": "HIGH"},
+    "emulsion_uv_total": {"value": 4, "source_line": "235", "source_quote": "4", "confidence": "HIGH"},
+    "breakdown_dt0147": {"value": "Awaiting electrical communication cable", "source_line": "238", "source_quote": "DT0147 - Awaiting electrical communication cable", "confidence": "HIGH"},
+    "breakdown_dt0146": {"value": "Charging", "source_line": "239", "source_quote": "DT0146 - Charging", "confidence": "HIGH"},
+    "breakdown_dt0150": {"value": "Gears", "source_line": "240", "source_quote": "DT0150 - Gears", "confidence": "HIGH"},
+    "breakdown_dt0161": {"value": "Gears", "source_line": "241", "source_quote": "DT0161 - Gears", "confidence": "HIGH"},
+    "breakdown_fl0107": {"value": "Half arrows repair", "source_line": "242", "source_quote": "FL0107 - Half arrows repair", "confidence": "HIGH"},
+    "breakdown_hd0062": {"value": "Front centre LHB", "source_line": "243", "source_quote": "HD0062 - Front centre LHB", "confidence": "HIGH"},
+    "breakdown_sr0030": {"value": "Tag system faulty", "source_line": "244", "source_quote": "SR0030 - Tag system faulty", "confidence": "HIGH"},
+    "breakdown_uv0047": {"value": "Brakes not releasing", "source_line": "245", "source_quote": "UV0047 - Brakes not releasing", "confidence": "HIGH"},
+    "fire_alarms_status": {"value": "None", "source_line": "248", "source_quote": "None", "confidence": "HIGH"},
+    "crusher_chute_blockage": {"value": "x1 reported", "source_line": "251", "source_quote": "x1 reported", "confidence": "HIGH"}
   }
 }

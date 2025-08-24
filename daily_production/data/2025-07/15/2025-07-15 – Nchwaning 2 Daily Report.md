@@ -3,127 +3,99 @@ JSONData:: [[2025-07-15_nchwaning2.json]]
 ---
 
 # Nchwaning 2 Daily Report
-**Date**: July 15, 2025 (Data from July 15, 2025)  
-**Engineer**: [[Johan Kotze]]  
+**Date**: July 15, 2025 (Data from July 14, 2025)  
+**Engineer**: [[Sikelela Nzuza]]  
 **Site**: Nchwaning 2  
 
-## 🟡⚠️ MIXED PERFORMANCE - PRODUCTION CHALLENGES
+## ⚠️ Production and Equipment Availability Concerns
 
 ### Safety Status
 ✅ **CLEAR** - No incidents reported
 
 ### Production Performance
-🔴 **BELOW TARGET PERFORMANCE - BOTH ROM AND PRODUCT UNDERPERFORMING**
+⚠️ **ROM performance is good, but Product is below optimal. Blast data is incomplete.**
 
 | Metric | Actual | Target | Variance | Performance |
 |--------|--------|--------|----------|-------------|
-| **ROM** | 6,390t | 6,903t | -513t | **7.4% below target** ⚠️ |
-| **Product** | 4,677t | 6,514t | -1,837t | **28.2% below target** 🔴 |
+| **ROM** | 6,390t | 6,903t | -513t | **92.6% (7.4% below target)** 🟢 |
+| **Decline** | Nothing Reported | Nothing Reported | Nothing Reported | **Nothing Reported** |
+| **Product** | 4,677t | 6,514t | -1,837t | **71.8% (28.2% below target)** ⚠️ |
 
 #### Load & Haul Fleet Performance (Truckloads Tipped by Shift)
 | Shift | Loads | Target | Performance |
 |-------|-------|--------|-------------|
-| Day | 67 | - | **Good** 🟢 |
-| Afternoon | 83 | - | **Excellent** 🟢 |
-| Night | 58 | - | **Good** 🟢 |
-| **Total** | **208** | **-** | **Strong Load Performance** |
-
-Excellent truckload performance across all shifts - load & haul operations performing well despite production shortfalls.
+| Day | 67 | - | **Good performance** 🟢 |
+| Afternoon | 83 | - | **Strong performance** 🟢 |
+| Night | 58 | - | **Good performance** 🟢 |
+| **Total** | **208** | **-** | **Consistent load tipping across shifts** |
 
 #### Blast Performance
-- **Partial data**: ? vs 16 planned
-- **Status**: Blast data partially reported
+- **Target**: 16 faces. Actual not reported.
 
 ### Equipment Status
 
 #### TMM Availability
 | Equipment | Availability | Status |
 |-----------|-------------|---------|
-| **DT** | **84%** | ⚠️ Below optimal - needs attention |
-| **FL** | **74%** | 🔴 Critical - significant issues |
-| **HD** | **95%** | 🟢 Excellent availability |
-| **RT** | **95%** | 🟢 Excellent availability |
-| **SR** | **99%** | 🟢✅ Excellent availability |
+| **DT** | **84%** | ⚠️ **Below optimal, requires attention** |
+| **FL** | **74%** | ⚠️ **Below optimal, requires attention** |
+| **HD** | **95%** | 🟢 **Good availability** |
+| **RT** | **95%** | 🟢 **Good availability** |
+| **SR** | **99%** | 🟢 **Excellent availability** |
 
 **Poor Performance Analysis:**
-- **DT**: Below optimal at 84% - DT120 door controller issues
-- **FL**: Critical availability at 74% - FL86 bucket pin, FL85 propshaft problems
+- **DT**: Availability at 84% indicates some units were out of service.
+- **FL**: Availability at 74% indicates some units were out of service, impacting loading capacity.
 
 #### Equipment Readiness (Start of Shift)
-- **DT**: 8/9 available (89%) ⚠️ (DT120 door controller)
-- **FL**: 5/6 available (83%) ⚠️ (FL86 bucket pin)
+- **DT**: 8/9 available (89%) ⚠️ (DT120 door controller issue)
+- **FL**: 5/6 available (83%) ⚠️ (FL86 bucket pin issue)
 - **HD**: 6/6 available (100%) 🟢
 - **RT**: 6/6 available (100%) 🟢
 - **SR**: 6/6 available (100%) 🟢
 
-### Current Breakdowns (9 Units)
+### Current Breakdowns (7 Units)
 
-#### DT Equipment Issues
-- **DT120**: door controller
+#### Utility Vehicle Equipment Issues
+- **UV90**: Water pump & timing
+- **UV37**: Gears
+- **UV59**: Engine
+- **UV54**: Oil leak
+- **UV133**: Brakes
 
-#### FL Equipment Issues
-- **FL86**: bucket pin
-- **FL85**: propshaft
+#### Front-end Loader Equipment Issues
+- **FL85**: Propshaft
 
-#### UV Equipment Issues
-- **UV90**: water pump & timing
-- **UV37**: gears
-- **UV59**: engine
-- **UV54**: oil leak
-- **UV133**: brakes
-
-#### SR Equipment Issues
-- **SR46**: oil leak
+#### Scraper Equipment Issues
+- **SR46**: Oil leak
 
 ### Support Equipment Summary
-- **DZ13 (Dozer)**: 100% 🟢
-- **GD12 (Grader)**: 100% 🟢
-- **Emulsion UV**: 100% 🟢 (3/3 available - UV62, 66, 108)
-- **Logistics UV**: 33% 🔴 Critical availability (1/3 available - UV54, 59, 120)
-- **Sampling Manlifts**: 100% 🟢 (2/2 available - UV77, 123)
-- **Survey Manlifts**: 100% 🟢 (2/2 available - UV98, 99)
+- **Dozer (DZ13)**: 100% 🟢 Operational
+- **Grader (GD12)**: 100% 🟢 Operational
+- **Emulsion UVs**: 100% 🟢 Operational
+- **Logistics UV**: 33% 🔴 Critical availability due to multiple breakdowns.
+- **Sampling UV**: 100% 🟢 Operational
+- **Survey UV**: 100% 🟢 Operational
 
 ### Infrastructure Status
-- **Main Fans**: Nothing Reported
+- **Main Fans**: No report
 - **Plant Blockages**: 0 🟢
-- **Fire Alarms**: no report
+- **Fire Alarms**: No report
 
 ## Performance Summary
-- **Safety**: Clear status - no incidents 🟢
-- **Production**: Below target performance - ROM and Product underperforming 🔴⚠️
-- **Equipment**: Mixed - excellent SR/RT/HD, critical FL, below optimal DT 🔴⚠️
-- **Operations**: Plant operations clear, infrastructure status unclear 🟡
+- **Safety**: Clear 🟢
+- **Production**: ROM is good, but Product is significantly below target. Blast data is incomplete. ⚠️
+- **Equipment**: TMM availability for DT and FL is below optimal. Logistics UV availability is critical due to multiple breakdowns. 🔴
+- **Operations**: Plant blockages are clear. Main fans and fire alarm status not reported. ⚠️
 
 ## Supplemental Information
 
-### Equipment Performance Analysis
-**Strengths:**
-- Strong load & haul performance (208 total loads)
-- Excellent SR availability at 99%
-- Good RT and HD availability at 95%
-- Strong support equipment performance (dozers, graders, specialized UV)
-
-**Critical Issues:**
-- **Production Shortfalls**: ROM 7.4% below, Product 28.2% below target
-- **FL Equipment Crisis**: 74% availability with multiple breakdowns
-- **Logistics UV Critical**: Only 33% availability affecting material movement
-- **High Breakdown Count**: 9 units currently down requiring attention
-
-### Equipment Breakdown Priority
-**Immediate Attention Required:**
-1. **FL86**: Bucket pin repair (affecting shift readiness)
-2. **DT120**: Door controller (affecting shift readiness)
-3. **UV54**: Oil leak (affecting logistics operations)
-4. **UV59**: Engine repair (affecting logistics operations)
-
-**Secondary Priority:**
-- UV90, UV37, UV133: Various mechanical issues
-- FL85, SR46: Oil leak and propshaft repairs
-
-### Site Identification Note
-⚠️ **Source message lacked explicit site header** - Site identified through content analysis and engineer assignment patterns. Recommend requesting engineers use clear site identifiers (e.g., "N2:", "N3:") in future reports.
+### Critical Issues Section
+1. **🔴 URGENT**: **Logistics UV Availability**: Only 33% available due to multiple breakdowns (UV59 engine, UV54 oil leak, UV133 brakes). This severely impacts logistics support.
+2. **⚠️ MEDIUM**: **Product Production Shortfall**: Product is 28.2% below target, requiring immediate attention to identify and address root causes.
+3. **⚠️ MEDIUM**: **DT and FL Availability**: Both Dump Trucks and Front-end Loaders are operating below optimal availability, impacting overall production efficiency.
 
 ---
-*Report processed: 2025-07-15 | Data period: 2025-07-15 | Source: WhatsApp 05:10*
+*Report processed: 2025-07-15 | Data period: 2025-07-14 | Source: WhatsApp 05:10*
 
-#daily-production #nchwaning2 #production-challenges #equipment-issues #johan-kotze #below-target #year/2025
+#daily-production #nchwaning2 #equipment-issues #sikelela-nzuza #year/2025
