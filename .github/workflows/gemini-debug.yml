@@ -1,0 +1,21 @@
+name: gemini-debug
+on: workflow_dispatch
+
+permissions:
+  contents: read
+  pull-requests: write
+  id-token: write   # needed only if you later switch to WIF/Vertex
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: google-github-actions/run-gemini-cli@v0.1.11
+        with:
+          gemini_api_key: ${{ secrets.GEMINI_API_KEY }}   # or use WIF; see notes below
+          gemini_model: gemini-2.5-flash
+          gemini_debug: true
+          settings: |
+            {"model": "gemini-2.5-flash", "projectRoot": ".", "contextFiles": ["GEMINI.md"]}
+          prompt: "Say 'ok', print CLI version, and confirm the model in use."
