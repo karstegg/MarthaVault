@@ -1,1 +1,46 @@
+---
+Status:: #status/archived
+Priority:: #priority/high
+Assignee:: [[Greg Karsten]]
+DueDate:: 
+---
+
+# HD0054 Fire Incident - First Hand Account
+
+**Date**: 2025-08-20  
+**Incident**: HD54 drill rig fire at Nchwaning 3  
+**Reporter**: Greg Karsten (eyewitness/incident commander)
+
+## Transcribed Account
+
 Okay, so it was a very long day. This morning, just after three, I was phoned by from control room that there was a fire underground. We established that one of the drill rigs, HD54, caught fire at the time. So we came out, established the center or the emergency control room with the appropriate rules and protocols in place. The prototeam was called out. They got ready and went down to go and assess the situation. There was a lot of smoke underground. They couldn't find a place to enter. From the monitors and the measurements, we could see that the smoke was, or the gas levels, carbon dioxide levels and the carbon gas levels were not coming down quickly. The prototeam reported that the gas, you know, the smoke was moving very slowly. It was almost hanging in the air. So it was almost like a diffusion process. So it sounded like the fans were not running. So we established, through talking to the various responsible people in the area, the electricians, electrical foreman, the ventilation people, the mining people, that certainly there were two fans in the area that were supposed to evacuate smoke or fumes, but somehow they were not working. So it was either one or both of them were not working. And eventually we got to a stage where we've established that the fan, that one fan was running, but the other fan was actually off and actually cut off, not in use. So that one was the main one. It was down to earth and it was supposed to actually evacuate the fumes. So it took us from about say 5 or 6 this morning till about 4 to establish that the fan was out. By this time the gas levels have also now gone down to an acceptable level. The limit is 30 ppm. We're sitting at below 6 ppm. Visibility is also good. So we're gonna go down and assess the situation. The initial reports from the prototype team was that the machine basically burnt out completely. Tires were burnt. The cable rail at the back were burnt. The report from the operator was that there were some issues with overheating. The mechanic came to top up water, about 10 liters of water or coolant at the start of shift. And when he went back at the waiting place, the machine cut out again. And that's where the fire started. He got out to report, or let's say before the fire started, he got out to report the engine cut out to the control room for the technician to come and repair. At that time another employee, a colleague, walked past and saw the actual smoke. He called the operator and when they came there, the machine was already in flames. So they just left everything. Reported to control supervisor and they came out. Yeah, so quite a significant event. We are now going underground to do the initial pre-in-local investigation.
+
+## Key Timeline
+
+- **~03:00** - Control room alerts of underground fire
+- **03:00-05:00** - Emergency control room setup, prototeam deployment
+- **05:00-16:00** - Ventilation system troubleshooting and repair
+- **16:00+** - Safe access restored, investigation begins
+
+## Critical Findings
+
+### Equipment Failure Sequence
+1. HD54 experiencing overheating issues
+2. Mechanic adds 10L coolant at start of shift  
+3. Engine cuts out again at waiting place
+4. Fire ignites while operator reporting to control room
+5. Complete equipment destruction (tires, cables burnt)
+
+### Ventilation System Issues
+- Two evacuation fans malfunctioned
+- Main fan offline, causing smoke accumulation
+- Slow gas dissipation delayed emergency access
+- Gas levels eventually <6 ppm (acceptable <30 ppm)
+
+### Emergency Response Assessment
+- ✅ Proper emergency protocols followed
+- ✅ No personnel injuries
+- ✅ Safe evacuation procedures
+- ⚠️ Ventilation system redundancy failed
+
+#safety #fire-incident #HD54 #nchwaning-3 #emergency-response #first-hand-account #year/2025

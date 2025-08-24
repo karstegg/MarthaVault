@@ -1,0 +1,2 @@
+I think I want to split the daily_production reports from MarthaVault and make it its own vault. 
+However, I'm not sure if we can just create another CLAUDE.md file in the folder the daily_production folder, or if we should create a totally separate folder with its own folder in the Google Drive. I would need some guidance from Claude on this.

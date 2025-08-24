@@ -823,3 +823,4 @@ NEVER proactively create documentation files (*.md) or README files. Only create
 - we are in a region with timezone UCT+2
 - memory please update claude.md and any other applicable file to reflect the new calender plugin methods and rules
 - remember that my timezone is utc+2
+- the id for UG Eng Management Group on Whatsapp
