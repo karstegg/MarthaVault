@@ -1,0 +1,76 @@
+{
+  "report_metadata": {
+    "date": "2025-07-18",
+    "data_date": "2025-07-18",
+    "site": "Nchwaning 2",
+    "engineer": "Sikelela Nzuza",
+    "timestamp": "05:49",
+    "report_type": "Daily Report"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {"actual": 4574, "target": 6903, "variance": -2329, "variance_percentage": -33.74},
+    "decline": {"actual": null, "target": null, "variance": null, "variance_percentage": null},
+    "product": {"actual": 4920, "target": 6514, "variance": -1594, "variance_percentage": -24.47},
+    "loads": [{"shift": "day", "load_number": 1, "truckloads_tipped": 49, "target": null}, {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 24, "target": null}, {"shift": "night", "load_number": 3, "truckloads_tipped": 58, "target": null}],
+    "blast": {"faces": null, "breakdown": null, "note": "? vs16"
+  }
+  },
+  "equipment_availability": {
+    "tmm": {"DT": 93, "FL": 80, "HD": 91, "RT": 91, "SR": 95},
+    "specialized": [{"code": "DZ", "availability": 100}, {"code": "GD", "availability": 100}]
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 8, "total": 9}, "FL": {"available": 6, "total": 6},
+      "HD": {"available": 5, "total": 6}, "RT": {"available": 4, "total": 6}, "SR": {"available": 5, "total": 6}
+    }
+  },
+  "breakdowns": {"current_breakdowns": [
+    {"unit": "DT120", "issue": "door controller"},
+    {"unit": "HD65", "issue": "hyd hose"},
+    {"unit": "RT38", "issue": "oil sensor"},
+    {"unit": "RT40", "issue": "drifter"},
+    {"unit": "SR25", "issue": "wheel frame"},
+    {"unit": "UV90", "issue": "water pump & timing"},
+    {"unit": "UV37", "issue": "steering"},
+    {"unit": "UV54", "issue": "oil leak"},
+    {"unit": "UV84", "issue": "engine cut off"},
+    {"unit": "UV137", "issue": "CAS level 9"},
+    {"unit": "UV133", "issue": "brakes"},
+    {"unit": "SR46", "issue": "hyd pump crack"}
+  ]},
+  "operational": {"main_fans": null, "plant_blockages": 0, "fire_alarms": 0},
+  "source_validation": {
+    "safety_status": {"value": "Clear", "source_line": "50", "source_quote": "*Safety*  Clear", "confidence": "HIGH"},
+    "rom_actual": {"value": 4574, "source_line": "52", "source_quote": "*ROM:*             4574 v 6903t", "confidence": "HIGH"},
+    "rom_target": {"value": 6903, "source_line": "52", "source_quote": "*ROM:*             4574 v 6903t", "confidence": "HIGH"},
+    "product_actual": {"value": 4920, "source_line": "53", "source_quote": "*Product:*       4920 v 6514t", "confidence": "HIGH"},
+    "product_target": {"value": 6514, "source_line": "53", "source_quote": "*Product:*       4920 v 6514t", "confidence": "HIGH"},
+    "loads": {"value": "49, 24, 58", "source_line": "54", "source_quote": "*Loads:*           49, 24, 58", "confidence": "HIGH"},
+    "blast_note": {"value": "? vs16", "source_line": "56", "source_quote": "*Blast:Actual vs Plan* ? vs16", "confidence": "HIGH"},
+    "dt_availability": {"value": 93, "source_line": "59", "source_quote": "DTs: 93%", "confidence": "HIGH"},
+    "fl_availability": {"value": 80, "source_line": "60", "source_quote": "FLs: 80%", "confidence": "HIGH"},
+    "hd_availability": {"value": 91, "source_line": "61", "source_quote": "HDs: 91%", "confidence": "HIGH"},
+    "rt_availability": {"value": 91, "source_line": "62", "source_quote": "RTs: 91%", "confidence": "HIGH"},
+    "sr_availability": {"value": 95, "source_line": "63", "source_quote": "SRs: 95%", "confidence": "HIGH"},
+    "dz_availability": {"value": 100, "source_line": "65", "source_quote": "DZ13: 100%", "confidence": "HIGH"},
+    "gd_availability": {"value": 100, "source_line": "66", "source_quote": "GD12: 100%", "confidence": "HIGH"},
+    "dt_shift_readiness": {"value": "8/9", "source_line": "69", "source_quote": "DT:  8/9    DT120 door controller ", "confidence": "HIGH"},
+    "fl_shift_readiness": {"value": "6/6", "source_line": "70", "source_quote": "FL:  6/6     ", "confidence": "HIGH"},
+    "hd_shift_readiness": {"value": "5/6", "source_line": "71", "source_quote": "HD: 5/6     HD65 hyd hose ", "confidence": "HIGH"},
+    "rt_shift_readiness": {"value": "4/6", "source_line": "72", "source_quote": "RT:  4/6     RT38 oil sensor, RT40 drifter ", "confidence": "HIGH"},
+    "sr_shift_readiness": {"value": "5/6", "source_line": "73", "source_quote": "SR:  5/6     SR25 wheel frame", "confidence": "HIGH"},
+    "uv_emulsion_availability": {"value": "100%", "source_line": "76", "source_quote": "(UV62,66,108) = 100%", "confidence": "HIGH"},
+    "uv_logistics_availability": {"value": "66%", "source_line": "79", "source_quote": "(UV54,59,120)= 66% ", "confidence": "HIGH"},
+    "uv_sampling_availability": {"value": "100%", "source_line": "81", "source_quote": "Sampling (UV77,123) = 100% ", "confidence": "HIGH"},
+    "uv_survey_availability": {"value": "100%", "source_line": "82", "source_quote": "Survey (UV98,99) = 100%", "confidence": "HIGH"},
+    "breakdowns": {"value": "UV90- water pump & timing, UV37- steering, UV54- oil leak, UV84- engine cut off, UV137- CAS level 9, UV133- brakes, SR46- hyd pump crack", "source_line": "85", "source_quote": "UV90- water pump & timing\nUV37- steering \nUV54- oil leak \nUV84- engine cut off \nUV137- CAS level 9\nUV133- brakes \nSR46- hyd pump crack", "confidence": "HIGH"},
+    "plant_blockages": {"value": 0, "source_line": "93", "source_quote": "Plant blockages- 0", "confidence": "HIGH"},
+    "fire_alarms": {"value": 0, "source_line": "94", "source_quote": "Fire alarms- 0", "confidence": "HIGH"}
+  }
+}
