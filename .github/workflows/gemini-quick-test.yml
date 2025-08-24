@@ -343,13 +343,8 @@ jobs:
           # Commit the generated files
           git commit -m "feat: Add Gemini-generated daily reports for $TARGET_DATE
 
-📊 Generated Files:
-- JSON: ${{ steps.verify_files.outputs.json_files_count }} files
-- Markdown: ${{ steps.verify_files.outputs.md_files_count }} files
-- Total: ${{ steps.verify_files.outputs.total_files }} files
-
-🤖 Generated with Gemini 2.5 Flash via GitHub Actions
-🔗 Workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          📊 Generated Files: ${{ steps.verify_files.outputs.total_files }} total
+          🤖 Generated with Gemini 2.5 Flash via GitHub Actions"
           
           # Push to repository
           git push origin master
