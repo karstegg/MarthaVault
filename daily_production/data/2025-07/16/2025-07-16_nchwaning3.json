@@ -1,0 +1,77 @@
+{
+  "report_metadata": {
+    "date": "2025-07-16",
+    "data_date": "2025-07-16",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "timestamp": "04:58",
+    "report_type": "Daily Report"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {"actual": 5759, "target": 8060, "variance": -2301, "variance_percentage": -28.55, "unit": "tonnes"},
+    "decline": {"actual": 5333, "target": 7881, "variance": -2548, "variance_percentage": -32.33, "unit": "tonnes"},
+    "product": {"actual": 3815, "target": 7250, "variance": -3435, "variance_percentage": -47.38, "unit": "tonnes"},
+    "loads": [{"shift": "day", "load_number": 1, "truckloads_tipped": 65, "target": null}, {"shift": "afternoon", "load_number": 1, "truckloads_tipped": 72, "target": null}, {"shift": "night", "load_number": 1, "truckloads_tipped": 44, "target": null}],
+    "blast": {"faces": 17, "breakdown": 1, "note": "17 Mn faces, 1 foot wall"}
+  },
+  "equipment_availability": {
+    "tmm": {"DT": 77, "FL": 92, "HD": 85, "RT": 78, "SR": 80},
+    "specialized": [{"code": "UV", "availability": 98}, {"code": "GD", "availability": 29}, {"code": "DZ", "availability": 100}, {"code": "UV044", "availability": 81}]
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 10, "total": 12}, "FL": {"available": 9, "total": 10},
+      "HD": {"available": 7, "total": 9}, "RT": {"available": 8, "total": 10}, "SR": {"available": 8, "total": 10}
+    }
+  },
+  "breakdowns": {"current_breakdowns": [{"unit": "DT0147", "issue": "Recovered to w/shop for further repairs"}, {"unit": "DT0149", "issue": "Oil leak"}, {"unit": "DT0150", "issue": "Gears"}, {"unit": "DT0161", "issue": "Gears"}, {"unit": "FL0107", "issue": "Half arrows repair"}, {"unit": "FL0113", "issue": "TCU error"}, {"unit": "HD0051", "issue": "Water box"}, {"unit": "HD0056", "issue": "Fire suppression"}, {"unit": "RT0025", "issue": "Park brake"}, {"unit": "RT0048", "issue": "Drill plug trip"}, {"unit": "RT0051", "issue": "Feed chain"}, {"unit": "RT0055", "issue": "Electrical"}, {"unit": "UV0044", "issue": "Pedals repair"}, {"unit": "SR0047", "issue": "Brakes"}, {"unit": "UV0126", "issue": "Reverse alarm"}]},
+  "operational": {"main_fans": "operational", "plant_blockages": 0, "fire_alarms": 0},
+  "source_validation": {
+    "safety_status": {"value": "Clear", "source_line": "159", "source_quote": "Clear", "confidence": "HIGH"},
+    "rom_actual": {"value": 5759, "source_line": "161", "source_quote": "5759", "confidence": "HIGH"},
+    "rom_target": {"value": 8060, "source_line": "161", "source_quote": "8060", "confidence": "HIGH"},
+    "decline_actual": {"value": 5333, "source_line": "163", "source_quote": "5333", "confidence": "HIGH"},
+    "decline_target": {"value": 7881, "source_line": "163", "source_quote": "7881", "confidence": "HIGH"},
+    "product_actual": {"value": 3815, "source_line": "165", "source_quote": "3815", "confidence": "HIGH"},
+    "product_target": {"value": 7250, "source_line": "165", "source_quote": "7250", "confidence": "HIGH"},
+    "loads": {"value": "65(9), 72(11), 44(6)", "source_line": "167", "source_quote": "65(9), 72(11), 44(6)", "confidence": "HIGH"},
+    "blast_note": {"value": "17 Mn faces, 1 foot wall", "source_line": "170", "source_quote": "17 Mn faces, 1 foot wall", "confidence": "HIGH"},
+    "hd_availability": {"value": 85, "source_line": "173", "source_quote": "85", "confidence": "HIGH"},
+    "dt_availability": {"value": 77, "source_line": "174", "source_quote": "77", "confidence": "HIGH"},
+    "fl_availability": {"value": 92, "source_line": "175", "source_quote": "92", "confidence": "HIGH"},
+    "rt_availability": {"value": 78, "source_line": "176", "source_quote": "78", "confidence": "HIGH"},
+    "sr_availability": {"value": 80, "source_line": "177", "source_quote": "80", "confidence": "HIGH"},
+    "uv_availability": {"value": 98, "source_line": "178", "source_quote": "98", "confidence": "HIGH"},
+    "gd11_availability": {"value": 29, "source_line": "180", "source_quote": "29", "confidence": "HIGH"},
+    "dz11_availability": {"value": 100, "source_line": "181", "source_quote": "100", "confidence": "HIGH"},
+    "uv044_availability": {"value": 81, "source_line": "182", "source_quote": "81", "confidence": "HIGH"},
+    "hd_sos": {"value": "7/9", "source_line": "185", "source_quote": "7/9", "confidence": "HIGH"},
+    "dt_sos": {"value": "10/12", "source_line": "186", "source_quote": "10/12", "confidence": "HIGH"},
+    "fl_sos": {"value": "9/10", "source_line": "187", "source_quote": "9/10", "confidence": "HIGH"},
+    "rt_sos": {"value": "8/10", "source_line": "188", "source_quote": "8/10", "confidence": "HIGH"},
+    "sr_sos": {"value": "8/10", "source_line": "189", "source_quote": "8/10", "confidence": "HIGH"},
+    "uv_sos": {"value": "9/9", "source_line": "190", "source_quote": "9/9", "confidence": "HIGH"},
+    "dt0147_breakdown": {"value": "Recovered to w/shop for further repairs", "source_line": "195", "source_quote": "DT0147 - Recovered to w/shop for further repairs", "confidence": "HIGH"},
+    "dt0149_breakdown": {"value": "Oil leak", "source_line": "196", "source_quote": "DT0149 - Oil leak", "confidence": "HIGH"},
+    "dt0150_breakdown": {"value": "Gears", "source_line": "197", "source_quote": "DT0150 - Gears", "confidence": "HIGH"},
+    "dt0161_breakdown": {"value": "Gears", "source_line": "198", "source_quote": "DT0161 - Gears", "confidence": "HIGH"},
+    "fl0107_breakdown": {"value": "Half arrows repair", "source_line": "199", "source_quote": "FL0107 - Half arrows repair", "confidence": "HIGH"},
+    "fl0113_breakdown": {"value": "TCU error", "source_line": "200", "source_quote": "FL0113 - TCU error", "confidence": "HIGH"},
+    "hd0051_breakdown": {"value": "Water box", "source_line": "201", "source_quote": "HD0051 - Water box", "confidence": "HIGH"},
+    "hd0056_breakdown": {"value": "Fire suppression", "source_line": "202", "source_quote": "HD0056 - Fire suppression", "confidence": "HIGH"},
+    "rt0025_breakdown": {"value": "Park brake", "source_line": "203", "source_quote": "RT0025 - Park brake", "confidence": "HIGH"},
+    "rt0048_breakdown": {"value": "Drill plug trip", "source_line": "204", "source_quote": "RT0048 - Drill plug trip", "confidence": "HIGH"},
+    "rt0051_breakdown": {"value": "Feed chain", "source_line": "205", "source_quote": "RT0051 - Feed chain", "confidence": "HIGH"},
+    "rt0055_breakdown": {"value": "Electrical", "source_line": "206", "source_quote": "RT0055 - Electrical", "confidence": "HIGH"},
+    "uv0044_breakdown": {"value": "Pedals repair", "source_line": "207", "source_quote": "UV0044 - Pedals repair", "confidence": "HIGH"},
+    "sr0047_breakdown": {"value": "Brakes", "source_line": "208", "source_quote": "SR0047 - Brakes", "confidence": "HIGH"},
+    "uv0126_breakdown": {"value": "Reverse alarm", "source_line": "209", "source_quote": "UV0126 - Reverse alarm", "confidence": "HIGH"},
+    "fire_alarms": {"value": "None", "source_line": "212", "source_quote": "None", "confidence": "HIGH"},
+    "plant_blockages": {"value": "None reported", "source_line": "215", "source_quote": "None reported", "confidence": "HIGH"}
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "report_metadata": {
+    "date": "2025-07-16",
+    "data_date": "2025-07-16",
+    "site": "Nchwaning 2",
+    "engineer": "Sikelela Nzuza",
+    "timestamp": "04:47",
+    "report_type": "Daily Report"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {"actual": 6458, "target": 6903, "variance": -445, "variance_percentage": -6.45, "unit": "tonnes"},
+    "decline": {"actual": null, "target": null, "variance": null, "variance_percentage": null, "unit": "tonnes"},
+    "product": {"actual": 5896, "target": 6514, "variance": -618, "variance_percentage": -9.49, "unit": "tonnes"},
+    "loads": [{"shift": "day", "load_number": 1, "truckloads_tipped": 73, "target": null}, {"shift": "afternoon", "load_number": 1, "truckloads_tipped": 63, "target": null}, {"shift": "night", "load_number": 1, "truckloads_tipped": 70, "target": null}],
+    "blast": {"faces": null, "breakdown": null, "note": "Actual vs Plan ? vs16"}
+  },
+  "equipment_availability": {
+    "tmm": {"DT": 85, "FL": 84, "HD": 98, "RT": 88, "SR": 80},
+    "specialized": [{"code": "DZ", "availability": 100}, {"code": "GD", "availability": 100}]
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 8, "total": 9}, "FL": {"available": 5, "total": 6},
+      "HD": {"available": 6, "total": 6}, "RT": {"available": 6, "total": 6}, "SR": {"available": 4, "total": 6}
+    }
+  },
+  "breakdowns": {"current_breakdowns": [{"unit": "UV90", "issue": "water pump & timing"}, {"unit": "UV37", "issue": "gears"}, {"unit": "UV59", "issue": "engine"}, {"unit": "UV54", "issue": "oil leak"}, {"unit": "UV102", "issue": "low revs"}, {"unit": "UV133", "issue": "brakes"}, {"unit": "FL85", "issue": "propshaft"}, {"unit": "SR46", "issue": "oil leak"}, {"unit": "DT120", "issue": "door controller"}, {"unit": "FL102", "issue": "aircon"}, {"unit": "SR25", "issue": "wheel frame"}, {"unit": "SR45", "issue": "rear axle"}]},
+  "operational": {"main_fans": "operational", "plant_blockages": 0, "fire_alarms": 0},
+  "source_validation": {
+    "safety_status": {"value": "Clear", "source_line": "59", "source_quote": "Clear", "confidence": "HIGH"},
+    "rom_actual": {"value": 6458, "source_line": "61", "source_quote": "6458", "confidence": "HIGH"},
+    "rom_target": {"value": 6903, "source_line": "61", "source_quote": "6903", "confidence": "HIGH"},
+    "product_actual": {"value": 5896, "source_line": "62", "source_quote": "5896", "confidence": "HIGH"},
+    "product_target": {"value": 6514, "source_line": "62", "source_quote": "6514", "confidence": "HIGH"},
+    "loads": {"value": "73, 63, 70", "source_line": "63", "source_quote": "73, 63, 70", "confidence": "HIGH"},
+    "blast_note": {"value": "? vs16", "source_line": "65", "source_quote": "? vs16", "confidence": "MEDIUM"},
+    "dt_availability": {"value": 85, "source_line": "68", "source_quote": "85%", "confidence": "HIGH"},
+    "fl_availability": {"value": 84, "source_line": "69", "source_quote": "84%", "confidence": "HIGH"},
+    "hd_availability": {"value": 98, "source_line": "70", "source_quote": "98%", "confidence": "HIGH"},
+    "rt_availability": {"value": 88, "source_line": "71", "source_quote": "88%", "confidence": "HIGH"},
+    "sr_availability": {"value": 80, "source_line": "72", "source_quote": "80%", "confidence": "HIGH"},
+    "dz13_availability": {"value": 100, "source_line": "74", "source_quote": "100%", "confidence": "HIGH"},
+    "gd12_availability": {"value": 100, "source_line": "75", "source_quote": "100%", "confidence": "HIGH"},
+    "dt_sos": {"value": "8/9", "source_line": "78", "source_quote": "8/9", "confidence": "HIGH"},
+    "fl_sos": {"value": "5/6", "source_line": "79", "source_quote": "5/6", "confidence": "HIGH"},
+    "hd_sos": {"value": "6/6", "source_line": "80", "source_quote": "6/6", "confidence": "HIGH"},
+    "rt_sos": {"value": "6/6", "source_line": "81", "source_quote": "6/6", "confidence": "HIGH"},
+    "sr_sos": {"value": "4/6", "source_line": "82", "source_quote": "4/6", "confidence": "HIGH"},
+    "uv90_breakdown": {"value": "water pump & timing", "source_line": "90", "source_quote": "UV90- water pump & timing", "confidence": "HIGH"},
+    "uv37_breakdown": {"value": "gears", "source_line": "91", "source_quote": "UV37- gears", "confidence": "HIGH"},
+    "uv59_breakdown": {"value": "engine", "source_line": "92", "source_quote": "UV59- engine", "confidence": "HIGH"},
+    "uv54_breakdown": {"value": "oil leak", "source_line": "93", "source_quote": "UV54- oil leak", "confidence": "HIGH"},
+    "uv102_breakdown": {"value": "low revs", "source_line": "94", "source_quote": "UV102- low revs", "confidence": "HIGH"},
+    "uv133_breakdown": {"value": "brakes", "source_line": "95", "source_quote": "UV133- brakes", "confidence": "HIGH"},
+    "fl85_breakdown": {"value": "propshaft", "source_line": "96", "source_quote": "FL85- propshaft", "confidence": "HIGH"},
+    "sr46_breakdown": {"value": "oil leak", "source_line": "97", "source_quote": "SR46- oil leak", "confidence": "HIGH"},
+    "dt120_breakdown": {"value": "door controller", "source_line": "78", "source_quote": "DT120 door controller", "confidence": "HIGH"},
+    "fl102_breakdown": {"value": "aircon", "source_line": "79", "source_quote": "FL102 aircon", "confidence": "HIGH"},
+    "sr25_breakdown": {"value": "wheel frame", "source_line": "82", "source_quote": "SR25 wheel frame", "confidence": "HIGH"},
+    "sr45_breakdown": {"value": "rear axle", "source_line": "82", "source_quote": "SR45 rear axle", "confidence": "HIGH"},
+    "plant_blockages": {"value": 0, "source_line": "99", "source_quote": "0", "confidence": "HIGH"},
+    "fire_alarms": {"value": 0, "source_line": "100", "source_quote": "0", "confidence": "HIGH"}
+  }
+}
