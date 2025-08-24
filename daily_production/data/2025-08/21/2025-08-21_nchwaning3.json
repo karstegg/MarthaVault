@@ -1,0 +1,35 @@
+{
+  "report_metadata": {
+    "date": "2025-08-21",
+    "data_date": "2025-08-21",
+    "site": "Nchwaning 3",
+    "engineer": "Sello Sease",
+    "timestamp": null,
+    "report_type": "Daily Report"
+  },
+  "safety": {
+    "status": "no report",
+    "incidents": null,
+    "details": []
+  },
+  "production": {
+    "rom": {"actual": null, "target": null, "variance": null, "variance_percentage": null, "unit": null},
+    "decline": {"actual": null, "target": null, "variance": null, "variance_percentage": null, "unit": null},
+    "product": {"actual": null, "target": null, "variance": null, "variance_percentage": null, "unit": null},
+    "loads": [],
+    "blast": {"faces": null, "breakdown": null, "note": "No report"}
+  },
+  "equipment_availability": {
+    "tmm": {"DT": null, "FL": null, "HD": null, "RT": null, "SR": null},
+    "specialized": []
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": null, "total": null}, "FL": {"available": null, "total": null},
+      "HD": {"available": null, "total": null}, "RT": {"available": null, "total": null}, "SR": {"available": null, "total": null}
+    }
+  },
+  "breakdowns": {"current_breakdowns": []},
+  "operational": {"main_fans": "no report", "plant_blockages": null, "fire_alarms": null},
+  "source_validation": {}
+}

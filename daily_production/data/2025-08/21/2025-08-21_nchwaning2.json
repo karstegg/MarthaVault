@@ -1,0 +1,83 @@
+{
+  "report_metadata": {
+    "date": "2025-08-21",
+    "data_date": "2025-08-21",
+    "site": "Nchwaning 2",
+    "engineer": "Sikelela Nzuza",
+    "timestamp": "06:17",
+    "report_type": "Daily Report"
+  },
+  "safety": {
+    "status": "clear",
+    "incidents": 0,
+    "details": []
+  },
+  "production": {
+    "rom": {"actual": 5971, "target": 6903, "variance": -932, "variance_percentage": -13.50, "unit": "tonnes"},
+    "decline": {"actual": null, "target": null, "variance": null, "variance_percentage": null, "unit": null},
+    "product": {"actual": 4580, "target": 6514, "variance": -1934, "variance_percentage": -29.69, "unit": "tonnes"},
+    "loads": [{"shift": "day", "load_number": 1, "truckloads_tipped": 54, "target": null}, {"shift": "afternoon", "load_number": 2, "truckloads_tipped": 57, "target": null}, {"shift": "night", "load_number": 3, "truckloads_tipped": 73, "target": null}],
+    "blast": {"faces": 7, "breakdown": null, "note": "7 vs 16"}
+  },
+  "equipment_availability": {
+    "tmm": {"DT": 81, "FL": 81, "HD": 88, "RT": 73, "SR": 88},
+    "specialized": [{"code": "DZ", "availability": 100}, {"code": "GD", "availability": 0}]
+  },
+  "shift_readiness": {
+    "production_tmm": {
+      "DT": {"available": 7, "total": 9}, "FL": {"available": 5, "total": 6},
+      "HD": {"available": 6, "total": 6}, "RT": {"available": 5, "total": 6}, "SR": {"available": 5, "total": 6}
+    }
+  },
+  "breakdowns": {"current_breakdowns": [
+    {"unit": "DT122", "issue": "CAS L9 Strata"},
+    {"unit": "DT128", "issue": "oil leak"},
+    {"unit": "FL66", "issue": "engine cut off"},
+    {"unit": "RT40", "issue": "drifter"},
+    {"unit": "SR29", "issue": "no movement"},
+    {"unit": "UV123", "issue": "outrigger and basket"},
+    {"unit": "UV54", "issue": "gears"},
+    {"unit": "UV90", "issue": "water pump & timing"},
+    {"unit": "UV98", "issue": "basket movement"},
+    {"unit": "UV77", "issue": "harness"},
+    {"unit": "UV69", "issue": "suspension"},
+    {"unit": "UV84", "issue": "articulation pin"},
+    {"unit": "UV87", "issue": "engine cut off"},
+    {"unit": "GR12", "issue": "brakes"}
+  ]},
+  "operational": {"main_fans": "operational", "plant_blockages": 0, "fire_alarms": 1},
+  "source_validation": {
+    "safety_status": {"value": "Clear", "source_line": "4", "source_quote": "Clear", "confidence": "HIGH"},
+    "rom_actual": {"value": 5971, "source_line": "6", "source_quote": "5971 v 6903t", "confidence": "HIGH"},
+    "rom_target": {"value": 6903, "source_line": "6", "source_quote": "5971 v 6903t", "confidence": "HIGH"},
+    "product_actual": {"value": 4580, "source_line": "7", "source_quote": "4580 v 6514t", "confidence": "HIGH"},
+    "product_target": {"value": 6514, "source_line": "7", "source_quote": "4580 v 6514t", "confidence": "HIGH"},
+    "loads_day": {"value": 54, "source_line": "8", "source_quote": "54, 57, 73", "confidence": "HIGH"},
+    "loads_afternoon": {"value": 57, "source_line": "8", "source_quote": "54, 57, 73", "confidence": "HIGH"},
+    "loads_night": {"value": 73, "source_line": "8", "source_quote": "54, 57, 73", "confidence": "HIGH"},
+    "blast_faces": {"value": 7, "source_line": "10", "source_quote": "7 vs16", "confidence": "HIGH"},
+    "dt_availability": {"value": 81, "source_line": "13", "source_quote": "DTs: 81% DT122 CAS L9", "confidence": "HIGH"},
+    "fl_availability": {"value": 81, "source_line": "14", "source_quote": "FLs: 81%  FL66 engine cut off", "confidence": "HIGH"},
+    "hd_availability": {"value": 88, "source_line": "15", "source_quote": "HDs: 88%", "confidence": "HIGH"},
+    "rt_availability": {"value": 73, "source_line": "16", "source_quote": "RTs: 73%     RT50 axle; RT40 drifter", "confidence": "HIGH"},
+    "sr_availability": {"value": 88, "source_line": "17", "source_quote": "SRs: 88%", "confidence": "HIGH"},
+    "dz13_availability": {"value": 100, "source_line": "19", "source_quote": "DZ13: 100%", "confidence": "HIGH"},
+    "gd12_availability": {"value": 0, "source_line": "20", "source_quote": "GD12: 0%", "confidence": "HIGH"},
+    "dt_shift_readiness_available": {"value": 7, "source_line": "23", "source_quote": "DT:  7/9", "confidence": "HIGH"},
+    "dt_shift_readiness_total": {"value": 9, "source_line": "23", "source_quote": "DT:  7/9", "confidence": "HIGH"},
+    "fl_shift_readiness_available": {"value": 5, "source_line": "24", "source_quote": "FL:  5/6", "confidence": "HIGH"},
+    "fl_shift_readiness_total": {"value": 6, "source_line": "24", "source_quote": "FL:  5/6", "confidence": "HIGH"},
+    "hd_shift_readiness_available": {"value": 6, "source_line": "25", "source_quote": "HD: 6/6", "confidence": "HIGH"},
+    "hd_shift_readiness_total": {"value": 6, "source_line": "25", "source_quote": "HD: 6/6", "confidence": "HIGH"},
+    "rt_shift_readiness_available": {"value": 5, "source_line": "26", "source_quote": "RT:  5/6", "confidence": "HIGH"},
+    "rt_shift_readiness_total": {"value": 6, "source_line": "26", "source_quote": "RT:  5/6", "confidence": "HIGH"},
+    "sr_shift_readiness_available": {"value": 5, "source_line": "27", "source_quote": "SR:  5/6", "confidence": "HIGH"},
+    "sr_shift_readiness_total": {"value": 6, "source_line": "27", "source_quote": "SR:  5/6", "confidence": "HIGH"},
+    "emulsion_uvs_availability": {"value": 80, "source_line": "30", "source_quote": "(UV62,66,108) = 80%", "confidence": "HIGH"},
+    "logistics_uv_availability": {"value": 89, "source_line": "33", "source_quote": "(UV54,59,120)= 89%", "confidence": "HIGH"},
+    "sampling_uv_availability": {"value": 0, "source_line": "35", "source_quote": "(UV77,123) = 0%", "confidence": "HIGH"},
+    "survey_uv_availability": {"value": 90, "source_line": "36", "source_quote": "(UV98,99) = 90%", "confidence": "HIGH"},
+    "plant_blockages": {"value": 0, "source_line": "52", "source_quote": "Plant blockages- 0", "confidence": "HIGH"},
+    "fire_alarms": {"value": 1, "source_line": "53", "source_quote": "Fire alarms- 1", "confidence": "HIGH"}
+  }
+}
