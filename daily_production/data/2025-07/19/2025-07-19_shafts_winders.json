@@ -9,52 +9,83 @@
   },
   "safety": {
     "status": "clear",
-    "incidents": 1,
-    "details": ["2 x NON-EMERGENCY ALARMS (NCH2 PW HYDRAULIC RELAY PANEL)"]
+    "incidents": 0,
+    "details": []
   },
-  "production": {
-    "rom": {"actual": 5676, "target": 6621, "variance": -945, "variance_percentage": -14.27},
-    "decline": {"actual": null, "target": null, "variance": null, "variance_percentage": null},
-    "product": {"actual": null, "target": null, "variance": null, "variance_percentage": null},
-    "loads": [],
-    "blast": {"faces": null, "breakdown": null, "note": "Nothing Reported"}
-  },
-  "equipment_availability": {
-    "tmm": {"DT": null, "FL": null, "HD": null, "RT": null, "SR": null},
-    "specialized": []
-  },
-  "shift_readiness": {
-    "production_tmm": {
-      "DT": {"available": null, "total": null}, "FL": {"available": null, "total": null},
-      "HD": {"available": null, "total": null}, "RT": {"available": null, "total": null}, "SR": {"available": null, "total": null}
-    }
-  },
-  "breakdowns": {"current_breakdowns": [{"unit": "NCH2 PW HYDRAULIC RELAY PANEL", "issue": "NON-EMERGENCY ALARM"}]},
-  "operational": {"main_fans": "operational", "plant_blockages": 0, "fire_alarms": 2},
-  "source_validation": {
-    "safety_status": {
-      "value": "clear", "source_line": "8",
-      "source_quote": "Safety:\nClear", "confidence": "HIGH"
+  "infrastructure": {
+    "power_supply": {
+      "stoppages": 0,
+      "status": "operational"
     },
-    "fire_alarms": {
-      "value": 2, "source_line": "39",
-      "source_quote": "2 x NON-EMERGENCY ALARMS (NCH2 PW HYDRAULIC RELAY PANEL)", "confidence": "HIGH"
-    },
-    "rom_actual": {
-      "value": 5676, "source_line": "45",
-      "source_quote": "Fri: 5676/6621", "confidence": "HIGH"
-    },
-    "rom_target": {
-      "value": 6621, "source_line": "45",
-      "source_quote": "Fri: 6621", "confidence": "HIGH"
-    },
-    "plant_blockages": {
-      "value": 0, "source_line": "42",
-      "source_quote": "Block Chutes:\nNone", "confidence": "HIGH"
+    "winders": {
+      "nch2_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch3_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "gl_pw": {"status": "operational", "operational": true, "type": "manwinder"},
+      "nch2_rw": {"status": "operational", "operational": true, "type": "rock_winder", "function": "ore_hoisting"}
     },
     "main_fans": {
-      "value": "operational", "source_line": "20",
-      "source_quote": "Main Fans\nGL\nNo Stoppages", "confidence": "HIGH"
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
+    },
+    "lamprooms": {
+      "gloria": {"status": "operational", "operational": true},
+      "nchwaning2": {"status": "operational", "operational": true},
+      "nchwaning3": {"status": "operational", "operational": true}
     }
+  },
+  "dam_levels": {
+    "dd01": {
+      "level": 100.4,
+      "status": "good"
+    },
+    "dd02": {
+      "level": 79.0,
+      "status": "warning"
+    }
+  },
+  "ore_pass_levels": {
+    "current_level": 10.6,
+    "trend": "stable"
+  },
+  "production": {
+    "daily_summary": [
+      {
+        "day": "Friday",
+        "actual": 5676,
+        "target": 6621,
+        "variance": -945,
+        "variance_percentage": 85.72
+      }
+    ]
+  },
+  "operational": {
+    "fire_scada_alarms": 2,
+    "block_chutes": 0
+  },
+  "performance_summary": {
+    "key_issues": ["2 x NON-EMERGENCY ALARMS (NCH2 PW HYDRAULIC RELAY PANEL)"],
+    "key_highlights": ["All winders, main fans, and lamprooms operational.", "DD01 dam level at 100.4%."]
+  },
+  "source_validation": {
+    "safety_status": {"value": "Clear", "source_line": "7", "source_quote": "Clear", "confidence": "HIGH"},
+    "power_supply_status": {"value": "No Stoppages", "source_line": "10", "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "nch2_pw_status": {"value": "No Stoppages", "source_line": "13", "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "nch3_pw_status": {"value": "No Stoppages", "source_line": "16", "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "gl_pw_status": {"value": "No Stoppages", "source_line": "19", "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "nch2_rw_status": {"value": "No Stoppages", "source_line": "22", "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "gl_main_fans_status": {"value": "No Stoppages", "source_line": "25", "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "nch2_main_fans_status": {"value": "No Stoppages", "source_line": "28", "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "nch3_main_fans_status": {"value": "No Stoppages", "source_line": "31", "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "gl_lamprooms_status": {"value": "No Stoppages", "source_line": "34", "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "nch2_lamprooms_status": {"value": "No Stoppages", "source_line": "37", "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "nch3_lamprooms_status": {"value": "No Stoppages", "source_line": "40", "source_quote": "No Stoppages", "confidence": "HIGH"},
+    "dd01_level": {"value": 100.4, "source_line": "44", "source_quote": "Fri: 100,4%", "confidence": "HIGH"},
+    "dd02_level": {"value": 79.0, "source_line": "52", "source_quote": "Fri: 79,0%", "confidence": "HIGH"},
+    "fire_scada_alarms_count": {"value": 2, "source_line": "60", "source_quote": "2 x NON-EMERGENCY ALARMS (NCH2 PW HYDRAULIC RELAY PANEL)", "confidence": "HIGH"},
+    "block_chutes_status": {"value": "None", "source_line": "63", "source_quote": "None", "confidence": "HIGH"},
+    "production_actual": {"value": 5676, "source_line": "66", "source_quote": "Fri: 5676/6621", "confidence": "HIGH"},
+    "production_target": {"value": 6621, "source_line": "66", "source_quote": "Fri: 5676/6621", "confidence": "HIGH"},
+    "ore_pass_level": {"value": 10.6, "source_line": "74", "source_quote": "Fri: 10,6%", "confidence": "HIGH"}
   }
 }
