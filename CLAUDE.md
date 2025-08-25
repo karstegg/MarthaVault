@@ -2,69 +2,37 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## 🚨 **CRITICAL FOR CLAUDE-CODE REVIEWERS** 🚨
-**If you are reviewing daily production reports (JSON/Markdown in `daily_production/`), you MUST:**
-1. **Request source WhatsApp data file path FIRST**
-2. **Verify 3+ data points against source before any other review**
-3. **NEVER approve without source data verification**
-4. **See detailed requirements in Section 10.1 below**
+# MarthaVault – Personal Workspace & Task Management  *Version 2.0  (2025-08-25)*
 
-**Data accuracy is MORE IMPORTANT than technical compliance for operational reports.**
-
-# MarthaVault – Claude Constitution  *Version 0.3  (2025-08-05)*
-
-## 🔄 **Active Session Context** (August 24, 2025)
-**BREAKTHROUGH ACHIEVED**: ✅ **Gemini 2.5 Flash Complete Solution**
-- **Status**: Production-ready autonomous daily production report generation
-- **Cost Impact**: $0/day (FREE alternative to Claude API)
-- **Capability**: End-to-end WhatsApp → JSON/Markdown → Repository automation
-- **Integration**: GitHub Actions + Gemini CLI + Auto-commit workflows
-- **Documentation**: See `GEMINI_2.5_FLASH_BREAKTHROUGH_COMPLETE_SOLUTION.md` for full technical details
-- **Next**: Scale to batch processing (July 6-21 date ranges)
+## 🧠 **Workspace Focus** (August 25, 2025)
+**REPOSITORY TRANSFORMATION**: ✅ **Clean Task Management System**
+- **Purpose**: Personal productivity, task management, and knowledge organization
+- **Scope**: Work projects, personal development, ideas, and documentation
+- **Architecture**: Simple Git backup with Obsidian vault functionality
+- **Automation**: Minimal - focused on content creation and organization
+- **Production Data**: **MOVED** to ProductionReports repository for specialized automation
 
 ---
-## 0 🚀 **GEMINI 2.5 FLASH BREAKTHROUGH SOLUTION**
+## 1 Repository Architecture
 
-**✅ PRODUCTION READY**: Complete autonomous daily production report generation using FREE Gemini 2.5 Flash
+### **Separation of Concerns** 
+MarthaVault is now **specialized for workspace management**:
 
-### **Technical Achievement**
-Successfully implemented Gemini 2.5 Flash as a complete replacement for expensive Claude API processing, achieving:
-- **End-to-end automation**: WhatsApp data → Structured JSON/Markdown reports → Repository commits
-- **Zero cost operation**: Uses generous Gemini 2.5 Flash free quotas vs. expensive Claude API
-- **Production quality**: Enterprise-grade data integrity with proper validation and audit trails
-- **Complete automation**: GitHub Actions workflows with automatic file commits
+**✅ What This Repository Contains:**
+- **Task Management**: `tasks/master_task_list.md` and individual task files
+- **Project Organization**: `projects/` with sub-folders for each active project
+- **Personal Development**: `personal/` for non-work items and personal projects
+- **Knowledge Base**: `people/`, `reference/` for organizational knowledge
+- **Ideas & Innovation**: `IDEAS/` for future concepts and improvements
+- **Media Archive**: `media/` for documents, images, and recordings
 
-### **Critical Success Configuration**
-```yaml
-# Working Solution - GitHub Actions Workflow
-uses: 'google-github-actions/run-gemini-cli@v0.1.11'
-with:
-  gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
-  settings: |-
-    {
-      "model": "gemini-2.5-flash",
-      "maxSessionTurns": 15,
-      "autoAccept": ["list_directory", "read_file", "write_file", "glob"],
-      "telemetry": {"enabled": false}
-    }
-```
+**📋 Production Automation Relocated:**
+- **Daily Production Reports**: → `ProductionReports` repository
+- **WhatsApp MCP Integration**: → `ProductionReports` repository  
+- **GitHub Actions Workflows**: → `ProductionReports` repository
+- **Gemini 2.5 Flash Processing**: → `ProductionReports` repository
 
-### **Key Technical Discoveries**
-1. **❌ WRONG**: `gemini_model` parameter (unsupported) → **✅ RIGHT**: Model in `settings` JSON
-2. **❌ WRONG**: `@v0` GitHub Action → **✅ RIGHT**: `@v0.1.11` for proper tool support  
-3. **❌ WRONG**: 5 session turns → **✅ RIGHT**: 15 turns for multi-site processing
-4. **❌ WRONG**: Files created but not committed → **✅ RIGHT**: Auto-commit integration
-
-### **Data Quality Excellence** 
-Perfect data integrity demonstrated: when source data missing, system uses `null` values and documents absence rather than fabricating data. Self-validates and questions data quality.
-
-### **Current Capability**
-- **Workflow**: `.github/workflows/gemini-quick-test.yml` 
-- **Trigger**: `gh workflow run gemini-quick-test.yml --field date=YYYY-MM-DD`
-- **Output**: Complete JSON/Markdown reports for all mine sites automatically committed
-- **Processing Time**: ~2.5 minutes end-to-end
-
-**📖 Complete Technical Documentation**: `GEMINI_2.5_FLASH_BREAKTHROUGH_COMPLETE_SOLUTION.md`
+**Simple Git Backup**: This repository uses basic Git version control without complex automation
 
 ---
 ## 1 Identity & Operating Modes
@@ -94,8 +62,6 @@ After every operation, reply with a one-line confirmation: *"Created `projects/P
 `media/audio/`         # audio recordings and transcriptions
 `media/image/`         # screenshots, photos, diagrams
 `media/documents/`     # PDFs, invoices, contracts
-`daily_production/`    # daily mine production reports (dual format)
-`daily_production/data/` # JSON database files for analysis
 
 - If no folder is obvious, place the file in `00_inbox/`.
 - When a project or person first appears, create the needed sub-folder or note.
