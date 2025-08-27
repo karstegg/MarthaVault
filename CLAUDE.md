@@ -91,12 +91,129 @@ Populate any fields you can infer (assignee, priority, due date).
 
 ---
 ## 5 Task Management
-- Mirror every Markdown check-box into `tasks/master_task_list.md`.
-- Keep checkbox state in sync both ways.
-- If a task belongs to a person, create/link their note in `people/` and set `Assignee:: [[Person Name]]` in the task file.
+
+### **Obsidian Tasks Plugin Integration**
+MarthaVault uses the **Obsidian Tasks plugin (v7.21.0)** for advanced task management:
+
+**Task Status Types**:
+- `[ ]` (space) = Todo - Standard pending task  
+- `[x]` = Done - Completed task
+- `[/]` = In Progress - Currently active task
+- `[-]` = Cancelled - Cancelled/abandoned task
+
+**Task Format**:
+```markdown
+- [ ] Task description #task #priority/level #assignee #year/2025 📅 2025-MM-DD
+```
+
+**Priority Levels**:
+- `#priority/critical` 🔴 - Immediate safety/business risk
+- `#priority/high` 🟡 - Important, time-sensitive  
+- `#priority/medium` 🟢 - Standard priority
+- `#priority/low` ⚪ - When time permits
+
+### **Task Management Rules**:
+- **Master List**: Mirror every checkbox task into `tasks/master_task_list.md`
+- **Individual Files**: Create dedicated files for complex tasks with sub-tasks
+- **Status Sync**: Keep checkbox states synchronized across all files
+- **Person Assignment**: Use `Assignee:: [[Person Name]]` in task front-matter
+- **Due Dates**: Use 📅 emoji or `due: YYYY-MM-DD` format
+- **Tags**: Always include `#task` and `#year/2025` tags
+- **Context**: Add project tags (#BEV, #WTW-audit, etc.) for filtering
+
+### **Task Queries & Views**:
+Use Tasks plugin queries for dynamic task views:
+```tasks
+priority is high
+not done
+group by priority
+```
+
+### **Task Organization**:
+- **Urgent Tasks**: 🔴 Critical/High priority with immediate deadlines
+- **Project Tasks**: Group by project tags (#BEV, #capital, #audit)
+- **Personal Tasks**: Use `#personal` tag for non-work items
+- **Recurring Tasks**: Use `#recurring` tag with schedules
+
+### **Integration with Calendar & Daily Notes**:
+- **Link tasks to events**: Reference calendar events from tasks using `[[Schedule/YYYY-MM-DD - Event]]`
+- **Daily task queries**: Use Tasks queries in daily notes to show today's tasks
+- **Event preparation tasks**: Create preparation tasks that link to calendar events
+- **Status updates**: Update task status when calendar events are completed
+
+**Example Daily Note Task Query**:
+```tasks
+due today
+not done
+group by priority
+```
+
+### **Task Visualization Dashboards**:
+- **Tasks Dashboard**: `Tasks Dashboard.md` - Comprehensive task views by priority, project, person, and timeline
+- **Kanban Board**: `Tasks Kanban Board.md` - Visual workflow with To Do → In Progress → Done columns
+- **Calendar Integration**: Tasks automatically appear in calendar view when due dates are set
+
+**Common Task Query Patterns**:
+```tasks
+# Today's focus
+due today
+not done
+group by priority
+
+# This week's tasks
+due after yesterday
+due before next week
+not done
+group by due
+
+# High priority across all projects
+priority is high
+not done
+group by project
+
+# Project-specific tasks
+tags include #BEV
+not done
+sort by priority, due
+
+# Person-specific assignments
+tags include #xavier
+not done
+group by priority
+```
 
 ---
-## 6 Assignment Logic
+## 6 Calendar & Schedule Management
+Create calendar events in the `Schedule/` folder using the Full Calendar plugin format:
+
+**File Format**: `YYYY-MM-DD - Event Title.md`
+
+**Front-matter Template**:
+```yaml
+---
+title: Event Title
+allDay: true
+date: YYYY-MM-DD
+completed: null
+---
+```
+
+**Content Structure**:
+- Clear event title and date
+- Location information when applicable
+- Event type/department context
+- Preparation requirements
+- Related tasks (using links)
+- Relevant tags including `#calendar` and `#year/2025`
+
+**Calendar Rules**:
+- All scheduled events must be created in `Schedule/` folder
+- Use timezone UTC+2 (South African Standard Time)
+- Link to related daily notes or tasks where applicable
+- Include context for meetings/presentations (department, location, purpose)
+
+---
+## 7 Assignment Logic
 - Detect phrases like "for Jane Smith", "John to…", "ask Bob to…".
 - Add `Assignee:: [[<Person Note>]]`.
 - If the person note does not exist, create `people/<Person Name>.md` with front-matter:
@@ -114,7 +231,8 @@ Role:: Started::
 
 ---
 ## 8 Date & Time
-Today's date is **2025-07-29**. Use it when a date is required and I haven't specified one.
+Today's date is **2025-08-27**. Use it when a date is required and I haven't specified one.
+**Timezone**: UTC+2 (South African Standard Time)
 
 ---
 ## 9 Examples (for your internal reference)

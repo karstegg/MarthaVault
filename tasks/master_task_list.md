@@ -22,7 +22,7 @@
 ## 🚨 CRITICAL SAFETY - WTW Audit (Immediate Action)
 - [ ] N2: Implement lifter plug protocol at Gloria 120N/124W - EXPLOSION RISK #task #WTW-audit #safety #gloria #critical #priority/critical #year/2025
 - [ ] N27: Emergency structural assessment Gloria decline entrance cracks #task #WTW-audit #structural #gloria #critical #priority/critical #year/2025
-- [ ] N7: Schedule room integrity tests Gloria 90Y gas suppression systems #task #WTW-audit #fire-protection #gloria #critical #priority/critical #year/2025
+- [ ] N7: Schedule room integrity tests Gloria 90Y gas suppression systems - NOTE: Fixed plant systems (separate from MSTA mobile equipment audit) #task #WTW-audit #fire-protection #gloria #critical #priority/critical #year/2025
 - [ ] N12: Audit in-house bonding/earthing equipment SANAS certification #task #WTW-audit #SANAS #electrical #critical #priority/critical #year/2025
 
 ## 🟡 HIGH - Due Next 1-2 Weeks  
@@ -79,7 +79,7 @@ not done
 ## 🚨 CRITICAL SAFETY - WTW Audit (Immediate Action)
 - [ ] N2: Implement lifter plug protocol at Gloria 120N/124W - EXPLOSION RISK #task #WTW-audit #safety #gloria #critical #priority/critical #year/2025
 - [ ] N27: Emergency structural assessment Gloria decline entrance cracks #task #WTW-audit #structural #gloria #critical #priority/critical #year/2025
-- [ ] N7: Schedule room integrity tests Gloria 90Y gas suppression systems #task #WTW-audit #fire-protection #gloria #critical #priority/critical #year/2025
+- [ ] N7: Schedule room integrity tests Gloria 90Y gas suppression systems - NOTE: Fixed plant systems (separate from MSTA mobile equipment audit) #task #WTW-audit #fire-protection #gloria #critical #priority/critical #year/2025
 - [ ] N12: Audit in-house bonding/earthing equipment SANAS certification #task #WTW-audit #SANAS #electrical #critical #priority/critical #year/2025
 
 ## 🟡 HIGH - Due Next 1-2 Weeks  
@@ -107,6 +107,13 @@ not done
 - [ ] P73: Confirm lightning protection systems SANAS certification (SANS 10313/62305) - DUE: Aug 20 #task #WTW-audit #SANAS #lightning-protection #priority/high #year/2025
 - [ ] N13: Verify BTU battery protection system SANAS compliance (Gloria substations) - DUE: Aug 18 #task #WTW-audit #SANAS #BTU #electrical #gloria #priority/high #year/2025
 
+## 🔥 URGENT - MSTA Fire Audit (TODAY) - Added 2025-08-25
+- [ ] Arrange camera permission slip for Henk Erasmus (MSTA) - DUE: TODAY (arriving in 1-2 hours) #task #fire-audit #MSTA #urgent #priority/critical #year/2025
+- [ ] Contact Kenru Fire - Ensure availability for TMM audit support - DUE: TODAY #task #fire-audit #Kenru-Fire #urgent #priority/critical #year/2025
+- [ ] Coordinate TMM fire suppression system audit with MSTA and Kenru - DUE: TODAY #task #fire-audit #TMM #urgent #priority/critical #year/2025
+- [ ] Prepare for Gerard's arrival tomorrow (MSTA colleague) - DUE: Tomorrow #task #fire-audit #MSTA #Gerard #priority/high #year/2025
+- [ ] Set up weekly Friday reminder for Marina - Access renewal - RECURRING #task #Marina #access #recurring #priority/medium #year/2025
+
 ## 🟢 MEDIUM - Due 2+ Weeks
 - [ ] Company Bakkie Service and Inspection - DUE: Aug 19 #task #company-vehicle #maintenance #bakkie #workshop #priority/medium #year/2025
 - [ ] Review TMM conveyor COP - DUE: Aug 31 #task #TMM #conveyor #COP #priority/high #year/2025
@@ -116,6 +123,13 @@ not done
 - [ ] Review SA Cranes scope for changes - DUE: Aug 15 #task #SA-Cranes #priority/medium #year/2025
 - [ ] P73: Confirm lightning protection systems SANAS certification (SANS 10313/62305) - DUE: Aug 20 #task #WTW-audit #SANAS #lightning-protection #priority/high #year/2025
 - [ ] N13: Verify BTU battery protection system SANAS compliance (Gloria substations) - DUE: Aug 18 #task #WTW-audit #SANAS #BTU #electrical #gloria #priority/high #year/2025
+
+## 🔥 URGENT - MSTA Fire Audit (TODAY) - Added 2025-08-25
+- [ ] Arrange camera permission slip for Henk Erasmus (MSTA) - DUE: TODAY (arriving in 1-2 hours) #task #fire-audit #MSTA #urgent #priority/critical #year/2025
+- [ ] Contact Kenru Fire - Ensure availability for TMM audit support - DUE: TODAY #task #fire-audit #Kenru-Fire #urgent #priority/critical #year/2025
+- [ ] Coordinate TMM fire suppression system audit with MSTA and Kenru - DUE: TODAY #task #fire-audit #TMM #urgent #priority/critical #year/2025
+- [ ] Prepare for Gerard's arrival tomorrow (MSTA colleague) - DUE: Tomorrow #task #fire-audit #MSTA #Gerard #priority/high #year/2025
+- [ ] Set up weekly Friday reminder for Marina - Access renewal - RECURRING #task #Marina #access #recurring #priority/medium #year/2025
 
 ## 🟢 MEDIUM - Due 2+ Weeks
 - [ ] Company Bakkie Service and Inspection - DUE: Aug 19 #task #company-vehicle #maintenance #bakkie #workshop #priority/medium #year/2025

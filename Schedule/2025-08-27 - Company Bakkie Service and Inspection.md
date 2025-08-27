@@ -1,15 +1,15 @@
 ---
 title: Company Bakkie Service and Inspection
 allDay: true
-date: 2025-08-19
+date: 2025-08-27
 completed: null
-status: rescheduled
 ---
 
 # Company Bakkie Service and Inspection
 
-**Date**: Tuesday, August 19, 2025  
+**Date**: Tuesday, August 27, 2025  
 **Type**: Company Vehicle Maintenance  
+**Status**: Rescheduled from August 19
 
 ## Event Details
 Scheduled workshop visit for company bakkie (vehicle) inspection and brake test.
@@ -20,10 +20,12 @@ Scheduled workshop visit for company bakkie (vehicle) inspection and brake test.
 - Additional maintenance as identified
 
 ## Related Task
-[[2025-08-19 – Company Bakkie Service and Inspection]]
+[[2025-08-27 – Daily Note]]
 
 ## Notes
-- **RESCHEDULED**: Moved to August 27, 2025
-- See [[2025-08-27 - Company Bakkie Service and Inspection]]
+- Rescheduled from August 19, 2025
+- Confirm workshop location and appointment time
+- Ensure vehicle documentation available
+- Obtain service certificates upon completion
 
 #calendar #company-vehicle #maintenance #workshop #year/2025

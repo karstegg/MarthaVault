@@ -2,7 +2,7 @@
 title: VFL Week 2 N3 Risk Assessment
 allDay: true
 date: 2025-08-12
-completed: null
+completed: true
 ---
 
 # VFL Week 2 - N3 Risk Assessment

@@ -2,7 +2,7 @@
 title: VFL Week 1 N3 Procedures
 allDay: true
 date: 2025-08-05
-completed: null
+completed: true
 ---
 
 # VFL Week 1 - N3 Procedures

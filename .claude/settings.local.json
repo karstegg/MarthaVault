@@ -39,7 +39,9 @@
       "Bash(timeout 180 gh run watch 17184223204)",
       "Bash(timeout 180 gh run watch 17184356062)",
       "Bash(timeout 180 gh run watch 17189151100)",
-      "Bash(timeout 180 gh run watch 17189226293)"
+      "Bash(timeout 180 gh run watch 17189226293)",
+      "Read(/C:\\Users\\10064957\\My Drive\\GDVault\\ProductionData/**)",
+      "Bash(./.claude/commands/pdr-cloud:*)"
     ],
     "deny": []
   },
