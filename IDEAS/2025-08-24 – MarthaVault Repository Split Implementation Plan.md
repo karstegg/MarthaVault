@@ -22,10 +22,10 @@ This document outlines the comprehensive plan to split the current MarthaVault r
 MarthaVault currently serves as a unified Obsidian knowledge management system containing:
 
 **Production Data Processing:**
-- Daily production reports from Assmang Black Rock mining operations
-- WhatsApp MCP integration for automated data extraction
-- GitHub Actions workflows for Gemini 2.5 Flash processing
-- Codespace integration for real-time data access
+- Automated production data processing capabilities
+- External integrations for data extraction
+- Processing workflows and automation
+- Real-time data access capabilities
 - Complex automation pipelines with strict data validation
 
 **Work Task Management:**
@@ -36,10 +36,10 @@ MarthaVault currently serves as a unified Obsidian knowledge management system c
 - Traditional knowledge management workflows
 
 ### Technical Infrastructure
-- **AI Agent Architecture**: Gemini 2.5 Flash (processing) + Claude-Desktop (coordination) + Claude-Cloud (review)
-- **Data Pipeline**: WhatsApp → JSON/Markdown → GitHub → Review → Merge
-- **Cost**: $0/day using FREE Gemini 2.5 Flash vs expensive Claude API
-- **Integration**: 24/7 WhatsApp bridge, Codespace SSH access, automated PR workflows
+- **AI Agent Architecture**: External processing + coordination + review
+- **Data Pipeline**: Source → JSON/Markdown → Repository → Review → Merge
+- **Cost**: Optimized using cost-effective processing solutions
+- **Integration**: 24/7 data bridge, remote access, automated workflows
 
 ## Business Case for Split
 
@@ -82,9 +82,9 @@ git push -u origin main
 ```
 
 #### Step 1.2: Verify Infrastructure Transfer
-- Confirm all GitHub Actions workflows are present
-- Verify Codespace configurations are intact
-- Test WhatsApp MCP integration functionality
+- Confirm all automated workflows are present
+- Verify development configurations are intact
+- Test data integration functionality
 - Validate all secrets and environment variables
 
 ### Phase 2: ProductionReports Specialization
@@ -105,31 +105,31 @@ git push -u origin main
 
 #### Step 2.2: Retain Production Infrastructure
 **Keep in ProductionReports:**
-- `.github/workflows/` - All GitHub Actions workflows
-- `whatsapp-mcp-server/` - WhatsApp integration
+- `.github/workflows/` - All automated workflows
+- `messaging-server/` - Data integration server
 - `daily_production/` - Production data and processing
 - `reference/equipment/` - Fleet database, equipment codes
 - `reference/locations/` - Mine sites, operational areas
 - `people/` - Engineer assignments (minimal copy for processing context)
 - `.devcontainer/` - Development container configurations
 - `scripts/` - Production processing scripts
-- All Codespace configurations and secrets
+- All development configurations and secrets
 
 #### Step 2.3: Update ProductionReports CLAUDE.md
 Create specialized configuration focusing on:
 - Production data processing workflows
-- Data validation requirements (critical after PR #7 failure)
+- Data validation requirements (critical for reliability)
 - Equipment code validation and BEV classification
 - Engineer-site mapping and report processing
-- GitHub Actions automation instructions
-- WhatsApp MCP integration guidelines
+- Automation workflow instructions
+- Data integration guidelines
 
 ### Phase 3: MarthaVault Simplification
 
 #### Step 3.1: Remove Production Automation
 **DELETE from MarthaVault:**
-- `.github/workflows/` - **Entire folder** (all GitHub Actions)
-- `whatsapp-mcp-server/` - WhatsApp integration
+- `.github/workflows/` - **Entire folder** (all automation workflows)
+- `messaging-server/` - Data integration server
 - `daily_production/` - Production data
 - `.devcontainer/` - Development containers
 - Production-related scripts and configurations
@@ -158,11 +158,11 @@ Simplify configuration to focus on:
 ### Phase 4: Infrastructure Migration
 
 #### Step 4.1: Codespace Reassignment
-- Update Codespace connection to point to ProductionReports repository
+- Update development connection to point to ProductionReports repository
 - Transfer all production-related secrets and configurations
-- Test WhatsApp MCP bridge connectivity from new repository
+- Test data integration bridge connectivity from new repository
 
-#### Step 4.2: GitHub Actions Configuration
+#### Step 4.2: Automation Configuration
 - Verify all production workflows function in ProductionReports
 - Update repository references in workflow files
 - Test end-to-end automation pipeline
@@ -177,7 +177,7 @@ Simplify configuration to focus on:
 #### Step 5.1: Production Workflow Testing
 - Test complete production report processing pipeline
 - Verify data validation and source verification requirements
-- Confirm GitHub Actions automation functions correctly
+- Confirm automation workflows function correctly
 
 #### Step 5.2: Task Management Testing
 - Verify MarthaVault functions as traditional knowledge management system
@@ -195,11 +195,11 @@ Simplify configuration to focus on:
 **Purpose**: Automated production data processing for Assmang Black Rock mining operations
 
 **Core Functions:**
-- Daily production report automation
-- WhatsApp data extraction and processing
+- Production report automation
+- Data extraction and processing
 - Data validation and quality control
-- GitHub Actions workflows
-- Codespace integration
+- Automated workflows
+- Development environment integration
 
 **Key Features:**
 - 24/7 automated processing
@@ -278,8 +278,7 @@ The implementation plan provides a structured approach with clear phases, valida
 ## Related Documentation
 
 - `CLAUDE.md` - Current system configuration
-- `GEMINI_2.5_FLASH_BREAKTHROUGH_COMPLETE_SOLUTION.md` - Production automation details
-- `WHATSAPP_MCP_COMPLETE_SETUP.md` - WhatsApp integration setup
-- `GITHUB_ACTIONS_CODESPACE_INTEGRATION_GUIDE.md` - Infrastructure integration
 
-#idea #repository-split #architecture #production-automation #task-management #implementation-plan #priority/high #year/2025
+See: ProductionReports/CLAUDE.md and ProductionReports/reference/*.
+
+#idea #repository-split #architecture #automation #task-management #implementation-plan #priority/high #year/2025

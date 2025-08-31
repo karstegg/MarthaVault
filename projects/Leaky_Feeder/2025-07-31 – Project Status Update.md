@@ -1,8 +1,8 @@
 ---
-Status:: #status/active
-Priority:: #priority/medium
+Status:: #status/urgent
+Priority:: #priority/high
 Assignee:: [[Gregory Karsten]]
-DueDate:: 2025-08-15
+DueDate:: 2025-08-29
 ---
 
 # Leaky Feeder Project Status Update
@@ -21,11 +21,15 @@ DueDate:: 2025-08-15
 - If Liquid Mist provides lowest quote, can proceed without reopening PPE vendor status
 - Otherwise, formal vendor reopening process required for PPE
 
-## Next Actions
-- [ ] Review Liquid Mist quote upon receipt
-- [ ] Compare quotes from all available vendors
-- [ ] Decide between vendor reopening process or alternative vendor selection
-- [ ] Coordinate with [[Lizette]] on procurement path forward
+## URGENT Next Actions (Due This Week)
+- [ ] **PRIORITY**: Finalize vendor selection - PPE vs Liquid Mist vs other active vendors
+- [ ] **URGENT**: Complete contract finalization and place order by Friday Aug 29
+- [ ] Contact [[Lizette]] immediately to expedite procurement process
+- [ ] If vendor reopening required, initiate emergency process
+- [ ] Confirm delivery timeline to ensure project stays on track
+
+## Updated Status (2025-08-27)
+**ESCALATED TO HIGH PRIORITY** - Contract must be finalized and order placed by end of week.
 
 ## Decision Criteria
 - **Preferred**: Use lowest quote from active vendors

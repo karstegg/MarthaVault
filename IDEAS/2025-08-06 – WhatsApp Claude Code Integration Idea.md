@@ -92,5 +92,7 @@ Use WhatsApp as a communication interface for Claude Code interactions, enabling
 #idea #whatsapp #claude-code #automation #mobile-integration #cloud-deployment #mcp #communication #year/2025
 
 ## Related Files
-- [[CLAUDE.md]] - Current WhatsApp MCP setup documentation
-- [[2025-08-06 – Claude Code GitHub Integration Workflow]] - Related automation concepts
+- [[CLAUDE.md]] - Current messaging MCP setup documentation
+- [[2025-08-06 – Claude Code Integration Workflow]] - Related automation concepts
+
+See: ProductionReports/CLAUDE.md and ProductionReports/reference/*.

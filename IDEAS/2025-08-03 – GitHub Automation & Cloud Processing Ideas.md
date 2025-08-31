@@ -3,12 +3,12 @@ Status:: #status/idea
 Priority:: #priority/medium
 ---
 
-# GitHub Automation & Cloud Processing Ideas
+# Automation & Cloud Processing Ideas
 
 *Captured: 2025-08-03*
 
 ## Overview
-Comprehensive automation system to process MarthaVault content asynchronously in the cloud using GitHub Actions, reducing dependency on desktop Claude Code sessions.
+Comprehensive automation system to process MarthaVault content asynchronously in the cloud using automation workflows, reducing dependency on desktop sessions.
 
 ## Core Components
 
@@ -52,11 +52,11 @@ repos:
 - **Task Sync**: Bidirectional sync between individual files and master task list
 - **Security**: Prevent accidental commit of sensitive data
 
-### 2. GitHub Actions Workflows
+### 2. Automation Workflows
 
 #### Daily Production Report Processor
 ```yaml
-# .github/workflows/daily-reports.yml
+# .workflows/daily-reports.yml
 name: Process Daily Production Reports
 on:
   schedule:
@@ -80,7 +80,7 @@ jobs:
 
 #### Task Management Automation
 ```yaml
-# .github/workflows/task-management.yml
+# .workflows/task-management.yml
 name: Task Management
 on:
   push:
@@ -106,7 +106,7 @@ jobs:
 
 #### Vault Health Monitoring
 ```yaml
-# .github/workflows/vault-health.yml
+# .workflows/vault-health.yml
 name: Vault Health Check
 on:
   schedule:
@@ -137,7 +137,7 @@ jobs:
 
 #### Inbox Processing
 ```yaml
-# .github/workflows/inbox-processor.yml
+# .workflows/inbox-processor.yml
 name: Process Inbox
 on:
   schedule:
@@ -313,7 +313,7 @@ def process_daily_reports():
 
 ### Solutions
 - Use Anthropic API directly instead of Claude Code
-- Store API keys as GitHub Secrets
+- Store API keys as secure secrets
 - Implement cost controls and usage monitoring
 
 ### Security
@@ -342,4 +342,6 @@ def process_daily_reports():
 - [[2025-07-31 – Daily Executive Dashboard]]
 - [[2025-07-31 – Claude Code Automation Ideas]]
 
-#idea #automation #github #cloud #claude-api #data-integrity #year/2025
+#idea #automation #cloud #api #data-integrity #year/2025
+
+See: ProductionReports/CLAUDE.md and ProductionReports/reference/*.

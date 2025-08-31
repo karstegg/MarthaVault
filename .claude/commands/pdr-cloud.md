@@ -3,16 +3,16 @@
 Trigger fully autonomous cloud-based daily production report processing.
 
 ## Usage
-`/pdr-cloud YYYY-MM-DD` - Process WhatsApp messages for specified date in the cloud
+`/pdr-cloud YYYY-MM-DD` - Process messages for specified date in the cloud
 `/pdr-cloud today` - Process today's messages  
 `/pdr-cloud yesterday` - Process yesterday's messages
 
 ## Process Flow
 1. **Validate Date**: Parse and validate date format
 2. **Trigger GitHub Actions**: Send repository dispatch with date payload
-3. **Bridge Health Check**: Verify WhatsApp bridge is running in Codespace
+3. **Bridge Health Check**: Verify data bridge is running in development environment
 4. **Auto-Restart Bridge**: Start bridge service if not running
-5. **WhatsApp Extraction**: Extract messages from Codespace SQLite database
+5. **Data Extraction**: Extract messages from development environment database
 6. **Data Validation**: Check if production data exists for the date
 7. **Early Exit**: Stop processing with notification if no data found
 8. **Issue Creation**: Create processing issue with @claude mention (only if data exists)
@@ -55,7 +55,7 @@ fi
 ```bash
 echo "🚀 Triggering autonomous cloud processing for $TARGET_DATE..."
 
-# Send repository dispatch to trigger GitHub Actions
+# Send repository dispatch to trigger automation workflows
 # NOTE: Use nested field syntax, not JSON string (fixes HTTP 422 errors)
 gh api repos/karstegg/MarthaVault/dispatches \
   --method POST \
@@ -64,11 +64,11 @@ gh api repos/karstegg/MarthaVault/dispatches \
 
 if [ $? -eq 0 ]; then
     echo "📡 Repository dispatch sent successfully"
-    echo "⏳ GitHub Actions workflow starting..."
+    echo "⏳ Automation workflow starting..."
     echo "🔗 Monitor progress: https://github.com/karstegg/MarthaVault/actions"
     echo ""
     echo "Expected workflow:"
-    echo "  1. Extract WhatsApp messages from Codespace"
+    echo "  1. Extract messages from development environment"
     echo "  2. Create processing issue with @claude mention"  
     echo "  3. Claude processes reports and creates PR"
     echo "  4. Auto-validate and auto-merge PR"
@@ -77,7 +77,7 @@ if [ $? -eq 0 ]; then
     echo "✅ Autonomous processing initiated for $TARGET_DATE"
     echo "📋 Files will be available after 'git pull' once complete"
 else
-    echo "❌ Error: Failed to trigger GitHub Actions"
+    echo "❌ Error: Failed to trigger automation workflows"
     echo "Check authentication: gh auth status"
     exit 1
 fi
@@ -104,10 +104,10 @@ fi
 
 ## Auto-Processing Features
 
-### WhatsApp Data Extraction
+### Data Extraction
 - **Bridge Health Check**: Verifies bridge service is running
 - **Auto-Restart**: Starts bridge if not running (prevents missing data)
-- **Connection**: Connects to Codespace `cuddly-guacamole-496vp6p46wg39r`
+- **Connection**: Connects to development environment
 - **Database Query**: Queries SQLite database for production messages
 - **Filtering**: Filters by date range and content keywords (ROM, Production, Gloria, Nchwaning, S&W)
 - **Data Validation**: Checks if any production data exists for the target date
@@ -160,8 +160,8 @@ fi
 🔗 Monitor progress: https://github.com/karstegg/MarthaVault/actions
 
 Expected workflow:
-  1. Check WhatsApp bridge health (auto-restart if needed)
-  2. Extract WhatsApp messages from Codespace
+  1. Check data bridge health (auto-restart if needed)
+  2. Extract messages from development environment
   3. Validate production data exists (early exit if none found)
   4. Create processing issue with @claude mention
   5. Claude processes reports and creates PR
@@ -178,9 +178,11 @@ Expected workflow:
 ```
 
 ## Integration
-- Works with existing WhatsApp MCP Codespace setup
-- Uses proven GitHub Actions + Codespace integration
+- Works with existing data integration setup
+- Uses proven automation workflows + development environment integration
 - Follows established Report Templates and folder structure
 - Maintains compatibility with local /pdr-single workflow
 
-#daily-production #cloud-processing #automation #autonomous #github-actions #whatsapp #year/2025
+#daily-production #cloud-processing #automation #autonomous #workflows #year/2025
+
+See: ProductionReports/CLAUDE.md and ProductionReports/reference/*.

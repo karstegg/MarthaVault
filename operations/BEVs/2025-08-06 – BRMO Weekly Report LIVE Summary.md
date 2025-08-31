@@ -132,5 +132,5 @@ DueDate::
 
 ## Related Files
 - Source PDF: [[media/documents/2025/2025-08-06 – BRMO Weekly Report LIVE.pdf]]
-- Previous Report: [[BEVs/2025-07-31 – BRMO Weekly Report Summary.md]]
+- Previous Report: [[2025-07-31 – BRMO Weekly Report Summary]]
 - Equipment Database: [[reference/equipment/brmo_fleet_database.json]]

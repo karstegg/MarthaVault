@@ -1,6 +1,8 @@
 # /cloud-status - Check Claude Cloud Activity
 
-Monitor GitHub activity, file changes, and Claude Cloud review status.
+Monitor automation activity, file changes, and review status.
+
+See: ProductionReports/CLAUDE.md and ProductionReports/reference/*.
 
 ## Usage
 ```

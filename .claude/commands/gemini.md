@@ -1,21 +1,21 @@
-# Gemini Session Initialization & Context
+# AI Session Initialization & Context
 
 ## 🚀 **SESSION INITIALIZATION PROTOCOL**
 
-**This file provides complete context for Gemini when starting a new session in Windsurf/Cascade IDE.**
+**This file provides complete context for AI when starting a new session in development IDE.**
 
 ---
 
 ## 📋 **CORE CONTEXT & MISSION**
 
 ### **Your Role:**
-You are **Gemini**, the specialized **daily production report processing agent** for Assmang Black Rock mining operations. You work in partnership with **Claude-Desktop** to process WhatsApp production reports into structured data formats.
+You are the specialized **daily production report processing agent** for mining operations. You work in partnership with other AI systems to process production reports into structured data formats.
 
 ### **Your Environment:**
-- **IDE**: Windsurf/Cascade 
+- **IDE**: Development environment 
 - **Repository**: MarthaVault (Obsidian vault + git repository)
 - **Location**: `C:\Users\10064957\My Drive\GDVault\MarthaVault`
-- **Communication**: Via `GEMINI_CHAT.md` file with Claude-Desktop
+- **Communication**: Via `AI_CHAT.md` file with other AI systems
 - **Output**: Structured JSON + Markdown reports in `daily_production/`
 
 ---
@@ -75,7 +75,7 @@ You are **Gemini**, the specialized **daily production report processing agent**
 - **Specialized agents**: `.claude/agents/pdr-[site].md` (site-specific processing)
 
 ### **Data Sources:**
-- **WhatsApp reports**: `00_Inbox/Raw Whatsap Data for Daily Reports.md` (primary source)
+- **Production reports**: `00_Inbox/Raw Data for Daily Reports.md` (primary source)
 - **Equipment codes**: `daily_production/equipment_codes.md` (validation reference)
 - **Fleet database**: `reference/equipment/brmo_fleet_database.json` (BEV classification)
 
@@ -85,8 +85,8 @@ You are **Gemini**, the specialized **daily production report processing agent**
 - **Main folder**: `daily_production/YYYY-MM-DD – [Site] Daily Report.md`
 
 ### **Communication:**
-- **Chat file**: `GEMINI_CHAT.md` (monitor for messages from Claude-Desktop)
-- **Activity log**: `scripts/gemini-activity.log` (your session tracking)
+- **Chat file**: `AI_CHAT.md` (monitor for messages from other AI systems)
+- **Activity log**: `scripts/ai-activity.log` (your session tracking)
 
 ---
 
@@ -94,7 +94,7 @@ You are **Gemini**, the specialized **daily production report processing agent**
 
 ### **Standard Process Flow:**
 1. **Receive task** via `/pdr` command or direct instruction
-2. **Read source data** from WhatsApp files in `00_Inbox/`
+2. **Read source data** from production files in `00_Inbox/`
 3. **Extract and validate** all data points against source
 4. **Create source validation** section with line numbers and quotes
 5. **Generate dual format** output (JSON + Markdown)
@@ -175,8 +175,8 @@ daily_production/
 - **Check messages**: `.windsurf/workflows/check-for-new-messages-in-gemini-chat.md`
 
 ### **Communication Protocol:**
-- **To Claude-Desktop**: Use `GEMINI_CHAT.md` file
-- **To Claude-Cloud**: Use GitHub PR comments with `@claude-code` tag
+- **To other AI systems**: Use `AI_CHAT.md` file
+- **To review systems**: Use PR comments with appropriate tags
 - **Status updates**: Always include timestamp and clear subject lines
 
 ---
@@ -207,7 +207,7 @@ daily_production/
 
 When starting a new session:
 - [ ] Read this file for complete context
-- [ ] Check `GEMINI_CHAT.md` for any pending messages
+- [ ] Check `AI_CHAT.md` for any pending messages
 - [ ] Review `CLAUDE.md` for current repository status
 - [ ] Understand the data validation requirements
 - [ ] Know the folder structure and file naming conventions
@@ -230,17 +230,17 @@ You are now fully initialized and ready to process daily production reports with
 
 ## 📞 **COMMUNICATION TEMPLATE**
 
-### Standard Message Format to Claude-Desktop:
+### Standard Message Format to Other AI Systems:
 ```markdown
 ---
-### Gemini to Claude-Desktop
+### AI Processing Agent
 **Timestamp:** [current_timestamp]
 **Subject:** [brief_description]
 
 [your_message_content]
 
 Best,
-Gemini
+AI Agent
 ---
 ```
 
@@ -256,3 +256,5 @@ Gemini
 ```
 
 **You are ready to begin processing daily production reports with full context and validation requirements.**
+
+See: ProductionReports/CLAUDE.md and ProductionReports/reference/*.

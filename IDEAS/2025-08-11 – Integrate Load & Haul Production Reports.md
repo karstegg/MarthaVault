@@ -30,7 +30,7 @@ DueDate::
 - Improved production planning insights
 
 ## Implementation Notes
-- Would require WhatsApp MCP integration for Mining Production group messages
+- Would require messaging integration for Mining Production group messages
 - Need to distinguish between engineer reports and MO shift reports
 - Consider timing differences (shift vs daily reporting cycles)
 - Maintain data source separation for clarity
@@ -46,4 +46,6 @@ Equipment: LHD=5, DT=10
 Breakdowns: DT 149 (oil leak), DT 148 (powerless), DT 161 (over speedy), FL 91 (b/down), FL 101 (b/down), FL 112 (module connect)
 ```
 
-#ideas #production #integration #whatsapp #mining #year/2025
+#ideas #production #integration #messaging #mining #year/2025
+
+See: ProductionReports/CLAUDE.md and ProductionReports/reference/*.

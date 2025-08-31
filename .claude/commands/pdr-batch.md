@@ -1,6 +1,6 @@
 # /pdr-batch $ARGUMENTS
 
-Process daily production reports from WhatsApp messages using parallel agents for efficient batch processing.
+Process daily production reports from messages using parallel agents for efficient batch processing.
 
 ## Usage
 `/pdr-batch` - Auto-scan 00_inbox/ for production reports and process them using parallel specialized agents
@@ -12,7 +12,7 @@ Process daily production reports from WhatsApp messages using parallel agents fo
 ### 0. Auto-Inbox Detection & Parallel Processing (Default Behavior)
 When `/pdr` is called without arguments:
 - Scan `00_inbox/` for files containing production report data
-- Look for WhatsApp message formats, text files, or markdown files
+- Look for message formats, text files, or markdown files
 - Identify reports by keywords: "Safety:", "Production:", "ROM:", site names (Nchwaning, Gloria)
 - **Single Report**: Process directly with main agent
 - **Multiple Reports**: Launch parallel specialized agents for concurrent processing:
@@ -250,3 +250,5 @@ Each specialized agent MUST:
 - Flag critical issues for management attention
 
 #daily-production #processing #automation #mining #reports #year/2025 #templates
+
+See: ProductionReports/CLAUDE.md and ProductionReports/reference/*.

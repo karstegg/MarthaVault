@@ -1,0 +1,14 @@
+Nchwaning 2
+Status:: Draft
+Priority:: Low
+Assignee:: Greg
+DueDate::
+Tags:: #year/2025 #reference #site/Nchwaning2
+
+Overview: Mine site (UG).
+
+Links
+
+People: see people/ (e.g., Nzuza, Sikelela; Petersen, Xavier; Dubazane, Sipho; Sease, Sello).
+
+Production data and site-specific schemas: ProductionReports/reference/places/Nchwaning 2.md

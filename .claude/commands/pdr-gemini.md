@@ -1,19 +1,19 @@
-# /pdr-gemini
+# /pdr-ai
 
-Trigger fully autonomous Gemini-based daily production report processing using the enhanced Gemini 2.5 Flash solution with Claude-quality templates.
+Trigger fully autonomous AI-based daily production report processing using enhanced processing solution with established templates.
 
 ## Usage
-`/pdr-gemini YYYY-MM-DD` - Process WhatsApp messages for specified date using enhanced Gemini AI
-`/pdr-gemini today` - Process today's messages with Gemini (Claude-quality output)
-`/pdr-gemini yesterday` - Process yesterday's messages with Gemini (Claude-quality output)
+`/pdr-ai YYYY-MM-DD` - Process messages for specified date using enhanced AI
+`/pdr-ai today` - Process today's messages with AI (quality output)
+`/pdr-ai yesterday` - Process yesterday's messages with AI (quality output)
 
 ## 🎯 **ENHANCED FEATURES (2025-08-24)**
 **Now produces Claude-quality comprehensive reports using established templates!**
 
 ## Process Flow
 1. **Validate Date**: Parse and validate date format
-2. **Trigger Enhanced Workflow**: Execute gemini-quick-test.yml with comprehensive template-based prompt
-3. **Template-Driven Processing**: FREE Gemini 2.5 Flash follows Report Templates for professional output
+2. **Trigger Enhanced Workflow**: Execute ai-processing.yml with comprehensive template-based prompt
+3. **Template-Driven Processing**: Cost-effective AI follows Report Templates for professional output
 4. **Comprehensive File Creation**: Generates detailed JSON and professional Markdown files for all mine sites
 5. **Quality Assurance**: Source validation, equipment code verification, professional language
 6. **Auto-Commit**: Automatically commits Claude-quality files to repository
@@ -36,7 +36,7 @@ case "$TARGET_DATE" in
         ;;
     "")
         echo "❌ Error: Date required"
-        echo "Usage: /pdr-gemini YYYY-MM-DD|today|yesterday"
+        echo "Usage: /pdr-ai YYYY-MM-DD|today|yesterday"
         exit 1
         ;;
 esac
@@ -48,33 +48,33 @@ if ! [[ "$TARGET_DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
 fi
 ```
 
-### Gemini Workflow Execution
+### AI Workflow Execution
 ```bash
-echo "🚀 Triggering Gemini 2.5 Flash processing for $TARGET_DATE..."
-echo "💰 Using FREE Gemini AI (zero cost alternative to Claude)"
+echo "🚀 Triggering AI processing for $TARGET_DATE..."
+echo "💰 Using cost-effective AI processing"
 
-# Execute the breakthrough Gemini workflow
-gh workflow run gemini-quick-test.yml --field date="$TARGET_DATE"
+# Execute the AI workflow
+gh workflow run ai-processing.yml --field date="$TARGET_DATE"
 
 if [ $? -eq 0 ]; then
-    echo "📡 Gemini workflow triggered successfully"
-    echo "⏳ Processing starting with Gemini 2.5 Flash..."
+    echo "📡 AI workflow triggered successfully"
+    echo "⏳ Processing starting with AI..."
     echo "🔗 Monitor progress: https://github.com/karstegg/MarthaVault/actions"
     echo ""
-    echo "Expected Gemini workflow:"
-    echo "  1. Connect to Codespace and extract WhatsApp data"
-    echo "  2. Process with Gemini 2.5 Flash (FREE model)"
+    echo "Expected AI workflow:"
+    echo "  1. Connect to development environment and extract data"
+    echo "  2. Process with cost-effective AI model"
     echo "  3. Generate JSON + Markdown files for all mine sites"
     echo "  4. Auto-commit files to repository"
     echo "  5. Auto-sync files to local repository"
     echo "  6. Complete processing in ~3 minutes"
     echo ""
-    echo "✅ Gemini autonomous processing initiated for $TARGET_DATE"
+    echo "✅ AI autonomous processing initiated for $TARGET_DATE"
     echo "📋 Files will be pulled automatically when processing completes"
     
     # Wait for Gemini workflow to complete, then pull changes
     echo ""
-    echo "⏳ Waiting for Gemini processing to complete..."
+    echo "⏳ Waiting for AI processing to complete..."
     
     # Monitor workflow completion with timeout
     TIMEOUT=180  # 3 minutes timeout
@@ -85,7 +85,7 @@ if [ $? -eq 0 ]; then
         ELAPSED=$((ELAPSED + 10))
         
         # Check if workflow completed
-        LATEST_RUN=$(gh run list --workflow="gemini-quick-test.yml" --limit=1 --json status,conclusion --jq '.[0]')
+        LATEST_RUN=$(gh run list --workflow="ai-processing.yml" --limit=1 --json status,conclusion --jq '.[0]')
         
         if [ -n "$LATEST_RUN" ] && [ "$LATEST_RUN" != "null" ]; then
             STATUS=$(echo "$LATEST_RUN" | jq -r '.status')
@@ -93,7 +93,7 @@ if [ $? -eq 0 ]; then
             
             if [ "$STATUS" = "completed" ]; then
                 if [ "$CONCLUSION" = "success" ]; then
-                    echo "✅ Gemini processing completed successfully"
+                    echo "✅ AI processing completed successfully"
                     echo "🔄 Pulling files to local repository..."
                     
                     # Pull the changes directly
@@ -109,11 +109,11 @@ if [ $? -eq 0 ]; then
                     fi
                     break
                 else
-                    echo "❌ Gemini workflow failed - check GitHub Actions for details"
+                    echo "❌ AI workflow failed - check automation for details"
                     break
                 fi
             else
-                echo "⏳ Gemini workflow still running... (${ELAPSED}s/${TIMEOUT}s)"
+                echo "⏳ AI workflow still running... (${ELAPSED}s/${TIMEOUT}s)"
             fi
         else
             if [ $ELAPSED -gt 30 ]; then
@@ -127,7 +127,7 @@ if [ $? -eq 0 ]; then
     fi
     
 else
-    echo "❌ Error: Failed to trigger Gemini workflow"
+    echo "❌ Error: Failed to trigger AI workflow"
     echo "Check authentication: gh auth status"
     exit 1
 fi
@@ -136,34 +136,34 @@ fi
 ### Progress Monitoring
 ```bash
 # Optional: Monitor workflow progress
-echo "🔄 Monitoring Gemini workflow progress..."
+echo "🔄 Monitoring AI workflow progress..."
 
 # Wait a moment for workflow to start
 sleep 5
 
 # Get latest Gemini workflow run
-LATEST_RUN=$(gh run list --workflow="gemini-quick-test.yml" --limit=1 --json databaseId --jq '.[0].databaseId')
+LATEST_RUN=$(gh run list --workflow="ai-processing.yml" --limit=1 --json databaseId --jq '.[0].databaseId')
 
 if [ -n "$LATEST_RUN" ]; then
-    echo "📊 Gemini workflow run ID: $LATEST_RUN"
+    echo "📊 AI workflow run ID: $LATEST_RUN"
     echo "👀 Use 'gh run watch $LATEST_RUN' to monitor in real-time"
-    echo "💡 Tip: Watch for 'Hello from Gemini AI - Test successful!' in logs"
+    echo "💡 Tip: Watch for 'AI processing successful!' in logs"
 else
-    echo "ℹ️  Gemini workflow starting - check GitHub Actions page for progress"
+    echo "ℹ️  AI workflow starting - check automation page for progress"
 fi
 ```
 
-## Gemini 2.5 Flash Features
+## AI Processing Features
 
 ### Breakthrough Technical Solution
-- **Model**: Gemini 2.5 Flash (FREE with generous quotas)
+- **Model**: Cost-effective AI (with generous quotas)
 - **Configuration**: Uses `settings.model` approach (not `gemini_model` parameter)
 - **Session Capacity**: 15 turns for complete multi-site processing
 - **Tool Permissions**: `autoAccept: ["list_directory", "read_file", "write_file", "glob"]`
-- **Action Version**: `google-github-actions/run-gemini-cli@v0.1.11`
+- **Integration**: Custom automation workflows
 
 ### Enhanced Data Processing (Template-Based)
-- **WhatsApp Integration**: Direct Codespace SQLite access
+- **Data Integration**: Direct development environment access
 - **Multi-Site Processing**: Gloria, Nchwaning 2, Nchwaning 3, Shafts & Winders
 - **Template Compliance**: Reads `Report Templates/Standard Mine Site Report Template.md` and `Report Templates/Shafts & Winders Report Template.md`
 - **Professional Quality**: Comprehensive reports matching Claude output standards
@@ -266,4 +266,6 @@ Expected Enhanced Gemini workflow:
 | **Templates** | None | Mandatory Report Templates compliance |
 | **Language** | Technical only | Professional business-appropriate tone |
 
-#daily-production #gemini #automation #autonomous #github-actions #free-processing #year/2025
+#daily-production #ai #automation #autonomous #processing #year/2025
+
+See: ProductionReports/CLAUDE.md and ProductionReports/reference/*.

@@ -5,7 +5,7 @@ Assignee:: [[Greg Karsten]]
 DueDate:: 
 ---
 
-# IDEA: Autonomous WhatsApp Production Report Monitoring
+# IDEA: Autonomous Production Report Monitoring
 
 **Date**: 2025-08-24  
 **Category**: Automation & AI Integration  
@@ -13,12 +13,12 @@ DueDate::
 
 ## Overview
 
-Create a fully autonomous system that monitors the WhatsApp production engineering group and automatically processes daily production reports using AI, eliminating the need for manual `/pdr-cloud` or `/pdr-gemini` commands.
+Create a fully autonomous system that monitors production engineering communications and automatically processes daily production reports using AI, eliminating the need for manual processing commands.
 
 ## Current Problem
 
-- Engineers send daily production reports to WhatsApp group between 4:00-8:00 AM SAST
-- Manual processing required using `/pdr-cloud` or `/pdr-gemini` commands
+- Engineers send daily production reports via messaging systems between 4:00-8:00 AM SAST
+- Manual processing currently required using various processing commands
 - Risk of missing reports on weekends or holidays
 - Inconsistent processing timing leads to delayed management visibility
 
@@ -27,13 +27,13 @@ Create a fully autonomous system that monitors the WhatsApp production engineeri
 ### **Three-Stage Autonomous Process**
 
 #### **Stage 1: Intelligent Message Monitoring**
-- **GitHub Actions** runs every 15 minutes during report window (6:00-9:00 AM SAST)
-- **WhatsApp Detection**: Queries Codespace SQLite database for new production messages
+- **Automation workflows** run every 15 minutes during report window (6:00-9:00 AM SAST)
+- **Message Detection**: Queries database for new production messages
 - **Smart Filtering**: Keywords (ROM, Safety, Gloria Report, Nchwaning, S&W, Decline, Product, Loads)
 - **Trigger Logic**: Only initiates processing when actual production data detected
 
-#### **Stage 2: Gemini Initial Processing (FREE)**
-- **Cost Optimization**: Uses FREE Gemini 2.5 Flash for initial draft generation
+#### **Stage 2: AI Initial Processing**
+- **Cost Optimization**: Uses efficient AI models for initial draft generation
 - **Template Compliance**: Follows established report templates and validation rules
 - **Speed**: ~2-3 minutes processing time
 - **Output**: Draft JSON + Markdown files for all detected mine sites
@@ -196,4 +196,6 @@ This autonomous WhatsApp monitoring system represents a significant leap forward
 
 The phased implementation approach minimizes risk while allowing for continuous refinement based on real operational experience. The expected 50% cost reduction and elimination of manual processing overhead make this a high-value investment in operational efficiency.
 
-#idea #automation #whatsapp #ai #gemini #claude #daily-production #cost-optimization #year/2025
+#idea #automation #messaging #ai #daily-production #cost-optimization #year/2025
+
+See: ProductionReports/CLAUDE.md and ProductionReports/reference/*.
