@@ -59,7 +59,8 @@
       "mcp__memory__read_graph",
       "mcp__memory__open_nodes",
       "mcp__basic-memory__read_note",
-      "Bash(git rev-parse:*)"
+      "Bash(git rev-parse:*)",
+      "Bash(where.exe:*)"
     ],
     "deny": []
   },

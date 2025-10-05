@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "strategy/ActivePhase.md",
+                "file": "00_Inbox/test-git-sync.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ActivePhase"
+              "title": "test-git-sync"
             }
           }
         ]
@@ -209,8 +209,10 @@
   },
   "active": "a140bbf9adcb3b66",
   "lastOpenFiles": [
-    "strategy/CompanyStrategy.md",
     "strategy/ActivePhase.md",
+    "Schedule/2025-12-31 - Task Due - ActivePhase.md",
+    "00_Inbox/test-git-sync.md",
+    "strategy/CompanyStrategy.md",
     "system/skills/inbox-triage.md",
     "system/skills/daily-note-creation.md",
     "README.md",
@@ -240,8 +242,6 @@
     "Schedule/2025-09-27 - Meeting - master_task_list.md",
     "tasks/2025-09-15 – Daily Tasks and Action Items.md",
     "tasks/2025-09-12 – Mixed Project Tasks and Updates.md",
-    "tasks/2025-08-06 – Weekly Tasks List.md",
-    "tasks/2025-08-18 – Recruit N3 GES.md",
     "00_Inbox/~WRL3827.tmp",
     "00_Inbox/~WRD3811.tmp",
     "00_Inbox/~$mo - Junior Poject Engineers Memo.docx",
