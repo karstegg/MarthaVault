@@ -39,5 +39,6 @@ Senior Production Engineer - Underground Mining Sites
 - Fire safety procedures and training
 - GES appointments and assessments
 - Contractor management (SA Cranes)
+- Git-based memory sync system (Phase 1 Intuition Layer)
 
 #people #senior-engineer #production #underground-mining #team-leader #year/2025

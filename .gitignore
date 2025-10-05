@@ -81,3 +81,8 @@ auth_info_baileys/
 .obsidian/workspace*
 .obsidian/cache/
 .trash/
+
+# Git sync system files (machine-specific)
+.vault-sync-checkpoint
+.vault-sync.log
+.sync-temp-input.txt

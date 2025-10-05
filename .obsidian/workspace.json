@@ -170,14 +170,23 @@
               "icon": "calendar-glyph",
               "title": "Full Calendar"
             }
+          },
+          {
+            "id": "41950e5bf20242c5",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 615.5,
-    "collapsed": true
+    "width": 615.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,7 +203,8 @@
       "obsidian-full-calendar:Open Full Calendar": false,
       "audio-recorder:Start/stop recording": false,
       "cmdr:New Journal Note": false,
-      "cmdr:New Devotional": false
+      "cmdr:New Devotional": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "a140bbf9adcb3b66",
