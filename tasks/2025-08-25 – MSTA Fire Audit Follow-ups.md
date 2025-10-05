@@ -1,8 +1,9 @@
 ---
-Status:: #status/active
-Priority:: #priority/critical
-Date:: 2025-08-25
-Tags:: #fire-audit #MSTA #Henk-Erasmus #Kenru-Fire #TMM #reminders #year/2025
+Status:: Active
+Priority:: High
+Assignee:: Greg
+DueDate:: 2025-08-25
+Tags:: #year/2025 #task
 ---
 
 # MSTA Fire Audit Follow-ups - 25 August 2025
@@ -13,12 +14,12 @@ Tags:: #fire-audit #MSTA #Henk-Erasmus #Kenru-Fire #TMM #reminders #year/2025
 - [x] **Coordinate audit logistics** - MSTA + Kenru Fire working together
 
 ## 📅 TOMORROW - Gerard Arrival
-- [ ] **Prepare for Gerard** (Henk's MSTA colleague)
+- [x] **Prepare for Gerard** (Henk's MSTA colleague) ✅ 2025-09-27
 - [ ] **Continue audit support** with both consultants
 - [ ] **Document findings** from Day 1 audit results
 
 ## 🔄 WEEKLY RECURRING
-- [ ] **Marina access reminder** - Every Friday for access renewal
+- [x] **Marina access reminder** - Every Friday for access renewal ✅ 2025-09-27
   - Set calendar reminder for weekly Friday notifications
   - Ensure continuity of site access for contractors
 

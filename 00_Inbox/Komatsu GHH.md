@@ -1,1 +1,0 @@
-150kw Mobile charger 1.1t on a skid

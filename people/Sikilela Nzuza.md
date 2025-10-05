@@ -1,3 +1,11 @@
+---
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 
+Tags:: #year/2025 #people #site/nchwaning2
+---
+
 Role:: Engineer - Nchwaning 2
 Started::
 Status:: On leave (Johan Kotze acting)

@@ -1,8 +1,9 @@
 ---
-Status:: #status/new
-Priority:: #priority/medium
-Assignee:: 
+Status:: new
+Priority:: Med
+Assignee:: Greg
 DueDate:: 
+Tags:: #year/2025 #operations #site/nchwaning2
 ---
 
 # Weekly Standby List Summary (July 28 - August 3, 2025)

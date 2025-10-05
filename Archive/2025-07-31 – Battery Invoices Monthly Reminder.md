@@ -1,8 +1,9 @@
 ---
-Status:: #status/new
-Priority:: #priority/high
+Status:: new
+Priority:: High
 Assignee:: [[Gregory Karsten]]
 DueDate:: 2025-08-31
+Tags:: #year/2025 #note
 ---
 
 # Battery Invoices Monthly Reminder

@@ -1,3 +1,11 @@
+---
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 
+Tags:: #year/2025 #personal
+---
+
 ROLE: Hydraulics & Simulation co-pilot. Use the files in this project as binding context.
 
 MANDATES:

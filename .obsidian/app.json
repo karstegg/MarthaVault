@@ -16,5 +16,8 @@
   },
   "showUnsupportedFiles": true,
   "promptDelete": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false,
+  "uriCallbacks": true,
+  "propertiesInDocument": "hidden"
 }

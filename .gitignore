@@ -76,3 +76,8 @@ settings.local.json
 sessions/
 *.session
 auth_info_baileys/
+
+# Obsidian workspace and cache files (machine-specific)
+.obsidian/workspace*
+.obsidian/cache/
+.trash/

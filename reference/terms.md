@@ -1,9 +1,10 @@
-Mining Terms
+---
 Status:: Draft
-Priority:: Low
+Priority:: Med
 Assignee:: Greg
-DueDate::
-Tags:: #year/2025 #reference
+DueDate:: 
+Tags:: #year/2025 #reference #site/shafts-winders
+---
 
 UG — Underground operations
 

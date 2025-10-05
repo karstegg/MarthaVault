@@ -1,8 +1,9 @@
 ---
-Status:: #status/active
-Priority:: #priority/high
+Status:: active
+Priority:: High
 Assignee:: [[Gregory Karsten]]
 DueDate:: 2025-08-15
+Tags:: #year/2025 #project
 ---
 
 # Dump Trucks & TLB Procurement Update

@@ -1,8 +1,9 @@
 ---
-Status:: #status/new
-Priority:: #priority/high
-Assignee:: 
+Status:: new
+Priority:: High
+Assignee:: Greg
 DueDate:: 
+Tags:: #year/2025 #task #site/gloria
 ---
 
 # Priority Task Schedule - Week of July 29, 2025
@@ -23,11 +24,11 @@ DueDate::
   - Critical milestone for GES process
 
 ### SA Cranes Process (URGENT START)
-- [ ] **Get Lawrence Van Gieren approval** - *DUE: This week* ⏰ URGENT ⏫ 
+- [x] **Get Lawrence Van Gieren approval** - *DUE: This week* ⏰ URGENT ⏫ 
   - Must approve email before sending to SA Cranes
   - Contact: [[Lawrence Van Gieren]]
 
-- [ ] **Contact SA Cranes for proposal** - *DUE: This week* ⏰ URGENT   ⏫ 
+- [x] **Contact SA Cranes for proposal** - *DUE: This week* ⏰ URGENT ⏫ ✅ 2025-09-25
   - Email: skulk@sacranes.com
   - Depends on: Lawrence approval
 
@@ -53,10 +54,10 @@ DueDate::
   - Get quote first, Capital pre-approved
 
 ### SA Cranes Evaluation (Post-Proposal)
-- [ ] **Evaluate SA Cranes proposal** - *DUE: Aug 15* ⏰ 17 days left
+- [x] **Evaluate SA Cranes proposal** - *DUE: Aug 15* ⏰ 17 days left
   - Compare against current contract
   
-- [ ] **Review SA Cranes scope changes** - *DUE: Aug 15* ⏰ 17 days left
+- [x] **Review SA Cranes scope changes** - *DUE: Aug 15* ⏰ 17 days left
   - Identify new items or process changes
 
 ## ⚡ IMMEDIATE ACTIONS NEEDED

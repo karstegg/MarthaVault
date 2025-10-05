@@ -1,8 +1,9 @@
 ---
-title: Xavier SP Mine Safety Lamp Room Contract Due
-allDay: true
-date: 2025-08-29
-completed: null
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 2025-08-31
+Tags:: #year/2025 #calendar
 ---
 
 # Xavier SP Mine Safety Lamp Room Contract - Due Date

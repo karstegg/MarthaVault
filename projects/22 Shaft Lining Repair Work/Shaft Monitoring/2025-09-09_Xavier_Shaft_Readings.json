@@ -1,0 +1,70 @@
+{
+  "source": "Xavier Petersen WhatsApp",
+  "extraction_date": "2025-09-09",
+  "readings": [
+    {
+      "date": "2025-09-01",
+      "reading_a": 1984,
+      "reading_b": 2052,
+      "reading_c": 2152,
+      "guide_gap_a": 1416,
+      "skip_condition": "No marks on skip"
+    },
+    {
+      "date": "2025-09-02",
+      "reading_a": 1984,
+      "reading_b": 2052,
+      "reading_c": 2152,
+      "guide_gap_a": 1416,
+      "skip_condition": "No marks on skip"
+    },
+    {
+      "date": "2025-09-03",
+      "reading_a": 1984,
+      "reading_b": 2052,
+      "reading_c": 2152,
+      "guide_gap_a": 1416,
+      "skip_condition": "No marks on skip"
+    },
+    {
+      "date": "2025-09-04",
+      "reading_a": 1984,
+      "reading_b": 2052,
+      "reading_c": 2152,
+      "guide_gap_a": 1416,
+      "skip_condition": "No marks on skip"
+    },
+    {
+      "date": "2025-09-05",
+      "reading_a": 1984,
+      "reading_b": 2052,
+      "reading_c": 2152,
+      "guide_gap_a": 1416,
+      "skip_condition": "No marks on skip"
+    },
+    {
+      "date": "2025-09-06",
+      "reading_a": 1984,
+      "reading_b": 2052,
+      "reading_c": 2152,
+      "guide_gap_a": 1416,
+      "skip_condition": "No marks on skip"
+    },
+    {
+      "date": "2025-09-07",
+      "reading_a": 1984,
+      "reading_b": 2052,
+      "reading_c": 2152,
+      "guide_gap_a": 1416,
+      "skip_condition": "No marks on skip"
+    },
+    {
+      "date": "2025-09-08",
+      "reading_a": 1984,
+      "reading_b": 2052,
+      "reading_c": 2152,
+      "guide_gap_a": 1416,
+      "skip_condition": "No marks on skip"
+    }
+  ]
+}

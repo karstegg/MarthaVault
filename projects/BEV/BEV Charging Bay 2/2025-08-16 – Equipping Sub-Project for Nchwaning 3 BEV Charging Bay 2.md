@@ -1,15 +1,9 @@
 ---
-tags:
-  - "#project/BEV/equipping"
-  - "#site/nchwaning3"
-  - "#initiative/sub-project"
-  - "#equipment/BEV"
-  - "#status/planning"
-  - "#year/2025"
-aliases:
-  - "N3 BEV Charging Bay 2 Equipping"
-  - "Nchwaning 3 BEV Equipping"
-date: 2025-08-16
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 2025-08-16
+Tags:: #year/2025 #project #site/nchwaning3
 ---
 
 # Equipping Sub-Project: Nchwaning 3 BEV Charging Bay 2

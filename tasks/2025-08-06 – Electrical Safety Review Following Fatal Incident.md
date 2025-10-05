@@ -1,8 +1,9 @@
 ---
-Status:: #status/new
-Priority:: #priority/urgent
+Status:: new
+Priority:: Med
 Assignee:: [[Greg]]
 DueDate:: 
+Tags:: #year/2025 #task
 ---
 
 # Electrical Safety Review Following Fatal Incident

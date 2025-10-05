@@ -1,10 +1,9 @@
 ---
-title: TMM COP Review Meeting
-allDay: false
-date: 2025-08-30
-startTime: "09:00"
-endTime: "11:00"
-completed: null
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 2025-08-30
+Tags:: #year/2025 #calendar
 ---
 
 # TMM COP Review Meeting

@@ -1,6 +1,9 @@
 ---
-Status:: #status/idea
-Priority:: #priority/medium
+Status:: idea
+Priority:: Med
+Assignee:: Greg
+DueDate:: 2025-08-03
+Tags:: #year/2025 #idea #site/gloria
 ---
 
 # Automation & Cloud Processing Ideas

@@ -1,3 +1,11 @@
+---
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 
+Tags:: #year/2025 #people #site/nchwaning2
+---
+
 Role:: General Engineering Supervisor (GES) - TMM Underground
 Started:: 
 

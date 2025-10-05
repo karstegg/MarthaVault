@@ -1,5 +1,9 @@
 ---
-Status:: #status/new Priority:: #priority/medium Assignee:: [[Hennie van Niekerk]] DueDate::
+Status:: new Priority:: #priority/medium Assignee:: [[Hennie van Niekerk]] DueDate::
+Priority:: Med
+Assignee:: Greg
+DueDate:: 2025-08-13
+Tags:: #year/2025 #project
 ---
 
 # Cruiser Nersopec PSU Issues Notes

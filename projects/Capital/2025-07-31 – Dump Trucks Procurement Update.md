@@ -1,8 +1,9 @@
 ---
-Status:: #status/active
-Priority:: #priority/urgent
+Status:: active
+Priority:: Med
 Assignee:: [[Gregory Karsten]]
 DueDate:: 2025-08-08
+Tags:: #year/2025 #project
 ---
 
 # Dump Trucks Procurement Update

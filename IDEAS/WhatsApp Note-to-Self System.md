@@ -1,8 +1,9 @@
 ---
-Status:: #status/new
-Priority:: #priority/high
+Status:: new
+Priority:: High
 Assignee:: [[Gregory Karsten]]
 DueDate:: 2025-08-30
+Tags:: #year/2025 #idea #site/gloria
 ---
 
 # WhatsApp Note-to-Self System

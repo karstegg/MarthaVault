@@ -1,8 +1,9 @@
 ---
-title: VFL Week 2 N3 Risk Assessment
-allDay: true
-date: 2025-08-12
-completed: true
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 2025-08-12
+Tags:: #year/2025 #calendar
 ---
 
 # VFL Week 2 - N3 Risk Assessment

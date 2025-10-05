@@ -1,6 +1,9 @@
 ---
-"Role:": Operations Manager
-"Started:": 2021-07-29
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 
+Tags:: #year/2025 #people
 ---
 
 # Rudy Opperman

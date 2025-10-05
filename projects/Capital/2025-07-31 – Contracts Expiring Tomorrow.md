@@ -1,8 +1,9 @@
 ---
-Status:: #status/urgent
-Priority:: #priority/urgent
+Status:: urgent
+Priority:: Med
 Assignee:: [[Gregory Karsten]]
 DueDate:: 2025-08-01
+Tags:: #year/2025 #project
 ---
 
 # Contracts Expiring Tomorrow - URGENT

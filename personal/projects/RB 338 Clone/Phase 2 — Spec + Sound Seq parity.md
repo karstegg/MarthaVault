@@ -1,3 +1,11 @@
+---
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 
+Tags:: #year/2025 #personal
+---
+
 # Phase 2 — Spec + Sound/Seq parity
 
 ## A) 303/RB-338 behavior (engine)

@@ -1,3 +1,11 @@
+---
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 
+Tags:: #year/2025 #personal
+---
+
 # Assumptions & Data Ledger
 - Oil (provisional): ρ = 850 kg/m³, μ ≈ 0.03 Pa·s (VG46 @ ~40 °C), β = 1.5 GPa.
 - Backpressure (T): **2 bar**.

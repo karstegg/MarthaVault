@@ -1,3 +1,11 @@
+---
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 
+Tags:: #year/2025 #reference #site/nchwaning2
+---
+
 # Assmang Black Rock Operations
 
 ## Company Information

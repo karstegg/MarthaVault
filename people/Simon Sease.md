@@ -1,6 +1,9 @@
 ---
-Role:: Engineer
-Started:: 2025-07-29
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 
+Tags:: #year/2025 #people #site/nchwaning3
 ---
 
 # Sello Simon Sease (Simon)
@@ -13,6 +16,6 @@ Engineer stationed at Nchwaning 3 mine site
 
 ## Contact Information
 Location: Nchwaning 3
-Reports to: Martha
+Reports to: [[Gregory Karsten]]
 
 #people #area-manager #GES #year/2025

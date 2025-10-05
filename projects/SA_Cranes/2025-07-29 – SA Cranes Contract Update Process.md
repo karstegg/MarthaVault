@@ -1,8 +1,9 @@
 ---
-Status:: #status/new
-Priority:: #priority/high
-Assignee:: 
+Status:: new
+Priority:: High
+Assignee:: Greg
 DueDate:: 
+Tags:: #year/2025 #project
 ---
 
 # SA Cranes Contract Update Process

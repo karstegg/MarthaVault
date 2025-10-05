@@ -1,3 +1,11 @@
+---
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 2025-08-18
+Tags:: #year/2025 #task
+---
+
 # Implement Gazetted Regulations Update
 
 This overarching task covers the implementation of the recently gazetted regulations, focusing on occupational health, safety, and compliance.

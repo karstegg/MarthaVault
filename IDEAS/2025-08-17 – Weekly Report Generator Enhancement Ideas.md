@@ -1,8 +1,9 @@
 ---
-Status:: #status/new
-Priority:: #priority/low
+Status:: new
+Priority:: Low
 Assignee:: [[Greg Karsten]]
-DueDate::
+DueDate:: 
+Tags:: #year/2025 #idea
 ---
 
 # Weekly Report Generator Enhancement Ideas

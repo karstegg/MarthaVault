@@ -1,6 +1,9 @@
 ---
-Role:: Engineer
-Started:: 2025-07-29
+Status:: Active
+Priority:: Med
+Assignee:: Greg
+DueDate:: 
+Tags:: #year/2025 #people #site/gloria
 ---
 
 # Sipho Dubazane (Sipo)

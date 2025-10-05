@@ -1,10 +1,9 @@
 ---
-"Status:": Complete
-"Priority:": 
-"Assignee:":
-  - - Greg Karsten
-"DueDate:": 2025-08-09
-"CompletedDate:": 2025-08-11
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 2025-08-02
+Tags:: #year/2025 #operations
 ---
 
 # Barloworld Equipment Invoices Payment Urgent

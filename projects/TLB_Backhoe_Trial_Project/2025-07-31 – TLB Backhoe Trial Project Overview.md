@@ -1,8 +1,9 @@
 ---
-Status:: #status/active
-Priority:: #priority/high
+Status:: active
+Priority:: High
 Assignee:: [[Gregory Karsten]]
 DueDate:: 2025-08-31
+Tags:: #year/2025 #project
 ---
 
 # TLB Backhoe Trial Project Overview

@@ -1,9 +1,10 @@
-Nchwaning 3
+---
 Status:: Draft
-Priority:: Low
+Priority:: Med
 Assignee:: Greg
-DueDate::
-Tags:: #year/2025 #reference #site/Nchwaning3
+DueDate:: 
+Tags:: #year/2025 #reference #site/nchwaning3
+---
 
 Overview: Mine site (UG).
 

@@ -1,9 +1,10 @@
-Black Rock
+---
 Status:: Draft
-Priority:: Low
+Priority:: Med
 Assignee:: Greg
-DueDate::
-Tags:: #year/2025 #reference #site/BlackRock
+DueDate:: 
+Tags:: #year/2025 #reference
+---
 
 Overview: Main site / operation center.
 

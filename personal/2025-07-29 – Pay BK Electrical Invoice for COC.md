@@ -1,3 +1,11 @@
+---
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 2025-07-29
+Tags:: #year/2025 #personal
+---
+
 Status:: #status/completed
 Priority:: #priority/high
 Assignee:: [[Gregory Karsten]]

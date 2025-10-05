@@ -1,8 +1,9 @@
 ---
-Status:: #status/completed
-Priority:: #priority/high
+Status:: completed
+Priority:: High
 Assignee:: [[Greg Karsten]]
 DueDate:: 2025-08-15
+Tags:: #year/2025 #operations #site/gloria
 ---
 
 # WTW Audit Processing Summary - August 11, 2025

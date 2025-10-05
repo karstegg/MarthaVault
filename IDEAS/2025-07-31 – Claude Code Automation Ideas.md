@@ -1,8 +1,9 @@
 ---
-Status:: #status/new
-Priority:: #priority/low
-Assignee:: 
+Status:: new
+Priority:: Low
+Assignee:: Greg
 DueDate:: 
+Tags:: #year/2025 #idea
 ---
 
 # Claude Code Automation Ideas

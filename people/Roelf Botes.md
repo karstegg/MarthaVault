@@ -1,7 +1,9 @@
 ---
-Role:: Field Service Manager
-Company:: Barloworld Equipment (BWE)
-Started::
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 
+Tags:: #year/2025 #people
 ---
 
 # Roelf Botes

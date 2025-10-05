@@ -1,8 +1,9 @@
 ---
-Status:: #status/new
-Priority:: #priority/low
+Status:: new
+Priority:: Low
 Assignee:: [[Gregory Karsten]]
 DueDate:: 
+Tags:: #year/2025 #personal
 ---
 
 # Desktop Automation with UI-TARS

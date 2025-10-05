@@ -1,8 +1,9 @@
 ---
-Status:: #status/new
-Priority:: #priority/medium
+Status:: new
+Priority:: Med
 Assignee:: [[Greg Karsten]]
-DueDate::
+DueDate:: 
+Tags:: #year/2025 #idea
 ---
 
 # Integrate Load & Haul Production Reports

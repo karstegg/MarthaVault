@@ -1,9 +1,9 @@
 ---
-"Status:": In progress
-"Priority:": Critical
-"Assignee:":
-  - - Greg Karsten
-"DueDate:": 2025-08-31
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 2025-08-18
+Tags:: #year/2025 #task #site/nchwaning3
 ---
 
 # Recruit N3 GES (General Engineering Supervisor)
@@ -36,10 +36,10 @@ Recruit and appoint General Engineering Supervisor for Nchwaning 3 mine site to 
 - [ ] Confirm shortlisted candidates for interviews
 
 ### 3. Interview Phase
-- [ ] Schedule interview panel with HR and technical representatives
-- [ ] Prepare technical assessment questions
-- [ ] Conduct interviews with shortlisted candidates
-- [ ] Complete candidate evaluation forms
+- [x] Schedule interview panel with HR and technical representatives
+- [x] Prepare technical assessment questions
+- [x] Conduct interviews with shortlisted candidates
+- [x] Complete candidate evaluation forms
 
 ### 4. Offer Phase
 - [ ] Select preferred candidate

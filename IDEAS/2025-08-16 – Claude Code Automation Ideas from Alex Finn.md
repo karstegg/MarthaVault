@@ -1,8 +1,9 @@
 ---
-Status:: #status/new
-Priority:: #priority/medium
+Status:: new
+Priority:: Med
 Assignee:: [[Gregory Karsten]]
 DueDate:: 
+Tags:: #year/2025 #idea
 ---
 
 # Claude Code Automation Ideas from Alex Finn

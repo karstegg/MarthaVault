@@ -1,6 +1,9 @@
 ---
-Role:: Asset Care Engineer (Acting)
-Started:: 
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 
+Tags:: #year/2025 #people
 ---
 
 # Chris Ross

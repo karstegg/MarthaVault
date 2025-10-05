@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1b8a95df9b200f7e",
+        "id": "714b00d81ae0ab65",
         "type": "tabs",
         "children": [
           {
-            "id": "396878c7c489dbb8",
+            "id": "a140bbf9adcb3b66",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "strategy/ActivePhase.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "ActivePhase"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tags",
+                "query": "tag:#engineer",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 421.5124969482422
+    "width": 588.5124969482422
   },
   "right": {
     "id": "e8bdc17feff4bebd",
@@ -90,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Inbox/Untitled 1.md",
+                "file": "00_Inbox/2025-09-18.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Untitled 1"
+              "title": "Backlinks for 2025-09-18"
             }
           },
           {
@@ -109,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tasks/master_task_list.md",
+                "file": "00_Inbox/2025-09-18.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from master_task_list"
+              "title": "Outgoing links from 2025-09-18"
             }
           },
           {
@@ -138,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tasks Dashboard.md",
+                "file": "00_Inbox/2025-09-18.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Tasks Dashboard"
+              "title": "Outline of 2025-09-18"
             }
           },
           {
@@ -156,13 +160,23 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "0ccd8a85b98e9d18",
+            "type": "leaf",
+            "state": {
+              "type": "full-calendar-sidebar-view",
+              "state": {},
+              "icon": "calendar-glyph",
+              "title": "Full Calendar"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 409.5,
+    "width": 615.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -177,52 +191,64 @@
       "command-palette:Open command palette": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "templater-obsidian:Templater": false,
-      "obsidian-full-calendar:Open Full Calendar": false
+      "obsidian-full-calendar:Open Full Calendar": false,
+      "audio-recorder:Start/stop recording": false,
+      "cmdr:New Journal Note": false,
+      "cmdr:New Devotional": false
     }
   },
-  "active": "759b14c2e47b40e6",
+  "active": "a140bbf9adcb3b66",
   "lastOpenFiles": [
-    "reference/places/Black Rock.md",
-    "reference/places/Gloria Mine.md",
-    "reference/places/Nchwaning 3.md",
-    "reference/places/Nchwaning 2.md",
-    "reference/company/abbreviations.md",
-    "reference/terms.md",
-    "reference/places/locations/Assmang Black Rock Operations.md",
-    "reference/places/locations",
-    "media/videos",
-    "reference/company",
-    "reference/places",
-    "tags.md",
-    "Instructions.md",
-    "personal/prompt engineering/2025-08-06 – GPT-5 Prompting Tips Reference.md",
-    "CLAUDE.md",
-    "media/video",
-    "Operations/Adjudication_Committee_Meetings/2025-08-11 – Adjudication Committee Meeting.md",
-    "IDEAS/WhatsApp Note-to-Self System.md",
-    "IDEAS/Tasks Plugin - Review and check your Statuses 2025-08-17 22-30-44.md",
+    "strategy/CompanyStrategy.md",
+    "strategy/ActivePhase.md",
+    "system/skills/inbox-triage.md",
+    "system/skills/daily-note-creation.md",
     "README.md",
-    "Daily/2025-08-25 – Daily Note.md",
-    "2025-W34.md",
-    "Archive/2025-08-05_Comprehensive_Session_Export.md",
-    "Archive/CLAUDE (Backup-31-08-2025).md",
-    "IDEAS/Martha Design n Evolution/Temp/Martha Archtecture 1.0.md",
-    "IDEAS/Martha Design n Evolution/Temp/Martha Sequence Diagram 1.0.md",
-    "IDEAS/Martha Design n Evolution/Original Martha Architecture Diagram.md",
-    "IDEAS/Martha Design n Evolution/Original Martha Sequence Diagram.md",
-    "00_Inbox/Untitled.base",
-    "IDEAS/Martha Design n Evolution/Sr Engineer Assistant System (Martha).md",
-    "IDEAS/Martha Design n Evolution/Temp",
-    "IDEAS/Martha Design n Evolution/Martha Archtecture 1.0 (conflict 2025-08-31-01-46-49).md",
-    "IDEAS/Martha Design n Evolution/Martha Original Concept.md",
-    "IDEAS/Martha Design n Evolution/martha_system_flowchart.mmd",
-    "IDEAS/Martha Design n Evolution/martha_sequence_diagram.mmd",
-    "IDEAS/martha_system_flowchart.mmd",
+    "system/policy.md",
+    "system/skills",
+    "system",
+    "strategy/FocusOfWeek.md",
+    "strategy",
+    "MarthaVault Workflow Canvas.canvas",
+    "MarthaVault Overview Canvas.canvas",
+    "MarthaVault Implementation Canvas.canvas",
+    "MarthaVault Architecture Canvas.canvas",
+    "Instructions.md",
+    "00_Inbox/2025-10-03.md",
+    "tasks/master_task_list.md",
+    "Schedule/2025-10-03 - Call - master_task_list.md",
+    "Schedule/2025-09-15 - Review - master_task_list.md",
+    "Schedule/2025-09-30 - Review - master_task_list.md",
+    "Schedule/2025-09-19 - Review - master_task_list.md",
+    "Schedule/2025-09-27 - Review - master_task_list.md",
+    "Schedule/2025-08-15 - Review - master_task_list.md",
+    "Schedule/2025-09-17 - Review - master_task_list.md",
+    "Schedule/2025-08-05 - Review - master_task_list.md",
+    "Schedule/2025-08-16 - Review - master_task_list.md",
+    "Schedule/2025-10-03 - Review - master_task_list.md",
+    "Schedule/2025-09-24 - Meeting - master_task_list.md",
+    "Schedule/2025-09-27 - Meeting - master_task_list.md",
+    "tasks/2025-09-15 – Daily Tasks and Action Items.md",
+    "tasks/2025-09-12 – Mixed Project Tasks and Updates.md",
+    "tasks/2025-08-06 – Weekly Tasks List.md",
+    "tasks/2025-08-18 – Recruit N3 GES.md",
+    "00_Inbox/~WRL3827.tmp",
+    "00_Inbox/~WRD3811.tmp",
+    "00_Inbox/~$mo - Junior Poject Engineers Memo.docx",
+    "00_Inbox/Memo - Junior Poject Engineers Memo.docx",
+    "00_Inbox/~WRD0003.tmp",
+    "media/documents/2025/2025-09-26_BRMO_Weekly_Report_Sept_20-26.pdf",
+    "00_Inbox/wetransfer_service-manual-pdf_2025-10-02_0529.zip",
+    "MCP-Microsoft-Office/node_modules/retry/equation.gif",
+    "MCP-Microsoft-Office/node_modules/sqlite3/node_modules/unique-filename/coverage/sort-arrow-sprite.png",
+    "MCP-Microsoft-Office/node_modules/date-fns/docs/logotype.svg",
+    "MCP-Microsoft-Office/node_modules/date-fns/docs/logo.svg",
     "Untitled.canvas",
-    "Operations/Safety/Safety Incidents/2025-08-20 HD0054 Fire/ANSUL_Fire_Suppression_Inspection_Sheet_61059.jpeg",
-    "reference/Daily Note - 25-08-2025.jpg",
-    "00_Inbox/Daily Note - 25-08-2025.jpg",
-    "media/image/2025/2025-08-11_1056_WTW-Audit-Kickoff-Meeting.jpg",
-    "00_Inbox/IMG_20250730_203426_897.jpg"
+    "personal/projects/MarthaVault Intuition Layer/2025-09-11 – Data Transformation Flow Stage 4.excalidraw.png",
+    "personal/projects/MarthaVault Intuition Layer/2025-09-11 – Data Transformation Flow Stage 3.excalidraw.png",
+    "media/Pasted image 20250918105823.png",
+    "media/Pasted image 20250916210404.png",
+    "media/Pasted image 20250916082250.png",
+    "projects/Rock Winder Clutch Repair/media/One side of Slider Removed.jpg"
   ]
 }

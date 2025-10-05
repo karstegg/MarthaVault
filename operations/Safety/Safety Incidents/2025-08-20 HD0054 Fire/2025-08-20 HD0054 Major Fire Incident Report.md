@@ -1,8 +1,9 @@
 ---
-Status:: #status/resolved
-Priority:: #priority/high
+Status:: resolved
+Priority:: High
 Assignee:: [[Rudi Opperman]]
 DueDate:: 
+Tags:: #year/2025 #operations #site/nchwaning3
 ---
 
 # HD0054 Fire Incident Report - 2025-08-20
@@ -43,5 +44,19 @@ Okay, so it was a very long day. This morning, just after three, I was phoned by
 - 📋 **Coordination**: Teams channel "DMRE Section 54 - 23 August 2025" created
 
 **Resolution Timeline:** From complete shutdown (Aug 23 early morning) to partial restoration (Aug 23 morning) - Excellent regulatory engagement and swift response.
+
+## MSTA Fire Audit Coordination (August 25, 2025)
+**Key Contact Information:**
+- **Henk Erasmus** - Independent MSTA consultant conducting TMM fire suppression system audits
+- **Gerard** - Henk's colleague, joined August 26
+- **Kenru Fire** - Contracted vendor for fire suppression systems installation and maintenance
+
+**Process Requirements:**
+- Camera permission slips required for audit documentation
+- Kenru Fire personnel must accompany audits to assist and perform immediate repairs
+- Coordination needed between MSTA auditors and contracted vendors
+- Real-time repair capability during audit process
+
+**Timeline:** Henk arrived August 25 afternoon, Gerard joined August 26 morning for comprehensive TMM fire suppression audits across BRMO operations.
 
 #safety #fire-incident #HD54 #section-54 #year/2025 #resolved #nchwaning-3

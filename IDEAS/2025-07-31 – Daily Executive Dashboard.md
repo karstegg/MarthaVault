@@ -1,3 +1,11 @@
+---
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 2025-07-31
+Tags:: #year/2025 #idea #site/nchwaning2
+---
+
 # Daily Executive Dashboard - 31 July 2025
 **Data Period:** 30 July 2025 | **Black Rock Operations**
 

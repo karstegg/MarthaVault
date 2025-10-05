@@ -1,9 +1,10 @@
-Company Abbreviations & Terms
+---
 Status:: Draft
-Priority:: Low
+Priority:: Med
 Assignee:: Greg
-DueDate::
+DueDate:: 
 Tags:: #year/2025 #reference
+---
 
 GES — General Engineering Supervisor
 

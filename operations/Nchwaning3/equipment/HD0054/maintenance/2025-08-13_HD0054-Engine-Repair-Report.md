@@ -1,14 +1,9 @@
 ---
-tags:
-  - "#operation/maintenance"
-  - "#site/nchwaning3"
-  - "#equipment/HD0054"
-  - "#vendor/deutsch-diesel-power"
-  - "#status/completed"
-  - "#year/2025"
-aliases:
-  - "HD0054 Engine Repair"
-date: 2025-08-13
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 2025-08-13
+Tags:: #year/2025 #operations
 ---
 
 # HD0054 Engine Repair Report

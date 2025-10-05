@@ -1,3 +1,11 @@
+---
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 
+Tags:: #year/2025 #idea
+---
+
 ```mermaid
 sequenceDiagram
     participant You as You

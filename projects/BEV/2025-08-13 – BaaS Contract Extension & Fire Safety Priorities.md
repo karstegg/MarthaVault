@@ -1,11 +1,9 @@
 ---
-title: BaaS Contract Extension & Fire Safety Priorities
-date: 2025-08-13
-project: BEV
-Status:: #status/new
-Priority:: #priority/high
+Status:: new
+Priority:: High
 Assignee:: Greg Karsten
 DueDate:: 2025-08-19
+Tags:: #year/2025 #project
 ---
 
 # Battery as a Service (BaaS) Contract Extension Update

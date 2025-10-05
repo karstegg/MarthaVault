@@ -1,0 +1,44 @@
+{
+  "confirmDeletion": true,
+  "showAddCommand": true,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [],
+  "leftRibbon": [
+    {
+      "id": "insert-template",
+      "icon": "lucide-notebook-pen",
+      "name": "New Journal Note",
+      "mode": "any",
+      "color": "#007bff"
+    },
+    {
+      "id": "insert-template",
+      "icon": "lucide-book-plus",
+      "name": "New Devotional",
+      "mode": "any",
+      "color": "#ff0000"
+    }
+  ],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [],
+  "macros": [],
+  "explorer": [],
+  "hide": {
+    "statusbar": [],
+    "leftRibbon": []
+  },
+  "spacing": "8",
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 1,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  }
+}

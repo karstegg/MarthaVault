@@ -1,1 +1,0 @@
-Previous Senior Production Engineer. Now Engineering Manager at Khumani Mine. I assumed his role/position. File under people

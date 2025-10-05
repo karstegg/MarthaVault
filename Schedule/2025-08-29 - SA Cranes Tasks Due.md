@@ -1,8 +1,9 @@
 ---
-title: SA Cranes Tasks - Get Approval & Contact
-allDay: true
-date: 2025-08-29
-completed: null
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 2025-08-29
+Tags:: #year/2025 #calendar
 ---
 
 # SA Cranes Tasks - This Week Deadline

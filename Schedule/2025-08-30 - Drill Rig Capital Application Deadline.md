@@ -1,8 +1,9 @@
 ---
-title: Drill Rig Capital Application Deadline
-allDay: true
-date: 2025-08-30
-completed: null
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 2025-08-30
+Tags:: #year/2025 #calendar
 ---
 
 # Drill Rig Capital Application - Deadline

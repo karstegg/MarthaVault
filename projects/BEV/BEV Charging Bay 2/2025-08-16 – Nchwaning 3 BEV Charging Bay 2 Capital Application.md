@@ -1,15 +1,9 @@
 ---
-tags:
-  - "#project/BEV"
-  - "#site/nchwaning3"
-  - "#initiative/capital-application"
-  - "#equipment/BEV"
-  - "#status/pending"
-  - "#year/2025"
-aliases:
-  - "N3 BEV Charging Bay 2 CAF"
-  - "Nchwaning 3 BEV Charging Bay 2"
-date: 2025-08-16
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 2025-08-16
+Tags:: #year/2025 #project #site/nchwaning3
 ---
 
 # Capital Application: Nchwaning 3 BEV Charging Bay 2

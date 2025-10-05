@@ -1,3 +1,11 @@
+---
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 2025-07-30
+Tags:: #year/2025 #project #site/nchwaning3
+---
+
 Status:: #status/in_progress
 Priority:: #priority/high
 Assignee:: [[Gregory Karsten]]

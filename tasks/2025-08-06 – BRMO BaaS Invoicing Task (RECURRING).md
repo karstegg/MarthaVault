@@ -1,8 +1,9 @@
 ---
-Status:: #status/completed
-Priority:: #priority/medium
+Status:: completed
+Priority:: Med
 Assignee:: [[Greg]]
 DueDate:: 
+Tags:: #year/2025 #task #site/nchwaning2
 ---
 
 # BRMO BaaS Invoicing Task - June 2025

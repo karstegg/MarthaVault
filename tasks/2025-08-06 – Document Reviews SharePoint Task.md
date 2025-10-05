@@ -1,8 +1,9 @@
 ---
-Status:: #status/new
-Priority:: #priority/medium
+Status:: new
+Priority:: Med
 Assignee:: [[Greg]]
 DueDate:: 
+Tags:: #year/2025 #task
 ---
 
 # Document Reviews SharePoint Task

@@ -1,8 +1,9 @@
 ---
-Status:: #status/new
-Priority:: #priority/low
-Assignee:: 
+Status:: new
+Priority:: Low
+Assignee:: Greg
 DueDate:: 
+Tags:: #year/2025 #personal
 ---
 
 # Double-Mindedness - James 1:5-8

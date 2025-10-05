@@ -1,3 +1,11 @@
+---
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 2025-08-05
+Tags:: #year/2025 #note #site/nchwaning2
+---
+
 # COMPREHENSIVE CLAUDE CODE SESSION EXPORT
 **Date**: August 5, 2025  
 **Session ID**: Daily Production Report Automation & BEV Fleet Analysis  

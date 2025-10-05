@@ -1,3 +1,11 @@
+---
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 
+Tags:: #year/2025 #personal
+---
+
 # Project Charter — Hydraulic Simulator
 Goal: browser-based, physically accurate *lumped-parameter* hydraulic circuit simulator with interactive controls and tests.
 

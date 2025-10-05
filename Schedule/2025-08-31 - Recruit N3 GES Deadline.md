@@ -1,8 +1,9 @@
 ---
-title: Recruit N3 GES - Completion Deadline
-allDay: true
-date: 2025-08-29
-completed: null
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 2025-08-31
+Tags:: #year/2025 #calendar #site/nchwaning3
 ---
 
 # N3 GES Recruitment - Final Deadline

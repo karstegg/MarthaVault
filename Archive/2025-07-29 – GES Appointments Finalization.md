@@ -1,8 +1,9 @@
 ---
-Status:: #status/new
-Priority:: #priority/high
+Status:: new
+Priority:: High
 Assignee:: [[Sipo]], [[Selom]], [[Simon]]
 DueDate:: 2025-08-01
+Tags:: #year/2025 #note #site/gloria
 ---
 
 # GES Appointments Finalization - URGENT

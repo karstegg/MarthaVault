@@ -1,8 +1,9 @@
 ---
-Status:: #status/new
-Priority:: #priority/medium
-Assignee:: 
-DueDate::
+Status:: new
+Priority:: Med
+Assignee:: Greg
+DueDate:: 
+Tags:: #year/2025 #people
 ---
 
 # Louisa Breet

@@ -1,3 +1,11 @@
+---
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 
+Tags:: #year/2025 #project
+---
+
 *   **Origin:** An internal communication from Hennie van Niekerk (dated August 13, 2025) regarding Landcruiser installations.
 *   **Core Problem:** Significant downtime issues in Landcruisers and Nerospec systems due to power supply instability, specifically within the vehicles' charging systems.
 *   **Current System Flaw:** The 80 Amp alternator and a 5-minute delay in charging the auxiliary battery (which powers add-on equipment) lead to voltage drops (as low as 8V) to critical systems, causing instability and failures.

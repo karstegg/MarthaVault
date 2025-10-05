@@ -1,3 +1,11 @@
+---
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate:: 2025-07-29
+Tags:: #year/2025 #reference
+---
+
 Status:: #status/new
 Priority:: #priority/medium
 Assignee::
