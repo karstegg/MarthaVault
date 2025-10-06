@@ -1,4 +1,8 @@
 {
-  "model": "gemini-2.5-flash",
-  "theme": "Shades Of Purple"
+  "model": {
+    "name": "gemini-2.5-flash"
+  },
+  "ui": {
+    "theme": "Shades Of Purple"
+  }
 }

@@ -4,49 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "75a926f4a9f76679",
-        "type": "split",
+        "id": "3fff66d8b2901e0e",
+        "type": "tabs",
         "children": [
           {
-            "id": "f4e0ed5861961897",
-            "type": "tabs",
-            "dimension": 45.39579967689822,
-            "children": [
-              {
-                "id": "e8c603203dcac576",
-                "type": "leaf",
-                "state": {
-                  "type": "empty",
-                  "state": {},
-                  "icon": "lucide-file",
-                  "title": "New tab"
-                }
-              }
-            ]
-          },
-          {
-            "id": "3fff66d8b2901e0e",
-            "type": "tabs",
-            "dimension": 54.60420032310178,
-            "children": [
-              {
-                "id": "2bbcc2d010820830",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "tasks/filtered_task_list.md",
-                    "mode": "preview",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "filtered_task_list"
-                }
-              }
-            ]
+            "id": "2bbcc2d010820830",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tasks/filtered_task_list.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "filtered_task_list"
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -242,8 +217,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "759b14c2e47b40e6",
+  "active": "2bbcc2d010820830",
   "lastOpenFiles": [
+    "00_Inbox/2025-10-06.md",
     "reference/equipment/lifting-equipment/README.md",
     "reference/equipment/lifting-equipment/MRC-ENG-MEQ-STD-023 - Lifting Equipment Standard.pdf",
     "reference/equipment/lifting-equipment/MRC-ENG-ESV-PRC-014 - Lifting Equipment.pdf",
@@ -279,7 +255,6 @@
     "people/Malouly, Ilze.md",
     "Daily/2025-10-06 – Daily Note.md",
     "Schedule/2025-10-10 - S2 and BEV Optimisation Weekly.md",
-    "Schedule/2025-10-09 - CAS Steering Committee.md",
     "MarthaVault Workflow Canvas.canvas",
     "MarthaVault Overview Canvas.canvas",
     "MarthaVault Implementation Canvas.canvas",
