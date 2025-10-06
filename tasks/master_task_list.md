@@ -153,3 +153,6 @@ hn4
 - [x] Draw up SA Cranes contract with required changes #task #SA-Cranes #contract #year/2025 ✅ 2025-09-27
 - [ ] Write memo for junior engineers recruitment (2-year fixed-term) #task #recruitment #memo #junior-engineers #year/2025
 - [x] Send WhatsApp to UG Engineering Group about CAS meeting attendance on Tuesdays #task #meeting #CAS #whatsapp #engineers #year/2025 ✅ 2025-09-24
+
+## Personal Projects
+- [ ] Move MCP-Microsoft-Office to proper location and configure in MCP settings #task #personal #MCP #Microsoft365 #infrastructure #priority/low #year/2025
