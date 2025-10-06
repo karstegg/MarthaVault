@@ -1,3 +1,11 @@
+---
+Status:: Outstanding
+Priority:: Medium
+Assignee:: Greg
+DueDate:: 2025-10-08
+Tags:: #year/2025 #task #production-reports #gemini #infrastructure #api
+---
+
 # Fix Gemini API Key for ProductionReports Repository
 
 **Status**: Outstanding Task
@@ -112,4 +120,5 @@ After fixing this, the ProductionReports repo will have full autonomous daily pr
 
 ---
 
-#task #outstanding #gemini #api-key #production-reports #year/2025
+## Related Tasks
+- [ ] Add GEMINI_API_KEY secret to ProductionReports GitHub repository (see [[tasks/master_task_list.md]])
