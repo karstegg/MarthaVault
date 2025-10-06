@@ -87,6 +87,7 @@
       {
         "id": "c7ab2ac19efb2b70",
         "type": "tabs",
+        "dimension": 18.321226795803067,
         "children": [
           {
             "id": "83f7eb2c13be1f61",
@@ -144,31 +145,11 @@
               "state": {
                 "file": "00_Inbox/Priotities for today and rest of week.md",
                 "followCursor": true,
-                "showSearch": true,
+                "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
               "title": "Outline of Priotities for today and rest of week"
-            }
-          },
-          {
-            "id": "b7547cd56c37f6ca",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          },
-          {
-            "id": "0ccd8a85b98e9d18",
-            "type": "leaf",
-            "state": {
-              "type": "full-calendar-sidebar-view",
-              "state": {},
-              "icon": "calendar-glyph",
-              "title": "Full Calendar"
             }
           },
           {
@@ -182,11 +163,48 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
+      },
+      {
+        "id": "31af89b500c7d22a",
+        "type": "tabs",
+        "dimension": 16.142050040355123,
+        "children": [
+          {
+            "id": "0ccd8a85b98e9d18",
+            "type": "leaf",
+            "state": {
+              "type": "full-calendar-sidebar-view",
+              "state": {},
+              "icon": "calendar-glyph",
+              "title": "Full Calendar"
+            }
+          }
+        ]
+      },
+      {
+        "id": "67e20dfabf47f6e9",
+        "type": "tabs",
+        "dimension": 20.66182405165456,
+        "children": [
+          {
+            "id": "b7547cd56c37f6ca",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "pinned": true,
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
       },
       {
         "id": "0be9349cd1457c2a",
         "type": "tabs",
+        "dimension": 44.87489911218725,
         "children": [
           {
             "id": "2bbcc2d010820830",
@@ -206,7 +224,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 900.5
+    "width": 886.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -227,7 +245,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "759b14c2e47b40e6",
+  "active": "f31d658338fb5a10",
   "lastOpenFiles": [
     "tasks/filtered_task_list.md",
     "tasks/master_task_list.md",
