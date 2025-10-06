@@ -56,3 +56,24 @@ When you encounter a note containing `@Gemini` followed by an instruction, treat
 - Never send WhatsApp messages without user approval
 
 ---
+
+## 3 Memory Systems Architecture (Phase 1 - Basic Memory)
+
+**Status**: ✅ Phase 1 In Progress (October 2025)
+
+### **Basic Memory System**
+
+Gemini uses a **basic memory system** for context retrieval, relying on file content search.
+
+**Tools**: `search_file_content`, `glob`, `read_file`, `read_many_files`
+
+**When to Use**:
+- "What are the BEV fire safety priorities?" → `search_file_content("BEV fire safety priorities")`
+- "Recent decisions about capital?" → `search_file_content("capital decision")`
+- "Find all meeting notes from last week" → `glob("**/2025-09-*.md")` and then `read_many_files` with a filter for "meeting".
+
+**Key Features**:
+- Keyword and regex-based search across the entire vault.
+- Glob patterns to find files based on naming conventions.
+
+---
