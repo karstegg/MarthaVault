@@ -248,6 +248,7 @@
   },
   "active": "759b14c2e47b40e6",
   "lastOpenFiles": [
+    "system/test-memory-persistence.md",
     "IDEAS/Martha Design n Evolution/2025-10-06 – CRITICAL Architecture Decision - Persistent Memory.md",
     "people/du Toit, Jaco.md",
     "reference/company/Iritron.md",
@@ -283,7 +284,6 @@
     "00_Inbox/Conveyor belt_technical_handbook.pdf",
     "00_Inbox/Fenner Dunlop Conveyor_Handbook.pdf",
     "strategy/ActivePhase.md",
-    "00_Inbox/test-git-sync.md",
     "MarthaVault Workflow Canvas.canvas",
     "MarthaVault Overview Canvas.canvas",
     "MarthaVault Implementation Canvas.canvas",
