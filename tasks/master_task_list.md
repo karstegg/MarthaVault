@@ -302,3 +302,7 @@ hn4
 
 ## Personal Projects
 - [ ] Move MCP-Microsoft-Office to proper location and configure in MCP settings #task #personal #MCP #Microsoft365 #infrastructure #priority/low #year/2025
+
+## From Weekly Planning 2025-10-06
+- [ ] Actions from Friday meeting with N2 Eng Team #task #year/2025 #site/Nchwaning2 #priority/high 📅 2025-10-08
+  - Note: Follow-up actions from engineering team meeting

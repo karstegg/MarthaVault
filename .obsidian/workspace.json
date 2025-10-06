@@ -16,14 +16,10 @@
                 "id": "e8c603203dcac576",
                 "type": "leaf",
                 "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "00_Inbox/2025-10-06.md",
-                    "mode": "source",
-                    "source": false
-                  },
+                  "type": "empty",
+                  "state": {},
                   "icon": "lucide-file",
-                  "title": "2025-10-06"
+                  "title": "New tab"
                 }
               }
             ]
@@ -248,6 +244,9 @@
   },
   "active": "759b14c2e47b40e6",
   "lastOpenFiles": [
+    "tasks/2025-10-06 – Weekly Priorities.md",
+    "personal/daily_notes/2025-10-06 – Daily Tasks.md",
+    "personal/daily_notes",
     "Operations/Nchwaning2/2025-10-03 – N2 LHD Meeting and Substation Upgrade.md",
     "Operations/Nchwaning2",
     "Schedule/2025-10-03 - N2 06Y Substation Upgrade Meeting.md",
@@ -275,15 +274,12 @@
     "Schedule/2025-10-08 - VFL Tuesday.md",
     "00_Inbox/Monthly Target Summary Sheet_Oct2025.xlsx",
     "tasks/filtered_task_list.md",
-    "tasks/Untitled Kanban.md",
-    "00_Inbox/2025-10-06.md",
     "00_Inbox/Calendar 08092025.CSV",
     "00_Inbox/KAL-ENG-SOP-56 A Lifting Operations.docx",
     "00_Inbox/MRC-ENG-MEQ-STD-023 - Standard for Operation And Maintenance of Lifting Equipment.pdf",
     "00_Inbox/MRC-ENG-ESV-PRC-014 - Lifting Equipment.pdf",
     "00_Inbox/MOSH Expert model of Conveyor belt Equipment - 150902.pdf",
     "00_Inbox/Coveyor Belts 20080129024733.ConveyorSafety1.pdf",
-    "00_Inbox/Conveyor belt_technical_handbook.pdf",
     "MarthaVault Workflow Canvas.canvas",
     "MarthaVault Overview Canvas.canvas",
     "MarthaVault Implementation Canvas.canvas",
