@@ -1,6 +1,6 @@
-Manual vault synchronization command.
+# /sync-vault [flags]
 
-Updates memory systems (Graph Memory + Basic Memory) from Git history.
+Manual vault synchronization command - updates memory systems from Git history.
 
 ## Usage
 
@@ -11,27 +11,40 @@ Updates memory systems (Graph Memory + Basic Memory) from Git history.
 /sync-vault --verbose    # Show detailed processing logs
 ```
 
-## What It Does
+## Instructions
 
-1. **Read checkpoint**: Get last synced commit from `.vault-sync-checkpoint`
-2. **Get changes**: Run `git diff --name-status <checkpoint> HEAD`
-3. **Filter**: Only process relevant folders (people/, projects/, tasks/, etc.)
-4. **Sync memory**: Call `/sync-vault-internal` to update memory systems
-5. **Update checkpoint**: Store current commit SHA
+### Parse Arguments
+1. Check for flags: `--full`, `--dry-run`, `--verbose`
+2. Set sync mode accordingly
 
-## When to Use
+### Standard Sync (no --full flag)
+1. Read `.vault-sync-checkpoint` for last synced commit SHA
+2. Run `git diff --name-status <checkpoint> HEAD`
+3. Filter to relevant folders: people/, projects/, tasks/, Schedule/, strategy/, system/, IDEAS/, Operations/, reference/places/
+4. Process changes via sync-vault-internal logic
+5. Update checkpoint to current HEAD
 
-**Automatic sync (Git hook)**: Memory systems update automatically every 5 minutes when Obsidian Git plugin commits changes.
+### Full Sync (--full flag)
+1. Ignore checkpoint
+2. Get all files in relevant folders: `git ls-files people/ projects/ tasks/ Schedule/ strategy/ system/ IDEAS/ Operations/ reference/places/`
+3. Mark all as "Added" (A) for full re-index
+4. Process via sync-vault-internal logic
+5. Update checkpoint to current HEAD
 
-**Manual sync needed for**:
-- **First-time setup**: Run `/sync-vault --full` to index entire vault
-- **After offline work**: Sync when reconnecting after working without Git plugin
-- **Troubleshooting**: Verify memory is up-to-date
-- **After git pull**: Sync changes from other devices
-- **Force rebuild**: Use `--full` flag to re-index everything
+### Dry Run (--dry-run flag)
+1. Show list of files that would be processed
+2. Show change types (A/M/D)
+3. Do NOT update memory systems
+4. Do NOT update checkpoint
 
-## Example Output
+### Verbose Mode (--verbose flag)
+1. Show detailed processing for each file
+2. Show entity extraction and relation creation
+3. Show memory API calls and results
 
+## Output
+
+Show progress and summary:
 ```
 🔄 Syncing memory systems from Git history...
 
@@ -39,25 +52,14 @@ Last sync: 2025-10-05 14:23:15 (commit a1b2c3d)
 Current:   2025-10-05 15:30:42 (commit e4f5g6h)
 
 Changed files (15 files):
-  ✅ Added (3):
-     - people/Jane Doe.md
-     - projects/Capital/2025-10-06 – Equipment Purchase.md
-     - Schedule/2025-10-15 - Team Meeting.md
-
-  ✅ Modified (10):
-     - tasks/master_task_list.md
-     - strategy/FocusOfWeek.md
-     - projects/BEV/fire-safety.md
-     ...
-
-  ✅ Deleted (2):
-     - 00_inbox/old-note.md
-     - Archive/completed-task.md
+  ✅ Added (3): ...
+  ✅ Modified (10): ...
+  ✅ Deleted (2): ...
 
 Processing...
-  - Created 5 entities (Jane Doe, Equipment Purchase, Team Meeting, etc.)
-  - Updated 8 entities (Master Task List, Focus of Week, etc.)
-  - Deleted 1 entity (old note)
+  - Created 5 entities
+  - Updated 8 entities
+  - Deleted 1 entity
   - Created 7 relations
   - Re-indexed 13 documents in Basic Memory
 
@@ -67,107 +69,13 @@ Memory systems are up-to-date.
 Checkpoint updated: e4f5g6h
 ```
 
-## Flags
+## When to Use
 
-### `--full`
-Ignore checkpoint and re-sync entire vault.
+**Manual sync needed for**:
+- First-time setup: Run `/sync-vault --full` to index entire vault
+- After offline work: Sync when reconnecting after working without Git plugin
+- Troubleshooting: Verify memory is up-to-date
+- After git pull: Sync changes from other devices
+- Force rebuild: Use `--full` flag to re-index everything
 
-**Use when**:
-- First time running sync
-- Suspect memory is out of sync
-- Want to rebuild from scratch
-
-**Warning**: May take 30-60 seconds for large vaults.
-
-### `--dry-run`
-Show what would be synced without actually updating memory.
-
-**Output**:
-- List of files that would be processed
-- No entities created/updated/deleted
-- No checkpoint update
-
-### `--verbose`
-Show detailed processing for each file.
-
-**Output includes**:
-- File content analysis
-- Entity extraction details
-- Relation creation logic
-- Graph Memory API calls
-- Basic Memory indexing steps
-
-## Monitoring
-
-Check sync logs:
-```bash
-# View recent sync activity
-tail .vault-sync.log
-
-# Check last checkpoint
-cat .vault-sync-checkpoint
-
-# View Git commits
-git log --oneline -10
-```
-
-## Troubleshooting
-
-**Sync seems stale**:
-```bash
-/sync-vault --full  # Force full re-sync
-```
-
-**Errors in log**:
-```bash
-cat .vault-sync.log  # Check error details
-```
-
-**Hook not running**:
-```bash
-# Test hook manually
-.git/hooks/post-commit
-```
-
-**Memory out of sync with files**:
-```bash
-/sync-vault --full --verbose  # Rebuild with details
-```
-
-## Technical Details
-
-**Checkpoint file**: `.vault-sync-checkpoint`
-- Contains Git commit SHA of last successful sync
-- Updated after each successful sync
-- Used to calculate diff for incremental updates
-
-**Log file**: `.vault-sync.log`
-- Timestamp and status of each sync operation
-- Error details for troubleshooting
-- Appended to, not overwritten
-
-**Temp file**: `.sync-temp-input.txt`
-- Created by Git hook for passing file list
-- Deleted after processing
-- If found, indicates incomplete sync
-
-**Processing scope**:
-- ✅ Synced: people/, projects/, tasks/, Schedule/, strategy/, system/, IDEAS/, Operations/, reference/places/
-- ❌ Skipped: media/, Templates/, .obsidian/, Archive/, 00_inbox/
-
-**Memory systems updated**:
-- Graph Memory (mcp__memory__*): Entities and relations
-- Basic Memory (mcp__basic-memory__*): Document full-text index
-
-## Integration with Obsidian Git Plugin
-
-**Automatic workflow**:
-```
-1. You edit files in Obsidian
-2. Git plugin commits every 5 minutes
-3. Git post-commit hook triggers
-4. /sync-vault-internal runs
-5. Memory systems updated
-```
-
-**No manual action needed** unless troubleshooting or forcing full sync.
+**Automatic sync**: Memory systems update automatically every 5 minutes when Obsidian Git plugin commits changes (via Git post-commit hook).
