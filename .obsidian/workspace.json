@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tasks/filtered_task_list.md",
+                "file": "strategy/CompanyStrategy.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "filtered_task_list"
+              "title": "CompanyStrategy"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 443.5124969482422
+    "width": 384.5124969482422
   },
   "right": {
     "id": "e8bdc17feff4bebd",
@@ -196,7 +196,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 705.5
+    "width": 821.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,6 +219,9 @@
   },
   "active": "2bbcc2d010820830",
   "lastOpenFiles": [
+    "tasks/master_task_list.md",
+    "tasks/2025-09-03 – DMR Brake Test Compliance Response.md",
+    "tasks/filtered_task_list.md",
     "00_Inbox/2025-10-06.md",
     "reference/equipment/lifting-equipment/README.md",
     "reference/equipment/lifting-equipment/MRC-ENG-MEQ-STD-023 - Lifting Equipment Standard.pdf",
@@ -244,7 +247,6 @@
     "reference/company/Iritron.md",
     "people/Koorzen, Anton.md",
     "people/Mabona, Mduduzi.md",
-    "tasks/master_task_list.md",
     "personal/2025-10-06 – Planning Process Personal Insight.md",
     "Schedule/2025-10-13 - Strategic Review Session.md",
     "Schedule/2025-10-08 - Review - master_task_list.md",
@@ -253,8 +255,6 @@
     "00_Inbox/Priotities for today and rest of week.md",
     "people/Schreiner, Garth.md",
     "people/Malouly, Ilze.md",
-    "Daily/2025-10-06 – Daily Note.md",
-    "Schedule/2025-10-10 - S2 and BEV Optimisation Weekly.md",
     "MarthaVault Workflow Canvas.canvas",
     "MarthaVault Overview Canvas.canvas",
     "MarthaVault Implementation Canvas.canvas",
