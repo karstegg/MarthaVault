@@ -36,6 +36,21 @@ hn4
 ## From Daily Note 2025-10-01
 - [ ] Check proposal for charger for BEV Bay 2 and place order [[Kishore Jeebodh]] #task #year/2025 #priority/medium #BEV
 
+## From Daily Note 2025-10-06
+- [ ] Complete Weekly Engineering Report 📅 2025-10-06 #task #year/2025 #priority/critical #recurring
+- [ ] Review HD0054 Fire Investigation Report (Alexis Basson) 📅 2025-10-06 #task #year/2025 #priority/critical #fire_safety
+- [ ] HD0054 Fire - Identify and document all outstanding close-out actions 📅 2025-10-09 #task #year/2025 #priority/critical #fire_safety
+- [ ] DMRE Actions Status Update (HD54 fire + additional infra) 📅 2025-10-08 #task #year/2025 #priority/high #compliance #DMRE
+- [ ] SHERQ Bakkies Capex - Follow up or escalate to [[Garth Schreiner]] for Signhub routing 📅 2025-10-06 #task #year/2025 #priority/high #capital
+- [x] Grader Capital Application - Delegated to [[Sikelela Nzuza]] via email 📅 2025-10-06 #task #year/2025 #priority/medium #capital ✅ 2025-10-06
+- [ ] Track progress on SK grader capital application 📅 2025-10-10 #task #year/2025 #priority/medium #capital
+- [ ] JPE Recruitment Motivation - Follow up on status 📅 2025-10-07 #task #year/2025 #priority/high #recruitment
+- [ ] Draft N3 Electrical Foreman Recruitment Motivation 📅 2025-10-07 #task #year/2025 #priority/high #recruitment #site/Nchwaning3
+- [ ] N2 Substation Project - Follow up with [[Rudi Opperman]] and [[Roelie Prinsloo]] after James Collins feedback 📅 2025-10-08 #task #year/2025 #priority/high #capital #site/Nchwaning2
+- [ ] N2 LHD Issues - Coordinate documentation with [[Lourens van Heerden]] 📅 2025-10-08 #task #year/2025 #priority/medium #site/Nchwaning2
+- [ ] Compliance: Chapter 8 S&W Regulation 16 Review 📅 2025-10-08 #task #year/2025 #priority/medium #compliance
+- [x] DocuSign Drawings Approval 📅 2025-10-06 #task #year/2025 #priority/medium ✅ 2025-10-06
+
 ## CAS Project Tasks
 - [ ] Review all scaler risk assessments and TMM hazard rating documents #task #year/2025 #priority/high #CAS_Project #safety
 

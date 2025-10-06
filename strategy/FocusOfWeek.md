@@ -8,9 +8,9 @@ Tags:: #year/2025 #strategy #weekly #focus
 
 # Focus of the Week - Weekly Tactical Priorities
 
-**Current Week**: Week of October 7-11, 2025
+**Current Week**: Week of October 6-11, 2025
 **Owner**: [[Gregory Karsten]]
-**Last Updated**: 2025-10-05
+**Last Updated**: 2025-10-06
 **Strategic Alignment**: [[strategy/ActivePhase.md]] - Q4 2025
 
 ---
@@ -28,98 +28,98 @@ Tags:: #year/2025 #strategy #weekly #focus
 
 ---
 
-## Week of October 7-11, 2025
+## Week of October 6-11, 2025
 
-### Weekly Theme: **"BEV Safety & Recruitment Closure"**
+### Weekly Theme: **"HD0054 Fire Close-out & Compliance Priority"**
 
 ### Top Priorities This Week
 
-#### 1. BEV Charging Bay 2 - Charger Procurement (URGENT) 🔥
+#### 1. HD0054 Fire Investigation Close-out (CRITICAL) 🔥
 
-**Strategic Alignment**: Q4 BEV Program Optimization
+**Strategic Alignment**: Q4 Fire Safety (2.0x multiplier) + Compliance (1.5x)
 
 **This Week Actions**:
-- ✅ Review charger quote details immediately (Monday AM)
-- ✅ Place charger order by end of week (Friday COB)
-- ✅ Confirm delivery timeline with vendor
-- ✅ Coordinate installation timeline with Roelie Prinsloo
+- ✅ Review Alexis Basson fire investigation report (Monday)
+- ✅ Document all outstanding close-out actions (Monday-Tuesday)
+- ✅ Prepare comprehensive DMRE actions status update (Wednesday)
+- ✅ Establish close-out plan with clear timelines (Thursday)
+- ✅ Identify compliance gaps and start remediation (Friday)
 
-**Success Criteria**: Charger order placed, delivery confirmed for Nov-Dec installation.
+**Success Criteria**: All outstanding actions documented, DMRE status complete, closure plan approved.
 
-**FocusBoost**: **+0.5** (tasks related to charger procurement get extra priority)
+**FocusBoost**: **+0.8** (HIGHEST PRIORITY THIS WEEK)
 
 ---
 
-#### 2. N3 GES Recruitment - Final Decision (CRITICAL) 👥
+#### 2. SHERQ Bakkies Capital Application - Close or Escalate 💰
 
-**Strategic Alignment**: Q4 Team Capacity Building
+**Strategic Alignment**: Q4 Capital Planning & Delivery
 
 **This Week Actions**:
-- ✅ Finalize candidate selection (Monday/Tuesday)
-- ✅ Coordinate with Louisa Breet on offer preparation
-- ✅ Make offer to selected candidate (by Wednesday)
-- ✅ Secure acceptance and plan onboarding
+- ✅ Await feedback from Ilze Malouly, Johan Vermeulen, Garth Schreiner (Monday COB)
+- ✅ If no feedback: Request Garth Schreiner route for signatures on Signhub (Monday evening)
+- ✅ Track approval progress through week
 
-**Success Criteria**: N3 GES offer made and accepted, onboarding planned.
+**Success Criteria**: Capex application routed for signatures or approved.
+
+**FocusBoost**: **+0.5**
+
+---
+
+#### 3. Recruitment - JPE & N3 Electrical Foreman 👥
+
+**Strategic Alignment**: Q4 Team Capacity Building (1.2x multiplier)
+
+**This Week Actions**:
+- ✅ JPE Recruitment Motivation - Follow up on status (Tuesday)
+- ✅ Draft N3 Electrical Foreman Recruitment Motivation (Tuesday)
+- ✅ Coordinate approval pathways
+
+**Success Criteria**: JPE status clear, N3 Foreman motivation drafted and in approval.
 
 **FocusBoost**: **+0.4**
 
 ---
 
-#### 3. Kudumane Brakes Quarterly Meeting Prep 🚗
+#### 4. N2 Substation & LHD Issues Resolution 🔧
 
 **Strategic Alignment**: Q4 Operational Reliability
 
 **This Week Actions**:
-- ✅ Prepare meeting agenda and status update (Monday Oct 7)
-- ✅ Review brake system performance data Q3 2025
-- ✅ Identify any issues or improvement opportunities
-- ✅ Conduct meeting and document outcomes
+- ✅ Await James Collins N2 Substation feedback (Tuesday)
+- ✅ Coordinate with Rudi Opperman and Roelie Prinsloo (Wednesday)
+- ✅ N2 LHD Issues - Documentation coordination with Lourens van Heerden (Wednesday)
+- ✅ Track grader capital application progress via SK (Friday)
 
-**Success Criteria**: Successful quarterly review meeting, action items documented.
-
-**FocusBoost**: **+0.3**
-
----
-
-#### 4. 2025 Capital Vote Closures - Final Push 💰
-
-**Strategic Alignment**: Q4 Capital Planning & Delivery
-
-**This Week Actions**:
-- ✅ Review all open 2025 capital votes with finance
-- ✅ Complete documentation for pending closures
-- ✅ Coordinate with project leads on final reconciliations
-- ✅ Target: Close 50% of remaining open votes this week
-
-**Success Criteria**: Significant progress on capital vote closures, clear path to Oct 31 deadline.
+**Success Criteria**: N2 Substation path forward clear, LHD issues documented.
 
 **FocusBoost**: **+0.3**
 
 ---
 
-#### 5. WTW Audit Critical Items - Progress Check ✅
+#### 5. Compliance: Chapter 8 S&W Regulation 16 Review ✅
 
-**Strategic Alignment**: Q4 Compliance & Audit Excellence
+**Strategic Alignment**: Q4 Compliance & Audit Excellence (1.5x multiplier)
 
 **This Week Actions**:
-- ✅ Review status of critical findings (N2, N7, N12, N27)
-- ✅ Identify any blockers or delays
-- ✅ Escalate urgent items requiring support
-- ✅ Update action plan and timeline
+- ✅ Review Chapter 8 S&W Regulation 16 requirements (Wednesday)
+- ✅ Identify gaps and compliance actions needed
+- ✅ Coordinate with Xavier Petersen (Shafts & Winders lead)
 
-**Success Criteria**: Clear status on all critical items, escalation of blockers.
+**Success Criteria**: Compliance review complete, action plan documented.
 
-**FocusBoost**: **+0.2**
+**FocusBoost**: **+0.3**
 
 ---
 
-## Secondary Priorities (If Time Permits)
+## Deferred to Next Week
 
-- Junior engineer recruitment memo drafting (prep for next week)
-- Standards Meeting prep (Oct 9)
-- Monthly Engineering Meeting prep (Oct 16)
-- Fire suppression system status review
+**BEV Fire Safety Program** - Deferred due to HD0054 fire incident priority
+- BEV Charging Bay 2 charger order (Kishore Jeebodh coordination)
+- Fire system enhancements
+- Epiroc case study action items
+
+**CAS Scaler Documentation Review** - Low priority, not safety-critical
 
 ---
 
@@ -127,10 +127,13 @@ Tags:: #year/2025 #strategy #weekly #focus
 
 | Day | Meeting | Time | Priority |
 |-----|---------|------|----------|
-| **Mon Oct 7** | Kudumane Brakes Quarterly Meeting | TBD | High |
-| **Wed Oct 9** | Standards Meeting | 13:30-15:30 | Medium |
-| **Wed Oct 9** | Weekly Overtime Meeting | 07:00-08:00 | Medium |
-| **Week of Oct 14** | Monthly Engineering Meeting | Oct 16, 10:00-14:30 | High |
+| **Tue Oct 8** | VFL (Visible Felt Leadership) | 07:00-14:00 | HIGH (New Recurring) |
+| **Tue Oct 8** | Warehousing/Procurement Monthly | 14:00-15:00 | Medium |
+| **Wed Oct 8** | Nerospec Weekly Meeting | 08:30-09:00 | Medium |
+| **Thu Oct 9** | Weekly Overtime Planning | 07:00-08:00 | Medium (New Recurring) |
+| **Thu Oct 9** | CAS Steering Committee | 07:45-08:30 | Medium (New Recurring) |
+| **Thu Oct 9** | Standards Meeting | 13:30-15:30 | Medium |
+| **Fri Oct 10** | S2 & BEV Optimisation Weekly | 07:00-08:00 | Medium (New Recurring) |
 
 ---
 
@@ -153,15 +156,16 @@ Final Priority = (Base Priority × Strategy Multiplier) + FocusBoost
 
 ---
 
-## Next Week Preview (Oct 14-18)
+## Next Week Preview (Oct 13-17)
 
 **Anticipated Focus**:
-- Monthly Engineering Meeting execution (Oct 16)
-- Junior engineer recruitment memo finalization
-- BEV fire safety controls progress review
-- 2026 capital budget planning kickoff
+- **BEV Fire Safety Program Implementation** (deferred from this week)
+- Adjudication Committee Meeting (Oct 13)
+- Skills & Best Practice Quarterly Meeting (Oct 14 - FULL DAY)
+- N2/Gloria/N3 Operational Excellence ATRs (Oct 15 - FULL DAY)
+- Monthly Engineering Meeting (Oct 16)
 
-**Update**: Will revise on Friday Oct 11 for next week's focus.
+**Update**: Will revise on Friday Oct 10 for next week's focus.
 
 ---
 
@@ -180,6 +184,10 @@ Final Priority = (Base Priority × Strategy Multiplier) + FocusBoost
 **Week of Sept 16-20**:
 - Theme: "Recruitment & Audit Progress"
 - Focus: N3 GES shortlisting, WTW audit actions, VFL N2 Housekeeping
+
+**Week of Oct 6-11**:
+- Theme: "HD0054 Fire Close-out & Compliance Priority"
+- Focus: Fire investigation close-out, DMRE compliance, SHERQ bakkies capex, recruitment
 
 ---
 

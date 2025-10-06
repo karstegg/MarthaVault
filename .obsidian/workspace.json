@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "00_Inbox/Priotities for today and rest of week.md",
+                    "file": "tasks/master_task_list.md",
                     "mode": "preview",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Priotities for today and rest of week"
+                  "title": "master_task_list"
                 }
               }
             ]
@@ -172,13 +172,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Inbox/Priotities for today and rest of week.md",
+                "file": "tasks/master_task_list.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Priotities for today and rest of week"
+              "title": "Outline of master_task_list"
             }
           },
           {
@@ -246,8 +246,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cc7819343cecd789",
+  "active": "e8c603203dcac576",
   "lastOpenFiles": [
+    "00_Inbox/Priotities for today and rest of week.md",
+    "people/Schreiner, Garth.md",
+    "people/Malouly, Ilze.md",
+    "Daily/2025-10-06 – Daily Note.md",
+    "Schedule/2025-10-10 - S2 and BEV Optimisation Weekly.md",
+    "Schedule/2025-10-09 - CAS Steering Committee.md",
+    "Schedule/2025-10-09 - Weekly Overtime Planning Meeting.md",
+    "Schedule/2025-10-08 - VFL Tuesday.md",
     "00_Inbox/Monthly Target Summary Sheet_Oct2025.xlsx",
     "tasks/filtered_task_list.md",
     "tasks/master_task_list.md",
@@ -255,7 +263,6 @@
     "00_Inbox/2025-10-06.md",
     "00_Inbox/Fix Gemini API Key for ProductionReports.md",
     "00_Inbox/Calendar 08092025.CSV",
-    "00_Inbox/Priotities for today and rest of week.md",
     "00_Inbox/2025-10-03.md",
     "00_Inbox/KAL-ENG-SOP-56 A Lifting Operations.docx",
     "00_Inbox/MRC-ENG-MEQ-STD-023 - Standard for Operation And Maintenance of Lifting Equipment.pdf",
@@ -273,7 +280,6 @@
     "README.md",
     "system/policy.md",
     "system/skills",
-    "system",
     "strategy/FocusOfWeek.md",
     "MarthaVault Workflow Canvas.canvas",
     "MarthaVault Overview Canvas.canvas",
@@ -282,12 +288,6 @@
     "Instructions.md",
     "Schedule/2025-10-03 - Call - master_task_list.md",
     "Schedule/2025-09-15 - Review - master_task_list.md",
-    "Schedule/2025-09-30 - Review - master_task_list.md",
-    "Schedule/2025-09-19 - Review - master_task_list.md",
-    "Schedule/2025-09-27 - Review - master_task_list.md",
-    "Schedule/2025-08-15 - Review - master_task_list.md",
-    "Schedule/2025-09-17 - Review - master_task_list.md",
-    "Schedule/2025-08-05 - Review - master_task_list.md",
     "MCP-Microsoft-Office/node_modules/retry/equation.gif",
     "MCP-Microsoft-Office/node_modules/sqlite3/node_modules/unique-filename/coverage/sort-arrow-sprite.png",
     "MCP-Microsoft-Office/node_modules/date-fns/docs/logotype.svg",
