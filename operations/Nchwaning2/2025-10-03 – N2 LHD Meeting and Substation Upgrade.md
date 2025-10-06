@@ -1,20 +1,16 @@
 ---
-Status:: Draft
-Priority:: Med
+Status:: Complete
+Priority:: High
 Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #template
+DueDate::
+Tags:: #year/2025 #meeting #site/Nchwaning2 #LHD #substation
 ---
-Why did we have Someone on standly that do not have MV Switching
 
-## ✅ Tasks
-- [ ]
+# 2025-10-03 – N2 LHD Meeting and Substation Upgrade
 
-## 📝 Notes
--
+**Question:** Why did we have someone on standby that does not have MV Switching?
 
-## 📅 Meetings
-Nchwaning 2 LHD Meeting:
+## Nchwaning 2 LHD Meeting
 Spares management: Incorrect parts. propshafts still a problem.
 Delays  Stock Items
 Critical Spares list.

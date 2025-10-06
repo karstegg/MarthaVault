@@ -46,6 +46,14 @@ hn4
 ## From Daily Note 2025-10-01
 - [ ] Check proposal for charger for BEV Bay 2 and place order [[Kishore Jeebodh]] #task #year/2025 #priority/medium #BEV
 
+## From Daily Note 2025-10-06
+- [ ] Call Christo vd Walt re tappet cover melting test #task #year/2025 #priority/medium
+  - Related to: Tappet cover melting point investigation (see 2025-09-29 section)
+- [ ] [[Sipho Dubazane]] to draft instructions on breakdowns in decline #task #year/2025 #priority/medium #site/Gloria
+  - Assigned to: [[Sipho Dubazane]]
+- [ ] Add battery performance slide idea to weekly report generator #task #year/2025 #priority/low #idea #BEV
+  - Note: Future enhancement - slide to track battery performance over time and long-standing breakdowns
+
 ## Monday Recurring Tasks (Weekly)
 - [ ] Approve all job cards on JDE 📅 2025-10-06 #task #year/2025 #priority/high #recurring #admin
 - [ ] Check and approve timesheets on Firefly 📅 2025-10-06 #task #year/2025 #priority/high #recurring #admin
