@@ -306,9 +306,3 @@ hn4
 ## From Weekly Planning 2025-10-06
 - [ ] Actions from Friday meeting with N2 Eng Team #task #year/2025 #site/Nchwaning2 #priority/high 📅 2025-10-08
   - Note: Follow-up actions from engineering team meeting
-
-## ProductionReports Infrastructure (2025-10-06)
-- [ ] Add GEMINI_API_KEY secret to ProductionReports GitHub repository #task #year/2025 #priority/medium #production-reports #gemini #infrastructure 📅 2025-10-08
-  - URL: https://github.com/karstegg/ProductionReports/settings/secrets/actions
-  - Note: Required for /pdr-gemini workflow - blocks automated report generation. Get key from https://aistudio.google.com/app/apikey
-  - Project: [[projects/ProductionReports/2025-10-06 – Fix Gemini API Key Setup.md]]
