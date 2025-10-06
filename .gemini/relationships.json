@@ -1,1 +1,5942 @@
-[]
+[
+  {
+    "source": "CLAUDE",
+    "target": "README.md",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE",
+    "target": "Person",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE",
+    "target": "strategy/CompanyStrategy.md",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE",
+    "target": "strategy/ActivePhase.md",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE",
+    "target": "strategy/FocusOfWeek.md",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE",
+    "target": "system/policy.md",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE",
+    "target": "README.md",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE",
+    "target": "links",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE",
+    "target": "Lastname, Firstname",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE",
+    "target": "Lastname, Firstname",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE",
+    "target": "Jane Smith",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE",
+    "target": "projects/Pump_123/",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE",
+    "target": "Lastname, Firstname",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE",
+    "target": "reference/places/<Site Name>",
+    "type": "links_to"
+  },
+  {
+    "source": "Codex-CLI",
+    "target": "Pasted image 20250916210404.png",
+    "type": "links_to"
+  },
+  {
+    "source": "Dashboard",
+    "target": "tasks/master_task_list.md",
+    "type": "links_to"
+  },
+  {
+    "source": "Dashboard",
+    "target": "Schedule/",
+    "type": "links_to"
+  },
+  {
+    "source": "Dashboard",
+    "target": "projects/",
+    "type": "links_to"
+  },
+  {
+    "source": "Dashboard",
+    "target": "people/",
+    "type": "links_to"
+  },
+  {
+    "source": "Dashboard",
+    "target": "operations/",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "Lastname, Firstname",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "reference/places/SiteName",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 GES Appointments Finalization",
+    "target": "Sipo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 GES Appointments Finalization",
+    "target": "Selom",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 GES Appointments Finalization",
+    "target": "Simon",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 GES Appointments Finalization",
+    "target": "Sipo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 GES Appointments Finalization",
+    "target": "Selom",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 GES Appointments Finalization",
+    "target": "Simon Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Annual Performance Assessment Compilation",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Annual Performance Assessment Compilation",
+    "target": "media/image/2025/2025-07-30_performance_assessment_matrix.png",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Annual Performance Assessment Compilation",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Annual Performance Assessment Compilation",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Annual Performance Assessment Compilation",
+    "target": "Sello Simon Siase",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Annual Performance Assessment Compilation",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Michael Bester",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Sikilela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Masigcinane Mteki",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Pieter Swanepoel",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Masigcinane Mteki",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Battery Invoices Monthly Reminder",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Battery Invoices Monthly Reminder",
+    "target": "BEV",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Battery Invoices Monthly Reminder",
+    "target": "Epiroc",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out (PROCESSED)",
+    "target": "Sello Simon Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out (PROCESSED)",
+    "target": "Marothi Phosa",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out (PROCESSED)",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out (PROCESSED)",
+    "target": "Cornette",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out (PROCESSED)",
+    "target": "Nomfusi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out (PROCESSED)",
+    "target": "Lungelo Duba",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out (PROCESSED)",
+    "target": "Malatsi Mashala",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out (PROCESSED)",
+    "target": "Danie",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out (PROCESSED)",
+    "target": "Leon",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out (PROCESSED)",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out (PROCESSED)",
+    "target": "Nomfusi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out (PROCESSED)",
+    "target": "Lungelo Duba",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out (PROCESSED)",
+    "target": "Marothi Phosa",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out (PROCESSED)",
+    "target": "Malatsi Mashala",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out (PROCESSED)",
+    "target": "Alexis Basson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out (PROCESSED)",
+    "target": "Lexis Poisson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out (PROCESSED)",
+    "target": "Henk",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out (PROCESSED)",
+    "target": "Danie",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out (PROCESSED)",
+    "target": "Leon",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE (Backup-31-08-2025)",
+    "target": "Person Name",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE (Backup-31-08-2025)",
+    "target": "Schedule/YYYY-MM-DD - Event",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE (Backup-31-08-2025)",
+    "target": "<Person Note>",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE (Backup-31-08-2025)",
+    "target": "Jane Smith",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE (Backup-31-08-2025)",
+    "target": "projects/Pump_123/",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE (Backup-31-08-2025)",
+    "target": "Johan Kotze",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE (Backup-31-08-2025)",
+    "target": "Sikilela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE (Backup-31-08-2025)",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE (Backup-31-08-2025)",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE (Backup-31-08-2025)",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE (Backup-31-08-2025)",
+    "target": "Person Name",
+    "type": "links_to"
+  },
+  {
+    "source": "CLAUDE (Backup-31-08-2025)",
+    "target": "projects/Project_Name/",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Sikilela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Johan Kotze",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Task Management Dashboard (CONSOLIDATED)",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-16 \u2013 Daily Note",
+    "target": "Mduduzi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-16 \u2013 Daily Note",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-16 \u2013 Daily Note",
+    "target": "Boeta Steyn",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-16 \u2013 Daily Note",
+    "target": "Copy of Cost Overview.xlsx",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-16 \u2013 Daily Note",
+    "target": "Pasted image 20250916082250.png",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-16 \u2013 Daily Note",
+    "target": "Johan Jooste",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-16 \u2013 Daily Note",
+    "target": "James Collins",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-16 \u2013 Daily Note",
+    "target": "Wandile Kwinana",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-16 \u2013 Daily Note",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-16 \u2013 Daily Note",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-16 \u2013 Daily Note",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-16 \u2013 Daily Note",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-18 \u2013 Daily Note",
+    "target": "Rudi Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-18 \u2013 Daily Note",
+    "target": "Rahab Makolomakwa",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 \u2013 Daily Note",
+    "target": "Chris Ross",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 \u2013 Daily Note",
+    "target": "Rahab Makolomakwa",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 \u2013 Daily Note",
+    "target": "Rudi Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 \u2013 Daily Note",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 \u2013 Daily Note",
+    "target": "Marothi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 \u2013 Daily Note",
+    "target": "Jomari",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 \u2013 Daily Note",
+    "target": "Lourens van der Heerden",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 \u2013 Daily Note",
+    "target": "Rudi Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 \u2013 Daily Note",
+    "target": "Shane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 \u2013 Daily Note",
+    "target": "Neo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-28",
+    "target": "johnny Hollenbach",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-01",
+    "target": "kishore jeebodh",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Daily Note",
+    "target": "Garth Schreiner",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Daily Note",
+    "target": "Lourens van Heerden",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Daily Note",
+    "target": "Ilze Malouly",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Daily Note",
+    "target": "Johan Vermeulen",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Daily Note",
+    "target": "Garth Schreiner",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Daily Note",
+    "target": "Garth Schreiner",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Daily Note",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Daily Note",
+    "target": "Operations/Safety/Safety Incidents/2025-08-20 HD0054 Fire/2025-08-20 HD0054 Major Fire Incident Report",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Daily Note",
+    "target": "projects/BEV/2025-08-13 \u2013 BaaS Contract Extension & Fire Safety Priorities",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Daily Note",
+    "target": "tasks/2025-08-06 \u2013 Electrical Safety Review Following Fatal Incident",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-03 \u2013 GitHub Automation & Cloud Processing Ideas",
+    "target": "Link",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-03 \u2013 GitHub Automation & Cloud Processing Ideas",
+    "target": "Image",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-03 \u2013 GitHub Automation & Cloud Processing Ideas",
+    "target": "2025-07-31 \u2013 Daily Executive Dashboard",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-03 \u2013 GitHub Automation & Cloud Processing Ideas",
+    "target": "2025-07-31 \u2013 Claude Code Automation Ideas",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 WhatsApp Claude Code Integration Idea",
+    "target": "CLAUDE.md",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 WhatsApp Claude Code Integration Idea",
+    "target": "2025-08-06 \u2013 Claude Code Integration Workflow",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Integrate Load & Haul Production Reports",
+    "target": "Greg Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Integrate Load & Haul Production Reports",
+    "target": "Stephen Klopper",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-16 \u2013 Claude Code Automation Ideas from Alex Finn",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-17 \u2013 Weekly Report Generator Enhancement Ideas",
+    "target": "Greg Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02 \u2013 Self-Hosted Server Infrastructure Project",
+    "target": "IDEAS/2025-08-31 \u2013 GitHub-WhatsApp Automation Portal",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 MCP Robot Control with Gemini Reference",
+    "target": "IDEAS/2025-08-25 \u2013 NVIDIA Robotics Rock Breaker Automation",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 MCP Robot Control with Gemini Reference",
+    "target": "IDEAS/Martha Design n Evolution/",
+    "type": "links_to"
+  },
+  {
+    "source": "ideas",
+    "target": "Greg Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "WhatsApp Note-to-Self System",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 CRITICAL Architecture Decision - Persistent Memory",
+    "target": "README.md",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 CRITICAL Architecture Decision - Persistent Memory",
+    "target": "IDEAS/Martha Design n Evolution/2025-09-24 \u2013 Intuition Layer Design",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 CRITICAL Architecture Decision - Persistent Memory",
+    "target": "strategy/ActivePhase.md",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "4",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "4",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "4",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "\"polyfill-corejs2\", { \"method\": \"usage-global\" }",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "\"polyfill-corejs3\", { \"method\": \"usage-global\", \"version\": \"3.20\" }",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "\"polyfill-regenerator\", { \"method\": \"usage-global\" }",
+    "type": "links_to"
+  },
+  {
+    "source": "CHANGELOG",
+    "target": "NextMethod",
+    "type": "links_to"
+  },
+  {
+    "source": "CHANGELOG",
+    "target": "UnicodeSets",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "$? -ne 0",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "Prototype",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": ":alpha:",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": ":alpha:",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "=e=",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": ".ch.",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "Defined",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "Prototype",
+    "type": "links_to"
+  },
+  {
+    "source": "CHANGELOG",
+    "target": "Prototype",
+    "type": "links_to"
+  },
+  {
+    "source": "CHANGELOG",
+    "target": "Prototype",
+    "type": "links_to"
+  },
+  {
+    "source": "CHANGELOG",
+    "target": "Prototype",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": ":alpha:][:digit:",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": ":alpha:][:digit:",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": ":alpha:][:alpha:",
+    "type": "links_to"
+  },
+  {
+    "source": "InputFormatReference",
+    "target": "'exclude', '_linux\\\\.cc$'",
+    "type": "links_to"
+  },
+  {
+    "source": "InputFormatReference",
+    "target": "'exclude', '_mac\\\\.cc",
+    "type": "links_to"
+  },
+  {
+    "source": "CHANGELOG",
+    "target": "Get",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": ":word:",
+    "type": "links_to"
+  },
+  {
+    "source": "CHANGELOG",
+    "target": "Get",
+    "type": "links_to"
+  },
+  {
+    "source": "CHANGELOG",
+    "target": "Get",
+    "type": "links_to"
+  },
+  {
+    "source": "CHANGELOG",
+    "target": "Get",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "'g'], ['h'",
+    "type": "links_to"
+  },
+  {
+    "source": "CHANGELOG",
+    "target": "1,2,3",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "4",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "4",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "4",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "], [1, 2], 3, [[4",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "4",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "Prototype",
+    "type": "links_to"
+  },
+  {
+    "source": "Home",
+    "target": "\"binding.gyp\" files out in the wild",
+    "type": "links_to"
+  },
+  {
+    "source": "Home",
+    "target": "Linking to OpenSSL",
+    "type": "links_to"
+  },
+  {
+    "source": "Home",
+    "target": "Common Issues",
+    "type": "links_to"
+  },
+  {
+    "source": "Home",
+    "target": "Updating npm's bundled node-gyp",
+    "type": "links_to"
+  },
+  {
+    "source": "Home",
+    "target": "Error: \"pre\" versions of node cannot be installed",
+    "type": "links_to"
+  },
+  {
+    "source": "Readme",
+    "target": "Class",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "$? -ne 0",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": ":word:",
+    "type": "links_to"
+  },
+  {
+    "source": "CHANGELOG",
+    "target": "Prototype",
+    "type": "links_to"
+  },
+  {
+    "source": "CHANGELOG",
+    "target": "Prototype",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "1, 2], [3, 4",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Adjudication Committee Meeting",
+    "target": "Greg Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Adjudication Committee Meeting",
+    "target": "Greg Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Adjudication Committee Meeting",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Adjudication Committee Meeting",
+    "target": "Lizette",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Adjudication Committee Meeting",
+    "target": "Simon Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Adjudication Committee Meeting",
+    "target": "Stef Lourens",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Adjudication Committee Meeting",
+    "target": "Simon Sipho",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Adjudication Committee Meeting",
+    "target": "Hennie",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Adjudication Committee Meeting",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Adjudication Committee Meeting",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Adjudication Committee Meeting",
+    "target": "Greg Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Adjudication Committee Meeting",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Adjudication Committee Meeting",
+    "target": "Lizette",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Adjudication Committee Meeting",
+    "target": "Simon Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Adjudication Committee Meeting",
+    "target": "Stef Lourens",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Adjudication Committee Meeting",
+    "target": "Simon Sipho",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Adjudication Committee Meeting",
+    "target": "Hennie",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 Adjudication Committee Meeting",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-27 \u2013 BRMO Weekly Report Summary",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-27 \u2013 BRMO Weekly Report Summary",
+    "target": "2025-07-27_BRMO_Weekly_Report_Epiroc.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-27 \u2013 BRMO Weekly Report Summary",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-27 \u2013 BRMO Weekly Report Summary",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-27 \u2013 BRMO Weekly Report Summary",
+    "target": "Hendrik van Niekerk",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 BRMO Weekly Report Summary",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 BRMO Weekly Report Summary",
+    "target": "media/documents/2025/2025-07-31 \u2013 BRMO Weekly Report.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 BRMO Weekly Report Summary",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 BRMO Weekly Report Summary",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 BRMO Weekly Report Summary",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 BRMO Weekly Report Summary",
+    "target": "media/documents/2025/2025-07-31 \u2013 BRMO Weekly Report.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 BRMO Weekly Report Summary",
+    "target": "reference/equipment/brmo_fleet_database.json",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 BRMO Weekly Report Summary",
+    "target": "Operations/BEVs/2025-07-27 \u2013 BRMO Weekly Report Summary",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 BRMO Weekly Report LIVE Summary",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 BRMO Weekly Report LIVE Summary",
+    "target": "media/documents/2025/2025-08-06 \u2013 BRMO Weekly Report LIVE.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 BRMO Weekly Report LIVE Summary",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 BRMO Weekly Report LIVE Summary",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 BRMO Weekly Report LIVE Summary",
+    "target": "media/documents/2025/2025-08-06 \u2013 BRMO Weekly Report LIVE.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 BRMO Weekly Report LIVE Summary",
+    "target": "2025-07-31 \u2013 BRMO Weekly Report Summary",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 BRMO Weekly Report LIVE Summary",
+    "target": "reference/equipment/brmo_fleet_database.json",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 BRMO Weekly Report Reference",
+    "target": "2025-08-06_BRMO_Weekly_Report_LIVE_06-13_Aug.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 BRMO Weekly Report Reference",
+    "target": "2025-08-06 \u2013 BRMO Weekly Report Summary",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 BRMO Weekly Report Summary",
+    "target": "2025-08-06 \u2013 BRMO Weekly Report Reference",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-14 \u2013 BRMO Weekly Report Reference",
+    "target": "2025-08-14_BRMO_Weekly_Report_LIVE_14-20_Aug.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-14 \u2013 BRMO Weekly Report Reference",
+    "target": "2025-08-14 \u2013 BRMO Weekly Report Summary",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-14 \u2013 BRMO Weekly Report Reference",
+    "target": "2025-08-06 \u2013 BRMO Weekly Report Reference",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-14 \u2013 BRMO Weekly Report Summary",
+    "target": "2025-08-14 \u2013 BRMO Weekly Report Reference",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-14 \u2013 BRMO Weekly Report Summary",
+    "target": "2025-08-06 \u2013 BRMO Weekly Report Summary",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-21 \u2013 BRMO Weekly Report Reference",
+    "target": "2025-08-21_BRMO_Weekly_Report_21-27_Aug.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-21 \u2013 BRMO Weekly Report Reference",
+    "target": "2025-08-21 \u2013 BRMO Weekly Report Summary",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-21 \u2013 BRMO Weekly Report Reference",
+    "target": "2025-08-14 \u2013 BRMO Weekly Report Reference",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-21 \u2013 BRMO Weekly Report Reference",
+    "target": "2025-08-06 \u2013 BRMO Weekly Report Reference",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-21 \u2013 BRMO Weekly Report Summary",
+    "target": "2025-08-21 \u2013 BRMO Weekly Report Reference",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-21 \u2013 BRMO Weekly Report Summary",
+    "target": "2025-08-14 \u2013 BRMO Weekly Report Summary",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-21 \u2013 BRMO Weekly Report Summary",
+    "target": "2025-08-06 \u2013 BRMO Weekly Report Summary",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 \u2013 BRMO Week 4 Battery and Charger Analysis",
+    "target": "2025-08-28 \u2013 BRMO Weekly Report LIVE Week 4 Summary",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 \u2013 BRMO Week 4 Battery and Charger Analysis",
+    "target": "projects/BEV/BEV Charging Bay 2/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 \u2013 BRMO Week 4 Battery and Charger Analysis",
+    "target": "operations/BEV/Weekly_Reports/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 \u2013 BRMO Weekly Report LIVE Week 35",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 \u2013 BRMO Weekly Report LIVE Week 35",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 \u2013 BRMO Weekly Report LIVE Week 35",
+    "target": "projects/BEV/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 \u2013 BRMO Weekly Report LIVE Week 35",
+    "target": "people/Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 \u2013 BRMO Weekly Report LIVE Week 35",
+    "target": "people/Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 \u2013 BRMO Weekly Report LIVE Week 4 Summary",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 \u2013 BRMO Weekly Report LIVE Week 4 Summary",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 \u2013 BRMO Weekly Report LIVE Week 4 Summary",
+    "target": "2025-08-06 \u2013 BRMO Weekly Report LIVE Summary",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 \u2013 BRMO Weekly Report LIVE Week 4 Summary",
+    "target": "2025-08-14 \u2013 BRMO Weekly Report LIVE Week 2 Summary",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 \u2013 BRMO Weekly Report LIVE Week 4 Summary",
+    "target": "2025-08-21 \u2013 BRMO Weekly Report LIVE Week 3 Summary",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 \u2013 BRMO Weekly Report LIVE Week 4 Summary",
+    "target": "projects/BEV/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 \u2013 BRMO Weekly Report LIVE Week 4 Summary",
+    "target": "operations/Vendors/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 \u2013 BRMO Weekly Report LIVE Week 4 Summary",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 \u2013 BRMO Weekly Report LIVE Week 4 Summary",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 BRMO Weekly Report Sept 4-11 Epiroc",
+    "target": "media/documents/2025/2025-09-11_BRMO_Weekly_Report_Sept_4-11.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 BRMO Weekly Report Sept 4-11 Epiroc",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 BRMO Weekly Report Sept 4-11 Epiroc",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 BRMO Weekly Report Sept 4-11 Epiroc",
+    "target": "projects/BEV/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 BRMO Weekly Report Sept 4-11 Epiroc",
+    "target": "Operations/Nchwaning3/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 BRMO Weekly Report Sept 4-11 Epiroc",
+    "target": "Operations/Nchwaning2/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 BRMO Weekly Report Sept 4-11 Epiroc",
+    "target": "reference/places/Gloria Mine",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-26 \u2013 BRMO Weekly Report Sept 20-26 Summary",
+    "target": "media/documents/2025/2025-09-26_BRMO_Weekly_Report_Sept_20-26.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-26 \u2013 BRMO Weekly Report Sept 20-26 Summary",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-26 \u2013 BRMO Weekly Report Sept 20-26 Summary",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02 \u2013 HD Engine Protection Status Update",
+    "target": "Dirk Jacobs",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02 \u2013 HD Engine Protection Status Update",
+    "target": "Dirk Jacobs",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02 \u2013 HD Engine Protection Status Update",
+    "target": "Dirk Jacobs",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02 \u2013 HD Engine Protection Status Update",
+    "target": "Schedule/2025-08-28 - DMRE Presentation Kimberley",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02 \u2013 HD Engine Protection Status Update",
+    "target": "reference/equipment/2025-09-02 \u2013 Deutz TCD Engine Specifications N3",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02 \u2013 S2 Drill Rig Engine Protection Implementation Complete",
+    "target": "HD49 Engine Protection Update",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02 \u2013 S2 Drill Rig Engine Protection Implementation Complete",
+    "target": "HD50 Engine Protection Update",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02 \u2013 S2 Drill Rig Engine Protection Implementation Complete",
+    "target": "HD51 Engine Protection Update",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02 \u2013 S2 Drill Rig Engine Protection Implementation Complete",
+    "target": "HD52 Engine Protection Update",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02 \u2013 S2 Drill Rig Engine Protection Implementation Complete",
+    "target": "HD61 Engine Protection Update",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02 \u2013 S2 Drill Rig Engine Protection Implementation Complete",
+    "target": "HD62 Engine Protection Update",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02 \u2013 S2 Drill Rig Engine Protection Implementation Complete",
+    "target": "operations/Safety/Safety Incidents/2025-08-20 HD0054 Fire/2025-08-20 HD0054 Major Fire Incident Report",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02 \u2013 S2 Drill Rig Engine Protection Implementation Complete",
+    "target": "media/image/2025/2025-09-02_S2_Engine_Protection_Implementation_Page1.png",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02 \u2013 S2 Drill Rig Engine Protection Implementation Complete",
+    "target": "media/image/2025/2025-09-02_S2_Engine_Protection_Implementation_Page2.jpg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-13_HD0054-Engine-Repair-Report",
+    "target": "Deutz-HD0054-Invoices.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-13_HD0054-Engine-Repair-Report",
+    "target": "Deutz-HD0054-Service-Reports.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02_Engine_Protection_Update",
+    "target": "2025-09-02 \u2013 S2 Drill Rig Engine Protection Implementation Complete",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02_Engine_Protection_Update",
+    "target": "operations/Safety/Safety Incidents/2025-08-20 HD0054 Fire/2025-08-20 HD0054 Major Fire Incident Report",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02_Engine_Protection_Update",
+    "target": "2025-09-02 \u2013 S2 Drill Rig Engine Protection Implementation Complete",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02_Engine_Protection_Update",
+    "target": "operations/Safety/Safety Incidents/2025-08-20 HD0054 Fire/2025-08-20 HD0054 Major Fire Incident Report",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-20 HD0054 Major Fire Incident Report",
+    "target": "Rudi Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "HD0054 Fire Incident - First Hand Account",
+    "target": "Greg Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-03-12 \u2013 DMRE 478 Winder Inspection NCH3 WP2313ii PASSED",
+    "target": "media/documents/2025/2025-03-12_DMRE_478_Winder_Inspection_NCH3_WP2313ii_PASSED.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-03-12 \u2013 DMRE 478 Winder Inspection NCH3 WP2313ii PASSED",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-03-12 \u2013 DMRE 478 Winder Inspection NCH3 WP2313ii PASSED",
+    "target": "Operations/Nchwaning3/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-03-12 \u2013 DMRE 478 Winder Inspection NCH3 WP2313ii PASSED",
+    "target": "reference/places/Nchwaning 3",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-03-12 \u2013 DMRE 478 Winder Inspection NCH3 WP2313ii PASSED",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-03-12 \u2013 DMRE 478 Winder Inspection NCH3 WP2313ii PASSED",
+    "target": "projects/Compliance/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection GLORIA WP2324A PASSED",
+    "target": "media/documents/2025/2025-09-12_DMRE_478_Winder_Inspection_GLORIA_WP2324A_PASSED.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection GLORIA WP2324A PASSED",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection GLORIA WP2324A PASSED",
+    "target": "Operations/Gloria/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection GLORIA WP2324A PASSED",
+    "target": "reference/places/Gloria Mine",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection GLORIA WP2324A PASSED",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection GLORIA WP2324A PASSED",
+    "target": "projects/Compliance/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection NCH2 WP2322 PASSED",
+    "target": "media/documents/2025/2025-09-12_DMRE_478_Winder_Inspection_NCH2_WP2322_PASSED.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection NCH2 WP2322 PASSED",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection NCH2 WP2322 PASSED",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection NCH2 WP2322 PASSED",
+    "target": "Operations/Nchwaning2/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection NCH2 WP2322 PASSED",
+    "target": "reference/places/Nchwaning 2",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection NCH2 WP2322 PASSED",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection NCH2 WP2322 PASSED",
+    "target": "projects/Compliance/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection NCH2 WP49B1 PASSED",
+    "target": "media/documents/2025/2025-09-12_DMRE_478_Winder_Inspection_NCH2_WP49B1_PASSED.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection NCH2 WP49B1 PASSED",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection NCH2 WP49B1 PASSED",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection NCH2 WP49B1 PASSED",
+    "target": "Operations/Nchwaning2/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection NCH2 WP49B1 PASSED",
+    "target": "reference/places/Nchwaning 2",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection NCH2 WP49B1 PASSED",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 DMRE 478 Winder Inspection NCH2 WP49B1 PASSED",
+    "target": "projects/Compliance/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-28 \u2013 Weekly Standby List Summary",
+    "target": "2025-07-28 \u2013 Weekly Standby List.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-28 \u2013 Weekly Standby List Summary",
+    "target": "2025-07-28 \u2013 Weekly Standby List.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-02 \u2013 Barloworld Equipment Invoices Payment Urgent",
+    "target": "Roelf Botes",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 WTW Audit 2025",
+    "target": "Greg Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 WTW Audit 2025",
+    "target": "2025-08-11 \u2013 WTW Action List Aug 2025.xlsx",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 WTW Audit 2025",
+    "target": "2024-10 \u2013 WTW Audit ARM Black Rock Final Report.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 WTW Audit 2025",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 WTW Audit 2025",
+    "target": "media/image/2025/2025-08-11_1056_WTW-Audit-Kickoff-Meeting.jpg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 WTW Audit 2025",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 WTW Audit 2025",
+    "target": "Sikilela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 WTW Audit 2025",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 WTW Audit 2025",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-11 \u2013 WTW Audit Processing Summary",
+    "target": "Greg Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Rudy Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sipho",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sk",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Simon",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Xavier",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Rudy Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sello Simon Siase",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Lourens van der Heerden",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Willie Koekemoer",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sello Simon Siase",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Sello Simon Siase",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Rudy Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Sello Simon Siase",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Lawrence van Heerden",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Billy",
+    "type": "links_to"
+  },
+  {
+    "source": "Chris Ross",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "du Toit, Jaco",
+    "target": "Iritron",
+    "type": "links_to"
+  },
+  {
+    "source": "du Toit, Jaco",
+    "target": "Iritron",
+    "type": "links_to"
+  },
+  {
+    "source": "du Toit, Jaco",
+    "target": "projects/Capital/N2 Substation Upgrade",
+    "type": "links_to"
+  },
+  {
+    "source": "Gregory Karsten",
+    "target": "Rudy Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "Gregory Karsten",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "Gregory Karsten",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "Gregory Karsten",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "Gregory Karsten",
+    "target": "Sello Simon Siase",
+    "type": "links_to"
+  },
+  {
+    "source": "Gregory Karsten",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "Hendrik van Niekerk",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "Jacobs, Dirk",
+    "target": "reference/places/Nchwaning 3",
+    "type": "links_to"
+  },
+  {
+    "source": "Jacobs, Dirk",
+    "target": "operations/Nchwaning3/equipment/2025-09-02 \u2013 HD Engine Protection Status Update",
+    "type": "links_to"
+  },
+  {
+    "source": "James van der Linde",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "James van der Linde",
+    "target": "Assmang",
+    "type": "links_to"
+  },
+  {
+    "source": "Johan Kotze",
+    "target": "Sikilela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "Johan Kotze",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "Johan Kotze",
+    "target": "Sikilela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "Koorzen, Anton",
+    "target": "projects/Capital/N2 Substation Upgrade",
+    "type": "links_to"
+  },
+  {
+    "source": "Lillian",
+    "target": "2025-08-18 \u2013 Recruit N3 GES",
+    "type": "links_to"
+  },
+  {
+    "source": "Lillian",
+    "target": "Louisa Breet",
+    "type": "links_to"
+  },
+  {
+    "source": "Lillian",
+    "target": "Nchwaning 3",
+    "type": "links_to"
+  },
+  {
+    "source": "Lillian",
+    "target": "Louisa Breet",
+    "type": "links_to"
+  },
+  {
+    "source": "Lillian",
+    "target": "N3 GES Recruitment",
+    "type": "links_to"
+  },
+  {
+    "source": "Louisa Breet",
+    "target": "2025-08-18 \u2013 Recruit N3 GES",
+    "type": "links_to"
+  },
+  {
+    "source": "Louisa Breet",
+    "target": "N3 GES Recruitment",
+    "type": "links_to"
+  },
+  {
+    "source": "Louisa Breet",
+    "target": "Lillian",
+    "type": "links_to"
+  },
+  {
+    "source": "Louisa Breet",
+    "target": "GES Appointments",
+    "type": "links_to"
+  },
+  {
+    "source": "Lourens van der Heerden",
+    "target": "2025-07-29 \u2013 SA Cranes Contract Update Process",
+    "type": "links_to"
+  },
+  {
+    "source": "Lungelo Duba",
+    "target": "Johan Kotze",
+    "type": "links_to"
+  },
+  {
+    "source": "Lungelo Duba",
+    "target": "Johan Kotze",
+    "type": "links_to"
+  },
+  {
+    "source": "Lungelo Duba",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "Lungelo Duba",
+    "target": "2025-09-04 \u2013 Daily Tasks with Fire Investigation Close-out",
+    "type": "links_to"
+  },
+  {
+    "source": "Lungelo Duba",
+    "target": "Nomfusi",
+    "type": "links_to"
+  },
+  {
+    "source": "Malouly, Ilze",
+    "target": "projects/Capital/2025-07-31 \u2013 Contracts Expiring Tomorrow",
+    "type": "links_to"
+  },
+  {
+    "source": "Piet Izaaks",
+    "target": "people/Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "Piet Izaaks",
+    "target": "Nchwaning 3",
+    "type": "links_to"
+  },
+  {
+    "source": "Prinsloo, Roelie",
+    "target": "projects/BEV/BEV Charging Bay 2/",
+    "type": "links_to"
+  },
+  {
+    "source": "Prinsloo, Roelie",
+    "target": "projects/Graben_Crusher_N2/",
+    "type": "links_to"
+  },
+  {
+    "source": "Prinsloo, Roelie",
+    "target": "projects/BEV/BEV Charging Bay 2/2025-08-18 \u2013 Email from Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "Schreiner, Garth",
+    "target": "projects/Capital/2025-07-31 \u2013 Contracts Expiring Tomorrow",
+    "type": "links_to"
+  },
+  {
+    "source": "Sikelela Nzuza",
+    "target": "2025-07-29 \u2013 GES Appointments Finalization",
+    "type": "links_to"
+  },
+  {
+    "source": "Sikilela Nzuza",
+    "target": "Johan Kotze",
+    "type": "links_to"
+  },
+  {
+    "source": "Simon Sease",
+    "target": "2025-07-29 \u2013 GES Appointments Finalization",
+    "type": "links_to"
+  },
+  {
+    "source": "Simon Sease",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "Sipho Dubazane",
+    "target": "2025-07-29 \u2013 GES Appointments Finalization",
+    "type": "links_to"
+  },
+  {
+    "source": "Vermeulen, Johan",
+    "target": "projects/Compliance/2025-08-18 \u2013 Chapter 8 S&W Regulation 16 GAP Analysis",
+    "type": "links_to"
+  },
+  {
+    "source": "Willie Koekemoer",
+    "target": "2025-07-29 \u2013 BEV Fire Risk Assessment Review",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 BK Electrical Invoice Analysis",
+    "target": "media/documents/2025/2025-07-29_BK_Electrical_Invoice.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Pay BK Electrical Invoice for COC",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Daily Tasks",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 Claude Code GitHub Integration Workflow",
+    "target": "CLAUDE.md",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 Claude Code GitHub Integration Workflow",
+    "target": "WhatsApp MCP Integration",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-16 \u2013 Desktop Automation with UI-TARS",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 Data Transformation Flow Stage 1.excalidraw",
+    "target": "Lastname, Firstname",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 Data Transformation Flow Stage 2.excalidraw",
+    "target": "Jane Smith",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 Data Transformation Flow Stage 3.excalidraw",
+    "target": "Simon Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 Data Transformation Flow Stage 3.excalidraw",
+    "target": "HD0054",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 Data Transformation Flow Stage 3.excalidraw",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 Data Transformation Flow Stage 3.excalidraw",
+    "target": "BEV Bay 2",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 Implementation Plan Draft v1",
+    "target": "Lastname, Firstname",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 Project Charter",
+    "target": "2025-09-10 \u2013 MarthaVault Intuition Layer Enhancement Framework",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 Project Charter",
+    "target": "2025-09-10 \u2013 MarthaVault Intuition Layer Analysis",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 Project Charter",
+    "target": "../../../IDEAS/2025-09-07 \u2013 Self-Evolving Agents Research for Intuition Layer",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 \u2013 MarthaVault Intuition Layer Analysis",
+    "target": "2025-09-10 \u2013 MarthaVault Intuition Layer Enhancement Framework",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 \u2013 MarthaVault Intuition Layer Enhancement Framework",
+    "target": "links",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 MarthaVault Evolution and Intuition Layer Thoughts",
+    "target": "IDEAS/Martha Design n Evolution/Sr Engineer Assistant System (Martha)",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 MarthaVault Evolution and Intuition Layer Thoughts",
+    "target": "IDEAS/Martha Design n Evolution/Original Martha Architecture Diagram",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 \u2013 MarthaVault Evolution and Intuition Layer Thoughts",
+    "target": "2025-09-10 \u2013 MarthaVault Intuition Layer Enhancement Framework",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-21 \u2013 MarthaVault Obsidian Claude Code Implementation",
+    "target": "media/documents/2025/2025-09-21_MarthaVault_Obsidian_Claude_Code_Implementation.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-21 \u2013 MarthaVault Obsidian Claude Code Implementation",
+    "target": "2025-09-21 \u2013 MarthaVault Original Concept Architecture",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-21 \u2013 MarthaVault Obsidian Claude Code Implementation",
+    "target": "IDEAS/Martha Design n Evolution/Sr Engineer Assistant System (Martha).md",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-21 \u2013 MarthaVault Obsidian Claude Code Implementation",
+    "target": "IDEAS/Martha Design n Evolution/Original Martha Architecture Diagram.md",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-21 \u2013 MarthaVault Original Concept Architecture",
+    "target": "media/documents/2025/2025-09-21_MarthaVault_Original_Concept_Architecture.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-21 \u2013 MarthaVault Original Concept Architecture",
+    "target": "2025-09-11 \u2013 MarthaVault Evolution and Intuition Layer Thoughts",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-21 \u2013 MarthaVault Original Concept Architecture",
+    "target": "IDEAS/Martha Design n Evolution/Sr Engineer Assistant System (Martha).md",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-21 \u2013 MarthaVault Original Concept Architecture",
+    "target": "IDEAS/Martha Design n Evolution/Original Martha Architecture Diagram.md",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-21 \u2013 MarthaVault Original Concept Architecture",
+    "target": "IDEAS/Martha Design n Evolution/Original Martha Sequence Diagram.md",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-21 \u2013 MarthaVault Original Concept Architecture",
+    "target": "2025-09-10 \u2013 MarthaVault Intuition Layer Analysis",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-21 \u2013 MarthaVault Original Concept Architecture",
+    "target": "2025-09-10 \u2013 MarthaVault Intuition Layer Enhancement Framework",
+    "type": "links_to"
+  },
+  {
+    "source": "gpt5_feedback_log",
+    "target": "2025-09-11 \u2013 Project Charter",
+    "type": "links_to"
+  },
+  {
+    "source": "gpt5_feedback_log",
+    "target": "2025-09-11 \u2013 Implementation Plan Draft v1",
+    "type": "links_to"
+  },
+  {
+    "source": "gpt5_feedback_log",
+    "target": "docs/alignment_analysis",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 GPT-5 Prompting Tips Reference",
+    "target": "Claude Code GitHub Integration Workflow",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-09 \u2013 Project Overview",
+    "target": "Petersen, Xavier",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-09 \u2013 Project Overview",
+    "target": "Shaft Monitoring/2025-09-09_Xavier_Shaft_Readings.json",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-15 \u2013 Solrock Weekend 9 Progress Report NCH2 Shaft Lining",
+    "target": "media/documents/2025/2025-09-15_Solrock_Weekend_9_Progress_Report_NCH2.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-15 \u2013 Solrock Weekend 9 Progress Report NCH2 Shaft Lining",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-15 \u2013 Solrock Weekend 9 Progress Report NCH2 Shaft Lining",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-15 \u2013 Solrock Weekend 9 Progress Report NCH2 Shaft Lining",
+    "target": "Operations/Nchwaning2/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-15 \u2013 Solrock Weekend 9 Progress Report NCH2 Shaft Lining",
+    "target": "reference/places/Nchwaning 2",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-15 \u2013 Solrock Weekend 9 Progress Report NCH2 Shaft Lining",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-15 \u2013 Solrock Weekend 9 Progress Report NCH2 Shaft Lining",
+    "target": "Schedule/2025-09-17 - Shaft Exam Solrock Project",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-09 \u2013 Morning Project Update",
+    "target": "Petersen, Xavier",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-09 \u2013 Morning Project Update",
+    "target": "2025-09-09_morning_update_01.jpg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-09 \u2013 Morning Project Update",
+    "target": "2025-09-09_morning_update_video.mp4",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-09 \u2013 Morning Project Update",
+    "target": "Petersen, Xavier",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 BEV Fire Risk Assessment Review",
+    "target": "Billy",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 BEV Fire Risk Assessment Review",
+    "target": "Willie Koekemoer",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 \u2013 Epiroc Li-Ion Battery Fire Case Study and Risk Assessment Actions",
+    "target": "tasks/master_task_list.md",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 \u2013 Epiroc Li-Ion Battery Fire Case Study and Risk Assessment Actions",
+    "target": "Operations/Safety/Safety Incidents/2025-08-20 HD0054 Fire/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 \u2013 Epiroc Li-Ion Battery Fire Case Study and Risk Assessment Actions",
+    "target": "projects/BEV/BEV Charging Bay 2/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-16 \u2013 Equipping Sub-Project for Nchwaning 3 BEV Charging Bay 2",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-16 \u2013 Equipping Sub-Project for Nchwaning 3 BEV Charging Bay 2",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-16 \u2013 Equipping Sub-Project for Nchwaning 3 BEV Charging Bay 2",
+    "target": "2025-08-16_Nchwaning-3-BEV-Charging-Bay-2-Capital-Application.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-16 \u2013 Nchwaning 3 BEV Charging Bay 2 Capital Application",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-16 \u2013 Nchwaning 3 BEV Charging Bay 2 Capital Application",
+    "target": "Jacques Breet",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-16 \u2013 Nchwaning 3 BEV Charging Bay 2 Capital Application",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-16 \u2013 Nchwaning 3 BEV Charging Bay 2 Capital Application",
+    "target": "Malcolm Smit",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-16 \u2013 Nchwaning 3 BEV Charging Bay 2 Capital Application",
+    "target": "2025-08-16_Nchwaning-3-BEV-Charging-Bay-2-Capital-Application.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Additional Infrastructure Order Estimate v7",
+    "target": "media/documents/2025/2025-08-18_Estimate_Charging_Bay_2_v7.xlsx",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Additional Infrastructure Order Estimate v7",
+    "target": "2025-08-16 \u2013 Equipping Sub-Project for Nchwaning 3 BEV Charging Bay 2",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Additional Infrastructure Order Estimate v7",
+    "target": "2025-08-16 \u2013 Nchwaning 3 BEV Charging Bay 2 Capital Application",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Charger Quote URGENT ORDER",
+    "target": "media/documents/2025/2025-08-18_Quote_Chargers_BEV_Bay_2.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Charger Quote URGENT ORDER",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Charger Quote URGENT ORDER",
+    "target": "2025-08-18 \u2013 Additional Infrastructure Order Estimate v7",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Charger Quote URGENT ORDER",
+    "target": "2025-08-18 \u2013 Email from Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Email from Roelie Prinsloo",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Email from Roelie Prinsloo",
+    "target": "media/documents/2025/2025-08-18_Email_Roelie_Prinsloo_N3_BEV_Charging_Bay_2.msg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Email from Roelie Prinsloo",
+    "target": "2025-08-18 \u2013 Additional Infrastructure Order Estimate v7",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Email from Roelie Prinsloo",
+    "target": "2025-08-16 \u2013 Equipping Sub-Project for Nchwaning 3 BEV Charging Bay 2",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Equipment Purchase Status Update",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Equipment Purchase Status Update",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Equipment Purchase Status Update",
+    "target": "James van der Linde",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Equipment Purchase Status Update",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Contracts Expiring Tomorrow",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Contracts Expiring Tomorrow",
+    "target": "Chris Ross",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Contracts Expiring Tomorrow",
+    "target": "Chris Ross",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Dump Trucks Procurement Update",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Dump Trucks Procurement Update",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Dump Trucks Procurement Update",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Dump Trucks Procurement Update",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Dump Trucks Procurement Update",
+    "target": "TLB_Backhoe_Trial_Project",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-27 \u2013 Drill Rig Capital Application",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-27 \u2013 Drill Rig Capital Application",
+    "target": "projects/Capital/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Chapter 8 S&W Regulation 16 GAP Analysis",
+    "target": "media/documents/2025/2025-08-18_GAP_Analysis_Regulation_16_Chapter_8.xlsx",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Chapter 8 S&W Regulation 16 GAP Analysis",
+    "target": "media/documents/2025/2025-08-18_GAP_Analysis_Regulation_16_Chapter_8.xlsx",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Chapter 8 S&W Regulation 16 GAP Analysis",
+    "target": "media/documents/2025/2025-08-18_Gazetted_Regulations_Chapter_22-9_Chapter_16.msg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Chapter 8 S&W Regulation 16 GAP Analysis",
+    "target": "Johan Vermeulen",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Chapter 8 S&W Regulation 16 GAP Analysis",
+    "target": "Johan Vermeulen",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-13 \u2013 Cruiser Nersopec PSU Issues Notes",
+    "target": "Hennie van Niekerk",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Graben Project Logistics Planning",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Graben Project Logistics Planning",
+    "target": "reference/places/Nchwaning 2",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Graben Project Logistics Planning",
+    "target": "media/documents/2025/2025-08-18_Graben_Logistics_Planning_Summary.xlsx",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Graben Project Logistics Planning",
+    "target": "projects/BEV/BEV Charging Bay 2/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Graben Project Logistics Planning",
+    "target": "people/Prinsloo, Roelie",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Graben Project Logistics Planning",
+    "target": "reference/places/Nchwaning 2",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Project Status Update",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Project Status Update",
+    "target": "Lizette",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Project Status Update",
+    "target": "Lizette",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Clutch Repair Work Documentation",
+    "target": "Petersen, Xavier",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Clutch Repair Work Documentation",
+    "target": "media/2025-09-06_clutch_work_01.jpg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Clutch Repair Work Documentation",
+    "target": "media/2025-09-06_clutch_work_02.jpg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Clutch Repair Work Documentation",
+    "target": "media/2025-09-06_clutch_work_03.jpg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Clutch Repair Work Documentation",
+    "target": "media/2025-09-06_clutch_work_04.jpg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Clutch Repair Work Documentation",
+    "target": "media/2025-09-06_clutch_work_05.jpg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Clutch Repair Work Documentation",
+    "target": "Petersen, Xavier",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Complete Clutch Repair Process Documentation",
+    "target": "Petersen, Xavier",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Complete Clutch Repair Process Documentation",
+    "target": "media/One side of Slider Removed.jpg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Complete Clutch Repair Process Documentation",
+    "target": "media/Make-up pieces to be installed.jpg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Complete Clutch Repair Process Documentation",
+    "target": "media/Drum and Shaft without One side of Slider.jpg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Complete Clutch Repair Process Documentation",
+    "target": "media/Team Risk Assessments.jpg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Complete Clutch Repair Process Documentation",
+    "target": "media/WED entry.jpg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Complete Clutch Repair Process Documentation",
+    "target": "media/Vincent cleaning the Slider.jpg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Complete Clutch Repair Process Documentation",
+    "target": "media/Monkey ring on the side.jpg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Complete Clutch Repair Process Documentation",
+    "target": "media/2nd Slider Removed.jpg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Complete Clutch Repair Process Documentation",
+    "target": "media/Jacques and Team removed 2nd slider.jpg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Complete Clutch Repair Process Documentation",
+    "target": "media/Make-up pieces installed, busy rolling up rope.jpg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Complete Clutch Repair Process Documentation",
+    "target": "media/2025-09-06_clutch_repair_process_video1.mp4",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Complete Clutch Repair Process Documentation",
+    "target": "media/2025-09-06_clutch_repair_process_video2.mp4",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Complete Clutch Repair Process Documentation",
+    "target": "media/WhatsApp Video 2025-09-06 at 15.27.46.mp4",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-06 \u2013 Complete Clutch Repair Process Documentation",
+    "target": "Petersen, Xavier",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 \u2013 Clutch Slider Status Update",
+    "target": "Petersen, Xavier",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 \u2013 Clutch Slider Status Update",
+    "target": "media/Good Day Greg, CLUTCH SLIDER MAKE-UP PIECE STILL IN TACT.jpg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 \u2013 Clutch Slider Status Update",
+    "target": "Petersen, Xavier",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 SA Cranes Contract Update Process",
+    "target": "Lawrence Van Gieren",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 SA Cranes Contract Update Process",
+    "target": "Lawrence Van Gieren",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Dump Trucks & TLB Procurement Update",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Dump Trucks & TLB Procurement Update",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Dump Trucks & TLB Procurement Update",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Dump Trucks & TLB Procurement Update",
+    "target": "Hendrik van Niekerk",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Dump Trucks & TLB Procurement Update",
+    "target": "Hendrik van Niekerk",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Dump Trucks & TLB Procurement Update",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 Dump Trucks & TLB Procurement Update",
+    "target": "Hendrik van Niekerk",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 TLB Backhoe Trial Project Overview",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 TLB Backhoe Trial Project Overview",
+    "target": "2025-07-31_TLB_Quotation_444_Black_Rock_Mine.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 TLB Backhoe Trial Project Overview",
+    "target": "2025-07-31_TLB_Capital_Application_Approved.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 TLB Backhoe Trial Project Overview",
+    "target": "2025-07-31_BRMO_Scaler_Investigation.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 TLB Backhoe Trial Project Overview",
+    "target": "Hendrik van Niekerk",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 TLB Backhoe Trial Project Overview",
+    "target": "Hendrik van Niekerk",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 TLB Backhoe Trial Project Overview",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 TLB Backhoe Trial Project Overview",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-31 \u2013 TLB Backhoe Trial Project Overview",
+    "target": "Hendrik van Niekerk",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Rudy Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sipho",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sk",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Simon",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Xavier",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Rudy Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sello Simon Siase",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Lourens van der Heerden",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Willie Koekemoer",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Sello Simon Siase",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Assmang Black Rock Org Chart",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 BK Electrical Invoice Analysis",
+    "target": "media/documents/2025/2025-07-29_BK_Electrical_Invoice.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Sello Simon Siase",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Rudy Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Sello Simon Siase",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Lawrence van Heerden",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Team Directory",
+    "target": "Billy",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29_Recording",
+    "target": "media/audio/2025/2025-07-29_Recording.mp3",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Michael Bester",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Sikilela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Masigcinane Mteki",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Pieter Swanepoel",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Masigcinane Mteki",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-30 \u2013 Maintenance Compliance Performance Report",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "Iritron",
+    "target": "Jaco du Toit",
+    "type": "links_to"
+  },
+  {
+    "source": "Iritron",
+    "target": "projects/Capital/N2 Substation Upgrade",
+    "type": "links_to"
+  },
+  {
+    "source": "Iritron",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "Iritron",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "Iritron",
+    "target": "Anton Koorzen",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-31 \u2013 Komatsu GHH Mobile Charger Specs",
+    "target": "projects/BEV/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02 \u2013 Deutz TCD Engine Specifications N3",
+    "target": "reference/places/Nchwaning 3",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-02 \u2013 Deutz TCD Engine Specifications N3",
+    "target": "Sello Siase",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "Johnny Hollenbach",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "projects/SA_Cranes/",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "Chris Ross",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "projects/SA_Cranes/",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "tasks/master_task_list.md",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "reference/compliance/",
+    "type": "links_to"
+  },
+  {
+    "source": "README",
+    "target": "Willie Koekemoer",
+    "type": "links_to"
+  },
+  {
+    "source": "Assmang Black Rock Operations",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "Assmang Black Rock Operations",
+    "target": "Sikilela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "Assmang Black Rock Operations",
+    "target": "Johan Kotze",
+    "type": "links_to"
+  },
+  {
+    "source": "Assmang Black Rock Operations",
+    "target": "Sello Simon Siase",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-05 - Review - master_task_list",
+    "target": "master_task_list",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-05 - VFL Week 1 N3 Procedures",
+    "target": "2025-08-16 \u2013 VFL Schedule August 2025",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-12 - VFL Week 2 N3 Risk Assessment",
+    "target": "2025-08-16 \u2013 VFL Schedule August 2025",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-15 - Review - master_task_list",
+    "target": "master_task_list",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-16 - Review - master_task_list",
+    "target": "master_task_list",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-19 - Company Bakkie Service and Inspection",
+    "target": "2025-08-19 \u2013 Company Bakkie Service and Inspection",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-19 - Company Bakkie Service and Inspection",
+    "target": "2025-08-27 - Company Bakkie Service and Inspection",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-19 - VFL Week 3 Gloria Training",
+    "target": "2025-08-16 \u2013 VFL Schedule August 2025",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-26 - VFL Week 4 N3 Change Management",
+    "target": "2025-08-16 \u2013 VFL Schedule August 2025",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-27 - Company Bakkie Service and Inspection",
+    "target": "2025-08-27 \u2013 Daily Note",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 - DMRE Presentation Kimberley",
+    "target": "Sello Siase",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 - DMRE Presentation Kimberley",
+    "target": "Sello Siase",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-28 - DMRE Presentation Kimberley",
+    "target": "Sello Siase",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-29 - SA Cranes Tasks Due",
+    "target": "tasks/master_task_list#SA Cranes",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-30 - Drill Rig Capital Application Deadline",
+    "target": "projects/Capital/2025-08-27 \u2013 Drill Rig Capital Application",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-30 - TMM COP Review Meeting",
+    "target": "2025-08-27 \u2013 Daily Note#TMM COP review set up meeting",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-30 - TMM COP Review Meeting",
+    "target": "Schedule/2025-09-04 - TMM COP Presentation",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-31 - Recruit N3 GES Deadline",
+    "target": "tasks/master_task_list#Recruit N3 GES",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-31 - Xavier SP Mine Safety Lamp Room Contract",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-31 - Xavier SP Mine Safety Lamp Room Contract",
+    "target": "tasks/master_task_list#Xavier Peterson - Finalize SP Mine Safety Lamp Room Contract",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "2025-09_VFL_Schedule_September.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "James Collins",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Johan Jooste",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Wandile Kwinana",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Michael Bester",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Zol de Beer",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "James Collins",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Jaque S",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Evelyn",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Nkosinathi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Tshepo T",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Chris R",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Johan Jooste",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Rudi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Thuli",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Willie K",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Tshiamo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Katlego M",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Pelonomi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Pieter S",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Wandile Kwinana",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Sello T",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Marilese",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Keitumetsi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Anthony",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Marius H",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Lawrence",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Michael Bester",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Sean",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Felicity",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Shane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Ezekiel",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Obed",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Xavier",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Jerome",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Molahlehi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Humbelani",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Fine",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "James Collins",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Sello T",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Jerome",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Molahlehi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Mothelo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Fine",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Johan Jooste",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Jaque S",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Marilese",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Tshiamo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Anthony",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Humbelani",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Wayne",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Wandile Kwinana",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Johan V",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Willie K",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Raymond",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Oscar P",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Cobus L",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Chris R",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Michael Bester",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Sean",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Felicity",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Shane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Ezekiel",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Pelonomi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Xavier",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Zol de Beer",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Thuli",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Keitumetsi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Katlego M",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Marius H",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Lawrence",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "James Collins",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Jaque S",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Greg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Tshiamo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Oscar P",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Pelonomi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Lawrence",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Johan Jooste",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Sello T",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Raymond",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Ezekiel",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Mothelo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Chris R",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Wandile Kwinana",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Johan V",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Willie K",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Evelyn",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Katlego M",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Cobus L",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Teddy",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Michael Bester",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Rudi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Felicity",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Keitumetsi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Nkosinathi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Ben R",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Wayne",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Thuli",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Shane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Anthony",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Obed",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Xavier",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "James Collins",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Sello T",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Willie K",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Evelyn",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Oscar P",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Obed",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Xavier",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Johan Jooste",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Johan V",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Greg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Jerome",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Katlego M",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Tshepo T",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Pieter S",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Wandile Kwinana",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Rudi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Tshiamo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Anthony",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Humbelani",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Michael O",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Michael Bester",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Jaque S",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Thuli",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Keitumetsi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Nkosinathi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Ben R",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Wayne",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Zol de Beer",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Felicity",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Shane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Molahlehi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Cobus L",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Teddy",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "James Collins",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Marilese",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Jerome",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Nkosinathi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Mothelo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Chris R",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Johan Jooste",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Jaque S",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Greg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Keitumetsi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Anthony",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Obed",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Wayne",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Wandile Kwinana",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Sello T",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Thuli",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Evelyn",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Molahlehi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Cobus L",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Lawrence",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Michael Bester",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Sean",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Felicity",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Shane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Katlego M",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Marius H",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Fine",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Johan V",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Raymond",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Ezekiel",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Pelonomi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09 \u2013 VFL Schedule September 2025",
+    "target": "Michael O",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-01 - Weekly Plan Sept 1-5",
+    "target": "Dirk Jacobs",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-01 - Weekly Plan Sept 1-5",
+    "target": "media/documents/2025/2025-08-18_Quote_Chargers_BEV_Bay_2.pdf",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-01 - Weekly Plan Sept 1-5",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-01 - Weekly Plan Sept 1-5",
+    "target": "Lourens van der Heerden",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-01 - Weekly Plan Sept 1-5",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-01 - Weekly Plan Sept 1-5",
+    "target": "Marina Schoeman",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-01 - Weekly Plan Sept 1-5",
+    "target": "Rudy Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-01 - Weekly Plan Sept 1-5",
+    "target": "Johan Vermeulen",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-01 - Weekly Plan Sept 1-5",
+    "target": "Marina Schoeman",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-01 - Weekly Plan Sept 1-5",
+    "target": "Jacques Farmer",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-01 - Weekly Plan Sept 1-5",
+    "target": "Sello Siase",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-01 - Weekly Plan Sept 1-5",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-01 - Weekly Plan Sept 1-5",
+    "target": "Johan Vermeulen",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-01 - Weekly Plan Sept 1-5",
+    "target": "Marina Schoeman",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-01 - Weekly Plan Sept 1-5",
+    "target": "Lourens van der Heerden",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-01 - Weekly Plan Sept 1-5",
+    "target": "Rudy Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-01 - Weekly Plan Sept 1-5",
+    "target": "Jacques Farmer",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 - GES Shortlisting Meeting",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 - GES Shortlisting Meeting",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 - GES Shortlisting Meeting",
+    "target": "Louisa Breet",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 - GES Shortlisting Meeting",
+    "target": "Lillian",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 - GES Shortlisting Meeting",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 - GES Shortlisting Meeting",
+    "target": "tasks/2025-08-18 \u2013 Recruit N3 GES",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 - HD0054 Fire Section 54 Outstanding Actions",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 - HD0054 Fire Section 54 Outstanding Actions",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 - HD0054 Fire Section 54 Outstanding Actions",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 - HD0054 Fire Section 54 Outstanding Actions",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 - HD0054 Fire Section 54 Outstanding Actions",
+    "target": "operations/Safety/Safety Incidents/2025-08-20 HD54 Fire/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 - TMM Audit Feedback Meeting",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 - TMM Audit Feedback Meeting",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 - TMM Audit Feedback Meeting",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 - TMM Audit Feedback Meeting",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 - TMM Audit Feedback Meeting",
+    "target": "Chris Ross",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-08 - TMM Audit Feedback Meeting",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-09 - CR0093 Inspection",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-09 - HD54 Fire Investigator Report Meeting",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-09 - HD54 Fire Investigator Report Meeting",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-09 - HD54 Fire Investigator Report Meeting",
+    "target": "operations/Safety/Safety Incidents/2025-08-20 HD54 Fire/2025-08-20 HD0054 Major Fire Incident Report",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-09 - HD54 Fire Investigator Report Meeting",
+    "target": "operations/Nchwaning3/equipment/HD0054/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 - AI for BRMO Condition Monitoring",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 - AI for BRMO Condition Monitoring",
+    "target": "Chris Ross",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 - AI for BRMO Condition Monitoring",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 - AI for BRMO Condition Monitoring",
+    "target": "operations/BEV/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 - AI for BRMO Condition Monitoring",
+    "target": "IDEAS/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 - Nerospec Weekly Meeting",
+    "target": "Hendrik van Niekerk",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 - Nerospec Weekly Meeting",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 - Nerospec Weekly Meeting",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 - Nerospec Weekly Meeting",
+    "target": "Johan Kotze",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 - Nerospec Weekly Meeting",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 - Nerospec Weekly Meeting",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 - Special SHE Committee Meeting MCOP",
+    "target": "Rudi Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 - Special SHE Committee Meeting MCOP",
+    "target": "Jaque Steyn",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 - Special SHE Committee Meeting MCOP",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 - Special SHE Committee Meeting MCOP",
+    "target": "Johan Vermeulen",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 - Special SHE Committee Meeting MCOP",
+    "target": "Willie Koekemoer",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 - Special SHE Committee Meeting MCOP",
+    "target": "Lourens van der Heerden",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 - Special SHE Committee Meeting MCOP",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 - Special SHE Committee Meeting MCOP",
+    "target": "Michael Bester",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Barloworld Visit",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Barloworld Visit",
+    "target": "operations/Vendors/Barloworld-Equipment/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Standards Meeting",
+    "target": "Michael Bester",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Standards Meeting",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Standards Meeting",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Standards Meeting",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Standards Meeting",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Standards Meeting",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Standards Meeting",
+    "target": "Xavier Petersen",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Standards Meeting",
+    "target": "Johan Kotze",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Standards Meeting",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Standards Meeting",
+    "target": "Chris Ross",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Standards Meeting",
+    "target": "Willie Koekemoer",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Standards Meeting",
+    "target": "Jaque Steyn",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Weekly Overtime Meeting",
+    "target": "Michael Bester",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Weekly Overtime Meeting",
+    "target": "Xavier Petersen",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Weekly Overtime Meeting",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Weekly Overtime Meeting",
+    "target": "Rudi Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Weekly Overtime Meeting",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Weekly Overtime Meeting",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Weekly Overtime Meeting",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Weekly Overtime Meeting",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Weekly Overtime Meeting",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Weekly Overtime Meeting",
+    "target": "Chris Ross",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-11 - Weekly Overtime Meeting",
+    "target": "Jaque Steyn",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 - Solrock Alignment Meeting N2 Shaft Repair",
+    "target": "Xavier Petersen",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 - Solrock Alignment Meeting N2 Shaft Repair",
+    "target": "Rudi Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 - Solrock Alignment Meeting N2 Shaft Repair",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 - Solrock Alignment Meeting N2 Shaft Repair",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 - Solrock Alignment Meeting N2 Shaft Repair",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 - Solrock Alignment Meeting N2 Shaft Repair",
+    "target": "reference/places/Nchwaning 2",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-15 - Review - master_task_list",
+    "target": "master_task_list",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-16 - VFL Visit N2 Housekeeping Focus",
+    "target": "James Collins",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-16 - VFL Visit N2 Housekeeping Focus",
+    "target": "Jaque S",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-16 - VFL Visit N2 Housekeeping Focus",
+    "target": "Tshiamo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-16 - VFL Visit N2 Housekeeping Focus",
+    "target": "Oscar P",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-16 - VFL Visit N2 Housekeeping Focus",
+    "target": "Pelonomi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-16 - VFL Visit N2 Housekeeping Focus",
+    "target": "Lawrence",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-16 - VFL Visit N2 Housekeeping Focus",
+    "target": "2025-09 \u2013 VFL Schedule September 2025",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-17 - Review - master_task_list",
+    "target": "master_task_list",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-17 - Shaft Exam Solrock Project",
+    "target": "projects/22 Shaft Lining Repair Work/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-18 - Monthly Engineering Meeting",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-18 - Monthly Engineering Meeting",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-18 - Monthly Engineering Meeting",
+    "target": "Michael Bester",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-18 - Monthly Engineering Meeting",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-18 - Monthly Engineering Meeting",
+    "target": "Hendrik van Niekerk",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-18 - Monthly Engineering Meeting",
+    "target": "Xavier Petersen",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-18 - Monthly Engineering Meeting",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-18 - Monthly Engineering Meeting",
+    "target": "Willie Koekemoer",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-18 - Monthly Engineering Meeting",
+    "target": "Chris Ross",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-18 - Monthly Engineering Meeting",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-18 - Monthly Engineering Meeting",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-19 - Review - master_task_list",
+    "target": "master_task_list",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 - Capital Projects Update Group 02 Meeting 03",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 - Capital Projects Update Group 02 Meeting 03",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 - Capital Projects Update Group 02 Meeting 03",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 - Capital Projects Update Group 02 Meeting 03",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 - Capital Projects Update Group 02 Meeting 03",
+    "target": "Chris Ross",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-23 - VFL Visit N3 Incident Reporting Focus",
+    "target": "Johan Jooste",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-23 - VFL Visit N3 Incident Reporting Focus",
+    "target": "Johan V",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-23 - VFL Visit N3 Incident Reporting Focus",
+    "target": "Jerome",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-23 - VFL Visit N3 Incident Reporting Focus",
+    "target": "Katlego M",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-23 - VFL Visit N3 Incident Reporting Focus",
+    "target": "Tshepo T",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-23 - VFL Visit N3 Incident Reporting Focus",
+    "target": "Pieter S",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-23 - VFL Visit N3 Incident Reporting Focus",
+    "target": "2025-09 \u2013 VFL Schedule September 2025",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-24 - Meeting - master_task_list",
+    "target": "master_task_list",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-27 - Meeting - master_task_list",
+    "target": "master_task_list",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-27 - Review - master_task_list",
+    "target": "master_task_list",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-30 - Review - master_task_list",
+    "target": "master_task_list",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-30 - VFL Visit N3 Occupational Hygiene Focus",
+    "target": "Johan Jooste",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-30 - VFL Visit N3 Occupational Hygiene Focus",
+    "target": "Jaque S",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-30 - VFL Visit N3 Occupational Hygiene Focus",
+    "target": "Keitumetsi",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-30 - VFL Visit N3 Occupational Hygiene Focus",
+    "target": "Anthony",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-30 - VFL Visit N3 Occupational Hygiene Focus",
+    "target": "Obed",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-30 - VFL Visit N3 Occupational Hygiene Focus",
+    "target": "Wayne",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-30 - VFL Visit N3 Occupational Hygiene Focus",
+    "target": "2025-09 \u2013 VFL Schedule September 2025",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-03 - Call - master_task_list",
+    "target": "master_task_list",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-03 - N2 06Y Substation Upgrade Meeting",
+    "target": "Nchwaning 2",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-03 - N2 06Y Substation Upgrade Meeting",
+    "target": "Rudy Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-03 - N2 06Y Substation Upgrade Meeting",
+    "target": "2025-10-03 \u2013 N2 LHD Meeting and Substation Upgrade",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-03 - N2 LHD Meeting",
+    "target": "Nchwaning 2",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-03 - N2 LHD Meeting",
+    "target": "2025-10-03 \u2013 N2 LHD Meeting and Substation Upgrade",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-03 - Review - master_task_list",
+    "target": "master_task_list",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 - Review - master_task_list",
+    "target": "master_task_list",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-07 - Kudumane Brakes Quarterly Meeting",
+    "target": "Jacques Breet",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-07 - Kudumane Brakes Quarterly Meeting",
+    "target": "Chris Ross",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-07 - Kudumane Brakes Quarterly Meeting",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-08 - Review - master_task_list",
+    "target": "master_task_list",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-09 - Standards Meeting",
+    "target": "Michael Bester",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-09 - Standards Meeting",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-09 - Standards Meeting",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-09 - Standards Meeting",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-09 - Standards Meeting",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-09 - Standards Meeting",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-09 - Standards Meeting",
+    "target": "Xavier Petersen",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-09 - Standards Meeting",
+    "target": "Johan Kotze",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-09 - Standards Meeting",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-09 - Standards Meeting",
+    "target": "Chris Ross",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-09 - Standards Meeting",
+    "target": "Willie Koekemoer",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-09 - Standards Meeting",
+    "target": "Jaque Steyn",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-13 - Strategic Review Session",
+    "target": "strategy/Strategic Review Process",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-16 - Monthly Engineering Meeting",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-16 - Monthly Engineering Meeting",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-16 - Monthly Engineering Meeting",
+    "target": "Michael Bester",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-16 - Monthly Engineering Meeting",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-16 - Monthly Engineering Meeting",
+    "target": "Hendrik van Niekerk",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-16 - Monthly Engineering Meeting",
+    "target": "Xavier Petersen",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-16 - Monthly Engineering Meeting",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-16 - Monthly Engineering Meeting",
+    "target": "Willie Koekemoer",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-16 - Monthly Engineering Meeting",
+    "target": "Chris Ross",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-16 - Monthly Engineering Meeting",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-16 - Monthly Engineering Meeting",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-20 - Capital Projects Update Group 02 Meeting 03",
+    "target": "Jacques Breet",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-20 - Capital Projects Update Group 02 Meeting 03",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-20 - Capital Projects Update Group 02 Meeting 03",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-20 - Capital Projects Update Group 02 Meeting 03",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-20 - Capital Projects Update Group 02 Meeting 03",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-20 - Capital Projects Update Group 02 Meeting 03",
+    "target": "Chris Ross",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-20 - Capital Projects Update Group 02 Meeting 03",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-20 - Capital Projects Update Group 02 Meeting 03",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-12-31 - Task Due - ActivePhase",
+    "target": "ActivePhase",
+    "type": "links_to"
+  },
+  {
+    "source": "ActivePhase",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "ActivePhase",
+    "target": "strategy/CompanyStrategy.md",
+    "type": "links_to"
+  },
+  {
+    "source": "ActivePhase",
+    "target": "projects/BEV/BEV Fire Safety Program",
+    "type": "links_to"
+  },
+  {
+    "source": "ActivePhase",
+    "target": "Operations/Safety/Safety Incidents/2025-08-20 HD0054 Fire/",
+    "type": "links_to"
+  },
+  {
+    "source": "ActivePhase",
+    "target": "projects/BEV/BEV Charging Bay 2/",
+    "type": "links_to"
+  },
+  {
+    "source": "ActivePhase",
+    "target": "projects/BEV/2025-08-13 \u2013 BaaS Contract Extension & Fire Safety Priorities",
+    "type": "links_to"
+  },
+  {
+    "source": "ActivePhase",
+    "target": "Operations/WTW_Audit/",
+    "type": "links_to"
+  },
+  {
+    "source": "ActivePhase",
+    "target": "projects/Compliance/",
+    "type": "links_to"
+  },
+  {
+    "source": "ActivePhase",
+    "target": "tasks/2025-08-18 \u2013 Recruit N3 GES",
+    "type": "links_to"
+  },
+  {
+    "source": "ActivePhase",
+    "target": "tasks/2025-10-03 - Junior Project Engineers Recruitment Memo",
+    "type": "links_to"
+  },
+  {
+    "source": "ActivePhase",
+    "target": "projects/Capital/2025-08-27 \u2013 Drill Rig Capital Application",
+    "type": "links_to"
+  },
+  {
+    "source": "ActivePhase",
+    "target": "projects/BEV/BEV Charging Bay 2/",
+    "type": "links_to"
+  },
+  {
+    "source": "ActivePhase",
+    "target": "strategy/FocusOfWeek.md",
+    "type": "links_to"
+  },
+  {
+    "source": "ActivePhase",
+    "target": "strategy/CompanyStrategy.md",
+    "type": "links_to"
+  },
+  {
+    "source": "ActivePhase",
+    "target": "strategy/FocusOfWeek.md",
+    "type": "links_to"
+  },
+  {
+    "source": "ActivePhase",
+    "target": "tasks/master_task_list.md",
+    "type": "links_to"
+  },
+  {
+    "source": "CompanyStrategy",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "CompanyStrategy",
+    "target": "strategy/ActivePhase.md",
+    "type": "links_to"
+  },
+  {
+    "source": "CompanyStrategy",
+    "target": "strategy/FocusOfWeek.md",
+    "type": "links_to"
+  },
+  {
+    "source": "CompanyStrategy",
+    "target": "tasks/master_task_list.md",
+    "type": "links_to"
+  },
+  {
+    "source": "CompanyStrategy",
+    "target": "reference/places/Nchwaning 2",
+    "type": "links_to"
+  },
+  {
+    "source": "CompanyStrategy",
+    "target": "reference/places/Nchwaning 3",
+    "type": "links_to"
+  },
+  {
+    "source": "CompanyStrategy",
+    "target": "reference/places/Gloria Mine",
+    "type": "links_to"
+  },
+  {
+    "source": "CompanyStrategy",
+    "target": "projects/BEV/",
+    "type": "links_to"
+  },
+  {
+    "source": "CompanyStrategy",
+    "target": "projects/Capital/",
+    "type": "links_to"
+  },
+  {
+    "source": "CompanyStrategy",
+    "target": "Operations/Safety/",
+    "type": "links_to"
+  },
+  {
+    "source": "CompanyStrategy",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "CompanyStrategy",
+    "target": "Rudy Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "FocusOfWeek",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "FocusOfWeek",
+    "target": "strategy/ActivePhase.md",
+    "type": "links_to"
+  },
+  {
+    "source": "FocusOfWeek",
+    "target": "strategy/CompanyStrategy.md",
+    "type": "links_to"
+  },
+  {
+    "source": "FocusOfWeek",
+    "target": "strategy/ActivePhase.md",
+    "type": "links_to"
+  },
+  {
+    "source": "FocusOfWeek",
+    "target": "tasks/master_task_list.md",
+    "type": "links_to"
+  },
+  {
+    "source": "FocusOfWeek",
+    "target": "Schedule/",
+    "type": "links_to"
+  },
+  {
+    "source": "Strategic Review Process",
+    "target": "strategy/CompanyStrategy",
+    "type": "links_to"
+  },
+  {
+    "source": "Strategic Review Process",
+    "target": "strategy/ActivePhase",
+    "type": "links_to"
+  },
+  {
+    "source": "Strategic Review Process",
+    "target": "strategy/FocusOfWeek",
+    "type": "links_to"
+  },
+  {
+    "source": "Strategic Review Process",
+    "target": "tasks/master_task_list",
+    "type": "links_to"
+  },
+  {
+    "source": "policy",
+    "target": "Gregory Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "policy",
+    "target": "Lastname, Firstname",
+    "type": "links_to"
+  },
+  {
+    "source": "policy",
+    "target": "projects/ProjectName/",
+    "type": "links_to"
+  },
+  {
+    "source": "policy",
+    "target": "reference/places/SiteName",
+    "type": "links_to"
+  },
+  {
+    "source": "policy",
+    "target": "references",
+    "type": "links_to"
+  },
+  {
+    "source": "policy",
+    "target": "strategy/CompanyStrategy.md",
+    "type": "links_to"
+  },
+  {
+    "source": "policy",
+    "target": "strategy/ActivePhase.md",
+    "type": "links_to"
+  },
+  {
+    "source": "policy",
+    "target": "strategy/FocusOfWeek.md",
+    "type": "links_to"
+  },
+  {
+    "source": "policy",
+    "target": "CLAUDE.md",
+    "type": "links_to"
+  },
+  {
+    "source": "policy",
+    "target": "README.md",
+    "type": "links_to"
+  },
+  {
+    "source": "daily-note-creation",
+    "target": "Person 1",
+    "type": "links_to"
+  },
+  {
+    "source": "daily-note-creation",
+    "target": "Person 2",
+    "type": "links_to"
+  },
+  {
+    "source": "daily-note-creation",
+    "target": "Lastname, Firstname",
+    "type": "links_to"
+  },
+  {
+    "source": "daily-note-creation",
+    "target": "projects/ProjectName/",
+    "type": "links_to"
+  },
+  {
+    "source": "daily-note-creation",
+    "target": "strategy/ActivePhase.md",
+    "type": "links_to"
+  },
+  {
+    "source": "daily-note-creation",
+    "target": "strategy/FocusOfWeek.md",
+    "type": "links_to"
+  },
+  {
+    "source": "daily-note-creation",
+    "target": "projects/BEV/",
+    "type": "links_to"
+  },
+  {
+    "source": "daily-note-creation",
+    "target": "tasks/2025-08-18 \u2013 Recruit N3 GES",
+    "type": "links_to"
+  },
+  {
+    "source": "daily-note-creation",
+    "target": "Louisa Breet",
+    "type": "links_to"
+  },
+  {
+    "source": "daily-note-creation",
+    "target": "system/skills/inbox-triage.md",
+    "type": "links_to"
+  },
+  {
+    "source": "daily-note-creation",
+    "target": "system/skills/meeting-notes-processing.md",
+    "type": "links_to"
+  },
+  {
+    "source": "daily-note-creation",
+    "target": "system/skills/task-extraction.md",
+    "type": "links_to"
+  },
+  {
+    "source": "inbox-triage",
+    "target": "Lastname, Firstname",
+    "type": "links_to"
+  },
+  {
+    "source": "inbox-triage",
+    "target": "projects/ProjectName/",
+    "type": "links_to"
+  },
+  {
+    "source": "inbox-triage",
+    "target": "reference/places/SiteName",
+    "type": "links_to"
+  },
+  {
+    "source": "inbox-triage",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "inbox-triage",
+    "target": "projects/BEV/",
+    "type": "links_to"
+  },
+  {
+    "source": "inbox-triage",
+    "target": "reference/places/Gloria Mine",
+    "type": "links_to"
+  },
+  {
+    "source": "inbox-triage",
+    "target": "system/skills/daily-note-creation.md",
+    "type": "links_to"
+  },
+  {
+    "source": "inbox-triage",
+    "target": "system/skills/meeting-notes-processing.md",
+    "type": "links_to"
+  },
+  {
+    "source": "inbox-triage",
+    "target": "system/skills/task-extraction.md",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Priority Task Schedule",
+    "target": "Sipo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Priority Task Schedule",
+    "target": "Selom",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Priority Task Schedule",
+    "target": "Simon Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Priority Task Schedule",
+    "target": "Sipo",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Priority Task Schedule",
+    "target": "Selom",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Priority Task Schedule",
+    "target": "Simon Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Priority Task Schedule",
+    "target": "Lawrence Van Gieren",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-07-29 \u2013 Priority Task Schedule",
+    "target": "Billy",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 BRMO BaaS Invoicing Task (RECURRING)",
+    "target": "Greg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 BRMO BaaS Invoicing Task (RECURRING)",
+    "target": "BEVs/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 BRMO BaaS Invoicing Task (RECURRING)",
+    "target": "media/documents/2025/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 Document Reviews SharePoint Task",
+    "target": "Greg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 Electrical Safety Review Following Fatal Incident",
+    "target": "Greg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 Electrical Safety Review Following Fatal Incident",
+    "target": "Sello Taku",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 Weekly Tasks List",
+    "target": "Greg",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 Weekly Tasks List",
+    "target": "Raymond Mdunge",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 Weekly Tasks List",
+    "target": "Stef Lourens",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-06 \u2013 Weekly Tasks List",
+    "target": "Raymond Mdunge",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Recruit N3 GES",
+    "target": "Louisa Breet",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Recruit N3 GES",
+    "target": "Lillian",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Recruit N3 GES",
+    "target": "Greg Karsten",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Recruit N3 GES",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Recruit N3 GES",
+    "target": "Nchwaning 3",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Recruit N3 GES",
+    "target": "GES Appointments",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Recruit N3 GES",
+    "target": "Louisa Breet",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-08-18 \u2013 Recruit N3 GES",
+    "target": "Lillian",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-03 \u2013 DMR Brake Test Compliance Response",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-03 \u2013 DMR Brake Test Compliance Response",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-03 \u2013 DMR Brake Test Compliance Response",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-03 \u2013 DMR Brake Test Compliance Response",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-03 \u2013 DMR Brake Test Compliance Response",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-03 \u2013 DMR Brake Test Compliance Response",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-10 \u2013 Xavier Peterson - N2 Manwinder Investigation Follow-up",
+    "target": "Xavier Peterson",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 Mixed Project Tasks and Updates",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 Mixed Project Tasks and Updates",
+    "target": "projects/22 Shaft Lining Repair Work/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 Mixed Project Tasks and Updates",
+    "target": "johnny Hollenbach",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 Mixed Project Tasks and Updates",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-12 \u2013 Mixed Project Tasks and Updates",
+    "target": "johnny Hollenbach",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-15 \u2013 Daily Tasks and Action Items",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-15 \u2013 Daily Tasks and Action Items",
+    "target": "Operations/Nchwaning3/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-15 \u2013 Daily Tasks and Action Items",
+    "target": "projects/S2/",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-15 \u2013 Daily Tasks and Action Items",
+    "target": "Lourens van der Heerden",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-15 \u2013 Daily Tasks and Action Items",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-15 \u2013 Daily Tasks and Action Items",
+    "target": "Lourens van der Heerden",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-15 \u2013 Daily Tasks and Action Items",
+    "target": "Rudy Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 \u2013 Add Fire Suppression to Pre-Start Checks",
+    "target": "Chris Ross",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 \u2013 Add Fire Suppression to Pre-Start Checks",
+    "target": "Operations/Safety/Safety Incidents/2025-08-20 HD0054 Fire/2025-09-16 \u2013 HD54 Fire Investigation Interview Checklist.md",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 \u2013 Add Fire Suppression to Pre-Start Checks",
+    "target": "Operations/Safety/Safety Incidents/2025-08-20 HD0054 Fire/2025-08-20 HD0054 Major Fire Incident Report.md",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 \u2013 Fit Lubri Vent on All S2 Machines",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 \u2013 Fit Lubri Vent on All S2 Machines",
+    "target": "Operations/Safety/Safety Incidents/2025-08-20 HD0054 Fire/2025-09-16 \u2013 HD54 Fire Investigation Interview Checklist.md",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-09-22 \u2013 Fit Lubri Vent on All S2 Machines",
+    "target": "Operations/Safety/Safety Incidents/2025-08-20 HD0054 Fire/2025-08-20 HD0054 Major Fire Incident Report.md",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Weekly Priorities",
+    "target": "tasks/master_task_list.md#line-64",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Weekly Priorities",
+    "target": "tasks/master_task_list.md#line-70",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Weekly Priorities",
+    "target": "tasks/master_task_list.md#line-75",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Weekly Priorities",
+    "target": "tasks/master_task_list.md#line-63",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Weekly Priorities",
+    "target": "tasks/master_task_list.md#line-79",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Weekly Priorities",
+    "target": "tasks/master_task_list.md#line-87",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Weekly Priorities",
+    "target": "tasks/master_task_list.md#line-73",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Weekly Priorities",
+    "target": "tasks/master_task_list.md#line-237-239",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Weekly Priorities",
+    "target": "tasks/master_task_list.md#line-66-68",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Weekly Priorities",
+    "target": "tasks/master_task_list.md#line-77",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-10-06 \u2013 Weekly Priorities",
+    "target": "tasks/master_task_list.md#line-143",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "tasks/archive/2025-Q3-completed.md",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Rudi Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Garth Schreiner",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Johan Vermeulen",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Johnny Hollenbach",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Johnny Hollenbach",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Johnny Hollenbach",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Johnny Hollenbach",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Johnny Hollenbach",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Johnny Hollenbach",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Willie Koekemoer",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Johnny Hollenbach",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Johnny Hollenbach",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Johnny Hollenbach",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Johnny Hollenbach",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Johnny Hollenbach",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Kishore Jeebodh",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Johnny Hollenbach",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Chris Ross",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Rahab Makolomakwa",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Sello Sease",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Chris Ross",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Rudi Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Roelie Prinsloo",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Anton Koorzen",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Jaco du Toit",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Iritron",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Lourens van Heerden",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Rudi Opperman",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Gerhard van den Berg",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Johnny Hollenbach",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Johnny Hollenbach",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Mduduzi Mabona",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Mduduzi Mabona",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "Sipho Dubazane",
+    "type": "links_to"
+  },
+  {
+    "source": "master_task_list",
+    "target": "tasks/archive/2025-Q3-completed.md",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-Q3-completed",
+    "target": "Sikelela Nzuza",
+    "type": "links_to"
+  },
+  {
+    "source": "2025-Q3-completed",
+    "target": "Marothi",
+    "type": "links_to"
+  }
+]

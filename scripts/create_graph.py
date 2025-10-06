@@ -9,7 +9,7 @@ def parse_vault(vault_path):
     relationships = []
 
     # Regex to find [[wiki-links]]
-    link_pattern = re.compile(r"[["(.*?)"]]")
+    link_pattern = re.compile(r"\[\[(.*?)\]\]")
 
     print("Starting scan...")
     for root, dirs, files in os.walk(vault_path):
