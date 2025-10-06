@@ -1,111 +1,53 @@
-Internal memory sync command - processes Git diff output from temp file.
+# /sync-vault-internal
 
-**IMPORTANT**: This command is called by the Git post-commit hook. It should run quickly (<3 seconds for typical changes) and handle errors gracefully.
+**IMPORTANT**: This is an internal command called by the Git post-commit hook. Execute quickly and handle errors gracefully.
 
-## Input
+## Instructions
 
-Read from `.sync-temp-input.txt` file in repo root. Format:
-```
-A  people/New Person.md
-M  projects/BEV/update.md
-D  00_inbox/old.md
-```
+1. **Read input file** `.sync-temp-input.txt` in repo root
+   - Format: `<change-type><tab><file-path>` (one per line)
+   - Change types: A (added), M (modified), D (deleted)
+   - Parse and group by change type
 
-Each line: `<change-type> <tab> <file-path>`
-- `A` = Added
-- `M` = Modified
-- `D` = Deleted
+2. **Process ADDED files (A)**:
+   - Read file content
+   - Determine entity type from path:
+     - `people/*.md` → Personnel entity
+     - `projects/*/*.md` → Project/Decision entity
+     - `Schedule/*.md` → Business Process entity
+     - `strategy/*.md` → Strategy entity
+     - `tasks/*.md` → Task entity (only master_task_list.md)
+     - `IDEAS/*.md` → Idea entity
+     - `reference/places/*.md` → Location entity
+   - Extract metadata: title, front-matter, wikilinks, tags
+   - Create Graph Memory entities using `mcp__memory__create_entities`
+   - Create relations using `mcp__memory__create_relations`
+   - Write to Basic Memory using `mcp__basic-memory__write_note`
 
-## Processing Logic
+3. **Process MODIFIED files (M)**:
+   - Search Graph Memory for entities with file path in observations
+   - If found: Delete old entities with `mcp__memory__delete_entities`
+   - Read current file content
+   - Create new entities (same as Added logic)
+   - Update Basic Memory (write_note overwrites existing)
 
-### 1. Read Input
-```
-Read .sync-temp-input.txt
-Parse each line into (changeType, filePath)
-Group by change type: added[], modified[], deleted[]
-```
+4. **Process DELETED files (D)**:
+   - Search Graph Memory for entities with file path
+   - Delete entities and relations with `mcp__memory__delete_entities`
+   - Delete from Basic Memory using `mcp__basic-memory__delete_note`
 
-### 2. Process Added Files (A)
+5. **Output summary**:
+   ```
+   Memory sync complete:
+   - X files processed
+   - Y added (N entities, M relations)
+   - Z modified (N entities updated)
+   - W deleted
+   ```
 
-For each added file:
-- Read file content
-- Determine entity type from path:
-  - `people/*.md` → Personnel entity
-  - `projects/*/*.md` → Project/Decision entity
-  - `Schedule/*.md` → Business Process/Event entity
-  - `strategy/*.md` → Strategy entity
-- Extract key information (front-matter, wikilinks, tags)
-- Create Graph Memory entity with observations
-- Create relations (reports_to, assigned_to, located_at, aligns_with)
-- Write to Basic Memory
+6. **Error handling**:
+   - Log errors to `.vault-sync.log` but continue processing
+   - Return success even if some files fail (graceful degradation)
 
-### 3. Process Modified Files (M)
-
-For each modified file:
-- Use **replace strategy**:
-  1. Search Graph Memory for entities with file path in observations
-  2. If found: Delete old entities
-  3. Read current file content
-  4. Create new entities (same as Added logic)
-  5. Re-index in Basic Memory (overwrites)
-
-### 4. Process Deleted Files (D)
-
-For each deleted file:
-- Search Graph Memory for entities with file path in observations
-- Delete entities and their relations
-- Delete from Basic Memory
-
-### 5. Batch Operations
-
-- Use `mcp__memory__create_entities` (plural) for multiple entities
-- Use `mcp__memory__create_relations` (plural) for multiple relations
-- Process independent files in parallel where possible
-
-### 6. Output
-
-Print summary to console:
-```
-Memory sync complete:
-- 3 files processed
-- 2 added (4 entities created, 6 relations)
-- 1 modified (2 entities updated)
-- 0 deleted
-```
-
-## Error Handling
-
-- Log errors but continue processing remaining files
-- Return exit code 0 if all succeeded
-- Return exit code 1 if any errors occurred
-- Append details to `.vault-sync.log`
-
-## Performance Targets
-
-- <1 second for 1-3 files
-- <3 seconds for 5-10 files
-- <10 seconds for 20+ files
-
-## Example Execution
-
-Input file `.sync-temp-input.txt`:
-```
-A  people/Jane Doe.md
-M  projects/BEV/2025-10-05 – Fire Safety Update.md
-```
-
-Processing:
-1. Read Jane Doe.md → Create Personnel entity "Jane Doe"
-2. Create relations (reports_to, stationed_at)
-3. Index in Basic Memory
-4. Read BEV fire safety file → Delete old "Fire Safety Update" entity
-5. Create new entity from current content
-6. Re-index in Basic Memory
-
-Output:
-```
-Memory sync complete:
-- 2 files processed
-- 1 added (1 entity created, 2 relations)
-- 1 modified (1 entity updated)
-```
+## Performance Target
+- <3 seconds for typical changes (1-10 files)
