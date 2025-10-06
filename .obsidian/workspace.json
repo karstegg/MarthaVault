@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/2025-10-03.md",
+                "file": "00_Inbox/Fix Gemini API Key for ProductionReports.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-03"
+              "title": "Fix Gemini API Key for ProductionReports"
             }
           }
         ]
@@ -209,7 +209,9 @@
   },
   "active": "a140bbf9adcb3b66",
   "lastOpenFiles": [
+    "00_Inbox/Priotities for today and rest of week.md",
     "00_Inbox/2025-10-06.md",
+    "00_Inbox/2025-10-03.md",
     "00_Inbox/KAL-ENG-SOP-56 A Lifting Operations.docx",
     "00_Inbox/MRC-ENG-MEQ-STD-023 - Standard for Operation And Maintenance of Lifting Equipment.pdf",
     "00_Inbox/MRC-ENG-ESV-PRC-014 - Lifting Equipment.pdf",
@@ -218,7 +220,6 @@
     "00_Inbox/Conveyor belt_technical_handbook.pdf",
     "00_Inbox/Fenner Dunlop Conveyor_Handbook.pdf",
     "00_Inbox/Fix Gemini API Key for ProductionReports.md",
-    "00_Inbox/2025-10-03.md",
     "strategy/ActivePhase.md",
     "00_Inbox/test-git-sync.md",
     "Schedule/2025-12-31 - Task Due - ActivePhase.md",
