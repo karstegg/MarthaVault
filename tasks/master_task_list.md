@@ -36,6 +36,11 @@ hn4
 ## From Daily Note 2025-10-01
 - [ ] Check proposal for charger for BEV Bay 2 and place order [[Kishore Jeebodh]] #task #year/2025 #priority/medium #BEV
 
+## Monday Recurring Tasks (Weekly)
+- [ ] Approve all job cards on JDE 📅 2025-10-06 #task #year/2025 #priority/high #recurring #admin
+- [ ] Check and approve timesheets on Firefly 📅 2025-10-06 #task #year/2025 #priority/high #recurring #admin
+- [ ] Approve leave requests on Oracle 📅 2025-10-06 #task #year/2025 #priority/high #recurring #admin
+
 ## From Daily Note 2025-10-06
 - [ ] Complete Weekly Engineering Report 📅 2025-10-06 #task #year/2025 #priority/critical #recurring
 - [ ] Review HD0054 Fire Investigation Report (Alexis Basson) 📅 2025-10-06 #task #year/2025 #priority/critical #fire_safety

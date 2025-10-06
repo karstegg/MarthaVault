@@ -15,6 +15,11 @@ Tags:: #year/2025 #daily #priority/high
 
 ## ✅ Tasks for Today
 
+### 🟣 Monday Recurring Admin (Do First)
+- [ ] Approve all job cards on JDE 📅 2025-10-06 #task #priority/high #recurring #admin
+- [ ] Check and approve timesheets on Firefly 📅 2025-10-06 #task #priority/high #recurring #admin
+- [ ] Approve leave requests on Oracle 📅 2025-10-06 #task #priority/high #recurring #admin
+
 ### 🔴 Critical Priority
 - [ ] Complete Weekly Engineering Report 📅 2025-10-06 #task #priority/critical #recurring
 - [ ] Review HD0054 Fire Investigation Report (Alexis Basson) 📅 2025-10-06 #task #priority/critical
