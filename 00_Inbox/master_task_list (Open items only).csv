@@ -1,0 +1,68 @@
+Section,Task,Status,Priority,Mentions,Tags,Site,Project,Comment
+Operations,"Set up BaaS battery availability measurement system Chris Ross Rahab Makolomakwa - Mail sent to Chris Ross, Ronnie, and Phillip to start tracking",In?Progress,medium,"Chris Ross, Rahab Makolomakwa",#task #BaaS #battery #availability #year/2025,Nchwaning3,BEV battery performance montiroing,"Although this is not linked to a specific project per se, it is linked to the BEV battery performance. It is linked to the monthly invoices for rental of the BEV batteries. At the moment we get an availability percentage number from Epiroc. There are some conditions attached to that:
+1. They are penalized for lower availability
+2. We pay for availability above a certain threshold so, but we are not actually capturing the availability on our side, they are reporting only from their side. So I've asked Chris and Rahab to implement this system. So that I can compare our numbers against the reported numbers from Epiroc before we pay any invoices. "
+Projects,Place charger order by end of week,Open,high,,#task #BEV #chargers #order #priority/critical #year/2025,Nchwaning3,BEV Charging Bay #2 project,People: Johnny Hollenbach
+BEV Fire Safety,Audit BEV storage areas for compliance with OEM specifications,Open,high,,#task #year/2025 #BEV #storage #audit #priority/critical,Nchwaning3,BEV Battery Fire Safety Programme,People: Johnny Hollenbach
+BEV Fire Safety,Review current BEV storage procedures against Epiroc recommendations,Open,high,,#task #year/2025 #BEV #fire-safety #epiroc #priority/critical,Nchwaning3,BEV Battery Fire Safety Programme,People: Johnny Hollenbach
+BEV Fire Safety,Implement enhanced lockout/tagout procedures for BEV maintenance,Open,high,,#task #year/2025 #BEV #safety #lockout #priority/critical,Nchwaning3,BEV Battery Fire Safety Programme,People: Johnny Hollenbach
+Weekly Reporting,Complete Weekly Engineering Report,Open,high,,#task #year/2025 #priority/critical #recurring,,,
+From Daily Note 2025-10-06,Review HD0054 Fire Investigation Report (Alexis Basson),Open,critical,,#task #year/2025 #priority/critical #fire_safety,,,This is the Incident Investigation Report. By an independent fire expert. This is part of the larger HD0054 fire actions that flowed from our own investigations as well as audits. The actions from here must be added and tracked.
+From Daily Note 2025-10-06,HD0054 Fire - Identify and document all outstanding close-out actions,Open,critical,,#task #year/2025 #priority/critical #fire_safety,,,This also links to the HD0054 fire incident actions
+BEV Bay #2 Project,Confirm delivery timeline with vendor,Open,medium,,#task #BEV #chargers #delivery #priority/critical #year/2025,Nchwaning3,BEV Charging Bay #2 project,People: Johnny Hollenbach
+BEV Bay #2 Project,Coordinate with Roelie's construction timeline,done,medium,,#task #BEV #coordination #priority/critical #year/2025,,,
+BEV Bay #2 Project,Review charger quote details immediately,Open,medium,,#task #BEV #chargers #priority/critical #year/2025,,,Duplicate
+BEV Fire Safety,Review BEV fire risk assessment,Open,high,,#task #BEV #fire-safety #priority/high #year/2025,Nchwaning3,BEV Battery Fire Safety Programme,People: Johnny Hollenbach
+BEV Fire Safety,Complete fire risk immediate actions,Open,high,,#task #BEV #fire-safety #priority/high #year/2025,Nchwaning3,BEV Battery Fire Safety Programme,People: Johnny Hollenbach
+Mine Planning Meeting Actions,Complete two-way radio vendor evaluation (60 units for N2 shaft),Open,low,,#task #capital #radios #N2-shaft #priority/high #year/2025,Nchwaning2,,This is an action from one of the monthly ining planning meetings. I need to apply for unplanned capex to get this project approved.
+BEV Fire Safety,Finalize fire procedure for operators,Open,high,,#task #BEV #fire-safety #priority/high #year/2025,Nchwaning3,BEV Battery Fire Safety Programme,People: Johnny Hollenbach
+Recruitment Tasks,Coordinate fire training with Willie Koekemoer (Training Manager),Open,high,,#task #BEV #fire-safety #priority/high #year/2025,Nchwaning3,BEV Battery Fire Safety Programme,People: Johnny Hollenbach
+Org Structure,Second Electrical Supervisor N3,Open,critical,,#task #priority/high #electrical #N3,Nchwaning3,,This is a motivation to increase the compliment of electrical foremen to 2x
+BEV Fire Safety,Coordinate with Mine Rescue Services on Li-Ion fire response protocols,Open,high,,#task #year/2025 #BEV #mine-rescue #fire-safety #priority/high,Nchwaning3,BEV Battery Fire Safety Programme,People: Johnny Hollenbach
+BEV Fire Safety,Update BEV Fire Risk Assessment incorporating Epiroc findings,Open,medium,,#task #year/2025 #BEV #risk-assessment #priority/high,Nchwaning3,BEV Battery Fire Safety Programme,People: Johnny Hollenbach
+From Daily Note 2025-10-06,SHERQ Bakkies Capex - Follow up or escalate to Garth Schreiner for Signhub routing,Open,high,Garth Schreiner,#task #year/2025 #priority/high #capital,,SHERQ LDVs,Requested by Johan Vermeulen. The capex is compiled and currently under review
+From Daily Note 2025-10-06,Draft N3 Electrical Foreman Recruitment Motivation,Open,critical,,#task #year/2025 #priority/high #recruitment #site/Nchwaning3,Nchwaning3,,Duplicate
+From Daily Note 2025-10-06,JPE Recruitment Motivation - Follow up on status,Open,critical,,#task #year/2025 #priority/high #recruitment,,,Asked Rudi on Whatsap. Did not get a response
+From Daily Note 2025-10-06,DMRE Actions Status Update (HD54 fire + additional infra),Open,critical,,#task #year/2025 #priority/high #compliance #DMRE,,,Linked to HD54 investigation actions - so could be duplicate
+From Daily Note 2025-10-06,N2 Substation Project - Follow up with Rudi Opperman and Roelie Prinsloo after James Collins feedback,Open,high,"Rudi Opperman, Roelie Prinsloo",#task #year/2025 #priority/high #capital #site/Nchwaning2,Nchwaning2,Underground main incomer substation upgrade project.,"There is a substation upgrade project for N2 primarily for load grrowth planning and to deal with obsolete equipment in SS. Rudi must give guidance on what we can do to expedite., I want to bypass the process based on the condition o fthe breakerrs. Key people: [[Roeli Prinsloo]], [[Sikelela Nzuza]], [[Anton Koorzen]], [[Jaco du Toit]] from [[Iritron]]"
+Recruitment Tasks,Enhance staff training program on Li-Ion battery safety,Open,medium,,#task #year/2025 #BEV #training #safety #priority/high,Nchwaning3,BEV Battery Fire Safety Programme,People: Johnny Hollenbach
+CAS Project Tasks,Review all scaler risk assessments and TMM hazard rating documents,Open,medium,,#task #year/2025 #priority/high #CAS_Project #safety,,,Want to understand how they arrived at the current rating for scalers from CAS perspective
+From Daily Note 2025-09-28,Outstanding DMR actions: Drill Torque and speed measurements on Bolters,Open,medium,,#task #year/2025 #priority/high #DMR,,,Drill torq measurements. [[Johnny hollenbach]]. This action came from a DMR visit
+From Daily Note 2025-09-28,Psychometric tests for selected N3 GES candidate,Done,high,,#task #year/2025 #priority/high #recruitment #N3,Nchwaning3,,
+From Daily Note 2025-09-28,Psychometric tests for top 2 Shaft Engineer candidates,Done,high,,#task #year/2025 #priority/high #recruitment,,,
+From Daily Note 2025-09-30,Implement DPF on all Diesel Machines starting with CAT AD30s,Open,high,,#task #year/2025 #priority/high #emissions,,DPF Project,This is why we need the 2 JPEs
+From Daily Note 2025-09-30,VO for SA Cranes,Open,high,,#task #year/2025 #priority/high #SA_Cranes,,,Must do a VO for 6 months
+,Follow up on approvals for JPE recruitment memo,In progress,high,,#task #year/2025 #priority/high #recruitment,,,
+,Follow up on leaky feeder vendor onboarding and project start,In progress,high,,#task #leaky-feeder #priority/high #year/2025,,,Order is currently routing for approval
+,Place advertisement for Junior Project Engineers position,Open,high,,#task #year/2025 #priority/high #recruitment,,,follows approval for appointments
+,Provide DMR Inspector feedback on brake test ramp requirement vs compliance bay status,Open,high,,#task #priority/high #year/2025 #compliance #safety #DMR #brake-testing,,,Part of DMR feedback report
+,Write Junior Project Engineers recruitment memo,Done,high,,#task #year/2025 #priority/high #recruitment,,,
+,Get quote for BEV workshop charges,Done,medium,,#task #BEV #workshop #capital #priority/medium #year/2025,,,
+,Place order for BEV workshop charges,Open,medium,,#task #BEV #workshop #capital #priority/medium #year/2025,Nchwaning3,BEV Charging Bay #2 project,linked to BEV bay #2
+,Communicate change management process to all regarding changes,Open,medium,,#task #year/2025 #safety #change-management #DMRE #priority/medium,,,DMRE Actions
+Safety,Lifting Equipment vs Jacking analysis,Open,medium,,#task #priority/medium #equipment,,,[[Johnny Hollenbach]] busy with this. Also asked procedures from Murray and Roberts
+Safety,Review Tyre management procedure,Open,medium,,#task #year/2025 #safety #maintenance #priority/medium,,,Action from Scaler incident
+Safety,Review risk Scaler assessment with OEM and stakeholders (visibility),Open,medium,,#task #year/2025 #safety #risk-assessment #OEM #priority/medium,,,Action from Scaler incident
+From Daily Note 2025-10-06,Compliance: Chapter 8 S&W Regulation 16 Review,Open,medium,,#task #year/2025 #priority/medium #compliance,,,"New winder regulations. Not sure what we must do here. This is new legislation that must be implemented.,"
+From Daily Note 2025-10-06,N2 LHD Issues - Coordinate documentation with Lourens van Heerden,Open,medium,Lourens van Heerden,#task #year/2025 #priority/medium #site/Nchwaning2,Nchwaning2,,Must still follow up with Lourens
+From Daily Note 2025-10-06,Track progress on SK grader capital application,Open,medium,,#task #year/2025 #priority/medium #capital,Nchwaning2,,
+From Daily Note 2025-09-28,Audit of all other TMMs,Open,medium,,#task #year/2025 #priority/medium,,,Not sure what this is about?
+From Daily Note 2025-09-28,Do graph memory index of vault,Done,medium,,#task #year/2025 #priority/medium,,,
+From Daily Note 2025-09-29,Fire Door Capital,Open,medium,,#task #year/2025 #priority/medium,,,[[mduduzi Mabona]] is an EIT he is running with this project
+From Daily Note 2025-09-29,Tappet cover melting point investigation,Open,medium,,#task #year/2025 #priority/medium,,,We are waiting for results from lab melting point test results. Chriusto vd Westhuizen is running with this
+From Daily Note 2025-09-30,Gerhard to obtain quote from Barlows for DPF implementation,Open,medium,[[Gerhard vd Berg]],#task #year/2025 #priority/medium #emissions,,DPF project,
+From Daily Note 2025-10-01,Check proposal for charger for BEV Bay 2 and place order Kishore Jeebodh,Open,medium,Kishore Jeebodh,#task #year/2025 #priority/medium #BEV,,,See above
+Recruitment Tasks,Aard UV brackets and pump safety interlock valves,Open,medium,,#task #year/2025 #safety #priority/medium,,,Follow up with engineers and must thenm write an instruction regarding this
+Recruitment Tasks,Apply to the DMR to apply for Exemption for special signals,Open,medium,,#task #year/2025 #DMR #priority/medium,,,This has been done. Xavier to follow up
+Recruitment Tasks,Audit on all Fermels for fire risk,Open,medium,,#task #year/2025 #fire-safety #audit #priority/medium,,,This action from ancident at N3
+Recruitment Tasks,Calculate emergency generator capacity for N2,Open,low,,#task #year/2025 #site/nchwaning2 #priority/medium,nchwaning2,,
+Recruitment Tasks,Capital Project : Gloria Chute Replacement,Open,medium,[[sipho Dubazane]],#task #year/2025 #capital #site/gloria #priority/medium,gloria,,Sipho busy with this
+Recruitment Tasks,Compile report for the scalar audit This was part of the SR 30 11_5,Open,medium,,#task #year/2025 #audit #priority/medium,,,
+From Daily Note 2025-09-28,Explain org structure and role at BRMO to Claude Code CLI,done,low,,#task #year/2025 #priority/low,,,
+Personal Projects,Move MCP-Microsoft-Office to proper location and configure in MCP settings,Open,low,,#task #personal #MCP #Microsoft365 #infrastructure #priority/low #year/2025,,,
+Recruitment Tasks,Explore UI-TARS desktop automation possibilities and technical feasibility,cancel,low,,#task #automation #personal #priority/low #year/2025,,,cancel and delet this task
+Recruitment Tasks,Add fire suppression system checks to pre-start procedures Chris Ross,Open,medium,Chris Ross,#task #safety #fire-suppression #pre-start #procedures #year/2025,,,
+Recruitment Tasks,Fit Lubri Vent systems on all S2 drill rigs Sello Sease,Open,high,Sello Sease,#task #safety #HD54 #fire-prevention #lubrivent #year/2025 #site/Nchwaning3,Nchwaning3,,One of the actions for HD0054 fire incident. Must comine with all other actions
+Recruitment Tasks,Complete capital vote closures,Open,low,,#task #capital #vote-closures #year/2025,,,
+Recruitment Tasks,Illumination capital - discuss with Rudi and get estimates from Engineers Rudi Opperman,Open,medium,Rudi Opperman,#task #capital #illumination #year/2025,,,needed for illumination installations underground. Part of DMR action statsu
+Recruitment Tasks,Write memo for junior engineers recruitment (2-year fixed-term),Open,done,,#task #recruitment #memo #junior-engineers #year/2025,,,
