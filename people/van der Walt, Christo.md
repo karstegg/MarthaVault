@@ -19,9 +19,8 @@ Owner - [[DATO Consulting]]
 - Email: christo-vanderwalt@lantic.net
 
 ## Current Projects & Interactions
-- [[DPF]]
+- [[DPF Project]]
 
 ## Notes
-- External contractor representative
-- Works on electrical infrastructure projects at BRMO
-- Key contact for Iritron substation work
+- Experienced Mechanical Engineer
+- Previously assisted with Drifter optimisation project

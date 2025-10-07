@@ -6,4 +6,4 @@ OEMs: [[operations/Vendors/Barloworld-Equipment/]], [[Epiroc]], [[aard]], [[ferm
 
 Activities:
 - [ ] [[Gerhard van den Berg]] to get proposal from Barlows for [[AD30]]
-- [ ] [[Gregory Karsten]] to motivate for appointment of Junior Project Engineers (JPE) to assist with projects
+- [ ] [[Gregory Karsten]] [[tasks/2025-10-03 - Junior Project Engineers Recruitment Memo]] 
