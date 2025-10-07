@@ -9,17 +9,17 @@ Tags:: #year/2025 #people #external
 # Christo van der Walt
 
 ## Role
-Owner - [[]]
+Owner - [[DATO Consulting]]
 
 ## Company
-[[Iritron]] - Electrical Engineering Contractor
+[[DATO Consulting]] - Consulting Engineer (Engineering, maintenance, investigations, diesel engines, lubricating oil expert)
 
 ## Contact Information
-- Company: Iritron
-- Email: (to be added)
+- Company: DATA Consulting
+- Email: christo-vanderwalt@lantic.net
 
 ## Current Projects & Interactions
-- [[projects/Capital/N2 Substation Upgrade]] - N2 Underground main incomer substation upgrade project
+- [[DPF]]
 
 ## Notes
 - External contractor representative
