@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -218,7 +217,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "97095aa62efe480b",
+  "active": "759b14c2e47b40e6",
   "lastOpenFiles": [
     "people/Peterson, Xavier.md",
     "people/Moller, Phillip.md",
