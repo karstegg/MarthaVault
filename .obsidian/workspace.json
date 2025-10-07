@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IDEAS/2025-08-16 – Gemini AI Integration Reference Note.md",
+                "file": "personal/projects/MarthaVault Intuition Layer/Deep Analysis of MarthaVault by Windsurf Claude 4.5.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-08-16 – Gemini AI Integration Reference Note"
+              "title": "Deep Analysis of MarthaVault by Windsurf Claude 4.5"
             }
           }
         ]
@@ -114,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "IDEAS/2025-08-16 – Gemini AI Integration Reference Note.md",
+                "file": "personal/projects/MarthaVault Intuition Layer/Deep Analysis of MarthaVault by Windsurf Claude 4.5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-08-16 – Gemini AI Integration Reference Note"
+              "title": "Outgoing links from Deep Analysis of MarthaVault by Windsurf Claude 4.5"
             }
           },
           {
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "IDEAS/2025-08-16 – Gemini AI Integration Reference Note.md",
+                "file": "personal/projects/MarthaVault Intuition Layer/Deep Analysis of MarthaVault by Windsurf Claude 4.5.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-08-16 – Gemini AI Integration Reference Note"
+              "title": "Outline of Deep Analysis of MarthaVault by Windsurf Claude 4.5"
             }
           },
           {
@@ -219,6 +219,8 @@
   },
   "active": "b75e30ec9cdf31fa",
   "lastOpenFiles": [
+    "IDEAS/2025-08-16 – Gemini AI Integration Reference Note.md",
+    "personal/projects/MarthaVault Intuition Layer/Deep Analysis of MarthaVault by Windsurf Claude 4.5.md",
     "GEMINI-README.md",
     "IDEAS/2025-08-16 – Claude Code Automation Ideas from Alex Finn.md",
     "IDEAS/2025-08-11 – Integrate Load & Haul Production Reports.md",
@@ -245,10 +247,8 @@
     "people/Excalidraw Org Structure.excalidraw.md",
     "00_Inbox/VFL Schedule - Oct 2025.pdf",
     "strategy/CompanyStrategy.md",
-    "tasks/archive/2025-Q3-completed.md",
     "tasks/archive",
     "scripts/create_graph.py",
-    "GEMINI.md",
     "reference/equipment/lifting-equipment/MRC-ENG-MEQ-STD-023 - Lifting Equipment Standard.pdf",
     "reference/equipment/lifting-equipment/MRC-ENG-ESV-PRC-014 - Lifting Equipment.pdf",
     "reference/equipment/lifting-equipment/KAL-ENG-SOP-56 A Lifting Operations.docx",
