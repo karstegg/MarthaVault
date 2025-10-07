@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "3fff66d8b2901e0e",
+        "id": "40025a478a7b4bf9",
         "type": "tabs",
         "children": [
           {
-            "id": "2bbcc2d010820830",
+            "id": "b75e30ec9cdf31fa",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "people/van der Walt, Christo.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "van der Walt, Christo"
+              "title": "New tab"
             }
           }
         ]
@@ -217,8 +213,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2bbcc2d010820830",
+  "active": "b75e30ec9cdf31fa",
   "lastOpenFiles": [
+    "people/van der Walt, Christo.md",
     "projects/DPF Project/DPF Project.md",
     "reference/equipment/BRMO_UG_Production_Fleet.md",
     "projects/2025-07-31 – Dump Trucks & TLB Procurement Update.md",
@@ -229,7 +226,6 @@
     "projects/Leaky_Feeder/Price Comparison.md",
     "projects/Leaky_Feeder/2025-07-31 – Project Status Update.md",
     "projects/Capital/2025-07-29 – Set Up Meeting With Marelize To Discuss Capital Vote Closures.md",
-    "people/van der Walt, Christo.md",
     "projects/DPF Project",
     "people/du Toit, Jaco.md",
     "00_Inbox/2025-10-07.md",

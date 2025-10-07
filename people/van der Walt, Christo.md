@@ -24,3 +24,4 @@ Owner - [[DATO Consulting]]
 ## Notes
 - Experienced Mechanical Engineer
 - Previously assisted with Drifter optimisation project
+- Also EDG Refurbishment project
