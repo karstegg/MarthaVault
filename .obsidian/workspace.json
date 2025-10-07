@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "reference/equipment/BRMO_UG_Production_Fleet.md",
-                "mode": "preview",
+                "file": "projects/DPF Project/DPF Project.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BRMO_UG_Production_Fleet"
+              "title": "DPF Project"
             }
           }
         ]
@@ -219,6 +219,7 @@
   },
   "active": "2bbcc2d010820830",
   "lastOpenFiles": [
+    "reference/equipment/BRMO_UG_Production_Fleet.md",
     "projects/DPF Project/DPF Project.md",
     "projects/2025-07-31 – Dump Trucks & TLB Procurement Update.md",
     "projects/TLB_Backhoe_Trial_Project/2025-07-31 – TLB Backhoe Trial Project Overview.md",
@@ -254,7 +255,6 @@
     "projects/ProductionReports/2025-10-06 – Fix Gemini API Key Setup.md",
     "tasks/2025-10-06 – Weekly Priorities.md",
     "personal/daily_notes/2025-10-06 – Daily Tasks.md",
-    "Operations/Nchwaning2/2025-10-03 – N2 LHD Meeting and Substation Upgrade.md",
     "MarthaVault Workflow Canvas.canvas",
     "MarthaVault Overview Canvas.canvas",
     "MarthaVault Implementation Canvas.canvas",
