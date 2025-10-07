@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "strategy/CompanyStrategy.md",
-                "mode": "preview",
+                "file": "00_Inbox/2025-10-07.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CompanyStrategy"
+              "title": "2025-10-07"
             }
           }
         ]
@@ -217,8 +217,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b7547cd56c37f6ca",
+  "active": "2bbcc2d010820830",
   "lastOpenFiles": [
+    "strategy/CompanyStrategy.md",
+    "00_Inbox/2025-10-07.md",
     "tasks/archive/2025-Q3-completed.md",
     "tasks/archive",
     "scripts/create_graph.py",
@@ -253,8 +255,6 @@
     "Schedule/2025-10-13 - Strategic Review Session.md",
     "Schedule/2025-10-08 - Review - master_task_list.md",
     "Schedule/2025-10-06 - Review - master_task_list.md",
-    "strategy/Strategic Review Process.md",
-    "00_Inbox/Priotities for today and rest of week.md",
     "MarthaVault Workflow Canvas.canvas",
     "MarthaVault Overview Canvas.canvas",
     "MarthaVault Implementation Canvas.canvas",
