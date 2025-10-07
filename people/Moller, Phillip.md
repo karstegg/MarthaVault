@@ -8,10 +8,10 @@ Tags:: #year/2025 #people
 
 # Phillip Moller
 
-BRMO Site Manager atEpiroc), supplier of CAT equipment to Black Rock Mine. Key contact for Greg's team regarding CAT equipment services and support.
+BRMO Site Manager at Epiroc, supplier of Epiroc equipment to Black Rock Mine. Key contact for Greg's team regarding Epiroc equipment services and support.
 
-**Company**: Barloworld Equipment (BWE)  
-**Role**: Field Service Manager  
-**Relationship**: Key vendor contact for CAT equipment
+**Company**: Epiroc
+**Role**: Site Manager  
+**Relationship**: Key vendor contact for Epiroc equipment
 
-#people #vendor #BWE #CAT #year/2025
+#people #vendor #Epiroc  #year/2025
