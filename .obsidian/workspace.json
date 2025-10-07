@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/DPF Project/DPF Project.md",
-                "mode": "source",
+                "file": "reference/equipment/BRMO_UG_Production_Fleet.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DPF Project"
+              "title": "BRMO_UG_Production_Fleet"
             }
           }
         ]
@@ -219,8 +219,8 @@
   },
   "active": "2bbcc2d010820830",
   "lastOpenFiles": [
-    "projects/2025-07-31 – Dump Trucks & TLB Procurement Update.md",
     "projects/DPF Project/DPF Project.md",
+    "projects/2025-07-31 – Dump Trucks & TLB Procurement Update.md",
     "projects/TLB_Backhoe_Trial_Project/2025-07-31 – TLB Backhoe Trial Project Overview.md",
     "projects/SA_Cranes/2025-07-29 – SA Cranes Contract Update Process.md",
     "projects/Rock Winder Clutch Repair/2025-09-06 – Complete Clutch Repair Process Documentation.md",
