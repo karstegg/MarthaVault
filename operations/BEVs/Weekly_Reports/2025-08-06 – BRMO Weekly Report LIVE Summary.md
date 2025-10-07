@@ -11,7 +11,7 @@ Tags:: #year/2025 #operations #site/gloria
 **Report Type**: Epiroc Service Report - LIVE DATA  
 **Period**: August 1-6, 2025  
 **Source**: [[media/documents/2025/2025-08-06 – BRMO Weekly Report LIVE.pdf]]  
-**Submitted To**: [[Sello Taku]] and [[Sipho Dubazane]]
+**Submitted To**: [[Taku, Sello]] and [[Dubazane, Sipho]]
 
 ## 🚨 CRITICAL EQUIPMENT BREAKDOWNS (FOR MANAGER REPORT)
 

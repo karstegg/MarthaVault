@@ -16,8 +16,8 @@ Tags:: #year/2025 #task #site/nchwaning3
 Recruit and appoint General Engineering Supervisor for Nchwaning 3 mine site to fill critical operational leadership position.
 
 ## Key Personnel
-- **[[Louisa Breet]]** - HR Recruitment Superintendent (Lead Contact)
-- **[[Lillian]]** - HR Officer, N3 (Site Liaison)
+- **[[Breet, Louisa]]** - HR Recruitment Superintendent (Lead Contact)
+- **[[Antonie, Lillian]]** - HR Officer, N3 (Site Liaison)
 - **[[Greg Karsten]]** - Hiring Manager
 - **[[Sello Sease]]** - Current N3 Engineer (Stakeholder)
 
@@ -74,7 +74,7 @@ Recruit and appoint General Engineering Supervisor for Nchwaning 3 mine site to 
 ## Related Items
 - [[Nchwaning 3]] operational requirements
 - [[GES Appointments]] broader recruitment program
-- [[Louisa Breet]] HR coordination
-- [[Lillian]] site HR support
+- [[Breet, Louisa]] HR coordination
+- [[Antonie, Lillian]] site HR support
 
 #task #GES #N3 #recruitment #HR #critical #priority/critical #urgent #year/2025

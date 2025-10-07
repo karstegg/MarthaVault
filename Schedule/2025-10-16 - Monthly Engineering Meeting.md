@@ -16,7 +16,7 @@ Tags:: #meeting #engineering #monthly #year/2025
 **Reminder**: 09:45
 
 ## Key Attendees
-**Required**: Marina Schoeman, [[Sello Taku]], [[Sikelela Nzuza]], [[Michael Bester]], [[Gregory Karsten]], Pieter Swanepoel, [[Hendrik van Niekerk]], [[Xavier Petersen]], [[Roelie Prinsloo]], [[Willie Koekemoer]], [[Chris Ross]], Nicholas Mbele, Bongani Njanjala, [[Sipho Dubazane]], [[Sello Sease]], Louise Swart
+**Required**: Marina Schoeman, [[Taku, Sello]], [[Nzuza, Sikelela]], [[Michael Bester]], [[Gregory Karsten]], Pieter Swanepoel, [[Hendrik van Niekerk]], [[Xavier Petersen]], [[Roelie Prinsloo]], [[Koekemoer, Willie]], [[Chris Ross]], Nicholas Mbele, Bongani Njanjala, [[Dubazane, Sipho]], [[Sello Sease]], Louise Swart
 
 **Optional**: Masigcinane Mteki, Mduduzi Mabona, Kobamelo Ntau, Mothlabani Moremi
 

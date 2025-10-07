@@ -16,8 +16,8 @@ Tags:: #meeting #recruitment #GES #shortlisting #year/2025
 **Reminder**: 10:45
 
 ## Key Attendees
-**Required**: Phelegetso Mokgosi, [[Sello Taku]], [[Gregory Karsten]]  
-**Optional**: [[Louisa Breet]], Nandipha Ngcaba, [[Lillian]], [[Sello Sease]]
+**Required**: Phelegetso Mokgosi, [[Taku, Sello]], [[Gregory Karsten]]  
+**Optional**: [[Breet, Louisa]], Nandipha Ngcaba, [[Antonie, Lillian]], [[Sello Sease]]
 
 ## Meeting Details
 - Review GES position applications

@@ -30,29 +30,29 @@ graph TD
 
 | Name | Nickname | Role | Location | Contact |
 |------|----------|------|----------|---------|
-| **[[Sipho Dubazane]]** | Sipo | Engineer | Gloria Mine | [Contact info] |
-| **[[Sikelela Nzuza]]** | Sk | Engineer | Nchwaning 2 | [Contact info] |
+| **[[Dubazane, Sipho]]** | Sipo | Engineer | Gloria Mine | [Contact info] |
+| **[[Nzuza, Sikelela]]** | Sk | Engineer | Nchwaning 2 | [Contact info] |
 | **[[Sello Simon Siase]]** | Simon | Engineer | Nchwaning 3 | [Contact info] |
-| **[[Xavier Peterson]]** | Xavier | Engineer | [Assignment TBD] | [Contact info] |
+| **[[Peterson, Xavier]]** | Xavier | Engineer | [Assignment TBD] | [Contact info] |
 
 ### 🏢 Management Chain
 
 #### Direct Reporting
-- **Manager**: [[Rudy Opperman]] (Operations Manager)
+- **Manager**: [[Opperman, Rudi]] (Operations Manager)
 - **Team**: Martha's Engineering Team (4 engineers)
 
 #### Matrix Reporting  
-- **Technical Lead**: [[Sello Taku]] (Engineering Manager)
+- **Technical Lead**: [[Taku, Sello]] (Engineering Manager)
 - **Relationship**: Dotted line for engineering/technical matters
 
 ### 🏭 Site Coverage
 
 #### Gloria Mine
-- **Engineer**: [[Sipho Dubazane]] (Sipo)
+- **Engineer**: [[Dubazane, Sipho]] (Sipo)
 - **Responsibilities**: Site engineering support, maintenance, projects
 
 #### Nchwaning 2  
-- **Engineer**: [[Sikelela Nzuza]] (Sk)
+- **Engineer**: [[Nzuza, Sikelela]] (Sk)
 - **Responsibilities**: Site engineering support, maintenance, projects
 
 #### Nchwaning 3

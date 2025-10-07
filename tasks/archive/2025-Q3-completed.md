@@ -28,7 +28,7 @@ Tags:: #year/2025 #archive #completed
 - [x] Weekly Report #task #year/2025 #priority/medium ✅ 2025-10-03
 - [x] Follow up re BaaS invoices for August #task #year/2025 #priority/high #BEV ✅ 2025-10-03
 - [x] Call Sello Sease re crew of specimen #task #year/2025 #priority/medium ✅ 2025-10-03
-- [x] Grader Capital Application - Delegated to [[Sikelela Nzuza]] via email 📅 2025-10-06 #task #year/2025 #priority/medium #capital ✅ 2025-10-06
+- [x] Grader Capital Application - Delegated to [[Nzuza, Sikelela]] via email 📅 2025-10-06 #task #year/2025 #priority/medium #capital ✅ 2025-10-06
 - [x] DocuSign Drawings Approval 📅 2025-10-06 #task #year/2025 #priority/medium ✅ 2025-10-06
 - [x] Coordinate with Roelie's construction timeline #task #BEV #coordination #priority/medium #year/2025 ✅ 2025-10-06
 - [x] Get quote for BEV workshop charges #task #BEV #workshop #capital #priority/medium #year/2025 ✅ 2025-10-06

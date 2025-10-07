@@ -27,7 +27,7 @@ Tags:: #year/2025 #people
 
 ## Related
 - [[N3 GES Recruitment]]
-- [[Lillian]] (HR Officer, N3)
+- [[Antonie, Lillian]] (HR Officer, N3)
 - [[GES Appointments]]
 
 #people #HR #recruitment #year/2025

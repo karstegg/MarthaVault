@@ -36,7 +36,7 @@ Tags:: #year/2025 #reference #site/gloria
 - Foreman Electrical Plant: 100.00%
 - Engineer LOS, Stockyard & SOT: 100.00%
 
-#### Shaft & Winders - [[Xavier Peterson]]
+#### Shaft & Winders - [[Peterson, Xavier]]
 **GES: Jan** - All roles achieving 100%
 - General Engineering Supervisor Winders & Shafts: 100.00%
 - Foreman Winders & Shafts - Fitter: 100.00%
@@ -44,7 +44,7 @@ Tags:: #year/2025 #reference #site/gloria
 - Foreman Winders & Shafts - Boilermaker: 100.00%
 - Engineer Winders & Shafts: 100.00%
 
-#### Nchw 2 U/G - [[Sikilela Nzuza]]
+#### Nchw 2 U/G - [[Nzuza, Sikilela]]
 **GES: Anton (Plant), Johan (Operations)** - All roles achieving 100%
 - General Engineering Supervisor: 100.00% (Anton)
 - Foreman Plant: 100.00% (Anton)
@@ -66,7 +66,7 @@ Tags:: #year/2025 #reference #site/gloria
 
 ### Areas Requiring Attention
 
-#### Nchw 3 U/G (99.36%) - [[Sipho Dubazane]]
+#### Nchw 3 U/G (99.36%) - [[Dubazane, Sipho]]
 **Critical Issues by GES:**
 
 **GES Stef (Plant & Services):**
@@ -124,8 +124,8 @@ Tags:: #year/2025 #reference #site/gloria
 ## Critical Action Items
 
 ### **URGENT** (Immediate Action Required)
-- [ ] **[[Sipho Dubazane]]**: Meet with GES Stef regarding BEV operations (76.56%)
-- [ ] **[[Sipho Dubazane]]**: Direct engineering oversight - investigate 75.86% compliance
+- [ ] **[[Dubazane, Sipho]]**: Meet with GES Stef regarding BEV operations (76.56%)
+- [ ] **[[Dubazane, Sipho]]**: Direct engineering oversight - investigate 75.86% compliance
 - [ ] **[[Masigcinane Mteki]]**: Review Services & Planning engineer performance (96.55%)
 - [ ] **GES Structure Review**: Consider GES oversight for engineering positions
 
@@ -168,7 +168,7 @@ Tags:: #year/2025 #reference #site/gloria
 3. **Supervision Span**: Some GES managing too many diverse functions
 
 ### **Immediate Actions**
-1. **Emergency BEV Review**: [[Sipho Dubazane]] & GES Stef meeting
+1. **Emergency BEV Review**: [[Dubazane, Sipho]] & GES Stef meeting
 2. **Engineering Supervision**: Consider GES assignment for engineering roles
 3. **Knowledge Transfer**: High-performing GES mentor struggling areas
 4. **Technology Training**: Focus on Battery Electric Vehicle maintenance

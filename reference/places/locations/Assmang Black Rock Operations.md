@@ -15,8 +15,8 @@ Tags:: #year/2025 #reference #site/nchwaning2
 **Operations**: Three mine sites  
 
 ## Mine Sites & Operations
-- **Gloria Mine** - Mine site ([[Sipho Dubazane]] stationed here)
-- **Nchwaning 2** - Mine site ([[Sikilela Nzuza]] stationed here, [[Johan Kotze]] acting)
+- **Gloria Mine** - Mine site ([[Dubazane, Sipho]] stationed here)
+- **Nchwaning 2** - Mine site ([[Nzuza, Sikilela]] stationed here, [[Johan Kotze]] acting)
 - **Nchwaning 3** - Mine site ([[Sello Simon Siase]] stationed here)
 - **Black Rock** - Main site/operation center
 - **Northern Cape** - Regional location in South Africa

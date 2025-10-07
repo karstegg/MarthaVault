@@ -24,11 +24,11 @@ Tags:: #year/2025 #people #site/nchwaning3
 ## Notes
 - Site-based HR officer for Nchwaning 3
 - Supports recruitment processes for N3 positions
-- Works with [[Louisa Breet]] on recruitment coordination
+- Works with [[Breet, Louisa]] on recruitment coordination
 
 ## Related
 - [[Nchwaning 3]]
-- [[Louisa Breet]] (HR Recruitment Superintendent)
+- [[Breet, Louisa]] (HR Recruitment Superintendent)
 - [[N3 GES Recruitment]]
 
 #people #HR #N3 #site-hr #year/2025

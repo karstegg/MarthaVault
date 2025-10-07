@@ -16,8 +16,8 @@ Tags:: #meeting #audit #TMM #feedback #year/2025
 **Reminder**: 14:15
 
 ## Key Attendees
-**Required**: [[Sello Sease]], [[Sikelela Nzuza]], [[Sipho Dubazane]], Jade Kruger, Danie Fourie, Leon Venter, [[Chris Ross]], Rahab Makolomakwa  
-**Optional**: [[Sello Taku]]
+**Required**: [[Sello Sease]], [[Nzuza, Sikelela]], [[Dubazane, Sipho]], Jade Kruger, Danie Fourie, Leon Venter, [[Chris Ross]], Rahab Makolomakwa  
+**Optional**: [[Taku, Sello]]
 
 ## Meeting Details
 - TMM audit feedback review

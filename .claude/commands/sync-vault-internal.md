@@ -19,22 +19,24 @@
      - `tasks/*.md` → Task entity (only master_task_list.md)
      - `IDEAS/*.md` → Idea entity
      - `reference/places/*.md` → Location entity
-   - Extract metadata: title, front-matter, wikilinks, tags
-   - Create Graph Memory entities using `mcp__memory__create_entities`
-   - Create relations using `mcp__memory__create_relations`
-   - Write to Basic Memory using `mcp__basic-memory__write_note`
+   - Extract metadata: title, front-matter, wikilinks, tags, role, email, etc.
+   - **Graph Memory**: Create entities using `mcp__memory__create_entities` and relations using `mcp__memory__create_relations`
+   - **Basic Memory**: Index document using `mcp__basic-memory__write_note` (project="main", folder from path, tags from front-matter)
 
 3. **Process MODIFIED files (M)**:
-   - Search Graph Memory for entities with file path in observations
-   - If found: Delete old entities with `mcp__memory__delete_entities`
-   - Read current file content
-   - Create new entities (same as Added logic)
-   - Update Basic Memory (write_note overwrites existing)
+   - Read updated file content
+   - **Graph Memory**:
+     - Search for entities with file path using `mcp__memory__search_nodes`
+     - If found: Delete old entity with `mcp__memory__delete_entities`, then create new (ensures observations are current)
+     - Create updated relations
+   - **Basic Memory**: Re-index using `mcp__basic-memory__write_note` (overwrites existing)
 
 4. **Process DELETED files (D)**:
-   - Search Graph Memory for entities with file path
-   - Delete entities and relations with `mcp__memory__delete_entities`
-   - Delete from Basic Memory using `mcp__basic-memory__delete_note`
+   - Extract entity name from file path
+   - **Graph Memory**:
+     - Search for entity using `mcp__memory__search_nodes`
+     - Delete with `mcp__memory__delete_entities` (relations auto-deleted)
+   - **Basic Memory**: Delete using `mcp__basic-memory__delete_note`
 
 5. **Output summary**:
    ```

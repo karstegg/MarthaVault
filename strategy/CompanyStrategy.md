@@ -192,7 +192,7 @@ Project/Initiative → Strategic Pillar → Long-Term Goal → Company Vision
 
 - **Locations**: [[reference/places/Nchwaning 2]], [[reference/places/Nchwaning 3]], [[reference/places/Gloria Mine]]
 - **Key Programs**: [[projects/BEV/]], [[projects/Capital/]], [[Operations/Safety/]]
-- **Leadership**: [[Sello Taku]] (Engineering Manager), [[Rudy Opperman]] (Operations Manager)
+- **Leadership**: [[Taku, Sello]] (Engineering Manager), [[Opperman, Rudi]] (Operations Manager)
 
 ---
 

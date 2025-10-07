@@ -15,14 +15,14 @@ Senior Production Engineer - Underground Mining Sites
 - Responsible for production engineering and optimization
 
 ## Reporting Structure
-- **Direct Manager**: [[Rudy Opperman]] (Operations Manager)
-- **Dotted Line**: [[Sello Taku]] (Engineering Manager)
+- **Direct Manager**: [[Opperman, Rudi]] (Operations Manager)
+- **Dotted Line**: [[Taku, Sello]] (Engineering Manager)
 
 ## Team Members
-- **[[Sipho Dubazane]]** (Engineer - Gloria Mine)
-- **[[Sikelela Nzuza]]** (Engineer - Nchwaning 2)
+- **[[Dubazane, Sipho]]** (Engineer - Gloria Mine)
+- **[[Nzuza, Sikelela]]** (Engineer - Nchwaning 2)
 - **[[Sello Simon Siase]]** (Engineer - Nchwaning 3)
-- **[[Xavier Peterson]]** (Engineer)
+- **[[Peterson, Xavier]]** (Engineer)
 
 ## Names & Recognition
 - **Professional**: Gregory Karsten

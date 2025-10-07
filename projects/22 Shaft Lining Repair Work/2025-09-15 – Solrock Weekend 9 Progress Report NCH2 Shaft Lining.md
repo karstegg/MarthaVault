@@ -13,7 +13,7 @@ Tags:: #report #project #year/2025 #Solrock #NCH2 #shaft-lining #weekend-9 #site
 **Project**: NCH2 Shaft Lining Repair
 **Weekend Period**: September 13-14, 2025 (Weekend #9)
 **Contract Manager**: Eben Barnard (Solrock)
-**BRMO Engineer**: [[Xavier Peterson]]
+**BRMO Engineer**: [[Peterson, Xavier]]
 
 ## Work Scope Overview
 
@@ -68,7 +68,7 @@ Tags:: #report #project #year/2025 #Solrock #NCH2 #shaft-lining #weekend-9 #site
 
 ## Key Personnel
 - **Solrock Contract Manager**: Eben Barnard
-- **BRMO Engineer**: [[Xavier Peterson]]
+- **BRMO Engineer**: [[Peterson, Xavier]]
 - **BRMO GES**: Jan Nieuwoudt
 - **Operations Manager**: James Collins
 
@@ -86,7 +86,7 @@ Tags:: #report #project #year/2025 #Solrock #NCH2 #shaft-lining #weekend-9 #site
 ## Related
 - [[Operations/Nchwaning2/]]
 - [[reference/places/Nchwaning 2]]
-- [[Xavier Peterson]] - Project Engineer
+- [[Peterson, Xavier]] - Project Engineer
 - [[Schedule/2025-09-17 - Shaft Exam Solrock Project]]
 
 ## Notes

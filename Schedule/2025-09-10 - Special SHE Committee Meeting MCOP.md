@@ -17,7 +17,7 @@ Tags:: #meeting #SHE #MCOP #consultation #safety #year/2025
 **Reminder**: 10:45
 
 ## Key Attendees
-**Required**: Corne Marais, Sean Jenniker, [[Rudi Opperman]], James Collins, [[Jaque Steyn]], [[Sello Taku]], [[Johan Vermeulen]], Johan Jooste, Wandile Kwinana, [[Willie Koekemoer]], Raymond Mdunge, Jerome Burger, Keitumetsi Dyantyi, Tshiamo Leberegane, Aubrey Simalomo, Millicent Moitlobo, Priscilla Motingwe, Joe Bruwer, Peter Mohapi, Chrystal Vries, Elsia Erasmus, Humbelani Phunge, [[Lourens van der Heerden]], [[Gregory Karsten]], [[Michael Bester]]
+**Required**: Corne Marais, Sean Jenniker, [[Rudi Opperman]], James Collins, [[Jaque Steyn]], [[Taku, Sello]], [[Johan Vermeulen]], Johan Jooste, Wandile Kwinana, [[Koekemoer, Willie]], Raymond Mdunge, Jerome Burger, Keitumetsi Dyantyi, Tshiamo Leberegane, Aubrey Simalomo, Millicent Moitlobo, Priscilla Motingwe, Joe Bruwer, Peter Mohapi, Chrystal Vries, Elsia Erasmus, Humbelani Phunge, [[Lourens van der Heerden]], [[Gregory Karsten]], [[Michael Bester]]
 
 ## Meeting Details
 - MCOP (Mine Closure and Operational Plan) consultation

@@ -26,7 +26,7 @@ The transition to a full BEV fleet is a strategic move to reduce heat load and v
 ### Key People
 
 - **Project Leader**: [[Jacques Breet]]
-- **Manager Engineering**: [[Sello Taku]]
+- **Manager Engineering**: [[Taku, Sello]]
 - **Manager Finance**: [[Malcolm Smit]]
 
 ### High-Level Timeline & Milestones

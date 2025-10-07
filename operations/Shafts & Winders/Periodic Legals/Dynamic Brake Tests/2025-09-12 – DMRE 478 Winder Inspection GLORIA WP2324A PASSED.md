@@ -13,7 +13,7 @@ Tags:: #compliance #DMRE #inspection #year/2025 #Gloria #winder #passed #site/Gl
 **Form**: DMRE 478 - Winding Plant Inspection Report
 **Date of Inspection**: 2025-09-12 (LAST DYNAMIC TEST)
 **Inspector**: Colin Jacobs
-**Engineer**: [[Xavier Peterson]]
+**Engineer**: [[Peterson, Xavier]]
 
 ## Equipment Details
 - **Winder Number**: GLORIA WP2324A
@@ -78,7 +78,7 @@ Tags:: #compliance #DMRE #inspection #year/2025 #Gloria #winder #passed #site/Gl
 ## Related
 - [[Operations/Gloria/]]
 - [[reference/places/Gloria Mine]]
-- [[Xavier Peterson]] - Responsible Engineer
+- [[Peterson, Xavier]] - Responsible Engineer
 - [[projects/Compliance/]]
 
 ## Notes

@@ -23,15 +23,15 @@ Tags:: #year/2025 #note #site/gloria
 | - [x ] | Complete S2 Drill Rig Capital Application             | 🔴 High     | 2025-08-30 | Not Started | [[Gregory Karsten]] | Out-of-plan purchase deadline        | 🗑️ |
 | - [ ]  | Finalize 282 Drill Rig Rental arrangements            | 🟡 Medium   | 2025-08-30 | Not Started | [[Gregory Karsten]] | Bridge solution for drilling         | 🗑️ |
 | - [ ]  | Complete N3 GES recruitment process                   | 🔴 Critical | 2025-08-31 | In Progress | [[Gregory Karsten]] | Critical staffing deadline           | 🗑️ |
-| - [ ]  | FL66 equipment tracking system implementation         | 🔴 High     | 2025-08-29 | In Progress | [[Sikilela Nzuza]]  | Location unknown issues              | 🗑️ |
+| - [ ]  | FL66 equipment tracking system implementation         | 🔴 High     | 2025-08-29 | In Progress | [[Nzuza, Sikilela]]  | Location unknown issues              | 🗑️ |
 | - [ ]  | Week 9 daily reports completion (N3, Gloria, S&W)     | 🟡 Medium   | 2025-08-30 | Not Started | [[Gregory Karsten]] | Production reporting                 | 🗑️ |
-| - [ ]  | Fire safety audit - N2 alarm investigation            | 🔴 Critical | 2025-08-30 | Planning    | [[Sipho Dubazane]]  | 5 alarms in Week 8                   | 🗑️ |
+| - [ ]  | Fire safety audit - N2 alarm investigation            | 🔴 Critical | 2025-08-30 | Planning    | [[Dubazane, Sipho]]  | 5 alarms in Week 8                   | 🗑️ |
 | - [ ]  | Company bakkie service and inspection                 | 🟡 Medium   | 2025-08-27 | Overdue     | [[Gregory Karsten]] | Vehicle maintenance                  | 🗑️ |
 | - [ ]  | TMM COP Review Meeting preparation                    | 🟡 Medium   | 2025-08-30 | Not Started | [[Gregory Karsten]] | Safety procedures review             | 🗑️ |
 | - [ ]  | Equipment breakdown analysis - support vehicle focus  | 🟡 Medium   | 2025-09-02 | Not Started | [[Gregory Karsten]] | 45% of breakdowns                    | 🗑️ |
 | - [ ]  | Monthly production report framework design            | 🟡 Medium   | 2025-09-05 | Not Started | [[Gregory Karsten]] | Week-over-week comparison            | 🗑️ |
 | - [ ]  | BEV vs Diesel performance analysis - N3 focus         | 🟢 Low      | 2025-09-06 | Not Started | [[Sello Sease]]     | 5-7% advantage documented            | 🗑️ |
-| - [ ]  | Plant blockage procedure review - steel contamination | 🟡 Medium   | 2025-09-10 | Not Started | [[Xavier Peterson]] | N2 recurring issue                   | 🗑️ |
+| - [ ]  | Plant blockage procedure review - steel contamination | 🟡 Medium   | 2025-09-10 | Not Started | [[Peterson, Xavier]] | N2 recurring issue                   | 🗑️ |
 | - [ ]  | Load optimization study - target 200+ loads/day       | 🟡 Medium   | 2025-09-12 | Not Started | [[Johan Kotze]]     | Current avg 191 loads                | 🗑️ |
 | - [ ]  | Weekly report template automation                     | 🟢 Low      | 2025-09-20 | Planning    | [[Gregory Karsten]] | JSON data extraction                 | 🗑️ |
 | - [ ]  | Q1 FY production targets review                       | 🟢 Low      | 2025-10-01 | Not Started | [[Gregory Karsten]] | End of first quarter                 | 🗑️ |

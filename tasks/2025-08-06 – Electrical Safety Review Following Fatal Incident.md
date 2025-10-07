@@ -37,7 +37,7 @@ Conduct comprehensive review and audit of our electrical safety procedures to en
 - Safety team
 - Electrical maintenance team
 - Operations management
-- [[Sello Taku]] (Engineering Manager)
+- [[Taku, Sello]] (Engineering Manager)
 
 ## Next Steps
 1. Schedule safety review meeting

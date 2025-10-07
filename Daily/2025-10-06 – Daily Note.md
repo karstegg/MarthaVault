@@ -32,7 +32,7 @@ Tags:: #year/2025 #daily #priority/high
 ## 📧 Email Actions Sent
 - ✅ SHERQ Bakkies Capex - awaiting feedback from [[Ilze Malouly]], [[Johan Vermeulen]], [[Garth Schreiner]]
   - **Escalation Plan:** Request [[Garth Schreiner]] route for signatures on Signhub if no COB feedback
-- ✅ Grader Capital Application - delegated to [[Sikelela Nzuza]] (SK)
+- ✅ Grader Capital Application - delegated to [[Nzuza, Sikelela]] (SK)
 
 ## 📅 Meetings Today
 **No scheduled meetings** - excellent for deep work on fire investigation close-out

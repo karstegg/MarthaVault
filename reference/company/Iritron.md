@@ -24,7 +24,7 @@ Electrical Engineering Contractor / Service Provider
 
 ## Key BRMO Contacts
 - [[Roelie Prinsloo]]
-- [[Sikelela Nzuza]]
+- [[Nzuza, Sikelela]]
 - [[Anton Koorzen]]
 
 ## Notes

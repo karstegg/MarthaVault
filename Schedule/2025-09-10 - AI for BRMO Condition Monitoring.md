@@ -16,7 +16,7 @@ Tags:: #meeting #AI #condition-monitoring #BRMO #oil-analysis #year/2025
 **Reminder**: 13:45
 
 ## Key Attendees
-**Required**: [[Gregory Karsten]], [[Chris Ross]], Mark Potter, [[Sello Taku]]
+**Required**: [[Gregory Karsten]], [[Chris Ross]], Mark Potter, [[Taku, Sello]]
 
 ## Meeting Details
 - AI implementation for BRMO condition monitoring

@@ -10,7 +10,7 @@ Tags:: #BEV #BRMO #weekly-report #operational #critical #year/2025 #site/BlackRo
 
 **Report Period**: August 28 - September 3, 2025  
 **Submitted by**: Philip Moller (Epiroc)  
-**Recipients**: [[Sello Taku]], [[Sipho Dubazane]]  
+**Recipients**: [[Taku, Sello]], [[Dubazane, Sipho]]  
 **Source**: PDF Report from Epiroc SA
 
 ## Executive Summary - CRITICAL DETERIORATION CONTINUES
@@ -129,7 +129,7 @@ Tags:: #BEV #BRMO #weekly-report #operational #critical #year/2025 #site/BlackRo
 
 ## Key Personnel
 - **Report Author**: Philip Moller (Epiroc)
-- **Recipients**: [[Sello Taku]] (Engineering HOD), [[Sipho Dubazane]] (Site Engineer)
+- **Recipients**: [[Taku, Sello]] (Engineering HOD), [[Dubazane, Sipho]] (Site Engineer)
 - **BEV Team**: Ivan Phiri, Lukas Serumola, Patricia Mazinyo, Patrick Yoko
 - **Specialist**: Frikkie van der Walt
 

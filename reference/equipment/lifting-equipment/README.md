@@ -111,7 +111,7 @@ This folder contains critical safety and compliance documentation for all liftin
 - **Site Engineers**:
   - [[Chris Ross]] (N2) - N2 lifting equipment management
   - [[Sello Sease]] (N3) - N3 lifting equipment operations
-  - [[Sipho Dubazane]] (Gloria) - Gloria lifting operations
+  - [[Dubazane, Sipho]] (Gloria) - Gloria lifting operations
 - **Xavier Petersen** (Shafts & Winders): Man-riding winches and shaft hoists
 
 ## When to Use This Library
@@ -183,7 +183,7 @@ All personnel involved in lifting operations must:
 3. Demonstrate practical competency assessments
 4. Renew competencies every **2 years** or after incident
 
-**Training Coordinator**: [[Willie Koekemoer]] (Training Manager)
+**Training Coordinator**: [[Koekemoer, Willie]] (Training Manager)
 
 ## Critical Safety Reminders
 

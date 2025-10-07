@@ -16,9 +16,9 @@ Tags:: #meeting #standards #engineering #year/2025
 **Reminder**: 13:15
 
 ## Key Attendees
-**Required**: Marina Schoeman, Cobus Lerm, Connie Ollewagen, Derek van Neel, Genevieve Ferris, [[Michael Bester]], [[Roelie Prinsloo]], [[Gregory Karsten]], [[Sikelela Nzuza]], [[Sello Taku]], [[Sipho Dubazane]], [[Xavier Petersen]], [[Johan Kotze]], [[Sello Sease]]
+**Required**: Marina Schoeman, Cobus Lerm, Connie Ollewagen, Derek van Neel, Genevieve Ferris, [[Michael Bester]], [[Roelie Prinsloo]], [[Gregory Karsten]], [[Nzuza, Sikelela]], [[Taku, Sello]], [[Dubazane, Sipho]], [[Xavier Petersen]], [[Johan Kotze]], [[Sello Sease]]
 
-**Optional**: [[Chris Ross]], [[Willie Koekemoer]], Tshepo Timothy, Elsia Erasmus, Humbelani Phunge, [[Jaque Steyn]], Nico Erasmus
+**Optional**: [[Chris Ross]], [[Koekemoer, Willie]], Tshepo Timothy, Elsia Erasmus, Humbelani Phunge, [[Jaque Steyn]], Nico Erasmus
 
 ## Meeting Details
 - Monthly standards review meeting

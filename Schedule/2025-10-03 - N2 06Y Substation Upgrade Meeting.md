@@ -12,7 +12,7 @@ completed: null
 
 ## Key Decisions & Actions
 - Compressor relocation: Move to surface / different location
-- **Action:** See [[Rudy Opperman]] regarding fast tracking capex project
+- **Action:** See [[Opperman, Rudi]] regarding fast tracking capex project
 - **Action:** James Collins to give feedback by Tuesday regarding go-ahead for proposed location (Compressor Station UG)
 
 **Related:** [[2025-10-03 – N2 LHD Meeting and Substation Upgrade]]

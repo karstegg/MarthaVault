@@ -15,13 +15,13 @@ Tags:: #year/2025 #project
 
 ### Current Status
 - [ ] Jeremiah to confirm delivery status and availability of 2 trucks
-- [ ] Capital approval required (Greg + [[Sello Taku]])
+- [ ] Capital approval required (Greg + [[Taku, Sello]])
 - [ ] Orders need sign-off authorization
 
 ### Next Actions
 - **URGENT**: Follow up with Jeremiah on truck availability
 - Push for expedited capital approval process
-- Coordinate with [[Sello Taku]] for joint sign-off
+- Coordinate with [[Taku, Sello]] for joint sign-off
 
 ---
 
@@ -49,7 +49,7 @@ Tags:: #year/2025 #project
 
 ## Key Contacts
 - **Jeremiah** - Sales Representative (Caterpillar/Barlowell)
-- **[[Sello Taku]]** - Engineering Manager (Joint approval authority)
+- **[[Taku, Sello]]** - Engineering Manager (Joint approval authority)
 - **[[Hendrik van Niekerk]]** (Hennie) - CAS Projects Engineer (Level 9 compliance)
 
 ## Timeline

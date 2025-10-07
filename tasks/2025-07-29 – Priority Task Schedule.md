@@ -13,11 +13,11 @@ Tags:: #year/2025 #task #site/gloria
 
 ### GES Appointments (CRITICAL - Friday Review)
 - [x] **Finalize GES appointment at 23** - *DUE: Aug 1* ⏰ 3 days left ✅ 2025-08-16
-  - Assignee: [[Sipo]], [[Selom]], [[Simon Sease]]
+  - Assignee: [[Sipo]], [[Selom]], [[Sease, Simon]]
   - Status: Fast-track required
   
 - [x] **Finalize GES appointment at Gloria** - *DUE: Aug 1* ⏰ 3 days left ✅ 2025-08-16
-  - Assignee: [[Sipo]], [[Selom]], [[Simon Sease]]
+  - Assignee: [[Sipo]], [[Selom]], [[Sease, Simon]]
   - Status: Fast-track required
 
 - [x] **Review psychometric assessments** - *DUE: Friday Aug 1* ⏰ 3 days left ✅ 2025-08-16

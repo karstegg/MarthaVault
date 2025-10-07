@@ -292,10 +292,10 @@ Located in `daily_production/` folder with dual format:
 - **JSON Database**: `data/YYYY-MM-DD_[site].json` (machine-readable for analysis)
 
 #### Mine Sites & Engineers
-- **Nchwaning 2**: [[Johan Kotze]] (GES TMM Underground, acting for [[Sikilela Nzuza]] on leave)
+- **Nchwaning 2**: [[Johan Kotze]] (GES TMM Underground, acting for [[Nzuza, Sikilela]] on leave)
 - **Nchwaning 3**: [[Sello Sease]]
-- **Gloria**: [[Sipho Dubazane]]
-- **Shafts & Winders**: [[Xavier Peterson]] (infrastructure focus)
+- **Gloria**: [[Dubazane, Sipho]]
+- **Shafts & Winders**: [[Peterson, Xavier]] (infrastructure focus)
 
 #### Reporting Timeline & Dating Logic
 - **Reports received**: Morning of Day X (e.g., 30th July 06:30-07:30)

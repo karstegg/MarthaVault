@@ -66,7 +66,7 @@ Tags:: #year/2025 #weekly-plan #schedule #calendar #planning
 
 ### **Scheduled Events**:
 - **Weekly Overtime Meeting** - Black Rock Sherq Conference Room with [[Marina Schoeman]]
-- **Remedial Action Tracking System (RATS)** - Admin Conference Room (30 seats) with [[Rudy Opperman]]
+- **Remedial Action Tracking System (RATS)** - Admin Conference Room (30 seats) with [[Opperman, Rudi]]
 
 ### **Critical Tasks**:
 - **Prepare TMM COP presentation** - DUE: Today
@@ -120,7 +120,7 @@ Tags:: #year/2025 #weekly-plan #schedule #calendar #planning
 - [[Johan Vermeulen]] - Chapter 8 legal compliance
 - [[Marina Schoeman]] - Meetings and oversight
 - [[Lourens van der Heerden]] - Microsoft Teams engagement
-- [[Rudy Opperman]] - RATS system
+- [[Opperman, Rudi]] - RATS system
 - [[Jacques Farmer]] - Emergency preparedness
 
 ---

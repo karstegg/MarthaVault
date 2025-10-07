@@ -21,7 +21,7 @@ Tags:: #daily #task #year/2025 #safety #DMR #fire-investigation #archived
 	- [x] Submit for approval
 	- [x] Checkpoint: Capital approved ✅ 2025-09-10
 	- [x] Place order - assign to [[Cornette]] (emailed 2025-09-10) ✅ 2025-09-25
-- [x] Follow up with [[Nomfusi]] re [[Lungelo Duba]] case #task #year/2025 ⏫ 📅 2025-09-08 ✅ 2025-09-10
+- [x] Follow up with [[Nomfusi]] re [[Duba, Lungelo]] case #task #year/2025 ⏫ 📅 2025-09-08 ✅ 2025-09-10
 - [x] Sign off BEV invoices for August #task #year/2025 🔼 📅 2025-09-05 ✅ 2025-09-25
 - [x] Confirm scope of Secondary TMM for MSTA and MSTA schedule after next week, with Rudi #task #year/2025 ✅ 2025-09-10
 - [x] Invite [[Malatsi Mashala]] to witness Winder Dynamic brake test #task #year/2025 📅 2025-09-08 ✅ 2025-09-10
@@ -45,7 +45,7 @@ Need to wrap up the DMR section 54 and outstanding actions. Close-out meeting sc
 
 ## Related People
 - [[Sello Sease]] - N3 Engineer
-- [[Nomfusi]] - HR related to [[Lungelo Duba]] case
+- [[Nomfusi]] - HR related to [[Duba, Lungelo]] case
 - [[Marothi Phosa]] - S2 drill rig specifications
 - [[Malatsi Mashala]] - Winder brake test witness
 - [[Alexis Basson]] - Fire investigator

@@ -31,4 +31,4 @@ Tags:: #task #priority/high #year/2025 #compliance #safety #DMR #brake-testing
 - [ ] Document compliance solution for regulatory approval
 
 ## Assigned To
-- **Site Engineers**: [[Sipho Dubazane]], [[Sikelela Nzuza]], [[Sello Sease]]
+- **Site Engineers**: [[Dubazane, Sipho]], [[Nzuza, Sikelela]], [[Sello Sease]]

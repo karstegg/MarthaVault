@@ -17,7 +17,7 @@ Tags:: #meeting #fire-incident #HD54 #section54 #safety #year/2025
 **Reminder**: 08:45
 
 ## Key Attendees
-**Required**: [[Sello Sease]], [[Sikelela Nzuza]], [[Sipho Dubazane]], Jade Kruger
+**Required**: [[Sello Sease]], [[Nzuza, Sikelela]], [[Dubazane, Sipho]], Jade Kruger
 
 ## Meeting Details
 - Review outstanding actions from HD0054 fire incident

@@ -36,4 +36,4 @@ Tags:: #task #year/2025 #electrical #S2 #DMR #compliance
 ## People Mentioned
 - [[Sello Sease]] - N3 Electrical Supervisor assignment
 - [[Lourens van der Heerden]] - S2 orders follow-up
-- [[Rudy Opperman]] - N3 restructure memo source 
+- [[Opperman, Rudi]] - N3 restructure memo source 

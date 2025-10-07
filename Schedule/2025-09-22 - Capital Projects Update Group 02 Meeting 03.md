@@ -16,7 +16,7 @@ Tags:: #meeting #capital-projects #project-updates #year/2025
 **Reminder**: 11:15
 
 ## Key Attendees
-**Required**: Khumo Gaetsewe, [[Sello Sease]], Boet Marais, [[Sikelela Nzuza]], [[Sipho Dubazane]], [[Gregory Karsten]], [[Chris Ross]], Louise Swart
+**Required**: Khumo Gaetsewe, [[Sello Sease]], Boet Marais, [[Nzuza, Sikelela]], [[Dubazane, Sipho]], [[Gregory Karsten]], [[Chris Ross]], Louise Swart
 
 ## Meeting Details
 - Third meeting in capital projects update series

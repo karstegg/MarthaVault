@@ -10,7 +10,7 @@ Tags:: #year/2025 #people
 
 ## Contact Information
 **Role**: CAS Projects Engineer / Compliance Engineer  
-**Reports to**: [[Sello Taku]] (Engineering Manager)  
+**Reports to**: [[Taku, Sello]] (Engineering Manager)  
 **Nickname**: Hennie
 
 ## Responsibilities

@@ -32,26 +32,26 @@ Tags:: #year/2025 #people #site/nchwaning2
 ```
 
 ## Direct Reporting Lines
-- **[[Rudy Opperman]]** (Ops Manager)
+- **[[Opperman, Rudi]]** (Ops Manager)
   - **[[Gregory Karsten]]** (Senior Production Engineer - Underground Mining)
-    - **[[Sipho Dubazane]]** (Engineer - Gloria Mine)
-    - **[[Sikelela Nzuza]]** (Engineer - Nchwaning 2)  
+    - **[[Dubazane, Sipho]]** (Engineer - Gloria Mine)
+    - **[[Nzuza, Sikelela]]** (Engineer - Nchwaning 2)  
     - **[[Sello Simon Siase]]** (Engineer - Nchwaning 3)
-    - **[[Xavier Peterson]]** (Engineer)
+    - **[[Peterson, Xavier]]** (Engineer)
 
 ## Matrix/Dotted Line Reporting
-- **[[Sello Taku]]** (Engineering Manager)
+- **[[Taku, Sello]]** (Engineering Manager)
   - **[[Gregory Karsten]]** (dotted line for technical/engineering matters)
 
 ## Support Functions
 - **[[Lourens van der Heerden]]** (Procurement Manager)
-- **[[Willie Koekemoer]]** (Training Manager)
+- **[[Koekemoer, Willie]]** (Training Manager)
 
 ## Mine Site Coverage
 | Site | Engineer | Manager |
 |------|----------|---------|
-| **Gloria Mine** | [[Sipho Dubazane]] | [[Gregory Karsten]] |
-| **Nchwaning 2** | [[Sikelela Nzuza]] | [[Gregory Karsten]] |
+| **Gloria Mine** | [[Dubazane, Sipho]] | [[Gregory Karsten]] |
+| **Nchwaning 2** | [[Nzuza, Sikelela]] | [[Gregory Karsten]] |
 | **Nchwaning 3** | [[Sello Simon Siase]] | [[Gregory Karsten]] |
 
 #org-chart #management #structure #assmang #year/2025

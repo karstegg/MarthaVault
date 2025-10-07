@@ -21,7 +21,7 @@ Fast-track finalization of GES (Graduate Entry Scheme) appointments at two locat
 ## Responsible Parties
 - [[Sipo]] - Area responsibility
 - [[Selom]] - Area responsibility  
-- [[Simon Sease]] - Area responsibility
+- [[Sease, Simon]] - Area responsibility
 
 ## Action Items
 1. Fast-track both appointments

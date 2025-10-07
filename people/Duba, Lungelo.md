@@ -21,7 +21,7 @@ Tags:: #people #N2 #foreman #TMM #year/2025
 
 ## Reporting Structure
 - **Direct Report to**: [[Johan Kotze]] (GES for TMM at Nchwaning 2)
-- **Indirect Report to**: [[Sikelela Nzuza]] (Site Engineer N2)
+- **Indirect Report to**: [[Nzuza, Sikelela]] (Site Engineer N2)
 
 ## Organizational Context
 Part of the Technical Maintenance Management team at Nchwaning 2, responsible for critical utility equipment including scalers used in mining operations.

@@ -13,7 +13,7 @@ Tags:: #compliance #DMRE #inspection #year/2025 #NCH3 #winder #passed #site/Nchw
 **Form**: DMRE 478 - Winding Plant Inspection Report
 **Date of Inspection**: 2025-03-12
 **Inspector**: Colin Jacobs
-**Engineer**: [[Xavier Peterson]]
+**Engineer**: [[Peterson, Xavier]]
 
 ## Equipment Details
 - **Winder Number**: NCH3 PW_WP2313ii
@@ -76,7 +76,7 @@ Tags:: #compliance #DMRE #inspection #year/2025 #NCH3 #winder #passed #site/Nchw
 ## Related
 - [[Operations/Nchwaning3/]]
 - [[reference/places/Nchwaning 3]]
-- [[Xavier Peterson]] - Responsible Engineer
+- [[Peterson, Xavier]] - Responsible Engineer
 - [[projects/Compliance/]]
 
 ## Notes

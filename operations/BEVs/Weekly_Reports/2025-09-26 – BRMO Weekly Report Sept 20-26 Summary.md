@@ -11,7 +11,7 @@ Tags:: #year/2025 #BEV #weekly-report #operations #Epiroc
 **Source**: [[media/documents/2025/2025-09-26_BRMO_Weekly_Report_Sept_20-26.pdf]]
 **Period**: September 20-26, 2025
 **Submitted by**: Philip Moller (Epiroc)
-**Recipients**: [[Sello Taku]], [[Sipho Dubazane]]
+**Recipients**: [[Taku, Sello]], [[Dubazane, Sipho]]
 
 ## Key Issues Requiring Attention
 

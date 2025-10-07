@@ -10,7 +10,7 @@ Tags:: #year/2025 #operations
 
 The outstanding invoices of Barloworld Equipment must be resolved and paid next week urgently.
 
-**Contact**: [[Roelf Botes]] - Field Service Manager  
+**Contact**: [[Botes, Roelf]] - Field Service Manager  
 **Company**: Barloworld Equipment (BWE) - CAT Equipment supplier
 
 #urgent #invoices #payment #BWE #CAT #year/2025

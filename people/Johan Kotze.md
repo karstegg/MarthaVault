@@ -14,7 +14,7 @@ Started::
 ## Contact Information
 **Position**: General Engineering Supervisor (GES) - TMM Underground  
 **Location**: Nchwaning 2  
-**Current Status**: Acting Engineer (covering for [[Sikilela Nzuza]] on leave)
+**Current Status**: Acting Engineer (covering for [[Nzuza, Sikilela]] on leave)
 
 ## Responsibilities
 ### Primary Role (GES TMM Underground)
@@ -38,8 +38,8 @@ Started::
 - **Resolution**: Auto electrician deployed, 5/6 scalers now operational
 
 ## Key Personnel Relationships
-- **Reports to**: [[Sello Taku]] (Engineering Manager)
-- **Covering for**: [[Sikilela Nzuza]] (on leave)
+- **Reports to**: [[Taku, Sello]] (Engineering Manager)
+- **Covering for**: [[Nzuza, Sikilela]] (on leave)
 - **Location**: Nchwaning 2 Mine
 
 ## Expertise Areas

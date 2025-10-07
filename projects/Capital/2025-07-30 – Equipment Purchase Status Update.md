@@ -22,7 +22,7 @@ DueDate:: 2025-08-01
 ## 2. Dump Trucks - AD30 Models
 - **Quantity**: 2 units
 - **Location**: Gloria Mine (Sipho's responsibility)
-- **Status**: Capital application compiled by [[Sipho Dubazane]]
+- **Status**: Capital application compiled by [[Dubazane, Sipho]]
 - **Presentation**: Thursday afternoon
 - **Next Action**: Submit cost presentation, await approval
 
@@ -41,7 +41,7 @@ DueDate:: 2025-08-01
 
 ## Key Personnel
 - **[[James van der Linde]]** - Barloworld Equipment Sales Manager (Caterpillar agent)
-- **[[Sipho Dubazane]]** - Gloria Mine Engineer (dump truck application)
+- **[[Dubazane, Sipho]]** - Gloria Mine Engineer (dump truck application)
 
 ## Equipment Context
 - **Barloworld Equipment**: South African agent for Caterpillar (USA)

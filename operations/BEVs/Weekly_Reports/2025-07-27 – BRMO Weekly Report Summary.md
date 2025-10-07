@@ -10,7 +10,7 @@ Tags:: #year/2025 #project #site/gloria
 
 **Report Source**: [[2025-07-27_BRMO_Weekly_Report_Epiroc.pdf]]  
 **Submitted by**: Philip Moller (Epiroc SA)  
-**Submitted to**: [[Sello Taku]] and [[Sipho Dubazane]]  
+**Submitted to**: [[Taku, Sello]] and [[Dubazane, Sipho]]  
 **Report Period**: July 21-27, 2025  
 
 ## Executive Summary

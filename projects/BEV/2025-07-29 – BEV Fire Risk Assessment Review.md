@@ -25,7 +25,7 @@ Comprehensive review of BEV fire risk assessment focusing on outstanding actions
 
 ## Training Requirements
 - Fire safety training required for all BEV operators
-- Coordinate with [[Willie Koekemoer]] (Training Manager)
+- Coordinate with [[Koekemoer, Willie]] (Training Manager)
 - Training must align with new procedures
 
 ## Action Items

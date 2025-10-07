@@ -16,7 +16,7 @@ Tags:: #meeting #solrock #N2 #shaft-repair #alignment #year/2025
 **Reminder**: 10:45
 
 ## Key Attendees
-**Required**: James Collins, [[Xavier Petersen]], [[Rudi Opperman]], [[Sello Taku]], Jan Nieuwoudt, [[Gregory Karsten]], Joepie Human, Ivan Curry, Flippie de Bruin, Des Nel, Adriaan E, Hennie Wessels, [[Roelie Prinsloo]], Anthony Olyn, Stoffel, Neville van Staden, Mduduzi Mabona, Eben Barnard
+**Required**: James Collins, [[Xavier Petersen]], [[Rudi Opperman]], [[Taku, Sello]], Jan Nieuwoudt, [[Gregory Karsten]], Joepie Human, Ivan Curry, Flippie de Bruin, Des Nel, Adriaan E, Hennie Wessels, [[Roelie Prinsloo]], Anthony Olyn, Stoffel, Neville van Staden, Mduduzi Mabona, Eben Barnard
 
 ## Meeting Details
 - Nchwaning II vertical shaft repair project

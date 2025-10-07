@@ -15,17 +15,17 @@ Tags:: #year/2025 #project
 
 ### Current Status
 - [x] Jeremiah to confirm delivery status and availability of 2 trucks ✅ 2025-08-16
-- [ ] Capital approval required (Greg + [[Sello Taku]])
+- [ ] Capital approval required (Greg + [[Taku, Sello]])
 - [ ] Orders need sign-off authorization
 
 ### Next Actions
 - **URGENT**: Follow up with Jeremiah on truck availability
 - Push for expedited capital approval process
-- Coordinate with [[Sello Taku]] for joint sign-off
+- Coordinate with [[Taku, Sello]] for joint sign-off
 
 ## Key Contacts
 - **Jeremiah** - Sales Representative (Caterpillar/Barloworld)
-- **[[Sello Taku]]** - Engineering Manager (Joint approval authority)
+- **[[Taku, Sello]]** - Engineering Manager (Joint approval authority)
 
 ## Timeline
 - **Delivery**: URGENT - required ASAP

@@ -16,7 +16,7 @@ Tags:: #meeting #weekly #nerospec #vendor #year/2025
 **Reminder**: 08:15
 
 ## Key Attendees
-**Required**: [[Hendrik van Niekerk]], [[Sipho Dubazane]], [[Sikelela Nzuza]], [[Johan Kotze]], Jacobus Liebenberg, Tebogo Mokoena, Werner Van Der Spuy, Adriaan VVuuren, Philip Welman, Nico Greeff, Winston Spagnoletti, [[Sello Sease]], Tjaart Tromp, Lionel Jacobs, Jeandre Terblanche, Tshepo Getlo, [[Gregory Karsten]], Alan Marneweck, Jade Kruger, Piet Izaaks
+**Required**: [[Hendrik van Niekerk]], [[Dubazane, Sipho]], [[Nzuza, Sikelela]], [[Johan Kotze]], Jacobus Liebenberg, Tebogo Mokoena, Werner Van Der Spuy, Adriaan VVuuren, Philip Welman, Nico Greeff, Winston Spagnoletti, [[Sello Sease]], Tjaart Tromp, Lionel Jacobs, Jeandre Terblanche, Tshepo Getlo, [[Gregory Karsten]], Alan Marneweck, Jade Kruger, Piet Izaaks
 
 ## Meeting Details
 - Weekly progress review

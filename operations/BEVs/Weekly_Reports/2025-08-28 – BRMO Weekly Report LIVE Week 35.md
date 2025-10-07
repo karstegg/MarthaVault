@@ -10,7 +10,7 @@ Tags:: #year/2025 #BEV #weekly-report #epiroc #operations
 
 **Report Period**: August 28, 2025 - September 3, 2025  
 **Reported By**: Philip Moller (Epiroc SA)  
-**Submitted To**: [[Sello Sease]] and [[Sipho Dubazane]]  
+**Submitted To**: [[Sello Sease]] and [[Dubazane, Sipho]]  
 **Source**: `media/documents/2025/2025-08-28_BRMO_Weekly_Report_LIVE_Week_35.pdf`
 
 ## Executive Summary
@@ -94,7 +94,7 @@ Tags:: #year/2025 #BEV #weekly-report #epiroc #operations
 ## Links
 - [[projects/BEV/]] - Main BEV project folder
 - [[people/Sello Sease]] - N3 Engineering Manager
-- [[people/Sipho Dubazane]] - Gloria Engineering Manager
+- [[Dubazane, Sipho]] - Gloria Engineering Manager
 
 ---
 *Report processed from Epiroc weekly submission - September 10, 2025*

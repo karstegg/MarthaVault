@@ -44,9 +44,9 @@ Here are my answers:
 ### 1. Team Structure
 
 I don’t have a small, tight “direct report” team in the corporate sense — instead, I have functional and legal responsibility across Nchwaning 2, Nchwaning 3, and Gloria as well as Shafts and Winders. I am legally appointed as engineer in charge of machinery as a 2.13.1 engineer at all three shafts.
-Each of the 3 sites have its mine manager (3.1(a) appointee, N3 = [[Johan Jooste]], N2 = [[James Collins]] and Gloria = [[Wandile Kwinana]] (acting manager)) Each of my direct reports are based at these shafts ([[Sello Sease]], [[Sipho Dubazane]] and [[Sikelela Nzuza]]) and they report to the Mine Manager on a day-to-day basis. Each engineer is responsible for the maintenance on all underground TMM, workshops, underground plant, compressed air and water management 
+Each of the 3 sites have its mine manager (3.1(a) appointee, N3 = [[Johan Jooste]], N2 = [[James Collins]] and Gloria = [[Wandile Kwinana]] (acting manager)) Each of my direct reports are based at these shafts ([[Sello Sease]], [[Dubazane, Sipho]] and [[Nzuza, Sikelela]]) and they report to the Mine Manager on a day-to-day basis. Each engineer is responsible for the maintenance on all underground TMM, workshops, underground plant, compressed air and water management 
 Each shaft has its own Mine Overseer/Senior Official, shift supervisors, foremen, and trade standbys, with engineering leads assigned per site. They aren’t your “employees,” but you exercise coordinating authority across them.  
-Your key lieutenants are essentially the site engineers/foremen per shaft ([[Xavier Peterson]] on surface engineering, James/Connie rotating for mining at N3, Rocky at N2, Eric/Giel at Gloria). They're the ones you lean on for execution. For safety, you depend on the Safety Officer (Anthony, Evelyn, etc. depending on rotation) and Proto/Fire for emergencies.
+Your key lieutenants are essentially the site engineers/foremen per shaft ([[Peterson, Xavier]] on surface engineering, James/Connie rotating for mining at N3, Rocky at N2, Eric/Giel at Gloria). They're the ones you lean on for execution. For safety, you depend on the Safety Officer (Anthony, Evelyn, etc. depending on rotation) and Proto/Fire for emergencies.
 
 
 

@@ -48,7 +48,7 @@ LastUpdated:: 2025-10-06
   - Project: SHERQ LDVs
   - Note: Requested by [[Johan Vermeulen]]. Capex compiled, under review
 - [ ] Track progress on SK grader capital application 📅 2025-10-10 #task #year/2025 #priority/medium #capital
-  - Assigned to: [[Sikelela Nzuza]]
+  - Assigned to: [[Nzuza, Sikelela]]
   - Note: Grader from Aard. Delegated to SK via email 2025-10-06
 
 ---
@@ -74,7 +74,7 @@ LastUpdated:: 2025-10-06
 - [ ] Finalize fire procedure for operators #task #BEV #fire-safety #priority/high #year/2025 #site/Nchwaning3 📅 2025-10-15
   - Assigned to: [[Johnny Hollenbach]]
   - Project: BEV Battery Fire Safety Programme
-- [ ] Coordinate fire training with [[Willie Koekemoer]] (Training Manager) #task #year/2025 #BEV #fire-safety #priority/high #site/Nchwaning3 📅 2025-10-18
+- [ ] Coordinate fire training with [[Koekemoer, Willie]] (Training Manager) #task #year/2025 #BEV #fire-safety #priority/high #site/Nchwaning3 📅 2025-10-18
   - Assigned to: [[Johnny Hollenbach]]
   - Project: BEV Battery Fire Safety Programme
 - [ ] Coordinate with Mine Rescue Services on Li-Ion fire response protocols #task #year/2025 #BEV #mine-rescue #fire-safety #priority/high #site/Nchwaning3 📅 2025-10-25
@@ -124,7 +124,7 @@ LastUpdated:: 2025-10-06
 - [ ] N2 Substation Project - Follow up with [[Rudi Opperman]] and [[Roelie Prinsloo]] after James Collins feedback 📅 2025-10-08 #task #year/2025 #priority/high #capital #site/Nchwaning2
   - Project: Underground main incomer substation upgrade project
   - Note: Load growth planning + obsolete equipment replacement. Want to expedite based on breaker condition
-  - Key people: [[Roelie Prinsloo]], [[Sikelela Nzuza]], [[Anton Koorzen]], [[Jaco du Toit]] from [[Iritron]]
+  - Key people: [[Roelie Prinsloo]], [[Nzuza, Sikelela]], [[Anton Koorzen]], [[Jaco du Toit]] from [[Iritron]]
 - [ ] N2 LHD Issues - Coordinate documentation with [[Lourens van Heerden]] 📅 2025-10-08 #task #year/2025 #priority/medium #site/Nchwaning2
 - [ ] Complete two-way radio vendor evaluation (60 units for N2 shaft) #task #capital #radios #N2-shaft #priority/low #year/2025 #site/Nchwaning2
   - Note: From monthly mining planning meeting. Need unplanned capex application
@@ -137,7 +137,7 @@ LastUpdated:: 2025-10-06
 
 ### Gloria
 - [ ] Capital Project: Gloria Chute Replacement #task #year/2025 #capital #site/Gloria #priority/medium
-  - Assigned to: [[Sipho Dubazane]]
+  - Assigned to: [[Dubazane, Sipho]]
   - Note: Sipho managing this project
 
 ### Multi-Site / Unspecified
@@ -220,8 +220,8 @@ LastUpdated:: 2025-10-06
 
 ## DELEGATION & FOLLOW-UP
 
-- [ ] [[Sipho Dubazane]] to draft instructions on breakdowns in decline #task #year/2025 #priority/medium #site/Gloria 📅 2025-10-15
-  - Assigned to: [[Sipho Dubazane]]
+- [ ] [[Dubazane, Sipho]] to draft instructions on breakdowns in decline #task #year/2025 #priority/medium #site/Gloria 📅 2025-10-15
+  - Assigned to: [[Dubazane, Sipho]]
 - [ ] Actions from Friday meeting with N2 Eng Team #task #year/2025 #site/Nchwaning2 #priority/high 📅 2025-10-08
   - Note: Follow-up actions from engineering team meeting - need to extract specific tasks
 

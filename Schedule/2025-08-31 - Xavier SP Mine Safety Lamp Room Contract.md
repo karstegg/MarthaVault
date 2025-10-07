@@ -10,7 +10,7 @@ Tags:: #year/2025 #calendar
 
 **Date**: Saturday, August 31, 2025  
 **Type**: Contract Deadline  
-**Assignee**: [[Xavier Peterson]]
+**Assignee**: [[Peterson, Xavier]]
 **Priority**: High
 
 ## Task Details

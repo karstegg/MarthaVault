@@ -61,7 +61,7 @@ Sub-Agent:
 
 Template Match:
 → Incident Report Format
-→ People: [[Simon Sease]]
+→ People: [[Sease, Simon]]
 → Equipment: [[HD0054]]
 → Priority: Critical
 
@@ -79,7 +79,7 @@ Sub-Agent:
 
 Template Match:
 → Schedule Note Format
-→ People: [[Xavier Peterson]]
+→ People: [[Peterson, Xavier]]
 → Project: [[BEV Bay 2]]
 → Priority: High (Strategic)
 

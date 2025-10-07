@@ -64,14 +64,14 @@ Compiling annual performance assessments for engineering team across multiple ev
 - **Status**: Blocked pending external input
 
 ## Team Members
-- **Sipho** = [[Sipho Dubazane]] (Gloria Mine)
+- **Sipho** = [[Dubazane, Sipho]] (Gloria Mine)
 - **Stef** = Engineer (assumed)
 - **Derek** = Engineer (assumed) 
-- **SK** = [[Sikelela Nzuza]] (Nchwaning 2)
+- **SK** = [[Nzuza, Sikelela]] (Nchwaning 2)
 - **Anton** = Engineer (assumed)
 - **Johan** = Engineer (assumed)
 - **Sello** = [[Sello Simon Siase]] (Nchwaning 3)
-- **Xavier** = [[Xavier Peterson]]
+- **Xavier** = [[Peterson, Xavier]]
 - **Jan** = Engineer (assumed)
 - **Amelia** = Engineer (assumed)
 

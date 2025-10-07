@@ -10,7 +10,7 @@ Tags:: #year/2025 #people
 
 ## Contact Information
 **Role**: Asset Care Engineer (Acting)  
-**Reports to**: [[Sello Taku]] (Engineering Manager)  
+**Reports to**: [[Taku, Sello]] (Engineering Manager)  
 
 ## Current Projects
 - Perfect filtration contract assistance

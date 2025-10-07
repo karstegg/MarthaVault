@@ -16,7 +16,7 @@ Tags:: #meeting #weekly #overtime #operational #year/2025
 **Reminder**: 06:45
 
 ## Key Attendees
-**Required**: Marina Schoeman, James Collins, Johan Jooste, [[Michael Bester]], [[Xavier Petersen]], [[Roelie Prinsloo]], Benjamin Ruzive, Tshepo Timothy, [[Rudi Opperman]], [[Sello Taku]], [[Sipho Dubazane]], [[Sello Sease]], Masigcinane Mteki, [[Sikelela Nzuza]], Ronald West, Edzisani Makahane, Anneline Visser, Amelia Padi, [[Gregory Karsten]]
+**Required**: Marina Schoeman, James Collins, Johan Jooste, [[Michael Bester]], [[Xavier Petersen]], [[Roelie Prinsloo]], Benjamin Ruzive, Tshepo Timothy, [[Rudi Opperman]], [[Taku, Sello]], [[Dubazane, Sipho]], [[Sello Sease]], Masigcinane Mteki, [[Nzuza, Sikelela]], Ronald West, Edzisani Makahane, Anneline Visser, Amelia Padi, [[Gregory Karsten]]
 
 **Optional**: Corne Marais, Jack Ekkerd, [[Chris Ross]], Mercy Mudau, [[Jaque Steyn]], Nico Erasmus
 

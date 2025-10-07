@@ -11,7 +11,7 @@ Tags:: #year/2025 #operations #site/gloria
 **Report Type**: Epiroc Service Report  
 **Period**: July 28-31, 2025  
 **Source**: [[media/documents/2025/2025-07-31 – BRMO Weekly Report.pdf]]  
-**Submitted To**: [[Sello Taku]] and [[Sipho Dubazane]]
+**Submitted To**: [[Taku, Sello]] and [[Dubazane, Sipho]]
 
 ## 🚨 KEY BREAKDOWNS & CRITICAL EQUIPMENT ISSUES
 

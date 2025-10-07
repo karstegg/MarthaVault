@@ -44,7 +44,7 @@ Current scalers cannot adequately prepare mining faces, particularly for cleanin
 
 ## Key Stakeholders
 - **Project Lead**: [[Gregory Karsten]]
-- **Approver**: [[Sello Taku]] (Engineering Manager)
+- **Approver**: [[Taku, Sello]] (Engineering Manager)
 - **CAS Compliance**: [[Hendrik van Niekerk]] (Hennie)
 - **Supplier**: Barloworld Equipment (Contact: Jeremiah)
 

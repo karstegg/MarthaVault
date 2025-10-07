@@ -11,7 +11,7 @@ Tags:: #report #BEV #operations #year/2025 #Epiroc #weekly
 ## Document Reference
 **Source**: [[media/documents/2025/2025-09-11_BRMO_Weekly_Report_Sept_4-11.pdf]]
 **Report Period**: September 4-11, 2025
-**Submitted to**: [[Sello Taku]], [[Sipho Dubazane]]
+**Submitted to**: [[Taku, Sello]], [[Dubazane, Sipho]]
 **Reported by**: Philip Moller
 
 ## Critical Issues Summary
