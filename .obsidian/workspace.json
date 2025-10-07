@@ -217,8 +217,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f31d658338fb5a10",
+  "active": "b75e30ec9cdf31fa",
   "lastOpenFiles": [
+    "GEMINI-README.md",
     "IDEAS/2025-08-16 – Claude Code Automation Ideas from Alex Finn.md",
     "IDEAS/2025-08-11 – Integrate Load & Haul Production Reports.md",
     "IDEAS/2025-08-06 – WhatsApp Claude Code Integration Idea.md",
@@ -248,7 +249,6 @@
     "tasks/archive",
     "scripts/create_graph.py",
     "GEMINI.md",
-    "tasks/master_task_list.md",
     "reference/equipment/lifting-equipment/MRC-ENG-MEQ-STD-023 - Lifting Equipment Standard.pdf",
     "reference/equipment/lifting-equipment/MRC-ENG-ESV-PRC-014 - Lifting Equipment.pdf",
     "reference/equipment/lifting-equipment/KAL-ENG-SOP-56 A Lifting Operations.docx",
