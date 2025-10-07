@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "people/Moller, Phillip.md",
+                "file": "tasks/master_task_list.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Moller, Phillip"
+              "title": "master_task_list"
             }
           }
         ]
@@ -114,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "people/Moller, Phillip.md",
+                "file": "tasks/master_task_list.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Moller, Phillip"
+              "title": "Outgoing links from master_task_list"
             }
           },
           {
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "people/Moller, Phillip.md",
+                "file": "tasks/master_task_list.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Moller, Phillip"
+              "title": "Outline of master_task_list"
             }
           },
           {
@@ -217,10 +217,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "759b14c2e47b40e6",
+  "active": "3c170ad103df45b3",
   "lastOpenFiles": [
-    "people/Peterson, Xavier.md",
     "people/Moller, Phillip.md",
+    "people/Peterson, Xavier.md",
     "people/Koekemoer, Willie.md",
     "people/Dubazane, Sipho.md",
     "people/Sease, Simon.md",

@@ -21,8 +21,12 @@ Manual vault synchronization command - updates memory systems from Git history.
 1. Read `.vault-sync-checkpoint` for last synced commit SHA
 2. Run `git diff --name-status <checkpoint> HEAD`
 3. Filter to relevant folders: people/, projects/, tasks/, Schedule/, strategy/, system/, IDEAS/, Operations/, reference/places/
-4. Process changes via sync-vault-internal logic
-5. Update checkpoint to current HEAD
+4. **EXECUTE SYNC** for each changed file:
+   - **Added/Modified files**: Read file → Create/update Graph Memory entities → Index in Basic Memory
+   - **Deleted files**: Delete from Graph Memory → Delete from Basic Memory
+   - Batch API calls where possible (up to 10 entities at a time)
+5. Update checkpoint to current HEAD SHA
+6. Report summary of entities created/updated/deleted
 
 ### Full Sync (--full flag)
 1. Ignore checkpoint
