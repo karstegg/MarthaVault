@@ -2,5 +2,6 @@
   "theme": "moonstone",
   "accentColor": "#5a5edd",
   "showRibbon": true,
-  "showViewHeader": true
+  "showViewHeader": true,
+  "cssTheme": "Primary"
 }
