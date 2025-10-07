@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "people/Watcher, Test.md",
-                "mode": "preview",
+                "file": "people/Kruger, Jade.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Watcher, Test"
+              "title": "Kruger, Jade"
             }
           }
         ]
@@ -114,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "people/Watcher, Test.md",
+                "file": "people/Kruger, Jade.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Watcher, Test"
+              "title": "Outgoing links from Kruger, Jade"
             }
           },
           {
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "people/Watcher, Test.md",
+                "file": "people/Kruger, Jade.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Watcher, Test"
+              "title": "Outline of Kruger, Jade"
             }
           },
           {
@@ -217,8 +217,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "41950e5bf20242c5",
+  "active": "3c170ad103df45b3",
   "lastOpenFiles": [
+    "people/Koorzen, Anton.md",
+    "people/Kruger, Jade.md",
+    "people/Johan Kotze 1.md",
     "people/Watcher, Test.md",
     "personal/projects/MarthaVault Intuition Layer/Deep Analysis of MarthaVault by Windsurf Claude 4.5 (Thinking) - Part 2.md",
     "personal/projects/MarthaVault Intuition Layer/Deep Analysis of MarthaVault by Windsurf Claude 4.5 Part 1.md",
@@ -243,10 +246,7 @@
     "projects/Rock Winder Clutch Repair/2025-09-06 – Clutch Repair Work Documentation.md",
     "projects/Leaky_Feeder/Price Comparison.md",
     "projects/Leaky_Feeder/2025-07-31 – Project Status Update.md",
-    "projects/Capital/2025-07-29 – Set Up Meeting With Marelize To Discuss Capital Vote Closures.md",
     "projects/DPF Project",
-    "people/du Toit, Jaco.md",
-    "00_Inbox/2025-10-07.md",
     "00_Inbox/VFL Schedule - Oct 2025.pdf",
     "tasks/archive",
     "scripts/create_graph.py",
