@@ -11,10 +11,14 @@
             "id": "b75e30ec9cdf31fa",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "IDEAS/2025-08-16 – Gemini AI Integration Reference Note.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2025-08-16 – Gemini AI Integration Reference Note"
             }
           }
         ]
@@ -110,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00_Inbox/2025-09-18.md",
+                "file": "IDEAS/2025-08-16 – Gemini AI Integration Reference Note.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-09-18"
+              "title": "Outgoing links from 2025-08-16 – Gemini AI Integration Reference Note"
             }
           },
           {
@@ -139,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Inbox/2025-10-06.md",
+                "file": "IDEAS/2025-08-16 – Gemini AI Integration Reference Note.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-10-06"
+              "title": "Outline of 2025-08-16 – Gemini AI Integration Reference Note"
             }
           },
           {
@@ -169,7 +173,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "67e20dfabf47f6e9",
@@ -213,8 +217,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b75e30ec9cdf31fa",
+  "active": "f31d658338fb5a10",
   "lastOpenFiles": [
+    "IDEAS/2025-08-16 – Claude Code Automation Ideas from Alex Finn.md",
+    "IDEAS/2025-08-11 – Integrate Load & Haul Production Reports.md",
+    "IDEAS/2025-08-06 – WhatsApp Claude Code Integration Idea.md",
+    "IDEAS/2025-08-03 – GitHub Automation & Cloud Processing Ideas.md",
+    "IDEAS/2025-07-31 – Daily Executive Dashboard.md",
+    "IDEAS/2025-07-31 – Claude Code Automation Ideas.md",
+    "Schedule/2025-10-08 - VFL Tuesday.md",
     "IDEAS/2025-10-06 - Gemini CLI Future Upgrade - MCP Server Integration.md",
     "people/van der Walt, Christo.md",
     "projects/DPF Project/DPF Project.md",
@@ -238,19 +249,12 @@
     "scripts/create_graph.py",
     "GEMINI.md",
     "tasks/master_task_list.md",
-    "tasks/2025-09-03 – DMR Brake Test Compliance Response.md",
-    "tasks/filtered_task_list.md",
-    "00_Inbox/2025-10-06.md",
-    "reference/equipment/lifting-equipment/README.md",
     "reference/equipment/lifting-equipment/MRC-ENG-MEQ-STD-023 - Lifting Equipment Standard.pdf",
     "reference/equipment/lifting-equipment/MRC-ENG-ESV-PRC-014 - Lifting Equipment.pdf",
     "reference/equipment/lifting-equipment/KAL-ENG-SOP-56 A Lifting Operations.docx",
     "reference/equipment/lifting-equipment",
-    "reference/equipment/conveyor-belts/README.md",
     "reference/equipment/conveyor-belts/MOSH Conveyor Belt Expert Model.pdf",
     "reference/equipment/conveyor-belts/Fenner Dunlop Conveyor Handbook.pdf",
-    "projects/ProductionReports/2025-10-06 – Fix Gemini API Key Setup.md",
-    "tasks/2025-10-06 – Weekly Priorities.md",
     "MarthaVault Workflow Canvas.canvas",
     "MarthaVault Overview Canvas.canvas",
     "MarthaVault Implementation Canvas.canvas",
