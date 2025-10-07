@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "40025a478a7b4bf9",
+        "id": "06b1d1c075b84a6d",
         "type": "tabs",
         "children": [
           {
-            "id": "b75e30ec9cdf31fa",
+            "id": "3c170ad103df45b3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "people/Watcher, Test.md.md",
-                "mode": "source",
+                "file": "people/Watcher, Test.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Watcher, Test.md"
+              "title": "Watcher, Test"
             }
           }
         ]
@@ -114,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "people/Watcher, Test.md.md",
+                "file": "people/Watcher, Test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Watcher, Test.md"
+              "title": "Outgoing links from Watcher, Test"
             }
           },
           {
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "people/Watcher, Test.md.md",
+                "file": "people/Watcher, Test.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Watcher, Test.md"
+              "title": "Outline of Watcher, Test"
             }
           },
           {
@@ -173,7 +173,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       },
       {
         "id": "67e20dfabf47f6e9",
@@ -217,10 +217,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b75e30ec9cdf31fa",
+  "active": "41950e5bf20242c5",
   "lastOpenFiles": [
+    "people/Watcher, Test.md",
     "personal/projects/MarthaVault Intuition Layer/Deep Analysis of MarthaVault by Windsurf Claude 4.5 (Thinking) - Part 2.md",
-    "people/Watcher, Test.md.md",
     "personal/projects/MarthaVault Intuition Layer/Deep Analysis of MarthaVault by Windsurf Claude 4.5 Part 1.md",
     "00_Inbox/Deep Analysis of MarthaVault by Windsurf Claude 45 annotated.pdf",
     "IDEAS/2025-08-16 – Gemini AI Integration Reference Note.md",
