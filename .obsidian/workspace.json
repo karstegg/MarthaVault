@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/2025-10-07.md",
+                "file": "people/van der Walt, Christo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-07"
+              "title": "van der Walt, Christo"
             }
           }
         ]
@@ -219,9 +219,12 @@
   },
   "active": "2bbcc2d010820830",
   "lastOpenFiles": [
+    "people/du Toit, Jaco.md",
+    "people/van der Walt, Christo.md",
+    "00_Inbox/2025-10-07.md",
+    "people/Excalidraw Org Structure.excalidraw.md",
     "00_Inbox/VFL Schedule - Oct 2025.pdf",
     "strategy/CompanyStrategy.md",
-    "00_Inbox/2025-10-07.md",
     "tasks/archive/2025-Q3-completed.md",
     "tasks/archive",
     "scripts/create_graph.py",
@@ -239,7 +242,6 @@
     "reference/equipment/conveyor-belts/MOSH Conveyor Belt Expert Model.pdf",
     "reference/equipment/conveyor-belts/Fenner Dunlop Conveyor Handbook.pdf",
     "reference/equipment/conveyor-belts/Conveyor Belts Safety Guide.pdf",
-    "reference/equipment/conveyor-belts/Conveyor Belt Technical Handbook.pdf",
     "projects/ProductionReports/2025-10-06 – Fix Gemini API Key Setup.md",
     "tasks/2025-10-06 – Weekly Priorities.md",
     "personal/daily_notes/2025-10-06 – Daily Tasks.md",
@@ -248,13 +250,11 @@
     "Schedule/2025-10-03 - N2 LHD Meeting.md",
     "system/test-memory-persistence.md",
     "IDEAS/Martha Design n Evolution/2025-10-06 – CRITICAL Architecture Decision - Persistent Memory.md",
-    "people/du Toit, Jaco.md",
     "reference/company/Iritron.md",
     "people/Koorzen, Anton.md",
     "people/Mabona, Mduduzi.md",
     "personal/2025-10-06 – Planning Process Personal Insight.md",
     "Schedule/2025-10-13 - Strategic Review Session.md",
-    "Schedule/2025-10-08 - Review - master_task_list.md",
     "MarthaVault Workflow Canvas.canvas",
     "MarthaVault Overview Canvas.canvas",
     "MarthaVault Implementation Canvas.canvas",
