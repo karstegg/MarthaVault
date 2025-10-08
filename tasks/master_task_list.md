@@ -50,6 +50,8 @@ LastUpdated:: 2025-10-06
 - [ ] Track progress on SK grader capital application 📅 2025-10-10 #task #year/2025 #priority/medium #capital
   - Assigned to: [[Nzuza, Sikelela]]
   - Note: Grader from Aard. Delegated to SK via email 2025-10-06
+- [ ] Prepare 6 month extension variation order for SA Crane contract #task #priority/medium 📅 2025-10-14 #year/2025 #contract #SA_Cranes
+- [ ] Send VO documentation to Emile at Central Logistics Hub #task #priority/medium 📅 2025-10-14 #year/2025 #contract #SA_Cranes
 
 ---
 

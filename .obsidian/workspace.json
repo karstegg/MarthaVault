@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/2025-10-08.md",
+                "file": "tasks/master_task_list.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-08"
+              "title": "master_task_list"
             }
           }
         ]
@@ -114,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00_Inbox/2025-10-08.md",
+                "file": "tasks/master_task_list.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-10-08"
+              "title": "Outgoing links from master_task_list"
             }
           },
           {
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Inbox/2025-10-08.md",
+                "file": "tasks/master_task_list.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-10-08"
+              "title": "Outline of master_task_list"
             }
           },
           {
@@ -219,8 +219,25 @@
   },
   "active": "5259bb10b42a8024",
   "lastOpenFiles": [
-    "00_Inbox/2025-10-08.md",
+    "Templates/Daily Journal Template.md",
+    "Templates/Daily Reflection Note Template.md",
+    "Templates/Daily Note Template.md",
+    "Templates/Daily Devotional Template.md",
     "Daily/2025-10-08 – Daily Note.md",
+    "Daily/2025-10-06 – Daily Note.md",
+    "Daily/2025-10-01.md",
+    "Daily/2025-09-30.md",
+    "Daily/2025-09-29.md",
+    "Daily/2025-09-28.md",
+    "Daily/2025-09-23 – Daily Note.md",
+    "Daily/2025-09-22 – Daily Note.md",
+    "Daily/2025-09-18 – Daily Note.md",
+    "Daily/2025-09-16 – Daily Note.md",
+    "people/van den Berg, Gerhard.md",
+    "00_Inbox/2025-10-07.md",
+    "Schedule/2025-10-11 – DPF Discussion Meeting.md",
+    "tasks/2025-10-07 – SA Crane Contract 6 Month Extension.md",
+    "00_Inbox/2025-10-08.md",
     "00_Inbox/Replacement TMM Capex Summary FY2526_FY2728 08-10-2025 (Approved BP).xlsx",
     "00_Inbox/706BA800",
     "tasks/Test Task.md",
@@ -230,23 +247,6 @@
     "people/Koekemoer, Willie.md",
     "people/Dubazane, Sipho.md",
     "people/Sease, Simon.md",
-    "people/Nzuza, Sikilela.md",
-    "people/Nzuza, Sikelela.md",
-    "people/Taku, Sello.md",
-    "people/Schreiner, Garth.md",
-    "people/Opperman, Rudi.md",
-    "people/Botes, Roelf.md",
-    "people/Izaaks, Piet.md",
-    "people/Malouly, Ilze.md",
-    "people/Mabona, Mduduzi.md",
-    "people/Duba, Lungelo.md",
-    "people/Breet, Louisa.md",
-    "people/Antonie, Lillian.md",
-    "people/Kruger, Jade.md",
-    "people/Koorzen, Anton.md",
-    "people/Johan Kotze 1.md",
-    "people/Watcher, Test.md",
-    "personal/projects/MarthaVault Intuition Layer/Deep Analysis of MarthaVault by Windsurf Claude 4.5 (Thinking) - Part 2.md",
     "00_Inbox/Deep Analysis of MarthaVault by Windsurf Claude 45 annotated.pdf",
     "projects/DPF Project",
     "00_Inbox/VFL Schedule - Oct 2025.pdf",
