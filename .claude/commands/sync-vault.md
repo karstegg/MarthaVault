@@ -32,8 +32,9 @@ Manual vault synchronization command - updates memory systems from Git history.
 1. Ignore checkpoint
 2. Get all files in relevant folders: `git ls-files people/ projects/ tasks/ Schedule/ strategy/ system/ IDEAS/ Operations/ reference/places/`
 3. Mark all as "Added" (A) for full re-index
-4. Process via sync-vault-internal logic
-5. Update checkpoint to current HEAD
+4. **EXECUTE SYNC** for ALL files (same as standard sync)
+5. Update checkpoint to current HEAD SHA
+6. Report summary of all entities indexed
 
 ### Dry Run (--dry-run flag)
 1. Show list of files that would be processed
