@@ -1,1 +1,4 @@
-﻿A	tasks/Test Task.md
+﻿A	Schedule/2025-10-11 ΓÇô DPF Discussion Meeting.md
+A	people/van den Berg, Gerhard.md
+A	tasks/2025-10-07 ΓÇô SA Crane Contract 6 Month Extension.md
+M	tasks/master_task_list.md
