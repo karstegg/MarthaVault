@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IDEAS/2025-10-08 - Strategic Vision Summary.md",
+                "file": "00_Inbox/2025-10-08.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-08 - Strategic Vision Summary"
+              "title": "2025-10-08"
             }
           }
         ]
@@ -114,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "IDEAS/2025-10-08 - Strategic Vision Summary.md",
+                "file": "00_Inbox/2025-10-08.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-10-08 - Strategic Vision Summary"
+              "title": "Outgoing links from 2025-10-08"
             }
           },
           {
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "IDEAS/2025-10-08 - Strategic Vision Summary.md",
+                "file": "00_Inbox/2025-10-08.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-10-08 - Strategic Vision Summary"
+              "title": "Outline of 2025-10-08"
             }
           },
           {
@@ -220,10 +220,10 @@
   },
   "active": "3b541b4a1c29d1b6",
   "lastOpenFiles": [
+    "IDEAS/2025-10-08 - Strategic Vision Summary.md",
     "IDEAS/2025-10-08 - Companion Prototype Design.md",
     "IDEAS/2025-10-08 - Martha Strategic Vision - Personal Learning Companions.md",
     "00_Inbox/2025-10-08.md",
-    "IDEAS/2025-10-08 - Strategic Vision Summary.md",
     "CLAUDE.md.tmp.39872.1759917217225",
     "media/Pasted image 20251008114241.png",
     "00_Inbox/MarthaVault.md",
