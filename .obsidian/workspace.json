@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tasks/master_task_list.md",
-                "mode": "preview",
+                "file": "00_Inbox/2025-10-08.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "master_task_list"
+              "title": "2025-10-08"
             }
           }
         ]
@@ -114,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tasks/master_task_list.md",
+                "file": "00_Inbox/2025-10-08.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from master_task_list"
+              "title": "Outgoing links from 2025-10-08"
             }
           },
           {
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tasks/master_task_list.md",
+                "file": "00_Inbox/2025-10-08.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of master_task_list"
+              "title": "Outline of 2025-10-08"
             }
           },
           {
@@ -219,6 +219,7 @@
   },
   "active": "5259bb10b42a8024",
   "lastOpenFiles": [
+    "tasks/master_task_list.md",
     "Templates/Daily Journal Template.md",
     "Templates/Daily Reflection Note Template.md",
     "Templates/Daily Note Template.md",
@@ -241,7 +242,6 @@
     "00_Inbox/Replacement TMM Capex Summary FY2526_FY2728 08-10-2025 (Approved BP).xlsx",
     "00_Inbox/706BA800",
     "tasks/Test Task.md",
-    "tasks/master_task_list.md",
     "people/Moller, Phillip.md",
     "people/Peterson, Xavier.md",
     "people/Koekemoer, Willie.md",
