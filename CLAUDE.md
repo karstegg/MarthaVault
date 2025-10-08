@@ -180,10 +180,15 @@ Use the right memory system for the task:
 **Key Features**:
 - Semantic search with relevance scoring
 - Relationship traversal with `depth` parameter (1-3 hops)
-- Temporal filtering (`after_date`, `before_date`, `timeframe`)
+- Temporal filtering (varies by tool - see below)
 - Document types: notes, relations, entities
 
-**Depth Parameter**:
+**Temporal Filtering by Tool**:
+- `search_notes()`: Use `after_date="YYYY-MM-DD"` (NOT `timeframe`)
+- `build_context()`: Use `timeframe="7d"` or natural language like `"2 weeks"`
+- `recent_activity()`: Use `timeframe="1 week"` or natural language
+
+**Depth Parameter** (for `build_context()` only):
 - `depth=1`: Direct connections only
 - `depth=2`: Friends-of-friends (2 hops)
 - `depth=3`: Extended network (use sparingly)
