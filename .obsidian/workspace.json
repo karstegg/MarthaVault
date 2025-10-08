@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3be0250b40ebe6cd",
+        "id": "1a6fdfcfc838ff48",
         "type": "tabs",
         "children": [
           {
-            "id": "5259bb10b42a8024",
+            "id": "3b541b4a1c29d1b6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -217,8 +217,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5259bb10b42a8024",
+  "active": "3b541b4a1c29d1b6",
   "lastOpenFiles": [
+    "00_Inbox/MarthaVault.md",
+    "00_Inbox/2025-10-08.md",
+    "00_Inbox/2025-10-07.md",
     "tasks/master_task_list.md",
     "Templates/Daily Journal Template.md",
     "Templates/Daily Reflection Note Template.md",
@@ -235,10 +238,8 @@
     "Daily/2025-09-18 – Daily Note.md",
     "Daily/2025-09-16 – Daily Note.md",
     "people/van den Berg, Gerhard.md",
-    "00_Inbox/2025-10-07.md",
     "Schedule/2025-10-11 – DPF Discussion Meeting.md",
     "tasks/2025-10-07 – SA Crane Contract 6 Month Extension.md",
-    "00_Inbox/2025-10-08.md",
     "00_Inbox/Replacement TMM Capex Summary FY2526_FY2728 08-10-2025 (Approved BP).xlsx",
     "00_Inbox/706BA800",
     "tasks/Test Task.md",
@@ -246,7 +247,6 @@
     "people/Peterson, Xavier.md",
     "people/Koekemoer, Willie.md",
     "people/Dubazane, Sipho.md",
-    "people/Sease, Simon.md",
     "00_Inbox/Deep Analysis of MarthaVault by Windsurf Claude 45 annotated.pdf",
     "projects/DPF Project",
     "00_Inbox/VFL Schedule - Oct 2025.pdf",
