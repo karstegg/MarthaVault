@@ -173,7 +173,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       },
       {
         "id": "67e20dfabf47f6e9",
@@ -196,7 +196,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 412
+    "width": 555
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,7 +217,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "57ed061159fbf1be",
+  "active": "cc7819343cecd789",
   "lastOpenFiles": [
     "00_Inbox/2025-10-08.md",
     "00_Inbox/Replacement TMM Capex Summary FY2526_FY2728 08-10-2025 (Approved BP).xlsx",
