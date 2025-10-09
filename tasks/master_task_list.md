@@ -21,6 +21,10 @@ LastUpdated:: 2025-10-06
 - [ ] Approve leave requests on Oracle 📅 2025-10-13 #task #year/2025 #priority/high #recurring #admin
 - [ ] Complete Weekly Engineering Report 📅 2025-10-13 #task #year/2025 #priority/critical #recurring
 
+## Monthly Recurring Tasks
+- [ ] Process VFL Schedule when received (extract Greg's assignments to calendar) 📅 2025-11-01 #task #year/2025 #priority/medium #recurring #SHEQ #VFL
+  - Note: Apply VFL Schedule Processing skill - see [[system/skills/vfl-schedule-processing.md]]
+
 ---
 
 ## URGENT & OVERDUE TASKS
@@ -52,6 +56,61 @@ LastUpdated:: 2025-10-06
   - Note: Grader from Aard. Delegated to SK via email 2025-10-06
 - [ ] Prepare 6 month extension variation order for SA Crane contract #task #priority/medium 📅 2025-10-14 #year/2025 #contract #SA_Cranes
 - [ ] Send VO documentation to Emile at Central Logistics Hub #task #priority/medium 📅 2025-10-14 #year/2025 #contract #SA_Cranes
+
+### FY25/26 Capital TMM Replacement Programme (CRITICAL)
+**See**: [[Capital TMM Procurement Tracker FY25-26]] for full tracker (29 units, R157.3M)
+
+#### Gloria - URGENT Replacements (Sipho & John)
+- [ ] Gloria DT0105/DT0106 dump truck replacement - Finalize specs 📅 2025-10-31 #task #year/2025 #priority/critical #capital #site/Gloria
+  - Assigned to: [[Dubazane, Sipho]] (Engineer), [[Eiler, John]] (Planner)
+  - Equipment: 2x MT 436 LP (2015 models - 10 years old) → Elphinstone AD30
+  - Budget: R40.3M
+  - Note: OLDEST PRODUCTION TMM IN FY25/26 PLAN - Bundle order for volume discount
+- [ ] Gloria DT0105/DT0106 - Request Epiroc quotations 📅 2025-11-30 #task #year/2025 #priority/critical #capital #site/Gloria
+  - Assigned to: [[Eiler, John]]
+  - Note: 2-unit bundle quotation
+- [ ] Gloria DT0105/DT0106 - Place purchase orders 📅 2025-12-15 #task #year/2025 #priority/critical #capital #site/Gloria
+  - Assigned to: [[Dubazane, Sipho]]
+  - Note: 18-month lead time - order ASAP
+
+#### Nchwaning 3 - Production TMM (Sello, Kagisho, Joyce)
+- [ ] N3 RT0039 roof bolter replacement - Finalize specs 📅 2025-10-31 #task #year/2025 #priority/critical #capital #site/Nchwaning3
+  - Assigned to: [[Sease, Sello]] (Engineer), [[Goeieman, Kagisho]] (Planner)
+  - Equipment: Boltec 235H (2014 - 11 years old)
+  - Budget: R19.3M
+  - Note: SAFETY-CRITICAL EQUIPMENT
+- [ ] N3 RT0039 - Request Epiroc quotations 📅 2025-11-30 #task #year/2025 #priority/critical #capital #site/Nchwaning3
+  - Assigned to: [[Goeieman, Kagisho]]
+- [ ] N3 Scalers (SR0024/0028/0030) - Bundle specifications 📅 2025-11-15 #task #year/2025 #priority/high #capital #site/Nchwaning3
+  - Assigned to: [[Sease, Sello]], [[Diale, Joyce]]
+  - Equipment: 3x Super 220E → Scaler 220 E, 4-Wheeler
+  - Budget: R18.4M (bundle discount opportunity)
+  - Note: Central Section, N3, North Section deployments
+- [ ] N3 Scalers - Request bundle quotations 📅 2025-12-15 #task #year/2025 #priority/high #capital #site/Nchwaning3
+  - Assigned to: [[Diale, Joyce]]
+- [ ] N3 DT0143 dump truck replacement - Finalize specs 📅 2025-11-30 #task #year/2025 #priority/high #capital #site/Nchwaning3
+  - Assigned to: [[Sease, Sello]], [[Goeieman, Kagisho]]
+  - Equipment: AD45 → AD30 (standardization)
+  - Budget: R20.2M
+
+#### Nchwaning 2 - Critical Replacements (SK & Wikus)
+- [ ] N2 LD0199 light vehicle replacement - Finalize specs 📅 2025-11-30 #task #year/2025 #priority/critical #capital #site/Nchwaning2
+  - Assigned to: [[Nzuza, Sikelela]] (Engineer), [[Wikus]] (Planner)
+  - Equipment: 4x4 2.5D (2007 - 18 YEARS OLD) → L/Cruiser 4x4 UG Spec
+  - Budget: R2.9M
+  - Location: N2 SHERQ
+  - Note: OLDEST VEHICLE IN ENTIRE FY25/26 PLAN
+- [ ] N2 L/Cruiser 5-unit bundle - Finalize specs 📅 2025-12-31 #task #year/2025 #priority/high #capital #site/Nchwaning2
+  - Assigned to: [[Nzuza, Sikelela]], [[Wikus]]
+  - Equipment: LD0341/0411/0414/0415/0199 (5 units)
+  - Budget: R14.6M
+  - Note: Bundle for volume discount (~R1.1M potential savings)
+
+#### Overall Programme Management
+- [ ] Capital TMM FY25/26 - Monthly progress review 📅 2025-11-07 #task #year/2025 #priority/high #capital #recurring
+  - Assigned to: [[Chris]] (Asset Care Engineer), [[Rahab]] (Chief Planner oversight)
+  - Note: First monthly review - track all 29 units, budget vs actual
+  - Reference: [[Capital TMM Procurement Tracker FY25-26]]
 
 ---
 

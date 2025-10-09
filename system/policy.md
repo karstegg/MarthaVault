@@ -218,7 +218,8 @@ Individual decisions/notes (point-in-time)
 
 **Policy**: Use skill cards for common workflows (Phase 3 implementation).
 
-**Current Skill Cards** (to be created in `system/skills/`):
+**Current Skill Cards** (in `system/skills/`):
+- **VFL Schedule Processing** ✅ - `system/skills/vfl-schedule-processing.md`
 - Inbox → Triage workflow
 - Daily note creation
 - Meeting notes processing
