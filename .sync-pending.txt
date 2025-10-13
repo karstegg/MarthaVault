@@ -1,1 +1,9 @@
-﻿A	IDEAS/2025-10-08 - Companion Prototype Design.md
+﻿A	Schedule/2025-10-07 - VFL Surface Plant.md
+A	Schedule/2025-10-21 - VFL Surface Plant.md
+A	Schedule/2025-11-04 - VFL Nchwaning 3.md
+A	projects/Capital TMM Procurement Tracker FY25-26.md
+A	projects/Capital TMM Replacement Plan FY25-28.md
+A	projects/Current Production Fleet Inventory.md
+M	system/policy.md
+A	system/skills/vfl-schedule-processing.md
+M	tasks/master_task_list.md
