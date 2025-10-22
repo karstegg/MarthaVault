@@ -5,31 +5,70 @@ Assignee:: Greg Karsten
 DueDate:: 2025-12-31
 Tags:: #year/2025 #strategy #quarterly #active-phase
 ---
-
+x`
 # Active Phase - Q4 2025 Strategic Focus
 
 **Period**: October - December 2025 (Q4 2025)
 **Owner**: [[Gregory Karsten]]
-**Last Updated**: 2025-10-05
+**Last Updated**: 2025-10-20
 **Strategic Alignment**: [[strategy/CompanyStrategy.md]]
 
 ---
 
 ## Quarter Overview
 
-**Theme**: **"Stabilize, Strengthen, Scale"**
+**Theme**: **"Compliance, Safety, Scale"**
 
 **Context**:
+- **CAS Level 9 DMRE Commitment**: Year-end deadline for full fleet CPS compliance (presented Oct 17, 2025)
 - Post-HD54 fire incident: Enhanced safety protocols implementation
 - BEV program maturation: Contract extension secured, fire safety priorities
-- Team capacity building: GES recruitment completion, junior engineer pipeline
+- Team capacity building: GES recruitment + 2 Junior Project Engineers for CAS coordination
 - Capital planning: 2026 budget preparation and strategic projects alignment
 
 ---
 
 ## Q4 2025 Strategic Focus Areas
 
-### 1. Fire Safety & Risk Mitigation (CRITICAL) 🔥
+### 1. CAS Level 9 Compliance Program (DMRE COMMITMENT) ⚠️🚨
+
+**Strategic Pillar**: Safety & Compliance Excellence
+
+**Q4 Objectives**:
+- ✅ **Complete CAS Level 9 installation on all high-risk FL and DT fleet** (Target: Dec 31, 2025)
+  - Nchwaning 2: Full fleet CAS L9 implementation
+  - Nchwaning 3: Full fleet CAS L9 implementation (including BEV fleet)
+  - Gloria: Full fleet CAS L9 implementation
+  - SOT (Surface): Bell Equipment fleet compliance resolution
+
+- ✅ **OEM coordination and installation execution** (Oct-Dec)
+  - Coordinate site access for OEM installations (CAT, Bell, Epiroc, Strata)
+  - Site engineers facilitate equipment availability and testing
+  - Junior Project Engineers coordinate OEM schedules and logistics
+  - Hennie van Niekerk leads overall CAS program execution
+
+- ✅ **Junior Project Engineer recruitment for CAS support** (URGENT)
+  - 2 x Junior Project Engineers (2-year fixed term)
+  - Ad currently running, interviews target: Week of Oct 28
+  - Role: Coordinate CAS installations, OEM access, site logistics
+  - Work with Hennie, site engineers, and CAS project team
+
+**Success Metrics**:
+- 100% high-risk FL and DT fleet CAS L9 compliant by Dec 31, 2025
+- DMRE commitment fulfilled (presentation Oct 17, 2025)
+- Zero TMM collision incidents Q4 2025
+- All OEM installations completed on schedule
+
+**Key Projects**:
+- [[projects/CAS_Project/]] - CAS Level 9 Implementation Program
+- [[00_Inbox/Presentation October 2025 R7.pptx]] - DMRE presentation Oct 17, 2025
+
+**Project Lead**: [[Hennie van Niekerk]] (CAS Projects Engineer)
+**Site Coordination**: Site GES/engineers at N2, N3, Gloria, SOT
+
+---
+
+### 2. Fire Safety & Risk Mitigation (CRITICAL) 🔥
 
 **Strategic Pillar**: Safety & Compliance Excellence
 
@@ -56,7 +95,7 @@ Tags:: #year/2025 #strategy #quarterly #active-phase
 
 ---
 
-### 2. BEV Program Optimization & Scale 🚗⚡
+### 3. BEV Program Optimization & Scale 🚗⚡
 
 **Strategic Pillar**: Innovation & Technology Leadership
 
@@ -83,7 +122,7 @@ Tags:: #year/2025 #strategy #quarterly #active-phase
 
 ---
 
-### 3. Compliance & Audit Excellence ✅
+### 4. Compliance & Audit Excellence ✅
 
 **Strategic Pillar**: Safety & Compliance Excellence
 
@@ -112,7 +151,7 @@ Tags:: #year/2025 #strategy #quarterly #active-phase
 
 ---
 
-### 4. Team Capacity & Capability Building 👥
+### 5. Team Capacity & Capability Building 👥
 
 **Strategic Pillar**: People & Organizational Development
 
@@ -142,7 +181,7 @@ Tags:: #year/2025 #strategy #quarterly #active-phase
 
 ---
 
-### 5. Capital Planning & Project Delivery 💰
+### 6. Capital Planning & Project Delivery 💰
 
 **Strategic Pillar**: Capital Efficiency & Project Delivery
 
@@ -178,26 +217,31 @@ Tags:: #year/2025 #strategy #quarterly #active-phase
 
 | Strategic Pillar | Q4 Weight | ObjectiveWeight |
 |------------------|-----------|-----------------|
+| **CAS Level 9 Compliance (DMRE)** | CRITICAL | **2.5** |
 | **Fire Safety & Risk Mitigation** | Critical | **2.0** |
 | **BEV Program Optimization** | High | **1.5** |
 | **Compliance & Audit Excellence** | High | **1.5** |
 | **Team Capacity Building** | Medium | **1.2** |
 | **Capital Planning & Delivery** | Medium | **1.2** |
 
-**Usage**: Tasks/projects aligned with Fire Safety get highest priority multiplier (2.0x).
+**Usage**: CAS compliance gets highest priority (2.5x) due to DMRE year-end commitment. Fire Safety second (2.0x).
 
 ---
 
 ## Q4 Success Criteria
 
 **Critical Success Factors**:
-1. ✅ Zero fire incidents (BEV or mechanical)
-2. ✅ BEV fire safety controls 100% implemented
-3. ✅ N3 GES recruited and onboarded
-4. ✅ WTW critical audit findings 100% closed
-5. ✅ 2025 capital votes closed, 2026 budget submitted
+1. ✅ **CAS Level 9 compliance achieved by Dec 31, 2025** (DMRE commitment fulfilled)
+2. ✅ **CAS Level 9 compliance achieved by Dec 31, 2025** (DMRE commitment fulfilled)
+2. ✅ Zero fire incidents (BEV or mechanical)
+3. ✅ Zero TMM collision incidents
+4. ✅ Junior Project Engineers recruited and supporting CAS program
+5. ✅ WTW critical audit findings 100% closed
+6. ✅ 2025 capital votes closed, 2026 budget submitted
 
 **Risk Mitigation**:
+- **CAS Compliance Risk**: OEM resource availability, site access coordination, JPE recruitment timing
+- **CAS Compliance Risk**: OEM resource availability, site access coordination, JPE recruitment timing
 - **Fire Risk**: Enhanced training, monitoring, and fire protection systems
 - **Recruitment Risk**: Competitive offers, accelerated decision-making
 - **Capital Risk**: Early engagement with finance, clear business cases
@@ -216,9 +260,10 @@ See [[strategy/FocusOfWeek.md]] for weekly tactical priorities within this Q4 st
 
 | Q4 Initiative | Strategic Pillar | Long-Term Goal |
 |---------------|------------------|----------------|
+| CAS Level 9 Program | Safety & Compliance | Zero harm workplace, TMM collision prevention |
 | BEV Fire Safety | Safety Excellence | Zero harm workplace |
 | BEV Charging Bay 2 | Innovation & Technology | Zero-emission mining |
-| N3 GES Recruitment | People Development | Skilled engineering team |
+| JPE Recruitment (CAS support) | People Development | Skilled engineering team |
 | WTW Audit Closure | Safety & Compliance | 100% regulatory compliance |
 | Capital Vote Closures | Capital Efficiency | Project delivery excellence |
 

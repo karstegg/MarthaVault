@@ -61,12 +61,69 @@
       "mcp__basic-memory__read_note",
       "Bash(git rev-parse:*)",
       "Bash(where.exe:*)",
-      "Bash(git log:*)"
+      "Bash(git log:*)",
+      "mcp__basic-memory__list_directory",
+      "Read(//c/Users/10064957/.config/**)",
+      "Read(//c/Users/10064957/.claude/**)",
+      "Read(//c/Users/10064957/AppData/Roaming/**)",
+      "mcp__basic-memory__sync_status",
+      "Read(//c/Users/10064957/**)",
+      "SlashCommand(/sync-vault)",
+      "Bash(cat:*)",
+      "Bash(for i in {1..6})",
+      "Bash(do echo \"=== Batch Group $i ===\")",
+      "Bash(done)",
+      "mcp__memory__delete_entities",
+      "mcp__basic-memory__list_memory_projects",
+      "Bash(ls -lh \"projects/Capital/2025-10-14 - TMM Replacement Capex Summary FY25-28 (Approved BP).xlsx\")",
+      "mcp__memory__add_observations",
+      "Bash(if [ -f .vault-sync-checkpoint ])",
+      "Bash(then cat .vault-sync-checkpoint)",
+      "Bash(else echo \"none\")",
+      "Bash(fi)",
+      "Bash(else echo \"No checkpoint found\")",
+      "SlashCommand(/sync-outlook-calendar)",
+      "Skill(outlook-extractor)"
     ],
     "deny": []
   },
   "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "whatsapp"
-  ]
+  ],
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sleep 60 && /sync-outlook-calendar && sleep 60",
+            "timeout": 180
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'if [[ \"$TOOL_INPUT\" =~ Schedule/ ]]; then echo \"/sync-outlook-calendar\"; fi'",
+            "timeout": 30
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'if [[ \"$TOOL_INPUT\" =~ \"VFL Schedule\" ]] && [[ \"$TOOL_INPUT\" =~ \"00_Inbox\" ]]; then echo \"/process-vfl-schedule\"; fi'",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
 }
