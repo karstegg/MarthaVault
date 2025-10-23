@@ -16,6 +16,16 @@ LastUpdated:: 2025-10-06
 ---
 
 ## Pending Tasks (Unscheduled)
+- [ ] Share HD54 fire investigation recommendations with Sfiso (WWW format) #task #year/2025 #priority/high #fire-safety
+- [ ] PDI procedure review with Gerhard - add section to inspect fire suppression systems #task #year/2025 #priority/high #fire-safety
+- [ ] UV128 CAS installation and testing (arranged with [[Sipho Dubazane]] and Jade at Gloria) #task #year/2025 #priority/medium #CAS #site/Gloria
+- [ ] Write motivation for extra electrical foreman at N3 #task #year/2025 #priority/medium #site/Nchwaning3
+- [ ] Capture weekly charts #task #year/2025 #priority/medium
+- [ ] Follow up re SA Cranes VO for 6 months extension by Emile (Central procurement) #task #year/2025 #priority/medium
+- [ ] BEV vent doors & fire doors - waiting on [[Mabona, Mduduzi]] for updated capital application #task #year/2025 #priority/high #BEV #capital
+- [ ] BEV Bay 2 minisub - Assigned to [[Lourens van der Heerden]] #task #year/2025 #priority/high #BEV #capital
+  - Action: Make minisubs stock items to fast-track procurement (bypass contract process)
+  - Waiting on [[Mabona, Mduduzi]] for capital application finalization
 - [ ] Kenru fire orders for SOT and Gloria - Assigned to [[Sipho Dubazane]] #task #year/2025 #priority/medium #site/Nchwaning2 #site/Gloria
 - [ ] S2 & BEV Meeting - Order follow-up (Matthews from Epiroc) - Assigned to [[Michael Bester]] #task #year/2025 #priority/medium #site/Nchwaning2 #BEV
   - Note: One-month order for HD62/S2 optimization project
