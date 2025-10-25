@@ -75,10 +75,17 @@ export class TerminalView extends ItemView {
 
     // Parse command to get full path for claude
     let actualCommand = command;
-    if (command.startsWith('claude ')) {
+    if (command.startsWith('claude')) {
       const claudePath = 'C:\\Users\\10064957\\AppData\\Roaming\\npm\\claude.cmd';
-      const args = command.substring(7); // Remove 'claude '
-      actualCommand = `${claudePath} --dangerously-skip-permissions ${args}`;
+      const args = command.substring(6).trim(); // Remove 'claude'
+      
+      if (!args) {
+        this.appendOutput('Usage: claude "your prompt here"', 'info');
+        this.appendOutput('Example: claude "analyze 00_Inbox/2025-10-23.md"', 'info');
+        return;
+      }
+      
+      actualCommand = `${claudePath} --dangerously-skip-permissions --print ${args}`;
       console.log('[Martha Terminal] Resolved to:', actualCommand);
     }
 

@@ -109,9 +109,14 @@ var TerminalView = class extends import_obsidian2.ItemView {
     console.log("[Martha Terminal] Executing:", command);
     this.appendOutput(`$ ${command}`, "command");
     let actualCommand = command;
-    if (command.startsWith("claude ")) {
+    if (command.startsWith("claude")) {
       const claudePath = "C:\\Users\\10064957\\AppData\\Roaming\\npm\\claude.cmd";
-      const args = command.substring(7);
+      const args = command.substring(6).trim();
+      if (!args) {
+        this.appendOutput('Usage: claude "your prompt here"', "info");
+        this.appendOutput('Example: claude "analyze 00_Inbox/2025-10-23.md"', "info");
+        return;
+      }
       actualCommand = `${claudePath} --dangerously-skip-permissions ${args}`;
       console.log("[Martha Terminal] Resolved to:", actualCommand);
     }
