@@ -1,5 +1,6 @@
-import { Plugin, TFile, Notice } from 'obsidian';
+import { Plugin, TFile, Notice, WorkspaceLeaf } from 'obsidian';
 import { MarthaSettingTab } from './settings';
+import { TerminalView, TERMINAL_VIEW_TYPE } from './terminal';
 
 // Plugin settings interface
 interface MarthaSettings {
@@ -26,9 +27,22 @@ export default class MarthaAgentPlugin extends Plugin {
     // Load settings
     await this.loadSettings();
 
+    // Register terminal view
+    this.registerView(
+      TERMINAL_VIEW_TYPE,
+      (leaf) => new TerminalView(leaf, this)
+    );
+
     // Add ribbon icon
     this.addRibbonIcon('bot', 'Martha Agent', () => {
       new Notice('Martha Agent is running');
+    });
+
+    // Add command to open terminal
+    this.addCommand({
+      id: 'open-terminal',
+      name: 'Open Claude CLI Terminal',
+      callback: () => this.activateTerminal()
     });
 
     // Add command to process current file
@@ -124,6 +138,22 @@ export default class MarthaAgentPlugin extends Plugin {
     
     console.log('Auto-processing modified file:', file.path);
     // TODO: Queue for agent processing
+  }
+
+  async activateTerminal() {
+    const { workspace } = this.app;
+    
+    let leaf: WorkspaceLeaf | null = null;
+    const leaves = workspace.getLeavesOfType(TERMINAL_VIEW_TYPE);
+    
+    if (leaves.length > 0) {
+      leaf = leaves[0];
+    } else {
+      leaf = workspace.getRightLeaf(false);
+      await leaf.setViewState({ type: TERMINAL_VIEW_TYPE, active: true });
+    }
+    
+    workspace.revealLeaf(leaf);
   }
 
   async loadSettings() {
