@@ -106,35 +106,47 @@ var TerminalView = class extends import_obsidian2.ItemView {
   executeCommand(command) {
     if (!command.trim())
       return;
+    console.log("[Martha Terminal] Executing:", command);
     this.appendOutput(`$ ${command}`, "command");
     let actualCommand = command;
     if (command.startsWith("claude ")) {
-      const claudePath = "C:\\Users\\10064957\\.npm-global\\bin\\claude.cmd";
-      actualCommand = command.replace("claude", claudePath);
+      const claudePath = "C:\\Users\\10064957\\AppData\\Roaming\\npm\\claude.cmd";
+      const args = command.substring(7);
+      actualCommand = `${claudePath} --dangerously-skip-permissions ${args}`;
+      console.log("[Martha Terminal] Resolved to:", actualCommand);
     }
     const env = {
       ...process.env,
       CLAUDE_CODE_OAUTH_TOKEN: this.plugin.settings.oauthToken,
       PWD: this.vaultPath
     };
+    console.log("[Martha Terminal] Working directory:", this.vaultPath);
+    console.log("[Martha Terminal] OAuth token set:", !!env.CLAUDE_CODE_OAUTH_TOKEN);
     const proc = (0, import_child_process.spawn)(actualCommand, {
       shell: true,
       cwd: this.vaultPath,
       env
     });
+    console.log("[Martha Terminal] Process spawned, PID:", proc.pid);
     proc.stdout.on("data", (data) => {
-      this.appendOutput(data.toString(), "stdout");
+      const output = data.toString();
+      console.log("[Martha Terminal] stdout:", output);
+      this.appendOutput(output, "stdout");
     });
     proc.stderr.on("data", (data) => {
-      this.appendOutput(data.toString(), "stderr");
+      const output = data.toString();
+      console.log("[Martha Terminal] stderr:", output);
+      this.appendOutput(output, "stderr");
     });
     proc.on("close", (code) => {
+      console.log("[Martha Terminal] Process closed with code:", code);
       if (code !== 0) {
         this.appendOutput(`Process exited with code ${code}`, "error");
       }
       this.appendOutput("", "info");
     });
     proc.on("error", (err) => {
+      console.error("[Martha Terminal] Process error:", err);
       this.appendOutput(`Error: ${err.message}`, "error");
     });
   }

@@ -70,13 +70,16 @@ export class TerminalView extends ItemView {
   executeCommand(command: string) {
     if (!command.trim()) return;
 
+    console.log('[Martha Terminal] Executing:', command);
     this.appendOutput(`$ ${command}`, 'command');
 
     // Parse command to get full path for claude
     let actualCommand = command;
     if (command.startsWith('claude ')) {
-      const claudePath = 'C:\\Users\\10064957\\.npm-global\\bin\\claude.cmd';
-      actualCommand = command.replace('claude', claudePath);
+      const claudePath = 'C:\\Users\\10064957\\AppData\\Roaming\\npm\\claude.cmd';
+      const args = command.substring(7); // Remove 'claude '
+      actualCommand = `${claudePath} --dangerously-skip-permissions ${args}`;
+      console.log('[Martha Terminal] Resolved to:', actualCommand);
     }
 
     // Set environment variables
@@ -86,6 +89,9 @@ export class TerminalView extends ItemView {
       PWD: this.vaultPath
     };
 
+    console.log('[Martha Terminal] Working directory:', this.vaultPath);
+    console.log('[Martha Terminal] OAuth token set:', !!env.CLAUDE_CODE_OAUTH_TOKEN);
+
     // Execute command
     const proc = spawn(actualCommand, {
       shell: true,
@@ -93,18 +99,25 @@ export class TerminalView extends ItemView {
       env: env
     });
 
+    console.log('[Martha Terminal] Process spawned, PID:', proc.pid);
+
     // Capture stdout
     proc.stdout.on('data', (data: Buffer) => {
-      this.appendOutput(data.toString(), 'stdout');
+      const output = data.toString();
+      console.log('[Martha Terminal] stdout:', output);
+      this.appendOutput(output, 'stdout');
     });
 
     // Capture stderr
     proc.stderr.on('data', (data: Buffer) => {
-      this.appendOutput(data.toString(), 'stderr');
+      const output = data.toString();
+      console.log('[Martha Terminal] stderr:', output);
+      this.appendOutput(output, 'stderr');
     });
 
     // Handle exit
     proc.on('close', (code: number) => {
+      console.log('[Martha Terminal] Process closed with code:', code);
       if (code !== 0) {
         this.appendOutput(`Process exited with code ${code}`, 'error');
       }
@@ -112,6 +125,7 @@ export class TerminalView extends ItemView {
     });
 
     proc.on('error', (err: Error) => {
+      console.error('[Martha Terminal] Process error:', err);
       this.appendOutput(`Error: ${err.message}`, 'error');
     });
   }
