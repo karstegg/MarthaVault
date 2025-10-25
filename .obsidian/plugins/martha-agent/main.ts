@@ -1,15 +1,16 @@
 import { Plugin, TFile, Notice } from 'obsidian';
+import { MarthaSettingTab } from './settings';
 
 // Plugin settings interface
 interface MarthaSettings {
-  apiKey: string;
+  oauthToken: string;
   autoProcess: boolean;
   mcpGraphMemory: string;
   mcpBasicMemory: string;
 }
 
 const DEFAULT_SETTINGS: MarthaSettings = {
-  apiKey: '',
+  oauthToken: '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',
   autoProcess: false,
   mcpGraphMemory: 'C:/Users/10064957/.martha/memory.json',
   mcpBasicMemory: 'C:/Users/10064957/.basic-memory/'
@@ -51,20 +52,34 @@ export default class MarthaAgentPlugin extends Plugin {
       );
     }
 
+    // Add settings tab
+    this.addSettingTab(new MarthaSettingTab(this.app, this));
+
     // Initialize Agent SDK (placeholder - needs actual SDK installation)
     await this.initializeAgent();
   }
 
   async initializeAgent() {
-    if (!this.settings.apiKey) {
-      new Notice('⚠️ Martha Agent: API key not configured');
+    if (!this.settings.oauthToken) {
+      new Notice('⚠️ Martha Agent: OAuth token not configured');
       return;
     }
 
+    // Set environment variable for Agent SDK
+    process.env.CLAUDE_CODE_OAUTH_TOKEN = this.settings.oauthToken;
+
     // TODO: Initialize actual Agent SDK
-    // This requires: npm install @anthropic-ai/claude-agent-sdk
+    // const { AgentClient } = require('@anthropic-ai/claude-agent-sdk');
+    // this.agentClient = new AgentClient({
+    //   systemPrompt: "You are Martha, Greg's vault assistant...",
+    //   mcpServers: {
+    //     graph_memory: { /* config */ },
+    //     basic_memory: { /* config */ }
+    //   }
+    // });
+    
     console.log('Martha Agent: Ready to initialize SDK');
-    new Notice('Martha Agent initialized');
+    new Notice('Martha Agent initialized with OAuth');
   }
 
   async processCurrentFile() {
