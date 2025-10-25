@@ -107,12 +107,17 @@ var TerminalView = class extends import_obsidian2.ItemView {
     if (!command.trim())
       return;
     this.appendOutput(`$ ${command}`, "command");
+    let actualCommand = command;
+    if (command.startsWith("claude ")) {
+      const claudePath = "C:\\Users\\10064957\\.npm-global\\bin\\claude.cmd";
+      actualCommand = command.replace("claude", claudePath);
+    }
     const env = {
       ...process.env,
       CLAUDE_CODE_OAUTH_TOKEN: this.plugin.settings.oauthToken,
       PWD: this.vaultPath
     };
-    const proc = (0, import_child_process.spawn)(command, {
+    const proc = (0, import_child_process.spawn)(actualCommand, {
       shell: true,
       cwd: this.vaultPath,
       env

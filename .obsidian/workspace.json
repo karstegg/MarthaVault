@@ -180,6 +180,16 @@
               "icon": "terminal",
               "title": "Claude CLI"
             }
+          },
+          {
+            "id": "65daab2f3980c272",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
           }
         ],
         "currentTab": 6

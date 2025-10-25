@@ -72,6 +72,13 @@ export class TerminalView extends ItemView {
 
     this.appendOutput(`$ ${command}`, 'command');
 
+    // Parse command to get full path for claude
+    let actualCommand = command;
+    if (command.startsWith('claude ')) {
+      const claudePath = 'C:\\Users\\10064957\\.npm-global\\bin\\claude.cmd';
+      actualCommand = command.replace('claude', claudePath);
+    }
+
     // Set environment variables
     const env = {
       ...process.env,
@@ -80,7 +87,7 @@ export class TerminalView extends ItemView {
     };
 
     // Execute command
-    const proc = spawn(command, {
+    const proc = spawn(actualCommand, {
       shell: true,
       cwd: this.vaultPath,
       env: env
