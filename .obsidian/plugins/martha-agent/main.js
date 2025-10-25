@@ -27,7 +27,7 @@ __export(main_exports, {
   default: () => MarthaAgentPlugin
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian2 = require("obsidian");
+var import_obsidian3 = require("obsidian");
 
 // settings.ts
 var import_obsidian = require("obsidian");
@@ -59,6 +59,176 @@ var MarthaSettingTab = class extends import_obsidian.PluginSettingTab {
   }
 };
 
+// terminal.ts
+var import_obsidian2 = require("obsidian");
+var import_child_process = require("child_process");
+var TERMINAL_VIEW_TYPE = "martha-terminal";
+var TerminalView = class extends import_obsidian2.ItemView {
+  constructor(leaf, plugin) {
+    super(leaf);
+    this.claudeProcess = null;
+    this.plugin = plugin;
+    this.vaultPath = this.app.vault.adapter.basePath;
+  }
+  getViewType() {
+    return TERMINAL_VIEW_TYPE;
+  }
+  getDisplayText() {
+    return "Claude CLI";
+  }
+  getIcon() {
+    return "terminal";
+  }
+  async onOpen() {
+    const container = this.containerEl.children[1];
+    container.empty();
+    container.addClass("martha-terminal-container");
+    this.terminal = container.createDiv({ cls: "martha-terminal" });
+    this.output = this.terminal.createDiv({ cls: "terminal-output" });
+    const inputContainer = this.terminal.createDiv({ cls: "terminal-input-container" });
+    const prompt = inputContainer.createSpan({ cls: "terminal-prompt", text: "$ " });
+    this.input = inputContainer.createEl("input", {
+      cls: "terminal-input",
+      attr: { type: "text", placeholder: 'claude "your prompt here"' }
+    });
+    this.input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        this.executeCommand(this.input.value);
+        this.input.value = "";
+      }
+    });
+    this.addStyles();
+    this.appendOutput("Claude CLI Terminal - MarthaVault", "info");
+    this.appendOutput(`Vault: ${this.vaultPath}`, "info");
+    this.appendOutput('Type commands like: claude "analyze this file"', "info");
+    this.appendOutput("", "info");
+  }
+  executeCommand(command) {
+    if (!command.trim())
+      return;
+    this.appendOutput(`$ ${command}`, "command");
+    const env = {
+      ...process.env,
+      CLAUDE_CODE_OAUTH_TOKEN: this.plugin.settings.oauthToken,
+      PWD: this.vaultPath
+    };
+    const proc = (0, import_child_process.spawn)(command, {
+      shell: true,
+      cwd: this.vaultPath,
+      env
+    });
+    proc.stdout.on("data", (data) => {
+      this.appendOutput(data.toString(), "stdout");
+    });
+    proc.stderr.on("data", (data) => {
+      this.appendOutput(data.toString(), "stderr");
+    });
+    proc.on("close", (code) => {
+      if (code !== 0) {
+        this.appendOutput(`Process exited with code ${code}`, "error");
+      }
+      this.appendOutput("", "info");
+    });
+    proc.on("error", (err) => {
+      this.appendOutput(`Error: ${err.message}`, "error");
+    });
+  }
+  appendOutput(text, type = "stdout") {
+    const line = this.output.createDiv({ cls: `terminal-line terminal-${type}` });
+    line.textContent = text;
+    this.output.scrollTop = this.output.scrollHeight;
+  }
+  addStyles() {
+    const style = document.createElement("style");
+    style.textContent = `
+      .martha-terminal-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .martha-terminal {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        background: var(--background-primary);
+        font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+        font-size: 12px;
+        padding: 10px;
+      }
+
+      .terminal-output {
+        flex: 1;
+        overflow-y: auto;
+        padding: 5px;
+        background: var(--background-secondary);
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+
+      .terminal-line {
+        padding: 2px 0;
+        word-wrap: break-word;
+      }
+
+      .terminal-command {
+        color: var(--text-accent);
+        font-weight: bold;
+      }
+
+      .terminal-stdout {
+        color: var(--text-normal);
+      }
+
+      .terminal-stderr {
+        color: var(--text-warning);
+      }
+
+      .terminal-error {
+        color: var(--text-error);
+      }
+
+      .terminal-info {
+        color: var(--text-muted);
+      }
+
+      .terminal-input-container {
+        display: flex;
+        align-items: center;
+        background: var(--background-secondary);
+        padding: 8px;
+        border-radius: 4px;
+      }
+
+      .terminal-prompt {
+        color: var(--text-accent);
+        margin-right: 8px;
+        font-weight: bold;
+      }
+
+      .terminal-input {
+        flex: 1;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: var(--text-normal);
+        font-family: inherit;
+        font-size: inherit;
+      }
+
+      .terminal-input::placeholder {
+        color: var(--text-faint);
+      }
+    `;
+    document.head.appendChild(style);
+  }
+  async onClose() {
+    if (this.claudeProcess) {
+      this.claudeProcess.kill();
+    }
+  }
+};
+
 // main.ts
 var DEFAULT_SETTINGS = {
   oauthToken: "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",
@@ -66,13 +236,22 @@ var DEFAULT_SETTINGS = {
   mcpGraphMemory: "C:/Users/10064957/.martha/memory.json",
   mcpBasicMemory: "C:/Users/10064957/.basic-memory/"
 };
-var MarthaAgentPlugin = class extends import_obsidian2.Plugin {
+var MarthaAgentPlugin = class extends import_obsidian3.Plugin {
   // Will be ClaudeAgentClient from SDK
   async onload() {
     console.log("Loading Martha Agent plugin");
     await this.loadSettings();
+    this.registerView(
+      TERMINAL_VIEW_TYPE,
+      (leaf) => new TerminalView(leaf, this)
+    );
     this.addRibbonIcon("bot", "Martha Agent", () => {
-      new import_obsidian2.Notice("Martha Agent is running");
+      new import_obsidian3.Notice("Martha Agent is running");
+    });
+    this.addCommand({
+      id: "open-terminal",
+      name: "Open Claude CLI Terminal",
+      callback: () => this.activateTerminal()
     });
     this.addCommand({
       id: "process-current-file",
@@ -87,7 +266,7 @@ var MarthaAgentPlugin = class extends import_obsidian2.Plugin {
     if (this.settings.autoProcess) {
       this.registerEvent(
         this.app.vault.on("modify", (file) => {
-          if (file instanceof import_obsidian2.TFile) {
+          if (file instanceof import_obsidian3.TFile) {
             this.onFileModified(file);
           }
         })
@@ -98,37 +277,53 @@ var MarthaAgentPlugin = class extends import_obsidian2.Plugin {
   }
   async initializeAgent() {
     if (!this.settings.oauthToken) {
-      new import_obsidian2.Notice("\u26A0\uFE0F Martha Agent: OAuth token not configured");
+      new import_obsidian3.Notice("\u26A0\uFE0F Martha Agent: OAuth token not configured");
       return;
     }
     process.env.CLAUDE_CODE_OAUTH_TOKEN = this.settings.oauthToken;
     console.log("Martha Agent: Ready to initialize SDK");
-    new import_obsidian2.Notice("Martha Agent initialized with OAuth");
+    new import_obsidian3.Notice("Martha Agent initialized with OAuth");
   }
   async processCurrentFile() {
     const activeFile = this.app.workspace.getActiveFile();
     if (!activeFile) {
-      new import_obsidian2.Notice("No active file");
+      new import_obsidian3.Notice("No active file");
       return;
     }
-    new import_obsidian2.Notice(`Processing: ${activeFile.name}`);
+    new import_obsidian3.Notice(`Processing: ${activeFile.name}`);
     const content = await this.app.vault.read(activeFile);
     console.log("File content loaded:", content.substring(0, 100));
-    new import_obsidian2.Notice("\u2713 File processed");
+    new import_obsidian3.Notice("\u2713 File processed");
   }
   async processInbox() {
     const inboxFolder = "00_Inbox";
     const files = this.app.vault.getMarkdownFiles().filter((f) => f.path.startsWith(inboxFolder));
-    new import_obsidian2.Notice(`Processing ${files.length} inbox files...`);
+    new import_obsidian3.Notice(`Processing ${files.length} inbox files...`);
     for (const file of files) {
       console.log("Processing:", file.path);
     }
-    new import_obsidian2.Notice("\u2713 Inbox processed");
+    new import_obsidian3.Notice("\u2713 Inbox processed");
   }
   async onFileModified(file) {
     if (!file.path.startsWith("00_Inbox/"))
       return;
     console.log("Auto-processing modified file:", file.path);
+  }
+  async activateTerminal() {
+    const { workspace } = this.app;
+    let leaf = null;
+    const leaves = workspace.getLeavesOfType(TERMINAL_VIEW_TYPE);
+    if (leaves.length > 0) {
+      leaf = leaves[0];
+    } else {
+      leaf = workspace.getRightLeaf(false);
+      if (leaf) {
+        await leaf.setViewState({ type: TERMINAL_VIEW_TYPE, active: true });
+      }
+    }
+    if (leaf) {
+      workspace.revealLeaf(leaf);
+    }
   }
   async loadSettings() {
     this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());

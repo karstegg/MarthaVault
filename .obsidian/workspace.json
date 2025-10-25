@@ -87,7 +87,6 @@
       {
         "id": "c7ab2ac19efb2b70",
         "type": "tabs",
-        "dimension": 59.92714025500911,
         "children": [
           {
             "id": "83f7eb2c13be1f61",
@@ -171,32 +170,23 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
-          }
-        ],
-        "currentTab": 5
-      },
-      {
-        "id": "67e20dfabf47f6e9",
-        "type": "tabs",
-        "dimension": 40.07285974499089,
-        "children": [
+          },
           {
-            "id": "b7547cd56c37f6ca",
+            "id": "7df6cf87359cf1cb",
             "type": "leaf",
-            "pinned": true,
             "state": {
-              "type": "calendar",
+              "type": "martha-terminal",
               "state": {},
-              "pinned": true,
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "terminal",
+              "title": "Claude CLI"
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 692
+    "width": 803
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,7 +204,8 @@
       "templater-obsidian:Templater": false,
       "cmdr:New Journal Note": false,
       "cmdr:New Devotional": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "martha-agent:Martha Agent": false
     }
   },
   "active": "5422163391876a06",
