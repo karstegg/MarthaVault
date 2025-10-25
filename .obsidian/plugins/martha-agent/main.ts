@@ -48,7 +48,11 @@ export default class MarthaAgentPlugin extends Plugin {
     // Watch vault changes if auto-process enabled
     if (this.settings.autoProcess) {
       this.registerEvent(
-        this.app.vault.on('modify', (file) => this.onFileModified(file))
+        this.app.vault.on('modify', (file) => {
+          if (file instanceof TFile) {
+            this.onFileModified(file);
+          }
+        })
       );
     }
 

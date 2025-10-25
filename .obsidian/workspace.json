@@ -158,8 +158,8 @@
             "state": {
               "type": "full-calendar-view",
               "state": {},
-              "icon": "calendar-glyph",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "full-calendar-view"
             }
           },
           {
@@ -201,17 +201,17 @@
   "left-ribbon": {
     "hiddenItems": {
       "bases:Create new base": false,
-      "obsidian-kanban:Create new board": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-full-calendar:Open Full Calendar": false,
       "audio-recorder:Start/stop recording": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-kanban:Create new board": false,
+      "obsidian-full-calendar:Open Full Calendar": false,
+      "templater-obsidian:Templater": false,
       "cmdr:New Journal Note": false,
       "cmdr:New Devotional": false,
       "obsidian-git:Open Git source control": false
