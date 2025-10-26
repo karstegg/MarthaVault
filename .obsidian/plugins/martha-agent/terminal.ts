@@ -1,5 +1,4 @@
 import { ItemView, WorkspaceLeaf } from 'obsidian';
-import { spawn, ChildProcess } from 'child_process';
 import MarthaAgentPlugin from './main';
 
 export const TERMINAL_VIEW_TYPE = 'martha-terminal';
@@ -9,8 +8,8 @@ export class TerminalView extends ItemView {
   terminal: HTMLElement;
   output: HTMLElement;
   input: HTMLInputElement;
-  claudeProcess: ChildProcess | null = null;
   vaultPath: string;
+  agentClient: any; // Will be typed when SDK is imported
 
   constructor(leaf: WorkspaceLeaf, plugin: MarthaAgentPlugin) {
     super(leaf);
@@ -23,11 +22,11 @@ export class TerminalView extends ItemView {
   }
 
   getDisplayText(): string {
-    return 'Claude CLI';
+    return 'Claude Agent';
   }
 
   getIcon(): string {
-    return 'terminal';
+    return 'bot';
   }
 
   async onOpen() {
@@ -43,16 +42,16 @@ export class TerminalView extends ItemView {
     
     // Input area
     const inputContainer = this.terminal.createDiv({ cls: 'terminal-input-container' });
-    const prompt = inputContainer.createSpan({ cls: 'terminal-prompt', text: '$ ' });
+    const prompt = inputContainer.createSpan({ cls: 'terminal-prompt', text: '💬 ' });
     this.input = inputContainer.createEl('input', { 
       cls: 'terminal-input',
-      attr: { type: 'text', placeholder: 'claude "your prompt here"' }
+      attr: { type: 'text', placeholder: 'Ask Claude anything...' }
     });
 
     // Handle input
     this.input.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') {
-        this.executeCommand(this.input.value);
+      if (e.key === 'Enter' && this.input.value.trim()) {
+        this.executePrompt(this.input.value);
         this.input.value = '';
       }
     });
@@ -60,88 +59,79 @@ export class TerminalView extends ItemView {
     // Add styles
     this.addStyles();
 
+    // Initialize Agent SDK
+    await this.initializeAgent();
+
     // Welcome message
-    this.appendOutput('Claude CLI Terminal - MarthaVault', 'info');
+    this.appendOutput('Claude Agent Terminal - MarthaVault', 'info');
     this.appendOutput(`Vault: ${this.vaultPath}`, 'info');
-    this.appendOutput('Type commands like: claude "analyze this file"', 'info');
+    this.appendOutput('Agent SDK initializing...', 'info');
+  }
+
+  async initializeAgent() {
+    try {
+      console.log('[Martha Agent] Initializing Agent SDK...');
+      
+      // TODO: Actually import and initialize Agent SDK
+      // const { AgentClient } = require('@anthropic-ai/claude-agent-sdk');
+      // this.agentClient = new AgentClient({
+      //   systemPrompt: `You are Martha, Greg's vault assistant for ${this.vaultPath}`,
+      //   workingDirectory: this.vaultPath
+      // });
+      
+      // For now, placeholder
+      this.appendOutput('✓ Agent ready (SDK pending installation)', 'info');
+      this.appendOutput('', 'info');
+      
+    } catch (error) {
+      console.error('[Martha Agent] Failed to initialize:', error);
+      this.appendOutput(`Error initializing Agent SDK: ${error.message}`, 'error');
+      this.appendOutput('Install: npm install @anthropic-ai/claude-agent-sdk', 'info');
+    }
+  }
+
+  async executePrompt(prompt: string) {
+    console.log('[Martha Agent] Executing prompt:', prompt);
+    this.appendOutput(`You: ${prompt}`, 'user');
+    this.appendOutput('Claude: Thinking...', 'thinking');
+
+    try {
+      // TODO: Use actual Agent SDK
+      // const response = await this.agentClient.query(prompt);
+      // this.replaceLastOutput(response.text, 'assistant');
+      
+      // Placeholder - show what will happen
+      this.replaceLastOutput(
+        'Agent SDK not yet installed. This will use Claude Agent SDK to:\n' +
+        '1. Process your prompt\n' +
+        '2. Use MCP servers (Graph/Basic Memory)\n' +
+        '3. Access vault files\n' +
+        '4. Return intelligent responses\n\n' +
+        `Your prompt was: "${prompt}"`,
+        'assistant'
+      );
+      
+    } catch (error) {
+      console.error('[Martha Agent] Query error:', error);
+      this.replaceLastOutput(`Error: ${error.message}`, 'error');
+    }
+
     this.appendOutput('', 'info');
   }
 
-  executeCommand(command: string) {
-    if (!command.trim()) return;
-
-    console.log('[Martha Terminal] Executing:', command);
-    this.appendOutput(`$ ${command}`, 'command');
-
-    // Parse command to get full path for claude
-    let actualCommand = command;
-    if (command.startsWith('claude')) {
-      const claudePath = 'C:\\Users\\10064957\\AppData\\Roaming\\npm\\claude.cmd';
-      const args = command.substring(6).trim(); // Remove 'claude'
-      
-      if (!args) {
-        this.appendOutput('Usage: claude "your prompt here"', 'info');
-        this.appendOutput('Example: claude "analyze 00_Inbox/2025-10-23.md"', 'info');
-        return;
-      }
-      
-      actualCommand = `${claudePath} --dangerously-skip-permissions --print ${args}`;
-      console.log('[Martha Terminal] Resolved to:', actualCommand);
-    }
-
-    // Set environment variables
-    const env = {
-      ...process.env,
-      CLAUDE_CODE_OAUTH_TOKEN: this.plugin.settings.oauthToken,
-      PWD: this.vaultPath
-    };
-
-    console.log('[Martha Terminal] Working directory:', this.vaultPath);
-    console.log('[Martha Terminal] OAuth token set:', !!env.CLAUDE_CODE_OAUTH_TOKEN);
-
-    // Execute command
-    const proc = spawn(actualCommand, {
-      shell: true,
-      cwd: this.vaultPath,
-      env: env
-    });
-
-    console.log('[Martha Terminal] Process spawned, PID:', proc.pid);
-
-    // Capture stdout
-    proc.stdout.on('data', (data: Buffer) => {
-      const output = data.toString();
-      console.log('[Martha Terminal] stdout:', output);
-      this.appendOutput(output, 'stdout');
-    });
-
-    // Capture stderr
-    proc.stderr.on('data', (data: Buffer) => {
-      const output = data.toString();
-      console.log('[Martha Terminal] stderr:', output);
-      this.appendOutput(output, 'stderr');
-    });
-
-    // Handle exit
-    proc.on('close', (code: number) => {
-      console.log('[Martha Terminal] Process closed with code:', code);
-      if (code !== 0) {
-        this.appendOutput(`Process exited with code ${code}`, 'error');
-      }
-      this.appendOutput('', 'info');
-    });
-
-    proc.on('error', (err: Error) => {
-      console.error('[Martha Terminal] Process error:', err);
-      this.appendOutput(`Error: ${err.message}`, 'error');
-    });
-  }
-
-  appendOutput(text: string, type: 'command' | 'stdout' | 'stderr' | 'error' | 'info' = 'stdout') {
+  appendOutput(text: string, type: 'user' | 'assistant' | 'thinking' | 'error' | 'info' = 'info') {
     const line = this.output.createDiv({ cls: `terminal-line terminal-${type}` });
     line.textContent = text;
-    
-    // Auto-scroll
+    this.output.scrollTop = this.output.scrollHeight;
+  }
+
+  replaceLastOutput(text: string, type: string) {
+    const lines = this.output.querySelectorAll('.terminal-line');
+    if (lines.length > 0) {
+      const lastLine = lines[lines.length - 1] as HTMLElement;
+      lastLine.textContent = text;
+      lastLine.className = `terminal-line terminal-${type}`;
+    }
     this.output.scrollTop = this.output.scrollHeight;
   }
 
@@ -159,58 +149,72 @@ export class TerminalView extends ItemView {
         display: flex;
         flex-direction: column;
         background: var(--background-primary);
-        font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
-        font-size: 12px;
-        padding: 10px;
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        font-size: 14px;
+        padding: 16px;
       }
 
       .terminal-output {
         flex: 1;
         overflow-y: auto;
-        padding: 5px;
+        padding: 12px;
         background: var(--background-secondary);
-        border-radius: 4px;
-        margin-bottom: 10px;
+        border-radius: 8px;
+        margin-bottom: 12px;
       }
 
       .terminal-line {
-        padding: 2px 0;
+        padding: 6px 0;
+        line-height: 1.5;
         word-wrap: break-word;
+        white-space: pre-wrap;
       }
 
-      .terminal-command {
+      .terminal-user {
         color: var(--text-accent);
-        font-weight: bold;
+        font-weight: 500;
       }
 
-      .terminal-stdout {
+      .terminal-assistant {
         color: var(--text-normal);
+        padding-left: 12px;
+        border-left: 3px solid var(--interactive-accent);
       }
 
-      .terminal-stderr {
-        color: var(--text-warning);
+      .terminal-thinking {
+        color: var(--text-muted);
+        font-style: italic;
       }
 
       .terminal-error {
         color: var(--text-error);
+        background: var(--background-modifier-error);
+        padding: 8px;
+        border-radius: 4px;
       }
 
       .terminal-info {
         color: var(--text-muted);
+        font-size: 12px;
       }
 
       .terminal-input-container {
         display: flex;
         align-items: center;
         background: var(--background-secondary);
-        padding: 8px;
-        border-radius: 4px;
+        padding: 12px;
+        border-radius: 8px;
+        border: 2px solid transparent;
+        transition: border-color 0.2s;
+      }
+
+      .terminal-input-container:focus-within {
+        border-color: var(--interactive-accent);
       }
 
       .terminal-prompt {
-        color: var(--text-accent);
+        font-size: 18px;
         margin-right: 8px;
-        font-weight: bold;
       }
 
       .terminal-input {
@@ -231,8 +235,6 @@ export class TerminalView extends ItemView {
   }
 
   async onClose() {
-    if (this.claudeProcess) {
-      this.claudeProcess.kill();
-    }
+    // Cleanup if needed
   }
 }
