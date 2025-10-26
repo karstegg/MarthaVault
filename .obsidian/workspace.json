@@ -177,8 +177,8 @@
             "state": {
               "type": "martha-terminal",
               "state": {},
-              "icon": "terminal",
-              "title": "Claude CLI"
+              "icon": "bot",
+              "title": "Claude Agent"
             }
           },
           {
