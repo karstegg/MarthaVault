@@ -196,7 +196,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 697
+    "width": 697,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,7 +219,7 @@
       "martha-agent:Martha Agent": false
     }
   },
-  "active": "7df6cf87359cf1cb",
+  "active": "5422163391876a06",
   "lastOpenFiles": [
     "Schedule/2025-10-28 - Review Louisa Email - Mechanic Appointments N2.md",
     "outlook_emails.json",
