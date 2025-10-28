@@ -11,14 +11,12 @@
             "id": "5422163391876a06",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "00_Inbox/2025-10-28.md",
-                "mode": "source",
-                "source": false
+                "file": "00_Inbox/Memo Engineer Shafts and Winders.pdf"
               },
-              "icon": "lucide-file",
-              "title": "2025-10-28"
+              "icon": "lucide-file-text",
+              "title": "Memo Engineer Shafts and Winders"
             }
           }
         ]
@@ -221,8 +219,9 @@
   },
   "active": "5422163391876a06",
   "lastOpenFiles": [
-    "00_Inbox/2025-10-23.md",
     "00_Inbox/2025-10-28.md",
+    "00_Inbox/Memo Engineer Shafts and Winders.pdf",
+    "00_Inbox/2025-10-23.md",
     "00_Inbox/BRMO weekly report LIVE 18 October 2025 -  24 October 2025.pdf",
     "Schedule/2025-10-28 - Review Louisa Email - Mechanic Appointments N2.md",
     "outlook_emails.json",
@@ -233,7 +232,6 @@
     "Operations/equipment-reports/2025-10-06 – Inspection of Overheating TMM.docx",
     "Operations/equipment-reports",
     "projects/HD0054-Fire-Investigation/2025-10-22 – HD0054 Progress Update (Johnny Hollenbach).pdf",
-    "projects/HD0054-Fire-Investigation",
     "projects/CAS-Level-9/2025-10-22 – Meeting Notes (NeroSpec, Aard, HD54 Fire Review).md",
     "personal/daily-notes/2025-10-21.md",
     "personal/projects/MarthaVault Intuition Layer/2025-10-23 - Claude Desktop Migration Strategy.md",
@@ -256,7 +254,6 @@
     "Schedule/2025-10-24 - D-Level quarterly feedback and Recognition session.md",
     "Schedule/2025-10-23 - Nchwaning No.3 Shaft Planning Meeting-November 2025.md",
     "Schedule/2025-10-22 - Graben Infrastructure Upgrade Project Logistics Alignment.md",
-    "Schedule/2025-10-22 - Aard Machine CAS L9 Planning and Tracking.md",
     "reference/Daily Note - 25-08-2025.jpg",
     "media/Pasted image 20251008114241.png",
     "MarthaVault Workflow Canvas.canvas",
