@@ -1,24 +1,29 @@
 ---
-Status:: Draft
+Status:: Active
 Priority:: Medium
 Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #person #previous-colleague #khumani #engineering-manager
+DueDate::
+Tags:: #year/2025 #person #BRMO #engineering-manager
 ---
 
 # Jacques Breet
 
-**Role**: Engineering Manager (Current)  
-**Location**: Khumani Mine  
-**Previous Role**: Senior Production Engineer (Black Rock)  
-**Started**: 
+**Role**: Engineering Manager (Current)
+**Organization**: Black Rock Mining Operations (BRMO)
+**Location**: Black Rock Mine
+**Previous Role**: Engineering Manager (Khumani Mine)
+**Started at BRMO**: 2025 (transferred back from Khumani)
 
 ## Background
-Previous Senior Production Engineer at Black Rock operations. Greg assumed Jacques' role/position when he moved to Engineering Manager role at Khumani Mine.
+Former Senior Production Engineer at Black Rock operations. Greg assumed Jacques' role/position when he moved to Engineering Manager role at Khumani Mine. Recently transferred back to BRMO as Engineering Manager.
 
-## Career Transition
-- **From**: Senior Production Engineer (Black Rock)
-- **To**: Engineering Manager (Khumani Mine)
-- **Successor**: Greg Karsten
+## Direct Reports
+- [[Swanepoel, Pieter]] (C&I Engineer)
 
-#person #previous-colleague #khumani #engineering-manager #career-transition #year/2025
+## Career History
+- **Current**: Engineering Manager (Black Rock)
+- **2024-2025**: Engineering Manager (Khumani Mine)
+- **Previous**: Senior Production Engineer (Black Rock)
+- **Successor (during Khumani period)**: Greg Karsten
+
+#person #BRMO #engineering-manager #C&I #year/2025
