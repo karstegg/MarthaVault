@@ -29,6 +29,12 @@ LastUpdated:: 2025-10-06
 - [ ] Kenru fire orders for SOT and Gloria - Assigned to [[Sipho Dubazane]] #task #year/2025 #priority/medium #site/Nchwaning2 #site/Gloria
 - [ ] S2 & BEV Meeting - Order follow-up (Matthews from Epiroc) - Assigned to [[Michael Bester]] #task #year/2025 #priority/medium #site/Nchwaning2 #BEV
   - Note: One-month order for HD62/S2 optimization project
+- [ ] Apply for unplanned capital funding for DT & FL radio installations (N3 & N2) - Assigned to [[Sease, Sello]] #task #year/2025 #priority/critical #site/Nchwaning3 #site/Nchwaning2 #capital 📅 2025-11-15
+  - Coordinate with [[Swanepoel, Pieter]] on radio specifications
+  - Rudi approved in N3 ATR meeting (2025-10-23)
+- [ ] Coordinate with [[Swanepoel, Pieter]] on radio specifications for DT & FL fleet - Assigned to [[Sease, Sello]] #task #year/2025 #priority/high #site/Nchwaning3 #radios 📅 2025-11-10
+- [ ] Prepare capital application documentation for radio installations - Assigned to [[Sease, Sello]] #task #year/2025 #priority/high #site/Nchwaning3 #capital 📅 2025-11-20
+- [ ] Prepare monthly N3 infrastructure status presentation (Leaky Feeder, Illumination, Power, Blasting Boxes, Sperrosense) - Assigned to [[Sease, Sello]] #task #year/2025 #priority/high #site/Nchwaning3 #infrastructure 📅 2025-11-01
 
 ## MarthaVault System Development (Agent Skills, Plugins, Context Management)
 
