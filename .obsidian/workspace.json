@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/2025-10-28.md",
+                "file": "00_Inbox/2025-10-29.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-28"
+              "title": "2025-10-29"
             }
           }
         ]
@@ -219,13 +219,14 @@
       "martha-agent:Martha Agent": false
     }
   },
-  "active": "759b14c2e47b40e6",
+  "active": "5422163391876a06",
   "lastOpenFiles": [
+    "00_Inbox/2025-10-28.md",
+    "00_Inbox/2025-10-29.md",
     "media/file_00000000c90c61f8861f357c81187dc1.png",
     "media/Pasted image 20251027212155.jpg",
     "00_Inbox/2025-10-27.md",
     "00_Inbox/BRMO weekly report LIVE 18 October 2025 -  24 October 2025.pdf",
-    "00_Inbox/2025-10-28.md",
     "00_Inbox/Memo Engineer Shafts and Winders.pdf",
     "00_Inbox/2025-10-23.md",
     "Schedule/2025-10-28 - Review Louisa Email - Mechanic Appointments N2.md",
@@ -270,7 +271,6 @@
     "MCP-Microsoft-Office/node_modules/date-fns/docs/logo.svg",
     "Untitled.canvas",
     "personal/projects/MarthaVault Intuition Layer/2025-09-11 – Data Transformation Flow Stage 4.excalidraw.png",
-    "personal/projects/MarthaVault Intuition Layer/2025-09-11 – Data Transformation Flow Stage 3.excalidraw.png",
-    "media/Pasted image 20250918105823.png"
+    "personal/projects/MarthaVault Intuition Layer/2025-09-11 – Data Transformation Flow Stage 3.excalidraw.png"
   ]
 }
