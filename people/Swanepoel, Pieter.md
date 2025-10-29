@@ -8,13 +8,15 @@ Tags:: #year/2025 #person #BRMO
 
 # Pieter Swanepoel
 
-**Role**: Radio Systems Specialist
+**Role**: C&I Engineer (Control & Instrumentation)
 **Organization**: Black Rock Mining Operations (BRMO)
-**Areas of Expertise**: Communication systems, radio installations
+**Reports To**: [[Breet, Jacques]] (Engineering Manager)
+**Areas of Expertise**: Control systems, instrumentation, communication systems, radio installations
 
 ---
 
 ## Key Responsibilities
+- Control and instrumentation systems
 - Radio system specifications and installations
 - Communication infrastructure support
 - Fleet radio integration (DT, FL equipment)
