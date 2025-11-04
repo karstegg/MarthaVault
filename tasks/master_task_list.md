@@ -32,6 +32,18 @@ LastUpdated:: 2025-10-06
 - [ ] DT & FL radio installations - apply for unplanned capital (N3 & N2) - Assigned to [[Sease, Sello]], assisted by [[Swanepoel, Pieter]] #task #year/2025 #priority/critical #site/Nchwaning3 #site/Nchwaning2 #capital #radios 📅 2025-11-30
   - Rudi approved in N3 ATR meeting (2025-10-23)
 - [ ] Prepare monthly N3 infrastructure status presentation (Leaky Feeder, Illumination, Power, Blasting Boxes, Sperrosense) - Assigned to [[Sease, Sello]] #task #year/2025 #priority/high #site/Nchwaning3 #infrastructure 📅 2025-11-01
+- [ ] Prepare interview questions for junior engineer position #task #year/2025 #priority/medium #recruitment #engineering 📅 2025-11-15
+  - Reference: [[tasks/2025-10-29 – Junior Engineer Interview Questions.md]]
+  - Context: Related to team capacity building (Q4 2025 strategic priority)
+
+### BEV Equipment & Epiroc (Week 18-24 Oct Report) - Assigned to Philip Moller (Epiroc)
+- [ ] DT171 - Replace A-frame bearing (5+ days down) - Assigned to Philip Moller (Epiroc) #task #year/2025 #priority/critical #BEV #equipment #Epiroc 📅 2025-10-28
+  - Standing at parking bay awaiting repair
+  - Reference: [[projects/BEV/2025-10-18 – BRMO Epiroc Weekly Report (Week 18-24 Oct).md]]
+- [ ] Follow up on Strata delays impacting FL112 availability (~24hrs lost) - Assigned to Philip Moller (Epiroc) #task #year/2025 #priority/high #BEV #3rd-party #Epiroc 📅 2025-10-30
+- [ ] Renew NCH3 Certiq/Mobilaris support contract (CRITICAL - blocks S2 optimization) - Assigned to Philip Moller (Epiroc) #task #year/2025 #priority/critical #Certiq #site/Nchwaning3 #contract #Epiroc 📅 2025-11-01
+- [ ] Complete BEV machines CAS L9 software upgrades at N3 - Assigned to Philip Moller (Epiroc) #task #year/2025 #priority/high #BEV #CAS #site/Nchwaning3 #Epiroc 📅 2025-11-05
+- [ ] Complete Gloria ST14 software updates for CAS L9 - Assigned to [[van Niekerk, Hennie]] #task #year/2025 #priority/high #CAS #site/Gloria 📅 2025-11-05
 
 ## MarthaVault System Development (Agent Skills, Plugins, Context Management)
 

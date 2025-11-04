@@ -8,6 +8,7 @@ Tags:: #year/2025 #person #BRMO #engineering-manager
 
 # Jacques Breet
 
+**Email**: Jacques.Breet@assmang.co.za
 **Role**: Engineering Manager (Current)
 **Organization**: Black Rock Mining Operations (BRMO)
 **Location**: Black Rock Mine

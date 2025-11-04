@@ -8,6 +8,7 @@ Tags:: #year/2025 #person #project-manager #construction
 
 # Roelie Prinsloo
 
+**Email**: Roelie.Prinsloo@assmang.co.za
 **Role**: Project Manager - Construction & Upgrades  
 **Started**: 
 **Responsibility**: Major construction and upgrade projects across all mine sites

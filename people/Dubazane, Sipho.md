@@ -15,7 +15,8 @@ Engineer stationed at Gloria Mine Site
 - [[2025-07-29 – GES Appointments Finalization]] - GES appointments at 23 and Gloria
 
 ## Contact Information
-Location: Gloria Mine
-Reports to: Martha
+- **Email**: Sipho.Dubazane@assmang.co.za
+- **Location**: Gloria Mine
+- **Reports to**: [[Gregory Karsten]]
 
 #people #area-manager #GES #year/2025

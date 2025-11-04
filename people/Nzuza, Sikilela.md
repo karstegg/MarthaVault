@@ -8,14 +8,15 @@ Tags:: #year/2025 #people #site/nchwaning2
 
 Role:: Engineer - Nchwaning 2
 Started::
-Status:: On leave (Johan Kotze acting)
+Status:: Active
 
 # Sikilela Nzuza
 
-## Contact Information  
-**Position**: Mine Engineer  
-**Location**: Nchwaning 2  
-**Current Status**: On leave
+## Contact Information
+- **Email**: Sikelela.Nzuza@assmang.co.za
+- **Position**: Mine Engineer
+- **Location**: Nchwaning 2
+- **Current Status**: Back from leave
 
 ## Coverage Arrangement
 **Acting Engineer**: [[Johan Kotze]] (GES TMM Underground)

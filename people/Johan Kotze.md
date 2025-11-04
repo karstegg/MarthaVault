@@ -12,8 +12,9 @@ Started::
 # Johan Kotze
 
 ## Contact Information
-**Position**: General Engineering Supervisor (GES) - TMM Underground  
-**Location**: Nchwaning 2  
+**Email**: Johan.Kotze@assmang.co.za
+**Position**: General Engineering Supervisor (GES) - TMM Underground
+**Location**: Nchwaning 2
 **Current Status**: Acting Engineer (covering for [[Nzuza, Sikilela]] on leave)
 
 ## Responsibilities

@@ -19,7 +19,8 @@ Engineering Manager - Martha's dotted line reporting manager
 [To be identified as they arise]
 
 ## Contact Information
-Role: Engineering Manager
-Department: Engineering
+- **Email**: Sello.Taku@assmang.co.za
+- **Role**: Engineering Manager
+- **Department**: Engineering
 
 #people #management #engineering #year/2025

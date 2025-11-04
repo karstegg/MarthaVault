@@ -19,7 +19,8 @@ Operations Manager - Martha's direct reporting manager
 [To be identified as they arise]
 
 ## Contact Information
-Role: Operations Manager
-Department: Operations
+- **Email**: Rudi.Opperman@assmang.co.za
+- **Role**: Operations Manager
+- **Department**: Operations
 
 #people #management #operations #year/2025

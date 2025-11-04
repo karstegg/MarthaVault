@@ -9,8 +9,10 @@ Tags:: #year/2025 #people
 # Hendrik van Niekerk (Hennie)
 
 ## Contact Information
-**Role**: CAS Projects Engineer / Compliance Engineer  
-**Reports to**: [[Taku, Sello]] (Engineering Manager)  
+**Email**: Hendrik.vanNiekerk@assmang.co.za
+**Phone**: +27 82 889 5816
+**Role**: CAS Projects Engineer / Compliance Engineer
+**Reports to**: [[Taku, Sello]] (Engineering Manager)
 **Nickname**: Hennie
 
 ## Responsibilities

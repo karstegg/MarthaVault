@@ -3,18 +3,17 @@ Status:: Draft
 Priority:: Med
 Assignee:: Greg
 DueDate::
-Tags:: #year/2025 #person
+Tags:: #year/2025 #people
 ---
 
 # Johnny Hollenbach
 
-## Role
-Drill Rig Workshop foreman
+**Email**: Johnny.Hollenbach@assmang.co.za
 
-## Current Projects
-- DMR actions: Drill Torque and speed measurements on Bolters
-  - Initial work and testing completed
-  - Implementation rollout across sites pending
+## Role & Responsibilities
+[To be identified]
 
-## Notes
-- Referenced in 2025-09-28 daily note regarding DMR compliance work
+## Contact Information
+- **Email**: Johnny.Hollenbach@assmang.co.za
+
+#people #year/2025

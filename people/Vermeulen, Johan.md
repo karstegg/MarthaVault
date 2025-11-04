@@ -8,16 +8,21 @@ Tags:: #year/2025 #person #shift-manager #legal #compliance
 
 # Johan Vermeulen
 
-**Role**: Shift Manager  
-**Started**: 
-**Current Focus**: Legal compliance review for Chapter 8 regulations
+**Email**: Johan.Vermeulen@assmang.co.za
+**Role**: SHERQ Manager (Safety, Health, Environment, Risk & Quality)
+**Started**:
+**Current Focus**: Safety, health, environment, risk management and quality assurance
 
-## Current Projects
-- **Chapter 8 Compliance**: Legal review of new Shafts & Winders regulations
-- [[projects/Compliance/2025-08-18 – Chapter 8 S&W Regulation 16 GAP Analysis]]
+## Responsibilities
+- Safety and health oversight across operations
+- Environmental compliance
+- Risk management
+- Quality assurance
 
 ## Expertise
-- Legal compliance perspective on mining regulations
-- Shift management operations
+- SHERQ management and compliance
+- Mining safety and health regulations
+- Environmental governance
+- Quality systems
 
 #person #shift-manager #legal #compliance #chapter8 #year/2025

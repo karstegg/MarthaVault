@@ -1,26 +1,19 @@
 ---
-Status:: Active
+Status:: Draft
+Priority:: Med
+Assignee:: Greg
+DueDate::
 Tags:: #year/2025 #people
 ---
 
-# van den Berg, Gerhard
+# Gerhard van den Berg
 
-## Role
-Logistics/Meeting Coordination
+**Email**: Gerhard.vandenBerg@assmang.co.za
+
+## Role & Responsibilities
+[To be identified]
 
 ## Contact Information
-- **Email:** 
-- **Phone:** 
-- **Department:** 
+- **Email**: Gerhard.vandenBerg@assmang.co.za
 
-## Current Tasks
-- [ ] Set up DPF meeting with Christo vd Walt for 2025-10-11 #task #priority/high 📅 2025-10-09
-
-## Interactions
-- **2025-10-07:** Assigned to arrange DPF discussion meeting with Christo vd Walt
-
-## Notes
-First mentioned in daily note 2025-10-07 regarding DPF meeting coordination
-
-## Related
-- [[2025-10-11 – DPF Discussion Meeting]]
+#people #year/2025

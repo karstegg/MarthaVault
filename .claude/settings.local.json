@@ -83,7 +83,10 @@
       "Bash(fi)",
       "Bash(else echo \"No checkpoint found\")",
       "SlashCommand(/sync-outlook-calendar)",
-      "Skill(outlook-extractor)"
+      "Skill(outlook-extractor)",
+      "Bash(ffprobe:*)",
+      "mcp__whisper__list_audio_files",
+      "Read(//c/whatsapp-mcp/whatsapp-mcp-server/**)"
     ],
     "deny": []
   },

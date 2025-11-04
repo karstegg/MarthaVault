@@ -214,6 +214,33 @@ Individual decisions/notes (point-in-time)
 
 ---
 
+### 11. Task Completion Best Practices 🎯
+
+**Policy**: Follow systematic approach for multi-step tasks to ensure complete follow-through.
+
+**Task Execution Workflow**:
+1. **Context Gathering**: Use memory systems to understand task background and strategic alignment
+2. **Plan If Complex**: For tasks with 5+ steps, draft plan and confirm with user
+3. **Execute Sequentially**: Complete each step fully, verify success before proceeding
+4. **Document Changes**: Update task status in master_task_list.md, create meeting notes, link artifacts
+5. **Extract Follow-ups**: Identify new tasks from results, add to task list with proper context
+
+**Multi-Step Task Protocol**:
+- Break complex tasks into sub-tasks with checkboxes
+- Update master_task_list.md status as tasks progress (pending → in_progress → completed)
+- Link related artifacts (emails sent, meetings scheduled, decisions documented)
+- Create people files when new contacts appear
+- Use TodoWrite tool to track progress visibly
+
+**Example**: When asked to "follow up on CAS meeting notes with actions":
+1. Read meeting note → extract all action items
+2. For each action: draft communication, get approval, send, mark done
+3. Create calendar events for scheduled items
+4. Update people files with new contact info discovered
+5. Mark original task complete only when ALL sub-tasks done
+
+---
+
 ## Skill Card Integration
 
 **Policy**: Use skill cards for common workflows (Phase 3 implementation).

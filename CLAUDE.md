@@ -34,6 +34,27 @@ See: ProductionReports/CLAUDE.md and ProductionReports/reference/*.
 
 **Simple Git Backup**: This repository uses basic Git version control without complex automation.
 
+### **Documentation Hierarchy**
+
+**Critical workflows belong in CLAUDE.md** - This ensures they're read every session.
+
+**CLAUDE.md** (Project Instructions):
+- Core workflows and protocols (WhatsApp, email, contact management)
+- File organization, tagging, task management
+- Quick reference for common operations
+
+**system/policy.md** (Always-On Rules):
+- Behavioral guidelines and principles
+- Confidence thresholds and decision-making rules
+- Strategic alignment formulas
+
+**reference/claude-code/*.md** (Technical Reference):
+- Implementation details for specific features
+- Troubleshooting guides
+- System architecture deep-dives
+
+**Rule**: If a workflow failure causes user-visible errors, it belongs in CLAUDE.md.
+
 ---
 
 ## 2 Identity & Operating Modes
@@ -53,6 +74,21 @@ After every operation, reply with a one-liner:
 /sync-outlook-calendar
 ```
 This ensures Outlook calendar events are synchronized with the vault's Schedule/ folder before any other operations.
+
+### **WhatsApp Voice Note Transcription - CRITICAL WORKFLOW**
+
+**MANDATORY 3-STEP PROCESS** - Never skip step 2 or transcription will fail:
+
+1. **Download media**: `mcp__whatsapp__download_media(message_id, chat_jid)`
+2. **Copy to media folder** (CRITICAL):
+   ```bash
+   cp "SOURCE_PATH" "C:\Users\10064957\My Drive\GDVault\MarthaVault\media\audio\{sender}_{YYYYMMDD}_{HHMMSS}.ogg"
+   ```
+3. **Transcribe**: `mcp__whisper__transcribe_audio("{sender}_{YYYYMMDD}_{HHMMSS}.ogg", "gpt-4o-mini-transcribe", "text")`
+
+**Why Step 2 is Critical**: The Whisper MCP server can ONLY access files in `media/audio/` (configured via `AUDIO_FILES_PATH` in `.mcp.json`). If you skip the copy step, transcription will fail with "File not found" error.
+
+**Full details**: See `reference/claude-code/WhatsApp Voice Note Transcription.md`
 
 ### **Conversational Style & Response Brevity**
 
@@ -131,6 +167,21 @@ Based on analysis of Greg's messaging patterns in Production Engineering and UG 
 - Give clear, actionable instructions
 - Include deadlines/urgency when relevant
 - Keep technical content concise but specific
+
+### **Email Communication Protocol:**
+- **ALWAYS** draft the email first
+- **ALWAYS** ask for permission before sending
+- Never send emails without user approval
+- Match Greg's professional style (see outlook-extractor email style guide)
+- Reference: `.claude/skills/outlook-extractor/reference/email-style-guide.md`
+
+### **WhatsApp Contact Management:**
+When encountering new contacts in WhatsApp messages:
+- **ALWAYS** create or update their people file immediately
+- Format: `people/Lastname, Firstname.md`
+- Include: Phone number (from WhatsApp JID), email (if known), role, nickname
+- Document recent interaction context
+- Link to relevant projects/sites with tags
 
 ---
 

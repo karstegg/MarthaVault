@@ -13,6 +13,7 @@ Engineer in Training (EIT) - Black Rock Mine Operations
 
 ## Contact Information
 - Email: Mduduzi.Mabona@assmang.co.za
+- WhatsApp: +27791902660
 
 ## Current Projects & Interactions
 - Fire Door Capital Project - Leading this capital project
