@@ -1,10 +1,11 @@
 ---
-Status:: Active
-Priority:: High
-Assignee:: Greg
-DueDate::
-Tags:: #year/2025 #task
-LastUpdated:: 2025-10-06
+'Status:': Active
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+'LastUpdated:': 2025-10-06
+permalink: tasks/master-task-list
 ---
 
 # Master Task List
