@@ -175,13 +175,20 @@ Based on analysis of Greg's messaging patterns in Production Engineering and UG 
 - Match Greg's professional style (see outlook-extractor email style guide)
 - Reference: `.claude/skills/outlook-extractor/reference/email-style-guide.md`
 
-### **WhatsApp Contact Management:**
-When encountering new contacts in WhatsApp messages:
+### **Contact Management (WhatsApp, Email, Phone):**
+Whenever you obtain a contact's WhatsApp number, email address, or phone number:
 - **ALWAYS** create or update their people file immediately
 - Format: `people/Lastname, Firstname.md`
-- Include: Phone number (from WhatsApp JID), email (if known), role, nickname
+- Include all contact details:
+  - **WhatsApp**: +27... format
+  - **Email**: Full email address
+  - **Phone**: Phone number (if different from WhatsApp)
+  - **Role**: Job title/position
+  - **Nickname**: How they're commonly referred to
 - Document recent interaction context
 - Link to relevant projects/sites with tags
+
+**Rule**: No contact info is ever stored only in messages or external systems. Every email address and phone number discovered gets saved to the person's file.
 
 ---
 
