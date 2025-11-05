@@ -11,14 +11,16 @@
             "id": "44d50977aef8e7ff",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "Dashboard.md",
-                "mode": "preview",
-                "source": false
+                "file": "tasks/Tasks by Person.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": []
+                }
               },
-              "icon": "lucide-file",
-              "title": "Dashboard"
+              "icon": "lucide-trello",
+              "title": "Tasks by Person"
             }
           }
         ]
@@ -221,10 +223,14 @@
   },
   "active": "44d50977aef8e7ff",
   "lastOpenFiles": [
-    "projects/CAS-Level-9/2025-10-28 – CAS L9 OEM Meetings (Nerospec, Fermel, Manitou, Aard, BELL).md",
-    "Dashboard.md",
-    "scripts/commit-kanban.ps1",
+    "Schedule/2025-11-17 - Meeting - Tasks by Person.md",
+    "tasks/Tasks by Theme.md",
     "tasks/Tasks Kanban Board.md",
+    "tasks/Tasks by Site.md",
+    "tasks/Tasks by Person.md",
+    "Dashboard.md",
+    "projects/CAS-Level-9/2025-10-28 – CAS L9 OEM Meetings (Nerospec, Fermel, Manitou, Aard, BELL).md",
+    "scripts/commit-kanban.ps1",
     "Schedule/2025-11-17 - Meeting - Tasks Kanban Board.md",
     "Schedule/2025-11-19 - Meeting - Tasks Kanban Board.md",
     "reference/Obsidian Kanban Plugin Setup.md",
@@ -247,10 +253,7 @@
     "00_Inbox/2025-11-05.md",
     "scripts/check-sync-status.sh",
     "system/github-sync-monitor.md",
-    "projects/N3_Additional_Foreman/2025-11-05 – N3 UG Electrical Foreman Motivation.md",
-    "Operations/Nchwaning3/2025-11-05 – N3 UG Electrical Foreman Motivation.md",
     "projects/N3_Additional_Foreman",
-    "system/Memory Systems Implementation & Validation Report.md",
     "system/styles",
     "system/Memory Systems - Documentation Index.md.tmp.24292.1762309985747",
     "nul",
