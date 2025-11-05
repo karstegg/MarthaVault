@@ -4,225 +4,118 @@ Priority: High
 Assignee: Greg
 Tags: null
 LastUpdated: 2025-11-05
+kanban-plugin: basic
 permalink: tasks/tasks-kanban-board
 ---
 
 # Tasks Kanban Board
 
-**Source**: [[tasks/master_task_list.md]] (72 open tasks)
+**Source**: [[tasks/master_task_list.md]] (72 open tasks)  
 **Last Updated**: 2025-11-05
 
 ---
 
-## 🔴 CRITICAL & OVERDUE (Do First)
+## Kanban
 
-```tasks
-not done
-(priority is high OR priority is critical)
-due before today
-sort by due
-limit 15
+```kanban
+- [ ] **CRITICAL & OVERDUE**
+  - [ ] DMR Brake Test Compliance Response #priority/critical 📅 2025-11-05
+  - [ ] Fire Suppression Pre-Start Checks Implementation #priority/critical 📅 2025-11-07
+  - [ ] HD0054 Fire Investigation Close-out Actions #priority/critical 📅 2025-11-06
+  - [ ] WTW Audit Outstanding Actions #priority/critical 📅 2025-11-08
+  - [ ] Xavier Peterson - N2 Manwinder Investigation Follow-up #priority/critical 📅 2025-11-10
+
+- [ ] **HIGH PRIORITY**
+  - [ ] BEV Fire Safety Programme Q4 Delivery #priority/high #BEV 📅 2025-12-31
+  - [ ] Capital TMM FY25/26 Equipment Orders #priority/high #capital 📅 2025-11-15
+  - [ ] N3 Junior Production Engineer Recruitment #priority/high #recruitment 📅 2025-11-12
+  - [ ] Electrical Foreman Position Recruitment #priority/high #recruitment 📅 2025-11-20
+  - [ ] SA Cranes 6-Month Contract Extension #priority/high #vendor 📅 2025-11-14
+  - [ ] Lubri Vent Engine Protection - S2 Drill Rigs #priority/high #site/Nchwaning3 📅 2025-11-09
+  - [ ] N2 Substation Upgrade Project #priority/high #site/Nchwaning2 📅 2025-11-18
+  - [ ] Gloria Shaft Planning November 2025 #priority/high #site/Gloria 📅 2025-11-15
+
+- [ ] **IN PROGRESS**
+  - [ ] CAS Level 9 DMRE Presentation & Commitment #priority/high 📅 2025-11-30
+  - [ ] Solrock Weekend Work - Shaft Lining Repairs #priority/high #site/Nchwaning2 📅 2025-11-09
+  - [ ] BELL Kuruman Scaler Testing Visit #priority/high #equipment 📅 2025-11-08
+  - [ ] Graben Infrastructure Project - Logistics Alignment #priority/high #capital 📅 2025-11-25
+  - [ ] Equipment Condition Monitoring AI Implementation #priority/medium 📅 2025-12-15
+
+- [ ] **COMPLETED THIS WEEK**
+  - [x] Git sync and vault configuration
+  - [x] Tasks Kanban Board setup
+  - [x] GitHub remote monitoring
+  - [x] Memory systems documentation update
+
+- [ ] **MEDIUM PRIORITY (Schedule This Week)**
+  - [ ] Monthly Engineering Meeting Prep #priority/medium 📅 2025-11-19
+  - [ ] VFL Site Visit Schedule N3 #priority/medium 📅 2025-11-11
+  - [ ] Equipment Inspection Reports #priority/medium 📅 2025-11-12
+  - [ ] Training Coordination with Willie #priority/medium 📅 2025-11-13
+  - [ ] Nerospec & OEM Alignment Meetings #priority/medium 📅 2025-11-17
 ```
 
 ---
 
-## 📋 TO DO
+## Quick Navigation
 
-### 🔴 Critical Priority
-```tasks
-not done
-priority is critical
-due after yesterday
-group by due
-limit 10
-```
-
-### 🟡 High Priority
-```tasks
-not done
-priority is high
-due after yesterday
-group by due
-limit 10
-```
-
-### 🟢 Medium Priority
-```tasks
-not done
-priority is medium
-due after yesterday
-group by priority
-limit 8
-```
+| Section | Link |
+|---------|------|
+| Full Task List | [[tasks/master_task_list.md]] |
+| By Site | [[tasks/master_task_list.md#by-site]] |
+| By Project | [[tasks/master_task_list.md#by-project]] |
+| By Assignee | [[tasks/master_task_list.md#by-assignee]] |
+| Dashboard | [[Dashboard.md]] |
+| Q4 Strategy | [[strategy/ActivePhase.md]] |
 
 ---
 
-## 🔄 IN PROGRESS
+## How to Use This Kanban Board
 
-```tasks
-status is IN_PROGRESS
-group by priority
-sort by due
-limit 10
-```
+**Drag & Drop Cards**:
+- Drag tasks between columns to change their status
+- Move cards to "IN PROGRESS" when you start work
+- Move to "COMPLETED" when done
 
----
+**Customize Your View**:
+- Click the **⚙️ Options** button to customize columns
+- Adjust card grouping and sorting
+- Set color codes for different priority levels
 
-## ✅ RECENTLY COMPLETED (Last 7 Days)
+**Add New Tasks**:
+- Click **+ Add a card** in any column
+- Format: `[ ] Task description #tags 📅 YYYY-MM-DD`
+- Mirror changes back to master_task_list.md
 
-```tasks
-done
-done after 1 week ago
-sort by done
-limit 15
-```
-
----
-
-## 📅 THIS WEEK (Due Before Sunday)
-
-```tasks
-not done
-due before next week
-sort by priority, due
-```
+**Keyboard Shortcuts** (if enabled):
+- `Ctrl/Cmd + Enter` to add card
+- `Escape` to close card details
+- Drag with arrow keys for accessibility
 
 ---
 
-## 🏢 BY SITE
+## Task Format Reference
 
-### Nchwaning 3
-```tasks
-not done
-tags includes #site/Nchwaning3
-sort by priority
-limit 5
+```
+- [ ] Task name #priority/critical #project #site/location 📅 YYYY-MM-DD
+- [x] Completed task #priority/high
 ```
 
-### Nchwaning 2
-```tasks
-not done
-tags includes #site/Nchwaning2
-sort by priority
-limit 5
-```
+**Priority Levels**:
+- 🔴 `#priority/critical` - Do immediately
+- 🟡 `#priority/high` - This week
+- 🟢 `#priority/medium` - Next 2 weeks
+- ⚪ `#priority/low` - Backlog
 
-### Gloria
-```tasks
-not done
-tags includes #site/Gloria
-sort by priority
-limit 5
-```
+**Common Tags**:
+- `#BEV` - Battery Electric Vehicle projects
+- `#capital` - Capital expenditure items
+- `#recruitment` - Personnel/hiring
+- `#fire-safety` - Fire safety compliance
+- `#site/Nchwaning2`, `#site/Nchwaning3`, `#site/Gloria`, `#site/S&W`
 
 ---
 
-## 🔥 BY PROJECT
-
-### BEV Programme
-```tasks
-not done
-tags includes #BEV
-sort by priority
-limit 8
-```
-
-### Fire Safety
-```tasks
-not done
-tags includes #fire-safety
-sort by priority
-limit 5
-```
-
-### Capital Projects
-```tasks
-not done
-tags includes #capital
-sort by priority
-limit 5
-```
-
-### Recruitment
-```tasks
-not done
-tags includes #recruitment
-sort by priority
-limit 5
-```
-
----
-
-## 👥 BY ASSIGNEE
-
-### Assigned to Greg
-```tasks
-not done
-assigned to me
-sort by priority, due
-limit 10
-```
-
-### Delegated to Engineers
-```tasks
-not done
-assigned is not me
-sort by priority
-limit 10
-```
-
----
-
-## 🔁 RECURRING TASKS
-
-### Weekly (Mondays)
-```tasks
-not done
-tags includes #recurring
-limit 10
-```
-
-### Monthly
-```tasks
-not done
-tags includes #recurring
-limit 10
-```
-
----
-
-## 📊 QUICK STATS
-
-**Open Tasks**: 72
-**Critical**: ~15
-**High**: ~25
-**Medium**: ~20
-**Low**: ~12
-
-**Top Priorities This Week**:
-- BEV Fire Safety Programme (CRITICAL - Q4 2025 2.0x strategic weight)
-- HD0054 Fire Investigation close-out actions
-- Capital TMM FY25/26 Programme (Gloria DT orders placed early!)
-- Recruitment (JPE & Electrical Foreman)
-- WTW Audit outstanding actions
-
----
-
-## 🎯 STRATEGIC CONTEXT (Q4 2025 Active Phase)
-
-Tasks aligned with strategic objectives get priority multipliers:
-
-- **Fire Safety & Risk Mitigation**: 2.0x (CRITICAL)
-- **BEV Program Optimization**: 1.5x (HIGH)
-- **Compliance & Audit Excellence**: 1.5x (HIGH)
-- **Team Capacity Building**: 1.2x (MEDIUM)
-- **Capital Planning & Delivery**: 1.2x (MEDIUM)
-
-See: [[strategy/ActivePhase.md]] for full Q4 priorities
-
----
-
-**Navigation**:
-- [[tasks/master_task_list.md]] - Full task list
-- [[Dashboard.md]] - Main dashboard
-- [[tasks/archive/2025-Q3-completed.md]] - Completed tasks archive
+**Last synced**: 2025-11-05 09:45 UTC+2  
+**Board version**: 1.0 (Kanban plugin optimized)

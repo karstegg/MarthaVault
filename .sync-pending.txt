@@ -1,12 +1,1 @@
-﻿A	Schedule/2025-10-07 - Review - master_task_list.md
-A	Schedule/2025-10-08 - Meeting - master_task_list.md
-A	Schedule/2025-10-10 - Review - master_task_list.md
-A	Schedule/2025-10-13 - Review - master_task_list.md
-A	Schedule/2025-10-15 - Review - master_task_list.md
-A	Schedule/2025-10-20 - Review - master_task_list.md
-A	Schedule/2025-10-23 - Meeting - master_task_list.md
-A	Schedule/2025-10-30 - Review - master_task_list.md
-A	Schedule/2025-10-31 - Review - master_task_list.md
-A	Schedule/2025-11-05 - Review - master_task_list.md
-A	Schedule/2025-11-07 - Review - master_task_list.md
-A	tasks/Tasks Kanban Board.md
+﻿M	tasks/Tasks Kanban Board.md

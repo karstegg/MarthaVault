@@ -25,13 +25,15 @@
             "id": "44d50977aef8e7ff",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
                 "file": "tasks/Tasks Kanban Board.md",
-                "mode": "source",
-                "source": false
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": []
+                }
               },
-              "icon": "lucide-file",
+              "icon": "lucide-trello",
               "title": "Tasks Kanban Board"
             }
           }
@@ -236,8 +238,9 @@
   },
   "active": "44d50977aef8e7ff",
   "lastOpenFiles": [
-    "tasks/master_task_list.md",
+    "projects/CAS-Level-9/2025-10-28 – CAS L9 OEM Meetings (Nerospec, Fermel, Manitou, Aard, BELL).md",
     "tasks/Tasks Kanban Board.md",
+    "tasks/master_task_list.md",
     "Schedule/2025-10-13 - Review - master_task_list.md",
     "Schedule/2025-10-30 - Review - master_task_list.md",
     "Schedule/2025-10-20 - Review - master_task_list.md",
@@ -267,7 +270,6 @@
     "system/Memory Systems - Documentation Index.md.tmp.24292.1762309985747",
     "system/Memory Systems Architecture - Claude Desktop Integration.md",
     "system/Memory Systems - Session Startup Protocol.md",
-    "system/Dual Memory System - Quick Reference Guide.md",
     "nul",
     "CLAUDE.md.tmp.4732.1762246121953",
     "projects/BEV-Bay 1 Fire Doors/BEV Bay_Fire Door Budget Update.xlsx",
