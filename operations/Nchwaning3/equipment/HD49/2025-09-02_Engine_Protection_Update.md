@@ -1,9 +1,10 @@
 ---
-Status:: Completed
-Priority:: High
-Assignee:: Greg
-DueDate:: 2025-09-02
-Tags:: #equipment #HD49 #engine-protection #deutz #site/Nchwaning3 #year/2025
+'Status:': Completed
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': 2025-09-02
+'Tags:': null
+permalink: operations/nchwaning3/equipment/hd49/2025-09-02-engine-protection-update
 ---
 
 # HD49 Engine Protection Implementation

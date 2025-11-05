@@ -1,9 +1,10 @@
 ---
-Status:: Complete
-Priority:: Medium
-Assignee:: Xavier Peterson
-DueDate::
-Tags:: #compliance #DMRE #inspection #year/2025 #Gloria #winder #passed #site/Gloria
+'Status:': Complete
+'Priority:': Medium
+'Assignee:': Xavier Peterson
+'DueDate:': null
+'Tags:': null
+permalink: operations/shafts-winders/periodic-legals/dynamic-brake-tests/2025-09-12-dmre-478-winder-inspection-gloria-wp2324-a-passed
 ---
 
 # 2025-09-12 – DMRE 478 Winder Inspection GLORIA WP2324A PASSED

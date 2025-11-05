@@ -1,9 +1,10 @@
 ---
-Status:: Reference
-Priority:: Medium
-Assignee:: Greg
-Date:: 2025-08-14
-Tags:: #BEV #weekly-report #reference #year/2025 #site/BlackRock
+'Status:': Reference
+'Priority:': Medium
+'Assignee:': Greg
+'Date:': 2025-08-14
+'Tags:': null
+permalink: operations/bevs/weekly-reports/2025-08-14-brmo-weekly-report-reference
 ---
 
 # BRMO Weekly Report Reference (14-20 Aug 2025)

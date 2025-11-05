@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-Date:: 2025-09-08
-Tags:: #BEV #BRMO #battery-analysis #charger-analysis #critical #week4 #year/2025
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'Date:': 2025-09-08
+'Tags:': null
+permalink: operations/bevs/weekly-reports/2025-08-28-brmo-week-4-battery-and-charger-analysis
 ---
 
 # BRMO Week 4 Battery and Charger Analysis - August 28 - September 3, 2025

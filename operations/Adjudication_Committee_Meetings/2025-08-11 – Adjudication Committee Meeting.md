@@ -1,9 +1,11 @@
 ---
-Status:: processed
-Priority:: High
-Assignee:: [[Greg Karsten]]
-DueDate:: 
-Tags:: #year/2025 #operations
+'Status:': processed
+'Priority:': High
+'Assignee:':
+- - Greg Karsten
+'DueDate:': null
+'Tags:': null
+permalink: operations/adjudication-committee-meetings/2025-08-11-adjudication-committee-meeting
 ---
 
 # Adjudication Committee Meeting

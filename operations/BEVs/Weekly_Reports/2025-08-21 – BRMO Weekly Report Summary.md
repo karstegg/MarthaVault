@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Critical
-Assignee:: Greg
-Date:: 2025-08-21
-Tags:: #BEV #weekly-report #summary #management #year/2025 #site/BlackRock #critical #executive-escalation
+'Status:': Draft
+'Priority:': Critical
+'Assignee:': Greg
+'Date:': 2025-08-21
+'Tags:': null
+permalink: operations/bevs/weekly-reports/2025-08-21-brmo-weekly-report-summary
 ---
 
 # BRMO Weekly Report Summary (21-27 Aug 2025)

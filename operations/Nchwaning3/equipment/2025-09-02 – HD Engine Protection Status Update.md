@@ -1,9 +1,10 @@
 ---
-Status:: In Progress
-Priority:: Critical
-Assignee:: Greg
-DueDate:: 2025-09-03
-Tags:: #year/2025 #DMRE #deutz #engine-protection #N3 #HD-equipment #critical
+'Status:': In Progress
+'Priority:': Critical
+'Assignee:': Greg
+'DueDate:': 2025-09-03
+'Tags:': null
+permalink: operations/nchwaning3/equipment/2025-09-02-hd-engine-protection-status-update
 ---
 
 # HD Engine Protection System Status - September 2, 2025

@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Medium
-Assignee:: Greg
-DueDate::
-Tags:: #report #BEV #operations #year/2025 #Epiroc #weekly
+'Status:': Draft
+'Priority:': Medium
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: operations/bevs/weekly-reports/2025-09-11-brmo-weekly-report-sept-4-11-epiroc
 ---
 
 # 2025-09-11 – BRMO Weekly Report Sept 4-11 Epiroc

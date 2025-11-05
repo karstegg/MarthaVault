@@ -1,9 +1,11 @@
 ---
-Status:: archived
-Priority:: High
-Assignee:: [[Greg Karsten]]
-DueDate:: 
-Tags:: #year/2025 #operations #site/nchwaning3
+'Status:': archived
+'Priority:': High
+'Assignee:':
+- - Greg Karsten
+'DueDate:': null
+'Tags:': null
+permalink: operations/safety/safety-incidents/2025-08-20-hd0054-fire/hd0054-fire-incident-first-hand-account
 ---
 
 # HD0054 Fire Incident - First Hand Account

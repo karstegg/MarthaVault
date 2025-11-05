@@ -1,9 +1,11 @@
 ---
-Status:: new
-Priority:: High
-Assignee:: [[Sello Taku]]
-DueDate:: 
-Tags:: #year/2025 #operations #site/gloria
+'Status:': new
+'Priority:': High
+'Assignee:':
+- - Sello Taku
+'DueDate:': null
+'Tags:': null
+permalink: operations/bevs/weekly-reports/2025-07-31-brmo-weekly-report-summary
 ---
 
 # BRMO Weekly Report Summary (July 28-31, 2025) - Week 6

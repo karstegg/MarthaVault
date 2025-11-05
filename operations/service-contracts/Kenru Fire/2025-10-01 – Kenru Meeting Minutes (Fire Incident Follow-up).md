@@ -1,9 +1,10 @@
 ---
-Status:: Reference
-Priority:: High
-Assignee:: Greg Karsten
-DueDate::
-Tags:: #year/2025 #meeting #fire-safety #Kenru #site/S&W
+'Status:': Reference
+'Priority:': High
+'Assignee:': Greg Karsten
+'DueDate:': null
+'Tags:': null
+permalink: operations/service-contracts/kenru-fire/2025-10-01-kenru-meeting-minutes-fire-incident-follow-up
 ---
 
 # Kenru Fire Meeting - October 1, 2025

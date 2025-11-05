@@ -1,9 +1,11 @@
 ---
-Status:: active
-Priority:: High
-Assignee:: [[Gregory Karsten]]
-DueDate:: 2025-08-05
-Tags:: #year/2025 #project #site/gloria
+'Status:': active
+'Priority:': High
+'Assignee:':
+- - Gregory Karsten
+'DueDate:': 2025-08-05
+'Tags:': null
+permalink: operations/bevs/weekly-reports/2025-07-27-brmo-weekly-report-summary
 ---
 
 # BRMO Weekly Report Summary (July 21-27, 2025)

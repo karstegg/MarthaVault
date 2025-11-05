@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-Date:: 2025-09-09
-Tags:: #year/2025 #fire-safety #barloworld #mechanical-audit #site/nchwaning3
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'Date:': 2025-09-09
+'Tags:': null
+permalink: operations/safety/2025-09-09-hd54-fire-corrective-actions-and-mechanical-audit-summary
 ---
 
 # HD54 Fire, Corrective Actions and Outstanding Repairs - September 9, 2025 

@@ -1,9 +1,10 @@
 ---
-Status:: Complete
-Priority:: Medium
-Assignee:: Xavier Peterson
-DueDate::
-Tags:: #compliance #DMRE #inspection #year/2025 #NCH2 #winder #passed #site/Nchwaning2
+'Status:': Complete
+'Priority:': Medium
+'Assignee:': Xavier Peterson
+'DueDate:': null
+'Tags:': null
+permalink: operations/shafts-winders/periodic-legals/dynamic-brake-tests/2025-09-12-dmre-478-winder-inspection-nch2-wp49-b1-passed
 ---
 
 # 2025-09-12 – DMRE 478 Winder Inspection NCH2 WP49B1 PASSED

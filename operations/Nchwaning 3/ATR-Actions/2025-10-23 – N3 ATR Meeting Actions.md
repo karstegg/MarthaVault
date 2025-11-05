@@ -1,9 +1,11 @@
 ---
-Status:: Active
-Priority:: High
-Assignee:: [[Sello Sease]]
-DueDate:: 2025-11-30
-Tags:: #year/2025 #meeting #ATR #site/Nchwaning3 #operations #radios #capital
+'Status:': Active
+'Priority:': High
+'Assignee:':
+- - Sello Sease
+'DueDate:': 2025-11-30
+'Tags:': null
+permalink: operations/nchwaning-3/atr-actions/2025-10-23-n3-atr-meeting-actions
 ---
 
 # N3 ATR Meeting Actions - October 23, 2025

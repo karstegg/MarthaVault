@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: Critical
-Assignee:: Greg Karsten
-DueDate:: 2025-11-15
-Tags:: #year/2025 #meeting #fire-safety #Kenru #critical #site/S&W #site/Nchwaning2 #site/Nchwaning3 #site/Gloria
+'Status:': Active
+'Priority:': Critical
+'Assignee:': Greg Karsten
+'DueDate:': 2025-11-15
+'Tags:': null
+permalink: operations/service-contracts/kenru-fire/2025-10-29-kenru-fire-meeting-follow-up-oem-service-quality-commissioning
 ---
 
 # Kenru Fire Meeting - October 29, 2025 (Follow-up to Oct 1 Meeting)

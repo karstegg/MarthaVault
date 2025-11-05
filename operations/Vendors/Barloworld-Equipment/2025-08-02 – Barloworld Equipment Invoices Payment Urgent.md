@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 2025-08-02
-Tags:: #year/2025 #operations
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': 2025-08-02
+'Tags:': null
+permalink: operations/vendors/barloworld-equipment/2025-08-02-barloworld-equipment-invoices-payment-urgent
 ---
 
 # Barloworld Equipment Invoices Payment Urgent

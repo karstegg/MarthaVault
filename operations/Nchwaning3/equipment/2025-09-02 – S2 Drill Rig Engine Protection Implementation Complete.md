@@ -1,9 +1,10 @@
 ---
-Status:: Completed
-Priority:: High  
-Assignee:: Greg
-DueDate:: 2025-09-02
-Tags:: #equipment #engine-protection #S2-drill-rigs #HD0054 #fire-incident #deutz #DMR #site/Nchwaning3 #year/2025
+'Status:': Completed
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': 2025-09-02
+'Tags:': null
+permalink: operations/nchwaning3/equipment/2025-09-02-s2-drill-rig-engine-protection-implementation-complete
 ---
 
 # S2 Drill Rig Engine Protection Implementation - Post HD0054 Fire

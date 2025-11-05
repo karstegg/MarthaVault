@@ -1,9 +1,11 @@
 ---
-Status:: resolved
-Priority:: High
-Assignee:: [[Rudi Opperman]]
-DueDate:: 
-Tags:: #year/2025 #operations #site/nchwaning3
+'Status:': resolved
+'Priority:': High
+'Assignee:':
+- - Rudi Opperman
+'DueDate:': null
+'Tags:': null
+permalink: operations/safety/safety-incidents/2025-08-20-hd0054-fire/2025-08-20-hd0054-major-fire-incident-report
 ---
 
 # HD0054 Fire Incident Report - 2025-08-20

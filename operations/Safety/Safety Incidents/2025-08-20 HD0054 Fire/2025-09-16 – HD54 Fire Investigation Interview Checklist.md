@@ -1,9 +1,10 @@
 ---
-Status:: In Progress
-Priority:: High
-Assignee:: Greg
-DueDate::
-Tags:: #safety #incident #HD54 #fire #investigation #year/2025 #site/Nchwaning3
+'Status:': In Progress
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: operations/safety/safety-incidents/2025-08-20-hd0054-fire/2025-09-16-hd54-fire-investigation-interview-checklist
 ---
 
 # HD54 Fire Investigation Interview Checklist

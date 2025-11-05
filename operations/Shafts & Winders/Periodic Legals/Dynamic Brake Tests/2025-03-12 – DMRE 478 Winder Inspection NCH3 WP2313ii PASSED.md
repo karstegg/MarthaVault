@@ -1,9 +1,10 @@
 ---
-Status:: Complete
-Priority:: Medium
-Assignee:: Xavier Peterson
-DueDate::
-Tags:: #compliance #DMRE #inspection #year/2025 #NCH3 #winder #passed #site/Nchwaning3
+'Status:': Complete
+'Priority:': Medium
+'Assignee:': Xavier Peterson
+'DueDate:': null
+'Tags:': null
+permalink: operations/shafts-winders/periodic-legals/dynamic-brake-tests/2025-03-12-dmre-478-winder-inspection-nch3-wp2313ii-passed
 ---
 
 # 2025-03-12 – DMRE 478 Winder Inspection NCH3 WP2313ii PASSED

@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 2025-08-13
-Tags:: #year/2025 #operations
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': 2025-08-13
+'Tags:': null
+permalink: operations/nchwaning3/equipment/hd0054/maintenance/2025-08-13-hd0054-engine-repair-report
 ---
 
 # HD0054 Engine Repair Report

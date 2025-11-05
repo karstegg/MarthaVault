@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-Date:: 2025-08-28
-Tags:: #year/2025 #BEV #weekly-report #epiroc #operations
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'Date:': 2025-08-28
+'Tags:': null
+permalink: operations/bevs/weekly-reports/2025-08-28-brmo-weekly-report-live-week-35
 ---
 
 # BRMO Weekly Report LIVE - Week 35 (August 28 - September 3, 2025)

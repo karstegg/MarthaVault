@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-Date:: 2025-09-08
-Tags:: #BEV #BRMO #weekly-report #operational #critical #year/2025 #site/BlackRock
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'Date:': 2025-09-08
+'Tags:': null
+permalink: operations/bevs/weekly-reports/2025-08-28-brmo-weekly-report-live-week-4-summary
 ---
 
 # BRMO Weekly Report LIVE - Week 4 Summary (Aug 28 - Sep 3, 2025)

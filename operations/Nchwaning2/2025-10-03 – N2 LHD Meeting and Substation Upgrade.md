@@ -1,9 +1,10 @@
 ---
-Status:: Complete
-Priority:: High
-Assignee:: Greg
-DueDate::
-Tags:: #year/2025 #meeting #site/Nchwaning2 #LHD #substation
+'Status:': Complete
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: operations/nchwaning2/2025-10-03-n2-lhd-meeting-and-substation-upgrade
 ---
 
 # 2025-10-03 – N2 LHD Meeting and Substation Upgrade

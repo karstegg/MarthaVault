@@ -1,9 +1,11 @@
 ---
-Status:: new
-Priority:: Med
-Assignee:: [[Sello Taku]]
-DueDate:: 
-Tags:: #year/2025 #operations #site/gloria
+'Status:': new
+'Priority:': Med
+'Assignee:':
+- - Sello Taku
+'DueDate:': null
+'Tags:': null
+permalink: operations/bevs/weekly-reports/2025-08-06-brmo-weekly-report-live-summary
 ---
 
 # BRMO LIVE Weekly Report Summary (August 1-6, 2025) - CURRENT OPERATIONS
