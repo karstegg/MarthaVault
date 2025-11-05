@@ -86,7 +86,12 @@
       "Skill(outlook-extractor)",
       "Bash(ffprobe:*)",
       "mcp__whisper__list_audio_files",
-      "Read(//c/whatsapp-mcp/whatsapp-mcp-server/**)"
+      "Read(//c/whatsapp-mcp/whatsapp-mcp-server/**)",
+      "mcp__basic-memory__recent_activity",
+      "Bash(sqlite3:*)",
+      "SlashCommand(/sync-vault:*)",
+      "Bash(.vault-sync-checkpoint)",
+      "Bash(sed:*)"
     ],
     "deny": []
   },
