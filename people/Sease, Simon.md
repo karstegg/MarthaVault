@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #people #site/nchwaning3
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: people/sease-simon
 ---
 
 # Sello Simon Sease (Simon)

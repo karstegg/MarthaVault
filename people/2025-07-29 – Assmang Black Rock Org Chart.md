@@ -1,9 +1,10 @@
 ---
-Status:: new
-Priority:: Med
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #people #site/nchwaning2
+'Status:': new
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: people/2025-07-29-assmang-black-rock-org-chart
 ---
 
 # Assmang Black Rock - Organizational Chart

@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: Medium
-Assignee:: Greg
-DueDate::
-Tags:: #year/2025 #person #BRMO #engineering-manager
+'Status:': Active
+'Priority:': Medium
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: people/breet-jacques
 ---
 
 # Jacques Breet

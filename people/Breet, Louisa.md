@@ -1,9 +1,10 @@
 ---
-Status:: new
-Priority:: Med
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #people
+'Status:': new
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: people/breet-louisa
 ---
 
 # Louisa Breet

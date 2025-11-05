@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #people
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: people/izaaks-piet
 ---
 
 # Piet Izaaks
@@ -18,4 +19,4 @@ Mechanical Foreman, Loaders and Scalers
 Reports to: [[people/Sello Sease]]
 Location: [[Nchwaning 3]]
 
-#people #year/2025 #engineering #foreman 
+#people #year/2025 #engineering #foreman

@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: Med
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #people #site/gloria
+'Status:': Active
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: people/dubazane-sipho
 ---
 
 # Sipho Dubazane (Sipo)

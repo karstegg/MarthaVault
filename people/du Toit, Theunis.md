@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate::
-Tags:: #year/2025 #people #civils #maintenance
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: people/du-toit-theunis
 ---
 
 # Theunis du Toit (Bosduif)

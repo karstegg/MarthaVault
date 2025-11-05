@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #person #deutz #technical-manager #engine-protection #DMRE
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: people/jacobs-dirk
 ---
 
 # Dirk Jacobs

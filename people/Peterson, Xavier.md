@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: Med
-Assignee:: Greg
-DueDate::
-Tags:: #year/2025 #person #BRMO
+'Status:': Active
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: people/peterson-xavier
 ---
 
 # Xavier Petersen

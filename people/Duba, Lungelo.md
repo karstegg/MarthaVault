@@ -1,10 +1,12 @@
 ---
-Role:: Foreman Utility Vehicles
-Site:: Nchwaning 2
-Department:: TMM (Technical Maintenance Management)
-Supervisor:: [[Johan Kotze]]
-Started:: 
-Tags:: #people #N2 #foreman #TMM #year/2025
+'Role:': Foreman Utility Vehicles
+'Site:': Nchwaning 2
+'Department:': TMM (Technical Maintenance Management)
+'Supervisor:':
+- - Johan Kotze
+'Started:': null
+'Tags:': null
+permalink: people/duba-lungelo
 ---
 
 # Lungelo Duba
