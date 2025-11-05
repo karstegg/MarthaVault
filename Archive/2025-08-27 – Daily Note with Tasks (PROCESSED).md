@@ -1,10 +1,11 @@
 ---
-Status:: Archived
-Priority:: High
-Assignee:: Greg
-Date:: 2025-08-27
-ProcessedDate:: 2025-09-10
-Tags:: #year/2025 #task #daily-note #archived
+'Status:': Archived
+'Priority:': High
+'Assignee:': Greg
+'Date:': 2025-08-27
+'ProcessedDate:': 2025-09-10
+'Tags:': null
+permalink: archive/2025-08-27-daily-note-with-tasks-processed
 ---
 
 - [x] review proposal from SA Cranes on email ✅ 2025-09-25

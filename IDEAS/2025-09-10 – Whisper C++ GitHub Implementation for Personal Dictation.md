@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Low
-Assignee:: Greg
-Date:: 2025-09-10
-Tags:: #year/2025 #idea #whisper #github #dictation #personal
+'Status:': Draft
+'Priority:': Low
+'Assignee:': Greg
+'Date:': 2025-09-10
+'Tags:': null
+permalink: ideas/2025-09-10-whisper-c-git-hub-implementation-for-personal-dictation
 ---
 
 # Whisper C++ Implementation on GitHub - September 10, 2025
@@ -27,4 +28,4 @@ Build custom dictation app similar to Wispr Flow using GitHub's free tier infras
 
 ## Similar Solutions
 - Wispr Flow (reference implementation)
-- Local Whisper implementations 
+- Local Whisper implementations

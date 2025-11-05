@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Low
-Assignee:: Greg
-DueDate::
-Tags:: #idea #reference #year/2025 #MCP #robotics #gemini
+'Status:': Draft
+'Priority:': Low
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: ideas/2025-09-11-mcp-robot-control-with-gemini-reference
 ---
 
 # 2025-09-11 – MCP Robot Control with Gemini Reference

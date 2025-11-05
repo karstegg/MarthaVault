@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate::
-Tags:: #idea #implementation #obsidian #claude-code #MarthaVault #year/2025
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: personal/projects/martha-vault-intuition-layer/docs/2025-09-21-martha-vault-obsidian-claude-code-implementation
 ---
 
 # MarthaVault Obsidian + Claude Code Implementation

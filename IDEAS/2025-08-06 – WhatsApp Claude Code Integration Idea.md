@@ -1,9 +1,10 @@
 ---
-Status:: new
-Priority:: Med
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #idea
+'Status:': new
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: ideas/2025-08-06-whats-app-claude-code-integration-idea
 ---
 
 # WhatsApp Claude Code Integration Idea

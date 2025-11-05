@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #idea #site/shafts-winders
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: ideas/martha-design-n-evolution/sr-engineer-assistant-system-martha
 ---
 
 > **Version 0.1 – 12 Jul 2025**

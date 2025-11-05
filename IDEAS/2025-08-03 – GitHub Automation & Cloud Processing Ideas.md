@@ -1,9 +1,10 @@
 ---
-Status:: idea
-Priority:: Med
-Assignee:: Greg
-DueDate:: 2025-08-03
-Tags:: #year/2025 #idea #site/gloria
+'Status:': idea
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': 2025-08-03
+'Tags:': null
+permalink: ideas/2025-08-03-git-hub-automation-cloud-processing-ideas
 ---
 
 # Automation & Cloud Processing Ideas

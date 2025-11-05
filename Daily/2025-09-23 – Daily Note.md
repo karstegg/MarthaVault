@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Medium
-Assignee:: Greg
-DueDate::
-Tags:: #daily #meeting #CAS #engineers #year/2025
+'Status:': Draft
+'Priority:': Medium
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: daily/2025-09-23-daily-note
 ---
 
 # 2025-09-23 – Daily Note

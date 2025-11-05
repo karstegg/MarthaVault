@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Medium
-Assignee:: Greg
-DueDate::
-Tags:: #daily #journal #year/2025
+'Status:': Draft
+'Priority:': Medium
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: templates/daily-journal-template
 ---
 
 <% tp.date.now("YYYY-MM-DD") %> – Daily Journal

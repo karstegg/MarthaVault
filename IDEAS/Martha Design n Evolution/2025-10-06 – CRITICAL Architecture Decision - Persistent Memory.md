@@ -1,9 +1,10 @@
 ---
-Status:: Resolved
-Priority:: Critical
-Assignee:: Greg
-DueDate:: 2025-10-13
-Tags:: #year/2025 #idea #architecture #critical #intuition-layer #resolved
+'Status:': Resolved
+'Priority:': Critical
+'Assignee:': Greg
+'DueDate:': 2025-10-13
+'Tags:': null
+permalink: ideas/martha-design-n-evolution/2025-10-06-critical-architecture-decision-persistent-memory
 ---
 
 # ✅ RESOLVED: Persistent Memory Architecture Decision

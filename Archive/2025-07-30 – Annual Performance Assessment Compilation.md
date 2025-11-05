@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 2025-07-30
-Tags:: #year/2025 #note #site/nchwaning2
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': 2025-07-30
+'Tags:': null
+permalink: archive/2025-07-30-annual-performance-assessment-compilation
 ---
 
 Status:: #status/in_progress

@@ -1,9 +1,11 @@
 ---
-Status:: new
-Priority:: High
-Assignee:: [[Gregory Karsten]]
-DueDate:: 2025-08-30
-Tags:: #year/2025 #idea #site/gloria
+'Status:': new
+'Priority:': High
+'Assignee:':
+- - Gregory Karsten
+'DueDate:': 2025-08-30
+'Tags:': null
+permalink: ideas/whats-app-note-to-self-system
 ---
 
 # WhatsApp Note-to-Self System

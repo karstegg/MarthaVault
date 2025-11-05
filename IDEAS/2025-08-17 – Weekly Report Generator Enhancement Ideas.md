@@ -1,9 +1,11 @@
 ---
-Status:: new
-Priority:: Low
-Assignee:: [[Greg Karsten]]
-DueDate:: 
-Tags:: #year/2025 #idea
+'Status:': new
+'Priority:': Low
+'Assignee:':
+- - Greg Karsten
+'DueDate:': null
+'Tags:': null
+permalink: ideas/2025-08-17-weekly-report-generator-enhancement-ideas
 ---
 
 # Weekly Report Generator Enhancement Ideas

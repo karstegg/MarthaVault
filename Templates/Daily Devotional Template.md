@@ -1,9 +1,10 @@
 ---
-"Status:": Draft
-"Priority:": Medium
-"Assignee:": Greg
-"DueDate:":
-"Tags:":
+'Status:': Draft
+'Priority:': Medium
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: templates/daily-devotional-template
 ---
 
 # <% tp.date.now("YYYY-MM-DD") %> – Daily Devotional

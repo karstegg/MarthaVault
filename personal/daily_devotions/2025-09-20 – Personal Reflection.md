@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Low
-Assignee:: Greg
-DueDate::
-Tags:: #personal #reflection #devotional #year/2025
+'Status:': Draft
+'Priority:': Low
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: personal/daily-devotions/2025-09-20-personal-reflection
 ---
 
 # 2025-09-20 – Personal Reflection

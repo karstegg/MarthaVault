@@ -1,9 +1,9 @@
 ---
 tldraw-file: true
 tags:
-  - tldraw
+- tldraw
+permalink: tldraw/tldraw
 ---
-
 
 ```json !!!_START_OF_TLDRAW_DATA__DO_NOT_CHANGE_THIS_PHRASE_!!!
 {

@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #personal
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: personal/projects/gpt5-hydraulic-simulator/01-prompt-preamble
 ---
 
 ROLE: Hydraulics & Simulation co-pilot. Use the files in this project as binding context.

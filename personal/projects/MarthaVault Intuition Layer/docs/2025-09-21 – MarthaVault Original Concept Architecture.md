@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate::
-Tags:: #idea #architecture #MarthaVault #design #evolution #year/2025
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: personal/projects/martha-vault-intuition-layer/docs/2025-09-21-martha-vault-original-concept-architecture
 ---
 
 # MarthaVault Original Concept & Architecture

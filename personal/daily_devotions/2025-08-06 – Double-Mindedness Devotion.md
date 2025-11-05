@@ -1,9 +1,10 @@
 ---
-Status:: new
-Priority:: Low
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #personal
+'Status:': new
+'Priority:': Low
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: personal/daily-devotions/2025-08-06-double-mindedness-devotion
 ---
 
 # Double-Mindedness - James 1:5-8

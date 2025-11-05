@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate:: 2025-10-26
-Tags:: #idea #system #year/2025 #fast-context #code-search #windsurf
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': 2025-10-26
+'Tags:': null
+permalink: personal/projects/martha-vault-intuition-layer/2025-10-19-fast-context-and-code-search-discussion-summary
 ---
 
 # Fast Context and Code Search Discussion Summary

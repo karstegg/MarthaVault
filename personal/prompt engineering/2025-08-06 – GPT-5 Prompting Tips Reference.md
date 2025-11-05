@@ -1,9 +1,10 @@
 ---
-Status:: new
-Priority:: Med
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #personal
+'Status:': new
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: personal/prompt-engineering/2025-08-06-gpt-5-prompting-tips-reference
 ---
 
 # GPT-5 Prompting Tips Reference

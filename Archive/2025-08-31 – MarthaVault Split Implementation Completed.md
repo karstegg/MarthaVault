@@ -1,9 +1,10 @@
 ---
-Status:: Completed
-Priority:: Med
-Assignee:: Greg
-DueDate:: 2025-08-31
-Tags:: #year/2025 #idea #implemented #completed #architecture
+'Status:': Completed
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': 2025-08-31
+'Tags:': null
+permalink: archive/2025-08-31-martha-vault-split-implementation-completed
 ---
 
 # IDEA - Split MarthaVault ✅ IMPLEMENTED

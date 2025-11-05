@@ -1,9 +1,11 @@
 ---
-Status:: new
-Priority:: Med
-Assignee:: [[Greg Karsten]]
-DueDate:: 
-Tags:: #year/2025 #idea
+'Status:': new
+'Priority:': Med
+'Assignee:':
+- - Greg Karsten
+'DueDate:': null
+'Tags:': null
+permalink: ideas/ideas
 ---
 
 # Ideas Repository Reference
@@ -21,4 +23,3 @@ Notable ideas include:
 - GitHub Automation & Cloud Processing
 
 #ideas #repository #reference #year/2025
-

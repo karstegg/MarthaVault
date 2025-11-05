@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 2025-08-17
-Tags:: #year/2025 #idea
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': 2025-08-17
+'Tags:': null
+permalink: ideas/tasks-plugin-review-and-check-your-statuses-2025-08-17-22-30-44
 ---
 
 # Review and check your Statuses

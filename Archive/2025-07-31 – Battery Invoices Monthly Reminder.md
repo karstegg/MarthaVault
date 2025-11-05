@@ -1,9 +1,11 @@
 ---
-Status:: new
-Priority:: High
-Assignee:: [[Gregory Karsten]]
-DueDate:: 2025-08-31
-Tags:: #year/2025 #note
+'Status:': new
+'Priority:': High
+'Assignee:':
+- - Gregory Karsten
+'DueDate:': 2025-08-31
+'Tags:': null
+permalink: archive/2025-07-31-battery-invoices-monthly-reminder
 ---
 
 # Battery Invoices Monthly Reminder

@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #project #personal #AI #implementation-plan #strategic
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: personal/projects/martha-vault-intuition-layer/2025-09-11-implementation-plan-draft-v1
 ---
 
 # MarthaVault Intuition Layer - Implementation Plan Draft v1

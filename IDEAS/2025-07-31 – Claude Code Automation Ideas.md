@@ -1,9 +1,10 @@
 ---
-Status:: new
-Priority:: Low
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #idea
+'Status:': new
+'Priority:': Low
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: ideas/2025-07-31-claude-code-automation-ideas
 ---
 
 # Claude Code Automation Ideas

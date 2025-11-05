@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #personal
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: personal/projects/rb-338-clone/phase-2-spec-sound-seq-parity
 ---
 
 # Phase 2 — Spec + Sound/Seq parity

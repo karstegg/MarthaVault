@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate:: 2025-10-26
-Tags:: #idea #system #year/2025 #context-management #memory-tool
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': 2025-10-26
+'Tags:': null
+permalink: personal/projects/martha-vault-intuition-layer/2025-10-19-context-management-discussion-summary
 ---
 
 # Context Management Discussion Summary

@@ -1,9 +1,10 @@
 ---
-Status:: new
-Priority:: Med
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #personal
+'Status:': new
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: personal/projects/2025-08-06-claude-code-git-hub-integration-workflow
 ---
 
 # Claude Code GitHub Integration Workflow

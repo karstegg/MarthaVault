@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Medium
-Assignee:: Greg
-Date:: 2025-09-07
-Tags:: #idea #AI #research #social-intelligence #GPT5 #year/2025
+'Status:': Draft
+'Priority:': Medium
+'Assignee:': Greg
+'Date:': 2025-09-07
+'Tags:': null
+permalink: ideas/2025-09-07-social-ai-intelligence-research-werewolf-game-benchmarking
 ---
 
 # Social AI Intelligence Research - Werewolf Game Benchmarking

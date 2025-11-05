@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Medium
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #analysis #AI #alignment #technical
+'Status:': Draft
+'Priority:': Medium
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: personal/projects/martha-vault-intuition-layer/docs/alignment-analysis
 ---
 
 # Framework Alignment Analysis - GPT-5 vs Existing Framework

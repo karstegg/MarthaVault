@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 2025-07-29
-Tags:: #year/2025 #personal
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': 2025-07-29
+'Tags:': null
+permalink: personal/2025-07-29-bk-electrical-invoice-analysis
 ---
 
 Status:: #status/new

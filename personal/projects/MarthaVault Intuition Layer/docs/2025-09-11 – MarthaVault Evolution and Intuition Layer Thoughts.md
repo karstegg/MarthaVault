@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Medium
-Assignee:: Greg
-DueDate::
-Tags:: #idea #year/2025 #Martha #evolution #intuition-layer
+'Status:': Draft
+'Priority:': Medium
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: personal/projects/martha-vault-intuition-layer/docs/2025-09-11-martha-vault-evolution-and-intuition-layer-thoughts
 ---
 
 # 2025-09-11 – MarthaVault Evolution and Intuition Layer Thoughts

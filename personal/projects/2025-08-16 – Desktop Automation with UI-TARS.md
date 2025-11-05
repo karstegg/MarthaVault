@@ -1,9 +1,11 @@
 ---
-Status:: new
-Priority:: Low
-Assignee:: [[Gregory Karsten]]
-DueDate:: 
-Tags:: #year/2025 #personal
+'Status:': new
+'Priority:': Low
+'Assignee:':
+- - Gregory Karsten
+'DueDate:': null
+'Tags:': null
+permalink: personal/projects/2025-08-16-desktop-automation-with-ui-tars
 ---
 
 # Desktop Automation with UI-TARS

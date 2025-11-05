@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate::
-Tags:: #year/2025 #personal #reflection #productivity #psychology
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: personal/2025-10-06-planning-process-personal-insight
 ---
 
 # Planning Process - Personal Insight (October 6, 2025)

@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Medium
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #idea #automation #nvidia #robotics #rock-breaker #mining #technology
+'Status:': Draft
+'Priority:': Medium
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: ideas/2025-08-25-nvidia-robotics-rock-breaker-automation
 ---
 
 # NVIDIA Robotics for Rock Breaker Automation

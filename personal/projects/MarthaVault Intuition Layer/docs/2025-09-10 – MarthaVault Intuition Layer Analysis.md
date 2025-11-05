@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Low
-Assignee:: Greg
-Date:: 2025-09-10
-Tags:: #year/2025 #idea #analysis #AI #enhancement #strategic
+'Status:': Draft
+'Priority:': Low
+'Assignee:': Greg
+'Date:': 2025-09-10
+'Tags:': null
+permalink: personal/projects/martha-vault-intuition-layer/docs/2025-09-10-martha-vault-intuition-layer-analysis
 ---
 
 # MarthaVault Intuition Layer - Strategic Analysis

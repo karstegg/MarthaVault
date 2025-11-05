@@ -1,10 +1,11 @@
 ---
-"Status:": Completed
-"Priority:": High
-"Assignee:":
-  - - Greg Karsten
-"DueDate:": 2025-08-25
-"Tags:":
+'Status:': Completed
+'Priority:': High
+'Assignee:':
+- - Greg Karsten
+'DueDate:': 2025-08-25
+'Tags:': null
+permalink: ideas/2025-08-24-martha-vault-repository-split-implementation-plan
 ---
 
 # MarthaVault Repository Split Implementation Plan

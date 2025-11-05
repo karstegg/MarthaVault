@@ -1,9 +1,10 @@
 ---
-Status:: new
-Priority:: Med
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #note #site/gloria
+'Status:': new
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: archive/2025-07-30-maintenance-compliance-performance-report
 ---
 
 # Maintenance Compliance Performance Report

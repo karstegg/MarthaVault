@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate:: 2025-10-26
-Tags:: #idea #system #year/2025 #plugins #hooks #subagents
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': 2025-10-26
+'Tags:': null
+permalink: personal/projects/martha-vault-intuition-layer/2025-10-19-claude-code-plugins-discussion-summary
 ---
 
 # Claude Code Plugins Discussion Summary

@@ -1,9 +1,10 @@
 ---
-Status:: Idea
-Priority:: Medium
-Assignee:: Greg
-DueDate::
-Tags:: #idea #year/2025 #gemini #cli #upgrade #mcp #memory
+'Status:': Idea
+'Priority:': Medium
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: ideas/2025-10-06-gemini-cli-future-upgrade-mcp-server-integration
 ---
 
 # Idea: Upgrade Gemini CLI with MCP Server Integration

@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: High
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #project #personal #AI #intuition-layer #strategic
+'Status:': Active
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: personal/projects/martha-vault-intuition-layer/2025-09-11-project-charter
 ---
 
 # MarthaVault Intuition Layer - Project Charter

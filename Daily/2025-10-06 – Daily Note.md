@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate:: 2025-10-06
-Tags:: #year/2025 #daily #priority/high
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': 2025-10-06
+'Tags:': null
+permalink: daily/2025-10-06-daily-note
 ---
 
 # Monday, October 6, 2025 – Daily Note

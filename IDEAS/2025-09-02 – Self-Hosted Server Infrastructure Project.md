@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Medium
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #idea #personal #server #self-hosted #AI #transcription #infrastructure #technology
+'Status:': Draft
+'Priority:': Medium
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: ideas/2025-09-02-self-hosted-server-infrastructure-project
 ---
 
 # Self-Hosted Server Infrastructure Project

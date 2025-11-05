@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Medium
-Assignee:: Greg
-DueDate::
-Tags:: #daily #BEV #organizational-structure #planning #year/2025
+'Status:': Draft
+'Priority:': Medium
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: daily/2025-09-16-daily-note
 ---
 
 # 2025-09-16 – Daily Note

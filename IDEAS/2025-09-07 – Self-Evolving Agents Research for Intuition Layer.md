@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Medium
-Assignee:: Greg
-Date:: 2025-09-07
-Tags:: #idea #AI #research #self-evolving #intuition-layer #adaptive-systems #year/2025
+'Status:': Draft
+'Priority:': Medium
+'Assignee:': Greg
+'Date:': 2025-09-07
+'Tags:': null
+permalink: ideas/2025-09-07-self-evolving-agents-research-for-intuition-layer
 ---
 
 # Self-Evolving Agents Research for Intuition Layer

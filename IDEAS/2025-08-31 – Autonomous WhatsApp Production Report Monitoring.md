@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #idea #automation #whatsapp #production-monitoring #autonomous #site/gloria
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: ideas/2025-08-31-autonomous-whats-app-production-report-monitoring
 ---
 
 # IDEA: Autonomous Production Report Monitoring

@@ -1,9 +1,11 @@
 ---
-Status:: active
-Priority:: High
-Assignee:: [[Gregory Karsten]]
-DueDate:: 
-Tags:: #year/2025 #note #site/gloria
+'Status:': active
+'Priority:': High
+'Assignee:':
+- - Gregory Karsten
+'DueDate:': null
+'Tags:': null
+permalink: archive/task-management-dashboard-consolidated
 ---
 
 # Task Management Dashboard

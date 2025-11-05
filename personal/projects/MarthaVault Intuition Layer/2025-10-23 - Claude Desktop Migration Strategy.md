@@ -1,10 +1,11 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate:: 2025-10-31
-Tags:: #system #MarthaVault #architecture #strategy #year/2025
-LastUpdated:: 2025-10-23
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': 2025-10-31
+'Tags:': null
+'LastUpdated:': 2025-10-23
+permalink: personal/projects/martha-vault-intuition-layer/2025-10-23-claude-desktop-migration-strategy
 ---
 
 # Claude Desktop Migration Strategy

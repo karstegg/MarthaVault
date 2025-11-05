@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Medium
-Assignee:: Greg
-DueDate::
-Tags:: #daily #BaaS #capital #personnel #year/2025
+'Status:': Draft
+'Priority:': Medium
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: daily/2025-09-22-daily-note
 ---
 
 # 2025-09-22 – Daily Note
@@ -25,4 +26,4 @@ What are monthly BaaS invoices, we must set up a system to measure battery avail
 ## Discussion with [[Rudi Opperman]]
 - We will make a decision regarding the appointment of [[Shane]] into the position of short engineer.
 - Other than that, we can consider [[Neo]] as the candidate, as she is on par with the other candidate. She is also a woman that can give Engineering department some color
-- We also discussed. The appointment of two junior engineers must write a memo and then advertise for a two-year fixed-term contract. 
+- We also discussed. The appointment of two junior engineers must write a memo and then advertise for a two-year fixed-term contract.

@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Medium
-Assignee:: Greg
-Date:: 2025-09-07
-Tags:: #idea #AI #research #microsoft #bitnet #inference #efficiency #year/2025
+'Status:': Draft
+'Priority:': Medium
+'Assignee:': Greg
+'Date:': 2025-09-07
+'Tags:': null
+permalink: ideas/2025-09-07-microsoft-bit-net-1-bit-llm-inference-framework
 ---
 
 # Microsoft BitNet - 1-bit LLM Inference Framework

@@ -1,9 +1,10 @@
 ---
-Status:: #status/urgent
-Priority:: High
-Assignee:: Greg
-DueDate:: 2025-10-20
-Tags:: #task #critical #personal #MarthaVault #mcp_configuration #technical_debt #year/2025
+'Status:': null
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': 2025-10-20
+'Tags:': null
+permalink: personal/projects/martha-vault-intuition-layer/2025-10-15-urgent-migrate-graph-memory-to-permanent-storage
 ---
 
 # ⚠️ URGENT: Migrate Graph Memory to Permanent Storage

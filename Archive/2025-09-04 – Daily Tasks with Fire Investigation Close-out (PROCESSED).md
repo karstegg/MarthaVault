@@ -1,10 +1,11 @@
 ---
-Status:: Archived
-Priority:: High
-Assignee:: Greg
-Date:: 2025-09-04
-ProcessedDate:: 2025-09-10
-Tags:: #daily #task #year/2025 #safety #DMR #fire-investigation #archived
+'Status:': Archived
+'Priority:': High
+'Assignee:': Greg
+'Date:': 2025-09-04
+'ProcessedDate:': 2025-09-10
+'Tags:': null
+permalink: archive/2025-09-04-daily-tasks-with-fire-investigation-close-out-processed
 ---
 
 # Daily Tasks - September 4, 2025

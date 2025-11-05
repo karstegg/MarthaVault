@@ -1,9 +1,10 @@
 ---
-Status:: Complete
-Priority:: Med
-Assignee:: Greg
-DueDate::
-Tags:: #year/2025 #task #daily-capture
+'Status:': Complete
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: personal/daily-notes/2025-10-06-daily-tasks
 ---
 
 # 2025-10-06 – Daily Tasks

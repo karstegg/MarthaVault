@@ -1,10 +1,11 @@
 ---
-Status:: Archived
-Priority:: Med
-Assignee:: Greg
-Date:: 2025-08-25
-ProcessedDate:: 2025-09-10
-Tags:: #year/2025 #daily #site/gloria #archived
+'Status:': Archived
+'Priority:': Med
+'Assignee:': Greg
+'Date:': 2025-08-25
+'ProcessedDate:': 2025-09-10
+'Tags:': null
+permalink: archive/2025-08-25-daily-note-processed
 ---
 
 # Daily Note - 25 August 2025

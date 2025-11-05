@@ -1,9 +1,10 @@
 ---
-
 excalidraw-plugin: parsed
-tags: [excalidraw]
-
+tags:
+- excalidraw
+permalink: personal/projects/martha-vault-intuition-layer/2025-09-11-data-transformation-flow-stage-3-excalidraw
 ---
+
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 

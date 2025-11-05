@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #feedback #AI #iteration #technical-review
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: personal/projects/martha-vault-intuition-layer/docs/gpt5-feedback-log
 ---
 
 # GPT-5 Feedback Log - MarthaVault Intuition Layer

@@ -1,9 +1,10 @@
 ---
-"Status:": Draft
-"Priority:": Low
-"Assignee:": Greg
-"Date:": 2025-09-10
-"Tags:":
+'Status:': Draft
+'Priority:': Low
+'Assignee:': Greg
+'Date:': 2025-09-10
+'Tags:': null
+permalink: personal/projects/martha-vault-intuition-layer/docs/2025-09-10-martha-vault-intuition-layer-enhancement-framework
 ---
 
 # MarthaVault Intuition Layer Enhancement Framework - September 10, 2025
