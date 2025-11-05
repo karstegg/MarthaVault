@@ -1,9 +1,12 @@
 ---
-Status:: Active
-Priority:: Medium
-Assignee:: [[Karsten, Gregory]]
-DueDate:: 2025-10-14
-Tags:: #year/2025 #task #contract #SA_Cranes #priority/medium
+'Status:': Active
+'Priority:': Medium
+'Assignee:':
+- - Karsten
+  - Gregory
+'DueDate:': 2025-10-14
+'Tags:': null
+permalink: tasks/2025-10-07-sa-crane-contract-6-month-extension
 ---
 
 # SA Crane Contract 6 Month Extension

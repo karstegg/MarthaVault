@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 2025-08-18
-Tags:: #year/2025 #task
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': 2025-08-18
+'Tags:': null
+permalink: tasks/2025-08-18-implement-gazetted-regulations-update
 ---
 
 # Implement Gazetted Regulations Update

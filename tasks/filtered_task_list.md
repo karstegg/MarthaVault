@@ -1,9 +1,10 @@
 ---
-"Status:": Draft
-"Priority:": Med
-"Assignee:": Greg
-"DueDate:":
-"Tags:":
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: tasks/filtered-task-list
 ---
 
 # Live Filtered Task List (Excluding Personal & Completed)

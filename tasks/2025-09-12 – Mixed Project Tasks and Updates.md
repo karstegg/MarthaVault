@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate:: 2025-09-12
-Tags:: #task #meeting #year/2025 #BEV #S2 #Solrock #equipment
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': 2025-09-12
+'Tags:': null
+permalink: tasks/2025-09-12-mixed-project-tasks-and-updates
 ---
 
 # 2025-09-12 – Mixed Project Tasks and Updates

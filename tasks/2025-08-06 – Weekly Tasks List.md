@@ -1,11 +1,12 @@
 ---
-Status:: new
-Priority:: Med
-Assignee:: [[Greg]]
-DueDate:: 
-Tags:: #year/2025 #task #site/shafts-winders
+'Status:': new
+'Priority:': Med
+'Assignee:':
+- - Greg
+'DueDate:': null
+'Tags:': null
+permalink: tasks/2025-08-06-weekly-tasks-list
 ---
-
 
 # Weekly Tasks List (This Week)
 

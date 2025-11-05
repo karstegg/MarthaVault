@@ -1,8 +1,10 @@
 ---
-Status:: #status/new
-Priority:: #priority/medium
-Assignee:: [[Xavier Peterson]]
-DueDate:: 2025-09-17
+'Status:': null
+'Priority:': null
+'Assignee:':
+- - Xavier Peterson
+'DueDate:': 2025-09-17
+permalink: tasks/2025-09-10-xavier-peterson-n2-manwinder-investigation-follow-up
 ---
 
 # N2 Manwinder Investigation Follow-up

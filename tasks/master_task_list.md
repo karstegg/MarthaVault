@@ -140,17 +140,19 @@ permalink: tasks/master-task-list
 **See**: [[Capital TMM Procurement Tracker FY25-26]] for full tracker (29 units, R157.3M)
 
 #### Gloria - URGENT Replacements (Sipho & John)
-- [ ] Gloria DT0105/DT0106 dump truck replacement - Finalize specs 📅 2025-10-31 #task #year/2025 #priority/critical #capital #site/Gloria
+- [x] Gloria DT0105/DT0106 dump truck replacement - Finalize specs 📅 2025-10-31 ✅ 2025-11-04 #task #year/2025 #priority/critical #capital #site/Gloria
   - Assigned to: [[Dubazane, Sipho]] (Engineer), [[Eiler, John]] (Planner)
   - Equipment: 2x MT 436 LP (2015 models - 10 years old) → Elphinstone AD30
   - Budget: R40.3M
   - Note: OLDEST PRODUCTION TMM IN FY25/26 PLAN - Bundle order for volume discount
+  - Completed: Specs finalized 2025-11-04
 - [ ] Gloria DT0105/DT0106 - Request Epiroc quotations 📅 2025-11-30 #task #year/2025 #priority/critical #capital #site/Gloria
   - Assigned to: [[Eiler, John]]
   - Note: 2-unit bundle quotation
-- [ ] Gloria DT0105/DT0106 - Place purchase orders 📅 2025-12-15 #task #year/2025 #priority/critical #capital #site/Gloria
+- [x] Gloria DT0105/DT0106 - Place purchase orders 📅 2025-12-15 ✅ 2025-11-04 #task #year/2025 #priority/critical #capital #site/Gloria
   - Assigned to: [[Dubazane, Sipho]]
-  - Note: 18-month lead time - order ASAP
+  - Note: Orders placed 2025-11-04 (6 weeks early!)
+  - Delivery: Expected end November 2025 (faster than typical 18-month lead time)
 
 #### Nchwaning 3 - Production TMM (Sello, Kagisho, Joyce)
 - [ ] N3 RT0039 roof bolter replacement - Finalize specs 📅 2025-10-31 #task #year/2025 #priority/critical #capital #site/Nchwaning3

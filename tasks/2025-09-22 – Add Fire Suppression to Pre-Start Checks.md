@@ -1,9 +1,11 @@
 ---
-Status:: Pending
-Priority:: High
-Assignee:: [[Chris Ross]]
-DueDate:: 2025-10-01
-Tags:: #task #safety #fire-suppression #pre-start #procedures #year/2025 #site/Nchwaning3
+'Status:': Pending
+'Priority:': High
+'Assignee:':
+- - Chris Ross
+'DueDate:': 2025-10-01
+'Tags:': null
+permalink: tasks/2025-09-22-add-fire-suppression-to-pre-start-checks
 ---
 
 # Add Fire Suppression to Pre-Start Checks

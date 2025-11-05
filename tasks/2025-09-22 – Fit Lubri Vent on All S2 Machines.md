@@ -1,9 +1,11 @@
 ---
-Status:: Pending
-Priority:: High
-Assignee:: [[Sello Sease]]
-DueDate:: 2025-10-15
-Tags:: #task #safety #HD54 #fire-prevention #lubrivent #year/2025 #site/Nchwaning3
+'Status:': Pending
+'Priority:': High
+'Assignee:':
+- - Sello Sease
+'DueDate:': 2025-10-15
+'Tags:': null
+permalink: tasks/2025-09-22-fit-lubri-vent-on-all-s2-machines
 ---
 
 # Fit Lubri Vent on All S2 Machines

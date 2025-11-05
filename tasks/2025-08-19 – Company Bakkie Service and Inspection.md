@@ -1,10 +1,11 @@
 ---
-"Status:": Completed
-"Priority:": Med
-"Assignee:":
-  - - Greg Karsten
-"DueDate:": 2025-08-19
-"Tags:":
+'Status:': Completed
+'Priority:': Med
+'Assignee:':
+- - Greg Karsten
+'DueDate:': 2025-08-19
+'Tags:': null
+permalink: tasks/2025-08-19-company-bakkie-service-and-inspection
 ---
 
 # Company Bakkie Service and Inspection

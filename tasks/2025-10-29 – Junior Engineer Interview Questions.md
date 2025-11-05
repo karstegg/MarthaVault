@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: Medium
-Assignee:: Greg
-DueDate:: 2025-11-15
-Tags:: #year/2025 #task #recruitment #engineering
+'Status:': Active
+'Priority:': Medium
+'Assignee:': Greg
+'DueDate:': 2025-11-15
+'Tags:': null
+permalink: tasks/2025-10-29-junior-engineer-interview-questions
 ---
 
 # Junior Engineer Interview Questions

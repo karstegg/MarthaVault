@@ -1,9 +1,10 @@
 ---
-Status:: Complete
-Priority:: High
-Assignee:: Greg
-DueDate:: 2025-10-10
-Tags:: #year/2025 #task #planning #weekly
+'Status:': Complete
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': 2025-10-10
+'Tags:': null
+permalink: tasks/2025-10-06-weekly-priorities
 ---
 
 # Weekly Priorities - 2025-10-06

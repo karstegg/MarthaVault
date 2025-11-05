@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate:: 2025-09-15
-Tags:: #task #year/2025 #electrical #S2 #DMR #compliance
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': 2025-09-15
+'Tags:': null
+permalink: tasks/2025-09-15-daily-tasks-and-action-items
 ---
 
 # 2025-09-15 – Daily Tasks and Action Items
@@ -36,4 +37,4 @@ Tags:: #task #year/2025 #electrical #S2 #DMR #compliance
 ## People Mentioned
 - [[Sello Sease]] - N3 Electrical Supervisor assignment
 - [[Lourens van der Heerden]] - S2 orders follow-up
-- [[Opperman, Rudi]] - N3 restructure memo source 
+- [[Opperman, Rudi]] - N3 restructure memo source

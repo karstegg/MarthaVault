@@ -1,9 +1,11 @@
 ---
-Status:: new
-Priority:: Med
-Assignee:: [[Greg]]
-DueDate:: 
-Tags:: #year/2025 #task
+'Status:': new
+'Priority:': Med
+'Assignee:':
+- - Greg
+'DueDate:': null
+'Tags:': null
+permalink: tasks/2025-08-06-document-reviews-share-point-task
 ---
 
 # Document Reviews SharePoint Task

@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: High
-Assignee:: Greg
-DueDate:: 2025-08-25
-Tags:: #year/2025 #task
+'Status:': Active
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': 2025-08-25
+'Tags:': null
+permalink: tasks/2025-08-25-msta-fire-audit-follow-ups
 ---
 
 # MSTA Fire Audit Follow-ups - 25 August 2025

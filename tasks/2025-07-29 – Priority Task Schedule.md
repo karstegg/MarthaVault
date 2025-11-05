@@ -1,9 +1,10 @@
 ---
-Status:: new
-Priority:: High
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #task #site/gloria
+'Status:': new
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: tasks/2025-07-29-priority-task-schedule
 ---
 
 # Priority Task Schedule - Week of July 29, 2025

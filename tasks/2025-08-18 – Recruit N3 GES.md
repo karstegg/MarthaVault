@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 2025-08-18
-Tags:: #year/2025 #task #site/nchwaning3
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': 2025-08-18
+'Tags:': null
+permalink: tasks/2025-08-18-recruit-n3-ges
 ---
 
 # Recruit N3 GES (General Engineering Supervisor)

@@ -1,9 +1,10 @@
 ---
-Status:: Archive
-Priority:: N/A
-Assignee:: Greg
-Created:: 2025-10-06
-Tags:: #year/2025 #archive #completed
+'Status:': Archive
+'Priority:': N/A
+'Assignee:': Greg
+'Created:': 2025-10-06
+'Tags:': null
+permalink: tasks/archive/2025-q3-completed
 ---
 
 # Completed Tasks Archive - Q3 2025
