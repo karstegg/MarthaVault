@@ -19,7 +19,7 @@ permalink: tasks/tasks-kanban-board
 ```tasks
 not done
 (priority is high OR priority is critical)
-(due before today OR description includes CRITICAL OR description includes URGENT)
+due before today
 sort by due
 limit 15
 ```
@@ -51,7 +51,7 @@ limit 10
 not done
 priority is medium
 due after yesterday
-group by project
+group by priority
 limit 8
 ```
 
@@ -60,9 +60,10 @@ limit 8
 ## 🔄 IN PROGRESS
 
 ```tasks
-status.type is IN_PROGRESS
+status is IN_PROGRESS
 group by priority
 sort by due
+limit 10
 ```
 
 ---
@@ -70,6 +71,7 @@ sort by due
 ## ✅ RECENTLY COMPLETED (Last 7 Days)
 
 ```tasks
+done
 done after 1 week ago
 sort by done
 limit 15
@@ -92,7 +94,7 @@ sort by priority, due
 ### Nchwaning 3
 ```tasks
 not done
-description includes #site/Nchwaning3
+tags includes #site/Nchwaning3
 sort by priority
 limit 5
 ```
@@ -100,7 +102,7 @@ limit 5
 ### Nchwaning 2
 ```tasks
 not done
-description includes #site/Nchwaning2
+tags includes #site/Nchwaning2
 sort by priority
 limit 5
 ```
@@ -108,7 +110,7 @@ limit 5
 ### Gloria
 ```tasks
 not done
-description includes #site/Gloria
+tags includes #site/Gloria
 sort by priority
 limit 5
 ```
@@ -120,7 +122,7 @@ limit 5
 ### BEV Programme
 ```tasks
 not done
-description includes #BEV
+tags includes #BEV
 sort by priority
 limit 8
 ```
@@ -128,7 +130,7 @@ limit 8
 ### Fire Safety
 ```tasks
 not done
-(description includes fire-safety OR description includes fire_safety)
+tags includes #fire-safety
 sort by priority
 limit 5
 ```
@@ -136,7 +138,7 @@ limit 5
 ### Capital Projects
 ```tasks
 not done
-description includes #capital
+tags includes #capital
 sort by priority
 limit 5
 ```
@@ -144,7 +146,7 @@ limit 5
 ### Recruitment
 ```tasks
 not done
-description includes #recruitment
+tags includes #recruitment
 sort by priority
 limit 5
 ```
@@ -156,7 +158,7 @@ limit 5
 ### Assigned to Greg
 ```tasks
 not done
-description includes [[Karsten, Gregory]]
+assigned to me
 sort by priority, due
 limit 10
 ```
@@ -164,7 +166,7 @@ limit 10
 ### Delegated to Engineers
 ```tasks
 not done
-(description includes [[Sease, Sello]] OR description includes [[Dubazane, Sipho]] OR description includes [[Nzuza, Sikelela]])
+assigned is not me
 sort by priority
 limit 10
 ```
@@ -176,15 +178,15 @@ limit 10
 ### Weekly (Mondays)
 ```tasks
 not done
-description includes #recurring
-description includes Monday
+tags includes #recurring
+limit 10
 ```
 
 ### Monthly
 ```tasks
 not done
-description includes #recurring
-description includes Monthly
+tags includes #recurring
+limit 10
 ```
 
 ---

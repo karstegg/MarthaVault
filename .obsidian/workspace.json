@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tasks/master_task_list.md",
+                "file": "tasks/Tasks Kanban Board.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "master_task_list"
+              "title": "Tasks Kanban Board"
             }
           }
         ],
@@ -211,7 +211,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 697
+    "width": 697,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -233,8 +234,10 @@
       "martha-agent:Martha Agent": false
     }
   },
-  "active": "41950e5bf20242c5",
+  "active": "44d50977aef8e7ff",
   "lastOpenFiles": [
+    "tasks/master_task_list.md",
+    "tasks/Tasks Kanban Board.md",
     "Schedule/2025-10-13 - Review - master_task_list.md",
     "Schedule/2025-10-30 - Review - master_task_list.md",
     "Schedule/2025-10-20 - Review - master_task_list.md",
@@ -246,7 +249,6 @@
     "Schedule/2025-11-05 - Review - master_task_list.md",
     "Schedule/2025-10-08 - Meeting - master_task_list.md",
     "Schedule/2025-10-23 - Meeting - master_task_list.md",
-    "tasks/Tasks Kanban Board.md",
     "scripts/git-repair.ps1",
     "scripts/sync-and-push.ps1",
     "Archive/Tasks Kanban Board (CONSOLIDATED).md",
@@ -266,7 +268,6 @@
     "system/Memory Systems Architecture - Claude Desktop Integration.md",
     "system/Memory Systems - Session Startup Protocol.md",
     "system/Dual Memory System - Quick Reference Guide.md",
-    "system/Memory System Performance Testing Framework.md",
     "nul",
     "CLAUDE.md.tmp.4732.1762246121953",
     "projects/BEV-Bay 1 Fire Doors/BEV Bay_Fire Door Budget Update.xlsx",
