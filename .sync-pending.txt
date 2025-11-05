@@ -1,2 +1,9 @@
-﻿A	projects/CAS-Level-9/2025-10-22 ΓÇô Meeting Notes (NeroSpec, Aard, HD54 Fire Review).md
-M	tasks/master_task_list.md
+﻿M	IDEAS/2025-10-06 - Gemini CLI Future Upgrade - MCP Server Integration.md
+M	IDEAS/Martha Design n Evolution/Original Martha Architecture Diagram.md
+M	IDEAS/Martha Design n Evolution/Original Martha Sequence Diagram.md
+M	IDEAS/Martha Design n Evolution/Sr Engineer Assistant System (Martha).md
+M	IDEAS/Martha Design n Evolution/Temp/Martha Archtecture 1.0.md
+M	IDEAS/Martha Design n Evolution/Temp/Martha Sequence Diagram 1.0.md
+M	IDEAS/Tasks Plugin - Review and check your Statuses 2025-08-17 22-30-44.md
+M	IDEAS/WhatsApp Note-to-Self System.md
+M	IDEAS/ideas.md

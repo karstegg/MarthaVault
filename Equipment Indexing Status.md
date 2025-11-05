@@ -1,8 +1,9 @@
 ---
-Status:: In Progress
-Priority:: High
-Created:: 2025-10-10
-Tags:: #memory #equipment #indexing #vault-sync
+'Status:': In Progress
+'Priority:': High
+'Created:': 2025-10-10
+'Tags:': null
+permalink: equipment-indexing-status
 ---
 
 # Equipment Indexing Status - 2025-10-10

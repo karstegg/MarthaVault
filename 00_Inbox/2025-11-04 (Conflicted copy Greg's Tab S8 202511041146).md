@@ -4,7 +4,7 @@
 'Assignee:': Greg
 'DueDate:': null
 'Tags:': null
-permalink: 00-inbox/2025-11-04
+permalink: 00-inbox/2025-11-04-conflicted-copy-gregs-tab-s8-202511041146
 ---
 
 ## ✅ Tasks
@@ -28,5 +28,6 @@ permalink: 00-inbox/2025-11-04
 - [ ] Fermel
 	- [ ] Access sorted.
 	- [ ] Data Loggers and Harness delivered tomorrow.
-	- [ ] Program cfg at machines at Gloria today
-- [ ] Manito
+	- [ ] Program cfg at machines at Gloria
+- [ ] MANITOU
+- [ ]

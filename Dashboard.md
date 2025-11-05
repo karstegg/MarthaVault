@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: High
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #dashboard #task-management
+'Status:': Active
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: dashboard
 ---
 
 # MarthaVault Comprehensive Dashboard
