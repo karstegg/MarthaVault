@@ -3,6 +3,7 @@ title: N2 LHD Meeting
 allDay: true
 date: 2025-10-03
 completed: null
+permalink: schedule/2025-10-03-n2-lhd-meeting
 ---
 
 # N2 LHD Meeting

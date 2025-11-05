@@ -2,10 +2,11 @@
 title: Standards Meeting
 allDay: false
 date: 2025-10-09
-startTime: "13:30"
-endTime: "15:30"
+startTime: '13:30'
+endTime: '15:30'
 completed: null
-Tags:: #meeting #standards #engineering #year/2025
+'Tags:': null
+permalink: schedule/2025-10-09-standards-meeting
 ---
 
 # Standards Meeting - October 9, 2025

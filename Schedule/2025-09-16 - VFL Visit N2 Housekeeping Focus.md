@@ -3,7 +3,8 @@ title: VFL Visit N2 - Housekeeping Focus
 allDay: true
 date: 2025-09-16
 completed: null
-Tags:: #VFL #leadership #N2 #housekeeping #personal #year/2025
+'Tags:': null
+permalink: schedule/2025-09-16-vfl-visit-n2-housekeeping-focus
 ---
 
 # VFL Week 3 - September 16, 2025

@@ -2,10 +2,11 @@
 title: HD54 Fire Investigator Report FB
 allDay: false
 date: 2025-09-09
-startTime: "14:00"
-endTime: "15:00"
+startTime: '14:00'
+endTime: '15:00'
 completed: null
-Tags:: #meeting #fire-investigation #HD54 #safety #year/2025
+'Tags:': null
+permalink: schedule/2025-09-09-hd54-fire-investigator-report-meeting
 ---
 
 # HD54 Fire Investigator Report FB - September 9, 2025

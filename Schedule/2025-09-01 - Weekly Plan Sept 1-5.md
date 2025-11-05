@@ -3,11 +3,12 @@ title: Weekly Plan September 1-5, 2025
 allDay: false
 date: 2025-09-01
 completed: null
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate:: 2025-09-05
-Tags:: #year/2025 #weekly-plan #schedule #calendar #planning
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': 2025-09-05
+'Tags:': null
+permalink: schedule/2025-09-01-weekly-plan-sept-1-5
 ---
 
 # Weekly Plan: September 1-5, 2025

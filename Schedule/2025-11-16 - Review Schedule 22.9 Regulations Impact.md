@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 2025-11-16
-Tags:: #year/2025 #calendar
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': 2025-11-16
+'Tags:': null
+permalink: schedule/2025-11-16-review-schedule-22-9-regulations-impact
 ---
 
 # Review Schedule 22.9 Regulations Impact

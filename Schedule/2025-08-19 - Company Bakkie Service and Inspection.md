@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 2025-08-19
-Tags:: #year/2025 #calendar
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': 2025-08-19
+'Tags:': null
+permalink: schedule/2025-08-19-company-bakkie-service-and-inspection
 ---
 
 # Company Bakkie Service and Inspection

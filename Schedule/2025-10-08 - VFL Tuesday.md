@@ -3,9 +3,10 @@ title: VFL Tuesday
 allDay: false
 date: 2025-10-08
 startTime: 07:00
-endTime: 14:00
+endTime: 840
 completed: null
 recurrence: weekly
+permalink: schedule/2025-10-08-vfl-tuesday
 ---
 
 # VFL (Visible Felt Leadership) - Tuesday

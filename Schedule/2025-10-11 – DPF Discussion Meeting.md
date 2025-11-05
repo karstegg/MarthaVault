@@ -1,9 +1,12 @@
 ---
-Status:: Active
-Priority:: High
-Assignee:: [[Karsten, Gregory]]
-DueDate:: 2025-10-11
-Tags:: #year/2025 #meeting #DPF #environmental #compliance
+'Status:': Active
+'Priority:': High
+'Assignee:':
+- - Karsten
+  - Gregory
+'DueDate:': 2025-10-11
+'Tags:': null
+permalink: schedule/2025-10-11-dpf-discussion-meeting
 ---
 
 # DPF Discussion Meeting - Christo vd Walt

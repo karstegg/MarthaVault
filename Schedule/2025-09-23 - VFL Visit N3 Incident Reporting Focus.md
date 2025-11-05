@@ -3,7 +3,8 @@ title: VFL Visit N3 - Incident Reporting Focus
 allDay: true
 date: 2025-09-23
 completed: null
-Tags:: #VFL #leadership #N3 #incident-reporting #personal #year/2025
+'Tags:': null
+permalink: schedule/2025-09-23-vfl-visit-n3-incident-reporting-focus
 ---
 
 # VFL Week 4 - September 23, 2025

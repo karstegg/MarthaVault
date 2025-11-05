@@ -2,9 +2,10 @@
 title: BEV Battery Breakdown reporting
 allDay: false
 date: 2025-10-21
-startTime: "17:00"
-endTime: "17:30"
+startTime: '17:00'
+endTime: '17:30'
 completed: null
+permalink: schedule/2025-10-21-bev-battery-breakdown-reporting
 ---
 
 # BEV Battery Breakdown reporting

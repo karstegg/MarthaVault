@@ -2,9 +2,10 @@
 title: D-Level quarterly feedback and Recognition session
 allDay: false
 date: 2025-10-24
-startTime: "11:00"
-endTime: "15:00"
+startTime: '11:00'
+endTime: '15:00'
 completed: null
+permalink: schedule/2025-10-24-d-level-quarterly-feedback-and-recognition-session
 ---
 
 # D-Level quarterly feedback and Recognition session

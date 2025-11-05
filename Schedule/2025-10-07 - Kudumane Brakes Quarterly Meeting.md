@@ -2,10 +2,11 @@
 title: Kudumane Brakes and Supplies Quarterly Meeting
 allDay: false
 date: 2025-10-07
-startTime: "09:00"
-endTime: "12:00"
+startTime: 09:00
+endTime: '12:00'
 completed: null
-Tags:: #meeting #vendor #quarterly #brakes #year/2025
+'Tags:': null
+permalink: schedule/2025-10-07-kudumane-brakes-quarterly-meeting
 ---
 
 # Kudumane Brakes and Supplies Quarterly Meeting - October 7, 2025

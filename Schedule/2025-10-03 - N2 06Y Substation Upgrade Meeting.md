@@ -3,6 +3,7 @@ title: N2 06Y Substation Upgrade Meeting
 allDay: true
 date: 2025-10-03
 completed: null
+permalink: schedule/2025-10-03-n2-06-y-substation-upgrade-meeting
 ---
 
 # N2 06Y Substation Upgrade Meeting

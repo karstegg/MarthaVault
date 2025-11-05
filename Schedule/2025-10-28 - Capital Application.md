@@ -2,9 +2,10 @@
 title: Capital Application
 allDay: false
 date: 2025-10-28
-startTime: "16:00"
-endTime: "17:00"
+startTime: '16:00'
+endTime: '17:00'
 completed: null
+permalink: schedule/2025-10-28-capital-application
 ---
 
 # Capital Application

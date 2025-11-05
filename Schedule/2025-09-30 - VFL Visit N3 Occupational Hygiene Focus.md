@@ -3,7 +3,8 @@ title: VFL Visit N3 - Occupational Hygiene Focus
 allDay: true
 date: 2025-09-30
 completed: null
-Tags:: #VFL #leadership #N3 #occupational-hygiene #personal #year/2025
+'Tags:': null
+permalink: schedule/2025-09-30-vfl-visit-n3-occupational-hygiene-focus
 ---
 
 # VFL Week 5 - September 30, 2025

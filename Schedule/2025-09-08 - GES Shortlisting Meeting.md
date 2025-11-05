@@ -2,10 +2,11 @@
 title: Shortlisting General Engineering Supervisor
 allDay: false
 date: 2025-09-08
-startTime: "11:00"
-endTime: "12:00"
+startTime: '11:00'
+endTime: '12:00'
 completed: null
-Tags:: #meeting #recruitment #GES #shortlisting #year/2025
+'Tags:': null
+permalink: schedule/2025-09-08-ges-shortlisting-meeting
 ---
 
 # Shortlisting: General Engineering Supervisor - September 8, 2025

@@ -3,6 +3,7 @@ title: VFL - Nchwaning 3
 allDay: true
 date: 2025-11-04
 completed: null
+permalink: schedule/2025-11-04-vfl-nchwaning-3
 ---
 
 # VFL - Nchwaning 3

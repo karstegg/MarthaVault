@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 2025-08-31
-Tags:: #year/2025 #calendar #site/nchwaning3
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': 2025-08-31
+'Tags:': null
+permalink: schedule/2025-08-31-recruit-n3-ges-deadline
 ---
 
 # N3 GES Recruitment - Final Deadline

@@ -4,6 +4,7 @@ allDay: false
 date: 2025-09-17
 time: 07:00
 completed: null
+permalink: schedule/2025-09-17-shaft-exam-solrock-project
 ---
 
 # 2025-09-17 - Shaft Exam Solrock Project

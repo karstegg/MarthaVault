@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 2025-08-31
-Tags:: #year/2025 #calendar
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': 2025-08-31
+'Tags:': null
+permalink: schedule/2025-08-31-xavier-sp-mine-safety-lamp-room-contract
 ---
 
 # Xavier SP Mine Safety Lamp Room Contract - Due Date

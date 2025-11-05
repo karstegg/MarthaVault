@@ -2,10 +2,11 @@
 title: Capital Projects Update Group 02 Meeting 03
 allDay: false
 date: 2025-10-20
-startTime: "11:30"
-endTime: "13:30"
+startTime: '11:30'
+endTime: '13:30'
 completed: null
-Tags:: #meeting #capital-projects #project-updates #year/2025
+'Tags:': null
+permalink: schedule/2025-10-20-capital-projects-update-group-02-meeting-03
 ---
 
 # Capital Projects Update Group 02 Meeting 03 - October 20, 2025

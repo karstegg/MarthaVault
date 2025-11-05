@@ -3,6 +3,7 @@ title: VFL - Black Rock
 allDay: true
 date: 2025-10-21
 completed: null
+permalink: schedule/2025-10-21-vfl-black-rock
 ---
 
 # VFL - Black Rock

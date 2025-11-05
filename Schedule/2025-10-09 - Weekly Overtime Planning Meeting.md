@@ -6,6 +6,7 @@ startTime: 07:00
 endTime: 08:00
 completed: null
 recurrence: weekly
+permalink: schedule/2025-10-09-weekly-overtime-planning-meeting
 ---
 
 # Weekly Overtime Planning Meeting

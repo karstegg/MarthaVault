@@ -2,10 +2,11 @@
 title: Nerospec Weekly Meeting
 allDay: false
 date: 2025-09-10
-startTime: "08:30"
-endTime: "09:00"
+startTime: 08:30
+endTime: 09:00
 completed: null
-Tags:: #meeting #weekly #nerospec #vendor #year/2025
+'Tags:': null
+permalink: schedule/2025-09-10-nerospec-weekly-meeting
 ---
 
 # Nerospec Weekly Meeting - September 10, 2025

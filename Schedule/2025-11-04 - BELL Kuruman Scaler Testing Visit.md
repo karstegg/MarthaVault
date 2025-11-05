@@ -3,6 +3,7 @@ title: BELL Kuruman Scaler Testing Visit
 allDay: true
 date: 2025-11-04
 completed: null
+permalink: schedule/2025-11-04-bell-kuruman-scaler-testing-visit
 ---
 
 # BELL Kuruman Scaler Testing Visit

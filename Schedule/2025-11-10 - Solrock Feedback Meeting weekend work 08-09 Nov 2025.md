@@ -2,9 +2,10 @@
 title: Solrock Feedback Meeting weekend work 08-09 Nov 2025
 allDay: false
 date: 2025-11-10
-startTime: "10:00"
-endTime: "11:00"
+startTime: '10:00'
+endTime: '11:00'
 completed: null
+permalink: schedule/2025-11-10-solrock-feedback-meeting-weekend-work-08-09-nov-2025
 ---
 
 # Solrock Feedback Meeting weekend work 08-09 Nov 2025

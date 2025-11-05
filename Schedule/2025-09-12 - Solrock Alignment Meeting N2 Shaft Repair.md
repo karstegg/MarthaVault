@@ -2,10 +2,11 @@
 title: Solrock Alignment Meeting for Nchwaning II Vertical Shaft Repair Work
 allDay: false
 date: 2025-09-12
-startTime: "11:00"
-endTime: "12:00"
+startTime: '11:00'
+endTime: '12:00'
 completed: null
-Tags:: #meeting #solrock #N2 #shaft-repair #alignment #year/2025
+'Tags:': null
+permalink: schedule/2025-09-12-solrock-alignment-meeting-n2-shaft-repair
 ---
 
 # Solrock Alignment Meeting for Nchwaning II Vertical Shaft Repair Work - September 12, 2025

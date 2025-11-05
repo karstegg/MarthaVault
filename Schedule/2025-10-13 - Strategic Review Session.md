@@ -6,6 +6,7 @@ startTime: 08:30
 endTime: 09:15
 completed: null
 recurrence: weekly
+permalink: schedule/2025-10-13-strategic-review-session
 ---
 
 # Strategic Review & Planning Session (Weekly)

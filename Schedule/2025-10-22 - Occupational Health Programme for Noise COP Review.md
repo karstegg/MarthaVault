@@ -2,9 +2,10 @@
 title: Occupational Health Programme for Noise COP Review
 allDay: false
 date: 2025-10-22
-startTime: "12:00"
-endTime: "14:00"
+startTime: '12:00'
+endTime: '14:00'
 completed: null
+permalink: schedule/2025-10-22-occupational-health-programme-for-noise-cop-review
 ---
 
 # Occupational Health Programme for Noise COP Review

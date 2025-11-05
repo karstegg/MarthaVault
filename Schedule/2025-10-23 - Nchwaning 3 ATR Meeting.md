@@ -3,7 +3,8 @@ title: Nchwaning 3 ATR Meeting
 allDay: true
 date: 2025-10-23
 completed: null
-Tags:: #meeting #ATR #site/Nchwaning3 #operations
+'Tags:': null
+permalink: schedule/2025-10-23-nchwaning-3-atr-meeting
 ---
 
 # Nchwaning 3 ATR Meeting

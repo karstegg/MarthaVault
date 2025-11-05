@@ -2,10 +2,11 @@
 title: HD0054 Fire Incident Section 54 Instruction Outstanding Actions
 allDay: false
 date: 2025-09-08
-startTime: "09:00"
-endTime: "10:00"
+startTime: 09:00
+endTime: '10:00'
 completed: null
-Tags:: #meeting #fire-incident #HD54 #section54 #safety #year/2025
+'Tags:': null
+permalink: schedule/2025-09-08-hd0054-fire-section-54-outstanding-actions
 ---
 
 # HD0054 Fire Incident Section 54 Instruction Outstanding Actions - September 8, 2025

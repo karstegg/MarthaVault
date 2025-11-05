@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: High
-Assignee:: Multiple
-Date:: 2025-09-01
-Tags:: #VFL #schedule #leadership #year/2025 #operational
+'Status:': Active
+'Priority:': High
+'Assignee:': Multiple
+'Date:': 2025-09-01
+'Tags:': null
+permalink: schedule/2025-09-vfl-schedule-september-2025
 ---
 
 # Visible Felt Leadership Schedule - September 2025

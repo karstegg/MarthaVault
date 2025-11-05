@@ -2,9 +2,10 @@
 title: Solrock Alignment Meeting weekend work 08-09 Nov 2025
 allDay: false
 date: 2025-11-07
-startTime: "13:00"
-endTime: "14:00"
+startTime: '13:00'
+endTime: '14:00'
 completed: null
+permalink: schedule/2025-11-07-solrock-alignment-meeting-weekend-work-08-09-nov-2025
 ---
 
 # Solrock Alignment Meeting weekend work 08-09 Nov 2025

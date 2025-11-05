@@ -2,9 +2,10 @@
 title: Nchwaning No.2 Shaft Planning Meeting-November 2025
 allDay: false
 date: 2025-10-30
-startTime: "11:00"
-endTime: "14:00"
+startTime: '11:00'
+endTime: '14:00'
 completed: null
+permalink: schedule/2025-10-30-nchwaning-no-2-shaft-planning-meeting-november-2025
 ---
 
 # Nchwaning No.2 Shaft Planning Meeting-November 2025

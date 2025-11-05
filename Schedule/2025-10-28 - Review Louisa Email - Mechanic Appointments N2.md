@@ -2,9 +2,10 @@
 title: Review Louisa Email - Mechanic Appointments N2
 allDay: false
 date: 2025-10-28
-startTime: "08:00"
-endTime: "09:00"
+startTime: 08:00
+endTime: 09:00
 completed: null
+permalink: schedule/2025-10-28-review-louisa-email-mechanic-appointments-n2
 ---
 
 # Review Email - Mechanic Appointments at Nchwaning 2

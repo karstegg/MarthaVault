@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 2025-08-19
-Tags:: #year/2025 #calendar #site/gloria
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': 2025-08-19
+'Tags:': null
+permalink: schedule/2025-08-19-vfl-week-3-gloria-training
 ---
 
 # VFL Week 3 - Gloria Training

@@ -2,10 +2,11 @@
 title: Special SHE Committee Meeting (Consultation MCOP)
 allDay: false
 date: 2025-09-10
-startTime: "11:00"
-endTime: "13:30"
+startTime: '11:00'
+endTime: '13:30'
 completed: null
-Tags:: #meeting #SHE #MCOP #consultation #safety #year/2025
+'Tags:': null
+permalink: schedule/2025-09-10-special-she-committee-meeting-mcop
 ---
 
 # Special SHE Committee Meeting (Consultation MCOP) - September 10, 2025

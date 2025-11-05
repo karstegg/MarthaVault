@@ -2,10 +2,11 @@
 title: Weekly Overtime Meeting
 allDay: false
 date: 2025-09-11
-startTime: "07:00"
-endTime: "08:00"
+startTime: 07:00
+endTime: 08:00
 completed: null
-Tags:: #meeting #weekly #overtime #operational #year/2025
+'Tags:': null
+permalink: schedule/2025-09-11-weekly-overtime-meeting
 ---
 
 # Weekly Overtime Meeting - September 11, 2025

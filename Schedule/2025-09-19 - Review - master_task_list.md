@@ -3,6 +3,7 @@ title: Review - master_task_list
 allDay: true
 date: 2025-09-19
 completed: null
+permalink: schedule/2025-09-19-review-master-task-list
 ---
 
 # Review - master_task_list

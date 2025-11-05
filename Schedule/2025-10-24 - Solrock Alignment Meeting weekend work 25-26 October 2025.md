@@ -2,9 +2,10 @@
 title: Solrock Alignment Meeting weekend work 25-26 October 2025
 allDay: false
 date: 2025-10-24
-startTime: "13:00"
-endTime: "14:00"
+startTime: '13:00'
+endTime: '14:00'
 completed: null
+permalink: schedule/2025-10-24-solrock-alignment-meeting-weekend-work-25-26-october-2025
 ---
 
 # Solrock Alignment Meeting weekend work 25-26 October 2025

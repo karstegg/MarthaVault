@@ -2,9 +2,10 @@
 title: Solrock Feedback Meeting Weekend work 25-26 October 2025
 allDay: false
 date: 2025-10-27
-startTime: "10:00"
-endTime: "11:00"
+startTime: '10:00'
+endTime: '11:00'
 completed: null
+permalink: schedule/2025-10-27-solrock-feedback-meeting-weekend-work-25-26-october-2025
 ---
 
 # Solrock Feedback Meeting Weekend work 25-26 October 2025

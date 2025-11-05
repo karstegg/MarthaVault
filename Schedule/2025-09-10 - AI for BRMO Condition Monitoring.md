@@ -2,10 +2,11 @@
 title: AI for BRMO Condition Monitoring and Online Oil Analysis
 allDay: false
 date: 2025-09-10
-startTime: "14:00"
-endTime: "15:00"
+startTime: '14:00'
+endTime: '15:00'
 completed: null
-Tags:: #meeting #AI #condition-monitoring #BRMO #oil-analysis #year/2025
+'Tags:': null
+permalink: schedule/2025-09-10-ai-for-brmo-condition-monitoring
 ---
 
 # AI for BRMO Condition Monitoring and Online Oil Analysis - September 10, 2025

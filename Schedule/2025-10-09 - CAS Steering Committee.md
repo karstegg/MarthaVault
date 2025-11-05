@@ -6,6 +6,7 @@ startTime: 07:45
 endTime: 08:30
 completed: null
 recurrence: weekly
+permalink: schedule/2025-10-09-cas-steering-committee
 ---
 
 # CAS (CPS) Project Steering Committee

@@ -4,7 +4,8 @@ allDay: true
 date: 2025-09-11
 endDate: 2025-09-12
 completed: null
-Tags:: #visit #barloworld #vendor #multi-day #year/2025
+'Tags:': null
+permalink: schedule/2025-09-11-barloworld-visit
 ---
 
 # Barloworld Visit - September 11-12, 2025

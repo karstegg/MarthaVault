@@ -6,6 +6,7 @@ startTime: 07:00
 endTime: 08:00
 completed: null
 recurrence: weekly
+permalink: schedule/2025-10-10-s2-and-bev-optimisation-weekly
 ---
 
 # S2 & BEV Optimisation - Weekly Progress Meeting

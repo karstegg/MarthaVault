@@ -2,10 +2,11 @@
 title: Monthly Engineering Meeting
 allDay: false
 date: 2025-09-18
-startTime: "10:00"
-endTime: "14:30"
+startTime: '10:00'
+endTime: '14:30'
 completed: null
-Tags:: #meeting #engineering #monthly #year/2025
+'Tags:': null
+permalink: schedule/2025-09-18-monthly-engineering-meeting
 ---
 
 # Monthly Engineering Meeting - September 18, 2025

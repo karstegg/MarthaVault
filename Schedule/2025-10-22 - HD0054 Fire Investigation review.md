@@ -2,9 +2,10 @@
 title: HD0054 Fire Investigation review
 allDay: false
 date: 2025-10-22
-startTime: "11:00"
-endTime: "12:00"
+startTime: '11:00'
+endTime: '12:00'
 completed: null
+permalink: schedule/2025-10-22-hd0054-fire-investigation-review
 ---
 
 # HD0054 Fire Investigation review
