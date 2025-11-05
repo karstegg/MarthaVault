@@ -1,1 +1,3 @@
-﻿M	tasks/Tasks Kanban Board.md
+﻿A	Schedule/2025-11-17 - Meeting - Tasks Kanban Board.md
+A	Schedule/2025-11-19 - Meeting - Tasks Kanban Board.md
+M	tasks/Tasks Kanban Board.md

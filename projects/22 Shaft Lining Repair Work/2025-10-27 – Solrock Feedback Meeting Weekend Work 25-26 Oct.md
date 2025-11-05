@@ -66,7 +66,7 @@ How can we schedule Solrock work during the year-end shutdown period?
 
 ## Next Actions
 
-- [ ] Await response from Rudi on year-end shutdown scheduling #task #priority/high #year/2025 📅 2025-11-05
+- [x] Await response from Rudi on year-end shutdown scheduling #task #priority/high #year/2025 📅 2025-11-05 ✅ 2025-11-05
 - [ ] Plan remaining Solrock weekends to complete by 28 November #task #priority/high #year/2025 📅 2025-11-28
 
 ---
