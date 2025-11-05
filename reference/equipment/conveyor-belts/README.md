@@ -1,8 +1,9 @@
 ---
-Status:: Reference
-Priority:: Low
-Assignee:: Engineering Team
-Tags:: #year/2025 #reference #equipment #conveyor-belts #technical-docs
+'Status:': Reference
+'Priority:': Low
+'Assignee:': Engineering Team
+'Tags:': null
+permalink: reference/equipment/conveyor-belts/readme
 ---
 
 # Conveyor Belt Technical Reference Library

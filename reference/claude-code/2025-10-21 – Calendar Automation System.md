@@ -1,8 +1,9 @@
 ---
-Status:: Reference
-Priority:: High
-Tags:: #reference #claude-code #calendar #automation #outlook #hooks #year/2025
-Created:: 2025-10-21
+'Status:': Reference
+'Priority:': High
+'Tags:': null
+'Created:': 2025-10-21
+permalink: reference/claude-code/2025-10-21-calendar-automation-system
 ---
 
 # Calendar Automation System

@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Medium
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #equipment #komatsu-ghh #mobile-charger #BEV #specifications #competitive-analysis #future-consideration
+'Status:': Draft
+'Priority:': Medium
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: reference/equipment/2025-08-31-komatsu-ghh-mobile-charger-specs
 ---
 
 # Komatsu GHH - Mobile Charger Specifications

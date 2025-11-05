@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: High
-Assignee:: Greg Karsten
-DueDate::
-Tags:: #year/2025 #strategy #weekly #focus
+'Status:': Active
+'Priority:': High
+'Assignee:': Greg Karsten
+'DueDate:': null
+'Tags:': null
+permalink: strategy/focus-of-week
 ---
 
 # Focus of the Week - Weekly Tactical Priorities

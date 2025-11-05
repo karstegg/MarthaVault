@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #reference #site/gloria
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: reference/equipment/brmo-ug-production-fleet
 ---
 
 |   |   |   |   |   |

@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate::
-Tags:: #year/2025 #company #vendor
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: reference/company/iritron
 ---
 
 # Iritron

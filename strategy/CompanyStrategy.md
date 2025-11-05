@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: Strategic
-Assignee:: Greg Karsten
-DueDate::
-Tags:: #year/2025 #strategy #long-term #company
+'Status:': Active
+'Priority:': Strategic
+'Assignee:': Greg Karsten
+'DueDate:': null
+'Tags:': null
+permalink: strategy/company-strategy
 ---
 
 # Company Strategy - Long-Term Objectives

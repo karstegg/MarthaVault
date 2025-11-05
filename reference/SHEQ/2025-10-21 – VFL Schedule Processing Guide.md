@@ -1,8 +1,9 @@
 ---
-Status:: Reference
-Priority:: Medium
-Tags:: #reference #VFL #SHEQ #schedule #process #year/2025
-Created:: 2025-10-21
+'Status:': Reference
+'Priority:': Medium
+'Tags:': null
+'Created:': 2025-10-21
+permalink: reference/sheq/2025-10-21-vfl-schedule-processing-guide
 ---
 
 # VFL Schedule Processing Guide

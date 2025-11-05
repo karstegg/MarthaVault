@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: System
-Assignee:: Claude Code
-DueDate::
-Tags:: #year/2025 #system #skill #SHEQ #VFL #automation
+'Status:': Active
+'Priority:': System
+'Assignee:': Claude Code
+'DueDate:': null
+'Tags:': null
+permalink: system/skills/vfl-schedule-processing
 ---
 
 # Skill: VFL Schedule Processing

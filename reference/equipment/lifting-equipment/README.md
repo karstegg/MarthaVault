@@ -1,8 +1,9 @@
 ---
-Status:: Reference
-Priority:: High
-Assignee:: Engineering Team
-Tags:: #year/2025 #reference #equipment #lifting-equipment #safety #compliance
+'Status:': Reference
+'Priority:': High
+'Assignee:': Engineering Team
+'Tags:': null
+permalink: reference/equipment/lifting-equipment/readme
 ---
 
 # Lifting Equipment Standards & Procedures Library

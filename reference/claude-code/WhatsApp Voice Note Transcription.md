@@ -1,9 +1,10 @@
 ---
-Status:: Reference
-Priority:: High
-Assignee:: Claude
-DueDate::
-Tags:: #year/2025 #reference #whatsapp #transcription #workflow
+'Status:': Reference
+'Priority:': High
+'Assignee:': Claude
+'DueDate:': null
+'Tags:': null
+permalink: reference/claude-code/whats-app-voice-note-transcription
 ---
 
 # WhatsApp Voice Note Transcription Workflow

@@ -1,8 +1,9 @@
 ---
-Status:: Active
-Priority:: System
-Assignee:: Claude Code
-Tags:: #year/2025 #system #skill #workflow #triage
+'Status:': Active
+'Priority:': System
+'Assignee:': Claude Code
+'Tags:': null
+permalink: system/skills/inbox-triage
 ---
 
 # Skill Card: Inbox → Triage Workflow

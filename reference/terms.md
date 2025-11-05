@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #reference #site/shafts-winders
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: reference/terms
 ---
 
 UG — Underground operations

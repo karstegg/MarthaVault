@@ -1,9 +1,10 @@
 ---
-Status:: new
-Priority:: Med
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #reference #site/nchwaning2
+'Status:': new
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: reference/2025-07-29-team-directory
 ---
 
 # Assmang Black Rock - Team Directory

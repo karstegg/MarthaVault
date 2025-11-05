@@ -1,10 +1,12 @@
 ---
-Status:: Active
-Priority:: High
-Assignee:: Greg Karsten
-DueDate:: 2025-12-31
-Tags:: #year/2025 #strategy #quarterly #active-phase
+'Status:': Active
+'Priority:': High
+'Assignee:': Greg Karsten
+'DueDate:': 2025-12-31
+'Tags:': null
+permalink: strategy/active-phase
 ---
+
 x`
 # Active Phase - Q4 2025 Strategic Focus
 

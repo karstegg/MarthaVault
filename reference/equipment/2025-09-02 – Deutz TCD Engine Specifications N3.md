@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #equipment #deutz #engines #N3 #specifications #hydraulic-drills
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: reference/equipment/2025-09-02-deutz-tcd-engine-specifications-n3
 ---
 
 # Deutz TCD Engine Specifications - Nchwaning 3 Hydraulic Drill Rigs

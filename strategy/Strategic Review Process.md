@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate::
-Tags:: #year/2025 #strategy #process #planning
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: strategy/strategic-review-process
 ---
 
 # Strategic Review Process - Planning & Prioritization

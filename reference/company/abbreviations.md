@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #reference
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: reference/company/abbreviations
 ---
 
 GES — General Engineering Supervisor

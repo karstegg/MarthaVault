@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: System
-Assignee:: Claude Code
-DueDate::
-Tags:: #year/2025 #system #policy #always-on #rules
+'Status:': Active
+'Priority:': System
+'Assignee:': Claude Code
+'DueDate:': null
+'Tags:': null
+permalink: system/policy
 ---
 
 # System Policy - Core Policies & Always-On Rules

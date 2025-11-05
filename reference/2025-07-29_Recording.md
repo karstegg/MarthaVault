@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 2025-07-29
-Tags:: #year/2025 #reference
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': 2025-07-29
+'Tags:': null
+permalink: reference/2025-07-29-recording
 ---
 
 Status:: #status/new

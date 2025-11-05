@@ -1,8 +1,9 @@
 ---
-Status:: Active
-Priority:: System
-Assignee:: Claude Code
-Tags:: #year/2025 #system #skill #workflow #daily-notes
+'Status:': Active
+'Priority:': System
+'Assignee:': Claude Code
+'Tags:': null
+permalink: system/skills/daily-note-creation
 ---
 
 # Skill Card: Daily Note Creation

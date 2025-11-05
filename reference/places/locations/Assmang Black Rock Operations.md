@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #reference #site/nchwaning2
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: reference/places/locations/assmang-black-rock-operations
 ---
 
 # Assmang Black Rock Operations
