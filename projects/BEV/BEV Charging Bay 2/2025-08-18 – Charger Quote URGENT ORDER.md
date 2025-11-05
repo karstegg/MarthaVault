@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Critical
-Assignee:: Greg
-DueDate:: 2025-09-06
-Tags:: #year/2025 #BEV #chargers #quote #bay2 #procurement #urgent #critical #order
+'Status:': Draft
+'Priority:': Critical
+'Assignee:': Greg
+'DueDate:': 2025-09-06
+'Tags:': null
+permalink: projects/bev/bev-charging-bay-2/2025-08-18-charger-quote-urgent-order
 ---
 
 # BEV Bay 2 Charger Quote - URGENT ORDER REQUIRED

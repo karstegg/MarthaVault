@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 2025-08-16
-Tags:: #year/2025 #project #site/nchwaning3
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': 2025-08-16
+'Tags:': null
+permalink: projects/bev/bev-charging-bay-2/2025-08-16-nchwaning-3-bev-charging-bay-2-capital-application
 ---
 
 # Capital Application: Nchwaning 3 BEV Charging Bay 2

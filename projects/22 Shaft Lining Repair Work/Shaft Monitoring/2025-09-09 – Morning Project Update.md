@@ -1,9 +1,12 @@
 ---
-Status:: Active
-Priority:: High
-Assignee:: [[Petersen, Xavier]]
-DueDate:: 
-Tags:: #year/2025 #project #site/Nchwaning2 #shaft-repair #drilling
+'Status:': Active
+'Priority:': High
+'Assignee:':
+- - Petersen
+  - Xavier
+'DueDate:': null
+'Tags:': null
+permalink: projects/22-shaft-lining-repair-work/shaft-monitoring/2025-09-09-morning-project-update
 ---
 
 # 22 Shaft Lining Repair Work - Morning Update (September 9, 2025)

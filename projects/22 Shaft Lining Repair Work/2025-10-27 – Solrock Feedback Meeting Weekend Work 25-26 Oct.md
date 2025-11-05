@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: High
-Assignee:: Xavier
-DueDate:: 2025-11-28
-Tags:: #year/2025 #meeting #solrock #shaft-lining #site/Nchwaning2 #weekend-work
+'Status:': Active
+'Priority:': High
+'Assignee:': Xavier
+'DueDate:': 2025-11-28
+'Tags:': null
+permalink: projects/22-shaft-lining-repair-work/2025-10-27-solrock-feedback-meeting-weekend-work-25-26-oct
 ---
 
 # Solrock Feedback Meeting - Weekend Work 25-26 October 2025

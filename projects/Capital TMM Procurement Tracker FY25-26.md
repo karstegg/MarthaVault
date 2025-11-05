@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: Critical
-Assignee:: Chris (Overall), Rahab (Oversight)
-DueDate:: 2026-06-30
-Tags:: #year/2025 #capital #procurement #tracker #TMM #replacement #site/Nchwaning2 #site/Nchwaning3 #site/Gloria
+'Status:': Active
+'Priority:': Critical
+'Assignee:': Chris (Overall), Rahab (Oversight)
+'DueDate:': 2026-06-30
+'Tags:': null
+permalink: projects/capital-tmm-procurement-tracker-fy25-26
 ---
 
 # Capital TMM Procurement Tracker FY25-26

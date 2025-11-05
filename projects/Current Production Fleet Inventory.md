@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: Medium
-Assignee:: Greg
-DueDate::
-Tags:: #year/2025 #equipment #inventory #fleet #TMM #site/Nchwaning2 #site/Nchwaning3 #site/Gloria
+'Status:': Active
+'Priority:': Medium
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: projects/current-production-fleet-inventory
 ---
 
 # Current Production Fleet Inventory

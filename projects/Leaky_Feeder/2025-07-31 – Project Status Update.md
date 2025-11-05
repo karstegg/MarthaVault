@@ -1,9 +1,11 @@
 ---
-Status:: urgent
-Priority:: High
-Assignee:: [[Gregory Karsten]]
-DueDate:: 2025-08-29
-Tags:: #year/2025 #project
+'Status:': urgent
+'Priority:': High
+'Assignee:':
+- - Gregory Karsten
+'DueDate:': 2025-08-29
+'Tags:': null
+permalink: projects/leaky-feeder/2025-07-31-project-status-update
 ---
 
 # Leaky Feeder Project Status Update

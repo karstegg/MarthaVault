@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: High
-Assignee:: Greg
-DueDate:: 2025-11-01
-Tags:: #year/2025 #BEV #Epiroc #weekly-report #equipment #CAS #Certiq #Mobilaris
+'Status:': Active
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': 2025-11-01
+'Tags:': null
+permalink: projects/bev/2025-10-18-brmo-epiroc-weekly-report-week-18-24-oct
 ---
 
 # BRMO Epiroc Weekly Report - Week 18-24 October 2025

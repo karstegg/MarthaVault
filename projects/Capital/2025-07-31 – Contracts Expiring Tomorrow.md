@@ -1,9 +1,11 @@
 ---
-Status:: urgent
-Priority:: Med
-Assignee:: [[Gregory Karsten]]
-DueDate:: 2025-08-01
-Tags:: #year/2025 #project
+'Status:': urgent
+'Priority:': Med
+'Assignee:':
+- - Gregory Karsten
+'DueDate:': 2025-08-01
+'Tags:': null
+permalink: projects/capital/2025-07-31-contracts-expiring-tomorrow
 ---
 
 # Contracts Expiring Tomorrow - URGENT

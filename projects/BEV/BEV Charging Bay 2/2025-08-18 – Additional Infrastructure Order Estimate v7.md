@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate:: 2025-08-31
-Tags:: #year/2025 #BEV #capital #order #infrastructure #charging-bay
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': 2025-08-31
+'Tags:': null
+permalink: projects/bev/bev-charging-bay-2/2025-08-18-additional-infrastructure-order-estimate-v7
 ---
 
 # BEV Charging Bay 2 - Additional Infrastructure Order Estimate v7

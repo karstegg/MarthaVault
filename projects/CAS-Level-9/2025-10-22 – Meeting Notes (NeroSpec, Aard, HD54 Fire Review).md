@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: High
-Assignee:: Greg
-DueDate::
-Tags:: #year/2025 #meeting #CAS #NeroSpec #Aard #fire-safety #site/Gloria #site/Nchwaning2
+'Status:': Active
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: projects/cas-level-9/2025-10-22-meeting-notes-nero-spec-aard-hd54-fire-review
 ---
 
 # Meeting Notes - 2025-10-22
@@ -60,4 +61,4 @@ Tags:: #year/2025 #meeting #CAS #NeroSpec #Aard #fire-safety #site/Gloria #site/
   - Tuesday: Programming
   - Wednesday: Operator testing
 - **Installation Team**: Horace and ECS team
-- **Coordination**: Arranged with [[Sipho Dubazane]] and Jade at Gloria 
+- **Coordination**: Arranged with [[Sipho Dubazane]] and Jade at Gloria

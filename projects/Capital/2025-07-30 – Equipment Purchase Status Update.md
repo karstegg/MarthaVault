@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 2025-07-30
-Tags:: #year/2025 #project #site/nchwaning3
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': 2025-07-30
+'Tags:': null
+permalink: projects/capital/2025-07-30-equipment-purchase-status-update
 ---
 
 Status:: #status/in_progress

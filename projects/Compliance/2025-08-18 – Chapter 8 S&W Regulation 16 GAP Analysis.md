@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate:: 2025-10-31
-Tags:: #year/2025 #compliance #regulation #chapter8 #shafts-winders #gap-analysis #implementation #safety #project-scoping
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': 2025-10-31
+'Tags:': null
+permalink: projects/compliance/2025-08-18-chapter-8-s-w-regulation-16-gap-analysis
 ---
 
 # Chapter 8 Shafts & Winders Regulation 16 - GAP Analysis & Implementation Project

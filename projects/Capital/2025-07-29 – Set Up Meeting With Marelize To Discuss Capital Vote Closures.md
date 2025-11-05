@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 2025-07-29
-Tags:: #year/2025 #project
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': 2025-07-29
+'Tags:': null
+permalink: projects/capital/2025-07-29-set-up-meeting-with-marelize-to-discuss-capital-vote-closures
 ---
 
 Status:: #status/new

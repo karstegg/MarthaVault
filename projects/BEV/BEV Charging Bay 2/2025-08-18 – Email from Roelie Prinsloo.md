@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate:: 2025-08-31
-Tags:: #year/2025 #BEV #email #charging-bay #N3 #roelie-prinsloo #construction #project-manager
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': 2025-08-31
+'Tags:': null
+permalink: projects/bev/bev-charging-bay-2/2025-08-18-email-from-roelie-prinsloo
 ---
 
 # Email from Roelie Prinsloo - N3 BEV Charging Bay 2

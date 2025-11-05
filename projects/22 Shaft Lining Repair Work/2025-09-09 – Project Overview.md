@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: High
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #project #site/Nchwaning2 #shaft-repair
+'Status:': Active
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: projects/22-shaft-lining-repair-work/2025-09-09-project-overview
 ---
 
 # 22 Shaft Lining Repair Work

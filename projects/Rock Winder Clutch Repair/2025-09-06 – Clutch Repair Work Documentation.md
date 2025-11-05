@@ -1,9 +1,12 @@
 ---
-Status:: Active
-Priority:: High
-Assignee:: [[Petersen, Xavier]]
-DueDate:: 
-Tags:: #year/2025 #project #site/Nchwaning2 #clutch-repair
+'Status:': Active
+'Priority:': High
+'Assignee:':
+- - Petersen
+  - Xavier
+'DueDate:': null
+'Tags:': null
+permalink: projects/rock-winder-clutch-repair/2025-09-06-clutch-repair-work-documentation
 ---
 
 # Rock Winder Clutch Repair Work

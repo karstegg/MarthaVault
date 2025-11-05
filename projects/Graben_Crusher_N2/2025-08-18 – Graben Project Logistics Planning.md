@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate:: 2025-09-15
-Tags:: #year/2025 #project #graben #crusher #N2 #logistics #roelie-prinsloo #construction
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': 2025-09-15
+'Tags:': null
+permalink: projects/graben-crusher-n2/2025-08-18-graben-project-logistics-planning
 ---
 
 # Graben Project - Crusher Construction at Nchwaning 2

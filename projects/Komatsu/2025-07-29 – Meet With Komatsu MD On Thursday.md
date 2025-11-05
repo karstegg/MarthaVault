@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 2025-07-29
-Tags:: #year/2025 #project
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': 2025-07-29
+'Tags:': null
+permalink: projects/komatsu/2025-07-29-meet-with-komatsu-md-on-thursday
 ---
 
 Status:: #status/new

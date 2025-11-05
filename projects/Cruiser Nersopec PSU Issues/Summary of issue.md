@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #project
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: projects/cruiser-nersopec-psu-issues/summary-of-issue
 ---
 
 *   **Origin:** An internal communication from Hennie van Niekerk (dated August 13, 2025) regarding Landcruiser installations.

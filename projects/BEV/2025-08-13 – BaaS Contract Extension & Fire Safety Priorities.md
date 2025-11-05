@@ -1,9 +1,10 @@
 ---
-Status:: new
-Priority:: High
-Assignee:: Greg Karsten
-DueDate:: 2025-08-19
-Tags:: #year/2025 #project
+'Status:': new
+'Priority:': High
+'Assignee:': Greg Karsten
+'DueDate:': 2025-08-19
+'Tags:': null
+permalink: projects/bev/2025-08-13-baa-s-contract-extension-fire-safety-priorities
 ---
 
 # Battery as a Service (BaaS) Contract Extension Update

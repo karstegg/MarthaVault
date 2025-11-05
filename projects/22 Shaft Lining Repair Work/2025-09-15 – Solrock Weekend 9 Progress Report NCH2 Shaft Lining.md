@@ -1,9 +1,10 @@
 ---
-Status:: Complete
-Priority:: Medium
-Assignee:: Xavier Peterson
-DueDate::
-Tags:: #report #project #year/2025 #Solrock #NCH2 #shaft-lining #weekend-9 #site/Nchwaning2
+'Status:': Complete
+'Priority:': Medium
+'Assignee:': Xavier Peterson
+'DueDate:': null
+'Tags:': null
+permalink: projects/22-shaft-lining-repair-work/2025-09-15-solrock-weekend-9-progress-report-nch2-shaft-lining
 ---
 
 # 2025-09-15 – Solrock Weekend 9 Progress Report NCH2 Shaft Lining

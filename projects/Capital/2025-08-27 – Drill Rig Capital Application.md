@@ -1,9 +1,11 @@
 ---
-Status:: new
-Priority:: High
-Assignee:: [[Gregory Karsten]]
-DueDate:: 2025-08-30
-Tags:: #year/2025 #project
+'Status:': new
+'Priority:': High
+'Assignee:':
+- - Gregory Karsten
+'DueDate:': 2025-08-30
+'Tags:': null
+permalink: projects/capital/2025-08-27-drill-rig-capital-application
 ---
 
 # Drill Rig Capital Application - Out of Plan

@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: Critical
-Assignee:: Greg
-DueDate::
-Tags:: #year/2025 #capital #TMM #replacement #budget #approved #site/Nchwaning2 #site/Nchwaning3 #site/Gloria #site/BlackRock #site/OPD
+'Status:': Active
+'Priority:': Critical
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: projects/capital-tmm-replacement-plan-fy25-28
 ---
 
 # Capital TMM Replacement Plan FY25-28 (Approved Business Plan)

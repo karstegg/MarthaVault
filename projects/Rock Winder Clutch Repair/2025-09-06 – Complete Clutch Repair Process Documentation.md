@@ -1,9 +1,12 @@
 ---
-Status:: Completed
-Priority:: High
-Assignee:: [[Petersen, Xavier]]
-DueDate:: 
-Tags:: #year/2025 #project #site/Nchwaning2 #clutch-repair #complete-process
+'Status:': Completed
+'Priority:': High
+'Assignee:':
+- - Petersen
+  - Xavier
+'DueDate:': null
+'Tags:': null
+permalink: projects/rock-winder-clutch-repair/2025-09-06-complete-clutch-repair-process-documentation
 ---
 
 # Complete Clutch Repair Process - Saturday September 6, 2025

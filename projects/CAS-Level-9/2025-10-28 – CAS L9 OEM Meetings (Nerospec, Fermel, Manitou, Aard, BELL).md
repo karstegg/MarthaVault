@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: Critical
-Assignee:: Greg
-DueDate:: 2025-12-31
-Tags:: #year/2025 #meeting #CAS #L9 #OEM #resource-constraints #priority/critical #DMRE-commitment
+'Status:': Active
+'Priority:': Critical
+'Assignee:': Greg
+'DueDate:': 2025-12-31
+'Tags:': null
+permalink: projects/cas-level-9/2025-10-28-cas-l9-oem-meetings-nerospec-fermel-manitou-aard-bell
 ---
 
 # CAS L9 OEM Meetings - October 28, 2025

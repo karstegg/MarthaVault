@@ -1,9 +1,12 @@
 ---
-Status:: Active
-Priority:: High
-Assignee:: [[Petersen, Xavier]]
-DueDate:: 
-Tags:: #year/2025 #project #site/Nchwaning2 #clutch-repair #clutch-slider
+'Status:': Active
+'Priority:': High
+'Assignee:':
+- - Petersen
+  - Xavier
+'DueDate:': null
+'Tags:': null
+permalink: projects/rock-winder-clutch-repair/2025-09-08-clutch-slider-status-update
 ---
 
 # Clutch Slider Status Update - September 8, 2025

@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-Date:: 2025-09-10
-Tags:: #year/2025 #BEV #fire-safety #epiroc #case-study #risk-assessment
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'Date:': 2025-09-10
+'Tags:': null
+permalink: projects/bev/2025-09-10-epiroc-li-ion-battery-fire-case-study-and-risk-assessment-actions
 ---
 
 # Epiroc Li-Ion Battery Fire Case Study and Risk Assessment Actions - September 10, 2025

@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: Greg
-DueDate:: 
-Tags:: #year/2025 #project
+'Status:': Draft
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: projects/bev/2025-07-29-bev-fire-risk-assessment-review
 ---
 
 # BEV Fire Risk Assessment Review

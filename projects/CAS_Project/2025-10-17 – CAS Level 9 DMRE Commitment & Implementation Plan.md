@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: Critical
-Assignee:: Hennie van Niekerk
-DueDate:: 2025-12-31
-Tags:: #year/2025 #CAS #DMRE #compliance #priority/critical #project
+'Status:': Active
+'Priority:': Critical
+'Assignee:': Hennie van Niekerk
+'DueDate:': 2025-12-31
+'Tags:': null
+permalink: projects/cas-project/2025-10-17-cas-level-9-dmre-commitment-implementation-plan
 ---
 
 # CAS Level 9 DMRE Commitment & Implementation Plan

@@ -1,9 +1,10 @@
 ---
-Status:: Active
-Priority:: High
-Assignee:: Greg
-DueDate:: 2025-10-18
-Tags:: #year/2025 #BEV #report #recurring #Epiroc #meeting
+'Status:': Active
+'Priority:': High
+'Assignee:': Greg
+'DueDate:': 2025-10-18
+'Tags:': null
+permalink: projects/bev/weekly-reports/2025-10-04-bev-weekly-report-summary-epiroc
 ---
 
 # BEV Weekly Report Summary - Oct 4-10, 2025
