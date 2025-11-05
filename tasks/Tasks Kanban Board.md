@@ -2,8 +2,9 @@
 Status: Active
 Priority: High
 Assignee: Greg
-Tags: #dashboard #tasks #kanban
+Tags: null
 LastUpdated: 2025-11-05
+permalink: tasks/tasks-kanban-board
 ---
 
 # Tasks Kanban Board
