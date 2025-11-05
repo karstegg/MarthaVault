@@ -1,1 +1,5 @@
-﻿M	projects/22 Shaft Lining Repair Work/2025-10-27 ΓÇô Solrock Feedback Meeting Weekend Work 25-26 Oct.md
+﻿A	Schedule/2025-11-17 - Meeting - Tasks by Person.md
+M	tasks/Tasks Kanban Board.md
+A	tasks/Tasks by Person.md
+A	tasks/Tasks by Site.md
+A	tasks/Tasks by Theme.md

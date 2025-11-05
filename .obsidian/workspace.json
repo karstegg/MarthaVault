@@ -13,14 +13,14 @@
             "state": {
               "type": "kanban",
               "state": {
-                "file": "tasks/Tasks by Person.md",
+                "file": "tasks/Tasks by Site.md",
                 "kanbanViewState": {
                   "kanban-plugin": "board",
                   "list-collapse": []
                 }
               },
               "icon": "lucide-trello",
-              "title": "Tasks by Person"
+              "title": "Tasks by Site"
             }
           }
         ]
@@ -223,11 +223,16 @@
   },
   "active": "44d50977aef8e7ff",
   "lastOpenFiles": [
+    "tasks/Priority Matrix Board.md",
+    "Schedule/2026-01-15 - Task Due - Priority Matrix Board.md",
+    "Schedule/2025-11-17 - Meeting - Priority Matrix Board.md",
+    "Schedule/2025-11-19 - Meeting - Priority Matrix Board.md",
+    "reference/Priority Matrix Framework.md",
+    "tasks/Tasks by Person.md",
     "Schedule/2025-11-17 - Meeting - Tasks by Person.md",
     "tasks/Tasks by Theme.md",
     "tasks/Tasks Kanban Board.md",
     "tasks/Tasks by Site.md",
-    "tasks/Tasks by Person.md",
     "Dashboard.md",
     "projects/CAS-Level-9/2025-10-28 – CAS L9 OEM Meetings (Nerospec, Fermel, Manitou, Aard, BELL).md",
     "scripts/commit-kanban.ps1",
@@ -245,14 +250,9 @@
     "Schedule/2025-10-07 - Review - master_task_list.md",
     "Schedule/2025-11-05 - Review - master_task_list.md",
     "Schedule/2025-10-08 - Meeting - master_task_list.md",
-    "Schedule/2025-10-23 - Meeting - master_task_list.md",
     "scripts/git-repair.ps1",
     "scripts/sync-and-push.ps1",
-    "Archive/Tasks Kanban Board (CONSOLIDATED).md",
-    "Archive/CLAUDE (Backup-31-08-2025).md",
-    "00_Inbox/2025-11-05.md",
     "scripts/check-sync-status.sh",
-    "system/github-sync-monitor.md",
     "projects/N3_Additional_Foreman",
     "system/styles",
     "system/Memory Systems - Documentation Index.md.tmp.24292.1762309985747",
