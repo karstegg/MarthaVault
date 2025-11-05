@@ -30,7 +30,9 @@
                 "file": "tasks/Tasks Kanban Board.md",
                 "kanbanViewState": {
                   "kanban-plugin": "board",
-                  "list-collapse": []
+                  "list-collapse": [
+                    false
+                  ]
                 }
               },
               "icon": "lucide-trello",
