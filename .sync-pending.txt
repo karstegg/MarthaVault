@@ -1,4 +1,6 @@
-﻿A	Schedule/2025-11-17 - Meeting - Priority Matrix Board.md
-A	Schedule/2025-11-19 - Meeting - Priority Matrix Board.md
-A	Schedule/2026-01-15 - Task Due - Priority Matrix Board.md
-A	tasks/Priority Matrix Board.md
+﻿A	Schedule/2025-11-10 - Meeting - Tasks by Site.md
+A	Schedule/2025-11-17 - Meeting - Tasks by Site.md
+A	Schedule/2025-11-20 - Meeting - Tasks by Site.md
+A	projects/Fermel/2025-11-04 ΓÇô Access and Data Logger Setup.md
+A	projects/Nerospec_L9/2025-11-04 ΓÇô L9 Charging Split Update.md
+M	tasks/master_task_list.md

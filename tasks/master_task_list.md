@@ -19,7 +19,7 @@ permalink: tasks/master-task-list
 ## Pending Tasks (Unscheduled)
 - [x] Share HD54 fire investigation recommendations with Sfiso (WWW format) #task #year/2025 #priority/high #fire-safety ✅ 2025-11-05
 - [x] PDI procedure review with Gerhard - add section to inspect fire suppression systems #task #year/2025 #priority/high #fire-safety ✅ 2025-11-05
-- [ ] UV128 CAS installation and testing (arranged with [[Sipho Dubazane]] and Jade at Gloria) #task #year/2025 #priority/medium #CAS #site/Gloria
+- [x] UV128 CAS installation and testing (arranged with [[Sipho Dubazane]] and Jade at Gloria) #task #year/2025 #priority/medium #CAS #site/Gloria ✅ 2025-11-06
 - [ ] Write motivation for extra electrical foreman at N3 #task #year/2025 #priority/medium #site/Nchwaning3
 - [ ] Capture weekly charts #task #year/2025 #priority/medium
 - [ ] Follow up re SA Cranes VO for 6 months extension by Emile (Central procurement) #task #year/2025 #priority/medium

@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: null
-Tags:: #meeting #year/2025 #Fermel #data-loggers #site/Gloria
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: projects/fermel/2025-11-04-access-and-data-logger-setup
 ---
 
 # Fermel - Access and Data Logger Setup

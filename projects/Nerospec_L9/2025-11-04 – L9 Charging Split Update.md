@@ -1,9 +1,10 @@
 ---
-Status:: Draft
-Priority:: Med
-Assignee:: Greg
-DueDate:: null
-Tags:: #meeting #year/2025 #Nerospec #L9 #charging #site/Nchwaning3
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: projects/nerospec-l9/2025-11-04-l9-charging-split-update
 ---
 
 # L9 Charging Split Update - Nerospec Meeting

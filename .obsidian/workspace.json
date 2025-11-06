@@ -11,16 +11,14 @@
             "id": "44d50977aef8e7ff",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "tasks/Tasks by Site.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": []
-                }
+                "file": "tasks/master_task_list.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-trello",
-              "title": "Tasks by Site"
+              "icon": "lucide-file",
+              "title": "master_task_list"
             }
           }
         ]
@@ -221,8 +219,12 @@
       "martha-agent:Martha Agent": false
     }
   },
-  "active": "759b14c2e47b40e6",
+  "active": "44d50977aef8e7ff",
   "lastOpenFiles": [
+    "tasks/Priority Matrix Board.md",
+    "tasks/Tasks by Theme.md",
+    "tasks/Tasks Kanban Board.md",
+    "tasks/Tasks by Site.md",
     "projects/Nerospec_L9/2025-11-04 – L9 Charging Split Update.md",
     "projects/Nerospec_L9",
     "projects/Fermel/2025-11-04 – Access and Data Logger Setup.md",
@@ -234,16 +236,12 @@
     "Schedule/2025-11-10 - Meeting - Tasks by Site.md",
     "Schedule/2025-11-20 - Meeting - Tasks by Site.md",
     "00_Inbox/Untitled Kanban.md",
-    "tasks/Priority Matrix Board.md",
     "Schedule/2026-01-15 - Task Due - Priority Matrix Board.md",
     "Schedule/2025-11-17 - Meeting - Priority Matrix Board.md",
     "Schedule/2025-11-19 - Meeting - Priority Matrix Board.md",
     "reference/Priority Matrix Framework.md",
     "tasks/Tasks by Person.md",
     "Schedule/2025-11-17 - Meeting - Tasks by Person.md",
-    "tasks/Tasks by Theme.md",
-    "tasks/Tasks Kanban Board.md",
-    "tasks/Tasks by Site.md",
     "Dashboard.md",
     "projects/CAS-Level-9/2025-10-28 – CAS L9 OEM Meetings (Nerospec, Fermel, Manitou, Aard, BELL).md",
     "scripts/commit-kanban.ps1",
