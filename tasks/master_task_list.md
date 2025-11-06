@@ -11,7 +11,7 @@ permalink: tasks/master-task-list
 # Master Task List
 
 **Last Consolidated**: 2025-10-06
-**Open Tasks**: 72
+**Open Tasks**: 76
 **Archived Tasks**: See [[tasks/archive/2025-Q3-completed.md]]
 
 ---
@@ -23,6 +23,11 @@ permalink: tasks/master-task-list
 - [ ] Write motivation for extra electrical foreman at N3 #task #year/2025 #priority/medium #site/Nchwaning3
 - [ ] Capture weekly charts #task #year/2025 #priority/medium
 - [ ] Follow up re SA Cranes VO for 6 months extension by Emile (Central procurement) #task #year/2025 #priority/medium
+- [ ] Update Vehicle List with latest information #task #year/2025 #priority/medium #admin
+- [ ] HD RT action plan for Gloria - Assigned to [[Dubazane, Sipho]] #task #year/2025 #priority/high #site/Gloria
+  - Note: Requested by [[Rudi Opperman]]
+- [ ] Create response protocol document for new belt rip detector #task #year/2025 #priority/medium #safety #documentation
+- [ ] Update BWE scope document - Assigned to [[Kotze, Johan]] #task #year/2025 #priority/medium #documentation
 - [ ] BEV vent doors & fire doors - waiting on [[Mabona, Mduduzi]] for updated capital application #task #year/2025 #priority/high #BEV #capital
 - [ ] BEV Bay 2 minisub - Assigned to [[Lourens van der Heerden]] #task #year/2025 #priority/high #BEV #capital
   - Action: Make minisubs stock items to fast-track procurement (bypass contract process)
