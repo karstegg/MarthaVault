@@ -1,6 +1,3 @@
-﻿A	Schedule/2025-11-10 - Meeting - Tasks by Site.md
-A	Schedule/2025-11-17 - Meeting - Tasks by Site.md
-A	Schedule/2025-11-20 - Meeting - Tasks by Site.md
-A	projects/Fermel/2025-11-04 ΓÇô Access and Data Logger Setup.md
-A	projects/Nerospec_L9/2025-11-04 ΓÇô L9 Charging Split Update.md
+﻿M	projects/Fermel/2025-11-04 ΓÇô Access and Data Logger Setup.md
+M	projects/Nerospec_L9/2025-11-04 ΓÇô L9 Charging Split Update.md
 M	tasks/master_task_list.md

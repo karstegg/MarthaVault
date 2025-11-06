@@ -21,8 +21,8 @@ permalink: tasks/master-task-list
 - [x] PDI procedure review with Gerhard - add section to inspect fire suppression systems #task #year/2025 #priority/high #fire-safety ✅ 2025-11-05
 - [x] UV128 CAS installation and testing (arranged with [[Sipho Dubazane]] and Jade at Gloria) #task #year/2025 #priority/medium #CAS #site/Gloria ✅ 2025-11-06
 - [ ] Write motivation for extra electrical foreman at N3 #task #year/2025 #priority/medium #site/Nchwaning3
-- [ ] Capture weekly charts #task #year/2025 #priority/medium
-- [ ] Follow up re SA Cranes VO for 6 months extension by Emile (Central procurement) #task #year/2025 #priority/medium
+- [ ] Capture weekly charts #task #year/2025 #priority/low 
+- [ ] Follow up re SA Cranes VO for 6 months extension by Emile (Central procurement) #task #year/2025 #priority/medium #urgent
 - [ ] Update Vehicle List with latest information #task #year/2025 #priority/medium #admin
 - [ ] HD RT action plan for Gloria - Assigned to [[Dubazane, Sipho]] #task #year/2025 #priority/high #site/Gloria
   - Note: Requested by [[Rudi Opperman]]
