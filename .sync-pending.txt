@@ -1,3 +1,1 @@
-﻿M	projects/Fermel/2025-11-04 ΓÇô Access and Data Logger Setup.md
-M	projects/Nerospec_L9/2025-11-04 ΓÇô L9 Charging Split Update.md
-M	tasks/master_task_list.md
+﻿M	tasks/master_task_list.md
