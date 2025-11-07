@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -220,7 +219,7 @@
       "martha-agent:Martha Agent": false
     }
   },
-  "active": "44d50977aef8e7ff",
+  "active": "759b14c2e47b40e6",
   "lastOpenFiles": [
     "tasks/Priority Matrix Board.md",
     "tasks/Tasks by Theme.md",
