@@ -1,18 +1,21 @@
-﻿M	Schedule/2025-08-05 - VFL Week 1 N3 Procedures.md
-M	Schedule/2025-08-12 - VFL Week 2 N3 Risk Assessment.md
-M	Schedule/2025-08-19 - Company Bakkie Service and Inspection.md
-M	Schedule/2025-08-19 - VFL Week 3 Gloria Training.md
-M	Schedule/2025-08-26 - VFL Week 4 N3 Change Management.md
-M	Schedule/2025-08-27 - Company Bakkie Service and Inspection.md
-M	Schedule/2025-08-28 - DMRE Presentation Kimberley.md
-M	Schedule/2025-08-29 - SA Cranes Tasks Due.md
-M	Schedule/2025-08-30 - Drill Rig Capital Application Deadline.md
-M	Schedule/2025-08-30 - TMM COP Review Meeting.md
-M	Schedule/2025-08-31 - Recruit N3 GES Deadline.md
-M	Schedule/2025-08-31 - Xavier SP Mine Safety Lamp Room Contract.md
-M	Schedule/2025-09 ΓÇô VFL Schedule September 2025.md
-M	Schedule/2025-10-11 ΓÇô DPF Discussion Meeting.md
-M	Schedule/2025-11-13 - Monthly Engineering Meeting.md
-M	Schedule/2025-11-13 - Project Steerco.md
-M	Schedule/2025-11-13 - Standards Meeting.md
-M	Schedule/_Sync_Report_Week_2025-11-10.md
+﻿A	Schedule/2025-11-10 - CRITICAL - WhatsApp Bridge Re-authentication Required.md
+A	Schedule/2025-11-10 - Catch up - General discussions.md
+A	Schedule/2025-11-10 - Emergency Preparedness - Monthly Meeting.md
+A	Schedule/2025-11-11 - Aard Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation, onsite support   ).md
+A	Schedule/2025-11-11 - BWE-CAT Cas L9 Activation ( Surface and Underground Outstanding Equipment CAS L9 Activation, onsite support )  ( Planning  - Upgrade and CAS L9 Activation ) .md
+A	Schedule/2025-11-11 - Bell ΓÇô Cas L9 Activation ( Planning  - Upgrade and CAS L9 Activation, onsite support   ).md
+A	Schedule/2025-11-11 - Cruiser Cas L9 activation ( Planning - Alternators , split charging and CAS L9 Activation, onsite support  ) .md
+A	Schedule/2025-11-11 - Epiroc Onsite Support.md
+A	Schedule/2025-11-11 - Fermel Cas L9 activation ( Passport 360 Compliance and Installation Upgrade planning CAS L9 Activation onsite support  ) .md
+A	Schedule/2025-11-11 - Manitou Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation CAS L9 Activation onsite support  ) Manitou , Nerospec , Strata , BRMO.md
+A	Schedule/2025-11-11 - N3 Load and Haul Fleet.md
+A	Schedule/2025-11-12 - Graben Infrastructure Upgrade Project - Logistics Alignment Meeting.md
+A	Schedule/2025-11-12 - Interview - Junior Projects Engineer (Fixed Term)  .md
+A	Schedule/2025-11-12 - Test event.md
+A	Schedule/2025-11-13 - CAS (CPS) project Steerco meeting.md
+A	Schedule/2025-11-13 - Environmental Management Forum .md
+A	Schedule/2025-11-13 - Weekly Overtime Meeting.md
+A	Schedule/2025-11-14 - S2 & BEV Optimisation - Weekly Progress.md
+A	Schedule/2025-11-15 - Gloria Operational Excellence ATR.md
+A	Schedule/2025-11-15 - N2 Operational Excellence ATR.md
+A	Schedule/2025-11-15 - N3 Operational Excellence ATR.md
