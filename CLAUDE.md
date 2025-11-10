@@ -75,6 +75,50 @@ After every operation, reply with a one-liner:
 ```
 This ensures Outlook calendar events are synchronized with the vault's Schedule/ folder before any other operations.
 
+### **Obsidian Full Calendar - Event File Requirements**
+
+**CRITICAL SYNTAX RULES** (Fixed 2025-11-10 - malformed times break entire calendar):
+
+Every event file in `Schedule/` MUST have valid YAML frontmatter. A single malformed time value will cause the entire calendar to display blank.
+
+**All-Day Event:**
+```yaml
+---
+title: Event Title
+allDay: true
+date: 2025-11-10
+completed: null
+---
+```
+
+**Timed Event (Times MUST be quoted "HH:MM" in 24-hour format):**
+```yaml
+---
+title: Meeting Title
+allDay: false
+date: 2025-11-13
+startTime: "13:30"
+endTime: "15:00"
+completed: null
+---
+```
+
+**Critical Requirements:**
+- ✅ Times MUST be quoted strings: `"13:30"` (NOT `13:30`, NOT `840`, NOT `null`)
+- ✅ Format: 24-hour HH:MM (NOT 12-hour like "2:00 PM")
+- ✅ All required fields: `title`, `allDay`, `date`, `completed`
+- ✅ Timed events need `startTime` and `endTime`
+
+**Invalid Examples (Will Break Calendar):**
+- `endTime: 840` ❌ (should be `"14:00"`)
+- `startTime: null` ❌ (omit field or use valid time)
+- `endTime: --` ❌ (placeholder text)
+- `startTime: 2:00 PM` ❌ (must be 24-hour format)
+
+**Validation:** If calendar goes blank, run validation script to find malformed times.
+
+**Full Details:** See `reference/claude-code/2025-11-10 – Obsidian Full Calendar Configuration & Troubleshooting Guide.md`
+
 ### **WhatsApp Voice Note Transcription - CRITICAL WORKFLOW**
 
 **MANDATORY 3-STEP PROCESS** - Never skip step 2 or transcription will fail:
