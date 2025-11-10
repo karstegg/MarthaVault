@@ -11,14 +11,12 @@
             "id": "44d50977aef8e7ff",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "00_Inbox/2025-11-10.md",
-                "mode": "source",
-                "source": false
+                "file": "00_Inbox/FT_2025-11-10 18_04_36.404.png"
               },
-              "icon": "lucide-file",
-              "title": "2025-11-10"
+              "icon": "lucide-image",
+              "title": "FT_2025-11-10 18_04_36.404"
             }
           }
         ]
@@ -214,7 +212,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 875
+    "width": 692
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -236,8 +234,10 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "d7405c902b275627",
+  "active": "44d50977aef8e7ff",
   "lastOpenFiles": [
+    "00_Inbox/FT_2025-11-10 15_18_39.255.png",
+    "00_Inbox/2025-11-10.md",
     "CLAUDE.md.tmp.43232.1762799216062",
     "reference/claude-code/2025-10-21 – Calendar Automation System.md.tmp.43232.1762799106320",
     "Schedule/2025-11-18 - Manitou Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation CAS L9 Activation onsite support  ) Manitou , Nerospec , Strata , BRMO.md",
@@ -272,10 +272,7 @@
     "Schedule/2025-11-11 - Manitou Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation CAS L9 Activation onsite support  ) Manitou , Nerospec , Strata , BRMO.md",
     "Schedule/2025-11-13 - CAS (CPS) project Steerco meeting.md",
     "Schedule/2025-11-11 - N3 Load and Haul Fleet.md",
-    "Schedule/2025-11-11 - Bell – Cas L9 Activation ( Planning  - Upgrade and CAS L9 Activation, onsite support   ).md",
     "00_Inbox/FT_2025-11-10 18_04_36.404.png",
-    "00_Inbox/FT_2025-11-10 15_18_39.255.png",
-    "Schedule/2025-08-28 - DMRE Presentation Kimberley.tmp",
     "media/file_00000000c90c61f8861f357c81187dc1.png",
     "media/Pasted image 20251027212155.jpg",
     "reference/Daily Note - 25-08-2025.jpg",
