@@ -2,9 +2,10 @@
 title: Standards Meeting
 allDay: false
 date: 2025-11-13
-startTime: "13:30"
-endTime: "15:00"
+startTime: '13:30'
+endTime: '15:00'
 completed: null
+permalink: schedule/2025-11-13-standards-meeting
 ---
 
 # Standards Meeting - November 13, 2025

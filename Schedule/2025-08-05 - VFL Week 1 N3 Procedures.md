@@ -3,6 +3,7 @@ title: VFL Week 1 N3 Procedures
 allDay: true
 date: 2025-08-05
 completed: null
+permalink: schedule/2025-08-05-vfl-week-1-n3-procedures
 ---
 
 # VFL Week 1 - N3 Procedures

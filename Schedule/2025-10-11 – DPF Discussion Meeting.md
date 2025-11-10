@@ -3,6 +3,7 @@ title: DPF Discussion Meeting
 allDay: true
 date: 2025-10-11
 completed: null
+permalink: schedule/2025-10-11-dpf-discussion-meeting
 ---
 
 # DPF Discussion Meeting - Christo vd Walt

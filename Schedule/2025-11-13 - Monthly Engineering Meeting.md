@@ -2,9 +2,10 @@
 title: Monthly Engineering Meeting
 allDay: false
 date: 2025-11-13
-startTime: "13:00"
-endTime: "16:00"
+startTime: '13:00'
+endTime: '16:00'
 completed: null
+permalink: schedule/2025-11-13-monthly-engineering-meeting
 ---
 
 # Monthly Engineering Meeting

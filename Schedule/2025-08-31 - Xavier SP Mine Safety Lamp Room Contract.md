@@ -3,6 +3,7 @@ title: Xavier SP Mine Safety Lamp Room Contract
 allDay: true
 date: 2025-08-31
 completed: null
+permalink: schedule/2025-08-31-xavier-sp-mine-safety-lamp-room-contract
 ---
 
 # Xavier SP Mine Safety Lamp Room Contract - Due Date

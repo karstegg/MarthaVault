@@ -3,6 +3,7 @@ title: DMRE Presentation Kimberley
 allDay: true
 date: 2025-08-28
 completed: null
+permalink: schedule/2025-08-28-dmre-presentation-kimberley
 ---
 
 # DMRE Presentation - Kimberley ✅ COMPLETED

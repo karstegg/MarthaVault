@@ -3,6 +3,7 @@ title: 2025-09 – VFL Schedule September 2025
 allDay: true
 date: None
 completed: null
+permalink: schedule/2025-09-vfl-schedule-september-2025
 ---
 
 # Visible Felt Leadership Schedule - September 2025

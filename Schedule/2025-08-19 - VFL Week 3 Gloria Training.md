@@ -3,6 +3,7 @@ title: VFL Week 3 Gloria Training
 allDay: true
 date: 2025-08-19
 completed: null
+permalink: schedule/2025-08-19-vfl-week-3-gloria-training
 ---
 
 # VFL Week 3 - Gloria Training

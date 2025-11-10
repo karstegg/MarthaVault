@@ -3,6 +3,7 @@ title: TMM COP Review Meeting
 allDay: true
 date: 2025-08-30
 completed: null
+permalink: schedule/2025-08-30-tmm-cop-review-meeting
 ---
 
 # TMM COP Review Meeting

@@ -3,6 +3,7 @@ title: Recruit N3 GES Deadline
 allDay: true
 date: 2025-08-31
 completed: null
+permalink: schedule/2025-08-31-recruit-n3-ges-deadline
 ---
 
 # N3 GES Recruitment - Final Deadline

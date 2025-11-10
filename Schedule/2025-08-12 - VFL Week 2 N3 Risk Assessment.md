@@ -3,6 +3,7 @@ title: VFL Week 2 N3 Risk Assessment
 allDay: true
 date: 2025-08-12
 completed: null
+permalink: schedule/2025-08-12-vfl-week-2-n3-risk-assessment
 ---
 
 # VFL Week 2 - N3 Risk Assessment

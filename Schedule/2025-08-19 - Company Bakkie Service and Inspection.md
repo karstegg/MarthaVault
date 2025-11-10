@@ -3,6 +3,7 @@ title: Company Bakkie Service and Inspection
 allDay: true
 date: 2025-08-19
 completed: null
+permalink: schedule/2025-08-19-company-bakkie-service-and-inspection
 ---
 
 # Company Bakkie Service and Inspection

@@ -3,6 +3,7 @@ title: Drill Rig Capital Application Deadline
 allDay: true
 date: 2025-08-30
 completed: null
+permalink: schedule/2025-08-30-drill-rig-capital-application-deadline
 ---
 
 # Drill Rig Capital Application - Deadline

@@ -3,6 +3,7 @@ title: SA Cranes Tasks Due
 allDay: true
 date: 2025-08-29
 completed: null
+permalink: schedule/2025-08-29-sa-cranes-tasks-due
 ---
 
 # SA Cranes Tasks - This Week Deadline

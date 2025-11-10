@@ -2,6 +2,7 @@
 title: Calendar Sync Report - Week of November 10-16, 2025
 date: 2025-11-10
 Status: Complete
+permalink: schedule/sync-report-week-2025-11-10
 ---
 
 # One-Way Sync Report: Outlook → Obsidian (Schedule/)

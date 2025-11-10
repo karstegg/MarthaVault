@@ -3,6 +3,7 @@ title: VFL Week 4 N3 Change Management
 allDay: true
 date: 2025-08-26
 completed: null
+permalink: schedule/2025-08-26-vfl-week-4-n3-change-management
 ---
 
 # VFL Week 4 - N3 Change Management
