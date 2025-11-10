@@ -20,19 +20,8 @@
               "icon": "lucide-file",
               "title": "2025-11-10"
             }
-          },
-          {
-            "id": "78a89bb69288cfee",
-            "type": "leaf",
-            "state": {
-              "type": "full-calendar-view",
-              "state": {},
-              "icon": "calendar-glyph",
-              "title": "Calendar"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -191,13 +180,23 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "78a89bb69288cfee",
+            "type": "leaf",
+            "state": {
+              "type": "full-calendar-view",
+              "state": {},
+              "icon": "calendar-glyph",
+              "title": "Calendar"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 780
+    "width": 1122
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,8 +218,10 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "78a89bb69288cfee",
+  "active": "65daab2f3980c272",
   "lastOpenFiles": [
+    "reference/claude-code/2025-11-10 – Obsidian Full Calendar Configuration & Troubleshooting Guide.md",
+    "reference/claude-code/2025-11-10 – Obsidian Full Calendar Configuration & Troubleshooting Guide.md.tmp.22568.1762757594037",
     "Schedule/2025-11-10-TEST-Event.md",
     "Schedule/_Sync_Summary_2025-10.md.tmp.22568.1762752699703",
     "Schedule/2025-11-13 - Standards Meeting.md.tmp.22568.1762752000244",
@@ -253,10 +254,8 @@
     "Schedule/2025-11-19 - Meeting - Priority Matrix Board.md",
     "reference/Priority Matrix Framework.md",
     "tasks/Tasks by Person.md",
-    "Schedule/2025-11-17 - Meeting - Tasks by Person.md",
     "scripts/commit-kanban.ps1",
     "scripts/git-repair.ps1",
-    "scripts/sync-and-push.ps1",
     "media/file_00000000c90c61f8861f357c81187dc1.png",
     "media/Pasted image 20251027212155.jpg",
     "reference/Daily Note - 25-08-2025.jpg",
