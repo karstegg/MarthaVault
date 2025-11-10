@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tasks/master_task_list.md",
+                "file": "00_Inbox/2025-11-10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "master_task_list"
+              "title": "2025-11-10"
             }
           }
         ]
@@ -219,8 +219,11 @@
       "martha-agent:Martha Agent": false
     }
   },
-  "active": "759b14c2e47b40e6",
+  "active": "44d50977aef8e7ff",
   "lastOpenFiles": [
+    "tasks/master_task_list.md",
+    "00_Inbox/2025-11-10.md",
+    "00_Inbox/Untitled Kanban.md",
     "00_Inbox/Claude Agent SDK - visual fb",
     "00_Inbox/Pastor Josh - The language of battle pt5_251109_095120.pdf",
     "00_Inbox/2025-11-07.md",
@@ -238,7 +241,6 @@
     "Schedule/2025-11-17 - Meeting - Tasks by Site.md",
     "Schedule/2025-11-10 - Meeting - Tasks by Site.md",
     "Schedule/2025-11-20 - Meeting - Tasks by Site.md",
-    "00_Inbox/Untitled Kanban.md",
     "Schedule/2026-01-15 - Task Due - Priority Matrix Board.md",
     "Schedule/2025-11-17 - Meeting - Priority Matrix Board.md",
     "Schedule/2025-11-19 - Meeting - Priority Matrix Board.md",
@@ -250,13 +252,11 @@
     "scripts/commit-kanban.ps1",
     "Schedule/2025-11-17 - Meeting - Tasks Kanban Board.md",
     "Schedule/2025-11-19 - Meeting - Tasks Kanban Board.md",
-    "reference/Obsidian Kanban Plugin Setup.md",
     "scripts/git-repair.ps1",
     "scripts/sync-and-push.ps1",
     "scripts/check-sync-status.sh",
     "projects/N3_Additional_Foreman",
     "system/styles",
-    "system/Memory Systems - Documentation Index.md.tmp.24292.1762309985747",
     "media/file_00000000c90c61f8861f357c81187dc1.png",
     "media/Pasted image 20251027212155.jpg",
     "reference/Daily Note - 25-08-2025.jpg",
