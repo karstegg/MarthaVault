@@ -1,1 +1,5 @@
-﻿M	tasks/Tasks by Theme.md
+﻿A	Schedule/2025-11-10 - Catch up - General discussions.md
+A	Schedule/2025-11-13 - Monthly Engineering Meeting.md
+A	Schedule/2025-11-13 - Project Steerco.md
+M	Schedule/2025-11-13 - Standards Meeting.md
+M	Schedule/_Sync_Summary_2025-11.md

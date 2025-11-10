@@ -152,16 +152,6 @@
             }
           },
           {
-            "id": "cc7819343cecd789",
-            "type": "leaf",
-            "state": {
-              "type": "full-calendar-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "full-calendar-view"
-            }
-          },
-          {
             "id": "41950e5bf20242c5",
             "type": "leaf",
             "state": {
@@ -192,7 +182,7 @@
             }
           },
           {
-            "id": "7a9f6087074732a0",
+            "id": "b9643ead10dec76c",
             "type": "leaf",
             "state": {
               "type": "full-calendar-view",
@@ -202,14 +192,14 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       },
       {
-        "id": "e64edab89ccd2205",
+        "id": "11de0b116b09e53e",
         "type": "tabs",
         "children": [
           {
-            "id": "3c766f55e75a8caa",
+            "id": "59b46b6f1ec3f156",
             "type": "leaf",
             "state": {
               "type": "full-calendar-view",
@@ -222,7 +212,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 931
+    "width": 1046
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -244,7 +234,7 @@
       "martha-agent:Martha Agent": false
     }
   },
-  "active": "44d50977aef8e7ff",
+  "active": "65daab2f3980c272",
   "lastOpenFiles": [
     "Schedule/2025-11-13 - Standards Meeting.md.tmp.22568.1762752000244",
     "Schedule/2025-11-13 - Standards Meeting.md.tmp.22568.1762751998373",
