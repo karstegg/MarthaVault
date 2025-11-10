@@ -1,10 +1,8 @@
 ---
-'Status:': Draft
-'Priority:': Med
-'Assignee:': Greg
-'DueDate:': 2025-08-19
-'Tags:': null
-permalink: schedule/2025-08-19-company-bakkie-service-and-inspection
+title: Company Bakkie Service and Inspection
+allDay: true
+date: 2025-08-19
+completed: null
 ---
 
 # Company Bakkie Service and Inspection

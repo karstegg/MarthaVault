@@ -1,10 +1,8 @@
 ---
-'Status:': Draft
-'Priority:': Med
-'Assignee:': Greg
-'DueDate:': 2025-08-30
-'Tags:': null
-permalink: schedule/2025-08-30-tmm-cop-review-meeting
+title: TMM COP Review Meeting
+allDay: true
+date: 2025-08-30
+completed: null
 ---
 
 # TMM COP Review Meeting

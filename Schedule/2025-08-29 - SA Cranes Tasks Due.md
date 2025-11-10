@@ -1,10 +1,8 @@
 ---
-'Status:': Draft
-'Priority:': Med
-'Assignee:': Greg
-'DueDate:': 2025-08-29
-'Tags:': null
-permalink: schedule/2025-08-29-sa-cranes-tasks-due
+title: SA Cranes Tasks Due
+allDay: true
+date: 2025-08-29
+completed: null
 ---
 
 # SA Cranes Tasks - This Week Deadline

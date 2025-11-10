@@ -1,10 +1,8 @@
 ---
-'Status:': Draft
-'Priority:': Med
-'Assignee:': Greg
-'DueDate:': 2025-08-26
-'Tags:': null
-permalink: schedule/2025-08-26-vfl-week-4-n3-change-management
+title: VFL Week 4 N3 Change Management
+allDay: true
+date: 2025-08-26
+completed: null
 ---
 
 # VFL Week 4 - N3 Change Management

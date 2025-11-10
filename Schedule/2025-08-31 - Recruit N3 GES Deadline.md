@@ -1,10 +1,8 @@
 ---
-'Status:': Draft
-'Priority:': Med
-'Assignee:': Greg
-'DueDate:': 2025-08-31
-'Tags:': null
-permalink: schedule/2025-08-31-recruit-n3-ges-deadline
+title: Recruit N3 GES Deadline
+allDay: true
+date: 2025-08-31
+completed: null
 ---
 
 # N3 GES Recruitment - Final Deadline

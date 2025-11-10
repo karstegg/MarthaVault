@@ -1,12 +1,8 @@
 ---
-'Status:': Active
-'Priority:': High
-'Assignee:':
-- - Karsten
-  - Gregory
-'DueDate:': 2025-10-11
-'Tags:': null
-permalink: schedule/2025-10-11-dpf-discussion-meeting
+title: DPF Discussion Meeting
+allDay: true
+date: 2025-10-11
+completed: null
 ---
 
 # DPF Discussion Meeting - Christo vd Walt

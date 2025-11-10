@@ -1,10 +1,8 @@
 ---
-'Status:': Completed
-'Priority:': Med
-'Assignee:': Greg
-'DueDate:': 2025-08-28
-'Tags:': null
-permalink: schedule/2025-08-28-dmre-presentation-kimberley
+title: DMRE Presentation Kimberley
+allDay: true
+date: 2025-08-28
+completed: null
 ---
 
 # DMRE Presentation - Kimberley ✅ COMPLETED

@@ -1,3 +1,10 @@
+---
+title: Calendar Sync Summary - October 2025
+allDay: true
+date: 2025-10-21
+completed: null
+---
+
 # Calendar Sync Summary - October 2025
 
 **Last Sync:** 2025-10-21 16:00 (SessionStart automatic trigger)

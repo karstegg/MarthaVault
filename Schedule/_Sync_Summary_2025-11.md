@@ -2,6 +2,7 @@
 title: Calendar Sync Summary - November 2025
 date: 2025-11-10
 Status: Completed
+allDay: true
 ---
 
 # Calendar Sync Summary - November 2025

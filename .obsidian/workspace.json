@@ -236,6 +236,7 @@
   },
   "active": "65daab2f3980c272",
   "lastOpenFiles": [
+    "Schedule/_Sync_Summary_2025-10.md.tmp.22568.1762752699703",
     "Schedule/2025-11-13 - Standards Meeting.md.tmp.22568.1762752000244",
     "Schedule/2025-11-13 - Standards Meeting.md.tmp.22568.1762751998373",
     "Schedule/2025-11-13 - Monthly Engineering Meeting.md",
@@ -271,7 +272,6 @@
     "scripts/git-repair.ps1",
     "scripts/sync-and-push.ps1",
     "scripts/check-sync-status.sh",
-    "projects/N3_Additional_Foreman",
     "media/file_00000000c90c61f8861f357c81187dc1.png",
     "media/Pasted image 20251027212155.jpg",
     "reference/Daily Note - 25-08-2025.jpg",

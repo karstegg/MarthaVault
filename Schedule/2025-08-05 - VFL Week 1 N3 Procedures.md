@@ -1,10 +1,8 @@
 ---
-'Status:': Draft
-'Priority:': Med
-'Assignee:': Greg
-'DueDate:': 2025-08-05
-'Tags:': null
-permalink: schedule/2025-08-05-vfl-week-1-n3-procedures
+title: VFL Week 1 N3 Procedures
+allDay: true
+date: 2025-08-05
+completed: null
 ---
 
 # VFL Week 1 - N3 Procedures
