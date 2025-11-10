@@ -397,16 +397,123 @@ Events are considered **duplicates** if:
 ### Event Types Handled
 - ✅ All-day events (allDay: true)
 - ✅ Timed events (specific start/end)
-- ✅ Recurring events (first occurrence)
+- ✅ Recurring events (all occurrences expanded)
+- ✅ Recurring event exceptions (rescheduled/deleted occurrences)
 - ✅ Events with attendees
 - ✅ Events with locations
 - ✅ VFL schedule events
+- ✅ Shared/delegated calendars
 
 ### Excluded from Sync
 - Past months (historical events)
 - Far future events (> 2 months out)
 - Completed events (completed: true)
 - Explicitly marked as local-only
+- Archive calendars
+- Student/test accounts
+
+---
+
+## Advanced Calendar Extraction Features
+
+### Store Enumeration & Multi-Calendar Support
+
+**Problem:** Default Outlook calendar API only accesses the default calendar, missing shared/delegated calendars like `Gregory.Karsten@assmang.co.za`.
+
+**Solution:** outlook-extractor skill enumerates **all** Outlook stores (accounts/folders) to find calendar events.
+
+**Process:**
+1. Enumerate all stores: `namespace.Stores`
+2. Filter out excluded stores (Archives, student accounts)
+3. Search each store for Calendar folders
+4. Extract events from all discovered calendars
+
+**Benefit:** Captures events from:
+- Shared calendars (e.g., Gregory.Karsten)
+- Delegated access calendars
+- Multiple mailboxes
+
+**Technical Details:** See [outlook-extractor/reference.md](~/.claude/skills/outlook-extractor/reference.md#store-enumeration--calendar-discovery)
+
+---
+
+### Recurring Event Expansion
+
+**Problem:** Recurring events stored as single master item with pattern, need individual occurrences for sync.
+
+**Solution:** outlook-extractor expands recurring patterns into discrete events within date range.
+
+**Supported Patterns:**
+- Daily (every N days)
+- Weekly (specific days of week)
+- Monthly (by date or by day)
+- Yearly (by date or by day)
+
+**Example:**
+```
+Master Event: "CAS L9 Meeting" - Weekly, every Tuesday 10:30-11:00
+Date Range: Nov 10-22, 2025
+
+Expanded Occurrences:
+- Nov 11, 2025 10:30-11:00
+- Nov 18, 2025 10:30-11:00
+```
+
+**Technical Details:** See [outlook-extractor/reference.md](~/.claude/skills/outlook-extractor/reference.md#recurring-event-expansion)
+
+---
+
+### Recurring Event Exceptions
+
+**Problem:** Rescheduled or cancelled occurrences of recurring events must be handled separately from base pattern.
+
+**Solution:** outlook-extractor processes exceptions to override base pattern.
+
+**Exception Types:**
+1. **Rescheduled occurrences:** Meeting moved to different time/date
+2. **Deleted occurrences:** Meeting cancelled/declined for that date
+3. **Modified occurrences:** Changed subject/location for one instance
+
+**Example:**
+```
+Base Pattern: Weekly team meeting, Fridays 10:00-11:00
+Exception 1: Nov 10 rescheduled to Monday 14:00-15:00
+Exception 2: Nov 17 cancelled (declined)
+
+Result:
+- Nov 10 Monday 14:00-15:00 ✅ (rescheduled)
+- Nov 17 Friday 10:00-11:00 ❌ (skipped - deleted)
+- Nov 24 Friday 10:00-11:00 ✅ (normal occurrence)
+```
+
+**Technical Details:** See [outlook-extractor/reference.md](~/.claude/skills/outlook-extractor/reference.md#recurring-event-exceptions)
+
+---
+
+### Mid-Week Sync Support
+
+**Problem:** Syncing on Wednesday doesn't include Monday/Tuesday events by default.
+
+**Solution:** `--from-week-start` parameter includes events from Monday of current week.
+
+**Usage:**
+```bash
+python outlook_extractor.py calendar --days 30 --from-week-start
+```
+
+**When to Use:**
+- Syncing mid-week but need full week context
+- After missing sync on Monday/Tuesday
+- Reviewing what happened earlier in the week
+
+**Example:**
+```
+Today: Wednesday, Nov 13
+Without flag: Extracts Nov 13 → Dec 13
+With flag: Extracts Nov 11 (Monday) → Dec 13
+```
+
+**Technical Details:** See [outlook-extractor/reference.md](~/.claude/skills/outlook-extractor/reference.md#--from-week-start)
 
 ---
 

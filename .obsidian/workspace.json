@@ -214,7 +214,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 1122
+    "width": 875
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -238,6 +238,8 @@
   },
   "active": "d7405c902b275627",
   "lastOpenFiles": [
+    "CLAUDE.md.tmp.43232.1762799216062",
+    "reference/claude-code/2025-10-21 – Calendar Automation System.md.tmp.43232.1762799106320",
     "Schedule/2025-11-18 - Manitou Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation CAS L9 Activation onsite support  ) Manitou , Nerospec , Strata , BRMO.md",
     "Schedule/2025-11-18 - Manitou Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation CAS L9 Activation onsite support  ) Manitou , Nerospec , Strata , BRMO.md.tmp.43232.1762793929507",
     "Schedule/2025-11-21 - S2 & BEV Optimisation - Weekly Progress.md",
@@ -271,11 +273,9 @@
     "Schedule/2025-11-13 - CAS (CPS) project Steerco meeting.md",
     "Schedule/2025-11-11 - N3 Load and Haul Fleet.md",
     "Schedule/2025-11-11 - Bell – Cas L9 Activation ( Planning  - Upgrade and CAS L9 Activation, onsite support   ).md",
-    "Schedule/2025-11-11 - Fermel Cas L9 activation ( Passport 360 Compliance and Installation Upgrade planning CAS L9 Activation onsite support  ) .md",
     "00_Inbox/FT_2025-11-10 18_04_36.404.png",
     "00_Inbox/FT_2025-11-10 15_18_39.255.png",
     "Schedule/2025-08-28 - DMRE Presentation Kimberley.tmp",
-    "Schedule/_Sync_Report_Week_2025-11-10.md.tmp.22568.1762764642918",
     "media/file_00000000c90c61f8861f357c81187dc1.png",
     "media/Pasted image 20251027212155.jpg",
     "reference/Daily Note - 25-08-2025.jpg",

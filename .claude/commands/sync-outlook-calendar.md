@@ -19,7 +19,20 @@ Calculate the current month range:
 
 Use the outlook-extractor skill to retrieve current month's Outlook events:
 
-Execute: `python ~/.claude/skills/outlook-extractor/scripts/outlook_extractor.py calendar --days 30 --limit 200`
+**Standard sync (from today forward):**
+```bash
+python ~/.claude/skills/outlook-extractor/scripts/outlook_extractor.py calendar --days 30 --limit 200
+```
+
+**Mid-week sync (include events from Monday of current week):**
+```bash
+python ~/.claude/skills/outlook-extractor/scripts/outlook_extractor.py calendar --days 30 --limit 200 --from-week-start
+```
+
+**When to use `--from-week-start`:**
+- Syncing on Wednesday/Thursday but need Monday/Tuesday events
+- After missing sync earlier in the week
+- Getting full week context for reporting
 
 This creates `outlook_calendar.json` with all Outlook events.
 
@@ -31,6 +44,14 @@ Parse the JSON to extract for each event:
 - Body/description
 - Attendees (if available)
 - All-day flag
+
+**Technical Note:** outlook-extractor automatically:
+- Searches ALL Outlook stores (shared calendars, delegated access)
+- Excludes Archives and student accounts
+- Expands recurring events into individual occurrences
+- Handles recurring event exceptions (rescheduled/deleted meetings)
+
+See [outlook-extractor/reference.md](~/.claude/skills/outlook-extractor/reference.md) for implementation details.
 
 ### Step 3: Extract Obsidian Calendar Events
 

@@ -714,11 +714,19 @@ completed: null
 
 **Slash Commands:**
 - `/sync-outlook-calendar` - Manual two-way sync (Obsidian ↔ Outlook)
+  - Use `--from-week-start` flag to include events from Monday of current week (when syncing mid-week)
 - `/process-vfl-schedule` - Extract VFL schedule from PDF, create events
 
 **Hooks:**
 - **SessionStart:** Auto-syncs calendars on Claude Code startup
 - **PostToolUse:** Auto-syncs when Schedule/ files created/edited
+
+**Advanced Features:**
+- Automatically discovers shared/delegated calendars (e.g., Gregory.Karsten)
+- Expands recurring events into individual occurrences
+- Handles rescheduled and cancelled meeting exceptions
+- Excludes Archive and student account calendars
+- Full details: `reference/claude-code/2025-10-21 – Calendar Automation System.md`
 
 ## Rules
 
