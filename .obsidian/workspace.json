@@ -87,6 +87,7 @@
       {
         "id": "c7ab2ac19efb2b70",
         "type": "tabs",
+        "dimension": 31.61397670549085,
         "children": [
           {
             "id": "83f7eb2c13be1f61",
@@ -192,7 +193,24 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
+      },
+      {
+        "id": "e1054e40570ce37e",
+        "type": "tabs",
+        "dimension": 68.38602329450914,
+        "children": [
+          {
+            "id": "d7405c902b275627",
+            "type": "leaf",
+            "state": {
+              "type": "full-calendar-view",
+              "state": {},
+              "icon": "calendar-glyph",
+              "title": "Calendar"
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
@@ -218,8 +236,29 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "44d50977aef8e7ff",
+  "active": "65daab2f3980c272",
   "lastOpenFiles": [
+    "Schedule/2025-11-11 - Cruiser Cas L9 activation ( Planning - Alternators , split charging and CAS L9 Activation, onsite support  ) .md",
+    "Schedule/2025-11-11 - Aard Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation, onsite support   ).md",
+    "Schedule/2025-11-12 - Graben Infrastructure Upgrade Project - Logistics Alignment Meeting.md",
+    "Schedule/2025-11-14 - S2 & BEV Optimisation - Weekly Progress.md",
+    "Schedule/2025-11-11 - BWE-CAT Cas L9 Activation ( Surface and Underground Outstanding Equipment CAS L9 Activation, onsite support )  ( Planning  - Upgrade and CAS L9 Activation ) .md",
+    "Schedule/2025-11-10 - CRITICAL - WhatsApp Bridge Re-authentication Required.md",
+    "Schedule/2025-11-10 - Catch up - General discussions.md",
+    "Schedule/2025-11-11 - Manitou Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation CAS L9 Activation onsite support  ) Manitou , Nerospec , Strata , BRMO.md",
+    "Schedule/2025-11-13 - CAS (CPS) project Steerco meeting.md",
+    "Schedule/2025-11-11 - N3 Load and Haul Fleet.md",
+    "Schedule/2025-11-11 - Bell – Cas L9 Activation ( Planning  - Upgrade and CAS L9 Activation, onsite support   ).md",
+    "Schedule/2025-11-11 - Fermel Cas L9 activation ( Passport 360 Compliance and Installation Upgrade planning CAS L9 Activation onsite support  ) .md",
+    "Schedule/2025-11-11 - Epiroc Onsite Support.md",
+    "Schedule/2025-11-12 - Interview - Junior Projects Engineer (Fixed Term)  .md",
+    "Schedule/2025-11-12 - Test event.md",
+    "Schedule/2025-11-15 - N3 Operational Excellence ATR.md",
+    "Schedule/2025-11-15 - Gloria Operational Excellence ATR.md",
+    "Schedule/2025-11-15 - N2 Operational Excellence ATR.md",
+    "Schedule/2025-11-10 - Emergency Preparedness - Monthly Meeting.md",
+    "Schedule/2025-11-13 - Environmental Management Forum .md",
+    "Schedule/2025-11-13 - Weekly Overtime Meeting.md",
     "00_Inbox/FT_2025-11-10 18_04_36.404.png",
     "00_Inbox/FT_2025-11-10 15_18_39.255.png",
     "Schedule/2025-08-28 - DMRE Presentation Kimberley.tmp",
@@ -233,30 +272,10 @@
     "CLAUDE.md.tmp.22568.1762758269225",
     "reference/claude-code/2025-11-10 – Obsidian Full Calendar Configuration & Troubleshooting Guide.md",
     "reference/claude-code/2025-11-10 – Obsidian Full Calendar Configuration & Troubleshooting Guide.md.tmp.22568.1762757594037",
-    "Schedule/2025-11-10-TEST-Event.md",
     "Schedule/_Sync_Summary_2025-10.md.tmp.22568.1762752699703",
     "Schedule/2025-11-13 - Standards Meeting.md.tmp.22568.1762752000244",
     "Schedule/2025-11-13 - Standards Meeting.md.tmp.22568.1762751998373",
-    "Schedule/2025-11-10 - Catch up - General discussions.md",
-    "tasks/master_task_list.md",
-    "00_Inbox/2025-11-10.md",
-    "00_Inbox/Untitled Kanban.md",
     "00_Inbox/Claude Agent SDK - visual fb",
-    "00_Inbox/2025-11-07.md",
-    "tasks/Priority Matrix Board.md",
-    "tasks/Tasks by Theme.md",
-    "tasks/Tasks Kanban Board.md",
-    "tasks/Tasks by Site.md",
-    "projects/Nerospec_L9/2025-11-04 – L9 Charging Split Update.md",
-    "projects/Fermel/2025-11-04 – Access and Data Logger Setup.md",
-    "Daily/2025-11-05.md",
-    "Daily/2025-11-04.md",
-    "Excalidraw/Drawing 2025-11-06 09.46.53.excalidraw.md",
-    "Schedule/2025-11-17 - Meeting - Tasks by Site.md",
-    "Schedule/2025-11-10 - Meeting - Tasks by Site.md",
-    "Schedule/2025-11-20 - Meeting - Tasks by Site.md",
-    "Schedule/2026-01-15 - Task Due - Priority Matrix Board.md",
-    "Schedule/2025-11-17 - Meeting - Priority Matrix Board.md",
     "media/file_00000000c90c61f8861f357c81187dc1.png",
     "media/Pasted image 20251027212155.jpg",
     "reference/Daily Note - 25-08-2025.jpg",
@@ -269,7 +288,6 @@
     "MCP-Microsoft-Office/node_modules/sqlite3/node_modules/unique-filename/coverage/sort-arrow-sprite.png",
     "MCP-Microsoft-Office/node_modules/date-fns/docs/logotype.svg",
     "MCP-Microsoft-Office/node_modules/date-fns/docs/logo.svg",
-    "Untitled.canvas",
-    "personal/projects/MarthaVault Intuition Layer/2025-09-11 – Data Transformation Flow Stage 4.excalidraw.png"
+    "Untitled.canvas"
   ]
 }
