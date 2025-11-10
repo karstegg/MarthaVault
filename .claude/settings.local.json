@@ -92,7 +92,8 @@
       "SlashCommand(/sync-vault:*)",
       "Bash(.vault-sync-checkpoint)",
       "Bash(sed:*)",
-      "Bash(dir \"C:\\Users\\10064957\\My Drive\\GDVault\\MarthaVault\\.obsidian\" /B)"
+      "Bash(dir \"C:\\Users\\10064957\\My Drive\\GDVault\\MarthaVault\\.obsidian\" /B)",
+      "Bash(timeout 30 python:*)"
     ],
     "deny": []
   },
