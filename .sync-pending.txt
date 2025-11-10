@@ -1,21 +1,14 @@
-﻿A	Schedule/2025-11-10 - CRITICAL - WhatsApp Bridge Re-authentication Required.md
-A	Schedule/2025-11-10 - Catch up - General discussions.md
-A	Schedule/2025-11-10 - Emergency Preparedness - Monthly Meeting.md
-A	Schedule/2025-11-11 - Aard Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation, onsite support   ).md
-A	Schedule/2025-11-11 - BWE-CAT Cas L9 Activation ( Surface and Underground Outstanding Equipment CAS L9 Activation, onsite support )  ( Planning  - Upgrade and CAS L9 Activation ) .md
-A	Schedule/2025-11-11 - Bell ΓÇô Cas L9 Activation ( Planning  - Upgrade and CAS L9 Activation, onsite support   ).md
-A	Schedule/2025-11-11 - Cruiser Cas L9 activation ( Planning - Alternators , split charging and CAS L9 Activation, onsite support  ) .md
-A	Schedule/2025-11-11 - Epiroc Onsite Support.md
-A	Schedule/2025-11-11 - Fermel Cas L9 activation ( Passport 360 Compliance and Installation Upgrade planning CAS L9 Activation onsite support  ) .md
-A	Schedule/2025-11-11 - Manitou Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation CAS L9 Activation onsite support  ) Manitou , Nerospec , Strata , BRMO.md
-A	Schedule/2025-11-11 - N3 Load and Haul Fleet.md
-A	Schedule/2025-11-12 - Graben Infrastructure Upgrade Project - Logistics Alignment Meeting.md
-A	Schedule/2025-11-12 - Interview - Junior Projects Engineer (Fixed Term)  .md
-A	Schedule/2025-11-12 - Test event.md
-A	Schedule/2025-11-13 - CAS (CPS) project Steerco meeting.md
-A	Schedule/2025-11-13 - Environmental Management Forum .md
-A	Schedule/2025-11-13 - Weekly Overtime Meeting.md
-A	Schedule/2025-11-14 - S2 & BEV Optimisation - Weekly Progress.md
-A	Schedule/2025-11-15 - Gloria Operational Excellence ATR.md
-A	Schedule/2025-11-15 - N2 Operational Excellence ATR.md
-A	Schedule/2025-11-15 - N3 Operational Excellence ATR.md
+﻿A	Schedule/2025-11-17 - Epiroc Electrification Meeting (Marketing & Connected Energy).md
+A	Schedule/2025-11-18 - Aard Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation, onsite support   ).md
+A	Schedule/2025-11-18 - BWE-CAT Cas L9 Activation ( Surface and Underground Outstanding Equipment CAS L9 Activation, onsite support )  ( Planning  - Upgrade and CAS L9 Activation ).md
+A	Schedule/2025-11-18 - Bell ΓÇô Cas L9 Activation ( Planning  - Upgrade and CAS L9 Activation, onsite support   ).md
+A	Schedule/2025-11-18 - Cruiser Cas L9 activation ( Planning - Alternators , split charging and CAS L9 Activation, onsite support  ).md
+A	Schedule/2025-11-18 - Epiroc Onsite Support.md
+A	Schedule/2025-11-18 - Fermel Cas L9 activation ( Passport 360 Compliance and Installation Upgrade planning CAS L9 Activation onsite support  ).md
+A	Schedule/2025-11-18 - Manitou Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation CAS L9 Activation onsite support  ) Manitou , Nerospec , Strata , BRMO.md
+A	Schedule/2025-11-18 - Monthly Capital Meeting.md
+A	Schedule/2025-11-19 - CAPITAL PROJECTS UPDATE GROUP 02 MEETING 03.md
+A	Schedule/2025-11-19 - Graben Infrastructure Upgrade Project Logistics Alignment Meeting.md
+A	Schedule/2025-11-20 - CAS (CPS) project Steerco meeting.md
+A	Schedule/2025-11-20 - Nchwaning No.3 Shaft Planning Meeting December 2025 and January 2026.md
+A	Schedule/2025-11-21 - S2 & BEV Optimisation - Weekly Progress.md
