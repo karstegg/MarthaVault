@@ -91,7 +91,8 @@
       "Bash(sqlite3:*)",
       "SlashCommand(/sync-vault:*)",
       "Bash(.vault-sync-checkpoint)",
-      "Bash(sed:*)"
+      "Bash(sed:*)",
+      "Bash(dir \"C:\\Users\\10064957\\My Drive\\GDVault\\MarthaVault\\.obsidian\" /B)"
     ],
     "deny": []
   },

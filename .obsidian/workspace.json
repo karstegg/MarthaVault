@@ -20,8 +20,19 @@
               "icon": "lucide-file",
               "title": "2025-11-10"
             }
+          },
+          {
+            "id": "78a89bb69288cfee",
+            "type": "leaf",
+            "state": {
+              "type": "full-calendar-view",
+              "state": {},
+              "icon": "calendar-glyph",
+              "title": "Calendar"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -186,7 +197,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 1046
+    "width": 910
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -204,10 +215,11 @@
       "cmdr:New Journal Note": false,
       "cmdr:New Devotional": false,
       "obsidian-git:Open Git source control": false,
-      "martha-agent:Martha Agent": false
+      "martha-agent:Martha Agent": false,
+      "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "65daab2f3980c272",
+  "active": "78a89bb69288cfee",
   "lastOpenFiles": [
     "Schedule/_Sync_Summary_2025-10.md.tmp.22568.1762752699703",
     "Schedule/2025-11-13 - Standards Meeting.md.tmp.22568.1762752000244",
