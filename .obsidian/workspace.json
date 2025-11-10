@@ -221,6 +221,7 @@
   },
   "active": "78a89bb69288cfee",
   "lastOpenFiles": [
+    "Schedule/2025-11-10-TEST-Event.md",
     "Schedule/_Sync_Summary_2025-10.md.tmp.22568.1762752699703",
     "Schedule/2025-11-13 - Standards Meeting.md.tmp.22568.1762752000244",
     "Schedule/2025-11-13 - Standards Meeting.md.tmp.22568.1762751998373",
@@ -256,7 +257,6 @@
     "scripts/commit-kanban.ps1",
     "scripts/git-repair.ps1",
     "scripts/sync-and-push.ps1",
-    "scripts/check-sync-status.sh",
     "media/file_00000000c90c61f8861f357c81187dc1.png",
     "media/Pasted image 20251027212155.jpg",
     "reference/Daily Note - 25-08-2025.jpg",
