@@ -2,8 +2,8 @@
 title: VFL Tuesday
 allDay: false
 date: 2025-10-08
-startTime: 07:00
-endTime: 840
+startTime: "07:00"
+endTime: "14:00"
 completed: null
 recurrence: weekly
 permalink: schedule/2025-10-08-vfl-tuesday
