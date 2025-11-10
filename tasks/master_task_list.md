@@ -20,7 +20,9 @@ permalink: tasks/master-task-list
 - [x] Share HD54 fire investigation recommendations with Sfiso (WWW format) #task #year/2025 #priority/high #fire-safety ✅ 2025-11-05
 - [x] PDI procedure review with Gerhard - add section to inspect fire suppression systems #task #year/2025 #priority/high #fire-safety ✅ 2025-11-05
 - [x] UV128 CAS installation and testing (arranged with [[Sipho Dubazane]] and Jade at Gloria) #task #year/2025 #priority/medium #CAS #site/Gloria ✅ 2025-11-06
-- [ ] Write motivation for extra electrical foreman at N3 #task #year/2025 #priority/medium #site/Nchwaning3
+- [ ] Write N3 Electrical Foreman recruitment motivation #task #year/2025 #priority/critical #site/Nchwaning3 📅 2025-11-10
+  - Assigned to: [[Karsten, Gregory]]
+  - Status: START TODAY - Complete for approvals
 - [ ] Capture weekly charts #task #year/2025 #priority/low 
 - [ ] Follow up re SA Cranes VO for 6 months extension by Emile (Central procurement) #task #year/2025 #priority/medium #urgent
 - [ ] Update Vehicle List with latest information #task #year/2025 #priority/medium #admin
@@ -202,8 +204,9 @@ permalink: tasks/master-task-list
 
 ## BEV PROGRAMME
 
-### BEV Fire Safety Programme (Nchwaning 3) - CRITICAL PRIORITY
-- [ ] Audit BEV storage areas for compliance with OEM specifications #task #year/2025 #BEV #storage #audit #priority/critical #site/Nchwaning3 📅 2025-10-15
+### BEV Fire Safety Programme (Nchwaning 3) - DEPRIORITIZED TO DECEMBER
+**Status:** Moved from Critical to Medium - Address in December consolidation. Current focus: HD54 fire actions.
+- [ ] Audit BEV storage areas for compliance with OEM specifications #task #year/2025 #BEV #storage #audit #priority/medium #site/Nchwaning3 📅 2025-12-15
   - Assigned to: [[Johnny Hollenbach]]
   - Project: BEV Battery Fire Safety Programme
 - [ ] Review current BEV storage procedures against Epiroc recommendations #task #year/2025 #BEV #fire-safety #epiroc #priority/critical #site/Nchwaning3 📅 2025-10-15
