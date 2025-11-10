@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Inbox/2025-10-22.md",
+                "file": "00_Inbox/2025-11-10.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-10-22"
+              "title": "Outline of 2025-11-10"
             }
           },
           {
@@ -190,14 +190,39 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "7a9f6087074732a0",
+            "type": "leaf",
+            "state": {
+              "type": "full-calendar-view",
+              "state": {},
+              "icon": "calendar-glyph",
+              "title": "Calendar"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
+      },
+      {
+        "id": "e64edab89ccd2205",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3c766f55e75a8caa",
+            "type": "leaf",
+            "state": {
+              "type": "full-calendar-view",
+              "state": {},
+              "icon": "calendar-glyph",
+              "title": "Calendar"
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 697,
-    "collapsed": true
+    "width": 931
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -221,6 +246,11 @@
   },
   "active": "44d50977aef8e7ff",
   "lastOpenFiles": [
+    "Schedule/2025-11-13 - Standards Meeting.md.tmp.22568.1762752000244",
+    "Schedule/2025-11-13 - Standards Meeting.md.tmp.22568.1762751998373",
+    "Schedule/2025-11-13 - Monthly Engineering Meeting.md",
+    "Schedule/2025-11-13 - Project Steerco.md",
+    "Schedule/2025-11-10 - Catch up - General discussions.md",
     "tasks/master_task_list.md",
     "00_Inbox/2025-11-10.md",
     "00_Inbox/Untitled Kanban.md",
@@ -247,16 +277,11 @@
     "reference/Priority Matrix Framework.md",
     "tasks/Tasks by Person.md",
     "Schedule/2025-11-17 - Meeting - Tasks by Person.md",
-    "Dashboard.md",
-    "projects/CAS-Level-9/2025-10-28 – CAS L9 OEM Meetings (Nerospec, Fermel, Manitou, Aard, BELL).md",
     "scripts/commit-kanban.ps1",
-    "Schedule/2025-11-17 - Meeting - Tasks Kanban Board.md",
-    "Schedule/2025-11-19 - Meeting - Tasks Kanban Board.md",
     "scripts/git-repair.ps1",
     "scripts/sync-and-push.ps1",
     "scripts/check-sync-status.sh",
     "projects/N3_Additional_Foreman",
-    "system/styles",
     "media/file_00000000c90c61f8861f357c81187dc1.png",
     "media/Pasted image 20251027212155.jpg",
     "reference/Daily Note - 25-08-2025.jpg",
