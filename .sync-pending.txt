@@ -1,5 +1,17 @@
-﻿A	Schedule/2025-11-10 - Catch up - General discussions.md
-A	Schedule/2025-11-13 - Monthly Engineering Meeting.md
-A	Schedule/2025-11-13 - Project Steerco.md
-M	Schedule/2025-11-13 - Standards Meeting.md
+﻿M	Schedule/2025-08-05 - VFL Week 1 N3 Procedures.md
+M	Schedule/2025-08-12 - VFL Week 2 N3 Risk Assessment.md
+M	Schedule/2025-08-19 - Company Bakkie Service and Inspection.md
+M	Schedule/2025-08-19 - VFL Week 3 Gloria Training.md
+M	Schedule/2025-08-26 - VFL Week 4 N3 Change Management.md
+M	Schedule/2025-08-27 - Company Bakkie Service and Inspection.md
+M	Schedule/2025-08-28 - DMRE Presentation Kimberley.md
+M	Schedule/2025-08-29 - SA Cranes Tasks Due.md
+M	Schedule/2025-08-30 - Drill Rig Capital Application Deadline.md
+M	Schedule/2025-08-30 - TMM COP Review Meeting.md
+M	Schedule/2025-08-31 - Recruit N3 GES Deadline.md
+M	Schedule/2025-08-31 - Xavier SP Mine Safety Lamp Room Contract.md
+M	Schedule/2025-09 ΓÇô VFL Schedule September 2025.md
+M	Schedule/2025-10-11 ΓÇô DPF Discussion Meeting.md
+M	Schedule/2025-11-16 - Review Schedule 22.9 Regulations Impact.md
+M	Schedule/_Sync_Summary_2025-10.md
 M	Schedule/_Sync_Summary_2025-11.md

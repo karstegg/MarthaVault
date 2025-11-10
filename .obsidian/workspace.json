@@ -180,35 +180,9 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
-          },
-          {
-            "id": "b9643ead10dec76c",
-            "type": "leaf",
-            "state": {
-              "type": "full-calendar-view",
-              "state": {},
-              "icon": "calendar-glyph",
-              "title": "Calendar"
-            }
           }
         ],
         "currentTab": 6
-      },
-      {
-        "id": "11de0b116b09e53e",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "59b46b6f1ec3f156",
-            "type": "leaf",
-            "state": {
-              "type": "full-calendar-view",
-              "state": {},
-              "icon": "calendar-glyph",
-              "title": "Calendar"
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
@@ -226,7 +200,6 @@
       "audio-recorder:Start/stop recording": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-kanban:Create new board": false,
-      "obsidian-full-calendar:Open Full Calendar": false,
       "templater-obsidian:Templater": false,
       "cmdr:New Journal Note": false,
       "cmdr:New Devotional": false,
