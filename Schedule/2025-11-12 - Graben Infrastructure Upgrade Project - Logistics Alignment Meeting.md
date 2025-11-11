@@ -1,4 +1,8 @@
 ---
+permalink: schedule/2025-11-12-graben-infrastructure-upgrade-project-logistics-alignment-meeting
+---
+
+---
 title: Graben Infrastructure Upgrade Project: Logistics Alignment Meeting
 allDay: false
 date: 2025-11-12

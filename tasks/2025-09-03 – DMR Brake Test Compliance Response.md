@@ -1,4 +1,8 @@
 ---
+permalink: tasks/2025-09-03-dmr-brake-test-compliance-response
+---
+
+---
 Status:: Draft
 Priority:: High
 Assignee:: [[Sipho Dubazane]], [[Sikelela Nzuza]], [[Sello Sease]]

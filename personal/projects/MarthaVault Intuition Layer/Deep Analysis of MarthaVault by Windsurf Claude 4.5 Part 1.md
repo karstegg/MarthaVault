@@ -1,3 +1,6 @@
+---
+permalink: personal/projects/martha-vault-intuition-layer/deep-analysis-of-martha-vault-by-windsurf-claude-4-5-part-1
+---
 
 ---
 

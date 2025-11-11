@@ -1,4 +1,8 @@
 ---
+permalink: schedule/2025-11-10-critical-whats-app-bridge-re-authentication-required
+---
+
+---
 title: CRITICAL: WhatsApp Bridge Re-authentication Required
 allDay: false
 date: 2025-11-10

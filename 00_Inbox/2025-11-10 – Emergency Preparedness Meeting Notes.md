@@ -1,9 +1,12 @@
 ---
-Status:: Active
-Priority:: High
-Assignee:: [[Karsten, Gregory]]
-DueDate:: 2025-11-15
-Tags:: #meeting #year/2025 #safety #emergency-preparedness #fire-safety #BEV
+'Status:': Active
+'Priority:': High
+'Assignee:':
+- - Karsten
+  - Gregory
+'DueDate:': 2025-11-15
+'Tags:': null
+permalink: 00-inbox/2025-11-10-emergency-preparedness-meeting-notes
 ---
 
 # Emergency Preparedness Meeting - 2025-11-10

@@ -1,4 +1,8 @@
 ---
+permalink: projects/cruiser-nersopec-psu-issues/2025-08-13-cruiser-nersopec-psu-issues-notes
+---
+
+---
 Status:: new Priority:: #priority/medium Assignee:: [[Hennie van Niekerk]] DueDate::
 Priority:: Med
 Assignee:: Greg

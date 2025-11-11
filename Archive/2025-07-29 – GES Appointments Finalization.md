@@ -1,4 +1,8 @@
 ---
+permalink: archive/2025-07-29-ges-appointments-finalization
+---
+
+---
 Status:: new
 Priority:: High
 Assignee:: [[Sipo]], [[Selom]], [[Simon]]

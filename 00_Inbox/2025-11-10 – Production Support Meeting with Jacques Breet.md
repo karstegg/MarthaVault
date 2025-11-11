@@ -1,9 +1,12 @@
 ---
-Status:: Active
-Priority:: High
-Assignee:: [[Karsten, Gregory]]
-DueDate:: 2025-11-11
-Tags:: #meeting #year/2025 #production-support #site/Gloria #capital #procurement
+'Status:': Active
+'Priority:': High
+'Assignee:':
+- - Karsten
+  - Gregory
+'DueDate:': 2025-11-11
+'Tags:': null
+permalink: 00-inbox/2025-11-10-production-support-meeting-with-jacques-breet
 ---
 
 # Production Support Meeting with Jacques Breet - 2025-11-10
