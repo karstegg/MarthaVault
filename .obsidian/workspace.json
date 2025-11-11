@@ -11,14 +11,12 @@
             "id": "44d50977aef8e7ff",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "00_Inbox/2025-11-10 – Production Support Meeting with Jacques Breet.md",
-                "mode": "preview",
-                "source": false
+                "file": "00_Inbox/Pastor Josh - The language of battle pt5_251109_095120.pdf"
               },
-              "icon": "lucide-file",
-              "title": "2025-11-10 – Production Support Meeting with Jacques Breet"
+              "icon": "lucide-file-text",
+              "title": "Pastor Josh - The language of battle pt5_251109_095120"
             }
           }
         ]
@@ -214,7 +212,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 1208
+    "width": 779
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -236,8 +234,9 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "d7405c902b275627",
+  "active": "44d50977aef8e7ff",
   "lastOpenFiles": [
+    "00_Inbox/2025-11-10 – Production Support Meeting with Jacques Breet.md",
     "00_Inbox/WhatsApp Chat with BRMO CAS project group",
     "Schedule/2025-11-11 - Task Due - 2025-11-10 – Production Support Meeting with Jacques Breet.md",
     "Schedule/2025-11-10 - Meeting - 2025-11-10 – Production Support Meeting with Jacques Breet.md",
@@ -246,7 +245,6 @@
     "personal/projects/MarthaVault Intuition Layer/Deep Analysis of MarthaVault by Windsurf Claude 4.5 Part 1.tmp",
     "00_Inbox/2025-11-10 – Emergency Preparedness Meeting Notes.md",
     "00_Inbox/FT_2025-11-10 18_04_36.404.png",
-    "00_Inbox/2025-11-10 – Production Support Meeting with Jacques Breet.md",
     "00_Inbox/2025-11-10 – Production Support Meeting (18",
     "00_Inbox/FT_2025-11-10 15_18_39.255.png",
     "00_Inbox/2025-11-10 – Emergency Preparedness Meeting (15",
@@ -263,7 +261,6 @@
     "Schedule/2025-11-20 - Nchwaning No.3 Shaft Planning Meeting December 2025 and January 2026.md.tmp.43232.1762793892264",
     "Schedule/2025-11-19 - CAPITAL PROJECTS UPDATE GROUP 02 MEETING 03.md",
     "Schedule/2025-11-19 - Graben Infrastructure Upgrade Project Logistics Alignment Meeting.md",
-    "Schedule/2025-11-19 - Graben Infrastructure Upgrade Project Logistics Alignment Meeting.md.tmp.43232.1762793872341",
     "Schedule/2025-11-18 - Monthly Capital Meeting.md",
     "Schedule/2025-11-18 - Epiroc Onsite Support.md",
     "Schedule/2025-11-18 - BWE-CAT Cas L9 Activation ( Surface and Underground Outstanding Equipment CAS L9 Activation, onsite support )  ( Planning  - Upgrade and CAS L9 Activation ).md",
