@@ -3,8 +3,8 @@ title: Cruiser Cas L9 activation ( Planning - Alternators , split charging and C
   L9 Activation, onsite support  )
 allDay: false
 date: 2025-11-11
-startTime: '12:30'
-endTime: '13:00'
+startTime: "10:30"
+endTime: "11:00"
 completed: null
 permalink: schedule/2025-11-11-cruiser-cas-l9-activation-planning-alternators-split-charging-and-cas-l9-activation-onsite-support
 ---
@@ -15,4 +15,4 @@ permalink: schedule/2025-11-11-cruiser-cas-l9-activation-planning-alternators-sp
 
 **Organizer:** Hendrik van Niekerk
 
-**Time:** 12:30 - 13:00 SAST
+**Time:** 10:30 - 11:00 SAST

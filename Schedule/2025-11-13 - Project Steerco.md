@@ -2,15 +2,15 @@
 title: Project Steerco
 allDay: false
 date: 2025-11-13
-startTime: '10:00'
-endTime: '11:00'
+startTime: "10:00"
+endTime: "11:00"
 completed: null
 permalink: schedule/2025-11-13-project-steerco
 ---
 
 # Project Steerco
 
-**Time:** 10:00 - 11:00
+**Time:** 10:00 - 11:00 SAST
 **Location:** Microsoft Teams Meeting
 **Organizer:** Marina Schoeman
 

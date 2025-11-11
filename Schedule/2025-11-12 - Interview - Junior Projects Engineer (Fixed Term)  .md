@@ -2,8 +2,8 @@
 title: Interview - Junior Projects Engineer (Fixed Term)
 allDay: false
 date: 2025-11-12
-startTime: '11:00'
-endTime: '17:00'
+startTime: "09:00"
+endTime: "15:00"
 completed: null
 permalink: schedule/2025-11-12-interview-junior-projects-engineer-fixed-term
 ---
@@ -14,4 +14,4 @@ permalink: schedule/2025-11-12-interview-junior-projects-engineer-fixed-term
 
 **Organizer:** Kgaugelo Sebolai
 
-**Time:** 11:00 - 17:00 SAST
+**Time:** 09:00 - 15:00 SAST

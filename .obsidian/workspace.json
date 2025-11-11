@@ -87,7 +87,7 @@
       {
         "id": "c7ab2ac19efb2b70",
         "type": "tabs",
-        "dimension": 31.61397670549085,
+        "dimension": 16.638935108153078,
         "children": [
           {
             "id": "83f7eb2c13be1f61",
@@ -198,7 +198,7 @@
       {
         "id": "e1054e40570ce37e",
         "type": "tabs",
-        "dimension": 68.38602329450914,
+        "dimension": 83.36106489184692,
         "children": [
           {
             "id": "d7405c902b275627",
@@ -214,7 +214,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 832
+    "width": 1208
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -236,7 +236,7 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "759b14c2e47b40e6",
+  "active": "d7405c902b275627",
   "lastOpenFiles": [
     "00_Inbox/2025-11-10 – Emergency Preparedness Meeting Notes.md",
     "00_Inbox/FT_2025-11-10 18_04_36.404.png",

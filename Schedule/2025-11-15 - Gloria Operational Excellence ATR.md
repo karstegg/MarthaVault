@@ -2,8 +2,8 @@
 title: Gloria Operational Excellence ATR
 allDay: false
 date: 2025-11-15
-startTime: '13:00'
-endTime: '15:00'
+startTime: "11:00"
+endTime: "13:00"
 completed: null
 permalink: schedule/2025-11-15-gloria-operational-excellence-atr
 ---
@@ -14,4 +14,4 @@ permalink: schedule/2025-11-15-gloria-operational-excellence-atr
 
 **Organizer:** Michael Olien
 
-**Time:** 13:00 - 15:00 SAST
+**Time:** 11:00 - 13:00 SAST

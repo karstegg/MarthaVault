@@ -2,8 +2,8 @@
 title: Environmental Management Forum
 allDay: false
 date: 2025-11-13
-startTime: '16:00'
-endTime: '17:30'
+startTime: "14:00"
+endTime: "15:30"
 completed: null
 permalink: schedule/2025-11-13-environmental-management-forum
 ---
@@ -14,4 +14,4 @@ permalink: schedule/2025-11-13-environmental-management-forum
 
 **Organizer:** Chrystal Vries
 
-**Time:** 16:00 - 17:30 SAST
+**Time:** 14:00 - 15:30 SAST

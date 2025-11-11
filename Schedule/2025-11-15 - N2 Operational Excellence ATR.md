@@ -2,8 +2,8 @@
 title: N2 Operational Excellence ATR
 allDay: false
 date: 2025-11-15
-startTime: '10:00'
-endTime: '13:00'
+startTime: "08:00"
+endTime: "11:00"
 completed: null
 permalink: schedule/2025-11-15-n2-operational-excellence-atr
 ---
@@ -14,4 +14,4 @@ permalink: schedule/2025-11-15-n2-operational-excellence-atr
 
 **Organizer:** Michael Olien
 
-**Time:** 10:00 - 13:00 SAST
+**Time:** 08:00 - 11:00 SAST

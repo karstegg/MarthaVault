@@ -3,8 +3,8 @@ title: Fermel Cas L9 activation ( Passport 360 Compliance and Installation Upgra
   planning CAS L9 Activation onsite support  )
 allDay: false
 date: 2025-11-11
-startTime: '13:00'
-endTime: '13:45'
+startTime: "11:00"
+endTime: "11:45"
 completed: null
 permalink: schedule/2025-11-11-fermel-cas-l9-activation-passport-360-compliance-and-installation-upgrade-planning-cas-l9-activation-onsite-support
 ---
@@ -15,4 +15,4 @@ permalink: schedule/2025-11-11-fermel-cas-l9-activation-passport-360-compliance-
 
 **Organizer:** Hendrik van Niekerk
 
-**Time:** 13:00 - 13:45 SAST
+**Time:** 11:00 - 11:45 SAST

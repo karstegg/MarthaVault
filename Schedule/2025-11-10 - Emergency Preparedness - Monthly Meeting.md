@@ -2,8 +2,8 @@
 title: Emergency Preparedness - Monthly Meeting
 allDay: false
 date: 2025-11-10
-startTime: '16:00'
-endTime: '17:00'
+startTime: "14:00"
+endTime: "15:00"
 completed: null
 permalink: schedule/2025-11-10-emergency-preparedness-monthly-meeting
 ---
@@ -14,4 +14,4 @@ permalink: schedule/2025-11-10-emergency-preparedness-monthly-meeting
 
 **Organizer:** Jacques Farmer
 
-**Time:** 16:00 - 17:00 SAST
+**Time:** 14:00 - 15:00 SAST

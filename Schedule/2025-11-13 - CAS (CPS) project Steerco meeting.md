@@ -2,8 +2,8 @@
 title: CAS (CPS) project Steerco meeting
 allDay: false
 date: 2025-11-13
-startTime: 09:45
-endTime: '10:30'
+startTime: "07:45"
+endTime: "08:30"
 completed: null
 permalink: schedule/2025-11-13-cas-cps-project-steerco-meeting
 ---
@@ -14,4 +14,4 @@ permalink: schedule/2025-11-13-cas-cps-project-steerco-meeting
 
 **Organizer:** Marina Schoeman
 
-**Time:** 09:45 - 10:30 SAST
+**Time:** 07:45 - 08:30 SAST
