@@ -95,7 +95,10 @@
       "Bash(dir \"C:\\Users\\10064957\\My Drive\\GDVault\\MarthaVault\\.obsidian\" /B)",
       "Bash(timeout 30 python:*)",
       "Bash(git restore:*)",
-      "Bash(go build:*)"
+      "Bash(go build:*)",
+      "Bash(git fetch:*)",
+      "Bash(go get:*)",
+      "Bash(go list:*)"
     ],
     "deny": []
   },
