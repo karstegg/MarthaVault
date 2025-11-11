@@ -1,1 +1,21 @@
-﻿M	tasks/master_task_list.md
+﻿D	Schedule/2025-11-07 - Review - master_task_list.md
+D	Schedule/2025-11-13 - CAS CPS project Steerco meeting.md
+D	Schedule/2025-11-15 - Gloria Operational Excellence ATR.md
+D	Schedule/2025-11-15 - N2 Operational Excellence ATR.md
+D	Schedule/2025-11-15 - N3 Operational Excellence ATR.md
+D	Schedule/2025-11-18 - Aard Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation, onsite support   ).md
+D	Schedule/2025-11-18 - Bell ΓÇô Cas L9 Activation ( Planning  - Upgrade and CAS L9 Activation, onsite support   ).md
+D	Schedule/2025-11-18 - Cruiser Cas L9 activation  Planning - Alternators  split charging and CAS L9 Activation onsite support.md
+D	Schedule/2025-11-18 - Epiroc Onsite Support.md
+D	Schedule/2025-11-18 - Fermel Cas L9 activation  Passport 360 Compliance and Installation Upgrade planning CAS L9 Activation onsite support.md
+D	Schedule/2025-11-18 - Manitou Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation CAS L9 Activation onsite support  ) Manitou , Nerospec , Strata , BRMO.md
+D	Schedule/2025-11-19 - CAPITAL PROJECTS UPDATE GROUP 02 MEETING 03.md
+D	Schedule/2025-11-19 - Graben Infrastructure Upgrade Project Logistics Alignment Meeting.md
+D	Schedule/2025-11-19 - Meeting - Priority Matrix Board.md
+D	Schedule/2025-11-19 - Meeting - Tasks Kanban Board.md
+D	Schedule/2025-11-20 - CAS (CPS) project Steerco meeting.md
+D	Schedule/2025-11-20 - CAS CPS project Steerco meeting.md
+D	Schedule/2025-11-20 - Meeting - Tasks by Site.md
+D	Schedule/2025-11-21 - S2  BEV Optimisation - Weekly Progress.md
+D	Schedule/2025-11-21 - S2 & BEV Optimisation - Weekly Progress.md
+A	projects/L9 Meeting Prep - BRMO CAS OEM Progress (Nov 4-11).md
