@@ -1,1 +1,4 @@
-﻿M	tasks/master_task_list.md
+﻿M	Schedule/2025-11-10 - CRITICAL - WhatsApp Bridge Re-authentication Required.md
+M	Schedule/2025-11-12 - Graben Infrastructure Upgrade Project - Logistics Alignment Meeting.md
+M	projects/Cruiser Nersopec PSU Issues/2025-08-13 ΓÇô Cruiser Nersopec PSU Issues Notes.md
+M	tasks/2025-09-03 ΓÇô DMR Brake Test Compliance Response.md
