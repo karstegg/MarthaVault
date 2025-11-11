@@ -415,6 +415,9 @@ permalink: tasks/master-task-list
 
 ## PERSONAL PROJECTS
 
+- [ ] Deploy email-sender skill to Windows environment with Outlook #task #personal #skill #priority/medium #year/2025 📅 2025-11-15
+  - Note: Install email-sender.skill in Claude Code CLI environment, test pywin32 integration
+  - Reference: Email-sender skill created 2025-11-11, based on working outlook-extractor
 - [ ] Manually delete MCP-Microsoft-Office folder from MarthaVault (Google Drive locked) #task #personal #cleanup #priority/low #year/2025
 
 ---

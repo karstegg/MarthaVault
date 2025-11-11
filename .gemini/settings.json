@@ -4,5 +4,10 @@
   },
   "ui": {
     "theme": "Shades Of Purple"
+  },
+  "mcpServers": {
+    "whatsapp": {
+      "config_file": ".gemini-mcp.json"
+    }
   }
 }

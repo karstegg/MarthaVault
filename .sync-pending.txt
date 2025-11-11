@@ -1,2 +1,20 @@
-﻿A	Schedule/2025-11-10 - Meeting - 2025-11-10 ΓÇô Production Support Meeting with Jacques Breet.md
-A	Schedule/2025-11-11 - Task Due - 2025-11-10 ΓÇô Production Support Meeting with Jacques Breet.md
+﻿A	Schedule/2025-11-10 - CRITICAL WhatsApp Bridge Re-authentication Required.md
+M	Schedule/2025-11-10 - Emergency Preparedness - Monthly Meeting.md
+A	Schedule/2025-11-11 - Cruiser Cas L9 activation  Planning - Alternators  split charging and CAS L9 Activation onsite support.md
+A	Schedule/2025-11-11 - Fermel Cas L9 activation  Passport 360 Compliance and Installation Upgrade planning CAS L9 Activation onsite support.md
+A	Schedule/2025-11-12 - Graben Infrastructure Upgrade Project Logistics Alignment Meeting.md
+A	Schedule/2025-11-13 - CAS CPS project Steerco meeting.md
+M	Schedule/2025-11-13 - Weekly Overtime Meeting.md
+A	Schedule/2025-11-14 - S2  BEV Optimisation - Weekly Progress.md
+A	Schedule/2025-11-17 - CAPITAL PROJECTS UPDATE GROUP 02 MEETING 03.md
+A	Schedule/2025-11-18 - Cruiser Cas L9 activation  Planning - Alternators  split charging and CAS L9 Activation onsite support.md
+A	Schedule/2025-11-18 - Environmental Management Forum.md
+A	Schedule/2025-11-18 - Fermel Cas L9 activation  Passport 360 Compliance and Installation Upgrade planning CAS L9 Activation onsite support.md
+A	Schedule/2025-11-19 - Cancelled Nerospec - Weekly meeting.md
+A	Schedule/2025-11-19 - Gloria Operational Excellence ATR.md
+M	Schedule/2025-11-19 - Graben Infrastructure Upgrade Project Logistics Alignment Meeting.md
+A	Schedule/2025-11-19 - N2 Operational Excellence ATR.md
+A	Schedule/2025-11-19 - N3 Operational Excellence ATR.md
+A	Schedule/2025-11-20 - CAS CPS project Steerco meeting.md
+A	Schedule/2025-11-21 - S2  BEV Optimisation - Weekly Progress.md
+A	Schedule/2025-11-24 - Adjudication Meeting.md
