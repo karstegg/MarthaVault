@@ -93,7 +93,8 @@
       "Bash(.vault-sync-checkpoint)",
       "Bash(sed:*)",
       "Bash(dir \"C:\\Users\\10064957\\My Drive\\GDVault\\MarthaVault\\.obsidian\" /B)",
-      "Bash(timeout 30 python:*)"
+      "Bash(timeout 30 python:*)",
+      "Bash(git restore:*)"
     ],
     "deny": []
   },
