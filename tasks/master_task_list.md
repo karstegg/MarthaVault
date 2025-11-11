@@ -17,6 +17,10 @@ permalink: tasks/master-task-list
 ---
 
 ## Pending Tasks (Unscheduled)
+- [ ] Survey current belt temperature sensor deployment across all sites #task #year/2025 #priority/high #temperature-monitoring #fire-safety 📅 2025-11-15
+  - Assigned to: [[Karsten, Gregory]]
+  - Context: Emergency Preparedness Meeting action - determine sensor coverage before adding to areas that don't require them
+  - Related: BEV fire safety programme, real-time monitoring systems
 - [x] Share HD54 fire investigation recommendations with Sfiso (WWW format) #task #year/2025 #priority/high #fire-safety ✅ 2025-11-05
 - [x] PDI procedure review with Gerhard - add section to inspect fire suppression systems #task #year/2025 #priority/high #fire-safety ✅ 2025-11-05
 - [x] UV128 CAS installation and testing (arranged with [[Sipho Dubazane]] and Jade at Gloria) #task #year/2025 #priority/medium #CAS #site/Gloria ✅ 2025-11-06
