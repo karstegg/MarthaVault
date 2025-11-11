@@ -11,12 +11,14 @@
             "id": "44d50977aef8e7ff",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "00_Inbox/Pastor Josh - The language of battle pt5_251109_095120.pdf"
+                "file": "Schedule/2025-11-11 - N3 Load and Haul Fleet.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Pastor Josh - The language of battle pt5_251109_095120"
+              "icon": "lucide-file",
+              "title": "2025-11-11 - N3 Load and Haul Fleet"
             }
           }
         ]
