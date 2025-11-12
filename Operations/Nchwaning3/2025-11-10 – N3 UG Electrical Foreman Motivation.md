@@ -59,6 +59,12 @@ We propose:
    - Breakdown crew handles equipment repairs, services, urgent response
 4. **Target start date:** January 2026
 
+**Additional headcount required:**
+- 1x Foreman (Construction & Infrastructure)
+- 2x Electricians (additional for breakdown crew)
+- 2x Semi-Skilled (additional for breakdown crew)
+- No additional Cable Attendants or UV Operator (reallocated from existing crew)
+
 ## Spin-Offs:
 
 The gains from this structure are:

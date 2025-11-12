@@ -1,6 +1,2 @@
-﻿D	Schedule/2025-11-10 - CRITICAL - WhatsApp Bridge Re-authentication Required.md
-D	Schedule/2025-11-11 - Cruiser Cas L9 activation  Planning - Alternators  split charging and CAS L9 Activation onsite support.md
-D	Schedule/2025-11-11 - Fermel Cas L9 activation  Passport 360 Compliance and Installation Upgrade planning CAS L9 Activation onsite support.md
-D	Schedule/2025-11-12 - Graben Infrastructure Upgrade Project Logistics Alignment Meeting.md
-D	Schedule/2025-11-13 - Monthly Engineering Meeting.md
-D	Schedule/2025-11-14 - S2  BEV Optimisation - Weekly Progress.md
+﻿A	Operations/Nchwaning3/2025-11-10 ΓÇô N3 UG Electrical Foreman Motivation.md
+A	Schedule/2025-11-15 - Task Due - 2025-11-05 ΓÇô N3 UG Electrical Foreman Motivation.md
