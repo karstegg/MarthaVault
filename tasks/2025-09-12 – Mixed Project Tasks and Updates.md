@@ -21,7 +21,7 @@ permalink: tasks/2025-09-12-mixed-project-tasks-and-updates
   - **Purpose**: Inspect Solrock work progress
 
 ## General Tasks
-- [ ] Lifting Equipment vs Jacking analysis #task #priority/medium 📅 2025-09-19
+- [x] Lifting Equipment vs Jacking analysis #task #priority/medium 📅 2025-09-19 ✅ 2025-11-18
   - **Assignee**: [[johnny Hollenbach]]
   - **Type**: Equipment assessment
 

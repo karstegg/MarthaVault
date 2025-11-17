@@ -4,21 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "ed6c48bf10d808b8",
+        "id": "a10fd665fbebc922",
         "type": "tabs",
         "children": [
           {
-            "id": "44d50977aef8e7ff",
+            "id": "7e4b05391a9b5cf5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "Operations/Nchwaning3/2025-11-05 – N3 UG Electrical Foreman Motivation.md",
-                "mode": "preview",
-                "source": false
+                "file": "tasks/Priority Matrix Board.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    null
+                  ]
+                }
               },
-              "icon": "lucide-file",
-              "title": "2025-11-05 – N3 UG Electrical Foreman Motivation"
+              "icon": "lucide-trello",
+              "title": "Priority Matrix Board"
             }
           }
         ]
@@ -53,7 +57,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#priority/medium",
+                "query": "tag:#priority/critical",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,7 +91,7 @@
       {
         "id": "c7ab2ac19efb2b70",
         "type": "tabs",
-        "dimension": 16.638935108153078,
+        "dimension": 26.87188019966722,
         "children": [
           {
             "id": "83f7eb2c13be1f61",
@@ -143,13 +147,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Inbox/2025-11-10.md",
+                "file": "tasks/Priority Matrix Board.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-11-10"
+              "title": "Outline of Priority Matrix Board"
             }
           },
           {
@@ -198,7 +202,7 @@
       {
         "id": "e1054e40570ce37e",
         "type": "tabs",
-        "dimension": 83.36106489184692,
+        "dimension": 73.12811980033278,
         "children": [
           {
             "id": "d7405c902b275627",
@@ -214,7 +218,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 779
+    "width": 893
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -236,58 +240,58 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "44d50977aef8e7ff",
+  "active": "d7405c902b275627",
   "lastOpenFiles": [
-    "Operations/Nchwaning3/2025-11-12 – N3 UG Electrical Foreman Position Motivation.md",
-    "Operations/Nchwaning3/2025-11-10 – N3 UG Electrical Foreman Motivation.md",
-    "Operations/Nchwaning3/2025-11-05 – N3 UG Electrical Foreman Motivation.md",
-    "Schedule/2025-11-15 - Task Due - 2025-11-05 – N3 UG Electrical Foreman Motivation.md",
-    "Schedule/2025-11-11 - N3 Load and Haul Fleet.md",
-    "00_Inbox/Pastor Josh - The language of battle pt5_251109_095120.pdf",
-    "00_Inbox/Memo - Junior Poject Engineers Memo.pdf",
-    "00_Inbox/Memo_Create New Position_Shafts & Winders Box Attendant_Signed.pdf",
-    "PROJECT_INSTRUCTIONS_V3.md",
-    "projects/L9 Meeting Prep - BRMO CAS OEM Progress (Nov 4-11).md",
-    "Schedule/2025-11-18 - Fermel Cas L9 activation  Passport 360 Compliance and Installation Upgrade planning CAS L9 Activation onsite support.md",
-    "Schedule/2025-11-11 - Fermel Cas L9 activation  Passport 360 Compliance and Installation Upgrade planning CAS L9 Activation onsite support.md",
-    "Schedule/2025-11-18 - Cruiser Cas L9 activation  Planning - Alternators  split charging and CAS L9 Activation onsite support.md",
-    "Schedule/2025-11-11 - Cruiser Cas L9 activation  Planning - Alternators  split charging and CAS L9 Activation onsite support.md",
-    "Schedule/2025-11-12 - Graben Infrastructure Upgrade Project Logistics Alignment Meeting.md",
-    "Schedule/2025-11-17 - CAPITAL PROJECTS UPDATE GROUP 02 MEETING 03.md",
-    "Schedule/2025-11-20 - CAS CPS project Steerco meeting.md",
-    "Schedule/2025-11-13 - CAS CPS project Steerco meeting.md",
-    "Schedule/2025-11-10 - CRITICAL WhatsApp Bridge Re-authentication Required.md",
-    "Schedule/2025-11-21 - S2  BEV Optimisation - Weekly Progress.md",
-    "Schedule/2025-11-14 - S2  BEV Optimisation - Weekly Progress.md",
-    "Schedule/2025-11-24 - Adjudication Meeting.md",
-    "Schedule/2025-11-19 - N3 Operational Excellence ATR.md",
-    "Schedule/2025-11-19 - Gloria Operational Excellence ATR.md",
-    "Schedule/2025-11-19 - N2 Operational Excellence ATR.md",
-    "Schedule/2025-11-19 - Cancelled Nerospec - Weekly meeting.md",
-    "Schedule/2025-11-18 - Environmental Management Forum.md",
-    "00_Inbox/WhatsApp Chat with BRMO CAS project group (1)",
-    "00_Inbox/2025-11-10 – Production Support Meeting with Jacques Breet.md",
-    "00_Inbox/WhatsApp Chat with BRMO CAS project group",
-    "Schedule/2025-11-11 - Task Due - 2025-11-10 – Production Support Meeting with Jacques Breet.md",
-    "Schedule/2025-11-10 - CRITICAL - WhatsApp Bridge Re-authentication Required.tmp",
-    "personal/projects/MarthaVault Intuition Layer/Deep Analysis of MarthaVault by Windsurf Claude 4.5 Part 1.tmp",
-    "00_Inbox/FT_2025-11-10 18_04_36.404.png",
-    "00_Inbox/2025-11-10 – Production Support Meeting (18",
+    "Schedule/2025-11-21 - Speed up Belts of Sat tip 1 & Sat tip 2 to produces 800 t-h safely.md",
+    "Schedule/2025-11-21 - S2 & BEV Optimisation - Weekly Progress.md",
+    "Schedule/2025-11-20 - Monthly Engineering Meeting.md",
+    "Schedule/2025-11-20 - Nchwaning No.3 Shaft Planning Meeting December 2025 and January 2026.md.tmp.23580.1763419597729",
+    "Schedule/2025-11-20 - CAS (CPS) project Steerco meeting.md",
+    "Schedule/2025-11-20 - Weekly Overtime.md",
+    "Schedule/2025-11-19 - Meeting - Priority Matrix Board.md",
+    "Schedule/2025-11-19 - Annual Medical.md",
+    "tasks/master_task_list.md",
+    "tasks/filtered_task_list.md",
+    "tasks/Test Task.md",
+    "tasks/Tasks Kanban Board.md",
+    "tasks/Tasks by Theme.md",
+    "tasks/Tasks by Site.md",
+    "tasks/Tasks by Person.md",
+    "tasks/Priority Matrix Board.md",
+    "tasks/2025-10-29 – Junior Engineer Interview Questions.md",
+    "tasks/2025-10-07 – SA Crane Contract 6 Month Extension.md",
+    "tasks/2025-10-06 – Weekly Priorities.md",
+    "tasks/2025-09-22 – Fit Lubri Vent on All S2 Machines.md",
+    "tasks/~$25-10-03 - Junior Project Engineers Recruitment Memo.docx",
+    "tasks/2025-09-22 – Add Fire Suppression to Pre-Start Checks.md",
+    "tasks/2025-09-15 – Daily Tasks and Action Items.md",
+    "tasks/2025-09-12 – Mixed Project Tasks and Updates.md",
+    "tasks/2025-09-10 – Xavier Peterson - N2 Manwinder Investigation Follow-up.md",
+    "tasks/2025-09-03 – DMR Brake Test Compliance Response.md",
+    "tasks/2025-08-25 – MSTA Fire Audit Follow-ups.md",
+    "tasks/2025-08-19 – Company Bakkie Service and Inspection.md",
+    "00_Inbox/FT_2025-11-17 20_37_37.256.png",
+    "media/image/2025/2025-11-17_2037_Emergency_Preparedness_Recap.png",
+    "media/image/2025/2025-11-17_2036_Daily_Notes_Planner.png",
+    "media/image/2025/2025-11-17_2032_Capital_Meeting.png",
+    "00_Inbox/2025-11-17 – Email Analysis – Flagged and Unread.md.tmp.23580.1763410266978",
+    "00_Inbox/FT_2025-11-17 20_32_53.024.png",
+    "00_Inbox/FT_2025-11-17 20_36_53.762.png",
+    "media/image/2025/2025-11-10_1518_Emergency_Preparedness_Meeting_Screenshot.png",
+    "media/image/2025/2025-11-10_1804_Production_Support_Meeting_Notes.png",
     "00_Inbox/FT_2025-11-10 15_18_39.255.png",
-    "00_Inbox/2025-11-10 – Emergency Preparedness Meeting (15",
-    "CLAUDE.md.tmp.43232.1762799216062",
-    "media/file_00000000c90c61f8861f357c81187dc1.png",
-    "media/Pasted image 20251027212155.jpg",
-    "reference/Daily Note - 25-08-2025.jpg",
-    "media/Pasted image 20251008114241.png",
+    "00_Inbox/FT_2025-11-10 18_04_36.404.png",
+    "personal/Pastor Josh – The language of battle pt5.pdf",
+    "projects/Recruitment/2025-11-XX – Junior Project Engineers Recruitment Memo.pdf",
+    "projects/Recruitment",
+    "Operations/Shafts & Winders/2025-11-XX – Create New Position Box Attendant (Signed Memo).pdf",
+    "personal/Week 20/Weekly Report  Shafts and Winders 2025_20_07-13Nov2025.xlsx",
+    "personal/Week 20/Shafts and Winders Production - Week20.csv",
+    "personal/Week 20/SHAFTS AND WINDERS HEAL Week20.pptx",
     "MarthaVault Workflow Canvas.canvas",
     "MarthaVault Overview Canvas.canvas",
     "MarthaVault Implementation Canvas.canvas",
     "MarthaVault Architecture Canvas.canvas",
-    "MCP-Microsoft-Office/node_modules/retry/equation.gif",
-    "MCP-Microsoft-Office/node_modules/sqlite3/node_modules/unique-filename/coverage/sort-arrow-sprite.png",
-    "MCP-Microsoft-Office/node_modules/date-fns/docs/logotype.svg",
-    "MCP-Microsoft-Office/node_modules/date-fns/docs/logo.svg",
     "Untitled.canvas"
   ]
 }

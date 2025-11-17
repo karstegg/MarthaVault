@@ -78,7 +78,7 @@ If you have modified the sample tasks since they were created, you can see the c
 
 - [ ] #task Sample task 1: status symbol=`space` status name='Todo'
 - [x] #task Sample task 2: status symbol=`x` status name='Done'
-- [/] #task Sample task 3: status symbol=`/` status name='In Progress'
+- [x] #task Sample task 3: status symbol=`/` status name='In Progress' ✅ 2025-11-18
 - [-] #task Sample task 4: status symbol=`-` status name='Cancelled'
 
 ## Search the Sample Tasks

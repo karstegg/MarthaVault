@@ -1,0 +1,8 @@
+Fleet,Planned,Actual,Compliance,Target,Compliance %,Reasons for Non-Compliance
+DT,3,3,1,1,100.0%,
+FL,0,0,,1,,
+HD,3,3,1,1,100.0%,
+RT,2,2,1,1,100.0%,
+SR - Service Compliance,0,0,,1,,
+Support Equipment,10,5,0.5,1,50.0%,LDO553 on breakdown; LDO580 was not brought in for service; UV54 planned to be serviced tonight; UV139 rescheduled; LDO634 planned for weekend
+SR - Weekly Inspection ,8,8,1,1,100.0%,

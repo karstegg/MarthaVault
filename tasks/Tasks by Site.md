@@ -6,7 +6,7 @@ permalink: tasks/tasks-by-site-1
 # Tasks by Site
 
 **Source**: [[tasks/master_task_list.md]] (72 open tasks)  
-**Last Updated**: 2025-11-05  
+**Last Updated**: 2025-11-17  
 **Grouping**: By mine location
 
 ---
@@ -27,6 +27,7 @@ permalink: tasks/tasks-by-site-1
 - N3 ATR Meeting Actions #priority/medium 📅 2025-11-10
 - VFL Site Visit Schedule N3 #priority/medium 📅 2025-11-11
 - HD Engine Protection Status Update #priority/medium 📅 2025-11-08
+- BEV Charging Bay #2 Chargers - Contract & Order Routing #priority/high #capital 📅 2025-11-30 *(routing as of Nov 17)*
 
 ## Gloria (GLR)
 
@@ -43,6 +44,7 @@ permalink: tasks/tasks-by-site-1
 
 ## Black Rock (Surface Plant)
 
+- BEV Charging Bay #2 Chargers - Contract & Order Routing #priority/high #BEV #capital 📅 2025-11-30 *(routing as of Nov 17)*
 - BEV Fire Safety Programme Q4 Delivery #priority/high #BEV 📅 2025-12-31
 - BEV Charging Bay 2 Upgrade #priority/high 📅 2025-11-15
 - VFL Surface Plant Visit #priority/medium 📅 2025-11-21

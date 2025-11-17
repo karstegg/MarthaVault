@@ -1,0 +1,9 @@
+Equipment,Friday,Monday,Tuesday,Wednesday,Thursday,Average,Breakdowns - Comments
+HD,88.0%,89.0%,75.0%,69.0%,71.0%,78.4%,Labour Cost
+RT,97.0%,97.0%,87.0%,87.0%,87.0%,91.0%,
+SR,82.0%,78.0%,73.0%,82.0%,84.0%,79.8%,"HD69 Alternator not charging, HD52 drifter,"
+DT Diesel,87.0%,95.0%,87.0%,82.0%,89.0%,88.0%,
+FL Diesel,95.0%,100.0%,91.0%,99.0%,100.0%,97.0%,
+DT batteries,70.0%,73.0%,86.0%,75.0%,70.0%,74.8%,"SR24 Engine Faulty, SR39 Weld boom, SR43 Hammer bolts & engine cut off, SR30 boom Cylinder"
+FL Batteries,100.0%,92.0%,100.0%,93.0%,90.0%,95.0%,
+Average,,,,,,86.3%,

@@ -12,8 +12,8 @@ permalink: tasks/2025-10-07-sa-crane-contract-6-month-extension
 # SA Crane Contract 6 Month Extension
 
 ## Task Details
-- [ ] Prepare 6 month extension variation order for SA Crane contract #task #priority/medium 📅 2025-10-14
-- [ ] Send VO documentation to Emile at Central Logistics Hub #task #priority/medium 📅 2025-10-14
+- [x] Prepare 6 month extension variation order for SA Crane contract #task #priority/medium 📅 2025-10-14 ✅ 2025-11-18
+- [x] Send VO documentation to Emile at Central Logistics Hub #task #priority/medium 📅 2025-10-14 ✅ 2025-11-18
 
 ## Context
 Extension needed for SA Crane service contract. Variation order required.

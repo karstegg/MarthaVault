@@ -17,29 +17,29 @@ permalink: tasks/2025-10-29-junior-engineer-interview-questions
 
 ## Task
 
-- [ ] Prepare interview questions for junior engineer position #task #recruitment #year/2025 📅 2025-11-15
+- [x] Prepare interview questions for junior engineer position #task #recruitment #year/2025 📅 2025-11-15 ✅ 2025-11-18
 
 ---
 
 ## Interview Question Categories
 
 ### Technical Competency
-- [ ] Mining engineering fundamentals
-- [ ] Equipment knowledge and troubleshooting
-- [ ] Safety protocols and risk assessment
-- [ ] Project management basics
+- [x] Mining engineering fundamentals
+- [x] Equipment knowledge and troubleshooting
+- [x] Safety protocols and risk assessment
+- [x] Project management basics
 
 ### Behavioral Assessment
-- [ ] Problem-solving approach
-- [ ] Teamwork and collaboration
-- [ ] Learning agility and adaptability
-- [ ] Communication skills
+- [x] Problem-solving approach
+- [x] Teamwork and collaboration
+- [x] Learning agility and adaptability
+- [x] Communication skills
 
 ### Role-Specific
-- [ ] Underground operations experience
-- [ ] Equipment maintenance background
-- [ ] Site-specific challenges (N2/N3/Gloria)
-- [ ] Shift work readiness
+- [x] Underground operations experience
+- [x] Equipment maintenance background
+- [x] Site-specific challenges (N2/N3/Gloria)
+- [x] Shift work readiness
 
 ---
 
@@ -59,9 +59,9 @@ permalink: tasks/2025-10-29-junior-engineer-interview-questions
 
 ## Next Actions
 
-- [ ] Draft 10-15 core interview questions #task #priority/medium #year/2025 📅 2025-11-08
-- [ ] Review questions with Jacques before interviews #task #priority/medium #year/2025 📅 2025-11-12
-- [ ] Prepare assessment rubric/scoring criteria #task #priority/low #year/2025 📅 2025-11-15
+- [x] Draft 10-15 core interview questions #task #priority/medium #year/2025 📅 2025-11-08 ✅ 2025-11-18
+- [x] Review questions with Jacques before interviews #task #priority/medium #year/2025 📅 2025-11-12 ✅ 2025-11-18
+- [x] Prepare assessment rubric/scoring criteria #task #priority/low #year/2025 📅 2025-11-15 ✅ 2025-11-18
 
 ---
 

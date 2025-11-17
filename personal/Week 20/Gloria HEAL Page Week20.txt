@@ -1,0 +1,21 @@
+Highlights
+• DT053 back to production
+• AS level 9 compliance
+• AARD Utility Vehicle : 06 vs 08 outstanding UV0067,UV0105
+• Fermels                      : 03 vs 24 Completed LDO423, LDO425, LDO429
+• Toyota                       : 07 vs 13 Completed LDO562,599,600,601,598,603 and     558
+
+Lowlights
+• TMM availability 82%
+• RT0037 Transmission oil leak and decided to replace the transmission,RT0046 fail to start,RT0060 Motor oil leak and was replaced,RT0045 drilling plug tripping due overload was not set 250mA
+• SR0037 Exhaust, Starter and shovel,SR0040 Windscreen damaged,SR0052 Tail wheel bracket broken
+• DT0153 Line boring,DT0105 &0106 Nerospec
+• FL0081 Not starting,FL0083 Lights
+
+Emerging Issues
+
+Priorities
+• Cleaning 9 west dam
+• Assist in implementation of level 9
+• Implement RTs IGS to improve availability
+• Present solution /way forward  regarding TMM availability

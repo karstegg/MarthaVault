@@ -21,7 +21,7 @@ permalink: tasks/2025-08-06-weekly-tasks-list
   - Personnel advancement request
   - Requires management approval process
 
-- [ ] **360 review of EJ and Kishore**  
+- [x] **360 review of EJ and Kishore**  
   - Performance evaluation process
   - Multiple stakeholder feedback required
 
@@ -35,7 +35,7 @@ permalink: tasks/2025-08-06-weekly-tasks-list
   - Second advertisement preparation
 
 ### Contracts & Procurement
-- [ ] **PBE radios - Leaky Feeder 6 months contract**
+- [x] **PBE radios - Leaky Feeder 6 months contract**
   - Communication equipment contract
   - 6-month term agreement
 

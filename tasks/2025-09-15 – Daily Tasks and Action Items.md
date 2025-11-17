@@ -25,7 +25,7 @@ permalink: tasks/2025-09-15-daily-tasks-and-action-items
   - **Context**: Order 282 related to S2 project
 
 ## DMR Compliance (Section 54 Instructions)
-- [ ] Engineers to provide status of actions from DMR S54 instructions #task #priority/critical #DMR #compliance 📅 2025-09-20
+- [x] Engineers to provide status of actions from DMR S54 instructions #task #priority/critical #DMR #compliance 📅 2025-09-20 ✅ 2025-11-18
   - **Requirements**:
     - TMM Audits status
     - FSS Audits status

@@ -1,0 +1,17 @@
+FLe,FL0098,/Equipment/Breakdown Electrical,invertor+battery sighn @ sim2n parking bay,4.52
+/Equipment/Breakdown Mechanical,"oil leak @ R5,61n 52w",9.10
+/Equipment/Operational Delays/Battery/Flat Battery,Charging,9.05
+FL0099,/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/STRATA Breakdown,System not working@S2N 57w4n,9.45
+/Equipment/Operational Delays/Battery/Flat Battery,CHARGE BATTERY,1.68
+Charging,2.18
+FL0107,/Equipment,Windscreen cracked@Batt Bay,0.92
+/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/STRATA Breakdown,"strata system faulty @ R5,74s",0.92
+/Equipment/Breakdown Mechanical,Hydr Oil Leak@Batt,2.70
+/Equipment/Operational Delays/Battery,battery not connecting 2 main drive 7s 90e,5.17
+/Equipment/Operational Delays/Battery/Flat Battery,battery charging,1.25
+Charging,1.20
+FL0108,/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v,TC Error@WS,0.93
+/Equipment/Breakdown Tyre Bay,Change Tyre@Tyre Bay,3.77
+FL0112,/Equipment/Operational Delays/Battery/Flat Battery,Charging,1.93
+FL0113,/Equipment/Operational Delays/Battery,battery not connecting @ battery bay,1.17
+CHANGE BATTERY.,0.27

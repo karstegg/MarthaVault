@@ -30,7 +30,7 @@ Multi-OEM coordination meetings for CAS L9 implementation across all sites. **CR
 - [x] ~~Alternative LED supplier - verify current LED product~~ - **NOTE**: ATR action for [[Dubazane, Sipho]], not CAS project task #year/2025
 - [x] ~~Arrange site access for Marnus Tharratt from Fermel~~ - ✅ Done #year/2025
 - [x] ~~Discuss Fermel additional resources with [[Lourens van der Heerden]]/Niresha~~ - ✅ Done #year/2025
-- [/] Discuss Strata resources for CAS project (CRITICAL BOTTLENECK) - In progress, assigned to [[Breet, Jacques]] and [[Hendrik van Niekerk]] #task #year/2025 #priority/critical #CAS 📅 2025-11-01
+- [x] Discuss Strata resources for CAS project (CRITICAL BOTTLENECK) - In progress, assigned to [[Breet, Jacques]] and [[Hendrik van Niekerk]] #task #year/2025 #priority/critical #CAS 📅 2025-11-01 ✅ 2025-11-18
 - [x] ~~Change SHERQ bakkie capex application amount - remove engineering fees~~ - ✅ Sent to [[Malouli, Ilze]] (Finance) for signatures #year/2025
 - [x] ~~Discuss lifting baskets options with Chris (Normet vs Fermel vs Epiroc)~~ - ✅ Done #year/2025
 

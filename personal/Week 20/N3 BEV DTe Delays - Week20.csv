@@ -1,0 +1,42 @@
+DTe,DT0146,/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/STRATA Breakdown,Comms Lost@Batt Bay,1.37
+/Equipment/Breakdown Electrical,not starting @ old tips,6.38
+/Equipment/Breakdown Electrical/Auto Electrical System - 800v/Inverters Units,Inverter error (99s10e mw,9.25
+/Equipment/Breakdown Mechanical,High Traction Motor 1@Sat 1 entrance,1.07
+"Red stop lamp @ R5,54s 41w",3.12
+/Equipment/Breakdown Mechanical/Brake System/Park Brake,@ 54S41W  R5,1.63
+/Equipment/Operational Delays/Battery,battery not connecting @ tramming w/place,1.88
+CHANGE BATTERY.,2.47
+/Equipment/Operational Delays/Battery/Flat Battery,battery charging,1
+Charging,2.53
+DT0147,/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v,Red stop lamp (battery bay),0.23
+/Equipment/Breakdown Electrical,suspension problem @ battery bay,5.33
+/Equipment/Breakdown Mechanical,Suspension@Batt Bay,4.58
+/Equipment/Breakdown Mechanical/Chassis /Canopy/Cab,CAB IS LOOSE@BATTERY BAY.,15.53
+/Equipment/Operational Delays/Battery,CHANGE BATTERY.,1.37
+DT0149,/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v,Wipers@WS,0.13
+/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/STRATA Breakdown,Comms Error@Batt Bay,8.72
+COMMS LOST@PARK BAY,7.40
+/Equipment/Breakdown Electrical,WIPER NOT WORKING @ BATTERY BAY,14.65
+/Equipment/Breakdown Mechanical,Suspension@WS,0.33
+/Equipment/Operational Delays/Battery,CHANGE BATTERY.,1.25
+/Equipment/Operational Delays/Battery/Flat Battery,Charging,4
+charging battery @ battery bay,3.77
+DT0150,/Equipment/Breakdown Electrical/Auto Electrical System - 800v/800v Battery,battery not connecting @ battery bay,6.78
+/Equipment/Operational Delays,Change Battery,0.27
+/Equipment/Operational Delays/Battery,CHANGE BATTERY.,2.65
+/Equipment/Operational Delays/Battery/Flat Battery,Change Battery,0.45
+CHARGING BATTERY.,2.47
+DT0162,/Equipment/Breakdown Auto Electrical/Auto Electrical System - 24v/STRATA Breakdown,"strata system faulty @ R5,54w 73s",1
+/Equipment/Operational Delays/Battery,battery not charging,3.40
+battery not connecting @ the tips,1.08
+CHANGE BATTERY.,0.53
+/Equipment/Operational Delays/Battery/Flat Battery,@Batt Bay with no spare batteries,2.27
+CHARGING BATTERY.,2.58
+DT0163,/Equipment/Breakdown Electrical/Auto Electrical System - 800v/Connectors,NO CONNECTION TO MODULE@97S/14W 13TUNNEL CROSS CUT,1.32
+/Equipment/Operational Delays,Change Battery,0.85
+/Equipment/Operational Delays/Battery,Change Battery,1.03
+/Equipment/Operational Delays/Battery/Flat Battery,battery charging @ battery bay,2.87
+CHARGE BATTERY.,1.03
+charging battery @ battery bay,6.42
+DT0171,/Equipment/Breakdown Electrical,A-frame bearing @ parking area,32.62
+/Equipment/Operational Delays/Battery,CHANGE BATTERY.,1.25

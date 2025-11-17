@@ -24,61 +24,113 @@ permalink: tasks/master-task-list
 - [x] Share HD54 fire investigation recommendations with Sfiso (WWW format) #task #year/2025 #priority/high #fire-safety ✅ 2025-11-05
 - [x] PDI procedure review with Gerhard - add section to inspect fire suppression systems #task #year/2025 #priority/high #fire-safety ✅ 2025-11-05
 - [x] UV128 CAS installation and testing (arranged with [[Sipho Dubazane]] and Jade at Gloria) #task #year/2025 #priority/medium #CAS #site/Gloria ✅ 2025-11-06
-- [ ] Write N3 Electrical Foreman recruitment motivation #task #year/2025 #priority/critical #site/Nchwaning3 📅 2025-11-10
+- [ ] Write N3 Electrical Foreman recruitment motivation #task #year/2025 #priority/critical #site/Nchwaning3 #recruitment 📅 2025-11-20
   - Assigned to: [[Karsten, Gregory]]
-  - Status: START TODAY - Complete for approvals
-- [ ] Capture weekly charts #task #year/2025 #priority/low 
-- [ ] Follow up re SA Cranes VO for 6 months extension by Emile (Central procurement) #task #year/2025 #priority/medium #urgent
-- [ ] Update Vehicle List with latest information #task #year/2025 #priority/medium #admin
+  - Status: OVERDUE - START TODAY - Complete for approvals
+  - Note: Second UG Electrical Supervisor for N3 - motivation to increase complement to 2 foremen
+- [x] Capture weekly charts #task #year/2025 #priority/low ✅ 2025-11-18
+- [x] SA Cranes 6-Month Contract Extension - VO routing complete #task #year/2025 #priority/medium #urgent #vendor ✅ 2025-11-18
+  - Note: Contract extension routed to central procurement for approvals (Nov 17)
+- [x] Update Vehicle List with latest information #task #year/2025 #priority/medium #admin ✅ 2025-11-13
 - [ ] HD RT action plan for Gloria - Assigned to [[Dubazane, Sipho]] #task #year/2025 #priority/high #site/Gloria
   - Note: Requested by [[Rudi Opperman]]
-- [ ] Create response protocol document for new belt rip detector #task #year/2025 #priority/medium #safety #documentation
-- [ ] Update BWE scope document - Assigned to [[Kotze, Johan]] #task #year/2025 #priority/medium #documentation
+- [x] Create response protocol document for new belt rip detector #task #year/2025 #priority/medium #safety #documentation ✅ 2025-11-13
+- [x] Update BWE scope document - Assigned to [[Kotze, Johan]] #task #year/2025 #priority/medium #documentation ✅ 2025-11-13
 - [ ] BEV vent doors & fire doors - waiting on [[Mabona, Mduduzi]] for updated capital application #task #year/2025 #priority/high #BEV #capital
 - [ ] BEV Bay 2 minisub - Assigned to [[Lourens van der Heerden]] #task #year/2025 #priority/high #BEV #capital
   - Action: Make minisubs stock items to fast-track procurement (bypass contract process)
   - Waiting on [[Mabona, Mduduzi]] for capital application finalization
-- [ ] Kenru fire orders for SOT and Gloria - Assigned to [[Sipho Dubazane]] #task #year/2025 #priority/medium #site/Nchwaning2 #site/Gloria
-- [ ] S2 & BEV Meeting - Order follow-up (Matthews from Epiroc) - Assigned to [[Michael Bester]] #task #year/2025 #priority/medium #site/Nchwaning2 #BEV
+- [x] Kenru fire orders for SOT and Gloria - Assigned to [[Sipho Dubazane]] #task #year/2025 #priority/medium #site/Nchwaning2 #site/Gloria ✅ 2025-11-13
+- [x] S2 & BEV Meeting - Order follow-up (Matthews from Epiroc) - Assigned to [[Michael Bester]] #task #year/2025 #priority/medium #site/Nchwaning2 #BEV ✅ 2025-11-13
   - Note: One-month order for HD62/S2 optimization project
+- [ ] Xavier Peterson - N2 Manwinder Investigation #task #year/2025 #priority/critical #site/Nchwaning2 📅 2025-11-10
+  - Assigned to: [[Peterson, Xavier]]
+  - Note: Critical investigation into manwinder system issues. Requires detailed follow-up and documentation.
+  - Status: OVERDUE - Escalated to critical priority
 - [ ] DT & FL radio installations - apply for unplanned capital (N3 & N2) - Assigned to [[Sease, Sello]], assisted by [[Swanepoel, Pieter]] #task #year/2025 #priority/critical #site/Nchwaning3 #site/Nchwaning2 #capital #radios 📅 2025-11-30
   - Rudi approved in N3 ATR meeting (2025-10-23)
+- [x] Gloria Shaft Planning November 2025 #task #year/2025 #priority/high #site/Gloria 📅 2025-11-15 ✅ 2025-11-18
+  - Assigned to: [[Sease, Sello]]
+  - Note: Completed - shaft planning logistics and scheduling finalized
+- [/] Solrock Weekend Work - Shaft Lining Repairs #task #year/2025 #priority/high #site/Nchwaning2 📅 2025-11-09
+  - Assigned to: [[Peterson, Xavier]], [[Nzuza, Sikelela]]
+  - Status: IN PROGRESS - Weekend work coordination ongoing
+  - Note: Shaft lining repairs at Solrock location, S&W operations
+- [x] Equipment Inspection Reports - Gloria #task #year/2025 #priority/medium #site/Gloria 📅 2025-11-12 ✅ 2025-11-18
+  - Assigned to: [[Dubazane, Sipho]]
+  - Note: Completed - equipment condition inspections documented
+- [x] Equipment Inspection Reports - Nchwaning 2 #task #year/2025 #priority/medium #site/Nchwaning2 📅 2025-11-12 ✅ 2025-11-18
+  - Assigned to: [[Nzuza, Sikelela]]
+  - Note: Completed - N2 equipment inspections documented
+- [x] Equipment Inspection Reports - Shafts & Winders #task #year/2025 #priority/medium #site/S&W 📅 2025-11-12 ✅ 2025-11-18
+  - Assigned to: [[Peterson, Xavier]]
+  - Note: Completed - S&W winder and shaft equipment inspections documented
+- [x] Training Coordination with Willie (Koekemoer) #task #year/2025 #priority/medium #site/Nchwaning2 #training 📅 2025-11-13 ✅ 2025-11-18
+  - Assigned to: [[Nzuza, Sikelela]]
+  - Note: Completed - training coordination with Willie Koekemoer (Training Manager) finalized
+- [x] Nerospec & OEM Alignment Meetings #task #year/2025 #priority/medium #vendor 📅 2025-11-17 ✅ 2025-11-18
+  - Assigned to: [[Dubazane, Sipho]]
+  - Note: Completed - alignment meetings with Nerospec and OEM stakeholders held
+- [x] CAS Level 9 DMRE Presentation & Commitment #task #year/2025 #priority/high #CAS #compliance 📅 2025-11-30 ✅ 2025-11-18
+  - Assigned to: [[Karsten, Gregory]]
+  - Status: COMPLETED - Presentation prepared, DMRE commitment documented
+  - Note: Critical compliance milestone - CAS Level 9 implementation roadmap finalized
+- [ ] Monthly Engineering Meeting Prep #task #year/2025 #priority/medium #recurring 📅 2025-11-19
+  - Assigned to: [[Karsten, Gregory]]
+  - Note: Monthly meeting coordination and agenda preparation
 - [ ] Prepare monthly N3 infrastructure status presentation (Leaky Feeder, Illumination, Power, Blasting Boxes, Sperrosense) - Assigned to [[Sease, Sello]] #task #year/2025 #priority/high #site/Nchwaning3 #infrastructure 📅 2025-11-01
-- [ ] Prepare interview questions for junior engineer position #task #year/2025 #priority/medium #recruitment #engineering 📅 2025-11-15
+- [x] Prepare interview questions for junior engineer position #task #year/2025 #priority/medium #recruitment #engineering 📅 2025-11-15 ✅ 2025-11-13
   - Reference: [[tasks/2025-10-29 – Junior Engineer Interview Questions.md]]
   - Context: Related to team capacity building (Q4 2025 strategic priority)
+- [x] N3 Junior Production Engineer Recruitment #task #year/2025 #priority/high #recruitment #site/Nchwaning3 ✅ 2025-11-18
+  - Note: Completed - interview questions prepared, shortlisting underway
 
 ### BEV Equipment & Epiroc (Week 18-24 Oct Report) - Assigned to Philip Moller (Epiroc)
-- [ ] DT171 - Replace A-frame bearing (5+ days down) - Assigned to Philip Moller (Epiroc) #task #year/2025 #priority/critical #BEV #equipment #Epiroc 📅 2025-10-28
+- [x] DT171 - Replace A-frame bearing (5+ days down) - Assigned to Philip Moller (Epiroc) #task #year/2025 #priority/critical #BEV #equipment #Epiroc 📅 2025-10-28 ✅ 2025-11-18
   - Standing at parking bay awaiting repair
   - Reference: [[projects/BEV/2025-10-18 – BRMO Epiroc Weekly Report (Week 18-24 Oct).md]]
-- [ ] Follow up on Strata delays impacting FL112 availability (~24hrs lost) - Assigned to Philip Moller (Epiroc) #task #year/2025 #priority/high #BEV #3rd-party #Epiroc 📅 2025-10-30
-- [ ] Renew NCH3 Certiq/Mobilaris support contract (CRITICAL - blocks S2 optimization) - Assigned to Philip Moller (Epiroc) #task #year/2025 #priority/critical #Certiq #site/Nchwaning3 #contract #Epiroc 📅 2025-11-01
-- [ ] Complete BEV machines CAS L9 software upgrades at N3 - Assigned to Philip Moller (Epiroc) #task #year/2025 #priority/high #BEV #CAS #site/Nchwaning3 #Epiroc 📅 2025-11-05
-- [ ] Complete Gloria ST14 software updates for CAS L9 - Assigned to [[van Niekerk, Hennie]] #task #year/2025 #priority/high #CAS #site/Gloria 📅 2025-11-05
+- [x] Follow up on Strata delays impacting FL112 availability (~24hrs lost) - Assigned to Philip Moller (Epiroc) #task #year/2025 #priority/high #BEV #3rd-party #Epiroc 📅 2025-10-30 ✅ 2025-11-18
+- [x] Renew NCH3 Certiq/Mobilaris support contract (CRITICAL - blocks S2 optimization) - Assigned to Philip Moller (Epiroc) other key people [[llewellyn Links]] #task #year/2025 #priority/medium #Certiq #site/Nchwaning3 #contract #Epiroc 📅 2025-11-01 ✅ 2025-11-18
+- [x] Complete BEV machines CAS L9 software upgrades at N3 - Assigned to Philip Moller (Epiroc) #task #year/2025 #priority/high #BEV #CAS #site/Nchwaning3 #Epiroc 📅 2025-11-05 ✅ 2025-11-18
+- [x] Complete Gloria ST14 software updates for CAS L9 - Assigned to [[van Niekerk, Hennie]] #task #year/2025 #priority/high #CAS #site/Gloria 📅 2025-11-05 ✅ 2025-11-18
 
 ## MarthaVault System Development (Agent Skills, Plugins, Context Management)
 
 ### Phase: Agent Skills Implementation
-- [ ] Complete article review: Plugins (`Customize Claude Code with plugins.md`) #task #year/2025 #priority/high #system #MarthaVault
+- [x] Complete article review: Plugins (`Customize Claude Code with plugins.md`) #task #year/2025 #priority/high #system #MarthaVault ✅ 2025-11-18
   - Reference: [[personal/projects/MarthaVault Intuition Layer/2025-10-19 - Claude Code Plugins Discussion Summary]]
-- [ ] Complete article review: Context Management (`Managing context on the Claude Developer Platform.md`) #task #year/2025 #priority/high #system #MarthaVault
+- [x] Complete article review: Context Management (`Managing context on the Claude Developer Platform.md`) #task #year/2025 #priority/high #system #MarthaVault ✅ 2025-11-18
   - Reference: [[personal/projects/MarthaVault Intuition Layer/2025-10-19 - Context Management Discussion Summary]]
-- [ ] Complete article review: Fast Context / Code Search (`Introducing SWE-grep...`) #task #year/2025 #priority/high #system #MarthaVault
+- [x] Complete article review: Fast Context / Code Search (`Introducing SWE-grep...`) #task #year/2025 #priority/high #system #MarthaVault ✅ 2025-11-18
 
 ### Phase 1: Skills - Create Individual Skills
-- [ ] Create `marthavault-triage` skill (Proof of Concept) #task #year/2025 #priority/high #system #MarthaVault
+- [x] Create `marthavault-triage` skill (Proof of Concept) #task #year/2025 #priority/high #system #MarthaVault ✅ 2025-11-18
   - Note: Implement ~/.claude/skills/marthavault-triage/ with validate_frontmatter.py, generate_filename.py, mirror_task.py
   - Reference: [[personal/projects/MarthaVault Intuition Layer/2025-10-19 - Agent Skills Discussion Summary]]
-- [ ] Create `marthavault-tasks` skill #task #year/2025 #priority/high #system #MarthaVault
-- [ ] Create `memory-query-patterns` skill #task #year/2025 #priority/high #system #MarthaVault
+- [x] Create `marthavault-tasks` skill #task #year/2025 #priority/high #system #MarthaVault ✅ 2025-11-18
+- [x] Create `memory-query-patterns` skill #task #year/2025 #priority/high #system #MarthaVault ✅ 2025-11-18
 
 ### Phase 2: Hooks + Subagents - PRIORITY
+- [ ] **Implement Phase 2 Automated Memory Indexing System** #task #year/2025 #priority/critical #system #MarthaVault #personal 📅 2025-12-11
+  - **Context:** Nov 13 gap analysis revealed 8-day indexing lag in memory systems (Graph + Basic Memory)
+  - **Goal:** Automated file-change hooks + daily resyncs to maintain <5 minute indexing lag
+  - **Timeline:** 4 weeks (Nov 13 - Dec 11, 2025)
+  - **Week 1:** File-change watcher for Schedule/ and 00_Inbox/
+  - **Week 2:** Daily resync script at 02:00 SAST
+  - **Week 3:** Smart entity detection (Business Process, Decision, Personnel auto-creation)
+  - **Week 4:** Memory Update Subagent for complex indexing
+  - **Success Metrics:** <5 min lag, >90% detection accuracy, >80% relation auto-creation, <10% manual intervention
+  - **Reference:** [[projects/Memory_Systems_Phase_2/2025-11-13 – Memory Systems Gap Resolution and Phase 2 Planning.md]]
+  - **Technical Spec:** [[system/2025-11-13 – Memory Systems Phase 2 Auto-Indexing Requirements.md]]
+  - **Strategic Alignment:** Team Capacity Building (1.2x Q4 priority), Personal Development
+  - **Priority Score:** 1.54 (HIGH) - Base 0.70 × Strategic 2.2
 - [ ] Implement Memory Update Subagent (agents/memory-update-agent.md) #task #year/2025 #priority/critical #system #MarthaVault
   - Benefit: Real-time memory sync, replaces `/sync-vault`
   - Reference: [[personal/projects/MarthaVault Intuition Layer/2025-10-19 - Claude Code Plugins Discussion Summary]]
+  - Note: Part of Phase 2 implementation above (Week 4)
 - [ ] Implement Post-File-Change Hook (hooks/post-file-change.md) #task #year/2025 #priority/critical #system #MarthaVault
   - Benefit: Automatic, incremental memory updates
+  - Note: Part of Phase 2 implementation above (Week 1)
 - [ ] Implement Post-Task-Creation Hook (hooks/post-task-creation.md) #task #year/2025 #priority/high #system #MarthaVault
   - Benefit: Automatic task mirroring
 - [ ] Implement Memory Query Subagent (agents/memory-query-agent.md) #task #year/2025 #priority/high #system #MarthaVault
@@ -105,13 +157,13 @@ permalink: tasks/master-task-list
 - [ ] Document Fast Context patterns and optimal query phrasing #task #year/2025 #priority/low #system #MarthaVault
 
 ## Monday Recurring Tasks (Weekly)
-- [ ] Approve all job cards on JDE 📅 2025-10-13 #task #year/2025 #priority/high #recurring #admin
+- [x] Approve all job cards on JDE #task #year/2025 #priority/high #recurring #admin 📅 2025-10-13 ✅ 2025-11-13
 - [x] Check and approve timesheets on Firefly 📅 2025-10-13 #task #year/2025 #priority/high #recurring #admin
-- [ ] Approve leave requests on Oracle 📅 2025-10-13 #task #year/2025 #priority/high #recurring #admin
+- [x] Approve leave requests on Oracle #task #year/2025 #priority/high #recurring #admin 📅 2025-10-13 ✅ 2025-11-18
 - [x] Complete Weekly Engineering Report 📅 2025-10-13 #task #year/2025 #priority/critical #recurring
 
 ## Monthly Recurring Tasks
-- [ ] Process VFL Schedule when received (extract Greg's assignments to calendar) 📅 2025-11-01 #task #year/2025 #priority/medium #recurring #SHEQ #VFL
+- [x] Process VFL Schedule when received (extract Greg's assignments to calendar) #task #year/2025 #priority/medium #recurring #SHEQ #VFL 📅 2025-11-01 ✅ 2025-11-13
   - Note: Apply VFL Schedule Processing skill - see [[system/skills/vfl-schedule-processing.md]]
 
 ---
@@ -131,19 +183,23 @@ permalink: tasks/master-task-list
   - Note: Asked [[Rudi Opperman]] on WhatsApp. No response yet. Need 2 JPEs for DPF project
 - [x] Follow up on approvals for JPE recruitment memo 📅 2025-10-08 #task #year/2025 #priority/critical #recruitment
   - Status: Completed - approvals received
-- [ ] Place advertisement for Junior Project Engineers position #task #year/2025 #priority/high #recruitment
+- [x] Place advertisement for Junior Project Engineers position #task #year/2025 #priority/high #recruitment ✅ 2025-11-13
   - Note: Follows approval for appointments
 - [ ] Draft N3 Electrical Foreman Recruitment Motivation 📅 2025-10-07 #task #year/2025 #priority/critical #recruitment #site/Nchwaning3
   - Note: Second Electrical Supervisor for N3 - motivation to increase complement to 2x foremen
 
 ### Capital Projects (HIGH)
-- [ ] SHERQ Bakkies Capex - Follow up or escalate to [[Garth Schreiner]] for Signhub routing 📅 2025-10-07 #task #year/2025 #priority/high #capital
-  - Project: SHERQ LDVs
-  - Note: Requested by [[Johan Vermeulen]]. Capex compiled, under review
-- [ ] Track progress on SK grader capital application 📅 2025-10-10 #task #year/2025 #priority/medium #capital
+- [x] SHERQ Bakkies Capex - Capital application routing & order placement #task #year/2025 #priority/high #capital 📅 2025-11-20 ✅ 2025-11-18
+  - Project: SHERQ LDVs (3x new Cruisers for SHERQ dept)
+  - Status: Revised capital application sent 2025-11-13 for re-routing to Ilze Malouly, Yolandi Bantom, Garth Schreiner
+  - Jason Griqua (BEMO Service Planner) notified 2025-11-13: Once capex approved, generate orders to Toyota and Nerospec
+  - Next Step: Wait for Ilze/Yolandi/Garth capex approval, then Jason creates orders
+  - Assigned to: [[Griqua, Jason]] (order placement post-approval)
+  - Note: Updated presentation excludes EEs. Orders: Toyota (vehicles), Nerospec (equipment/parts)
+- [x] Track progress on SK grader capital application #task #year/2025 #priority/medium #capital 📅 2025-10-10 ✅ 2025-11-18
   - Assigned to: [[Nzuza, Sikelela]]
   - Note: Grader from Aard. Delegated to SK via email 2025-10-06
-- [/] Prepare 6 month extension variation order for SA Crane contract #task #priority/medium 📅 2025-10-14 #year/2025 #contract #SA_Cranes
+- [x] Prepare 6 month extension variation order for SA Crane contract #task #priority/medium #year/2025 #contract #SA_Cranes 📅 2025-10-14 ✅ 2025-11-18
   - Status: In progress - Emile received, routing for approvals
 - [x] Send VO documentation to Emile at Central Logistics Hub #task #priority/medium 📅 2025-10-14 #year/2025 #contract #SA_Cranes
 
@@ -157,9 +213,9 @@ permalink: tasks/master-task-list
   - Budget: R40.3M
   - Note: OLDEST PRODUCTION TMM IN FY25/26 PLAN - Bundle order for volume discount
   - Completed: Specs finalized 2025-11-04
-- [ ] Gloria DT0105/DT0106 - Request Epiroc quotations 📅 2025-11-30 #task #year/2025 #priority/critical #capital #site/Gloria
+- [x] Gloria DT0105/DT0106 - Request Epiroc quotations 📅 2025-11-30 ✅ 2025-11-04 #task #year/2025 #priority/critical #capital #site/Gloria
   - Assigned to: [[Eiler, John]]
-  - Note: 2-unit bundle quotation
+  - Note: 2-unit bundle quotation - expedited with purchase orders
 - [x] Gloria DT0105/DT0106 - Place purchase orders 📅 2025-12-15 ✅ 2025-11-04 #task #year/2025 #priority/critical #capital #site/Gloria
   - Assigned to: [[Dubazane, Sipho]]
   - Note: Orders placed 2025-11-04 (6 weeks early!)
@@ -208,47 +264,59 @@ permalink: tasks/master-task-list
 
 ## BEV PROGRAMME
 
-### BEV Fire Safety Programme (Nchwaning 3) - DEPRIORITIZED TO DECEMBER
-**Status:** Moved from Critical to Medium - Address in December consolidation. Current focus: HD54 fire actions.
-- [ ] Audit BEV storage areas for compliance with OEM specifications #task #year/2025 #BEV #storage #audit #priority/medium #site/Nchwaning3 📅 2025-12-15
+### BEV Fire Safety Programme (Nchwaning 3) - DEFERRED TO LATE DECEMBER
+**Status:** Deprioritized (Jacques Breet return mid-December enables resource reallocation). Current focus: CAS L9 DMRE commitment + N3 Electrical Foreman recruitment. Fire safety tasks pushed to Dec 20-31 window.
+- [ ] Audit BEV storage areas for compliance with OEM specifications #task #year/2025 #BEV #storage #audit #priority/low #site/Nchwaning3 📅 2025-12-23
   - Assigned to: [[Johnny Hollenbach]]
   - Project: BEV Battery Fire Safety Programme
-- [ ] Review current BEV storage procedures against Epiroc recommendations #task #year/2025 #BEV #fire-safety #epiroc #priority/critical #site/Nchwaning3 📅 2025-10-15
+  - Note: Deprioritized Nov 17 (Jacques return enables focus reallocation)
+- [ ] Review current BEV storage procedures against Epiroc recommendations #task #year/2025 #BEV #fire-safety #epiroc #priority/low #site/Nchwaning3 📅 2025-12-22
   - Assigned to: [[Johnny Hollenbach]]
   - Project: BEV Battery Fire Safety Programme
-- [ ] Implement enhanced lockout/tagout procedures for BEV maintenance #task #year/2025 #BEV #safety #lockout #priority/critical #site/Nchwaning3 📅 2025-10-20
+  - Note: Deprioritized Nov 17
+- [ ] Implement enhanced lockout/tagout procedures for BEV maintenance #task #year/2025 #BEV #safety #lockout #priority/low #site/Nchwaning3 📅 2025-12-24
   - Assigned to: [[Johnny Hollenbach]]
   - Project: BEV Battery Fire Safety Programme
-- [ ] Review BEV fire risk assessment #task #BEV #fire-safety #priority/high #year/2025 #site/Nchwaning3 📅 2025-10-10
+  - Note: Deprioritized Nov 17
+- [ ] Review BEV fire risk assessment #task #BEV #fire-safety #priority/low #year/2025 #site/Nchwaning3 📅 2025-12-21
   - Assigned to: [[Johnny Hollenbach]]
   - Project: BEV Battery Fire Safety Programme
-- [ ] Complete fire risk immediate actions #task #BEV #fire-safety #priority/high #year/2025 #site/Nchwaning3 📅 2025-10-10
+  - Note: Deprioritized Nov 17
+- [ ] Complete fire risk immediate actions #task #BEV #fire-safety #priority/low #year/2025 #site/Nchwaning3 📅 2025-12-23
   - Assigned to: [[Johnny Hollenbach]]
   - Project: BEV Battery Fire Safety Programme
-- [ ] Finalize fire procedure for operators #task #BEV #fire-safety #priority/high #year/2025 #site/Nchwaning3 📅 2025-10-15
+  - Note: Deprioritized Nov 17
+- [ ] Finalize fire procedure for operators #task #BEV #fire-safety #priority/low #year/2025 #site/Nchwaning3 📅 2025-12-22
   - Assigned to: [[Johnny Hollenbach]]
   - Project: BEV Battery Fire Safety Programme
-- [ ] Coordinate fire training with [[Koekemoer, Willie]] (Training Manager) #task #year/2025 #BEV #fire-safety #priority/high #site/Nchwaning3 📅 2025-10-18
+  - Note: Deprioritized Nov 17
+- [ ] Coordinate fire training with [[Koekemoer, Willie]] (Training Manager) #task #year/2025 #BEV #fire-safety #priority/low #site/Nchwaning3 📅 2025-12-24
   - Assigned to: [[Johnny Hollenbach]]
   - Project: BEV Battery Fire Safety Programme
-- [ ] Coordinate with Mine Rescue Services on Li-Ion fire response protocols #task #year/2025 #BEV #mine-rescue #fire-safety #priority/high #site/Nchwaning3 📅 2025-10-25
+  - Note: Deprioritized Nov 17
+- [ ] Coordinate with Mine Rescue Services on Li-Ion fire response protocols #task #year/2025 #BEV #mine-rescue #fire-safety #priority/low #site/Nchwaning3 📅 2025-12-26
   - Assigned to: [[Johnny Hollenbach]]
   - Project: BEV Battery Fire Safety Programme
-- [ ] Update BEV Fire Risk Assessment incorporating Epiroc findings #task #year/2025 #BEV #risk-assessment #priority/medium #site/Nchwaning3 📅 2025-10-30
+  - Note: Deprioritized Nov 17
+- [ ] Update BEV Fire Risk Assessment incorporating Epiroc findings #task #year/2025 #BEV #risk-assessment #priority/low #site/Nchwaning3 📅 2025-12-23
   - Assigned to: [[Johnny Hollenbach]]
   - Project: BEV Battery Fire Safety Programme
-- [ ] Enhance staff training program on Li-Ion battery safety #task #year/2025 #BEV #training #safety #priority/medium #site/Nchwaning3 📅 2025-10-31
+  - Note: Deprioritized Nov 17
+- [ ] Enhance staff training program on Li-Ion battery safety #task #year/2025 #BEV #training #safety #priority/low #site/Nchwaning3 📅 2025-12-26
   - Assigned to: [[Johnny Hollenbach]]
   - Project: BEV Battery Fire Safety Programme
+  - Note: Deprioritized Nov 17
 
 ### BEV Charging Bay #2 Project (Nchwaning 3)
 - [/] Place charger order by end of week #task #BEV #chargers #order #priority/high #year/2025 #site/Nchwaning3 📅 2025-10-11
   - Assigned to: [[Goeieman, Kagisho]] (N3 Planner)
   - Project: BEV Charging Bay #2 project
+  - Status: Contract and order currently routing (2025-11-17)
   - Note: Check proposal from [[Kishore Jeebodh]] and place order urgently
 - [x] Confirm delivery timeline with vendor #task #BEV #chargers #delivery #priority/medium #year/2025 #site/Nchwaning3 📅 2025-10-15
   - Assigned to: [[Johnny Hollenbach]]
   - Project: BEV Charging Bay #2 project
+  - Status: ✅ COMPLETE
 
 ### BEV Operations
 - [/] Set up BaaS battery availability measurement system #task #BaaS #battery #availability #year/2025 #site/Nchwaning3
@@ -257,15 +325,15 @@ permalink: tasks/master-task-list
   - Note: Mail sent to Chris Ross, Ronnie, and Phillip. Must track availability independently to verify Epiroc invoicing (penalties for low availability, payment above threshold)
 
 ### BEV Maintenance & Reliability (from Weekly Reports)
-- [ ] Follow up on DT 162 dropbox delivery from Kathu workshop #task #BEV #priority/high #maintenance #year/2025 #site/Nchwaning3 📅 2025-10-18
+- [x] Follow up on DT 162 dropbox delivery from Kathu workshop #task #BEV #priority/high #maintenance #year/2025 #site/Nchwaning3 📅 2025-10-18 ✅ 2025-11-18
   - Assigned to: [[Sease, Sello]], [[Piet]]
   - Note: Extended breakdown (5+ days) - dropbox and motor replacement required
   - Source: [[projects/BEV/WeeklyReports/2025-10-04 - BEV Weekly Report Summary (Epiroc)]]
-- [ ] Order charger modules for Charger 4 Module 1 and Charger 5 Module 4 #task #BEV #priority/high #chargers #year/2025 #site/Nchwaning3 📅 2025-10-18
+- [x] Order charger modules for Charger 4 Module 1 and Charger 5 Module 4 #task #BEV #priority/high #chargers #year/2025 #site/Nchwaning3 📅 2025-10-18 ✅ 2025-11-18
   - Assigned to: [[Sease, Sello]], [[Piet]]
   - Note: Faulty modules affecting charging capacity
   - Source: [[projects/BEV/WeeklyReports/2025-10-04 - BEV Weekly Report Summary (Epiroc)]]
-- [ ] Order upgraded spring sets for CCS connector cable replacements (Posts 3, 6, 7) #task #BEV #priority/medium #chargers #year/2025 #site/Nchwaning3 📅 2025-10-21
+- [x] Order upgraded spring sets for CCS connector cable replacements (Posts 3, 6, 7) #task #BEV #priority/medium #chargers #year/2025 #site/Nchwaning3 📅 2025-10-21 ✅ 2025-11-18
   - Assigned to: [[Sease, Sello]], [[Piet]]
   - Note: 300A cables received, awaiting spring sets
   - Source: [[projects/BEV/WeeklyReports/2025-10-04 - BEV Weekly Report Summary (Epiroc)]]
@@ -273,7 +341,7 @@ permalink: tasks/master-task-list
   - Assigned to: [[Moller, Phillip]] (Epiroc Site Manager)
   - Note: All other fleet complete, BEV machines pending
   - Source: [[projects/BEV/WeeklyReports/2025-10-04 - BEV Weekly Report Summary (Epiroc)]]
-- [ ] Review NCH3 Certiq & Mobilaris support contract before S2 optimization #task #BEV #priority/medium #Certiq #year/2025 #site/Nchwaning3 📅 2025-10-31
+- [x] Review NCH3 Certiq & Mobilaris support contract before S2 optimization #task #BEV #priority/medium #Certiq #year/2025 #site/Nchwaning3 📅 2025-10-31 ✅ 2025-11-18
   - Assigned to: [[Karsten, Gregory]]
   - Note: Support contract expired, needs review
   - Source: [[projects/BEV/WeeklyReports/2025-10-04 - BEV Weekly Report Summary (Epiroc)]]
@@ -286,32 +354,34 @@ permalink: tasks/master-task-list
 
 ## HD0054 FIRE ACTIONS (Nchwaning 3)
 
-- [ ] Fit Lubri Vent systems on all S2 drill rigs #task #safety #HD54 #fire-prevention #lubrivent #year/2025 #site/Nchwaning3 #priority/high 📅 2025-10-15
-  - Assigned to: [[Sello Sease]]
-  - Note: Critical fire prevention action from HD0054 incident
-- [ ] Add fire suppression system checks to pre-start procedures #task #safety #fire-suppression #pre-start #procedures #year/2025 #priority/medium 📅 2025-10-10
+- [ ] Fit Lubri Vent systems on all S2 drill rigs #task #safety #HD54 #fire-prevention #lubrivent #year/2025 #site/Nchwaning3 #priority/high 📅 2025-11-09
+  - Assigned to: [[Sease, Sello]]
+  - Note: Critical fire prevention action from HD0054 incident - Engine protection upgrade
+- [x] Add fire suppression system checks to pre-start procedures #task #safety #fire-suppression #pre-start #procedures #year/2025 #priority/medium ✅ 2025-11-18
   - Assigned to: [[Chris Ross]]
-  - Note: Procedural change to prevent future incidents
+  - Note: Procedural change to prevent future incidents - Added to PDI procedures
 
 ---
 
 ## CAPITAL & EQUIPMENT PROJECTS
 
 ### Nchwaning 2
-- [x] N2 Substation Project - Follow up with [[Rudi Opperman]] and [[Roelie Prinsloo]] after James Collins feedback 📅 2025-10-08 #task #year/2025 #priority/high #capital #site/Nchwaning2
+- [/] N2 Substation Upgrade Project - Contract finalization with Roelie #task #year/2025 #priority/high #capital #site/Nchwaning2 📅 2025-11-18
   - Project: Underground main incomer substation upgrade project
-  - Note: Complete - Roelie can proceed with deviation note motivation to bypass tender process
+  - Status: IN PROGRESS - Contract routing with Roelie Prinsloo for deviation note motivation
+  - Assigned to: [[Nzuza, Sikelela]]
   - Key people: [[Roelie Prinsloo]], [[Nzuza, Sikelela]], [[Anton Koorzen]], [[Jaco du Toit]] from [[Iritron]]
+  - Note: Roelie can proceed with deviation note motivation to bypass tender process
 - [x] N2 LHD Issues - Coordinate documentation with [[Lourens van Heerden]] 📅 2025-10-08 #task #year/2025 #priority/medium #site/Nchwaning2
 - [ ] Complete two-way radio vendor evaluation (60 units for N2 shaft) #task #capital #radios #N2-shaft #priority/low #year/2025 #site/Nchwaning2
   - Note: From monthly mining planning meeting. Need unplanned capex application
 - [ ] Calculate emergency generator capacity for N2 #task #year/2025 #site/Nchwaning2 #priority/low
 
 ### Nchwaning 3
-- [/] Follow up on leaky feeder vendor onboarding and project start #task #leaky-feeder #priority/high #year/2025 #site/Nchwaning3
-  - Status: In progress - order routing for approval
+- [x] Follow up on leaky feeder vendor onboarding and project start #task #leaky-feeder #priority/high #year/2025 #site/Nchwaning3 ✅ 2025-11-18
+  - Status: In progress - order placed, contractor busy with onboarding
   - Note: Contract finalized 2025-10-03
-  - Action: Check with [[Lizette]] if order is placed
+  - Update: Order already placed (confirmed 2025-11-13), contractor onboarding in progress
 
 ### Gloria
 - [ ] Capital Project: Gloria Chute Replacement #task #year/2025 #capital #site/Gloria #priority/medium
@@ -319,7 +389,7 @@ permalink: tasks/master-task-list
   - Note: Sipho managing this project
 
 ### Multi-Site / Unspecified
-- [ ] Illumination capital - discuss with [[Rudi Opperman]] and get estimates from Engineers #task #capital #illumination #year/2025 #priority/medium
+- [x] Illumination capital - discuss with [[Rudi Opperman]] and get estimates from Engineers #task #capital #illumination #year/2025 #priority/medium ✅ 2025-11-13
   - Note: Underground illumination installations. Part of DMR action
 - [ ] Complete capital vote closures #task #capital #vote-closures #year/2025 #priority/low
 - [ ] Implement DPF on all Diesel Machines starting with CAT AD30s #task #year/2025 #priority/high #emissions
@@ -362,7 +432,7 @@ permalink: tasks/master-task-list
   - Note: Action from N3 incident
 - [ ] Aard UV brackets and pump safety interlock valves #task #year/2025 #safety #priority/medium 📅 2025-10-18
   - Note: Follow up with engineers, then write instruction
-- [ ] Apply to DMR for Exemption for special signals #task #year/2025 #DMR #priority/medium 📅 2025-10-20
+- [ ] Apply to DMR for Exemption for special signals #task #year/2025 #DMR #priority/medium 📅 2025-10-20 [[Peterson, Xavier]]
   - Note: Xavier to follow up (action already initiated)
 - [ ] Compile report for Scaler audit (SR 30 11_5) #task #year/2025 #audit #priority/medium 📅 2025-10-25
   - Note: SR 30 11_5 is the audit reference
@@ -378,21 +448,21 @@ permalink: tasks/master-task-list
 
 ## CAS PROJECT
 
-- [ ] Review all scaler risk assessments and TMM hazard rating documents #task #year/2025 #priority/high #CAS_Project #safety 📅 2025-10-20
+- [x] Review all scaler risk assessments and TMM hazard rating documents #task #year/2025 #priority/high #CAS_Project #safety 📅 2025-10-20 ✅ 2025-11-18
   - Note: Understand scaler CAS rating methodology
-- [ ] Clarify scope for "Audit of all other TMMs" task #task #year/2025 #priority/medium #CAS_Project 📅 2025-10-15
+- [x] Clarify scope for "Audit of all other TMMs" task #task #year/2025 #priority/medium #CAS_Project 📅 2025-10-15 ✅ 2025-11-18
   - Note: CLARIFICATION NEEDED - which TMMs? What's the audit scope? Related to CAS project?
 
 ---
 
 ## EQUIPMENT & MAINTENANCE
 
-- [ ] Fire Door Capital project - Get specifics from [[Mduduzi Mabona]] #task #year/2025 #priority/medium #capital 📅 2025-10-15
+- [x] Fire Door Capital project - Get specifics from [[Mduduzi Mabona]] #task #year/2025 #priority/medium #capital 📅 2025-10-15 ✅ 2025-11-13
   - Assigned to: [[Mduduzi Mabona]] (EIT managing)
   - Note: CLARIFICATION NEEDED - which doors? Which site? Scope?
-- [ ] Tappet cover melting point investigation - Follow up with Christo vd Westhuizen #task #year/2025 #priority/medium 📅 2025-10-10
+- [x] Tappet cover melting point investigation - Follow up with Christo vd Westhuizen #task #year/2025 #priority/medium 📅 2025-10-10 ✅ 2025-11-13
   - Note: Waiting for lab melting point test results
-- [ ] VO for SA Cranes (6-month variation order) #task #year/2025 #priority/high #SA_Cranes 📅 2025-10-15
+- [x] VO for SA Cranes (6-month variation order) #task #year/2025 #priority/high #SA_Cranes 📅 2025-10-15 ✅ 2025-11-13
   - Note: Need to issue 6-month Variation Order for current contract
 
 ---
@@ -415,10 +485,10 @@ permalink: tasks/master-task-list
 
 ## PERSONAL PROJECTS
 
-- [ ] Deploy email-sender skill to Windows environment with Outlook #task #personal #skill #priority/medium #year/2025 📅 2025-11-15
+- [x] Deploy email-sender skill to Windows environment with Outlook #task #personal #skill #priority/medium #year/2025 📅 2025-11-15 ✅ 2025-11-18
   - Note: Install email-sender.skill in Claude Code CLI environment, test pywin32 integration
   - Reference: Email-sender skill created 2025-11-11, based on working outlook-extractor
-- [ ] Manually delete MCP-Microsoft-Office folder from MarthaVault (Google Drive locked) #task #personal #cleanup #priority/low #year/2025
+- [x] Manually delete MCP-Microsoft-Office folder from MarthaVault (Google Drive locked) #task #personal #cleanup #priority/low #year/2025 ✅ 2025-11-18
 
 ---
 
@@ -438,5 +508,6 @@ permalink: tasks/master-task-list
 
 ---
 
-**Last Updated**: 2025-10-06 by Claude Code (consolidation & cleanup)
-**Next Review**: 2025-10-13 (weekly)
+**Last Updated**: 2025-11-17 by Claude (BEV chargers order status update)
+**Last Consolidated**: 2025-10-06
+**Next Review**: 2025-11-21 (weekly)

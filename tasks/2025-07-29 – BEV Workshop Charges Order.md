@@ -10,9 +10,9 @@ permalink: tasks/2025-07-29-bev-workshop-charges-order
 # BEV Workshop Charges Order
 
 ## Task Details
-- [ ] Get quote for charges for new BEV workshop
+- [x] Get quote for charges for new BEV workshop
 - [ ] Place order under Capital budget
-- [ ] Capital approval already secured
+- [x] Capital approval already secured
 
 ## Notes
 - Capital funding is pre-approved

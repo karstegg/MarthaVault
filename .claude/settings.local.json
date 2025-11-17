@@ -99,7 +99,13 @@
       "Bash(git fetch:*)",
       "Bash(go get:*)",
       "Bash(go list:*)",
-      "Bash(go mod tidy:*)"
+      "Bash(go mod tidy:*)",
+      "Bash(pip show:*)",
+      "Bash(where:*)",
+      "Bash(claude setup-token:*)",
+      "WebSearch",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(pip install:*)"
     ],
     "deny": []
   },

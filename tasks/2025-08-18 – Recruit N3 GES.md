@@ -13,6 +13,8 @@ permalink: tasks/2025-08-18-recruit-n3-ges
 **Priority**: Critical/Urgent  
 **Type**: HR Recruitment Project  
 
+## Update
+Candidate decline. We have to start over. created a new task
 ## Overview
 Recruit and appoint General Engineering Supervisor for Nchwaning 3 mine site to fill critical operational leadership position.
 
@@ -25,16 +27,16 @@ Recruit and appoint General Engineering Supervisor for Nchwaning 3 mine site to 
 ## Recruitment Process Steps
 
 ### 1. Advertisement Phase
-- [ ] Follow up with Louisa Breet on current advert status
-- [ ] Review job specification and requirements
-- [ ] Confirm advertisement placement and duration
-- [ ] Ensure proper channels (internal/external postings)
+- [x] Follow up with Louisa Breet on current advert status
+- [x] Review job specification and requirements
+- [x] Confirm advertisement placement and duration
+- [x] Ensure proper channels (internal/external postings)
 
 ### 2. Shortlisting Phase  
-- [ ] Coordinate with Louisa Breet on application deadline
-- [ ] Review applications against criteria
-- [ ] Participate in shortlisting committee
-- [ ] Confirm shortlisted candidates for interviews
+- [x] Coordinate with Louisa Breet on application deadline
+- [x] Review applications against criteria
+- [x] Participate in shortlisting committee
+- [x] Confirm shortlisted candidates for interviews
 
 ### 3. Interview Phase
 - [x] Schedule interview panel with HR and technical representatives
@@ -43,16 +45,16 @@ Recruit and appoint General Engineering Supervisor for Nchwaning 3 mine site to 
 - [x] Complete candidate evaluation forms
 
 ### 4. Offer Phase
-- [ ] Select preferred candidate
-- [ ] Coordinate with HR on offer preparation
-- [ ] Negotiate terms and conditions
-- [ ] Obtain necessary approvals for offer
+- [x] Select preferred candidate
+- [x] Coordinate with HR on offer preparation
+- [x] Negotiate terms and conditions
+- [x] Obtain necessary approvals for offer
 
 ### 5. Appointment Phase
-- [ ] Finalize appointment documentation
-- [ ] Coordinate handover with current N3 team
-- [ ] Schedule orientation and induction
-- [ ] Complete appointment formalities
+- [x] Finalize appointment documentation
+- [x] Coordinate handover with current N3 team
+- [x] Schedule orientation and induction
+- [x] Complete appointment formalities
 
 ## Critical Success Factors
 - **Urgency**: N3 requires immediate GES leadership

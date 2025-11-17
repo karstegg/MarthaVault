@@ -1,0 +1,11 @@
+Fleet,Planned,Actual,Compliance,Target,Compliance %,Reasons for Non-Compliance
+DT(Diesel),2,2,1,0.95,100.0%,
+HD0056 moved to weekend due to breakdown of HD0055,1,1,1,0.95,100.0%,
+FL BEV,2,2,1,0.95,100.0%,
+DT BEV,1,1,1,0.95,100.0%,
+HD,5,4,0.8,0.95,80.0%,Support Equip. Diesel Foreman
+RT,5,5,1,0.95,100.0%,
+SR,5,5,1,0.95,100.0%,
+UV Emulsion Units,0,0,,0.95,,
+Support Equip Utility Foreman,0,0,,0.95,,
+LD620 - Not brought in for service.,6,5,0.83333333333333337,0.95,83.3%,Daily service compliance/quality report

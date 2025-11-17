@@ -11,37 +11,37 @@ permalink: tasks/priority-matrix-board
 
 ## 🔴 DO NOW (High Urgency + High Importance)
 
-- [ ] DMR Brake Test Compliance Response #priority/critical #urgent #important 📅 2025-11-05
 - [ ] Fire Suppression Pre-Start Checks #priority/critical #urgent #important 📅 2025-11-07
 - [ ] HD0054 Fire Investigation Close-out #priority/critical #urgent #important 📅 2025-11-06
 - [ ] Xavier Peterson - N2 Manwinder Investigation #priority/critical #urgent #important 📅 2025-11-10
+- [x] Nerospec & OEM Alignment Meetings #priority/medium #lowurgency #lowimportance 📅 2025-11-17
 
 
 ## 🟡 SCHEDULE (Low Urgency + High Importance)
 
 - [ ] WTW Audit Outstanding Actions #priority/high #important #lowurgency 📅 2026-03-15
 - [ ] Capital TMM FY25/26 Equipment Orders #priority/high #important #lowurgency 📅 2025-12-01
-- [ ] CAS Level 9 DMRE Presentation & Commitment #priority/high #important #lowurgency 📅 2025-11-30
-- [ ] N3 Junior Production Engineer Recruitment #priority/high #important #lowurgency 📅 2025-11-30
+- [ ] DMR Brake Test Compliance Response #priority/medium #urgent #important 📅 2025-11-05
+- [x] CAS Level 9 DMRE Presentation & Commitment #priority/high #important #lowurgency 📅 2025-11-30
+- [x] N3 Junior Production Engineer Recruitment #priority/high #important #lowurgency 📅 2025-11-30
 - [ ] Electrical Foreman Position Recruitment #priority/high #important #lowurgency 📅 2025-12-15
-- [ ] BEV Fire Safety Programme Q4 Delivery #priority/high #important #lowurgency 📅 2025-12-31
-- [ ] Chapter 8 S&W Regulation 16 GAP Analysis #priority/high #important #lowurgency 📅 2025-12-31
-- [ ] Equipment Condition Monitoring AI #priority/medium #important #lowurgency 📅 2025-12-15
+- [x] Equipment Condition Monitoring AI #priority/medium #important #lowurgency 📅 2025-12-15
 
 
 ## 🟢 DELEGATE (High Urgency + Low Importance)
 
-- [ ] BELL Kuruman Scaler Testing Visit #priority/high #urgent #lowimportance 📅 2025-11-08
-- [ ] Equipment Inspection Reports #priority/medium #urgent #lowimportance 📅 2025-11-12
+- [x] BELL Kuruman Scaler Testing Visit #priority/high #urgent #lowimportance 📅 2025-11-08
 - [ ] Monthly Engineering Meeting Prep #priority/medium #urgent #lowimportance 📅 2025-11-19
 - [ ] VFL Site Visit Schedule N3 #priority/medium #urgent #lowimportance 📅 2025-11-11
+- [ ] BEV Fire Safety Programme Q4 Delivery #priority/high #important #lowurgency 📅 2025-12-31
+- [ ] Chapter 8 S&W Regulation 16 GAP Analysis #priority/high #important #lowurgency 📅 2025-12-31
 
 
 ## ⚪ BACKLOG (Low Urgency + Low Importance)
 
-- [ ] Training Coordination with Willie #priority/medium #lowurgency #lowimportance 📅 2025-12-01
-- [ ] Nerospec & OEM Alignment Meetings #priority/medium #lowurgency #lowimportance 📅 2025-11-17
-- [ ] MarthaVault System Documentation #priority/low #lowurgency #lowimportance 📅 2025-12-15
+- [x] Training Coordination with Willie #priority/medium #lowurgency #lowimportance 📅 2025-12-01
+- [x] MarthaVault System Documentation #priority/low #lowurgency #lowimportance 📅 2025-12-15
+- [ ] Equipment Inspection Reports #priority/medium #urgent #lowimportance 📅 2025-11-12
 
 
 ## Priority Matrix Visualization
