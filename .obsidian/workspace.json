@@ -163,16 +163,6 @@
             }
           },
           {
-            "id": "7df6cf87359cf1cb",
-            "type": "leaf",
-            "state": {
-              "type": "martha-terminal",
-              "state": {},
-              "icon": "bot",
-              "title": "Claude Agent"
-            }
-          },
-          {
             "id": "65daab2f3980c272",
             "type": "leaf",
             "state": {
@@ -193,7 +183,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       },
       {
         "id": "e1054e40570ce37e",
