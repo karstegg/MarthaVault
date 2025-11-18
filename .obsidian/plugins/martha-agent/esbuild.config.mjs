@@ -19,6 +19,10 @@ const context = await esbuild.context({
   external: [
     "obsidian",
     "electron",
+    "node-pty",
+    "xterm",
+    "xterm-addon-fit",
+    "xterm-addon-web-links",
     "@codemirror/autocomplete",
     "@codemirror/collab",
     "@codemirror/commands",

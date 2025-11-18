@@ -15,45 +15,84 @@ export class MarthaSettingTab extends PluginSettingTab {
 
     containerEl.createEl('h2', { text: 'Martha Agent Settings' });
 
+    containerEl.createEl('p', {
+      text: 'This plugin embeds Claude CLI directly inside Obsidian. Make sure Claude Code is installed globally.',
+      cls: 'setting-item-description'
+    });
+
     new Setting(containerEl)
-      .setName('OAuth Token')
-      .setDesc('Long-lived Claude Code OAuth token (from claude setup-token)')
-      .addText(text => text
-        .setPlaceholder('sk-ant-oat01-...')
-        .setValue(this.plugin.settings.oauthToken)
-        .onChange(async (value) => {
-          this.plugin.settings.oauthToken = value;
+      .setName('Terminal position')
+      .setDesc('Where to open the Claude terminal panel')
+      .addDropdown(dropdown => dropdown
+        .addOption('right', 'Right sidebar')
+        .addOption('bottom', 'Bottom panel')
+        .setValue(this.plugin.settings.terminalPosition)
+        .onChange(async (value: 'right' | 'bottom') => {
+          this.plugin.settings.terminalPosition = value;
           await this.plugin.saveSettings();
         }));
 
     new Setting(containerEl)
-      .setName('Auto-process inbox')
-      .setDesc('Automatically process files when added to 00_Inbox/')
+      .setName('Font size')
+      .setDesc('Terminal font size (requires reopening terminal)')
+      .addSlider(slider => slider
+        .setLimits(10, 20, 1)
+        .setValue(this.plugin.settings.fontSize)
+        .setDynamicTooltip()
+        .onChange(async (value) => {
+          this.plugin.settings.fontSize = value;
+          await this.plugin.saveSettings();
+        }));
+
+    new Setting(containerEl)
+      .setName('Auto-start Claude')
+      .setDesc('Automatically run "claude" command when opening terminal')
       .addToggle(toggle => toggle
-        .setValue(this.plugin.settings.autoProcess)
+        .setValue(this.plugin.settings.autoStartClaude)
         .onChange(async (value) => {
-          this.plugin.settings.autoProcess = value;
+          this.plugin.settings.autoStartClaude = value;
           await this.plugin.saveSettings();
         }));
 
-    new Setting(containerEl)
-      .setName('Graph Memory Path')
-      .setDesc('Path to Graph Memory MCP storage')
-      .addText(text => text
-        .setValue(this.plugin.settings.mcpGraphMemory)
-        .onChange(async (value) => {
-          this.plugin.settings.mcpGraphMemory = value;
-          await this.plugin.saveSettings();
-        }));
+    // Installation instructions
+    containerEl.createEl('h3', { text: 'Setup Instructions' });
 
-    new Setting(containerEl)
-      .setName('Basic Memory Path')
-      .setDesc('Path to Basic Memory MCP storage')
-      .addText(text => text
-        .setValue(this.plugin.settings.mcpBasicMemory)
-        .onChange(async (value) => {
-          this.plugin.settings.mcpBasicMemory = value;
-          await this.plugin.saveSettings();
-        }));
+    const instructions = containerEl.createEl('div', { cls: 'martha-setup-instructions' });
+
+    instructions.createEl('p', { text: '1. Install Claude Code globally:' });
+    instructions.createEl('pre', { text: 'npm install -g @anthropic-ai/claude-code' });
+
+    instructions.createEl('p', { text: '2. Set up authentication:' });
+    instructions.createEl('pre', { text: 'claude setup-token' });
+
+    instructions.createEl('p', { text: '3. Open terminal in Obsidian:' });
+    instructions.createEl('p', { text: 'Use the ribbon icon (terminal) or Command Palette → "Open Claude Terminal"' });
+
+    instructions.createEl('p', { text: '4. The terminal will start in your vault directory with full Claude Code features.' });
+
+    // Add styles
+    const style = containerEl.createEl('style');
+    style.textContent = `
+      .martha-setup-instructions {
+        background: var(--background-secondary);
+        padding: 16px;
+        border-radius: 8px;
+        margin-top: 12px;
+      }
+
+      .martha-setup-instructions p {
+        margin: 8px 0;
+      }
+
+      .martha-setup-instructions pre {
+        background: var(--background-primary);
+        padding: 8px 12px;
+        border-radius: 4px;
+        font-family: 'Consolas', 'Courier New', monospace;
+        font-size: 13px;
+        color: var(--text-accent);
+        margin: 4px 0 12px 0;
+      }
+    `;
   }
 }
