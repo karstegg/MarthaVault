@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Inbox/2025-09-18.md",
+                "file": "00_Inbox/2025-11-18.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-09-18"
+              "title": "Backlinks for 2025-11-18"
             }
           },
           {
@@ -182,8 +182,7 @@
               "title": "Calendar"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       },
       {
         "id": "e1054e40570ce37e",
@@ -204,7 +203,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 893
+    "width": 893,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,7 +225,7 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "7e4b05391a9b5cf5",
+  "active": "759b14c2e47b40e6",
   "lastOpenFiles": [
     "tasks/Priority Matrix Board.md",
     "00_Inbox/2025-11-18.md",
