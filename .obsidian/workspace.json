@@ -11,18 +11,14 @@
             "id": "7e4b05391a9b5cf5",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "tasks/Priority Matrix Board.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    null
-                  ]
-                }
+                "file": "00_Inbox/2025-11-18.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-trello",
-              "title": "Priority Matrix Board"
+              "icon": "lucide-file",
+              "title": "2025-11-18"
             }
           }
         ]
@@ -240,8 +236,10 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "d7405c902b275627",
+  "active": "7e4b05391a9b5cf5",
   "lastOpenFiles": [
+    "tasks/Priority Matrix Board.md",
+    "00_Inbox/2025-11-18.md",
     "Schedule/Calendar Sync - Week of 2025-11-18 to 2025-11-21.md",
     "Schedule/2025-11-21 - Speed up Belts of Sat tip 1 & Sat tip 2 to produces 800 t-h safely.md",
     "Schedule/2025-11-21 - S2 & BEV Optimisation - Weekly Progress.md",
@@ -258,7 +256,6 @@
     "tasks/Tasks by Theme.md",
     "tasks/Tasks by Site.md",
     "tasks/Tasks by Person.md",
-    "tasks/Priority Matrix Board.md",
     "tasks/2025-10-29 – Junior Engineer Interview Questions.md",
     "tasks/2025-10-07 – SA Crane Contract 6 Month Extension.md",
     "tasks/2025-10-06 – Weekly Priorities.md",
@@ -269,7 +266,6 @@
     "tasks/2025-09-12 – Mixed Project Tasks and Updates.md",
     "tasks/2025-09-10 – Xavier Peterson - N2 Manwinder Investigation Follow-up.md",
     "tasks/2025-09-03 – DMR Brake Test Compliance Response.md",
-    "tasks/2025-08-25 – MSTA Fire Audit Follow-ups.md",
     "00_Inbox/FT_2025-11-17 20_37_37.256.png",
     "media/image/2025/2025-11-17_2037_Emergency_Preparedness_Recap.png",
     "media/image/2025/2025-11-17_2036_Daily_Notes_Planner.png",
