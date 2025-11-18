@@ -2,6 +2,7 @@
 M	Operations/Nchwaning3/2025-11-12 ΓÇô N3 UG Electrical Foreman Position Motivation.md
 A	Schedule/2025-11-07 - Review - master_task_list.md
 A	Schedule/2025-11-13 - Meeting - master_task_list.md
+A	Schedule/Calendar Sync - Week of 2025-11-18 to 2025-11-21.md
 M	Schedule/_Sync_Summary_2025-11.md
 M	projects/CAS-Level-9/2025-10-28 ΓÇô CAS L9 OEM Meetings (Nerospec, Fermel, Manitou, Aard, BELL).md
 A	projects/Capital_TMM_Programme/2025-11-13 ΓÇô Capital Programme Status Update from Jacques Breet.md
