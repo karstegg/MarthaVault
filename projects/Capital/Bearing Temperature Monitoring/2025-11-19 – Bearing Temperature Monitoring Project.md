@@ -32,7 +32,19 @@ Expansion of bearing temperature monitoring systems for conveyor belt infrastruc
 
 ## Final Estimate & Status
 
-**Estimate sent:** 2025-11-19 ~16:00 SAST to [[Opperman, Ilze]]
+**Estimate sent:** 2025-11-19 16:07 SAST to [[Malouly, Ilze]] (with team cc'd)
+**Updated estimate breakdown:**
+- **N2 (Nchwaning 2):** R5.3M
+- **N3 (Nchwaning 3):** R3.3M  
+- **Gloria:** R950k
+- **Total:** R9.55M
+
+**Estimate file:** `Beraring Temp monitoring capital estimate.xlsx` (attached to email)
+
+**Context:** SK (Sikelela Nzuza) added more belts after initial estimate - N2 Graben conveyors have 226 plumber blocks total (corrected from initial count of 192)
+
+**Recipients:** Sikelela Nzuza, Jacques Breet, Ilze Malouly, Sipho Dubazane, Stef Lourens, Sello Sease
+
 **Current status:** Waiting for Ilze to add to unplanned capital register and obtain GM feedback on capital allocation
 **Next step:** GM approval on whether to proceed with unplanned capital application
 
