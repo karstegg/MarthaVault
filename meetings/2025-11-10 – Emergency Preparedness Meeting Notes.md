@@ -28,12 +28,14 @@ permalink: 00-inbox/2025-11-10-emergency-preparedness-meeting-notes
 ## Meeting Notes & Action Items
 
 ### 1. Real-Time Temperature Monitoring via Belt Scales
-- [ ] Identify which belts currently have temperature sensors applied #task #priority/high 📅 2025-11-15
+- [ ] Identify which belts currently have temperature sensors applied #task #priority/medium 📅 TBD
 - **Context:** Need to determine current sensor coverage across belt systems
 - **Critical:** Sensors must not be applied to areas that do not require them
+- **Status:** On hold pending capital approval
 
 ### 2. Capex for BEV Bay Firedoor Project
-- [ ] Add sensors to Capex budget for BEV bay firedoor project #task #priority/high #BEV #fire-safety 📅 2025-11-15
+- [ ] Add sensors to Capex budget for BEV bay firedoor project #task #priority/medium #BEV #fire-safety 📅 TBD
+- **Status:** On hold pending bearing temperature monitoring capital approval
 
 ### 3. BEV Fire DDOPS Requirements
 - [ ] BEV fire DDOPS must include CO sensors #task #priority/high #BEV #fire-safety 📅 2025-11-15
