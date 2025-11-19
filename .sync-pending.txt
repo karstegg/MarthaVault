@@ -1,1 +1,2 @@
-﻿A	system/2025-11-19 ΓÇô CRITICAL Issue - Sync-Vault Command Broken.md
+﻿A	projects/Capital/Bearing Temperature Monitoring/Bearing Temperature Monitoring Project.md
+M	system/2025-11-19 ΓÇô CRITICAL Issue - Sync-Vault Command Broken.md
