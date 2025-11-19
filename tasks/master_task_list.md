@@ -508,6 +508,35 @@ permalink: tasks/master-task-list
 
 ---
 
-**Last Updated**: 2025-11-17 by Claude (BEV chargers order status update)
+---
+
+## CAPITAL PROJECTS
+
+- [ ] [[Opperman, Ilze]] - Add Bearing Temperature Monitoring to unplanned capital register #task #year/2025 #priority/high #capital #bearing-monitoring 📅 2025-11-22
+  - Note: Final estimate sent 2025-11-19, all project files consolidated
+  - Project: [[projects/Capital/Bearing Temperature Monitoring/2025-11-19 – Bearing Temperature Monitoring Project]]
+
+---
+
+## CAS LEVEL 9 TASKS (from 2025-11-18 meetings)
+
+- [ ] Follow up on CR121 replacement decision #task #year/2025 #priority/high #CAS-L9 #Manitou 📅 2025-11-20
+- [ ] Nico to resolve Fermel resource shortage with HO #task #year/2025 #priority/critical #CAS-L9 #Fermel 📅 2025-11-19
+- [ ] Confirm panel order and delivery schedule for Aard #task #year/2025 #priority/high #CAS-L9 #Aard 📅 2025-11-20
+- [ ] Clarify 6-month support contract start date (Aard) #task #year/2025 #priority/medium #CAS-L9 #Aard 📅 2025-11-22
+- [ ] Confirm UV53 deployment plan to Chamdor #task #year/2025 #priority/medium #CAS-L9 #Aard 📅 2025-11-20
+- [ ] Resolve scissor lift loop issue on platform #task #year/2025 #priority/high #CAS-L9 #Aard 📅 2025-11-20
+- [ ] Ensure MAreandra has operator support underground #task #year/2025 #priority/high #CAS-L9 #Fermel 📅 2025-11-19
+
+---
+
+## TENDER & PROCUREMENT
+
+- [ ] Submit Itireleng scope to JoMari for tender #task #year/2025 #priority/high #tender 📅 2025-11-20
+  - Note: Scope received 2025-11-19
+
+---
+
+**Last Updated**: 2025-11-19 by Claude (Triage - added 9 tasks from daily notes + capital project)
 **Last Consolidated**: 2025-10-06
 **Next Review**: 2025-11-21 (weekly)
