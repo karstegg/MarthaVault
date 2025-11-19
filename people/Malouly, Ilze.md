@@ -10,7 +10,7 @@ permalink: people/malouly-ilze
 # Ilze Malouly
 
 ## Role
-SHERQ Department - Black Rock Mine Operations
+Management Accountant
 
 ## Contact Information
 - Email: Ilze.Malouly@assmang.co.za

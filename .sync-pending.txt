@@ -1,1 +1,1 @@
-﻿M	tasks/master_task_list.md
+﻿M	projects/Capital/Bearing Temperature Monitoring/2025-11-19 ΓÇô Bearing Temperature Monitoring Project.md
