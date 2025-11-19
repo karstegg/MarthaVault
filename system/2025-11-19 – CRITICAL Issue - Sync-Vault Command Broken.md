@@ -257,3 +257,84 @@ git add . && git commit -m "delete"
 ---
 
 **Status:** Issue documented, manual workaround applied for today's session, fix pending implementation.
+
+
+---
+
+## **UPDATE: Fix Implemented (2025-11-19 22:00 SAST)**
+
+### **Solution Applied: Option 1 (Inline Implementation)**
+
+**Changes made to `.claude/commands/sync-vault.md`:**
+
+1. **Complete rewrite with full implementation instructions**
+2. **Three-step process:**
+   - Step 1: Parse arguments and get changed files from Git
+   - Step 2: Process each file and update memory systems (Graph + Basic)
+   - Step 3: Update checkpoint and report summary
+
+3. **Comprehensive memory operations:**
+   - **Added files**: Create entities, create relations, index in Basic Memory
+   - **Modified files**: Delete old entity, create new entity, re-index
+   - **Deleted files**: Delete from both memory systems
+
+4. **Metadata extraction guide** for each file type:
+   - People files → Personnel entities
+   - Project files → Project entities
+   - Schedule files → Business Process entities
+   - Strategy files → Strategy entities
+   - System files → System Enhancement entities
+
+5. **Error handling and performance considerations** documented
+
+### **Key Features of Fixed Implementation:**
+
+✅ **Full Graph Memory integration**
+- Creates entities with proper entityType based on folder
+- Extracts observations from file content (5-10 key facts)
+- Creates relations from wikilinks [[Person]] and [[Project]]
+
+✅ **Full Basic Memory integration**
+- Indexes documents with `write_note`
+- Preserves folder structure
+- Extracts and passes tags from frontmatter
+
+✅ **Proper file change handling**
+- Added: Full entity creation + indexing
+- Modified: Delete old + create new (ensures fresh data)
+- Deleted: Remove from both systems
+
+✅ **Flags supported**
+- `--full`: Re-index entire vault
+- `--dry-run`: Preview changes without executing
+- `--verbose`: Detailed processing logs
+
+### **Testing Status**
+
+- [x] Documentation updated with complete implementation
+- [ ] Live test with actual file changes (pending next session)
+- [ ] Verify Graph Memory entities created correctly
+- [ ] Verify Basic Memory semantic search works
+- [ ] Performance test (5 seconds target for 1-10 files)
+
+### **Next Steps**
+
+1. **Test the fixed command:**
+   ```bash
+   # Make a test change
+   echo "test" >> system/test.md
+   git add . && git commit -m "test"
+   
+   # Run sync
+   /sync-vault
+   
+   # Verify
+   - Check Graph Memory for new entity
+   - Check Basic Memory search for test.md
+   ```
+
+2. **Monitor performance** with larger syncs
+3. **Gather user feedback** on functionality
+4. **Document any edge cases** discovered during testing
+
+### **Status:** ✅ FIXED - Implementation complete, testing pending
