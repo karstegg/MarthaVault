@@ -203,8 +203,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 893,
-    "collapsed": true
+    "width": 893
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,8 +224,9 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "7e4b05391a9b5cf5",
+  "active": "d7405c902b275627",
   "lastOpenFiles": [
+    "projects/Capital/Bearing Temperature Monitoring",
     "Schedule/2025-11-26 - Sentis Safety Climate Survey.md",
     "00_Inbox/3FF4C600",
     "00_Inbox/~$Beraring Temp monitoring capital estimate.xlsx",
@@ -261,7 +261,6 @@
     "tasks/2025-10-29 – Junior Engineer Interview Questions.md",
     "tasks/2025-10-07 – SA Crane Contract 6 Month Extension.md",
     "tasks/2025-10-06 – Weekly Priorities.md",
-    "tasks/2025-09-22 – Fit Lubri Vent on All S2 Machines.md",
     "tasks/~$25-10-03 - Junior Project Engineers Recruitment Memo.docx",
     "00_Inbox/FT_2025-11-17 20_37_37.256.png",
     "media/image/2025/2025-11-17_2037_Emergency_Preparedness_Recap.png",
