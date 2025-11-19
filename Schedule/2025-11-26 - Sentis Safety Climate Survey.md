@@ -2,8 +2,8 @@
 title: Sentis Safety Climate Survey - Focus Group (D-Band Group 3)
 allDay: false
 date: 2025-11-26
-startTime: '11:30'
-endTime: '12:15'
+startTime: '11:45'
+endTime: '12:30'
 completed: null
 permalink: schedule/2025-11-26-sentis-safety-climate-survey
 ---
