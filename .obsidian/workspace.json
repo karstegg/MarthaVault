@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/2025-11-21.md",
+                "file": "Operations/Nchwaning3/2025-11-05 – N3 UG Electrical Foreman Motivation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-21"
+              "title": "2025-11-05 – N3 UG Electrical Foreman Motivation"
             }
           }
         ]
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Inbox/2025-11-21.md",
+                "file": "Operations/Nchwaning3/2025-11-05 – N3 UG Electrical Foreman Motivation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-11-21"
+              "title": "Backlinks for 2025-11-05 – N3 UG Electrical Foreman Motivation"
             }
           },
           {
@@ -203,7 +203,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 893
+    "width": 563
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -224,10 +224,10 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "7e4b05391a9b5cf5",
+  "active": "759b14c2e47b40e6",
   "lastOpenFiles": [
-    "00_Inbox/2025-11-19.md",
     "00_Inbox/2025-11-21.md",
+    "00_Inbox/2025-11-19.md",
     "projects/Capital/Bearing Temperature Monitoring/Bearing Temperature Monitoring Project.md",
     "system/2025-11-19 – CRITICAL Issue - Sync-Vault Command Broken.md",
     "system/2025-11-19 – Session Learnings - Outlook Sent Items & Capital Project Tracking.md",
