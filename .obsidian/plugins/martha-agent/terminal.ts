@@ -3,9 +3,25 @@ import MarthaAgentPlugin from './main';
 import { Terminal } from 'xterm';
 import { FitAddon } from 'xterm-addon-fit';
 import { WebLinksAddon } from 'xterm-addon-web-links';
-import * as pty from 'node-pty';
 import * as os from 'os';
 import * as path from 'path';
+
+// Load node-pty dynamically with absolute path to work around Obsidian's module resolution
+// Import types for TypeScript
+import type * as ptyTypes from 'node-pty';
+
+const pty: typeof ptyTypes = (() => {
+  try {
+    // Try loading from plugin's node_modules with absolute path
+    const pluginDir = __dirname;
+    const ptyPath = path.join(pluginDir, 'node_modules', 'node-pty');
+    return require(ptyPath);
+  } catch (e) {
+    console.error('[Martha] Failed to load node-pty:', e);
+    // Fallback to normal require (will probably fail but worth trying)
+    return require('node-pty');
+  }
+})();
 
 export const TERMINAL_VIEW_TYPE = 'martha-terminal';
 
@@ -13,7 +29,7 @@ export class TerminalView extends ItemView {
   plugin: MarthaAgentPlugin;
   terminal: Terminal;
   fitAddon: FitAddon;
-  ptyProcess: pty.IPty | null = null;
+  ptyProcess: ptyTypes.IPty | null = null;
   vaultPath: string;
   resizeObserver: ResizeObserver | null = null;
 
@@ -144,7 +160,7 @@ export class TerminalView extends ItemView {
       });
 
       // Handle PTY exit
-      this.ptyProcess.onExit(({ exitCode, signal }) => {
+      this.ptyProcess.onExit(({ exitCode, signal }: { exitCode: number; signal?: number }) => {
         console.log('[Martha] PTY process exited:', { exitCode, signal });
         this.terminal.writeln('');
         this.terminal.writeln('\x1b[1;33mClaude CLI session ended.\x1b[0m');

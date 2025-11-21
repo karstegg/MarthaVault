@@ -6771,9 +6771,18 @@ var import_obsidian2 = require("obsidian");
 var import_xterm = __toESM(require_xterm());
 var import_xterm_addon_fit = __toESM(require_xterm_addon_fit());
 var import_xterm_addon_web_links = __toESM(require_xterm_addon_web_links());
-var pty = __toESM(require("node-pty"));
 var os = __toESM(require("os"));
 var path = __toESM(require("path"));
+var pty = (() => {
+  try {
+    const pluginDir = __dirname;
+    const ptyPath = path.join(pluginDir, "node_modules", "node-pty");
+    return require(ptyPath);
+  } catch (e) {
+    console.error("[Martha] Failed to load node-pty:", e);
+    return require("node-pty");
+  }
+})();
 var TERMINAL_VIEW_TYPE = "martha-terminal";
 var TerminalView = class extends import_obsidian2.ItemView {
   constructor(leaf, plugin) {
