@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/2025-11-19.md",
+                "file": "00_Inbox/2025-11-21.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-19"
+              "title": "2025-11-21"
             }
           }
         ]
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Inbox/2025-11-19.md",
+                "file": "00_Inbox/2025-11-21.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-11-19"
+              "title": "Backlinks for 2025-11-21"
             }
           },
           {
@@ -224,13 +224,14 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "759b14c2e47b40e6",
+  "active": "7e4b05391a9b5cf5",
   "lastOpenFiles": [
+    "00_Inbox/2025-11-19.md",
+    "00_Inbox/2025-11-21.md",
     "projects/Capital/Bearing Temperature Monitoring/Bearing Temperature Monitoring Project.md",
     "system/2025-11-19 – CRITICAL Issue - Sync-Vault Command Broken.md",
     "system/2025-11-19 – Session Learnings - Outlook Sent Items & Capital Project Tracking.md",
     "00_Inbox/2025-11-18.md",
-    "00_Inbox/2025-11-19.md",
     "Daily/2025-11-17 – Email Analysis – Flagged and Unread.md",
     "Daily/2025-11-19.md",
     "Daily/2025-11-18.md",
@@ -261,7 +262,6 @@
     "tasks/master_task_list.md",
     "tasks/filtered_task_list.md",
     "tasks/Test Task.md",
-    "tasks/Tasks Kanban Board.md",
     "00_Inbox/FT_2025-11-17 20_37_37.256.png",
     "media/image/2025/2025-11-17_2037_Emergency_Preparedness_Recap.png",
     "media/image/2025/2025-11-17_2036_Daily_Notes_Planner.png",
