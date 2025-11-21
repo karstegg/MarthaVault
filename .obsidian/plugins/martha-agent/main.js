@@ -6773,24 +6773,26 @@ var import_xterm_addon_fit = __toESM(require_xterm_addon_fit());
 var import_xterm_addon_web_links = __toESM(require_xterm_addon_web_links());
 var os = __toESM(require("os"));
 var path = __toESM(require("path"));
-var pty = (() => {
+var loadNodePty = (pluginDir) => {
   try {
-    const pluginDir = __dirname;
     const ptyPath = path.join(pluginDir, "node_modules", "node-pty");
+    console.log("[Martha] Attempting to load node-pty from:", ptyPath);
     return require(ptyPath);
   } catch (e) {
     console.error("[Martha] Failed to load node-pty:", e);
     return require("node-pty");
   }
-})();
+};
 var TERMINAL_VIEW_TYPE = "martha-terminal";
 var TerminalView = class extends import_obsidian2.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.ptyProcess = null;
+    this.pty = null;
     this.resizeObserver = null;
     this.plugin = plugin;
     this.vaultPath = this.app.vault.adapter.basePath;
+    this.pluginDir = path.join(this.vaultPath, ".obsidian", "plugins", "martha-agent");
   }
   getViewType() {
     return TERMINAL_VIEW_TYPE;
@@ -6852,6 +6854,12 @@ var TerminalView = class extends import_obsidian2.ItemView {
     });
     this.resizeObserver.observe(terminalDiv);
     this.loadXtermStyles();
+    this.pty = loadNodePty(this.pluginDir);
+    if (!this.pty) {
+      this.terminal.writeln("\x1B[1;31mError: Failed to load node-pty module.\x1B[0m");
+      this.terminal.writeln("Please check that node_modules/node-pty is installed.");
+      return;
+    }
     await this.spawnClaudeProcess();
   }
   async spawnClaudeProcess() {
@@ -6868,7 +6876,7 @@ var TerminalView = class extends import_obsidian2.ItemView {
       console.log("[Martha] Using Claude executable:", claudePath);
       const shell = os.platform() === "win32" ? "cmd.exe" : process.env.SHELL || "/bin/bash";
       const isWindows = os.platform() === "win32";
-      this.ptyProcess = pty.spawn(shell, [], {
+      this.ptyProcess = this.pty.spawn(shell, [], {
         name: "xterm-256color",
         cols: this.terminal.cols,
         rows: this.terminal.rows,

@@ -10,18 +10,18 @@ import * as path from 'path';
 // Import types for TypeScript
 import type * as ptyTypes from 'node-pty';
 
-const pty: typeof ptyTypes = (() => {
+const loadNodePty = (pluginDir: string): typeof ptyTypes => {
   try {
     // Try loading from plugin's node_modules with absolute path
-    const pluginDir = __dirname;
     const ptyPath = path.join(pluginDir, 'node_modules', 'node-pty');
+    console.log('[Martha] Attempting to load node-pty from:', ptyPath);
     return require(ptyPath);
   } catch (e) {
     console.error('[Martha] Failed to load node-pty:', e);
     // Fallback to normal require (will probably fail but worth trying)
     return require('node-pty');
   }
-})();
+};
 
 export const TERMINAL_VIEW_TYPE = 'martha-terminal';
 
@@ -30,13 +30,17 @@ export class TerminalView extends ItemView {
   terminal: Terminal;
   fitAddon: FitAddon;
   ptyProcess: ptyTypes.IPty | null = null;
+  pty: typeof ptyTypes | null = null;
   vaultPath: string;
+  pluginDir: string;
   resizeObserver: ResizeObserver | null = null;
 
   constructor(leaf: WorkspaceLeaf, plugin: MarthaAgentPlugin) {
     super(leaf);
     this.plugin = plugin;
     this.vaultPath = (this.app.vault.adapter as any).basePath;
+    // Calculate plugin directory from vault path
+    this.pluginDir = path.join(this.vaultPath, '.obsidian', 'plugins', 'martha-agent');
   }
 
   getViewType(): string {
@@ -115,6 +119,14 @@ export class TerminalView extends ItemView {
     // Load xterm CSS
     this.loadXtermStyles();
 
+    // Load node-pty module with correct plugin directory
+    this.pty = loadNodePty(this.pluginDir);
+    if (!this.pty) {
+      this.terminal.writeln('\x1b[1;31mError: Failed to load node-pty module.\x1b[0m');
+      this.terminal.writeln('Please check that node_modules/node-pty is installed.');
+      return;
+    }
+
     // Spawn Claude CLI process
     await this.spawnClaudeProcess();
   }
@@ -140,7 +152,7 @@ export class TerminalView extends ItemView {
       const isWindows = os.platform() === 'win32';
 
       // Spawn PTY process
-      this.ptyProcess = pty.spawn(shell, [], {
+      this.ptyProcess = this.pty!.spawn(shell, [], {
         name: 'xterm-256color',
         cols: this.terminal.cols,
         rows: this.terminal.rows,
