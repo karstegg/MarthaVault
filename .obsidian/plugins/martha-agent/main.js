@@ -6773,32 +6773,15 @@ var import_xterm_addon_fit = __toESM(require_xterm_addon_fit());
 var import_xterm_addon_web_links = __toESM(require_xterm_addon_web_links());
 var os = __toESM(require("os"));
 var path = __toESM(require("path"));
-var loadNodePty = (pluginDir) => {
-  try {
-    const ptyPath = path.join(pluginDir, "node_modules", "node-pty");
-    console.log("[Martha] Attempting to load node-pty from:", ptyPath);
-    return window.require(ptyPath);
-  } catch (e) {
-    console.error("[Martha] Failed to load node-pty from plugin dir:", e);
-    try {
-      const moduleName = "node-pty";
-      return window.require(moduleName);
-    } catch (e2) {
-      console.error("[Martha] Failed to load node-pty with fallback:", e2);
-      throw new Error("Could not load node-pty module");
-    }
-  }
-};
+var { spawn } = require("child_process");
 var TERMINAL_VIEW_TYPE = "martha-terminal";
 var TerminalView = class extends import_obsidian2.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
-    this.ptyProcess = null;
-    this.pty = null;
+    this.childProcess = null;
     this.resizeObserver = null;
     this.plugin = plugin;
     this.vaultPath = this.app.vault.adapter.basePath;
-    this.pluginDir = path.join(this.vaultPath, ".obsidian", "plugins", "martha-agent");
   }
   getViewType() {
     return TERMINAL_VIEW_TYPE;
@@ -6853,19 +6836,10 @@ var TerminalView = class extends import_obsidian2.ItemView {
     this.resizeObserver = new ResizeObserver(() => {
       if (this.fitAddon) {
         this.fitAddon.fit();
-        if (this.ptyProcess) {
-          this.ptyProcess.resize(this.terminal.cols, this.terminal.rows);
-        }
       }
     });
     this.resizeObserver.observe(terminalDiv);
     this.loadXtermStyles();
-    this.pty = loadNodePty(this.pluginDir);
-    if (!this.pty) {
-      this.terminal.writeln("\x1B[1;31mError: Failed to load node-pty module.\x1B[0m");
-      this.terminal.writeln("Please check that node_modules/node-pty is installed.");
-      return;
-    }
     await this.spawnClaudeProcess();
   }
   async spawnClaudeProcess() {
@@ -6880,41 +6854,47 @@ var TerminalView = class extends import_obsidian2.ItemView {
         return;
       }
       console.log("[Martha] Using Claude executable:", claudePath);
-      const shell = os.platform() === "win32" ? "cmd.exe" : process.env.SHELL || "/bin/bash";
       const isWindows = os.platform() === "win32";
-      this.ptyProcess = this.pty.spawn(shell, [], {
-        name: "xterm-256color",
-        cols: this.terminal.cols,
-        rows: this.terminal.rows,
+      this.childProcess = spawn(claudePath, [], {
         cwd: this.vaultPath,
         env: {
           ...process.env,
           TERM: "xterm-256color",
-          COLORTERM: "truecolor"
-        }
+          COLORTERM: "truecolor",
+          FORCE_COLOR: "1"
+        },
+        shell: isWindows,
+        windowsHide: true
       });
-      console.log("[Martha] PTY process spawned with PID:", this.ptyProcess.pid);
-      this.ptyProcess.onData((data) => {
-        this.terminal.write(data);
-      });
-      this.ptyProcess.onExit(({ exitCode, signal }) => {
-        console.log("[Martha] PTY process exited:", { exitCode, signal });
+      if (!this.childProcess) {
+        throw new Error("Failed to spawn process");
+      }
+      console.log("[Martha] Claude process spawned with PID:", this.childProcess.pid);
+      if (this.childProcess.stdout) {
+        this.childProcess.stdout.on("data", (data) => {
+          this.terminal.write(data.toString());
+        });
+      }
+      if (this.childProcess.stderr) {
+        this.childProcess.stderr.on("data", (data) => {
+          const text = data.toString();
+          this.terminal.write(text);
+        });
+      }
+      this.childProcess.on("exit", (code, signal) => {
+        console.log("[Martha] Claude process exited:", { code, signal });
         this.terminal.writeln("");
         this.terminal.writeln("\x1B[1;33mClaude CLI session ended.\x1B[0m");
-        this.ptyProcess = null;
+        if (code !== 0 && code !== null) {
+          this.terminal.writeln(`\x1B[1;31mExit code: ${code}\x1B[0m`);
+        }
+        this.childProcess = null;
       });
       this.terminal.onData((data) => {
-        if (this.ptyProcess) {
-          this.ptyProcess.write(data);
+        if (this.childProcess && this.childProcess.stdin) {
+          this.childProcess.stdin.write(data);
         }
       });
-      await new Promise((resolve) => setTimeout(resolve, 500));
-      console.log("[Martha] Starting Claude CLI...");
-      if (isWindows) {
-        this.ptyProcess.write("claude\r");
-      } else {
-        this.ptyProcess.write("claude\n");
-      }
       new import_obsidian2.Notice("\u2713 Claude CLI started in vault directory");
     } catch (error) {
       console.error("[Martha] Failed to spawn Claude process:", error);
@@ -6956,9 +6936,9 @@ var TerminalView = class extends import_obsidian2.ItemView {
     return "claude";
   }
   sendToTerminal(text) {
-    if (this.ptyProcess) {
+    if (this.childProcess && this.childProcess.stdin) {
       const isWindows = os.platform() === "win32";
-      this.ptyProcess.write(text + (isWindows ? "\r" : "\n"));
+      this.childProcess.stdin.write(text + (isWindows ? "\r\n" : "\n"));
     }
   }
   loadXtermStyles() {
@@ -7042,13 +7022,13 @@ var TerminalView = class extends import_obsidian2.ItemView {
       this.resizeObserver.disconnect();
       this.resizeObserver = null;
     }
-    if (this.ptyProcess) {
+    if (this.childProcess) {
       try {
-        this.ptyProcess.kill();
+        this.childProcess.kill();
       } catch (e) {
-        console.error("[Martha] Error killing PTY process:", e);
+        console.error("[Martha] Error killing child process:", e);
       }
-      this.ptyProcess = null;
+      this.childProcess = null;
     }
     if (this.terminal) {
       this.terminal.dispose();
