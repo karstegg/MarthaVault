@@ -122,16 +122,26 @@ export class TerminalView extends ItemView {
       const isWindows = os.platform() === 'win32';
 
       // Spawn Claude CLI process directly using child_process
+      // Set environment variables to simulate terminal
       this.childProcess = spawn(claudePath, [], {
         cwd: this.vaultPath,
         env: {
           ...process.env,
           TERM: 'xterm-256color',
           COLORTERM: 'truecolor',
-          FORCE_COLOR: '1'
+          FORCE_COLOR: '1',
+          // Set terminal dimensions
+          COLUMNS: String(this.terminal.cols),
+          LINES: String(this.terminal.rows),
+          // Try to force interactive mode
+          CLICOLOR_FORCE: '1',
+          // Unbuffered output
+          PYTHONUNBUFFERED: '1'
         },
         shell: isWindows,
-        windowsHide: true
+        windowsHide: true,
+        // Set stdio to inherit for better interaction
+        stdio: ['pipe', 'pipe', 'pipe']
       });
 
       if (!this.childProcess) {
