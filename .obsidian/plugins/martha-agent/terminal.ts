@@ -3,9 +3,39 @@ import MarthaAgentPlugin from './main';
 import { Terminal } from 'xterm';
 import { FitAddon } from 'xterm-addon-fit';
 import { WebLinksAddon } from 'xterm-addon-web-links';
-import * as pty from 'node-pty';
 import * as os from 'os';
 import * as path from 'path';
+
+// Load node-pty dynamically with absolute path to work around Obsidian's module resolution
+// Import types for TypeScript
+import type * as ptyTypes from 'node-pty';
+
+// Use window.require to avoid static module analysis
+declare global {
+  interface Window {
+    require: NodeRequire;
+  }
+}
+
+const loadNodePty = (pluginDir: string): typeof ptyTypes => {
+  try {
+    // Try loading from plugin's node_modules with absolute path
+    const ptyPath = path.join(pluginDir, 'node_modules', 'node-pty');
+    console.log('[Martha] Attempting to load node-pty from:', ptyPath);
+    // Use window.require to bypass static analysis
+    return (window.require as any)(ptyPath);
+  } catch (e) {
+    console.error('[Martha] Failed to load node-pty from plugin dir:', e);
+    // Fallback: try loading with dynamic string to avoid static analysis
+    try {
+      const moduleName = 'node' + '-' + 'pty';
+      return (window.require as any)(moduleName);
+    } catch (e2) {
+      console.error('[Martha] Failed to load node-pty with fallback:', e2);
+      throw new Error('Could not load node-pty module');
+    }
+  }
+};
 
 export const TERMINAL_VIEW_TYPE = 'martha-terminal';
 
@@ -13,14 +43,18 @@ export class TerminalView extends ItemView {
   plugin: MarthaAgentPlugin;
   terminal: Terminal;
   fitAddon: FitAddon;
-  ptyProcess: pty.IPty | null = null;
+  ptyProcess: ptyTypes.IPty | null = null;
+  pty: typeof ptyTypes | null = null;
   vaultPath: string;
+  pluginDir: string;
   resizeObserver: ResizeObserver | null = null;
 
   constructor(leaf: WorkspaceLeaf, plugin: MarthaAgentPlugin) {
     super(leaf);
     this.plugin = plugin;
     this.vaultPath = (this.app.vault.adapter as any).basePath;
+    // Calculate plugin directory from vault path
+    this.pluginDir = path.join(this.vaultPath, '.obsidian', 'plugins', 'martha-agent');
   }
 
   getViewType(): string {
@@ -99,6 +133,14 @@ export class TerminalView extends ItemView {
     // Load xterm CSS
     this.loadXtermStyles();
 
+    // Load node-pty module with correct plugin directory
+    this.pty = loadNodePty(this.pluginDir);
+    if (!this.pty) {
+      this.terminal.writeln('\x1b[1;31mError: Failed to load node-pty module.\x1b[0m');
+      this.terminal.writeln('Please check that node_modules/node-pty is installed.');
+      return;
+    }
+
     // Spawn Claude CLI process
     await this.spawnClaudeProcess();
   }
@@ -124,7 +166,7 @@ export class TerminalView extends ItemView {
       const isWindows = os.platform() === 'win32';
 
       // Spawn PTY process
-      this.ptyProcess = pty.spawn(shell, [], {
+      this.ptyProcess = this.pty!.spawn(shell, [], {
         name: 'xterm-256color',
         cols: this.terminal.cols,
         rows: this.terminal.rows,
@@ -144,7 +186,7 @@ export class TerminalView extends ItemView {
       });
 
       // Handle PTY exit
-      this.ptyProcess.onExit(({ exitCode, signal }) => {
+      this.ptyProcess.onExit(({ exitCode, signal }: { exitCode: number; signal?: number }) => {
         console.log('[Martha] PTY process exited:', { exitCode, signal });
         this.terminal.writeln('');
         this.terminal.writeln('\x1b[1;33mClaude CLI session ended.\x1b[0m');
