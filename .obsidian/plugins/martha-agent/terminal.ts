@@ -136,11 +136,13 @@ export class TerminalView extends ItemView {
           // Try to force interactive mode
           CLICOLOR_FORCE: '1',
           // Unbuffered output
-          PYTHONUNBUFFERED: '1'
+          PYTHONUNBUFFERED: '1',
+          // Explicitly set language/encoding
+          LANG: 'en_US.UTF-8',
+          LC_ALL: 'en_US.UTF-8'
         },
-        shell: isWindows,
+        shell: false,  // Try without shell wrapper for cleaner output
         windowsHide: true,
-        // Set stdio to inherit for better interaction
         stdio: ['pipe', 'pipe', 'pipe']
       });
 
@@ -150,19 +152,20 @@ export class TerminalView extends ItemView {
 
       console.log('[Martha] Claude process spawned with PID:', this.childProcess.pid);
 
-      // Handle stdout -> Terminal
+      // Set encoding to utf8 for cleaner text handling
       if (this.childProcess.stdout) {
-        this.childProcess.stdout.on('data', (data: Buffer) => {
-          this.terminal.write(data.toString());
+        this.childProcess.stdout.setEncoding('utf8');
+        this.childProcess.stdout.on('data', (data: string) => {
+          console.log('[Martha] stdout:', data.substring(0, 100)); // Debug log
+          this.terminal.write(data);
         });
       }
 
-      // Handle stderr -> Terminal
       if (this.childProcess.stderr) {
-        this.childProcess.stderr.on('data', (data: Buffer) => {
-          const text = data.toString();
-          // Write stderr in default color (Claude CLI uses stderr for normal output too)
-          this.terminal.write(text);
+        this.childProcess.stderr.setEncoding('utf8');
+        this.childProcess.stderr.on('data', (data: string) => {
+          console.log('[Martha] stderr:', data.substring(0, 100)); // Debug log
+          this.terminal.write(data);
         });
       }
 
@@ -253,29 +256,66 @@ export class TerminalView extends ItemView {
     const style = document.createElement('style');
     style.id = 'martha-xterm-styles';
     style.textContent = `
-      /* xterm.js base styles */
-      @import url('https://unpkg.com/xterm@5.3.0/css/xterm.css');
+      /* Inline xterm.js base styles (CSP blocks external imports) */
+      .xterm {
+        cursor: text;
+        position: relative;
+        user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+      }
+
+      .xterm.focus,
+      .xterm:focus {
+        outline: none;
+      }
+
+      .xterm .xterm-helpers {
+        position: absolute;
+        top: 0;
+        z-index: 5;
+      }
+
+      .xterm .xterm-helper-textarea {
+        padding: 0;
+        border: 0;
+        margin: 0;
+        position: absolute;
+        opacity: 0;
+        left: -9999em;
+        top: 0;
+        width: 0;
+        height: 0;
+        z-index: -5;
+        white-space: nowrap;
+        overflow: hidden;
+        resize: none;
+      }
 
       .martha-terminal-container {
-        height: 100%;
-        width: 100%;
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         display: flex;
         flex-direction: column;
         background: var(--background-primary);
         padding: 0;
+        overflow: hidden;
       }
 
       .xterm-container {
-        flex: 1;
+        flex: 1 1 auto;
         width: 100%;
-        height: 100%;
+        min-height: 0;
         padding: 12px;
         overflow: hidden;
       }
 
       .xterm {
-        height: 100%;
-        width: 100%;
+        height: 100% !important;
+        width: 100% !important;
       }
 
       .xterm .xterm-viewport {
