@@ -6777,10 +6777,16 @@ var loadNodePty = (pluginDir) => {
   try {
     const ptyPath = path.join(pluginDir, "node_modules", "node-pty");
     console.log("[Martha] Attempting to load node-pty from:", ptyPath);
-    return require(ptyPath);
+    return window.require(ptyPath);
   } catch (e) {
-    console.error("[Martha] Failed to load node-pty:", e);
-    return require("node-pty");
+    console.error("[Martha] Failed to load node-pty from plugin dir:", e);
+    try {
+      const moduleName = "node-pty";
+      return window.require(moduleName);
+    } catch (e2) {
+      console.error("[Martha] Failed to load node-pty with fallback:", e2);
+      throw new Error("Could not load node-pty module");
+    }
   }
 };
 var TERMINAL_VIEW_TYPE = "martha-terminal";

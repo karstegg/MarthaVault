@@ -10,16 +10,30 @@ import * as path from 'path';
 // Import types for TypeScript
 import type * as ptyTypes from 'node-pty';
 
+// Use window.require to avoid static module analysis
+declare global {
+  interface Window {
+    require: NodeRequire;
+  }
+}
+
 const loadNodePty = (pluginDir: string): typeof ptyTypes => {
   try {
     // Try loading from plugin's node_modules with absolute path
     const ptyPath = path.join(pluginDir, 'node_modules', 'node-pty');
     console.log('[Martha] Attempting to load node-pty from:', ptyPath);
-    return require(ptyPath);
+    // Use window.require to bypass static analysis
+    return (window.require as any)(ptyPath);
   } catch (e) {
-    console.error('[Martha] Failed to load node-pty:', e);
-    // Fallback to normal require (will probably fail but worth trying)
-    return require('node-pty');
+    console.error('[Martha] Failed to load node-pty from plugin dir:', e);
+    // Fallback: try loading with dynamic string to avoid static analysis
+    try {
+      const moduleName = 'node' + '-' + 'pty';
+      return (window.require as any)(moduleName);
+    } catch (e2) {
+      console.error('[Martha] Failed to load node-pty with fallback:', e2);
+      throw new Error('Could not load node-pty module');
+    }
   }
 };
 
