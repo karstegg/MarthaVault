@@ -6873,8 +6873,8 @@ var TerminalView = class extends import_obsidian2.ItemView {
           LANG: "en_US.UTF-8",
           LC_ALL: "en_US.UTF-8"
         },
-        shell: false,
-        // Try without shell wrapper for cleaner output
+        shell: true,
+        // MUST use shell on Windows for .cmd files
         windowsHide: true,
         stdio: ["pipe", "pipe", "pipe"]
       });
