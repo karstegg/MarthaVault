@@ -24,10 +24,35 @@ permalink: tasks/master-task-list
 - [x] Share HD54 fire investigation recommendations with Sfiso (WWW format) #task #year/2025 #priority/high #fire-safety ✅ 2025-11-05
 - [x] PDI procedure review with Gerhard - add section to inspect fire suppression systems #task #year/2025 #priority/high #fire-safety ✅ 2025-11-05
 - [x] UV128 CAS installation and testing (arranged with [[Sipho Dubazane]] and Jade at Gloria) #task #year/2025 #priority/medium #CAS #site/Gloria ✅ 2025-11-06
-- [ ] Write N3 Electrical Foreman recruitment motivation #task #year/2025 #priority/critical #site/Nchwaning3 #recruitment 📅 2025-11-20
+- [x] Write N3 Electrical Foreman recruitment motivation #task #year/2025 #priority/critical #site/Nchwaning3 #recruitment 📅 2025-11-20 ✅ 2025-11-21
   - Assigned to: [[Karsten, Gregory]]
-  - Status: OVERDUE - START TODAY - Complete for approvals
+  - Status: COMPLETED - Sent to Jacques Nov 21, routing for approvals
   - Note: Second UG Electrical Supervisor for N3 - motivation to increase complement to 2 foremen
+- [ ] Belt Splicing Scope Review - Get engineer input and consolidate site belt lists #task #year/2025 #priority/high #belt-splicing 📅 2025-11-28
+  - Assigned to: [[Karsten, Gregory]]
+  - Requires input from: [[Dubazane, Sipho]], [[Nzuza, Sikelela]], [[Sease, Sello]]
+  - Context: Multi-site conveyor belt splicing project scope definition (Jacques initiated Nov 20)
+- [ ] Confirm AARD technician access for Diane Mjurdan (Horace replacement) #task #year/2025 #priority/medium #access #handover 📅 2025-11-29
+  - Assigned to: [[Karsten, Gregory]]
+  - Stakeholders: Diane Mjurdan, Horace, Shawn Smith
+  - Deadline: Before Horace leave (Nov 30)
+- [ ] Bearing temperature monitoring - Capital application and ordering process clarification #task #year/2025 #priority/high #capital #temperature-monitoring 📅 2025-11-24
+  - Assigned to: [[Karsten, Gregory]]
+  - Action: Discuss with Jacques - clarify capital process and engineer ordering procedure
+- [ ] Leaky Feeder vendor onboarding - Push completion with Sello/Stef #task #year/2025 #priority/medium #leaky-feeder #vendor #site/Nchwaning3 📅 2025-11-28
+  - Assigned to: [[Sease, Sello]], [[Lourens, Stef]]
+  - Context: N3 infrastructure project completion
+- [ ] Arrange leave coverage Dec 14, 2025 - Jan 15, 2026 (33 days) #task #year/2025 #priority/critical #leave #coverage #handover 📅 2025-12-13
+  - Assigned to: [[Karsten, Gregory]]
+  - Coverage Period: 33 days over year-end, includes CAS L9 Dec 31 deadline
+  - Key Decisions: Coverage model (distributed vs acting SPE), CAS L9 ownership, emergency contact availability
+  - Stakeholders: [[Opperman, Rudi]], [[Breet, Jacques]], site engineers (Sipho, Sikelela, Sello, Xavier)
+  - Reference: [[00_Inbox/2025-11-24 – Leave Coverage Plan Dec-Jan.md]]
+- [ ] Monthly Health & Engineering Presentation - Prepare for Teams meeting #task #year/2025 #priority/high #presentation #monthly-reporting 📅 2025-11-30
+  - Assigned to: [[Karsten, Gregory]]
+  - Context: Monthly health & engineering status presentation on Teams
+  - Content: Engineering metrics, project status, health & safety updates, equipment reliability
+  - Frequency: Monthly recurring
 - [x] Capture weekly charts #task #year/2025 #priority/low ✅ 2025-11-18
 - [x] SA Cranes 6-Month Contract Extension - VO routing complete #task #year/2025 #priority/medium #urgent #vendor ✅ 2025-11-18
   - Note: Contract extension routed to central procurement for approvals (Nov 17)

@@ -7,9 +7,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with do
 ## 🧠 **Workspace Focus** (August 25, 2025)
 **Productivity and Task Management System / Workspace**
 - **Purpose**: Personal productivity, task management, and knowledge organization
-- **Scope**: Work projects, personal development, ideas, and documentation
+- **Scope**: Work projects, work tasks and activities, work calendar, Operations, People, ideas, and documentation
 - **Architecture**: Simple Git backup with Obsidian vault functionality
-- **Automation**: Minimal—focused on content creation and organization
+- **Automation**: Progressively learning by agent—focused on content creation and organization
 
 ---
 
@@ -60,20 +60,14 @@ See: ProductionReports/CLAUDE.md and ProductionReports/reference/*.
 ## 2 Identity & Operating Modes
 You are **Greg's back-office AI assistant**. You run inside this Obsidian vault via **Claude Code – CLI**.
 
-| Mode | Trigger | Behaviour |
-|---|---|---|
-| **Default (AUTONOMOUS)** | Any natural-language prompt | Analyse intent → choose folder, filename, tags, links → create/edit files. |
-| **Command (EXECUTOR)** | Slash-command (`/task`, `/triage`, etc.) | Ignore inference; run the exact command under `.claude/commands/`. |
+| Mode                     | Trigger                                  | Behaviour                                                                                                                                                                                                 |
+| ------------------------ | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Default (AUTONOMOUS)** | Any natural-language prompt              | Analyse intent → choose folder, filename, tags, links → create/edit fi                                                                                                                                    |
+| **Command (EXECUTOR)**   | Slash-command (`/task`, `/triage`, etc.) | Ignore inference; run the exact command under `.claude/comma                                                                                                                                              |
+| Skills                   | Any natural language prompt        Identify which skill is required from prompt. apply claude skills as saved in C:\Users\10064957\.claude\skills globally but also locally: C:\Users\10064957\My Drive\GDVault\MarthaVault\.claude\skills lso   in  |
 
 After every operation, reply with a one-liner:
 *Created `projects/Pump_123/2025-07-29 – Kick-off.md` (#meeting #Pump_123).*
-
-### **Startup Routine**
-**CRITICAL:** Immediately upon session startup, ALWAYS run:
-```
-/sync-outlook-calendar
-```
-This ensures Outlook calendar events are synchronized with the vault's Schedule/ folder before any other operations.
 
 ### **Obsidian Full Calendar - Event File Requirements**
 

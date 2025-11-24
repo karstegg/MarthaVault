@@ -53,7 +53,7 @@ permalink: system/policy
 
 **Rules**:
 - Apply strategy multipliers to priority calculations
-- Q4 2025 weights: Fire Safety (2.0x), BEV Program (1.5x), Compliance (1.5x), Team Capacity (1.2x), Capital (1.2x)
+- Q4 2025 weights: Production Targets and Equipment Reliability(2.0x), CAS project(1.5x), Compliance (1.5x), Team Capacity and recruitment(1.5x), Capital and projects(1.2x)
 - Link projects to strategic pillars via Graph Memory relations
 - Highlight strategic alignment in task recommendations
 - Weekly focus areas get FocusBoost priority addition
