@@ -48,10 +48,14 @@ try {
 
             # Check if status is pending
             if ($content -match "status:\s*pending") {
-                Write-Host "  Pending task detected"
-                Write-Host "  NOTE: Please run /task-handoff in Claude CLI to process the task"
-                # Note: Automatic CLI invocation would require finding the claude executable path
-                # For now, this serves as a notification that a task is pending
+                Write-Host "  Pending task detected - creating trigger file"
+
+                # Write marker file that hooks can detect
+                $triggerFile = "C:\Users\10064957\My Drive\GDVault\MarthaVault\.claude\.task-handoff-trigger"
+                $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+                $timestamp | Out-File $triggerFile -Force
+
+                Write-Host "  Trigger file created - Claude CLI hook will process on next Read operation"
             }
             else {
                 Write-Host "  No pending task (status not 'pending')"
