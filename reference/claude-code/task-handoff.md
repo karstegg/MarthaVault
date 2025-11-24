@@ -18,13 +18,29 @@ Insert the following content as a new subsection:
 ```markdown
 ### **Claude Desktop ↔ Claude CLI Task Handoff Protocol**
 
-**Purpose**: Offload slow/bulk file operations from Claude Desktop to Claude CLI for speed and efficiency.
+**Purpose**: Offload slow/bulk file operations and command execution from Claude Desktop to Claude CLI for speed and efficiency.
 
 **Communication File**: `reference/claude-code/task-handoff.md`
 
 **Division of Labor**:
-- **Claude Desktop (CD)**: Analysis, decisions, triage logic, learning user patterns, memory integration
-- **Claude CLI (CCLI)**: Fast file operations, bulk moves, directory creation, system commands, skill execution, slash commands, sub-agent spawning
+- **Claude Desktop (CD)**: 
+  - Strategic analysis and decision-making
+  - Triage logic and prioritization
+  - Learning user patterns and preferences
+  - Memory integration (Graph + Basic Memory)
+  - Context synthesis from multiple sources
+  - Natural language understanding of user intent
+  - Determining *what* needs to be done and *why*
+
+- **Claude CLI (CCLI)**: 
+  - Fast file operations (move, rename, create, delete)
+  - Bulk operations and directory management
+  - System commands and bash execution
+  - Skill invocations (outlook-extractor, transcription, etc)
+  - Slash command execution (`/vault-sync`, `/triage`, etc)
+  - Sub-agent spawning for specialized tasks
+  - MCP tool access and integration
+  - Executing *how* things get done
 
 **When to Use Handoff**:
 - Multiple file moves/renames (>3 operations)
@@ -84,14 +100,16 @@ executed: ISO timestamp (added by CCLI)
 - **Email Processing**: CD analyzes inbox → handoff skill invocation → CCLI runs outlook-extractor
 - **VFL Schedule**: CD identifies PDF → handoff `/process-vfl-schedule` → CCLI extracts and creates events
 - **Sub-agent Chains**: CD orchestrates multi-step workflow → CCLI spawns specialized sub-agents for each step
+- **Triage Workflows**: CD analyzes inbox content → handoff file operations → CCLI executes moves/archives
 
 **Benefits**:
-- CD focuses on intelligence (what to do)
+- CD focuses on intelligence (what to do and why)
 - CCLI handles execution (doing it fast)
 - Async communication via vault
 - CD learns patterns, CCLI executes them
 - Speed: CCLI operations complete in seconds vs minutes
 - Access to full CCLI ecosystem: skills, commands, MCP tools
+- Clear separation of concerns: thinking vs doing
 ```
 
 **Location to Insert**: After the "Identity & Operating Modes" section, before "Obsidian Full Calendar" subsection.
@@ -101,6 +119,7 @@ executed: ISO timestamp (added by CCLI)
 - Protocol documented for future reference
 - Integration with existing command structure
 - Advanced use cases clearly defined
+- Division of labor explicitly documented
 
 ### Response Required:
 - Confirm section added
