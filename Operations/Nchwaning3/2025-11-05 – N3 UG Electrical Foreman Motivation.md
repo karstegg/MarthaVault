@@ -1,9 +1,12 @@
 ---
-Status:: Draft
-Priority:: High
-Assignee:: [[Karsten, Gregory]]
-DueDate:: 2025-11-15
-Tags:: #year/2025 #site/Nchwaning3 #personnel #electrical #foreman #motivation
+'Status:': Draft
+'Priority:': High
+'Assignee:':
+- - Karsten
+  - Gregory
+'DueDate:': 2025-11-15
+'Tags:': null
+permalink: projects/n3-additional-foreman/2025-11-05-n3-ug-electrical-foreman-motivation
 ---
 
 # Motivation for Additional Foreman - N3 Underground Electrical Section
