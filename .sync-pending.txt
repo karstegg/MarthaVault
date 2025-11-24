@@ -1,1 +1,20 @@
-﻿M	operations/Nchwaning3/2025-11-05 ΓÇô N3 UG Electrical Foreman Motivation.md
+﻿A	Operations/N3/2025-11-21 ΓÇô N3 Electrical Foreman Recruitment.md
+A	Schedule/2025-11-24 - Task Due - 2025-11-24.md
+A	Schedule/2025-11-26 - Task Due - 2025-11-24 ΓÇô EMAIL TRACKING - Week Actions.md
+A	Schedule/2025-11-26 - Task Due - Email Reply Tracking - Week Actions.md
+A	Schedule/2025-11-28 - Review - 2025-11-24 ΓÇô Week Actions.md
+A	Schedule/2025-11-28 - Task Due - 2025-11-24 ΓÇô WEEK PLAN Nov 24-28.md
+A	Schedule/2025-11-28 - Task Due - 2025-11-24 ΓÇô Week Actions.md
+A	Schedule/2025-12-13 - Task Due - 2025-11-24 ΓÇô Leave Coverage Plan Dec-Jan.md
+A	projects/BEV/2025-11-21 ΓÇô S2 Optimization Battery Balancing.md
+A	projects/BEV_Optimization/2025-11-21 ΓÇô S2 Battery Balancing Protocol.md
+A	projects/Belt_Splicing/2025-11-19 ΓÇô Scope Received for Tender.md
+A	projects/Belt_Splicing/2025-11-20 ΓÇô Belt Splice Analysis and Requirements.md
+A	projects/Belt_Splicing/BELT-SPLICE-TEMPLATE-ANALYSIS.md
+A	projects/Belt_Splicing/BRMO_Belt_Splicing_Scope_Template.xlsx
+A	projects/Belt_Splicing/Belt Splicing Scope - Template Data Requirements.md
+A	projects/Belt_Splicing/Conveyor Belt Splicing Scope (Tracked changes) 2025.docx
+A	projects/CAS_Level_9/2025-11-18 ΓÇô OEM Coordination Meetings.md
+A	projects/procurement/2025-11-19 ΓÇô Itireleng Scope Tender Submission.md
+M	system/policy.md
+M	tasks/master_task_list.md
