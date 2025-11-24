@@ -8,7 +8,7 @@ $lockFile = "$vaultPath\.claude\.watcher-running"
 
 # Check if file exists
 if (-not (Test-Path $filePath)) {
-    Write-Host "❌ Error: task-handoff.md not found at $filePath"
+    Write-Host "Error: task-handoff.md not found at $filePath"
     exit 1
 }
 
@@ -16,7 +16,7 @@ if (-not (Test-Path $filePath)) {
 if (Test-Path $lockFile) {
     $existingPid = Get-Content $lockFile -ErrorAction SilentlyContinue
     if ($existingPid -and (Get-Process -Id $existingPid -ErrorAction SilentlyContinue)) {
-        Write-Host "⚠️  Watcher already running (PID: $existingPid)"
+        Write-Host "Watcher already running (PID: $existingPid)"
         exit 0
     }
     # Stale lock file, remove it
@@ -25,7 +25,7 @@ if (Test-Path $lockFile) {
 
 # Create lock file with current process ID
 $PID | Out-File $lockFile
-Write-Host "✓ Task handoff watcher started (PID: $PID)"
+Write-Host "Task handoff watcher started (PID: $PID)"
 Write-Host "  Watching: $filePath"
 Write-Host "  Press Ctrl+C to stop"
 
@@ -48,16 +48,17 @@ try {
 
             # Check if status is pending
             if ($content -match "status:\s*pending") {
-                Write-Host "  ✓ Pending task detected - triggering /task-handoff"
-
-                # Trigger task-handoff via claude CLI
-                # Note: This assumes 'claude' is in PATH
-                Start-Process -NoNewWindow -FilePath "claude" -ArgumentList "continue", "Please run /task-handoff to process the pending task"
-            } else {
-                Write-Host "  ℹ️  No pending task (status not 'pending')"
+                Write-Host "  Pending task detected"
+                Write-Host "  NOTE: Please run /task-handoff in Claude CLI to process the task"
+                # Note: Automatic CLI invocation would require finding the claude executable path
+                # For now, this serves as a notification that a task is pending
             }
-        } catch {
-            Write-Host "  ❌ Error reading file: $_"
+            else {
+                Write-Host "  No pending task (status not 'pending')"
+            }
+        }
+        catch {
+            Write-Host "  Error reading file: $_"
         }
     }
 
@@ -65,23 +66,25 @@ try {
     $eventJob = Register-ObjectEvent -InputObject $watcher -EventName "Changed" -Action $action
 
     Write-Host ""
-    Write-Host "🔍 Watcher active - monitoring for changes..."
+    Write-Host "Watcher active - monitoring for changes..."
     Write-Host ""
 
     # Keep script running
     while ($true) {
         Start-Sleep -Seconds 10
 
-        # Check if we should still be running (lock file still exists)
+        # Check if we should still be running
         if (-not (Test-Path $lockFile)) {
             Write-Host "Lock file removed - stopping watcher"
             break
         }
     }
 
-} catch {
-    Write-Host "❌ Error: $_"
-} finally {
+}
+catch {
+    Write-Host "Error: $_"
+}
+finally {
     # Cleanup
     if ($eventJob) {
         Unregister-Event -SourceIdentifier $eventJob.Name -ErrorAction SilentlyContinue
@@ -94,5 +97,5 @@ try {
     }
 
     Remove-Item $lockFile -ErrorAction SilentlyContinue
-    Write-Host "✓ Watcher stopped"
+    Write-Host "Watcher stopped"
 }
