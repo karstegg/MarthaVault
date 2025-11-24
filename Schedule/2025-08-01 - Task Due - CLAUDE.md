@@ -3,6 +3,7 @@ title: Task Due - CLAUDE
 allDay: true
 date: 2025-08-01
 completed: null
+permalink: schedule/2025-08-01-task-due-claude
 ---
 
 # Task Due - CLAUDE

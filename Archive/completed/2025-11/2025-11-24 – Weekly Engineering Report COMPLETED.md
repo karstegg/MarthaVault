@@ -3,7 +3,8 @@ Status: Complete
 Priority: High
 Assignee: Greg
 DueDate: 2025-11-24
-Tags: #year/2025 #weekly-report #engineering #priority/high #completed
+Tags: null
+permalink: archive/completed/2025-11/2025-11-24-weekly-engineering-report-completed
 ---
 
 # Weekly Engineering Report - COMPLETED Nov 24, 2025

@@ -3,6 +3,7 @@ title: Task Due - Email Reply Tracking - Week Actions
 allDay: true
 date: 2025-11-26
 completed: null
+permalink: schedule/2025-11-26-task-due-email-reply-tracking-week-actions
 ---
 
 # Task Due - Email Reply Tracking - Week Actions
