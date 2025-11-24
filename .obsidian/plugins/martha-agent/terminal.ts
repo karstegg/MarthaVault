@@ -5,37 +5,10 @@ import { FitAddon } from 'xterm-addon-fit';
 import { WebLinksAddon } from 'xterm-addon-web-links';
 import * as os from 'os';
 import * as path from 'path';
+import { ChildProcess } from 'child_process';
 
-// Load node-pty dynamically with absolute path to work around Obsidian's module resolution
-// Import types for TypeScript
-import type * as ptyTypes from 'node-pty';
-
-// Use window.require to avoid static module analysis
-declare global {
-  interface Window {
-    require: NodeRequire;
-  }
-}
-
-const loadNodePty = (pluginDir: string): typeof ptyTypes => {
-  try {
-    // Try loading from plugin's node_modules with absolute path
-    const ptyPath = path.join(pluginDir, 'node_modules', 'node-pty');
-    console.log('[Martha] Attempting to load node-pty from:', ptyPath);
-    // Use window.require to bypass static analysis
-    return (window.require as any)(ptyPath);
-  } catch (e) {
-    console.error('[Martha] Failed to load node-pty from plugin dir:', e);
-    // Fallback: try loading with dynamic string to avoid static analysis
-    try {
-      const moduleName = 'node' + '-' + 'pty';
-      return (window.require as any)(moduleName);
-    } catch (e2) {
-      console.error('[Martha] Failed to load node-pty with fallback:', e2);
-      throw new Error('Could not load node-pty module');
-    }
-  }
-};
+// Use child_process instead of node-pty (works in Electron renderer)
+const { spawn } = require('child_process');
 
 export const TERMINAL_VIEW_TYPE = 'martha-terminal';
 
@@ -43,18 +16,14 @@ export class TerminalView extends ItemView {
   plugin: MarthaAgentPlugin;
   terminal: Terminal;
   fitAddon: FitAddon;
-  ptyProcess: ptyTypes.IPty | null = null;
-  pty: typeof ptyTypes | null = null;
+  childProcess: ChildProcess | null = null;
   vaultPath: string;
-  pluginDir: string;
   resizeObserver: ResizeObserver | null = null;
 
   constructor(leaf: WorkspaceLeaf, plugin: MarthaAgentPlugin) {
     super(leaf);
     this.plugin = plugin;
     this.vaultPath = (this.app.vault.adapter as any).basePath;
-    // Calculate plugin directory from vault path
-    this.pluginDir = path.join(this.vaultPath, '.obsidian', 'plugins', 'martha-agent');
   }
 
   getViewType(): string {
@@ -123,23 +92,12 @@ export class TerminalView extends ItemView {
     this.resizeObserver = new ResizeObserver(() => {
       if (this.fitAddon) {
         this.fitAddon.fit();
-        if (this.ptyProcess) {
-          this.ptyProcess.resize(this.terminal.cols, this.terminal.rows);
-        }
       }
     });
     this.resizeObserver.observe(terminalDiv);
 
     // Load xterm CSS
     this.loadXtermStyles();
-
-    // Load node-pty module with correct plugin directory
-    this.pty = loadNodePty(this.pluginDir);
-    if (!this.pty) {
-      this.terminal.writeln('\x1b[1;31mError: Failed to load node-pty module.\x1b[0m');
-      this.terminal.writeln('Please check that node_modules/node-pty is installed.');
-      return;
-    }
 
     // Spawn Claude CLI process
     await this.spawnClaudeProcess();
@@ -161,59 +119,77 @@ export class TerminalView extends ItemView {
 
       console.log('[Martha] Using Claude executable:', claudePath);
 
-      // Determine shell
-      const shell = os.platform() === 'win32' ? 'cmd.exe' : process.env.SHELL || '/bin/bash';
       const isWindows = os.platform() === 'win32';
 
-      // Spawn PTY process
-      this.ptyProcess = this.pty!.spawn(shell, [], {
-        name: 'xterm-256color',
-        cols: this.terminal.cols,
-        rows: this.terminal.rows,
+      // Spawn Claude CLI process directly using child_process
+      // Set environment variables to simulate terminal
+      this.childProcess = spawn(claudePath, [], {
         cwd: this.vaultPath,
         env: {
           ...process.env,
           TERM: 'xterm-256color',
-          COLORTERM: 'truecolor'
-        }
+          COLORTERM: 'truecolor',
+          FORCE_COLOR: '1',
+          // Set terminal dimensions
+          COLUMNS: String(this.terminal.cols),
+          LINES: String(this.terminal.rows),
+          // Try to force interactive mode
+          CLICOLOR_FORCE: '1',
+          // Unbuffered output
+          PYTHONUNBUFFERED: '1',
+          // Explicitly set language/encoding
+          LANG: 'en_US.UTF-8',
+          LC_ALL: 'en_US.UTF-8'
+        },
+        shell: true,  // MUST use shell on Windows for .cmd files
+        windowsHide: true,
+        stdio: ['pipe', 'pipe', 'pipe']
       });
 
-      console.log('[Martha] PTY process spawned with PID:', this.ptyProcess.pid);
+      if (!this.childProcess) {
+        throw new Error('Failed to spawn process');
+      }
 
-      // Handle PTY data -> Terminal
-      this.ptyProcess.onData((data: string) => {
-        this.terminal.write(data);
-      });
+      console.log('[Martha] Claude process spawned with PID:', this.childProcess.pid);
 
-      // Handle PTY exit
-      this.ptyProcess.onExit(({ exitCode, signal }: { exitCode: number; signal?: number }) => {
-        console.log('[Martha] PTY process exited:', { exitCode, signal });
+      // Set encoding to utf8 for cleaner text handling
+      if (this.childProcess.stdout) {
+        this.childProcess.stdout.setEncoding('utf8');
+        this.childProcess.stdout.on('data', (data: string) => {
+          console.log('[Martha] stdout:', data.substring(0, 100)); // Debug log
+          this.terminal.write(data);
+        });
+      }
+
+      if (this.childProcess.stderr) {
+        this.childProcess.stderr.setEncoding('utf8');
+        this.childProcess.stderr.on('data', (data: string) => {
+          console.log('[Martha] stderr:', data.substring(0, 100)); // Debug log
+          this.terminal.write(data);
+        });
+      }
+
+      // Handle process exit
+      this.childProcess.on('exit', (code: number | null, signal: string | null) => {
+        console.log('[Martha] Claude process exited:', { code, signal });
         this.terminal.writeln('');
         this.terminal.writeln('\x1b[1;33mClaude CLI session ended.\x1b[0m');
-        this.ptyProcess = null;
+        if (code !== 0 && code !== null) {
+          this.terminal.writeln(`\x1b[1;31mExit code: ${code}\x1b[0m`);
+        }
+        this.childProcess = null;
       });
 
-      // Handle Terminal input -> PTY
+      // Handle Terminal input -> stdin
       this.terminal.onData((data: string) => {
-        if (this.ptyProcess) {
-          this.ptyProcess.write(data);
+        if (this.childProcess && this.childProcess.stdin) {
+          this.childProcess.stdin.write(data);
         }
       });
-
-      // Wait a moment for shell to initialize
-      await new Promise(resolve => setTimeout(resolve, 500));
-
-      // Start Claude CLI
-      console.log('[Martha] Starting Claude CLI...');
-      if (isWindows) {
-        this.ptyProcess.write('claude\r');
-      } else {
-        this.ptyProcess.write('claude\n');
-      }
 
       new Notice('✓ Claude CLI started in vault directory');
 
-    } catch (error) {
+    } catch (error: any) {
       console.error('[Martha] Failed to spawn Claude process:', error);
       this.terminal.writeln('\x1b[1;31mError starting Claude CLI:\x1b[0m');
       this.terminal.writeln(error.message);
@@ -265,9 +241,9 @@ export class TerminalView extends ItemView {
   }
 
   sendToTerminal(text: string) {
-    if (this.ptyProcess) {
+    if (this.childProcess && this.childProcess.stdin) {
       const isWindows = os.platform() === 'win32';
-      this.ptyProcess.write(text + (isWindows ? '\r' : '\n'));
+      this.childProcess.stdin.write(text + (isWindows ? '\r\n' : '\n'));
     }
   }
 
@@ -280,29 +256,66 @@ export class TerminalView extends ItemView {
     const style = document.createElement('style');
     style.id = 'martha-xterm-styles';
     style.textContent = `
-      /* xterm.js base styles */
-      @import url('https://unpkg.com/xterm@5.3.0/css/xterm.css');
+      /* Inline xterm.js base styles (CSP blocks external imports) */
+      .xterm {
+        cursor: text;
+        position: relative;
+        user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+      }
+
+      .xterm.focus,
+      .xterm:focus {
+        outline: none;
+      }
+
+      .xterm .xterm-helpers {
+        position: absolute;
+        top: 0;
+        z-index: 5;
+      }
+
+      .xterm .xterm-helper-textarea {
+        padding: 0;
+        border: 0;
+        margin: 0;
+        position: absolute;
+        opacity: 0;
+        left: -9999em;
+        top: 0;
+        width: 0;
+        height: 0;
+        z-index: -5;
+        white-space: nowrap;
+        overflow: hidden;
+        resize: none;
+      }
 
       .martha-terminal-container {
-        height: 100%;
-        width: 100%;
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         display: flex;
         flex-direction: column;
         background: var(--background-primary);
         padding: 0;
+        overflow: hidden;
       }
 
       .xterm-container {
-        flex: 1;
+        flex: 1 1 auto;
         width: 100%;
-        height: 100%;
+        min-height: 0;
         padding: 12px;
         overflow: hidden;
       }
 
       .xterm {
-        height: 100%;
-        width: 100%;
+        height: 100% !important;
+        width: 100% !important;
       }
 
       .xterm .xterm-viewport {
@@ -358,14 +371,14 @@ export class TerminalView extends ItemView {
       this.resizeObserver = null;
     }
 
-    // Kill PTY process
-    if (this.ptyProcess) {
+    // Kill child process
+    if (this.childProcess) {
       try {
-        this.ptyProcess.kill();
+        this.childProcess.kill();
       } catch (e) {
-        console.error('[Martha] Error killing PTY process:', e);
+        console.error('[Martha] Error killing child process:', e);
       }
-      this.ptyProcess = null;
+      this.childProcess = null;
     }
 
     // Dispose terminal
