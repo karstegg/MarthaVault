@@ -1,2 +1,3 @@
-﻿A	Schedule/2025-08-01 - Task Due - CLAUDE.md
-A	Schedule/2025-10-05 - Task Due - CLAUDE.md
+﻿M	Schedule/2025-08-01 - Task Due - CLAUDE.md
+M	Schedule/2025-10-05 - Task Due - CLAUDE.md
+M	Schedule/2025-11-26 - Task Due - Email Reply Tracking - Week Actions.md
