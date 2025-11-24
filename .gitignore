@@ -33,6 +33,7 @@ tmp/
 
 # Task handoff watcher
 .claude/.watcher-running
+.claude/.task-handoff-trigger
 
 # Platform-specific line endings
 *.md text eol=lf
