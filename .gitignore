@@ -31,6 +31,9 @@ temp/
 tmp/
 *.tmp
 
+# Task handoff watcher
+.claude/.watcher-running
+
 # Platform-specific line endings
 *.md text eol=lf
 *.json text eol=lf
