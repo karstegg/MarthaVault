@@ -19,15 +19,31 @@ permalink: tasks/master-task-list
 ## Pending Tasks (Unscheduled)
 
 - [ ] N3 New Plant Belt Speed Optimization - Increase from 450 to 600 tph capacity #task #year/2025 #priority/high #production #site/Nchwaning3 📅 2025-12-06
-  - Context: New plant currently running at 450 tph, should be 600 tph capacity
-  - Action: Speed up belts of Sat Tip 1 & Sat Tip 2 to produce 800 t/h safely
+  - Context: New plant (Sat Tip 1 & 2) design capacity 600 tph, currently running 400-500 tph
+  - Issue: 55CV01 conveyor trips when feed rate increases
+  - Action: Gradual feedrate increase in 2 steps: 400→500 (monitor) →600 (monitor)
+  - Risk: Motor may need upgrade to next size if undersized
   - Meeting held: 2025-11-21 with Stef Lourens
-  - Assigned to: [[Lourens, Stef]], [[Sease, Sello]]
+  - Email sent: 2025-11-21 13:57 to Jacques, Stef, Sello, Pieter Swanepoel, Ronnie Barnard
+  - Action Items:
+    - [ ] Confirm actual tph for new plant (Pieter/Ronnie) - Wed Nov 27
+    - [ ] Confirm motor current load vs capacity & protection settings (Pieter) - Wed Nov 27
+    - [ ] Increase feedrate gradually with monitoring (Stef)
+  - Assigned to: [[Lourens, Stef]], [[Sease, Sello]], [[Swanepoel, Pieter]], [[Barnard, Ronnie]]
   - Site: [[reference/places/Nchwaning 3]]
 
 - [ ] Relocate battery chargers to Main West section #task #year/2025 #priority/high #BEV #infrastructure #site/Nchwaning3 📅 2025-12-06
-  - Context: Battery chargers need to be moved from current location to Main West
-  - Assigned to: [[Sease, Sello]]
+  - Objective: Move chargers closer to work areas to eliminate midshift travel to Battery Bay
+  - Benefit: Free up 4 charging posts at Battery Bay by enabling nightshift charging
+  - Locations:
+    - 93-North 3-East (Main West new waiting place)
+    - 60N52E (Central area)
+  - Email sent: 2025-11-21 13:57 to Jacques, Stef, Stephen Klopper, Ronald West, Sello, Jabulane Marema
+  - Action Items:
+    - [ ] Determine power supply capacity (Stef/Sello) - Due Tuesday Nov 26
+    - [ ] Draft relocation procedure (Jabu) - Due Monday Nov 25
+    - [ ] Install cables for 2-machine charging at each location (Piet) - as required
+  - Assigned to: [[Sease, Sello]], [[Lourens, Stef]], [[Marema, Jabulane]], [[Piet]]
   - Strategic: BEV Program Optimization (1.5x)
   - Site: [[reference/places/Nchwaning 3]]
 
