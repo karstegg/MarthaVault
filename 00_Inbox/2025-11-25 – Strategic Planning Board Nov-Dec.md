@@ -108,14 +108,6 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 - [x] **Fire Door Capital Specifics** ✅ Nov 13
 
 
-## 📝 STRATEGIC CONTEXT
-
-- [ ] ✅ Compliance: 1.5x (HIGH)
-- [ ] ⚡ BEV Program: 1.5x (HIGH)
-- [ ] 👥 Team Capacity: 1.2x (MEDIUM)
-- [ ] 💰 Capital: 1.2x (MEDIUM)
-
-
 ## 
 
 - [ ] **CAS L9 - UV53 Deployment to Chamdor**  
@@ -128,10 +120,18 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 - [ ] 🔥 Fire Safety: 2.0x (CRITICAL)
 
 
+## 📝 STRATEGIC CONTEXT
+
+- [ ] ✅ Compliance: 1.5x (HIGH)
+- [ ] ⚡ BEV Program: 1.5x (HIGH)
+- [ ] 👥 Team Capacity: 1.2x (MEDIUM)
+- [ ] 💰 Capital: 1.2x (MEDIUM)
+
+
 
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,null,null,null,null,null,false,null]}
+{"kanban-plugin":"board","list-collapse":[false,null,null,null,null,false,null,null]}
 ```
 %%
