@@ -139,42 +139,20 @@ permalink: 00-inbox/2025-11-25-strategic-planning-by-project
 
 ## 📊 PROJECT SUMMARY
 
-**By Strategic Weight:**
-- 🎯 CAS L9 (2.5x): 4 active items | CRITICAL Dec 31 deadline
-- 🔥 Fire Safety (2.0x): 3 active items | Nov 9-30 deadlines
-- ⚡ BEV Program (1.5x): 1 active item | Dec 6 deadline
-- ✅ Compliance (1.5x): 5 active items | Mixed deadlines
-- 🏭 Production: 3 active items | Nov 25-Dec 6
-- 💰 Capital (1.2x): 7 active items | Nov 22-Dec pending
-- 👥 Team (1.2x): 3 active items | Dec 13-15
-- 📋 Procurement: 3 active items | Nov 20-28
+- [ ] 🎯 CAS L9 (2.5x): 4 active items | CRITICAL Dec 31 deadline
+- [ ] 🔥 Fire Safety (2.0x): 3 active items | Nov 9-30 deadlines
+- [ ] ⚡ BEV Program (1.5x): 1 active item | Dec 6 deadline
+- [ ] ✅ Compliance (1.5x): 5 active items | Mixed deadlines
+- [ ] 🏭 Production: 3 active items | Nov 25-Dec 6
+- [ ] 💰 Capital (1.2x): 7 active items | Nov 22-Dec pending
+- [ ] 👥 Team (1.2x): 3 active items | Dec 13-15
+- [ ] 📋 Procurement: 3 active items | Nov 20-28
 
-**Completion Rate This Week:**
-- 10 items completed Nov 18-25
-- Strong progress on CAS L9 (6 items done)
-- Fire safety and team capacity items advancing
 
-**Risk Areas:**
-- Multiple OVERDUE items in CAS L9 (Fermel, Aard, CR121)
-- Fire safety items overdue (Lubri Vent, belt temp survey)
-- Compliance items aging (DMR actions from Oct 20)
-- Capital closures delayed (Oct 31 deadline passed)
-
-**This Week Focus:**
-- Belt splicing (EOB today)
-- Battery charger relocation (procedure TODAY, power Tue)
-- Rock breaker (Wed)
-- Unplanned capital (Wed)
-
-**Next Week Critical:**
-- Belt speed optimization actions (Wed Nov 27)
-- BRMO scope delivery (Tue Nov 26)
-- WTW critical findings (Nov 30)
-- 2026 capital budget (Nov 30)
 
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board"}
+{"kanban-plugin":"board","list-collapse":[null]}
 ```
 %%
