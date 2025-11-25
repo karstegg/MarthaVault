@@ -22,7 +22,7 @@
                     null,
                     null,
                     false,
-                    null,
+                    true,
                     true,
                     true
                   ]
@@ -240,8 +240,10 @@
   },
   "active": "390357521acdc6a2",
   "lastOpenFiles": [
-    "00_Inbox/2025-11-24 – Leave Coverage Plan Dec-Jan.md",
+    "00_Inbox/Survey Belt Temperature Sensor Deployment.md",
     "00_Inbox/2025-11-25 – Strategic Planning Board Nov-Dec.md",
+    "00_Inbox/N3 Second Electrical Supervisor.md",
+    "00_Inbox/2025-11-24 – Leave Coverage Plan Dec-Jan.md",
     "00_Inbox/2025-11-24 – WEEK PLAN Nov 24-28.md",
     "tasks/Priority Matrix Board.md",
     "00_Inbox/2025-11-25.md",
@@ -274,8 +276,6 @@
     "people/Meyer, Wynand.md",
     "people/Werner, Manitou.md",
     "people/Mokoena, Tebogo.md",
-    "00_Inbox/2025-11-25 – Voice Note & Image - SAT TIP 1 System.md",
-    "reference/claude-code/Desktop Project Instructions - Task Handoff Addition.md",
     "00_Inbox/FT_2025-11-17 20_37_37.256.png",
     "media/image/2025/2025-11-17_2037_Emergency_Preparedness_Recap.png",
     "media/image/2025/2025-11-17_2036_Daily_Notes_Planner.png",

@@ -35,12 +35,10 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 
 ## 🟢 MEDIUM (Dec 9-13)
 
-- [ ] **Survey Belt Temperature Sensor Deployment**  
+- [ ] [[Survey Belt Temperature Sensor Deployment]]  
 	  📅 Nov 15 (OVERDUE) | 🔥 Fire Safety (2.0x) | 👤 Greg
 - [ ] **Capital Vote Closures - 2025**  
 	  📅 Oct 31 (OVERDUE) | 💰 Capital (1.2x) | 👤 Greg
-- [ ] **DMR Actions - Drill Torque & Speed**  
-	  📅 Oct 20 (OVERDUE) | ⚖️ Compliance | 👤 Johnny
 - [ ] **Lifting Equipment vs Jacking Analysis**  
 	  📅 Oct 20 (OVERDUE) | ⚖️ Safety | 👤 Johnny
 - [ ] **Gloria Chute Replacement Capital**  
@@ -49,7 +47,7 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 
 ## 🔵 BACKLOG / DECEMBER
 
-- [ ] **N3 Second Electrical Supervisor**  
+- [ ] [[N3 Second Electrical Supervisor]]  
 	  📅 Dec 15 | 👥 Team Capacity (1.2x) | 👤 Greg
 
 
@@ -69,6 +67,8 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 
 ## ✅ Parking Bay
 
+- [ ] **DMR Actions - Drill Torque & Speed**  
+	  📅 Oct 20 (OVERDUE) | ⚖️ Compliance | 👤 Johnny
 - [ ] 🔥 Fire Safety: 2.0x (CRITICAL)
 - [ ] **Schedule 22.9 Regulations Review**  
 	  📅 Nov 16 | ⚖️ Compliance | 👤 Greg
@@ -132,6 +132,6 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,null,null,null,false,null,true,true]}
+{"kanban-plugin":"board","list-collapse":[false,null,null,null,false,true,true,true]}
 ```
 %%
