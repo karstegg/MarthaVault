@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/2025-11-25.md",
-                "mode": "source",
+                "file": "00_Inbox/2025-11-24 – Leave Coverage Plan Dec-Jan.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-25"
+              "title": "2025-11-24 – Leave Coverage Plan Dec-Jan"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 291.0124969482422
+    "width": 433.0124969482422
   },
   "right": {
     "id": "e8bdc17feff4bebd",
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Inbox/2025-11-25.md",
+                "file": "00_Inbox/2025-11-24 – Leave Coverage Plan Dec-Jan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-11-25"
+              "title": "Backlinks for 2025-11-24 – Leave Coverage Plan Dec-Jan"
             }
           },
           {
@@ -228,8 +228,10 @@
   },
   "active": "390357521acdc6a2",
   "lastOpenFiles": [
-    "reports/2025-11-25 - CAS L9 Project Status Summary.md",
+    "00_Inbox/2025-11-24 – WEEK PLAN Nov 24-28.md",
+    "tasks/Priority Matrix Board.md",
     "00_Inbox/2025-11-25.md",
+    "reports/2025-11-25 - CAS L9 Project Status Summary.md",
     "reports/2025-11-25 - Weekly Progress Update.md",
     "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764059707944",
     "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764059695914",
@@ -262,8 +264,6 @@
     "reference/claude-code/Desktop Project Instructions - Task Handoff Addition.md",
     "Schedule/2025-11-28 - Junior Engineers.md",
     "Schedule/2025-11-28 - S2 & BEV Optimisation - Weekly Progress.md",
-    "Schedule/2025-11-27 - Microsoft Copilot Chat Tips Series  Wrap up the ye.md",
-    "Schedule/2025-11-27 - Project Steerco.md",
     "00_Inbox/FT_2025-11-17 20_37_37.256.png",
     "media/image/2025/2025-11-17_2037_Emergency_Preparedness_Recap.png",
     "media/image/2025/2025-11-17_2036_Daily_Notes_Planner.png",
