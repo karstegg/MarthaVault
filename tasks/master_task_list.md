@@ -537,6 +537,10 @@ permalink: tasks/master-task-list
 
 ## CAPITAL PROJECTS
 
+- [ ] Compile unplanned capital submission (Jacques' request from email 2025-11-24) #task #year/2025 #priority/high #capital 📅 2025-11-27
+  - Context: Jacques Breet responded to bearing temperature monitoring with request for unplanned capital
+  - Related: [[people/Breet, Jacques]]
+
 - [ ] [[Opperman, Ilze]] - Add Bearing Temperature Monitoring to unplanned capital register #task #year/2025 #priority/high #capital #bearing-monitoring 📅 2025-11-22
   - Note: Final estimate sent 2025-11-19, all project files consolidated
   - Project: [[projects/Capital/Bearing Temperature Monitoring/2025-11-19 – Bearing Temperature Monitoring Project]]
