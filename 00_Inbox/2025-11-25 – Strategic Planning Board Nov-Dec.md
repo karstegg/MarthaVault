@@ -25,6 +25,13 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 
 ## 🟡 HIGH PRIORITY (Dec 2-6)
 
+- [ ] **N3 Belt Speed Optimization - 450 to 600 tph**  
+	  📅 Dec 6 | 🏭 Production N3 | 👤 Stef, Sello  
+	  New plant running at 450 tph, should be 600 tph - speed up Sat Tip belts to 800 t/h safely
+- [ ] **Relocate Battery Chargers to Main West**  
+	  📅 Dec 6 | ⚡ BEV Program (1.5x) | 👤 Sello  
+	  Move chargers from current location to Main West section
+
 - [ ] **Fit Lubri Vent Systems - S2 Drill Rigs**  
 	  📅 Nov 9 (OVERDUE) | 🔥 Fire Safety (2.0x) | 👤 Sello
 - [ ] **Submit Itireleng Scope to JoMari**  

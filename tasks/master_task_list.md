@@ -18,6 +18,19 @@ permalink: tasks/master-task-list
 
 ## Pending Tasks (Unscheduled)
 
+- [ ] N3 New Plant Belt Speed Optimization - Increase from 450 to 600 tph capacity #task #year/2025 #priority/high #production #site/Nchwaning3 📅 2025-12-06
+  - Context: New plant currently running at 450 tph, should be 600 tph capacity
+  - Action: Speed up belts of Sat Tip 1 & Sat Tip 2 to produce 800 t/h safely
+  - Meeting held: 2025-11-21 with Stef Lourens
+  - Assigned to: [[Lourens, Stef]], [[Sease, Sello]]
+  - Site: [[reference/places/Nchwaning 3]]
+
+- [ ] Relocate battery chargers to Main West section #task #year/2025 #priority/high #BEV #infrastructure #site/Nchwaning3 📅 2025-12-06
+  - Context: Battery chargers need to be moved from current location to Main West
+  - Assigned to: [[Sease, Sello]]
+  - Strategic: BEV Program Optimization (1.5x)
+  - Site: [[reference/places/Nchwaning 3]]
+
 - [ ] Rock breaker repair at Sat Tips - relocate spare from waste tip + resolve boom compatibility issue #task #year/2025 #priority/high #equipment #site/Nchwaning3 📅 2025-11-27
   - Assigned to: [[Sease, Sello]], [[Lourens, Stef]]
   - Context: Sat tip rock breaker down with cracked boom, spare boom from Gloria doesn't fit
