@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "reports/2025-11-25 - CAS L9 Project Status Summary.md",
+                "file": "reports/2025-11-25 - Weekly Progress Update.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-25 - CAS L9 Project Status Summary"
+              "title": "2025-11-25 - Weekly Progress Update"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 566.0124969482422
+    "width": 291.0124969482422
   },
   "right": {
     "id": "e8bdc17feff4bebd",
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "reports/2025-11-25 - CAS L9 Project Status Summary.md",
+                "file": "reports/2025-11-25 - Weekly Progress Update.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-11-25 - CAS L9 Project Status Summary"
+              "title": "Backlinks for 2025-11-25 - Weekly Progress Update"
             }
           },
           {
@@ -228,8 +228,9 @@
   },
   "active": "390357521acdc6a2",
   "lastOpenFiles": [
-    "reports/2025-11-25 - Weekly Progress Update.md",
     "reports/2025-11-25 - CAS L9 Project Status Summary.md",
+    "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764058993795",
+    "reports/2025-11-25 - Weekly Progress Update.md",
     "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764058808655",
     "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764058668592",
     "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764058652210",
@@ -241,7 +242,6 @@
     "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764058110249",
     "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764056770478",
     "Schedule/2025-11-27 - Weekly Overtime Meeting.md",
-    "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764056494929",
     "Schedule/2025-11-25 - Aard Cas L9 activation  Planning  - Repairs , upgr.md",
     "people/Mothupi, Tshepiso.md",
     "people/Sam, Strata.md",

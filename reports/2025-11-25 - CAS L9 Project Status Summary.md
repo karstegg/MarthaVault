@@ -41,8 +41,8 @@ permalink: reports/2025-11-25-cas-l9-project-status-summary
 | 🟢 LDO628 | NCH3 | Work Done: Completed Challenges: Low battery Comments: - Strata Comments: - | | | | | | | | ✅ L9 Completed |
 | 🟢 LDO573 | NCH3 | Work Done: Completed Challenges: - Comments: - Strata Comments: - | | | | | | | | ✅ L9 Completed |
 | 🟡 LDO614 | NCH3 | Work Done: - Challenges: Nerospec receives permanent Stop input from CWS Comments: Both parties working to resolve Strata Comments: - | | | | | | | | ⏳ In Progress |
-| 🟡 LDO626 | NCH3 | | | Work Done: Fully setup (Strata/Nero) Challenges: Switching off supply when parkbrake released; faulty isolator switch Comments: Mine auto electrician consulted Strata Comments: - | | | | | | ⏳ In Progress |
-| 🟡 LDO615 | NCH3 | | | Work Done: Servo replaced Challenges: Servo losing power; fault persists when accelerator pressed Comments: Suggestion to install split charging unit connections Strata Comments: - | | | | | | ⏳ In Progress |
+| 🟡 LDO626 | NCH3 | | | Work Done: Fully setup (Strata/Nero) Challenges: Switching off supply when parkbrake released; faulty isolator switch Comments: Mine auto electrician consulted Strata Comments: - | | Work Done: - Challenges: Low power issues on Nerospec side Comments: - Strata Comments: Henry Collins (Strata) requires Nerospec to elaborate | | | | ⏳ In Progress |
+| 🟡 LDO615 | NCH3 | | | Work Done: Servo replaced Challenges: Servo losing power; fault persists when accelerator pressed Comments: Suggestion to install split charging unit connections Strata Comments: - | | Work Done: - Challenges: Low power issues on Nerospec side Comments: - Strata Comments: Henry Collins (Strata) requires Nerospec to elaborate | | | | ⏳ In Progress |
 
 ---
 
