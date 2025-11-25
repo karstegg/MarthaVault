@@ -1,1 +1,1 @@
-﻿A	IDEAS/2025-11-24 ΓÇô MarthaVault Architecture Deep Dive & AI IDE Evaluation.md
+﻿M	tasks/master_task_list.md
