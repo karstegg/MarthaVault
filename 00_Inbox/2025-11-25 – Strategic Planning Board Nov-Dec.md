@@ -12,9 +12,6 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 
 ## 🔴 CRITICAL (This Week - Nov 25-29)
 
-- [ ] **CAS L9 Status Meetings - All OEMs**  
-	  📅 Today 10:30-13:30 | 🎯 CAS-L9 (2.5x) | 👤 Greg + Hennie  
-	  Get way forward on urgent actions for Dec 31 DMRE deadline
 - [ ] **Belt Splicing Inventory - All Sites**  
 	  📅 EOB Today | 🏗️ Multi-site | 👤 Sipho, Sikelela, Sello, Xavier, Michael  
 	  Consolidate for scope submission
@@ -37,44 +34,20 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 
 ## 🟡 HIGH PRIORITY (Dec 2-6)
 
-- [ ] **CAS L9 - Aard Panel Order & Delivery**  
-	  📅 Nov 20 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Hennie
-- [ ] **CAS L9 - CR121 Replacement Decision**  
-	  📅 Nov 20 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Hennie - Manitou
-- [ ] **CAS L9 - Aard Scissor Lift Loop Issue**  
-	  📅 Nov 20 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Hennie
-- [ ] **CAS L9 - Fermel Operator Support UG**  
-	  📅 Nov 19 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Hennie
 - [ ] **Fit Lubri Vent Systems - S2 Drill Rigs**  
 	  📅 Nov 9 (OVERDUE) | 🔥 Fire Safety (2.0x) | 👤 Sello
-- [ ] **WTW Critical Findings - N2, N27, N7, N12**  
-	  📅 Nov 30 | ✅ Compliance (1.5x) | 👤 Various
-- [ ] **N2 Substation Upgrade - Contract Finalization**  
-	  📅 Nov 18 (OVERDUE) | 💰 Capital | 👤 Sikelela + Roelie
 - [ ] **Submit Itireleng Scope to JoMari**  
 	  📅 Nov 20 (OVERDUE) | 💼 Tender | 👤 Greg
 - [ ] **Belt Temp Monitoring - Unplanned Capital**  
 	  📅 Nov 22 | 💰 Capital | 👤 Greg (Ilze)
-- [ ] **Leaky Feeder Vendor Onboarding**  
-	  📅 Nov 28 | 🏗️ N3 Infrastructure | 👤 Sello, Stef
-- [ ] **AARD Technician Access - Diane Mjurdan**  
-	  📅 Nov 29 | 🔑 Access | 👤 Greg
 
 
 ## 🟢 MEDIUM (Dec 9-13)
 
-- [ ] **CAS L9 - Aard 6-month Support Contract**  
-	  📅 Nov 22 | 🎯 CAS-L9 | 👤 Hennie
-- [ ] **WTW High Priority - P62, P73, N13**  
-	  📅 Nov 15-20 | ✅ Compliance (1.5x) | 👤 Various
 - [ ] **Survey Belt Temperature Sensor Deployment**  
 	  📅 Nov 15 (OVERDUE) | 🔥 Fire Safety (2.0x) | 👤 Greg
-- [ ] **BEV Fire Safety Controls - Complete Program**  
-	  📅 Nov 30 | 🔥 Fire Safety (2.0x) | 👤 Various
 - [ ] **Capital Vote Closures - 2025**  
 	  📅 Oct 31 (OVERDUE) | 💰 Capital (1.2x) | 👤 Greg
-- [ ] **2026 Capital Budget Planning**  
-	  📅 Nov 30 | 💰 Capital (1.2x) | 👤 Greg
 - [ ] **DMR Actions - Drill Torque & Speed**  
 	  📅 Oct 20 (OVERDUE) | ⚖️ Compliance | 👤 Johnny
 - [ ] **Lifting Equipment vs Jacking Analysis**  
@@ -85,35 +58,62 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 
 ## 🔵 BACKLOG / DECEMBER
 
-- [ ] **Leave Coverage Planning (Dec 14 - Jan 15)**  
-	  📅 Dec 13 | 🏖️ Leave | 👤 Greg  
-	  33-day period overlaps CAS L9 Dec 31 deadline
-- [ ] **Junior Engineer Recruitment - 2026**  
-	  📅 Nov 15 | 👥 Team Capacity (1.2x) | 👤 Greg
 - [ ] **N3 Second Electrical Supervisor**  
 	  📅 Dec 15 | 👥 Team Capacity (1.2x) | 👤 Greg
-- [ ] **Schedule 22.9 Regulations Review**  
-	  📅 Nov 16 | ⚖️ Compliance | 👤 Greg
-- [ ] **TMM COP Review & Approval**  
-	  📅 Oct 31 (OVERDUE) | ⚖️ Compliance | 👤 Greg
-- [ ] **Two-Way Radio Vendor Evaluation (N2)**  
-	  📅 TBD | 💰 Capital | 👤 TBD
 
 
 ## 
 
 - [ ] **CAS L9 - UV53 Deployment to Chamdor**  
 	  📅 Nov 20 | 🎯 CAS-L9 | 👤 Hennie
+- [x] **CAS L9 - Aard 6-month Support Contract**  
+	  📅 Nov 22 | 🎯 CAS-L9 | 👤 Hennie
+- [ ] **CAS L9 - CR121 Replacement Decision**  
+	  📅 Nov 20 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Hennie - Manitou
+- [ ] **CAS L9 - Aard Scissor Lift Loop Issue**  
+	  📅 Nov 20 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Hennie
+- [x] **CAS L9 - Aard Panel Order & Delivery**  
+	  📅 Nov 20 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Hennie
 - [ ] 🎯 CAS L9 DMRE: 2.5x (CRITICAL - Dec 31 deadline)
 
 
 ## ✅ Parking Bay
 
 - [ ] 🔥 Fire Safety: 2.0x (CRITICAL)
+- [ ] **Schedule 22.9 Regulations Review**  
+	  📅 Nov 16 | ⚖️ Compliance | 👤 Greg
+- [ ] **Two-Way Radio Vendor Evaluation (N2)**  
+	  📅 TBD | 💰 Capital | 👤 TBD
+- [ ] **N2 Substation Upgrade - Contract Finalization**  
+	  📅 Nov 18 (OVERDUE) | 💰 Capital | 👤 Sikelela + Roelie
+- [ ] **Leaky Feeder Vendor Onboarding**  
+	  📅 Nov 28 | 🏗️ N3 Infrastructure | 👤 Sello, Stef
+- [ ] **Leave Coverage Planning (Dec 14 - Jan 15)**  
+	  📅 Dec 13 | 🏖️ Leave | 👤 Greg  
+	  33-day period overlaps CAS L9 Dec 31 deadline
+- [ ] **WTW Critical Findings - N2, N27, N7, N12**  
+	  📅 Nov 30 | ✅ Compliance (1.5x) | 👤 Various
+- [ ] **2026 Capital Budget Planning**  
+	  📅 Nov 30 | 💰 Capital (1.2x) | 👤 Greg
+- [ ] **BEV Fire Safety Controls - Complete Program**  
+	  📅 Nov 30 | 🔥 Fire Safety (2.0x) | 👤 Various
+- [ ] **WTW High Priority - P62, P73, N13**  
+	  📅 Nov 15-20 | ✅ Compliance (1.5x) | 👤 Various
 
 
 ## ✅ COMPLETED
 
+- [x] **CAS L9 Status Meetings - All OEMs**  
+	  📅 Today 10:30-13:30 | 🎯 CAS-L9 (2.5x) | 👤 Greg + Hennie  
+	  Get way forward on urgent actions for Dec 31 DMRE deadline
+- [x] **AARD Technician Access - Diane Mjurdan**  
+	  📅 Nov 29 | 🔑 Access | 👤 Greg
+- [x] **CAS L9 - Fermel Operator Support UG**  
+	  📅 Nov 19 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Hennie
+- [x] **TMM COP Review & Approval**  
+	  📅 Oct 31 (OVERDUE) | ⚖️ Compliance | 👤 Greg
+- [x] **Junior Engineer Recruitment - 2026**  
+	  📅 Nov 15 | 👥 Team Capacity (1.2x) | 👤 Greg
 - [x] **N3 Electrical Foreman Motivation** ✅ Nov 21
 - [x] **Fire Suppression Pre-Start Procedures** ✅ Nov 18
 - [x] **Leaky Feeder Follow-up** ✅ Nov 18
