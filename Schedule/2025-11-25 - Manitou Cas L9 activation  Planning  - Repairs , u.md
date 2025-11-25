@@ -1,6 +1,5 @@
 ---
-title: Manitou Cas L9 activation (Planning - Repairs, upgrade and CAS L9 Activation,
-  onsite support)
+title: "Manitou CAS L9: Planning - Repairs"
 allDay: false
 date: 2025-11-25
 startTime: '11:30'

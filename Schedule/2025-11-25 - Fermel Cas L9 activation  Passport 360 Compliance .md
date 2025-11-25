@@ -1,6 +1,5 @@
 ---
-title: Fermel Cas L9 activation (Passport 360 Compliance and Installation Upgrade,
-  CAS L9 Activation, onsite support)
+title: "Fermel CAS L9: Passport 360 Compliance"
 allDay: false
 date: 2025-11-25
 startTime: '11:00'
