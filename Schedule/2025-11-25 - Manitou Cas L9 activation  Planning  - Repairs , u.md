@@ -1,6 +1,6 @@
 ---
-title: Manitou Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation
-  CAS L9 Activation onsite support  ) Manitou , Nerospec , Strata , BRMO
+title: Manitou Cas L9 activation (Planning - Repairs, upgrade and CAS L9 Activation,
+  onsite support)
 allDay: false
 date: 2025-11-25
 startTime: '11:30'

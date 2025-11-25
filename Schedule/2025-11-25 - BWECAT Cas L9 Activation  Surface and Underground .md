@@ -1,6 +1,6 @@
 ---
-title: BWE/CAT Cas L9 Activation ( Surface and Underground Outstanding Equipment CAS
-  L9 Activation, onsite support )  ( Planning  - Upgrade and CAS L9 Activation )
+title: BWE/CAT Cas L9 Activation (Surface and Underground Equipment, CAS L9 Activation,
+  onsite support)
 allDay: false
 date: 2025-11-25
 startTime: '13:00'

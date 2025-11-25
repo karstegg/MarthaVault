@@ -1,6 +1,5 @@
 ---
-title: Bell – Cas L9 Activation ( Planning  - Upgrade and CAS L9 Activation, onsite
-  support   )
+title: Bell Cas L9 Activation (Planning - Upgrade and CAS L9 Activation, onsite support)
 allDay: false
 date: 2025-11-25
 startTime: '12:30'

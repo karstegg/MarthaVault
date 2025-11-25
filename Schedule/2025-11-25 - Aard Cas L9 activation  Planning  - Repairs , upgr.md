@@ -1,6 +1,6 @@
 ---
-title: Aard Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation,
-  onsite support   )
+title: Aard Cas L9 activation (Planning - Repairs, upgrade and CAS L9 Activation,
+  onsite support)
 allDay: false
 date: 2025-11-25
 startTime: '12:00'

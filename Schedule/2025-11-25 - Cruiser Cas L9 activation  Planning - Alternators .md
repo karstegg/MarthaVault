@@ -1,6 +1,6 @@
 ---
-title: Cruiser Cas L9 activation ( Planning - Alternators , split charging and CAS
-  L9 Activation, onsite support  )
+title: Cruiser Cas L9 activation (Planning - Alternators, split charging and CAS L9
+  Activation, onsite support)
 allDay: false
 date: 2025-11-25
 startTime: '10:30'
