@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CLAUDE.md",
+                "file": "00_Inbox/2025-11-25 – Voice Note & Image - SAT TIP 1 System.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for CLAUDE"
+              "title": "Backlinks for 2025-11-25 – Voice Note & Image - SAT TIP 1 System"
             }
           },
           {
@@ -182,7 +182,8 @@
               "title": "Calendar"
             }
           }
-        ]
+        ],
+        "currentTab": 6
       },
       {
         "id": "e1054e40570ce37e",
@@ -203,8 +204,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 773,
-    "collapsed": true
+    "width": 773
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,7 +225,7 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "390357521acdc6a2",
+  "active": "78a89bb69288cfee",
   "lastOpenFiles": [
     "00_Inbox/2025-11-25 – Voice Note & Image - SAT TIP 1 System.md.tmp.28044.1764047521682",
     "00_Inbox/2025-11-25 – Voice Note & Image - SAT TIP 1 System.md.tmp.28044.1764047513577",
