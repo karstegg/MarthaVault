@@ -34,13 +34,13 @@ permalink: reports/2025-11-25-cas-l9-project-status-summary
 | 🟡 CR0104 | NCH2 | Work Done: Sorted electrical fault on ignition; replace inline fuses Challenges: - Comments: - Strata Comments: - | | | | | | | | ✅ L9 Completed |
 | 🟡 CR0105 | NCH2 | Work Done: Assist with installation Challenges: - Comments: - Strata Comments: - | | | | | | | | ⏳ In Progress |
 | 🟡 LDO591 | NCH2 | Work Done: - Challenges: On breakdown; requires SD card Comments: Tech still busy Strata Comments: - | | | | | | | | ⏳ In Progress |
-| 🟡 LDO657 | NCH2 | Work Done: Arrived underground Challenges: Inspection done Comments: New AUSCO design LDV; will continue preparing for commissioning tomorrow Strata Comments: - | | | | | | | | ⏳ In Progress |
+| 🟡 LDO657 | NCH2 | Work Done: Arrived underground Challenges: Inspection done Comments: New AUSCO design LDV; will continue preparing for commissioning tomorrow Strata Comments: Park brake not releasing and REV's cut during operation | | | | | | | | ⏳ In Progress |
 | 🟡 LDO592 | NCH2 | | | Work Done: - Challenges: Ausco braking system red light doesn't switch off Comments: Team struggled to fault find; utility auto electrician requested Strata Comments: - | | | | | | ⏳ In Progress |
 | 🟡 LDO605 | NCH2 | | | | Work Done: Being prepared for L9 testing Challenges: Intermittent comms error; split charging cables not installed Comments: Preparation stopped due to no split charging cables Strata Comments: - | | | | | ⏳ In Progress |
-| 🟡 CR94 | NCH2 | Work Done: - Challenges: Nerospec busy with installation Comments: - Strata Comments: - | | | | | | | | ⏳ In Progress |
+| 🟡 CR94 | NCH2 | Work Done: - Challenges: Nerospec busy with installation Comments: - Strata Comments: Nerospec busy with installation | | | | | | | | ⏳ In Progress |
 | 🟢 LDO628 | NCH3 | Work Done: Completed Challenges: Low battery Comments: - Strata Comments: - | | | | | | | | ✅ L9 Completed |
 | 🟢 LDO573 | NCH3 | Work Done: Completed Challenges: - Comments: - Strata Comments: - | | | | | | | | ✅ L9 Completed |
-| 🟡 LDO614 | NCH3 | Work Done: - Challenges: Nerospec receives permanent Stop input from CWS Comments: Both parties working to resolve Strata Comments: - | | | | | | | | ⏳ In Progress |
+| 🟡 LDO614 | NCH3 | Work Done: - Challenges: Nerospec receives permanent Stop input from CWS Comments: Both parties working to resolve Strata Comments: Still having issues with permanent stop and/or CWL on machine during operation | | | | | | | | ⏳ In Progress |
 | 🟡 LDO626 | NCH3 | | | Work Done: Fully setup (Strata/Nero) Challenges: Switching off supply when parkbrake released; faulty isolator switch Comments: Mine auto electrician consulted Strata Comments: - | | Work Done: - Challenges: Low power issues on Nerospec side Comments: - Strata Comments: Henry Collins (Strata) requires Nerospec to elaborate | | | | ⏳ In Progress |
 | 🟡 LDO615 | NCH3 | | | Work Done: Servo replaced Challenges: Servo losing power; fault persists when accelerator pressed Comments: Suggestion to install split charging unit connections Strata Comments: - | | Work Done: - Challenges: Low power issues on Nerospec side Comments: - Strata Comments: Henry Collins (Strata) requires Nerospec to elaborate | | | | ⏳ In Progress |
 
@@ -58,9 +58,9 @@ permalink: reports/2025-11-25-cas-l9-project-status-summary
 | 🟡 LD0511 | Gloria | | Work Done: Hardware install completed Challenges: - Comments: - Strata Comments: - | | | | | ⏳ In Progress |
 | 🟡 LD0429 | Gloria | | Work Done: Planned CoC Challenges: - Comments: - Strata Comments: - | | | | | ⏳ In Progress |
 | 🟡 LD0516 | Gloria | | Work Done: Planned CoC Challenges: Not made available by explosives team Comments: - Strata Comments: - | | | | | ⏳ In Progress |
-| 🟡 LD0506 | Gloria | | Work Done: Planned CoC Challenges: - Comments: - Strata Comments: - | | | Work Done: Commissioned and activated on CAS L9 Challenges: - Comments: Fermel software updated Strata Comments: - | Work Done: CoC commenced Challenges: Failed on reverse CAS braking Comments: Ranges to be set; CoC to restart tomorrow Strata Comments: - | | ⏳ In Progress |
+| 🟡 LD0506 | Gloria | | Work Done: Planned CoC Challenges: - Comments: - Strata Comments: Strata Sensor Module not working; won't exit SBI test | | | Work Done: Commissioned and activated on CAS L9 Challenges: - Comments: Fermel software updated Strata Comments: Multiple systems issues; Awaiting flasher unit | Work Done: CoC commenced Challenges: Failed on reverse CAS braking Comments: Ranges to be set; CoC to restart tomorrow Strata Comments: Flasher pending; Awaiting installation | | ⏳ In Progress |
 | 🟡 UV0104 | Gloria | | Work Done: - Challenges: - Comments: Weekend Hardware planned 23/11 Strata Comments: - | | | | | ⏳ In Progress |
-| 🟢 LD0451 | Gloria | Work Done: CoC to be done Challenges: - Comments: - Strata Comments: - | Work Done: CoC completed Challenges: - Comments: - Strata Comments: - | | | | | ✅ L9 Completed |
+| 🟢 LD0451 | Gloria | Work Done: CoC to be done Challenges: - Comments: - Strata Comments: Unable to commission - released late (14h00); team can't work past 15h30 | Work Done: CoC completed Challenges: - Comments: - Strata Comments: Fully commissioned L9 | | | | | ✅ L9 Completed |
 
 ---
 
@@ -81,12 +81,12 @@ permalink: reports/2025-11-25-cas-l9-project-status-summary
 | 🟡 UV0067 | Gloria | Work Done: - Challenges: Inclinometer not detected Comments: Assistance requested from Aard Strata Comments: Gloria challenges on changing UV's | | | | | | | | ⏳ In Progress |
 | 🟡 UV0068 | Gloria | Work Done: - Challenges: Screen not switching on Comments: Assistance requested from Aard Strata Comments: Gloria challenges on changing UV's | | | | | | | | ⏳ In Progress |
 | 🟢 LD0451 | Gloria | - | - | - | - | - | - | - | - | ✅ L9 Completed |
-| 🟡 UV0139 | NCH2 | | | Work Done: Level 9 complete and tested; CoC done Challenges: - Comments: - Strata Comments: - | | | | | | ✅ L9 Completed |
-| 🟡 UV0130 | NCH2 | | | Work Done: Programmed and ready for test tomorrow Challenges: - Comments: - Strata Comments: - | Work Done: Complete and CoC done Challenges: - Comments: Thanked Strata, Patric and team Strata Comments: - | | | | | ✅ L9 Completed |
-| 🟡 UV0140 | NCH2 | | | | Work Done: Complete and CoC done Challenges: - Comments: Thanked Strata, Patric and team Strata Comments: - | | | | | ✅ L9 Completed |
+| 🟡 UV0139 | NCH2 | | | Work Done: Level 9 complete and tested; CoC done Challenges: - Comments: - Strata Comments: Fully commissioned L9 | | | | | | ✅ L9 Completed |
+| 🟡 UV0130 | NCH2 | | | Work Done: Programmed and ready for test tomorrow Challenges: - Comments: - Strata Comments: Ready for commissioning | Work Done: Complete and CoC done Challenges: - Comments: Thanked Strata, Patric and team Strata Comments: Fully commissioned L9; CoC done | | | | | ✅ L9 Completed |
+| 🟡 UV0140 | NCH2 | | | | Work Done: Complete and CoC done Challenges: - Comments: Thanked Strata, Patric and team Strata Comments: Fully commissioned L9; CoC done | | | | | ✅ L9 Completed |
 | 🟡 UV0121 | NCH2 | | | | | Work Done: Prepared Challenges: - Comments: Scheduled for Monday Strata Comments: - | | | Work Done: - Challenges: - Comments: Mitchelle from ECS collecting spares Strata Comments: - | ⏳ In Progress |
 | 🟡 UV108 | NCH2 | | | | | | | | Work Done: - Challenges: - Comments: Mitchelle from ECS collecting spares Strata Comments: - | ⏳ In Progress |
-| 🟡 UV84 | NCH2 | Work Done: - Challenges: Attend to high priority Comments: BRMO states "Aard team currently ug at N2" Strata Comments: - | | | | | | | | ⏳ In Progress |
+| 🟡 UV84 | NCH2 | Work Done: - Challenges: Attend to high priority Comments: BRMO states "Aard team currently ug at N2" Strata Comments: OEM and ECS were working on the machine | | | | | | | | ⏳ In Progress |
 
 ---
 
