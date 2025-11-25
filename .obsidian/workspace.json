@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "reports/2025-11-25 - Weekly Progress Update.md",
+                "file": "reports/2025-11-25 - CAS L9 Project Status Summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-25 - Weekly Progress Update"
+              "title": "2025-11-25 - CAS L9 Project Status Summary"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 566.0124969482422
+    "width": 566.0124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "e8bdc17feff4bebd",
@@ -95,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "reports/2025-11-25 - Weekly Progress Update.md",
+                "file": "reports/2025-11-25 - CAS L9 Project Status Summary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +106,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-11-25 - Weekly Progress Update"
+              "title": "Backlinks for 2025-11-25 - CAS L9 Project Status Summary"
             }
           },
           {
@@ -228,8 +229,10 @@
   },
   "active": "390357521acdc6a2",
   "lastOpenFiles": [
-    "reports/2025-11-25 - CAS L9 Project Status Summary.md",
     "reports/2025-11-25 - Weekly Progress Update.md",
+    "Schedule/2025-11-27 - Remedial Action Tracking System RATS Meeting.md",
+    "reports/2025-11-25 - CAS L9 Project Status Summary.md",
+    "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764058110249",
     "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764056770478",
     "Schedule/2025-11-27 - Weekly Overtime Meeting.md",
     "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764056494929",
@@ -262,7 +265,6 @@
     "Schedule/2025-11-27 - Microsoft Copilot Chat Tips Series  Wrap up the ye.md",
     "Schedule/2025-11-27 - Project Steerco.md",
     "Schedule/2025-11-27 - CAS CPS project Steerco meeting.md",
-    "Schedule/nul",
     "00_Inbox/FT_2025-11-17 20_37_37.256.png",
     "media/image/2025/2025-11-17_2037_Emergency_Preparedness_Recap.png",
     "media/image/2025/2025-11-17_2036_Daily_Notes_Planner.png",

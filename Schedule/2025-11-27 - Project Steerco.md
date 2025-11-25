@@ -14,6 +14,8 @@ permalink: schedule/2025-11-27-project-steerco
 **Location:** Admin Conference Room (30 seats); MR-MBR-MAIN
 **Organizer:** Marina Schoeman
 
+**Recurrence:** 4th Thursday of every month, 10:00 AM - 12:00 PM (effective 3/27/2025)
+
 ---
 
-**Tags:** #meeting #outlook-sync #year/2025
+**Tags:** #meeting #recurring #year/2025
