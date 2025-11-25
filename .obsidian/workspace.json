@@ -87,7 +87,7 @@
       {
         "id": "c7ab2ac19efb2b70",
         "type": "tabs",
-        "dimension": 26.87188019966722,
+        "dimension": 29.28452579034942,
         "children": [
           {
             "id": "83f7eb2c13be1f61",
@@ -183,12 +183,12 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       },
       {
         "id": "e1054e40570ce37e",
         "type": "tabs",
-        "dimension": 73.12811980033278,
+        "dimension": 70.71547420965058,
         "children": [
           {
             "id": "d7405c902b275627",
@@ -225,7 +225,7 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "78a89bb69288cfee",
+  "active": "65daab2f3980c272",
   "lastOpenFiles": [
     "00_Inbox/2025-11-25 – Voice Note & Image - SAT TIP 1 System.md.tmp.28044.1764047521682",
     "00_Inbox/2025-11-25 – Voice Note & Image - SAT TIP 1 System.md.tmp.28044.1764047513577",
