@@ -94,14 +94,21 @@ Some existing events have mismatched dates between Obsidian and Outlook:
 - S2 & BEV Optimisation - Weekly Progress
 - Junior Engineers
 
+## Post-Sync Corrections
+
+✅ **Removed 1 duplicate:** Sentis Safety Climate Survey (kept Group 3 version with time details)
+✅ **Fixed Psychometric Feedback:** Corrected malformed YAML header and end time (08:00-09:30)
+
 ## Notes
 
 - Date discrepancies in existing files (Aard/Bell CAS L9, Epiroc, Emergency Preparedness) not corrected - they may be intentional placeholder dates
 - CAS L9 activities represent vendor-specific training sessions scheduled across 2025-11-25
 - All events have proper Obsidian calendar frontmatter (compatible with calendar plugins)
+- Final count: **22 November 25-28 event files** (17 new from Outlook + 5 pre-existing)
 
 ---
 
 **Sync Completed:** 2025-11-25 14:30 SAST
 **Sync Tool:** /sync-outlook-calendar command
+**Post-sync cleanup:** 2025-11-25 14:45 SAST
 **Status:** ✅ FINAL
