@@ -1,1 +1,18 @@
-﻿M	Schedule/_Sync_Summary_2025-11.md
+﻿A	Schedule/2025-11-25 - Aard Cas L9 activation  Planning  - Repairs , upgr.md
+A	Schedule/2025-11-25 - BWECAT Cas L9 Activation  Surface and Underground .md
+A	Schedule/2025-11-25 - Bell  Cas L9 Activation  Planning  - Upgrade and C.md
+A	Schedule/2025-11-25 - Cruiser Cas L9 activation  Planning - Alternators .md
+A	Schedule/2025-11-25 - Environmental Forum.md
+A	Schedule/2025-11-25 - Fermel Cas L9 activation  Passport 360 Compliance .md
+A	Schedule/2025-11-25 - Manitou Cas L9 activation  Planning  - Repairs , u.md
+A	Schedule/2025-11-25 - Psychometric Feedback Junior Engineer Projects Fix.md
+A	Schedule/2025-11-25 - RE Disciplinary Enquiry - Lungelo Duba 25 November.md
+A	Schedule/2025-11-26 - Normet Discussion.md
+A	Schedule/2025-11-26 - Ops & Engineering alignment Black Rock- Central Pr.md
+A	Schedule/2025-11-26 - Sentis Safety Climate Survey Group 3.md
+A	Schedule/2025-11-27 - CAS CPS project Steerco meeting.md
+A	Schedule/2025-11-27 - Microsoft Copilot Chat Tips Series  Wrap up the ye.md
+A	Schedule/2025-11-27 - Project Steerco.md
+A	Schedule/2025-11-28 - Junior Engineers.md
+A	Schedule/2025-11-28 - S2 & BEV Optimisation - Weekly Progress.md
+M	Schedule/_Sync_Summary_2025-11.md
