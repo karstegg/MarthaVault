@@ -1,5 +1,5 @@
 ---
-title: "Cruiser CAS L9: Alternators & Split Charging"
+title: 'Cruiser CAS L9: Alternators & Split Charging'
 allDay: false
 date: 2025-11-25
 startTime: '10:30'

@@ -1,5 +1,5 @@
 ---
-title: "Manitou CAS L9: Planning - Repairs"
+title: 'Manitou CAS L9: Planning - Repairs'
 allDay: false
 date: 2025-11-25
 startTime: '11:30'

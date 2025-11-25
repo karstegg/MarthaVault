@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 566.0124969482422,
-    "collapsed": true
+    "width": 566.0124969482422
   },
   "right": {
     "id": "e8bdc17feff4bebd",
@@ -88,7 +87,7 @@
       {
         "id": "c7ab2ac19efb2b70",
         "type": "tabs",
-        "dimension": 29.28452579034942,
+        "dimension": 16.638935108153078,
         "children": [
           {
             "id": "83f7eb2c13be1f61",
@@ -189,7 +188,7 @@
       {
         "id": "e1054e40570ce37e",
         "type": "tabs",
-        "dimension": 70.71547420965058,
+        "dimension": 83.36106489184692,
         "children": [
           {
             "id": "d7405c902b275627",
@@ -205,7 +204,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 1822
+    "width": 680
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -228,9 +227,11 @@
   },
   "active": "390357521acdc6a2",
   "lastOpenFiles": [
+    "reports/2025-11-25 - CAS L9 Project Status Summary.md",
+    "reports/2025-11-25 - Weekly Progress Update.md",
+    "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764056105273",
     "Schedule/2025-11-25 - Aard Cas L9 activation  Planning  - Repairs , upgr.md",
     "people/Mothupi, Tshepiso.md",
-    "reports/2025-11-25 - Weekly Progress Update.md",
     "reports",
     "people/Sam, Strata.md",
     "people/Nzuza, Sikelela.md",
@@ -259,11 +260,9 @@
     "Schedule/2025-11-27 - CAS CPS project Steerco meeting.md",
     "Schedule/2025-11-26 - Ops & Engineering alignment Black Rock- Central Pr.md",
     "Schedule/2025-11-26 - Normet Discussion.md",
-    "Schedule/2025-11-26 - Sentis Safety Climate Survey Group 3.md",
     "Schedule/nul",
     "media/audio/Greg_20251125_064935.ogg",
     "reference/claude-code/task-handoff.md.tmp.29464.1764012467113",
-    "reference/claude-code/task-handoff.md.tmp.29464.1764012465046",
     "00_Inbox/FT_2025-11-17 20_37_37.256.png",
     "media/image/2025/2025-11-17_2037_Emergency_Preparedness_Recap.png",
     "media/image/2025/2025-11-17_2036_Daily_Notes_Planner.png",

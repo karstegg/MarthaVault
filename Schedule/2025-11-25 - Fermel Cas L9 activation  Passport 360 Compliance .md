@@ -1,5 +1,5 @@
 ---
-title: "Fermel CAS L9: Passport 360 Compliance"
+title: 'Fermel CAS L9: Passport 360 Compliance'
 allDay: false
 date: 2025-11-25
 startTime: '11:00'
