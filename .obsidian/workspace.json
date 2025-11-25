@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "reports/2025-11-25 - CAS L9 Project Status Summary.md",
+                "file": "reports/2025-11-25 - Weekly Progress Update.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-25 - CAS L9 Project Status Summary"
+              "title": "2025-11-25 - Weekly Progress Update"
             }
           }
         ]
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "reports/2025-11-25 - CAS L9 Project Status Summary.md",
+                "file": "reports/2025-11-25 - Weekly Progress Update.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-11-25 - CAS L9 Project Status Summary"
+              "title": "Backlinks for 2025-11-25 - Weekly Progress Update"
             }
           },
           {
@@ -204,8 +204,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 680,
-    "collapsed": true
+    "width": 680
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -228,8 +227,10 @@
   },
   "active": "390357521acdc6a2",
   "lastOpenFiles": [
-    "reports/2025-11-25 - Weekly Progress Update.md",
     "reports/2025-11-25 - CAS L9 Project Status Summary.md",
+    "reports/2025-11-25 - Weekly Progress Update.md",
+    "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764056770478",
+    "Schedule/2025-11-27 - Weekly Overtime Meeting.md",
     "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764056494929",
     "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764056105273",
     "Schedule/2025-11-25 - Aard Cas L9 activation  Planning  - Repairs , upgr.md",
@@ -260,9 +261,7 @@
     "Schedule/2025-11-27 - Microsoft Copilot Chat Tips Series  Wrap up the ye.md",
     "Schedule/2025-11-27 - Project Steerco.md",
     "Schedule/2025-11-27 - CAS CPS project Steerco meeting.md",
-    "Schedule/2025-11-26 - Ops & Engineering alignment Black Rock- Central Pr.md",
     "Schedule/nul",
-    "media/audio/Greg_20251125_064935.ogg",
     "00_Inbox/FT_2025-11-17 20_37_37.256.png",
     "media/image/2025/2025-11-17_2037_Emergency_Preparedness_Recap.png",
     "media/image/2025/2025-11-17_2036_Daily_Notes_Planner.png",
