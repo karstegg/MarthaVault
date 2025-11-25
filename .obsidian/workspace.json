@@ -13,22 +13,14 @@
             "state": {
               "type": "kanban",
               "state": {
-                "file": "00_Inbox/2025-11-25 – Complete Task Board.md",
+                "file": "00_Inbox/2025-11-25 – Remaining Tasks Board.md",
                 "kanbanViewState": {
                   "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                  ]
+                  "list-collapse": []
                 }
               },
               "icon": "lucide-trello",
-              "title": "2025-11-25 – Complete Task Board"
+              "title": "2025-11-25 – Remaining Tasks Board"
             }
           }
         ]
@@ -105,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Inbox/2025-11-25 – Complete Task Board.md",
+                "file": "00_Inbox/2025-11-25 – Remaining Tasks Board.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +107,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-11-25 – Complete Task Board"
+              "title": "Backlinks for 2025-11-25 – Remaining Tasks Board"
             }
           },
           {
@@ -238,9 +230,11 @@
   },
   "active": "390357521acdc6a2",
   "lastOpenFiles": [
+    "00_Inbox/2025-11-25 – Daily Email Triage.md",
+    "00_Inbox/2025-11-25 – Complete Task Board.md",
+    "00_Inbox/2025-11-25 – Remaining Tasks Board.md",
     "00_Inbox/2025-11-24 – Leave Coverage Plan Dec-Jan.md",
     "00_Inbox/2025-11-25.md",
-    "00_Inbox/2025-11-25 – Complete Task Board.md",
     "00_Inbox/2025-11-25 – Strategic Planning by Effort.md",
     "00_Inbox/2025-11-25 – Strategic Planning by Project.md",
     "00_Inbox/2025-11-25 – Strategic Planning Board Nov-Dec.md",
@@ -272,8 +266,6 @@
     "people/Mostert, Nico.md",
     "people/Ralfe, Jevon.md",
     "people/Van Niekerk, Hennie.md",
-    "people/Housden, Horace.md",
-    "people/Kotze, Johan.md",
     "00_Inbox/FT_2025-11-17 20_37_37.256.png",
     "media/image/2025/2025-11-17_2037_Emergency_Preparedness_Recap.png",
     "media/image/2025/2025-11-17_2036_Daily_Notes_Planner.png",
