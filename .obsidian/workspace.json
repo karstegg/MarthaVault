@@ -16,7 +16,9 @@
                 "file": "00_Inbox/2025-11-25 – Remaining Tasks Board.md",
                 "kanbanViewState": {
                   "kanban-plugin": "board",
-                  "list-collapse": []
+                  "list-collapse": [
+                    null
+                  ]
                 }
               },
               "icon": "lucide-trello",
@@ -80,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 433.0124969482422
+    "width": 433.0124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "e8bdc17feff4bebd",
