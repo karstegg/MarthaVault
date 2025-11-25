@@ -13,16 +13,16 @@
             "state": {
               "type": "kanban",
               "state": {
-                "file": "00_Inbox/2025-11-25 – Strategic Planning by Project.md",
+                "file": "00_Inbox/2025-11-25 – Strategic Planning by Effort.md",
                 "kanbanViewState": {
                   "kanban-plugin": "board",
                   "list-collapse": [
-                    null
+                    false
                   ]
                 }
               },
               "icon": "lucide-trello",
-              "title": "2025-11-25 – Strategic Planning by Project"
+              "title": "2025-11-25 – Strategic Planning by Effort"
             }
           }
         ]
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 433.0124969482422,
-    "collapsed": true
+    "width": 433.0124969482422
   },
   "right": {
     "id": "e8bdc17feff4bebd",
@@ -100,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Inbox/2025-11-25 – Strategic Planning by Project.md",
+                "file": "00_Inbox/2025-11-25 – Strategic Planning by Effort.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +109,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-11-25 – Strategic Planning by Project"
+              "title": "Backlinks for 2025-11-25 – Strategic Planning by Effort"
             }
           },
           {
@@ -233,9 +232,9 @@
   },
   "active": "390357521acdc6a2",
   "lastOpenFiles": [
+    "00_Inbox/2025-11-25 – Strategic Planning by Project.md",
     "00_Inbox/2025-11-25 – Strategic Planning by Effort.md",
     "00_Inbox/2025-11-25 – Strategic Planning Board Nov-Dec.md",
-    "00_Inbox/2025-11-25 – Strategic Planning by Project.md",
     "people/Hender, Aswhin.md",
     "00_Inbox/Survey Belt Temperature Sensor Deployment.md",
     "00_Inbox/N3 Second Electrical Supervisor.md",

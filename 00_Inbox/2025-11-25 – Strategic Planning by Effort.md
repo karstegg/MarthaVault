@@ -22,18 +22,12 @@ permalink: 00-inbox/2025-11-25-strategic-planning-by-effort
 - [ ] **Compile Unplanned Capital Submission**  
 	  📅 Nov 27 | 👤 Greg | 📝 Documentation  
 	  Jacques request - bearing temp + others (1-2 days)
-- [ ] **Conveyor BRMO Scope Delivery**  
-	  📅 Nov 26 | 👤 Greg → Hilaria | 📧 Send document  
-	  Already prepared, just needs delivery
 - [ ] **Submit Itireleng Scope to JoMari**  
 	  📅 Nov 20 (OVERDUE) | 👤 Greg | 📧 Forward scope  
 	  Scope received Nov 19, route for tender
 - [ ] **Battery Charger Procedure Draft**  
 	  📅 TODAY (OVERDUE) | 👤 Jabu | 📝 Procedure  
 	  Relocation procedure for 2 charger locations
-- [ ] **Schedule 22.9 Regulations Review**  
-	  📅 Nov 16 | 👤 Greg | 📖 Gap analysis  
-	  Review and assess compliance (1-2 days)
 - [ ] **CAS L9 - CR121 Replacement Decision**  
 	  📅 Nov 20 (OVERDUE) | 👤 Hennie | 🤝 Decision  
 	  Make call on Manitou unit
@@ -53,6 +47,9 @@ permalink: 00-inbox/2025-11-25-strategic-planning-by-effort
 - [ ] **Fermel CAS L9 - Resource Shortage**  
 	  📅 Nov 19 (OVERDUE) | 👤 Nico (HO) | 🤝 Coordination  
 	  Resolve with Head Office for Dec 31 compliance
+- [ ] **Schedule 22.9 Regulations Review**  
+	  📅 Nov 16 | 👤 Greg | 📖 Gap analysis  
+	  Review and assess compliance (1-2 days)
 - [ ] **CAS L9 - Aard Scissor Lift Loop Issue**  
 	  📅 Nov 20 (OVERDUE) | 👤 Hennie | 🔧 Technical fix  
 	  Platform safety interlock resolution
@@ -118,54 +115,23 @@ permalink: 00-inbox/2025-11-25-strategic-planning-by-effort
 
 ## 📊 EFFORT ANALYSIS
 
-**Quick Wins (Short Tasks):**
-- 9 items can be completed in hours/days
-- High impact, low effort
-- Priority: Clear these first to free capacity
-- Examples: Email follow-ups, scope submissions, decisions
+- [ ] 9 items can be completed in hours/days
+- [ ] High impact, low effort
+- [ ] Priority: Clear these first to free capacity
+- [ ] Examples: Email follow-ups, scope submissions, decisions
 
-**Medium Effort (1-2 Weeks):**
-- 13 items requiring focused work periods
-- Mix of technical fixes, surveys, coordination
-- Need dedicated time blocks but not full projects
-- Examples: Equipment repairs, contract routing, compliance items
 
-**Long-Term Projects (Weeks-Months):**
-- 9 strategic initiatives requiring project management
-- Capital projects, infrastructure upgrades, recruitment
-- Need planning → approval → execution → commissioning
-- Examples: Belt optimization, battery chargers, chute replacement
+## Duplicates and Superfluous
 
-**Effort Distribution:**
-- SHORT: 29% of tasks (9/31)
-- MEDIUM: 42% of tasks (13/31)
-- LONG: 29% of tasks (9/31)
+- [ ] **Conveyor BRMO Scope Delivery**  
+	  📅 Nov 26 | 👤 Greg → Hilaria | 📧 Send document  
+	  Already prepared, just needs delivery
 
-**Strategy:**
-1. **This Week**: Focus on SHORT tasks to clear backlog
-2. **Next 2 Weeks**: Execute MEDIUM items in parallel
-3. **Ongoing**: Keep LONG projects moving through stages
 
-**Capacity Planning:**
-- SHORT tasks: ~3-4 days total effort
-- MEDIUM tasks: ~15-20 days total effort (distributed)
-- LONG projects: ~3-6 months ongoing (managed, not executed daily)
-
-**Before Leave (Dec 14):**
-- Complete ALL SHORT tasks (9 items)
-- Close 80% of MEDIUM tasks (10/13 items)
-- Ensure LONG projects have clear owners and milestones
-
-**Risk Items (Overdue MEDIUM):**
-- Lubri Vent installation
-- Belt temp sensor survey
-- DMR drill torque actions
-- Lifting equipment analysis
-- Need immediate attention to prevent further slippage
 
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board"}
+{"kanban-plugin":"board","list-collapse":[false]}
 ```
 %%
