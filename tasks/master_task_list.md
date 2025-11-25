@@ -17,6 +17,12 @@ permalink: tasks/master-task-list
 ---
 
 ## Pending Tasks (Unscheduled)
+
+- [ ] Rock breaker repair at Sat Tips - relocate spare from waste tip + resolve boom compatibility issue #task #year/2025 #priority/high #equipment #site/Nchwaning3 📅 2025-11-27
+  - Assigned to: [[Sease, Sello]], [[Lourens, Stef]]
+  - Context: Sat tip rock breaker down with cracked boom, spare boom from Gloria doesn't fit
+  - Action: Move rock breaker from waste tip (lower priority) to Sat tips + find alternative boom solution
+  - Stakeholder: [[Breet, Jacques]]
 - [ ] Survey current belt temperature sensor deployment across all sites #task #year/2025 #priority/high #temperature-monitoring #fire-safety 📅 2025-11-15
   - Assigned to: [[Karsten, Gregory]]
   - Context: Emergency Preparedness Meeting action - determine sensor coverage before adding to areas that don't require them
