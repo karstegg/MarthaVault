@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Schedule/2025-11-25 - Aard Cas L9 activation  Planning  - Repairs , upgr.md",
+                "file": "reports/2025-11-25 - Weekly Progress Update.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-25 - Aard Cas L9 activation  Planning  - Repairs , upgr"
+              "title": "2025-11-25 - Weekly Progress Update"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 566.0124969482422
+    "width": 566.0124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "e8bdc17feff4bebd",
@@ -95,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Schedule/2025-11-25 - Aard Cas L9 activation  Planning  - Repairs , upgr.md",
+                "file": "reports/2025-11-25 - Weekly Progress Update.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +106,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-11-25 - Aard Cas L9 activation  Planning  - Repairs , upgr"
+              "title": "Backlinks for 2025-11-25 - Weekly Progress Update"
             }
           },
           {
@@ -204,7 +205,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 773
+    "width": 1822
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -227,6 +228,7 @@
   },
   "active": "390357521acdc6a2",
   "lastOpenFiles": [
+    "Schedule/2025-11-25 - Aard Cas L9 activation  Planning  - Repairs , upgr.md",
     "people/Mothupi, Tshepiso.md",
     "reports/2025-11-25 - Weekly Progress Update.md",
     "reports",
@@ -258,7 +260,6 @@
     "Schedule/2025-11-26 - Ops & Engineering alignment Black Rock- Central Pr.md",
     "Schedule/2025-11-26 - Normet Discussion.md",
     "Schedule/2025-11-26 - Sentis Safety Climate Survey Group 3.md",
-    "Schedule/2025-11-25 - Environmental Forum.md",
     "Schedule/nul",
     "media/audio/Greg_20251125_064935.ogg",
     "reference/claude-code/task-handoff.md.tmp.29464.1764012467113",
