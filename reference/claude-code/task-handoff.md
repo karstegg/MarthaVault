@@ -68,7 +68,7 @@ Good day
 Regarding the mobile chargers – objective is to move the chargers as close to working place as possible to eliminate travel to B/Bay for midshift battery change. Also enable charging after nightshift, freeing up 4 posts at B/Bay
 
 We will move both chargers to the following areas:
-* 70N4E (Main west new waiting place)
+* 93-North 3-East (Main West new waiting place)
 * 60N52E (Central)
 
 Next steps:
@@ -84,7 +84,7 @@ Greg Karsten
 - **Objective:** Relocate BEV chargers closer to work areas to eliminate midshift travel
 - **Benefit:** Free up 4 charging posts at Battery Bay by enabling nightshift charging
 - **Locations:**
-  - **70N4E** - Main West new waiting place
+  - **93-North 3-East** - Main West new waiting place (CORRECTED from 70N4E)
   - **60N52E** - Central area
 - **Action Items:**
   1. Power supply assessment (Stef/Sello) - Due Tuesday
@@ -94,23 +94,47 @@ Greg Karsten
 
 ---
 
-### **❌ NOT FOUND: N3 Belt Speed Optimization (450→600 tph)**
+### **✅ FOUND: N3 Sat Tip Belt Speed Optimization (450→600 tph)**
 
-**Search Results:**
-- Searched Sent Items (last 14 days)
-- No emails found with keywords: "Sat Tip", "450 tph", "600 tph", "N3 belt speed"
-- Found **related** email: "RE: Conveyor belting -Spec review" (Nov 21, 14:03)
-  - This discusses New Plant conveyors (400-500 to 600 tph design)
-  - NOT about Sat Tip 1 & 2 for N3
+**Date:** November 21, 2025 at 14:03
+**Subject:** RE: Conveyor belting -Spec review
+**Recipients:** Jacques Breet, Stef Lourens, Sello Sease, Pieter Swanepoel, Ronnie Barnard
 
-**Possible Explanations:**
-- Email may have been sent via WhatsApp instead of email
-- Email may not have been sent yet (drafted but not sent)
-- Date may be different than Friday Nov 22
-- Subject line may use different keywords
+**Project:** N3 Sat Tip 1 & 2 (referred to as "New Plant" in email) - Belt speed optimization from 450→600 tph
 
-**Follow-up Options:**
-1. Check WhatsApp messages for N3 belt speed discussions
-2. Check Outlook drafts folder
-3. Clarify date or specific keywords used in the email
-4. Check N3-specific folders in Outlook
+**Full Email Content:**
+```
+Good day
+
+Current New plant performance:
+Design = 600tph
+Current rate = 400-500tph
+Issue: 55CV01 trips when we increase the feed rate
+
+After our session, the following:
+-    Confirm actual tph for new plant – Pieter/Ronnie
+-    Confirm motor current load vs full load capacity as well as protection settings - Pieter
+-    Increase feedrate gradually in 2 steps from 400 to 500 monitor then 600 after which we monitor again  -Stef
+
+If motor is too small size will have to upgrade to next size up to eliminate tripping
+
+Lets complete the first 2 actions by Wednesday
+
+Regards,
+
+Greg Karsten
+Senior Production Engineer
+Black Rock Mining Operations
+```
+
+**Key Points:**
+- **Project:** N3 Sat Tip 1 & 2 Belt Speed Optimization
+- **Objective:** Increase throughput from 400-500 tph to 600 tph design capacity
+- **Issue:** 55CV01 conveyor trips when feed rate increases
+- **Action Items:**
+  1. Confirm actual tph for new plant (Pieter/Ronnie) - Due Wednesday
+  2. Confirm motor load vs capacity & protection settings (Pieter) - Due Wednesday
+  3. Increase feedrate gradually: 400→500 (monitor)→600 (monitor again) (Stef)
+- **Risk:** Motor may need upgrading to next size if current is undersized
+- **Stakeholders:** Pieter Swanepoel, Ronnie Barnard (confirm specs), Stef Lourens (manage feedrate increase)
+- **Strategic Weight:** Production capacity increase (HIGH PRIORITY for Dec 6 deadline) ✓
