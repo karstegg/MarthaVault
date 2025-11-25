@@ -15,18 +15,9 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 - [ ] **Belt Splicing Inventory - All Sites**  
 	  📅 EOB Today | 🏗️ Multi-site | 👤 Sipho, Sikelela, Sello, Xavier, Michael  
 	  Consolidate for scope submission
-- [ ] **Conveyor BRMO Scope Delivery**  
-	  📅 Nov 26 (Tomorrow) | 💼 Procurement | 👤 Greg → Hilaria  
-	  Critical vendor deadline
-- [ ] **Fermel CAS L9 - Resource Shortage**  
-	  📅 Nov 19 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Nico (HO)  
-	  Resolve with Head Office for Dec 31 compliance
 - [ ] **Rock Breaker Repair - Sat Tips**  
 	  📅 Nov 27 | ⚙️ N3 Equipment | 👤 Sello, Stef  
 	  Relocate from waste tip + resolve boom compatibility
-- [ ] **Compile Unplanned Capital Submission**  
-	  📅 Nov 27 | 💰 Capital (1.2x) | 👤 Greg  
-	  Jacques request - bearing temp monitoring + others
 - [ ] **Ashwin - 3 Fitter Appointments Status**  
 	  📅 Today | 👥 HR | 👤 Greg  
 	  Email sent - awaiting response
@@ -66,13 +57,12 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 
 - [ ] **CAS L9 - UV53 Deployment to Chamdor**  
 	  📅 Nov 20 | 🎯 CAS-L9 | 👤 Hennie
-- [x] **CAS L9 - Aard 6-month Support Contract**  
-	  📅 Nov 22 | 🎯 CAS-L9 | 👤 Hennie
 - [ ] **CAS L9 - CR121 Replacement Decision**  
 	  📅 Nov 20 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Hennie - Manitou
+- [ ] **Fermel CAS L9 - Resource Shortage**  
+	  📅 Nov 19 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Nico (HO)  
+	  Resolve with Head Office for Dec 31 compliance
 - [ ] **CAS L9 - Aard Scissor Lift Loop Issue**  
-	  📅 Nov 20 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Hennie
-- [x] **CAS L9 - Aard Panel Order & Delivery**  
 	  📅 Nov 20 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Hennie
 - [ ] 🎯 CAS L9 DMRE: 2.5x (CRITICAL - Dec 31 deadline)
 
@@ -86,8 +76,14 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 	  📅 TBD | 💰 Capital | 👤 TBD
 - [ ] **N2 Substation Upgrade - Contract Finalization**  
 	  📅 Nov 18 (OVERDUE) | 💰 Capital | 👤 Sikelela + Roelie
+- [ ] **Conveyor BRMO Scope Delivery**  
+	  📅 Nov 26 (Tomorrow) | 💼 Procurement | 👤 Greg → Hilaria  
+	  Critical vendor deadline
 - [ ] **Leaky Feeder Vendor Onboarding**  
 	  📅 Nov 28 | 🏗️ N3 Infrastructure | 👤 Sello, Stef
+- [ ] **Compile Unplanned Capital Submission**  
+	  📅 Nov 27 | 💰 Capital (1.2x) | 👤 Greg  
+	  Jacques request - bearing temp monitoring + others
 - [ ] **Leave Coverage Planning (Dec 14 - Jan 15)**  
 	  📅 Dec 13 | 🏖️ Leave | 👤 Greg  
 	  33-day period overlaps CAS L9 Dec 31 deadline
@@ -103,6 +99,10 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 
 ## ✅ COMPLETED
 
+- [x] **CAS L9 - Aard Panel Order & Delivery**  
+	  📅 Nov 20 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Hennie
+- [x] **CAS L9 - Aard 6-month Support Contract**  
+	  📅 Nov 22 | 🎯 CAS-L9 | 👤 Hennie
 - [x] **CAS L9 Status Meetings - All OEMs**  
 	  📅 Today 10:30-13:30 | 🎯 CAS-L9 (2.5x) | 👤 Greg + Hennie  
 	  Get way forward on urgent actions for Dec 31 DMRE deadline
