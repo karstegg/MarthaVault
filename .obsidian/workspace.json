@@ -11,14 +11,25 @@
             "id": "390357521acdc6a2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "00_Inbox/2025-11-24 – Leave Coverage Plan Dec-Jan.md",
-                "mode": "preview",
-                "source": false
+                "file": "00_Inbox/2025-11-25 – Strategic Planning Board Nov-Dec.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    false,
+                    null
+                  ]
+                }
               },
-              "icon": "lucide-file",
-              "title": "2025-11-24 – Leave Coverage Plan Dec-Jan"
+              "icon": "lucide-trello",
+              "title": "2025-11-25 – Strategic Planning Board Nov-Dec"
             }
           }
         ]
@@ -78,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 433.0124969482422
+    "width": 433.0124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "e8bdc17feff4bebd",
@@ -95,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Inbox/2025-11-24 – Leave Coverage Plan Dec-Jan.md",
+                "file": "00_Inbox/2025-11-25 – Strategic Planning Board Nov-Dec.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +117,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-11-24 – Leave Coverage Plan Dec-Jan"
+              "title": "Backlinks for 2025-11-25 – Strategic Planning Board Nov-Dec"
             }
           },
           {
@@ -228,6 +240,7 @@
   },
   "active": "390357521acdc6a2",
   "lastOpenFiles": [
+    "00_Inbox/2025-11-24 – Leave Coverage Plan Dec-Jan.md",
     "00_Inbox/2025-11-25 – Strategic Planning Board Nov-Dec.md",
     "00_Inbox/2025-11-24 – WEEK PLAN Nov 24-28.md",
     "tasks/Priority Matrix Board.md",
@@ -263,7 +276,6 @@
     "people/Mokoena, Tebogo.md",
     "00_Inbox/2025-11-25 – Voice Note & Image - SAT TIP 1 System.md",
     "reference/claude-code/Desktop Project Instructions - Task Handoff Addition.md",
-    "Schedule/2025-11-28 - Junior Engineers.md",
     "00_Inbox/FT_2025-11-17 20_37_37.256.png",
     "media/image/2025/2025-11-17_2037_Emergency_Preparedness_Recap.png",
     "media/image/2025/2025-11-17_2036_Daily_Notes_Planner.png",
