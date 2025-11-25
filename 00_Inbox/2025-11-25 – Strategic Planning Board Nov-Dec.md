@@ -100,14 +100,6 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 	  📅 TBD | 💰 Capital | 👤 TBD
 
 
-## ✅ COMPLETED
-
-- [x] **N3 Electrical Foreman Motivation** ✅ Nov 21
-- [x] **Fire Suppression Pre-Start Procedures** ✅ Nov 18
-- [x] **Leaky Feeder Follow-up** ✅ Nov 18
-- [x] **Fire Door Capital Specifics** ✅ Nov 13
-
-
 ## 
 
 - [ ] **CAS L9 - UV53 Deployment to Chamdor**  
@@ -118,6 +110,14 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 ## ✅ Parking Bay
 
 - [ ] 🔥 Fire Safety: 2.0x (CRITICAL)
+
+
+## ✅ COMPLETED
+
+- [x] **N3 Electrical Foreman Motivation** ✅ Nov 21
+- [x] **Fire Suppression Pre-Start Procedures** ✅ Nov 18
+- [x] **Leaky Feeder Follow-up** ✅ Nov 18
+- [x] **Fire Door Capital Specifics** ✅ Nov 13
 
 
 ## 📝 STRATEGIC CONTEXT
@@ -132,6 +132,6 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,null,null,null,null,false,null,null]}
+{"kanban-plugin":"board","list-collapse":[false,null,null,null,false,null,true,true]}
 ```
 %%
