@@ -3,7 +3,8 @@ WhatsApp: 120363378635610586@g.us
 Type: Group
 Members: 6
 Created: 2025-02-01
-Tags: #group #engineering #management
+Tags: null
+permalink: people/ug-eng-management-group
 ---
 
 # UG Eng Management

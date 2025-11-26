@@ -3,7 +3,8 @@ task_id: 20251126-0644-001
 from: claude-desktop
 to: claude-cli
 status: pending
-created: 2025-11-26T06:44:00+02:00
+created: 2025-11-26 06:44:00+02:00
+permalink: reference/claude-code/task-handoff
 ---
 
 ## Task: Check Recent Emails (Last 24 Hours)

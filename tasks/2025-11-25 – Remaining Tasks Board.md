@@ -1,14 +1,12 @@
 ---
-
 kanban-plugin: board
 tags:
-  - planning
-  - tasks
-  - overflow
-  - Q4-2025
-  - year/2025
-permalink: 00-inbox/2025-11-25-remaining-tasks-board
-
+- planning
+- tasks
+- overflow
+- Q4-2025
+- year/2025
+permalink: 00-inbox/2025-11-25-remaining-tasks-board-1
 ---
 
 ## 🔴 CRITICAL (This Week - Nov 25-29)
