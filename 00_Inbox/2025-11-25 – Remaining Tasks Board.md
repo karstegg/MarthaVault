@@ -114,46 +114,6 @@ permalink: 00-inbox/2025-11-25-remaining-tasks-board
 	  📅 Dec 26 | 🔥 Fire Safety (2.0x) | 👤 Johnny
 
 
-## MarthaVault System Development (Personal - 1.2x)
-
-- [ ] **Phase 2: Automated Memory Indexing System**  
-	  📅 Dec 11 | 🖥️ Personal (1.2x) | 👤 Greg  
-	  4-week project: File watchers + daily resync + smart entity detection  
-	  Goal: <5 min lag, >90% accuracy, <10% manual intervention
-- [ ] **Implement Memory Update Subagent**  
-	  📅 TBD | 🖥️ Personal | 👤 Greg  
-	  Real-time memory sync (Phase 2 Week 4)
-- [ ] **Implement Post-File-Change Hook**  
-	  📅 TBD | 🖥️ Personal | 👤 Greg  
-	  Automatic incremental updates (Phase 2 Week 1)
-- [ ] **Implement Post-Task-Creation Hook**  
-	  📅 TBD | 🖥️ Personal | 👤 Greg  
-	  Automatic task mirroring
-- [ ] **Implement Memory Query Subagent**  
-	  📅 TBD | 🖥️ Personal | 👤 Greg  
-	  Intelligent Graph vs Basic Memory retrieval
-- [ ] **Verify Context Editing (30+ file triage test)**  
-	  📅 TBD | 🖥️ Personal | 👤 Greg
-- [ ] **Check Memory Tool Availability in Claude Code**  
-	  📅 TBD | 🖥️ Personal | 👤 Greg
-- [ ] **Configure Memory Tool Storage Directory**  
-	  📅 TBD | 🖥️ Personal | 👤 Greg
-- [ ] **Test Memory Tool Basic Operations (CRUD)**  
-	  📅 TBD | 🖥️ Personal | 👤 Greg
-- [ ] **Integration Testing: Context + Memory + MCP**  
-	  📅 TBD | 🖥️ Personal | 👤 Greg
-- [ ] **Test Complex Cross-Reference Queries**  
-	  📅 TBD | 🖥️ Personal | 👤 Greg
-- [ ] **Measure Productivity Impact**  
-	  📅 TBD | 🖥️ Personal | 👤 Greg
-- [ ] **Integrate Fast Context into Daily Workflows**  
-	  📅 TBD | 🖥️ Personal | 👤 Greg
-- [ ] **Optimize Vault for Fast Context**  
-	  📅 TBD | 🖥️ Personal | 👤 Greg
-- [ ] **Document Fast Context Patterns**  
-	  📅 TBD | 🖥️ Personal | 👤 Greg
-
-
 ## Ideas / Low Priority
 
 - [ ] **Add Battery Performance Slide to Weekly Report**  
@@ -217,6 +177,46 @@ permalink: 00-inbox/2025-11-25-remaining-tasks-board
 	  Consolidate from audits, investigations, DMRE feedback
 
 
+## MarthaVault System Development (Personal - 1.2x)
+
+- [ ] **Phase 2: Automated Memory Indexing System**  
+	  📅 Dec 11 | 🖥️ Personal (1.2x) | 👤 Greg  
+	  4-week project: File watchers + daily resync + smart entity detection  
+	  Goal: <5 min lag, >90% accuracy, <10% manual intervention
+- [ ] **Implement Memory Update Subagent**  
+	  📅 TBD | 🖥️ Personal | 👤 Greg  
+	  Real-time memory sync (Phase 2 Week 4)
+- [ ] **Implement Post-File-Change Hook**  
+	  📅 TBD | 🖥️ Personal | 👤 Greg  
+	  Automatic incremental updates (Phase 2 Week 1)
+- [ ] **Implement Post-Task-Creation Hook**  
+	  📅 TBD | 🖥️ Personal | 👤 Greg  
+	  Automatic task mirroring
+- [ ] **Implement Memory Query Subagent**  
+	  📅 TBD | 🖥️ Personal | 👤 Greg  
+	  Intelligent Graph vs Basic Memory retrieval
+- [ ] **Verify Context Editing (30+ file triage test)**  
+	  📅 TBD | 🖥️ Personal | 👤 Greg
+- [ ] **Check Memory Tool Availability in Claude Code**  
+	  📅 TBD | 🖥️ Personal | 👤 Greg
+- [ ] **Configure Memory Tool Storage Directory**  
+	  📅 TBD | 🖥️ Personal | 👤 Greg
+- [ ] **Test Memory Tool Basic Operations (CRUD)**  
+	  📅 TBD | 🖥️ Personal | 👤 Greg
+- [ ] **Integration Testing: Context + Memory + MCP**  
+	  📅 TBD | 🖥️ Personal | 👤 Greg
+- [ ] **Test Complex Cross-Reference Queries**  
+	  📅 TBD | 🖥️ Personal | 👤 Greg
+- [ ] **Measure Productivity Impact**  
+	  📅 TBD | 🖥️ Personal | 👤 Greg
+- [ ] **Integrate Fast Context into Daily Workflows**  
+	  📅 TBD | 🖥️ Personal | 👤 Greg
+- [ ] **Optimize Vault for Fast Context**  
+	  📅 TBD | 🖥️ Personal | 👤 Greg
+- [ ] **Document Fast Context Patterns**  
+	  📅 TBD | 🖥️ Personal | 👤 Greg
+
+
 ## 📊 BOARD SUMMARY
 
 - [ ] 🔴 CRITICAL (This Week): 3 tasks
@@ -233,6 +233,6 @@ permalink: 00-inbox/2025-11-25-remaining-tasks-board
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[null]}
+{"kanban-plugin":"board","list-collapse":[null,null]}
 ```
 %%
