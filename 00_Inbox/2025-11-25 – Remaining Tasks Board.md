@@ -51,9 +51,6 @@ permalink: 00-inbox/2025-11-25-remaining-tasks-board
 - [ ] **Provide DMR Brake Test Ramp Feedback**  
 	  📅 Oct 15 (OVERDUE) | ⚖️ Compliance | 👤 TBD  
 	  Ramp requirement vs compliance bay status
-- [ ] **Communicate Change Management Process**  
-	  📅 Oct 18 (OVERDUE) | ⚖️ Compliance | 👤 TBD  
-	  DMRE action - procedural communication
 - [ ] **Aard UV Brackets & Pump Safety Interlocks**  
 	  📅 Oct 18 (OVERDUE) | ⚖️ Safety | 👤 Engineers  
 	  Follow up, then write instruction
@@ -62,40 +59,22 @@ permalink: 00-inbox/2025-11-25-remaining-tasks-board
 	  Action already initiated
 - [ ] **Compile Report for Scaler Audit (SR 30 11_5)**  
 	  📅 Oct 25 (OVERDUE) | ⚖️ Audit | 👤 TBD
-- [ ] **Chapter 8 S&W Regulation 16 Review**  
-	  📅 Oct 15 (OVERDUE) | ⚖️ Compliance | 👤 TBD  
-	  New winder regulations
-- [ ] **Solrock Weekend Work - Shaft Lining Repairs**  
-	  📅 Nov 9 (OVERDUE) | ⚙️ S&W | 👤 Xavier, Sikelela  
-	  IN PROGRESS - weekend coordination
-- [ ] **Monthly Engineering Meeting Prep**  
-	  📅 Nov 19 (OVERDUE) | 📋 Monthly | 👤 Greg  
-	  Monthly recurring coordination
 - [ ] **Implement DPF on All Diesel Machines**  
 	  📅 TBD | 🏭 Production | 👤 TBD  
 	  Starting with CAT AD30s - reason for 2 JPEs
-- [ ] **Gerhard - Get Barlow Quote for DPF**  
-	  📅 TBD | 🏭 Production | 👤 Gerhard  
-	  DPF Project implementation
-- [ ] **Sipho - Draft Breakdown in Decline Instructions**  
-	  📅 Oct 15 (OVERDUE) | 📋 Gloria | 👤 Sipho
 - [ ] **Actions from Friday N2 Eng Team Meeting**  
 	  📅 Oct 8 (OVERDUE) | 📋 N2 | 👤 TBD  
 	  Extract specific tasks
+- [ ] **Gerhard - Get Barlow Quote for DPF**  
+	  📅 TBD | 🏭 Production | 👤 Gerhard  
+	  DPF Project implementation
 
 
 ## Capital TMM Programme (FY25/26 - R157.3M)
 
-- [ ] **N3 RT0039 Roof Bolter Replacement - Finalize specs**  
-	  📅 Oct 31 (OVERDUE) | 💰 Capital | 👤 Sello, Kagisho  
-	  Boltec 235H (2014-11 years) → R19.3M SAFETY-CRITICAL
-- [ ] **N3 RT0039 - Request Epiroc Quotations**  
-	  📅 Nov 30 | 💰 Capital | 👤 Kagisho
 - [ ] **N3 Scalers Bundle (3 units) - Finalize Specs**  
 	  📅 Nov 15 (OVERDUE) | 💰 Capital | 👤 Sello, Joyce  
 	  SR0024/0028/0030 → R18.4M bundle discount opportunity
-- [ ] **N3 Scalers - Request Bundle Quotations**  
-	  📅 Dec 15 | 💰 Capital | 👤 Joyce
 - [ ] **N3 DT0143 Dump Truck - Finalize Specs**  
 	  📅 Nov 30 | 💰 Capital | 👤 Sello, Kagisho  
 	  AD45 → AD30 standardization - R20.2M
@@ -194,8 +173,26 @@ permalink: 00-inbox/2025-11-25-remaining-tasks-board
 - [ ] **HD RT Action Plan for Gloria**  
 	  📅 TBD | ⚙️ Equipment | 👤 Sipho  
 	  Requested by Rudi Opperman
+- [ ] **N3 RT0039 - Request Epiroc Quotations**  
+	  📅 Nov 30 | 💰 Capital | 👤 Kagisho
+- [ ] **N3 Scalers - Request Bundle Quotations**  
+	  📅 Dec 15 | 💰 Capital | 👤 Joyce
 - [ ] **Calculate Emergency Generator Capacity - N2**  
 	  📅 TBD | ⚙️ N2 | 👤 TBD
+- [ ] **N3 RT0039 Roof Bolter Replacement - Finalize specs**  
+	  📅 Oct 31 (OVERDUE) | 💰 Capital | 👤 Sello, Kagisho  
+	  Boltec 235H (2014-11 years) → R19.3M SAFETY-CRITICAL
+- [ ] **Chapter 8 S&W Regulation 16 Review**  
+	  📅 Oct 15 (OVERDUE) | ⚖️ Compliance | 👤 TBD  
+	  New winder regulations
+- [ ] **Sipho - Draft Breakdown in Decline Instructions**  
+	  📅 Oct 15 (OVERDUE) | 📋 Gloria | 👤 Sipho
+- [ ] **Solrock Weekend Work - Shaft Lining Repairs**  
+	  📅 Nov 9 (OVERDUE) | ⚙️ S&W | 👤 Xavier, Sikelela  
+	  IN PROGRESS - weekend coordination
+- [ ] **Communicate Change Management Process**  
+	  📅 Oct 18 (OVERDUE) | ⚖️ Compliance | 👤 TBD  
+	  DMRE action - procedural communication
 - [ ] **N3 Infrastructure Status Presentation**  
 	  📅 Nov 1 (OVERDUE) | 🏗️ N3 | 👤 Sello  
 	  Leaky Feeder, Illumination, Power, Blasting Boxes, Sperrosense
@@ -209,6 +206,9 @@ permalink: 00-inbox/2025-11-25-remaining-tasks-board
 
 ## ✅ COMPLETED
 
+- [x] **Monthly Engineering Meeting Prep**  
+	  📅 Nov 19 (OVERDUE) | 📋 Monthly | 👤 Greg  
+	  Monthly recurring coordination
 - [x] **Schedule BEV CAS L9 Software Upgrades**  
 	  📅 Oct 25 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Phillip Moller  
 	  All other fleet complete, BEV pending
