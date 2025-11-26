@@ -13,17 +13,22 @@
             "state": {
               "type": "kanban",
               "state": {
-                "file": "00_Inbox/2025-11-25 – Remaining Tasks Board.md",
+                "file": "tasks/2025-11-25 – Complete Task Board.md",
                 "kanbanViewState": {
                   "kanban-plugin": "board",
                   "list-collapse": [
-                    null,
-                    null
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    true,
+                    true
                   ]
                 }
               },
               "icon": "lucide-trello",
-              "title": "2025-11-25 – Remaining Tasks Board"
+              "title": "2025-11-25 – Complete Task Board"
             }
           }
         ]
@@ -83,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 433.0124969482422,
-    "collapsed": true
+    "width": 433.0124969482422
   },
   "right": {
     "id": "e8bdc17feff4bebd",
@@ -101,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Inbox/2025-11-25 – Remaining Tasks Board.md",
+                "file": "tasks/2025-11-25 – Complete Task Board.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +115,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-11-25 – Remaining Tasks Board"
+              "title": "Backlinks for 2025-11-25 – Complete Task Board"
             }
           },
           {
@@ -232,18 +236,18 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "390357521acdc6a2",
+  "active": "759b14c2e47b40e6",
   "lastOpenFiles": [
+    "tasks/2025-11-25 – Remaining Tasks Board.md",
     "media/audio/voice_20251126_065444.ogg",
     "media/audio/voice_20251125_064935.ogg",
     "00_Inbox/2025-11-25 – Daily Email Triage.md",
-    "00_Inbox/2025-11-25 – Complete Task Board.md",
-    "00_Inbox/2025-11-25 – Remaining Tasks Board.md",
+    "tasks/2025-11-25 – Complete Task Board.md",
     "00_Inbox/2025-11-24 – Leave Coverage Plan Dec-Jan.md",
     "00_Inbox/2025-11-25.md",
-    "00_Inbox/2025-11-25 – Strategic Planning by Effort.md",
-    "00_Inbox/2025-11-25 – Strategic Planning by Project.md",
-    "00_Inbox/2025-11-25 – Strategic Planning Board Nov-Dec.md",
+    "tasks/2025-11-25 – Strategic Planning by Effort.md",
+    "tasks/2025-11-25 – Strategic Planning by Project.md",
+    "tasks/2025-11-25 – Strategic Planning Board Nov-Dec.md",
     "people/Hender, Aswhin.md",
     "00_Inbox/Survey Belt Temperature Sensor Deployment.md",
     "00_Inbox/N3 Second Electrical Supervisor.md",
@@ -259,7 +263,6 @@
     "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764059659610",
     "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764058993795",
     "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764058808655",
-    "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764058668592",
     "Schedule/2025-11-27 - Remedial Action Tracking System RATS Meeting.md",
     "Schedule/2025-11-27 - Weekly Overtime Meeting.md",
     "Schedule/2025-11-25 - Aard Cas L9 activation  Planning  - Repairs , upgr.md",
