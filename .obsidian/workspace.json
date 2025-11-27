@@ -11,24 +11,14 @@
             "id": "390357521acdc6a2",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "tasks/2025-11-25 – Complete Task Board.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                  ]
-                }
+                "file": "00_Inbox/2025-11-27.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-trello",
-              "title": "2025-11-25 – Complete Task Board"
+              "icon": "lucide-file",
+              "title": "2025-11-27"
             }
           }
         ]
@@ -105,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tasks/2025-11-25 – Complete Task Board.md",
+                "file": "00_Inbox/2025-11-27.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-11-25 – Complete Task Board"
+              "title": "Backlinks for 2025-11-27"
             }
           },
           {
@@ -236,8 +226,10 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "759b14c2e47b40e6",
+  "active": "390357521acdc6a2",
   "lastOpenFiles": [
+    "tasks/2025-11-25 – Complete Task Board.md",
+    "00_Inbox/2025-11-27.md",
     "00_Inbox/BRMO_Belt_Splicing_Scope_Shafts&Winders.xlsx",
     "00_Inbox/BRMO_Belt_Splicing_Scope_Gloria.xlsx",
     "00_Inbox/BRMO_Belt_Splicing_Scope_N3.xlsx",
@@ -251,7 +243,6 @@
     "media/audio/voice_20251126_065444.ogg",
     "media/audio/voice_20251125_064935.ogg",
     "00_Inbox/2025-11-25 – Daily Email Triage.md",
-    "tasks/2025-11-25 – Complete Task Board.md",
     "00_Inbox/2025-11-24 – Leave Coverage Plan Dec-Jan.md",
     "00_Inbox/2025-11-25.md",
     "tasks/2025-11-25 – Strategic Planning by Effort.md",
@@ -266,7 +257,6 @@
     "reports/2025-11-25 - Weekly Progress Update.md",
     "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764059707944",
     "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764059695914",
-    "reports/2025-11-25 - CAS L9 Project Status Summary.md.tmp.28044.1764059689405",
     "Schedule/2025-11-27 - Remedial Action Tracking System RATS Meeting.md",
     "Schedule/2025-11-27 - Weekly Overtime Meeting.md",
     "Schedule/2025-11-25 - Aard Cas L9 activation  Planning  - Repairs , upgr.md",
