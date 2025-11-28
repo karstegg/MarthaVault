@@ -1,0 +1,15 @@
+To upload the WhatsApp Transcribe skill to Claude Desktop:
+
+1. The ZIP file is being created for you
+2. Go to Claude Desktop Settings → Capabilities → Skills
+3. Click "Upload skill"
+4. Select the whatsapp-transcribe.zip file
+
+The skill ZIP is ready - I'm working on getting it to a location where you can access it easily!
+
+Meanwhile, you can also manually create it:
+1. Create a folder called "whatsapp-transcribe"
+2. Inside it, create a file called "SKILL.md" 
+3. Copy the content from: C:\Users\10064957\My Drive\GDVault\MarthaVault\.claude\skills\whatsapp-transcribe\SKILL.md
+4. ZIP the folder (right-click → Send to → Compressed folder)
+5. Upload the ZIP in Claude Desktop Settings → Capabilities → Skills
