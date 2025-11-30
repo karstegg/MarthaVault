@@ -1,0 +1,36 @@
+✓ Connected to Outlook
+
+Searching for folders matching 'Epiroc'...
+✓ Found: Inbox\OEMs\Epiroc
+
+Extracting emails from 1 matching folder(s)...
+
+Extracting 100 emails from Inbox\OEMs\Epiroc (last 1 days)...
+
+Found 4 emails:
+
+From: Phillip Moller
+Subject: Epiroc weekly report
+ReceivedTime: 2025-11-24 07:09:00.731000
+Read: True
+Attachments: 2
+
+From: Sibonele Moyo
+Subject: RE: Aard CAS L9 Machines
+ReceivedTime: 2025-11-24 07:28:53.438000
+Read: False
+Attachments: 2
+
+From: Kishore Jeebodh
+Subject: RE: Remote Chargers
+ReceivedTime: 2025-11-24 08:36:38.453000
+Read: True
+Attachments: 0
+
+From: Kishore Jeebodh
+Subject: Accepted: Weekly BEV Review Meeting
+ReceivedTime: 2025-11-24 09:32:30.298000
+Read: True
+Attachments: 0
+
+✓ Saved to outlook_emails.json

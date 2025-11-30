@@ -1,0 +1,849 @@
+[
+  {
+    "Subject": "Environmental Management Forum ",
+    "Start": "2025-12-16 14:00:00",
+    "End": "2025-12-16 15:30:00",
+    "Location": "BlackRock Sherq Conference Room",
+    "Organizer": "Chrystal Vries"
+  },
+  {
+    "Subject": "Project Steerco",
+    "Start": "2025-12-04 10:00:00",
+    "End": "2025-12-04 12:00:00",
+    "Location": "Admin Conference Room (30 seats); MR-MBR-MAIN",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "Project Steerco",
+    "Start": "2025-12-25 10:00:00",
+    "End": "2025-12-25 12:00:00",
+    "Location": "Admin Conference Room (30 seats); MR-MBR-MAIN",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "Project Steerco",
+    "Start": "2025-11-27 10:00:00",
+    "End": "2025-11-27 12:00:00",
+    "Location": "Admin Conference Room (30 seats); MR-MBR-MAIN",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "Emergency Preparedness - Monthly Meeting",
+    "Start": "2025-11-28 10:00:00",
+    "End": "2025-11-28 11:00:00",
+    "Location": "Emergency Control Room",
+    "Organizer": "Jacques Farmer"
+  },
+  {
+    "Subject": "Emergency Preparedness - Monthly Meeting",
+    "Start": "2025-12-26 10:00:00",
+    "End": "2025-12-26 11:00:00",
+    "Location": "Emergency Control Room",
+    "Organizer": "Jacques Farmer"
+  },
+  {
+    "Subject": "Emergency Preparedness - Monthly Meeting",
+    "Start": "2026-01-23 10:00:00",
+    "End": "2026-01-23 11:00:00",
+    "Location": "Emergency Control Room",
+    "Organizer": "Jacques Farmer"
+  },
+  {
+    "Subject": "Monthly Engagement Meeting: Warehousing & Procurement Performance",
+    "Start": "2025-12-02 14:00:00",
+    "End": "2025-12-02 15:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Lourens van Heerden"
+  },
+  {
+    "Subject": "Monthly Engagement Meeting: Warehousing & Procurement Performance",
+    "Start": "2026-01-06 14:00:00",
+    "End": "2026-01-06 15:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Lourens van Heerden"
+  },
+  {
+    "Subject": "N2 Operational Excellence ATR",
+    "Start": "2025-12-17 08:00:00",
+    "End": "2025-12-17 11:00:00",
+    "Location": "Admin Conference Room (30 seats)",
+    "Organizer": "Michael Olien"
+  },
+  {
+    "Subject": "N2 Operational Excellence ATR",
+    "Start": "2026-01-21 08:00:00",
+    "End": "2026-01-21 11:00:00",
+    "Location": "Admin Conference Room (30 seats)",
+    "Organizer": "Michael Olien"
+  },
+  {
+    "Subject": "Gloria Operational Excellence ATR",
+    "Start": "2025-12-17 11:00:00",
+    "End": "2025-12-17 13:00:00",
+    "Location": "Admin Conference Room (30 seats)",
+    "Organizer": "Michael Olien"
+  },
+  {
+    "Subject": "Gloria Operational Excellence ATR",
+    "Start": "2026-01-21 11:00:00",
+    "End": "2026-01-21 13:00:00",
+    "Location": "Admin Conference Room (30 seats)",
+    "Organizer": "Michael Olien"
+  },
+  {
+    "Subject": "N3 Operational Excellence ATR",
+    "Start": "2025-12-17 13:00:00",
+    "End": "2025-12-17 15:00:00",
+    "Location": "Admin Conference Room (30 seats)",
+    "Organizer": "Michael Olien"
+  },
+  {
+    "Subject": "N3 Operational Excellence ATR",
+    "Start": "2026-01-21 13:00:00",
+    "End": "2026-01-21 15:00:00",
+    "Location": "Admin Conference Room (30 seats)",
+    "Organizer": "Michael Olien"
+  },
+  {
+    "Subject": "Adjudication Meeting",
+    "Start": "2025-12-08 10:00:00",
+    "End": "2025-12-08 13:00:00",
+    "Location": "SHERQ Boardroom",
+    "Organizer": "Cornette Erasmus"
+  },
+  {
+    "Subject": "Remedial Action Tracking System (RATS) Meeting ",
+    "Start": "2025-12-04 14:00:00",
+    "End": "2025-12-04 15:00:00",
+    "Location": "Admin Conference Room (30 seats)",
+    "Organizer": "Rudi Opperman"
+  },
+  {
+    "Subject": "S2 & BEV Optimisation - Weekly Progress",
+    "Start": "2025-11-28 08:00:00",
+    "End": "2025-11-28 09:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Cobus Lerm"
+  },
+  {
+    "Subject": "S2 & BEV Optimisation - Weekly Progress",
+    "Start": "2025-12-05 08:00:00",
+    "End": "2025-12-05 09:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Cobus Lerm"
+  },
+  {
+    "Subject": "S2 & BEV Optimisation - Weekly Progress",
+    "Start": "2025-12-12 08:00:00",
+    "End": "2025-12-12 09:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Cobus Lerm"
+  },
+  {
+    "Subject": "S2 & BEV Optimisation - Weekly Progress",
+    "Start": "2025-12-19 08:00:00",
+    "End": "2025-12-19 09:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Cobus Lerm"
+  },
+  {
+    "Subject": "S2 & BEV Optimisation - Weekly Progress",
+    "Start": "2025-12-26 08:00:00",
+    "End": "2025-12-26 09:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Cobus Lerm"
+  },
+  {
+    "Subject": "S2 & BEV Optimisation - Weekly Progress",
+    "Start": "2026-01-02 08:00:00",
+    "End": "2026-01-02 09:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Cobus Lerm"
+  },
+  {
+    "Subject": "S2 & BEV Optimisation - Weekly Progress",
+    "Start": "2026-01-09 08:00:00",
+    "End": "2026-01-09 09:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Cobus Lerm"
+  },
+  {
+    "Subject": "S2 & BEV Optimisation - Weekly Progress",
+    "Start": "2026-01-16 08:00:00",
+    "End": "2026-01-16 09:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Cobus Lerm"
+  },
+  {
+    "Subject": "S2 & BEV Optimisation - Weekly Progress",
+    "Start": "2026-01-23 08:00:00",
+    "End": "2026-01-23 09:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Cobus Lerm"
+  },
+  {
+    "Subject": "CRITICAL: WhatsApp Bridge Re-authentication Required",
+    "Start": "2025-12-01 19:08:00",
+    "End": "2025-12-01 20:08:00",
+    "Location": "",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "CRITICAL: WhatsApp Bridge Re-authentication Required",
+    "Start": "2025-12-22 19:08:00",
+    "End": "2025-12-22 20:08:00",
+    "Location": "",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "CRITICAL: WhatsApp Bridge Re-authentication Required",
+    "Start": "2026-01-12 19:08:00",
+    "End": "2026-01-12 20:08:00",
+    "Location": "",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "CAS (CPS) project Steerco meeting",
+    "Start": "2025-11-27 07:45:00",
+    "End": "2025-11-27 08:30:00",
+    "Location": "BlackRock Sherq Conference Room",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "CAS (CPS) project Steerco meeting",
+    "Start": "2025-12-04 07:45:00",
+    "End": "2025-12-04 08:30:00",
+    "Location": "BlackRock Sherq Conference Room",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "CAS (CPS) project Steerco meeting",
+    "Start": "2025-12-11 07:45:00",
+    "End": "2025-12-11 08:30:00",
+    "Location": "BlackRock Sherq Conference Room",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "CAS (CPS) project Steerco meeting",
+    "Start": "2025-12-18 07:45:00",
+    "End": "2025-12-18 08:30:00",
+    "Location": "BlackRock Sherq Conference Room",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "Ops & Engineering alignment (Black Rock)- Central Procurement",
+    "Start": "2025-11-26 15:00:00",
+    "End": "2025-11-26 15:45:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "Ops & Engineering alignment (Black Rock)- Central Procurement",
+    "Start": "2025-12-10 15:00:00",
+    "End": "2025-12-10 15:45:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "Ops & Engineering alignment (Black Rock)- Central Procurement",
+    "Start": "2025-12-24 15:00:00",
+    "End": "2025-12-24 15:45:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "Ops & Engineering alignment (Black Rock)- Central Procurement",
+    "Start": "2026-01-07 15:00:00",
+    "End": "2026-01-07 15:45:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "Ops & Engineering alignment (Black Rock)- Central Procurement",
+    "Start": "2026-01-21 15:00:00",
+    "End": "2026-01-21 15:45:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "CAPITAL PROJECTS UPDATE GROUP 02 MEETING 03",
+    "Start": "2025-12-15 11:30:00",
+    "End": "2025-12-15 13:30:00",
+    "Location": "BLACK ROCK VILLAGE - PROJECT OFFICES",
+    "Organizer": "Khumo Gaetsewe"
+  },
+  {
+    "Subject": "Graben Infrastructure Upgrade Project: Logistics Alignment Meeting",
+    "Start": "2025-12-03 14:00:00",
+    "End": "2025-12-03 15:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Azena le Roux"
+  },
+  {
+    "Subject": "Graben Infrastructure Upgrade Project: Logistics Alignment Meeting",
+    "Start": "2025-12-10 14:00:00",
+    "End": "2025-12-10 15:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Azena le Roux"
+  },
+  {
+    "Subject": "Cruiser Cas L9 activation ( Planning - Alternators , split charging and CAS L9 Activation, onsite support  ) ",
+    "Start": "2025-11-25 10:30:00",
+    "End": "2025-11-25 11:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Cruiser Cas L9 activation ( Planning - Alternators , split charging and CAS L9 Activation, onsite support  ) ",
+    "Start": "2025-12-02 10:30:00",
+    "End": "2025-12-02 11:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Cruiser Cas L9 activation ( Planning - Alternators , split charging and CAS L9 Activation, onsite support  ) ",
+    "Start": "2025-12-09 10:30:00",
+    "End": "2025-12-09 11:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Cruiser Cas L9 activation ( Planning - Alternators , split charging and CAS L9 Activation, onsite support  ) ",
+    "Start": "2025-12-16 10:30:00",
+    "End": "2025-12-16 11:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Cruiser Cas L9 activation ( Planning - Alternators , split charging and CAS L9 Activation, onsite support  ) ",
+    "Start": "2025-12-23 10:30:00",
+    "End": "2025-12-23 11:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Cruiser Cas L9 activation ( Planning - Alternators , split charging and CAS L9 Activation, onsite support  ) ",
+    "Start": "2025-12-30 10:30:00",
+    "End": "2025-12-30 11:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Fermel Cas L9 activation ( Passport 360 Compliance and Installation Upgrade planning CAS L9 Activation onsite support  ) ",
+    "Start": "2025-11-25 11:00:00",
+    "End": "2025-11-25 11:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Fermel Cas L9 activation ( Passport 360 Compliance and Installation Upgrade planning CAS L9 Activation onsite support  ) ",
+    "Start": "2025-12-02 11:00:00",
+    "End": "2025-12-02 11:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Fermel Cas L9 activation ( Passport 360 Compliance and Installation Upgrade planning CAS L9 Activation onsite support  ) ",
+    "Start": "2025-12-09 11:00:00",
+    "End": "2025-12-09 11:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Fermel Cas L9 activation ( Passport 360 Compliance and Installation Upgrade planning CAS L9 Activation onsite support  ) ",
+    "Start": "2025-12-16 11:00:00",
+    "End": "2025-12-16 11:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Fermel Cas L9 activation ( Passport 360 Compliance and Installation Upgrade planning CAS L9 Activation onsite support  ) ",
+    "Start": "2025-12-23 11:00:00",
+    "End": "2025-12-23 11:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Fermel Cas L9 activation ( Passport 360 Compliance and Installation Upgrade planning CAS L9 Activation onsite support  ) ",
+    "Start": "2025-12-30 11:00:00",
+    "End": "2025-12-30 11:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Manitou Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation CAS L9 Activation onsite support  ) Manitou , Nerospec , Strata , BRMO",
+    "Start": "2025-11-25 11:30:00",
+    "End": "2025-11-25 12:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Manitou Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation CAS L9 Activation onsite support  ) Manitou , Nerospec , Strata , BRMO",
+    "Start": "2025-12-02 11:30:00",
+    "End": "2025-12-02 12:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Manitou Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation CAS L9 Activation onsite support  ) Manitou , Nerospec , Strata , BRMO",
+    "Start": "2025-12-09 11:30:00",
+    "End": "2025-12-09 12:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Manitou Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation CAS L9 Activation onsite support  ) Manitou , Nerospec , Strata , BRMO",
+    "Start": "2025-12-16 11:30:00",
+    "End": "2025-12-16 12:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Manitou Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation CAS L9 Activation onsite support  ) Manitou , Nerospec , Strata , BRMO",
+    "Start": "2025-12-23 11:30:00",
+    "End": "2025-12-23 12:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Manitou Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation CAS L9 Activation onsite support  ) Manitou , Nerospec , Strata , BRMO",
+    "Start": "2025-12-30 11:30:00",
+    "End": "2025-12-30 12:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Aard Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation, onsite support   )",
+    "Start": "2025-11-25 12:00:00",
+    "End": "2025-11-25 12:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Aard Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation, onsite support   )",
+    "Start": "2025-12-02 12:00:00",
+    "End": "2025-12-02 12:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Aard Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation, onsite support   )",
+    "Start": "2025-12-09 12:00:00",
+    "End": "2025-12-09 12:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Aard Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation, onsite support   )",
+    "Start": "2025-12-16 12:00:00",
+    "End": "2025-12-16 12:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Aard Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation, onsite support   )",
+    "Start": "2025-12-23 12:00:00",
+    "End": "2025-12-23 12:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Aard Cas L9 activation ( Planning  - Repairs , upgrade and CAS L9 Activation, onsite support   )",
+    "Start": "2025-12-30 12:00:00",
+    "End": "2025-12-30 12:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Bell – Cas L9 Activation ( Planning  - Upgrade and CAS L9 Activation, onsite support   )",
+    "Start": "2025-11-25 12:30:00",
+    "End": "2025-11-25 13:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Bell – Cas L9 Activation ( Planning  - Upgrade and CAS L9 Activation, onsite support   )",
+    "Start": "2025-12-02 12:30:00",
+    "End": "2025-12-02 13:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Bell – Cas L9 Activation ( Planning  - Upgrade and CAS L9 Activation, onsite support   )",
+    "Start": "2025-12-09 12:30:00",
+    "End": "2025-12-09 13:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Bell – Cas L9 Activation ( Planning  - Upgrade and CAS L9 Activation, onsite support   )",
+    "Start": "2025-12-16 12:30:00",
+    "End": "2025-12-16 13:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Bell – Cas L9 Activation ( Planning  - Upgrade and CAS L9 Activation, onsite support   )",
+    "Start": "2025-12-23 12:30:00",
+    "End": "2025-12-23 13:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Bell – Cas L9 Activation ( Planning  - Upgrade and CAS L9 Activation, onsite support   )",
+    "Start": "2025-12-30 12:30:00",
+    "End": "2025-12-30 13:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "BWE/CAT Cas L9 Activation ( Surface and Underground Outstanding Equipment CAS L9 Activation, onsite support )  ( Planning  - Upgrade and CAS L9 Activation ) ",
+    "Start": "2025-11-25 13:00:00",
+    "End": "2025-11-25 13:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "BWE/CAT Cas L9 Activation ( Surface and Underground Outstanding Equipment CAS L9 Activation, onsite support )  ( Planning  - Upgrade and CAS L9 Activation ) ",
+    "Start": "2025-12-02 13:00:00",
+    "End": "2025-12-02 13:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "BWE/CAT Cas L9 Activation ( Surface and Underground Outstanding Equipment CAS L9 Activation, onsite support )  ( Planning  - Upgrade and CAS L9 Activation ) ",
+    "Start": "2025-12-09 13:00:00",
+    "End": "2025-12-09 13:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "BWE/CAT Cas L9 Activation ( Surface and Underground Outstanding Equipment CAS L9 Activation, onsite support )  ( Planning  - Upgrade and CAS L9 Activation ) ",
+    "Start": "2025-12-16 13:00:00",
+    "End": "2025-12-16 13:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "BWE/CAT Cas L9 Activation ( Surface and Underground Outstanding Equipment CAS L9 Activation, onsite support )  ( Planning  - Upgrade and CAS L9 Activation ) ",
+    "Start": "2025-12-23 13:00:00",
+    "End": "2025-12-23 13:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "BWE/CAT Cas L9 Activation ( Surface and Underground Outstanding Equipment CAS L9 Activation, onsite support )  ( Planning  - Upgrade and CAS L9 Activation ) ",
+    "Start": "2025-12-30 13:00:00",
+    "End": "2025-12-30 13:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Epiroc Onsite Support",
+    "Start": "2025-11-25 13:30:00",
+    "End": "2025-11-25 14:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Epiroc Onsite Support",
+    "Start": "2025-12-02 13:30:00",
+    "End": "2025-12-02 14:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Epiroc Onsite Support",
+    "Start": "2025-12-09 13:30:00",
+    "End": "2025-12-09 14:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Epiroc Onsite Support",
+    "Start": "2025-12-16 13:30:00",
+    "End": "2025-12-16 14:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Epiroc Onsite Support",
+    "Start": "2025-12-23 13:30:00",
+    "End": "2025-12-23 14:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Epiroc Onsite Support",
+    "Start": "2025-12-30 13:30:00",
+    "End": "2025-12-30 14:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Hendrik van Niekerk"
+  },
+  {
+    "Subject": "Monthly Engineering Meeting",
+    "Start": "2025-12-10 12:00:00",
+    "End": "2025-12-10 15:00:00",
+    "Location": "Black Rock Project Office (Roelie's offices)",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "Monthly Engineering Meeting",
+    "Start": "2025-12-11 13:00:00",
+    "End": "2025-12-11 16:00:00",
+    "Location": "Black Rock Project Office (Roelie's offices)",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "Monthly Engineering Meeting",
+    "Start": "2026-01-08 13:00:00",
+    "End": "2026-01-08 16:00:00",
+    "Location": "Black Rock Project Office (Roelie's offices)",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "Standards Meeting",
+    "Start": "2025-12-11 13:30:00",
+    "End": "2025-12-11 15:00:00",
+    "Location": "Black Rock Sherq Conference Room",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "Standards Meeting",
+    "Start": "2026-01-08 13:30:00",
+    "End": "2026-01-08 15:00:00",
+    "Location": "Black Rock Sherq Conference Room",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "Monthly Capital Meeting",
+    "Start": "2025-12-12 09:00:00",
+    "End": "2025-12-12 11:00:00",
+    "Location": "Admin Conference Room (30 seats)",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "Monthly Capital Meeting",
+    "Start": "2026-01-23 09:00:00",
+    "End": "2026-01-23 11:00:00",
+    "Location": "Admin Conference Room (30 seats)",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "Monthly Capital Meeting",
+    "Start": "2025-12-16 14:30:00",
+    "End": "2025-12-16 16:00:00",
+    "Location": "Admin Conference Room (30 seats)",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "Monthly Capital Meeting",
+    "Start": "2026-01-20 14:30:00",
+    "End": "2026-01-20 16:00:00",
+    "Location": "Admin Conference Room (30 seats)",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "Weekly BEV Review Meeting",
+    "Start": "2025-12-01 11:00:00",
+    "End": "2025-12-01 12:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "Weekly BEV Review Meeting",
+    "Start": "2025-12-08 11:00:00",
+    "End": "2025-12-08 12:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "Weekly BEV Review Meeting",
+    "Start": "2025-12-15 11:00:00",
+    "End": "2025-12-15 12:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "Weekly BEV Review Meeting",
+    "Start": "2025-12-22 11:00:00",
+    "End": "2025-12-22 12:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "Weekly BEV Review Meeting",
+    "Start": "2025-12-29 11:00:00",
+    "End": "2025-12-29 12:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "Weekly BEV Review Meeting",
+    "Start": "2026-01-05 11:00:00",
+    "End": "2026-01-05 12:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "Weekly BEV Review Meeting",
+    "Start": "2026-01-12 11:00:00",
+    "End": "2026-01-12 12:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "Weekly BEV Review Meeting",
+    "Start": "2026-01-19 11:00:00",
+    "End": "2026-01-19 12:00:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "Weekly UG Engineering Alignment Meeting",
+    "Start": "2025-12-01 12:00:00",
+    "End": "2025-12-01 13:00:00",
+    "Location": "Jacques' Office",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "Weekly UG Engineering Alignment Meeting",
+    "Start": "2025-12-08 12:00:00",
+    "End": "2025-12-08 13:00:00",
+    "Location": "Jacques' Office",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "Weekly UG Engineering Alignment Meeting",
+    "Start": "2025-12-15 12:00:00",
+    "End": "2025-12-15 13:00:00",
+    "Location": "Jacques' Office",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "Weekly UG Engineering Alignment Meeting",
+    "Start": "2025-12-22 12:00:00",
+    "End": "2025-12-22 13:00:00",
+    "Location": "Jacques' Office",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "Weekly UG Engineering Alignment Meeting",
+    "Start": "2025-12-29 12:00:00",
+    "End": "2025-12-29 13:00:00",
+    "Location": "Jacques' Office",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "Weekly UG Engineering Alignment Meeting",
+    "Start": "2026-01-05 12:00:00",
+    "End": "2026-01-05 13:00:00",
+    "Location": "Jacques' Office",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "Weekly UG Engineering Alignment Meeting",
+    "Start": "2026-01-12 12:00:00",
+    "End": "2026-01-12 13:00:00",
+    "Location": "Jacques' Office",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "Weekly UG Engineering Alignment Meeting",
+    "Start": "2026-01-19 12:00:00",
+    "End": "2026-01-19 13:00:00",
+    "Location": "Jacques' Office",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "ARM Microsoft Copilot Chat Tips Series : Wrap up the year with Festive Efficiency",
+    "Start": "2025-11-25 11:00:00",
+    "End": "2025-11-25 11:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Nabeel Randeree"
+  },
+  {
+    "Subject": "Environmental Forum ",
+    "Start": "2025-11-25 14:00:00",
+    "End": "2025-11-25 15:00:00",
+    "Location": "SHERQ Boardroom ",
+    "Organizer": "Thami Mbonani"
+  },
+  {
+    "Subject": "Sentis Safety Climate Survey (Group 3) ",
+    "Start": "2025-11-26 10:45:00",
+    "End": "2025-11-26 11:30:00",
+    "Location": "Mokala Lodge Conference Room",
+    "Organizer": "Corne Marais"
+  },
+  {
+    "Subject": "Normet Discussion",
+    "Start": "2025-11-26 14:00:00",
+    "End": "2025-11-26 15:00:00",
+    "Location": "MR-MBR-EXEC",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "Diary Block:  Urgent Broncoh Engineering Safety Presentation",
+    "Start": "2025-11-27 07:00:00",
+    "End": "2025-11-27 08:00:00",
+    "Location": "Admin Conference Room (30 seats)",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "Microsoft Copilot Chat Tips Series : Wrap up the year with Festive Efficiency",
+    "Start": "2025-11-27 11:00:00",
+    "End": "2025-11-27 11:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Nabeel Randeree"
+  },
+  {
+    "Subject": "Junior Engineers",
+    "Start": "2025-11-28 09:00:00",
+    "End": "2025-11-28 11:00:00",
+    "Location": "BlackRock Sherq Conference Room",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "Junior Engineers",
+    "Start": "2026-01-02 09:00:00",
+    "End": "2026-01-02 11:00:00",
+    "Location": "BlackRock Sherq Conference Room",
+    "Organizer": "Gregory Karsten"
+  },
+  {
+    "Subject": "Interview Continuation: General Engineering Supervisor [In-person]",
+    "Start": "2025-12-01 09:00:00",
+    "End": "2025-12-01 10:00:00",
+    "Location": "Interview Facility (Next to Clinic)",
+    "Organizer": "Aswhin Hender"
+  },
+  {
+    "Subject": "HD0054 Fire Incident Section 54 Instruction, outstanding actions",
+    "Start": "2025-12-01 14:00:00",
+    "End": "2025-12-01 15:30:00",
+    "Location": "Nchwaning 3 Collaboration Room",
+    "Organizer": "Sello Sease"
+  },
+  {
+    "Subject": "Microsoft Copilot Chat Tips Series : Wrap up the year with Festive Efficiency",
+    "Start": "2025-12-02 11:00:00",
+    "End": "2025-12-02 11:30:00",
+    "Location": "Microsoft Teams Meeting",
+    "Organizer": "Nabeel Randeree"
+  },
+  {
+    "Subject": "Capital Presentation",
+    "Start": "2025-12-03 15:00:00",
+    "End": "2025-12-03 16:00:00",
+    "Location": "",
+    "Organizer": "Marina Schoeman"
+  },
+  {
+    "Subject": "Adjudication Meeting",
+    "Start": "2026-01-12 10:00:00",
+    "End": "2026-01-12 13:00:00",
+    "Location": "SHERQ Boardroom",
+    "Organizer": "Cornette Erasmus"
+  }
+]

@@ -1,0 +1,38 @@
+✓ Connected to Outlook
+
+Extracting calendar events from Monday 2025-11-10 to 2025-11-18 (limit: 20)...
+  Checking 1 calendar(s)...
+
+Found 20 events:
+
+Subject: Weekly Overtime Meeting
+Start: 2025-11-13 07:00:00
+End: 2025-11-13 08:00:00
+Location: Black Rock Sherq Conference Room
+Organizer: Marina Schoeman
+
+Subject: Emergency Preparedness - Monthly Meeting
+Start: 2025-11-10 14:00:00
+End: 2025-11-10 15:00:00
+Location: Emergency Control Room
+Organizer: Jacques Farmer
+
+Subject: S2 & BEV Optimisation - Weekly Progress
+Start: 2025-11-14 08:00:00
+End: 2025-11-14 09:00:00
+Location: Microsoft Teams Meeting
+Organizer: Cobus Lerm
+
+Subject: CRITICAL: WhatsApp Bridge Re-authentication Required
+Start: 2025-11-10 19:08:00
+End: 2025-11-10 20:08:00
+Location: 
+Organizer: Gregory Karsten
+
+Subject: CAS (CPS) project Steerco meeting
+Start: 2025-11-13 07:45:00
+End: 2025-11-13 08:30:00
+Location: BlackRock Sherq Conference Room
+Organizer: Marina Schoeman
+
+✓ Saved to outlook_calendar.json

@@ -1,0 +1,55 @@
+{
+  "extraction_date": "2025-11-10T12:41:51.821763",
+  "week": "Nov 10-16, 2025",
+  "total_events": 6,
+  "events": [
+    {
+      "Subject": "Catch up / General discussions",
+      "Start": "2025-11-10 10:00:00+00:00",
+      "End": "2025-11-10 11:00:00+00:00",
+      "Location": "",
+      "Organizer": "Pieter Volschenk",
+      "IsRecurring": false
+    },
+    {
+      "Subject": "Test event",
+      "Start": "2025-11-12 07:00:00+00:00",
+      "End": "2025-11-12 07:30:00+00:00",
+      "Location": "",
+      "Organizer": "Gregory Karsten",
+      "IsRecurring": false
+    },
+    {
+      "Subject": "Interview - Junior Projects Engineer (Fixed Term)  ",
+      "Start": "2025-11-12 09:00:00+00:00",
+      "End": "2025-11-12 15:00:00+00:00",
+      "Location": "Teams Meeting",
+      "Organizer": "Kgaugelo Sebolai",
+      "IsRecurring": false
+    },
+    {
+      "Subject": "Project Steerco",
+      "Start": "2025-11-13 10:00:00+00:00",
+      "End": "2025-11-13 11:00:00+00:00",
+      "Location": "Microsoft Teams Meeting",
+      "Organizer": "Marina Schoeman",
+      "IsRecurring": false
+    },
+    {
+      "Subject": "Monthly Engineering Meeting",
+      "Start": "2025-11-13 13:00:00+00:00",
+      "End": "2025-11-13 16:00:00+00:00",
+      "Location": "Black Rock Project Office (Roelie's offices)",
+      "Organizer": "Marina Schoeman",
+      "IsRecurring": true
+    },
+    {
+      "Subject": "Standards Meeting",
+      "Start": "2025-11-13 13:30:00+00:00",
+      "End": "2025-11-13 15:00:00+00:00",
+      "Location": "Black Rock Sherq Conference Room",
+      "Organizer": "Marina Schoeman",
+      "IsRecurring": true
+    }
+  ]
+}

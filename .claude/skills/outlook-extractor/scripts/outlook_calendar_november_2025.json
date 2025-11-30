@@ -1,0 +1,112 @@
+{
+  "extraction_date": "2025-11-10T11:50:22.869857",
+  "month": "November 2025",
+  "total_events": 15,
+  "events": [
+    {
+      "Subject": "Solrock Feedback Meeting weekend work 31 Oct - 02 Nov 2025",
+      "Start": "2025-11-03 08:00:00+00:00",
+      "End": "2025-11-03 09:00:00+00:00",
+      "Location": "Nch II War Room",
+      "Organizer": "jennyk"
+    },
+    {
+      "Subject": "S2 & BEV SIC Visualisation - Workshop",
+      "Start": "2025-11-06 08:30:00+00:00",
+      "End": "2025-11-06 10:00:00+00:00",
+      "Location": "Admin Conference Room (30 seats)",
+      "Organizer": "Cobus Lerm"
+    },
+    {
+      "Subject": "Copilot Tips in Twenty Series #3",
+      "Start": "2025-11-06 11:00:00+00:00",
+      "End": "2025-11-06 11:30:00+00:00",
+      "Location": "Microsoft Teams Meeting",
+      "Organizer": "Thania Behrens"
+    },
+    {
+      "Subject": "S2 & BEV Optimisation - Progress feedback & next steps",
+      "Start": "2025-11-06 14:30:00+00:00",
+      "End": "2025-11-06 15:45:00+00:00",
+      "Location": "Supply Chain BR",
+      "Organizer": "Cobus Lerm"
+    },
+    {
+      "Subject": "JE Shortlisting",
+      "Start": "2025-11-07 09:00:00+00:00",
+      "End": "2025-11-07 10:00:00+00:00",
+      "Location": "",
+      "Organizer": "Gregory Karsten"
+    },
+    {
+      "Subject": "Catch up / General discussions",
+      "Start": "2025-11-10 10:00:00+00:00",
+      "End": "2025-11-10 11:00:00+00:00",
+      "Location": "",
+      "Organizer": "Pieter Volschenk"
+    },
+    {
+      "Subject": "Interview - Junior Projects Engineer (Fixed Term)  ",
+      "Start": "2025-11-12 09:00:00+00:00",
+      "End": "2025-11-12 15:00:00+00:00",
+      "Location": "Teams Meeting",
+      "Organizer": "Kgaugelo Sebolai"
+    },
+    {
+      "Subject": "Project Steerco",
+      "Start": "2025-11-13 10:00:00+00:00",
+      "End": "2025-11-13 11:00:00+00:00",
+      "Location": "Microsoft Teams Meeting",
+      "Organizer": "Marina Schoeman"
+    },
+    {
+      "Subject": "Monthly Engineering Meeting",
+      "Start": "2025-11-13 13:00:00+00:00",
+      "End": "2025-11-13 16:00:00+00:00",
+      "Location": "Black Rock Project Office (Roelie's offices)",
+      "Organizer": "Marina Schoeman"
+    },
+    {
+      "Subject": "Standards Meeting",
+      "Start": "2025-11-13 13:30:00+00:00",
+      "End": "2025-11-13 15:00:00+00:00",
+      "Location": "Black Rock Sherq Conference Room",
+      "Organizer": "Marina Schoeman"
+    },
+    {
+      "Subject": "Monthly Capital Meeting",
+      "Start": "2025-11-18 14:30:00+00:00",
+      "End": "2025-11-18 16:00:00+00:00",
+      "Location": "Admin Conference Room (30 seats)",
+      "Organizer": "Marina Schoeman"
+    },
+    {
+      "Subject": "Nchwaning No.3 Shaft Planning Meeting December 2025 and January 2026",
+      "Start": "2025-11-20 09:00:00+00:00",
+      "End": "2025-11-20 12:00:00+00:00",
+      "Location": "SHERQ Conference Room",
+      "Organizer": "Melissa Muller"
+    },
+    {
+      "Subject": "Normet discussion - Equipment requirements at BRMO",
+      "Start": "2025-11-26 14:00:00+00:00",
+      "End": "2025-11-26 15:00:00+00:00",
+      "Location": "BRMO",
+      "Organizer": "Sarel Mocke"
+    },
+    {
+      "Subject": "Nchwaning No.2 Shaft Planning Meeting-December 2025 and January 2026",
+      "Start": "2025-11-27 09:00:00+00:00",
+      "End": "2025-11-27 12:00:00+00:00",
+      "Location": "SHERQ Conference Room",
+      "Organizer": "Melissa Muller"
+    },
+    {
+      "Subject": "Gloria Shaft Planning Meeting-December 2025 and January 2026",
+      "Start": "2025-11-27 12:00:00+00:00",
+      "End": "2025-11-27 14:00:00+00:00",
+      "Location": "SHERQ Conference Room",
+      "Organizer": "Melissa Muller"
+    }
+  ]
+}
