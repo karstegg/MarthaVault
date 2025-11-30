@@ -1,5 +1,5 @@
 ---
-name: WhatsApp Voice Transcribe
+name: whatsapp-voice-transcribe
 description: Download and transcribe WhatsApp voice notes with mining site name corrections
 ---
 
