@@ -77,6 +77,7 @@ Common mining site mis-transcriptions to correct:
 | Ubuntu | Update | Software context |
 | Glory | Gloria | Mine site |
 | N2/NCH2 variations | Nchwaning 2 | Letter mix-ups |
+| Magalbin | Mugg & Bean | Coffee shop chain |
 
 ## Example Usage
 
