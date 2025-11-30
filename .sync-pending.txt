@@ -1,2 +1,1 @@
-﻿M	people/UG Eng Management Group.md
-M	tasks/2025-11-25 ΓÇô Remaining Tasks Board.md
+﻿A	people/Karsten, Gregory.md
