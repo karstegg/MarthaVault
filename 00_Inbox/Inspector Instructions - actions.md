@@ -1,0 +1,2 @@
+- As part of risk assessment to compare our risks to the cited examples.
+- Do we have the same risk re the pipes in the shaft. What pipes do we have in the shaft. what is the risk of pipelines .
