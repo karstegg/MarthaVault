@@ -12,4 +12,6 @@ Action plan to be  drawn
 
 Come together on Friday. Action list - Training syllabus and service providers to be used.
 
+Michael also to be invited
+
 
