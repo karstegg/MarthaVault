@@ -1,0 +1,24 @@
+✓ Connected to Outlook
+
+Searching for folders matching 'Production'...
+✓ Found: Inbox\Production
+
+Extracting emails from 1 matching folder(s)...
+
+Extracting 100 emails from Inbox\Production (last 14 days)...
+
+Found 2 emails:
+
+From: Pieter Swanepoel
+Subject: RE: Lightning system
+ReceivedTime: 2025-11-18 16:23:25.387000
+Read: True
+Attachments: 0
+
+From: Pieter Swanepoel
+Subject: RE: Crime Incident Report CB. 09.11.2025 - Possession of Contraband ( 2-Pin Plug Adaptor)
+ReceivedTime: 2025-11-26 09:37:12.641000
+Read: True
+Attachments: 3
+
+✓ Saved to outlook_emails.json

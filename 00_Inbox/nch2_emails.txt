@@ -1,0 +1,42 @@
+✓ Connected to Outlook
+
+Searching for folders matching 'NCH2'...
+✓ Found: Inbox\Production\NCH2
+
+Extracting emails from 1 matching folder(s)...
+
+Extracting 50 emails from Inbox\Production\NCH2 (last 7 days)...
+
+Found 28 emails:
+
+From: Sikelela Nzuza
+Subject: FW: Belt info 
+ReceivedTime: 2025-11-25 15:35:36.531000
+Read: False
+Attachments: 1
+
+From: Sikelela Nzuza
+Subject: Accepted: End-of year shutdown planning
+ReceivedTime: 2025-11-25 17:18:27.316000
+Read: False
+Attachments: 0
+
+From: Sikelela Nzuza
+Subject: RE: Shift Report was executed at 11/25/2025 5:15:05 AM
+ReceivedTime: 2025-11-26 06:55:17.705000
+Read: False
+Attachments: 3
+
+From: Sikelela Nzuza
+Subject: RE: Proposal for Strata System Inspections and L9 Upgrade Planning
+ReceivedTime: 2025-11-26 08:28:38.320000
+Read: False
+Attachments: 0
+
+From: Anton Koorzen
+Subject: RE: Belt info 
+ReceivedTime: 2025-11-26 09:59:26.830000
+Read: True
+Attachments: 1
+
+✓ Saved to outlook_emails.json

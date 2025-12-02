@@ -1,0 +1,37 @@
+✓ Connected to Outlook
+
+Extracting 100 emails from Inbox (last 7 days)...
+
+Found 100 emails:
+
+From: Belinda Lynch via Adobe Acrobat Sign
+Subject: Reminder: Waiting for you to sign DRA51-610-042-003-01-EX-C.2 Transformer Bays Reinforcement Details, for SBPM Approval
+ReceivedTime: 2025-11-25 14:54:27.567000
+Read: False
+Attachments: 0
+
+From: Belinda Lynch via Adobe Acrobat Sign
+Subject: Reminder: Waiting for you to sign DRA51-610-041-008-01-EX-C.2 Transformer Bays Concrete Details, for SBPM Approval
+ReceivedTime: 2025-11-25 15:00:30.576000
+Read: False
+Attachments: 0
+
+From: Jacques Breet
+Subject: FW: Shaft Drilling
+ReceivedTime: 2025-11-25 15:27:54.420000
+Read: True
+Attachments: 5
+
+From: Niresha Ramlugan
+Subject: RE: Site Visit
+ReceivedTime: 2025-11-25 16:04:09.726000
+Read: True
+Attachments: 1
+
+From: Niresha Ramlugan
+Subject: RE: Mine safety Training Academy
+ReceivedTime: 2025-11-25 16:04:29.084000
+Read: True
+Attachments: 2
+
+✓ Saved to outlook_emails.json
