@@ -26,7 +26,8 @@ permalink: 00-inbox/2025-11-24-email-tracking-week-actions
 
 **Expected Reply By:** Wednesday, 26 November 2025 (deadline is soft - may need follow-up after)
 
-**Reply Status:** ⏳ Awaiting response
+**Reply Status:** 🔄 IN PROGRESS
+**Update (Dec 10):** N2 pumping tests project started and in progress
 
 ---
 
@@ -43,7 +44,8 @@ permalink: 00-inbox/2025-11-24-email-tracking-week-actions
 
 **Expected Reply By:** Wednesday, 26 November 2025 (deadline is soft - may need follow-up after)
 
-**Reply Status:** ⏳ Awaiting response
+**Reply Status:** ⏳ WAITING ON INFO
+**Update (Dec 10):** Out of plan compiled. Awaiting information from Michael/Boet before proceeding
 
 ---
 
@@ -69,7 +71,8 @@ permalink: 00-inbox/2025-11-24-email-tracking-week-actions
 - [ ] Xavier Petersen (Shafts & Winders)
 - [ ] Michael Bester (Surface Plant)
 
-**Reply Status:** ⏳ Awaiting responses
+**Reply Status:** ✅ COMPLETE - SENT TO PROCUREMENT
+**Update (Dec 10):** Scope consolidated and sent to Central Procurement for tender
 
 ---
 
