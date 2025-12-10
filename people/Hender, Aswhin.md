@@ -16,7 +16,11 @@ General Engineering Supervisor (GES) candidate for Nchwaning 3 operations
 ## Activity
 - **Interview Date:** November 24, 2025 at 09:00
 - **Purpose:** Succession planning for N3 operations
-- **Status:** Interviewed - awaiting offer decision
+- **Interview Status:** ✅ Completed successfully
+- **Current Status:** Psychometric test scheduled
+- **Next Steps:**
+  - Psychometric testing in progress
+  - Appointment planned for next week (Dec 16-20, 2025)
 - **Follow-up:** Email sent Nov 25, 2025 regarding three fitter appointments at shaft
 
 ## Responsibilities (Pending Confirmation)

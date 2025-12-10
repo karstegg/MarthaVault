@@ -52,31 +52,37 @@ permalink: tasks/master-task-list
   - Context: Sat tip rock breaker down with cracked boom, spare boom from Gloria doesn't fit
   - Action: Move rock breaker from waste tip (lower priority) to Sat tips + find alternative boom solution
   - Stakeholder: [[Breet, Jacques]]
-- [ ] Survey current belt temperature sensor deployment across all sites #task #year/2025 #priority/high #temperature-monitoring #fire-safety 📅 2025-11-15
+- [x] Survey current belt temperature sensor deployment across all sites #task #year/2025 #priority/high #temperature-monitoring #fire-safety 📅 2025-11-15 ✅ 2025-12-10
   - Assigned to: [[Karsten, Gregory]]
   - Context: Emergency Preparedness Meeting action - determine sensor coverage before adding to areas that don't require them
   - Related: BEV fire safety programme, real-time monitoring systems
+  - Status: COMPLETED - Survey completed, capital application submitted
 - [x] Share HD54 fire investigation recommendations with Sfiso (WWW format) #task #year/2025 #priority/high #fire-safety ✅ 2025-11-05
 - [x] PDI procedure review with Gerhard - add section to inspect fire suppression systems #task #year/2025 #priority/high #fire-safety ✅ 2025-11-05
 - [x] UV128 CAS installation and testing (arranged with [[Sipho Dubazane]] and Jade at Gloria) #task #year/2025 #priority/medium #CAS #site/Gloria ✅ 2025-11-06
-- [x] Write N3 Electrical Foreman recruitment motivation #task #year/2025 #priority/critical #site/Nchwaning3 #recruitment 📅 2025-11-20 ✅ 2025-11-21
+- [/] N3 Electrical Foreman recruitment - Advert placement and candidate screening #task #year/2025 #priority/critical #site/Nchwaning3 #recruitment 📅 2025-12-20
   - Assigned to: [[Karsten, Gregory]]
-  - Status: COMPLETED - Sent to Jacques Nov 21, routing for approvals
+  - Previous: Motivation sent to Jacques Nov 21, routing approved
+  - Current Status: Adverts sent out, closing next week (week of Dec 16)
   - Note: Second UG Electrical Supervisor for N3 - motivation to increase complement to 2 foremen
-- [ ] Belt Splicing Scope Review - Get engineer input and consolidate site belt lists #task #year/2025 #priority/high #belt-splicing 📅 2025-11-28
+- [x] Belt Splicing Scope Review - Get engineer input and consolidate site belt lists #task #year/2025 #priority/high #belt-splicing 📅 2025-11-28 ✅ 2025-12-10
   - Assigned to: [[Karsten, Gregory]]
   - Requires input from: [[Dubazane, Sipho]], [[Nzuza, Sikelela]], [[Sease, Sello]]
   - Context: Multi-site conveyor belt splicing project scope definition (Jacques initiated Nov 20)
-- [ ] Confirm AARD technician access for Diane Mjurdan (Horace replacement) #task #year/2025 #priority/medium #access #handover 📅 2025-11-29
+  - Status: COMPLETED - Scope submitted to Central Procurement
+- [x] Confirm AARD technician access for Diane Mjurdan (Horace replacement) #task #year/2025 #priority/medium #access #handover 📅 2025-11-29 ✅ 2025-12-10
   - Assigned to: [[Karsten, Gregory]]
   - Stakeholders: Diane Mjurdan, Horace, Shawn Smith
   - Deadline: Before Horace leave (Nov 30)
-- [ ] Bearing temperature monitoring - Capital application and ordering process clarification #task #year/2025 #priority/high #capital #temperature-monitoring 📅 2025-11-24
+  - Status: COMPLETED - Access and handover notes completed
+- [/] Bearing temperature monitoring - Unplanned capital application #task #year/2025 #priority/high #capital #temperature-monitoring 📅 2025-12-15
   - Assigned to: [[Karsten, Gregory]]
-  - Action: Discuss with Jacques - clarify capital process and engineer ordering procedure
-- [ ] Leaky Feeder vendor onboarding - Push completion with Sello/Stef #task #year/2025 #priority/medium #leaky-feeder #vendor #site/Nchwaning3 📅 2025-11-28
+  - Action: Submit unplanned capital application for approval
+  - Status: IN PROGRESS - Application compiled, waiting for information from plant before submission
+- [/] Leaky Feeder vendor onboarding - Final touch-ups this weekend #task #year/2025 #priority/medium #leaky-feeder #vendor #site/Nchwaning3 📅 2025-12-14
   - Assigned to: [[Sease, Sello]], [[Lourens, Stef]]
   - Context: N3 infrastructure project completion
+  - Status: NEARLY COMPLETE - Sello's work basically finished, final touch-ups scheduled for weekend Dec 14-15
 - [ ] Arrange leave coverage Dec 14, 2025 - Jan 15, 2026 (33 days) #task #year/2025 #priority/critical #leave #coverage #handover 📅 2025-12-13
   - Assigned to: [[Karsten, Gregory]]
   - Coverage Period: 33 days over year-end, includes CAS L9 Dec 31 deadline
@@ -92,8 +98,9 @@ permalink: tasks/master-task-list
 - [x] SA Cranes 6-Month Contract Extension - VO routing complete #task #year/2025 #priority/medium #urgent #vendor ✅ 2025-11-18
   - Note: Contract extension routed to central procurement for approvals (Nov 17)
 - [x] Update Vehicle List with latest information #task #year/2025 #priority/medium #admin ✅ 2025-11-13
-- [ ] HD RT action plan for Gloria - Assigned to [[Dubazane, Sipho]] #task #year/2025 #priority/high #site/Gloria
+- [x] HD RT action plan for Gloria - Assigned to [[Dubazane, Sipho]] #task #year/2025 #priority/high #site/Gloria ✅ 2025-12-10
   - Note: Requested by [[Rudi Opperman]]
+  - Status: COMPLETED - Action plan submitted
 - [x] Create response protocol document for new belt rip detector #task #year/2025 #priority/medium #safety #documentation ✅ 2025-11-13
 - [x] Update BWE scope document - Assigned to [[Kotze, Johan]] #task #year/2025 #priority/medium #documentation ✅ 2025-11-13
 - [ ] BEV vent doors & fire doors - waiting on [[Mabona, Mduduzi]] for updated capital application #task #year/2025 #priority/high #BEV #capital
@@ -103,6 +110,11 @@ permalink: tasks/master-task-list
 - [x] Kenru fire orders for SOT and Gloria - Assigned to [[Sipho Dubazane]] #task #year/2025 #priority/medium #site/Nchwaning2 #site/Gloria ✅ 2025-11-13
 - [x] S2 & BEV Meeting - Order follow-up (Matthews from Epiroc) - Assigned to [[Michael Bester]] #task #year/2025 #priority/medium #site/Nchwaning2 #BEV ✅ 2025-11-13
   - Note: One-month order for HD62/S2 optimization project
+- [/] N2 Pumping Tests - Piping and valve installation #task #year/2025 #priority/high #site/Nchwaning2 📅 2025-12-20
+  - Assigned to: [[Peterson, Xavier]]
+  - Status: IN PROGRESS - Work started on installing piping valves on tanks
+  - Context: N2 pumping system testing and commissioning
+  - Update: Dec 10, 2025 - Installation work underway
 - [ ] Xavier Peterson - N2 Manwinder Investigation #task #year/2025 #priority/critical #site/Nchwaning2 📅 2025-11-10
   - Assigned to: [[Peterson, Xavier]]
   - Note: Critical investigation into manwinder system issues. Requires detailed follow-up and documentation.
