@@ -1,0 +1,21 @@
+---
+'Status:': Draft
+'Priority:': Med
+'Assignee:': Greg
+'DueDate:': null
+'Tags:': null
+permalink: templates/daily-note-template
+---
+
+## ✅ Tasks
+- [ ]
+
+## 📝 Notes
+- Another idea. Create agents that can do things Autonomously e.g. An agent than can interrogate What sap messages. OR e-mails. Digest and highlight or extract key information relevant to your Current priorities. e.g. The agent have access to the what sap can go and investigate the past 24h performance and the cited reasons. But the bottomline is we can leverage Sub agents in ccli to do many things autonomously e-g. I want to send a quick note foor the agent to eg. Schedule a meeting send a mail. another product idea: a PA agent that can lean your ways. e.g, schedule meeting But much more basic function: like e.g. schedule a meeting or Send /check a mail and do admin. Feed the system.
+## 📅 Meetings
+#### **Normet Meeting**
+Report from Normet on Rock breakers
+Jaco to Sat Tip 1 Proposal design from Scratch . also Teleremote for 3x breakers @CCR
+Jaco to send proposal for Charmer
+
+- [ ] Arrange trip to Gold fields South Deep mine to see teleremote rock breaker station

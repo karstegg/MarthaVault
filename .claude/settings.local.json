@@ -105,7 +105,9 @@
       "Bash(claude setup-token:*)",
       "WebSearch",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "Bash(pip install:*)"
+      "Bash(pip install:*)",
+      "mcp__whatsapp__get_direct_chat_by_contact",
+      "WebFetch(domain:business.whatsapp.com)"
     ],
     "deny": []
   },
