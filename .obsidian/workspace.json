@@ -25,12 +25,14 @@
             "id": "72c6e0e02363a272",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "00_Inbox/2504.13173v1.pdf"
+                "file": "00_Inbox/2025-11-24.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "2504.13173v1"
+              "icon": "lucide-file",
+              "title": "2025-11-24"
             }
           }
         ],
@@ -241,12 +243,13 @@
   },
   "active": "72c6e0e02363a272",
   "lastOpenFiles": [
-    "00_Inbox/2501.00663v1.pdf",
+    "00_Inbox/2025 12 Instruction on prevention of shaft winder accidents.pdf",
+    "Daily/2025-09-16 – Daily Note.md",
     "00_Inbox/2504.13173v1.pdf",
+    "00_Inbox/2501.00663v1.pdf",
     "00_Inbox/Inspector Instructions - actions.md",
     "00_Inbox/~$BRMO_Belt_Splicing_Scope_Gloria.xlsx",
     "00_Inbox/2025-11-26 (Conflicted copy Greg's Tab S8 202512050928).md",
-    "00_Inbox/2025 12 Instruction on prevention of shaft winder accidents.pdf",
     "00_Inbox/2025-11-27.md",
     "00_Inbox/search_all_folders_dt0121.py",
     "00_Inbox/2025-12-02 – DT0121 Email Details.md",
@@ -255,7 +258,6 @@
     "00_Inbox/production_14days.txt",
     "00_Inbox/nch2_emails.txt",
     "00_Inbox/n2_emails.txt",
-    "00_Inbox/recent_emails.json",
     "reference/claude-code/CLI Executor Quick Reference.md",
     "reference/claude-code/CLI Executor MCP Architecture.md",
     "people/Karsten, Gregory.md",
@@ -276,7 +278,6 @@
     "00_Inbox/N3 Second Electrical Supervisor.md",
     "00_Inbox/2025-11-24 – WEEK PLAN Nov 24-28.md",
     "tasks/Priority Matrix Board.md",
-    "reports/2025-11-25 - CAS L9 Project Status Summary.md",
     "00_Inbox/FT_2025-11-17 20_37_37.256.png",
     "media/image/2025/2025-11-17_2037_Emergency_Preparedness_Recap.png",
     "media/image/2025/2025-11-17_2036_Daily_Notes_Planner.png",
