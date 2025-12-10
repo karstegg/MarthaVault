@@ -20,34 +20,53 @@ Manual vault synchronization command - updates memory systems from Git history.
    - `--dry-run`: Show what would sync without executing
    - `--verbose`: Show detailed processing
 
-2. Get current HEAD commit SHA:
+2. Get checkpoint timestamp:
    ```bash
-   git rev-parse HEAD
+   checkpoint=$(cat .vault-sync-checkpoint 2>/dev/null || echo "")
    ```
 
-3. Get changed files:
+3. Get changed files using **TWO methods in parallel**:
 
-   **Standard sync (no --full):**
+   **Method A: Git committed changes (git diff)**
    ```bash
-   # Read checkpoint
-   checkpoint=$(cat .vault-sync-checkpoint 2>/dev/null || echo "")
+   current_head=$(git rev-parse HEAD)
 
-   # Get changes since checkpoint
-   if [ -n "$checkpoint" ]; then
+   if [ -n "$checkpoint" ] && git rev-parse --verify "$checkpoint" >/dev/null 2>&1; then
+       # Checkpoint is a valid commit SHA
        git diff --name-status $checkpoint HEAD
    else
-       # No checkpoint - do full sync
-       git ls-files
+       # Invalid/missing checkpoint - use timestamp method only
+       echo ""
    fi
+   ```
+
+   **Method B: File modification time (for uncommitted changes)**
+   ```bash
+   # Get last sync timestamp from checkpoint file modification time
+   if [ -f ".vault-sync-checkpoint" ]; then
+       checkpoint_date=$(stat -c %y .vault-sync-checkpoint 2>/dev/null || stat -f "%Sm" -t "%Y-%m-%d %H:%M:%S" .vault-sync-checkpoint)
+   else
+       checkpoint_date="1970-01-01"
+   fi
+
+   # Find all modified files since checkpoint using filesystem timestamps
+   find people projects tasks Schedule strategy system IDEAS Operations reference/places \
+     -type f -name "*.md" -newermt "$checkpoint_date" 2>/dev/null
    ```
 
    **Full sync (--full flag):**
    ```bash
-   # Get all tracked files
-   git ls-files
+   # Get all markdown files in relevant folders
+   find people projects tasks Schedule strategy system IDEAS Operations reference/places \
+     -type f -name "*.md" 2>/dev/null
    ```
 
-4. Filter to relevant folders:
+4. **Merge both file lists** (deduplicate):
+   - Combine git diff output + find output
+   - Remove duplicates
+   - Mark each file as Added (A), Modified (M), or new (N)
+
+5. Filter to relevant folders:
    - `people/`
    - `projects/`
    - `tasks/`
@@ -58,10 +77,11 @@ Manual vault synchronization command - updates memory systems from Git history.
    - `Operations/`
    - `reference/places/`
 
-5. Group files by change type:
-   - A (Added) or new files in --full mode
-   - M (Modified)
-   - D (Deleted)
+6. Group files by change type:
+   - A (Added) - new files from git
+   - M (Modified) - changed files from git or filesystem
+   - D (Deleted) - deleted from git diff
+   - N (New uncommitted) - found by find but not in git
 
 **If --dry-run flag:** Print file list and exit (don't continue to Step 2)
 
@@ -155,29 +175,38 @@ For each deleted file:
 
 ### Step 3: Update Checkpoint and Report Summary
 
-1. **Update checkpoint file:**
+1. **Update checkpoint file with current timestamp:**
    ```bash
-   echo "<current-HEAD-sha>" > .vault-sync-checkpoint
+   # Write current ISO-8601 timestamp
+   date -Iseconds > .vault-sync-checkpoint
    ```
 
 2. **Calculate and display summary:**
    ```
-   🔄 Memory systems synchronized
+   🔄 Vault sync complete
 
-   Last sync: <checkpoint-date> (commit <short-sha>)
-   Current:   <current-date> (commit <short-sha>)
+   Last sync: <checkpoint-timestamp>
+   Current:   <current-timestamp>
+   Gap: <N> days
 
    Changed files (<total> files):
-     ✅ Added (<count>)
-     ✅ Modified (<count>)
-     ✅ Deleted (<count>)
+     ✅ Added: <count>
+     ✅ Modified: <count>
+     ✅ Deleted: <count>
 
    Memory operations:
      - Graph Memory: <N> entities created/updated, <M> relations
-     - Basic Memory: <N> documents indexed
+     - Basic Memory: <P> documents indexed
 
    ✅ Sync complete
-   Checkpoint updated: <current-HEAD-sha>
+   Checkpoint updated: <current-timestamp>
+   ```
+
+3. **If gap > 7 days:** Display warning
+   ```
+   ⚠️  WARNING: 16-day gap detected since last sync
+   Memory systems may be significantly out of date.
+   Consider running /sync-vault more frequently.
    ```
 
 ---
@@ -235,10 +264,39 @@ Extract:
 
 ## Performance Considerations
 
-- **Batch operations**: Process up to 10 entities at once in create_entities calls
-- **Parallel reads**: Read multiple files in parallel when possible
-- **Skip unchanged**: If file content hash matches previous sync, skip processing
-- **Target**: Complete typical sync (1-10 files) in <5 seconds
+### Batch Processing Strategy
+
+**For large syncs (20+ files):**
+
+1. **Read files in batches of 5-10** using parallel Read tool calls
+2. **Extract all metadata** from each batch before moving to next
+3. **Create entities in batches of 10** using single `create_entities` call
+4. **Create relations in batches of 20** using single `create_relations` call
+5. **Index Basic Memory sequentially** (one write_note at a time to avoid conflicts)
+
+**Example batch workflow for 66 files:**
+```
+Batch 1 (files 1-10):
+  - Read 10 files in parallel
+  - Extract entities/observations
+  - create_entities (10 entities)
+  - create_relations (up to 20 relations)
+  - write_note × 10
+
+Batch 2 (files 11-20):
+  - Repeat...
+```
+
+### Optimization Rules
+
+- **Parallel reads**: Use parallel Read calls when files are independent
+- **Batch API calls**: Always batch create_entities/create_relations (max 10 per call)
+- **Sequential writes**: Basic Memory write_note calls must be sequential
+- **Skip unchanged**: If file modification time matches checkpoint exactly, skip
+- **Target performance**:
+  - Small sync (1-10 files): <10 seconds
+  - Medium sync (11-50 files): <60 seconds
+  - Large sync (50+ files): <3 minutes
 
 ---
 
