@@ -33,9 +33,9 @@ permalink: operations/acting-leave-handover/2025-12-11-leave-handover-notes-15-d
 - Purchase tracker box (normally used for key control) for strata bypass card control
 - **ACTION REQUIRED:** Compile procedure for strata bypass card control using tracker boxes (Greg will ask SK to do this)
 
-**Gloria - Nchwaning 9 Dam Project:**
-- Cleaning of the existing Nchwaning 9 dam
-- Construction of the new Nchwaning 9 dam
+**Gloria - 9-West Dam Project:**
+- Cleaning of the existing 9-West dam
+- Construction of the new 9-West dam
 - Monitor progress and coordinate with project team
 
 ---
