@@ -1,12 +1,14 @@
 ---
+
 kanban-plugin: board
 tags:
-- planning
-- tasks
-- overflow
-- Q4-2025
-- year/2025
+  - planning
+  - tasks
+  - overflow
+  - Q4-2025
+  - year/2025
 permalink: 00-inbox/2025-11-25-remaining-tasks-board-1
+
 ---
 
 ## 🔴 CRITICAL (This Week - Nov 25-29)
@@ -33,9 +35,6 @@ permalink: 00-inbox/2025-11-25-remaining-tasks-board-1
 - [ ] **DT & FL Radio Installations - Unplanned Capital**  
 	  📅 Nov 30 | 💰 Capital | 👤 Sello, Pieter  
 	  N3 & N2 - Rudi approved in ATR
-- [ ] **BaaS Battery Availability Measurement System**  
-	  📅 TBD | ⚡ BEV (1.5x) | 👤 Chris, Rahab  
-	  Track independently - verify Epiroc invoicing (penalties/payments)
 
 
 ## 🟢 MEDIUM (Dec 9-13)
@@ -60,9 +59,6 @@ permalink: 00-inbox/2025-11-25-remaining-tasks-board-1
 - [ ] **Implement DPF on All Diesel Machines**  
 	  📅 TBD | 🏭 Production | 👤 TBD  
 	  Starting with CAT AD30s - reason for 2 JPEs
-- [ ] **Actions from Friday N2 Eng Team Meeting**  
-	  📅 Oct 8 (OVERDUE) | 📋 N2 | 👤 TBD  
-	  Extract specific tasks
 - [ ] **Gerhard - Get Barlow Quote for DPF**  
 	  📅 TBD | 🏭 Production | 👤 Gerhard  
 	  DPF Project implementation
@@ -76,12 +72,6 @@ permalink: 00-inbox/2025-11-25-remaining-tasks-board-1
 - [ ] **N3 DT0143 Dump Truck - Finalize Specs**  
 	  📅 Nov 30 | 💰 Capital | 👤 Sello, Kagisho  
 	  AD45 → AD30 standardization - R20.2M
-- [ ] **N2 LD0199 Light Vehicle - Finalize Specs**  
-	  📅 Nov 30 | 💰 Capital | 👤 Sikelela, Wikus  
-	  4x4 2.5D (2007 - 18 YEARS OLD!) → L/Cruiser R2.9M OLDEST VEHICLE
-- [ ] **N2 L/Cruiser 5-Unit Bundle - Finalize Specs**  
-	  📅 Dec 31 | 💰 Capital | 👤 Sikelela, Wikus  
-	  LD0341/0411/0414/0415/0199 → R14.6M (~R1.1M savings potential)
 - [ ] **Capital TMM FY25/26 - Monthly Progress Review**  
 	  📅 Nov 7 (OVERDUE) | 💰 Capital | 👤 Chris, Rahab  
 	  Track all 29 units, budget vs actual
@@ -121,16 +111,10 @@ permalink: 00-inbox/2025-11-25-remaining-tasks-board-1
 
 ## 🎯 CAS L9 ACTIVE (Dec 31 Deadline)
 
-- [ ] **Monitor Strata Interference Investigation**  
-	  📅 Oct 11 (OVERDUE) | ⚡ BEV | 👤 Hennie  
-	  FL98 crawling issue - external frequencies suspected
 
 
 ## 🔵 BACKLOG / DECEMBER
 
-- [ ] **HD RT Action Plan for Gloria**  
-	  📅 TBD | ⚙️ Equipment | 👤 Sipho  
-	  Requested by Rudi Opperman
 - [ ] **N3 RT0039 - Request Epiroc Quotations**  
 	  📅 Nov 30 | 💰 Capital | 👤 Kagisho
 - [ ] **N3 Scalers - Request Bundle Quotations**  
@@ -145,9 +129,6 @@ permalink: 00-inbox/2025-11-25-remaining-tasks-board-1
 	  New winder regulations
 - [ ] **Sipho - Draft Breakdown in Decline Instructions**  
 	  📅 Oct 15 (OVERDUE) | 📋 Gloria | 👤 Sipho
-- [ ] **Solrock Weekend Work - Shaft Lining Repairs**  
-	  📅 Nov 9 (OVERDUE) | ⚙️ S&W | 👤 Xavier, Sikelela  
-	  IN PROGRESS - weekend coordination
 - [ ] **Communicate Change Management Process**  
 	  📅 Oct 18 (OVERDUE) | ⚖️ Compliance | 👤 TBD  
 	  DMRE action - procedural communication
@@ -164,6 +145,27 @@ permalink: 00-inbox/2025-11-25-remaining-tasks-board-1
 
 ## ✅ COMPLETED
 
+- [x] **Solrock Weekend Work - Shaft Lining Repairs**  
+	  📅 Nov 9 (OVERDUE) | ⚙️ S&W | 👤 Xavier, Sikelela  
+	  IN PROGRESS - weekend coordination
+- [ ] **HD RT Action Plan for Gloria**  
+	  📅 TBD | ⚙️ Equipment | 👤 Sipho  
+	  Requested by Rudi Opperman
+- [x] **Monitor Strata Interference Investigation**  
+	  📅 Oct 11 (OVERDUE) | ⚡ BEV | 👤 Hennie  
+	  FL98 crawling issue - external frequencies suspected
+- [x] **N2 L/Cruiser 5-Unit Bundle - Finalize Specs**  
+	  📅 Dec 31 | 💰 Capital | 👤 Sikelela, Wikus  
+	  LD0341/0411/0414/0415/0199 → R14.6M (~R1.1M savings potential)
+- [x] **N2 LD0199 Light Vehicle - Finalize Specs**  
+	  📅 Nov 30 | 💰 Capital | 👤 Sikelela, Wikus  
+	  4x4 2.5D (2007 - 18 YEARS OLD!) → L/Cruiser R2.9M OLDEST VEHICLE
+- [x] **Actions from Friday N2 Eng Team Meeting**  
+	  📅 Oct 8 (OVERDUE) | 📋 N2 | 👤 TBD  
+	  Extract specific tasks
+- [ ] **BaaS Battery Availability Measurement System**  
+	  📅 TBD | ⚡ BEV (1.5x) | 👤 Chris, Rahab  
+	  Track independently - verify Epiroc invoicing (penalties/payments)
 - [x] **Monthly Engineering Meeting Prep**  
 	  📅 Nov 19 (OVERDUE) | 📋 Monthly | 👤 Greg  
 	  Monthly recurring coordination
