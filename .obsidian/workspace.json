@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/2025-11-27.md",
-                "mode": "source",
+                "file": "00_Inbox/Inspector Instructions - actions.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-27"
+              "title": "Inspector Instructions - actions"
             }
           }
         ]
@@ -226,13 +226,16 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "759b14c2e47b40e6",
+  "active": "390357521acdc6a2",
   "lastOpenFiles": [
+    "tasks/Priority Matrix Board.md",
+    "tasks/2025-07-29 – BEV Workshop Charges Order.md",
+    "00_Inbox/2025-11-27.md",
+    "00_Inbox/2025-11-25.md",
     "reference/operations/Nchwaning 3/N3 Underground Material Handling - SAT TIP System.md",
     "reference/operations/Nchwaning 3",
     "reference/operations",
     "00_Inbox/2025-11-25 – Voice Note & Image - SAT TIP 1 System.md",
-    "00_Inbox/2025-11-25.md",
     "projects/Capital/Bearing Temperature Monitoring/Surface Plant Bearings.pdf",
     "projects/Capital/Bearing Temperature Monitoring/~$nveyor plummerblocks (002).docx",
     "projects/Capital/Bearing Temperature Monitoring/~WRL0001.tmp",
@@ -249,7 +252,6 @@
     "Operations/Shafts & Winders/DMR Instructions/2025-12-01 – DMR Instruction - Shaft and Winder Accident Prevention.md",
     "00_Inbox/Inspector Instructions - actions.md",
     "00_Inbox/2025-12-02 – DT0121 Email Details.md",
-    "00_Inbox/2025-11-27.md",
     "00_Inbox/2025-11-26.md",
     "Daily/2025-09-16 – Daily Note.md",
     "00_Inbox/2025-11-26 (Conflicted copy Greg's Tab S8 202512050928).md",
@@ -262,8 +264,6 @@
     "people/UG Eng Management Group.md",
     "tasks/2025-11-25 – Remaining Tasks Board.md",
     "00_Inbox/2025-11-25 – Daily Email Triage.md",
-    "00_Inbox/2025-11-24 – Leave Coverage Plan Dec-Jan.md",
-    "tasks/2025-11-25 – Strategic Planning by Effort.md",
     "00_Inbox/FT_2025-11-17 20_37_37.256.png",
     "media/image/2025/2025-11-17_2037_Emergency_Preparedness_Recap.png",
     "media/image/2025/2025-11-17_2036_Daily_Notes_Planner.png",
