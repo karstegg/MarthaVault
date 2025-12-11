@@ -13,22 +13,17 @@
             "state": {
               "type": "kanban",
               "state": {
-                "file": "tasks/2025-11-25 – Complete Task Board.md",
+                "file": "tasks/2025-11-25 – Remaining Tasks Board.md",
                 "kanbanViewState": {
                   "kanban-plugin": "board",
                   "list-collapse": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    false
+                    null,
+                    null
                   ]
                 }
               },
               "icon": "lucide-trello",
-              "title": "2025-11-25 – Complete Task Board"
+              "title": "2025-11-25 – Remaining Tasks Board"
             }
           }
         ]
@@ -238,6 +233,9 @@
   },
   "active": "390357521acdc6a2",
   "lastOpenFiles": [
+    "tasks/2025-11-25 – Complete Task Board.md",
+    "tasks/2025-10-29 – Junior Engineer Interview Questions.md",
+    "tasks/2025-10-07 – SA Crane Contract 6 Month Extension.md",
     "Operations/Acting & Leave Handover/2025-12-11 – Leave Handover Notes (15 Dec - 15 Jan).md",
     "00_Inbox/Inspector Instructions - actions.md",
     "Operations/Acting & Leave Handover",
@@ -271,9 +269,6 @@
     "reference/claude-code/CLI Executor MCP Architecture.md",
     "people/Karsten, Gregory.md",
     "reference/claude-desktop/WhatsApp Voice Note Transcription - Desktop Workflow.md",
-    "tasks/2025-11-25 – Complete Task Board.md",
-    "projects/Leave-Coverage-Dec-2025/2025-11-24 – Leave Coverage Plan Dec-Jan.md",
-    "people/UG Eng Management Group.md",
     "00_Inbox/FT_2025-11-17 20_37_37.256.png",
     "media/image/2025/2025-11-17_2037_Emergency_Preparedness_Recap.png",
     "media/image/2025/2025-11-17_2036_Daily_Notes_Planner.png",
