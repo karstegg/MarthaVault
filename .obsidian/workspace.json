@@ -11,14 +11,24 @@
             "id": "390357521acdc6a2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "Operations/Acting & Leave Handover/2025-12-11 – Leave Handover Notes (15 Dec - 15 Jan).md",
-                "mode": "preview",
-                "source": false
+                "file": "tasks/2025-11-25 – Complete Task Board.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    true,
+                    true
+                  ]
+                }
               },
-              "icon": "lucide-file",
-              "title": "2025-12-11 – Leave Handover Notes (15 Dec - 15 Jan)"
+              "icon": "lucide-trello",
+              "title": "2025-11-25 – Complete Task Board"
             }
           }
         ]
@@ -228,8 +238,8 @@
   },
   "active": "390357521acdc6a2",
   "lastOpenFiles": [
-    "00_Inbox/Inspector Instructions - actions.md",
     "Operations/Acting & Leave Handover/2025-12-11 – Leave Handover Notes (15 Dec - 15 Jan).md",
+    "00_Inbox/Inspector Instructions - actions.md",
     "Operations/Acting & Leave Handover",
     "projects/2025-12-11 – Leave Handover Notes (15 Dec - 15 Jan).md",
     "tasks/Priority Matrix Board.md",

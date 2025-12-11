@@ -13,18 +13,9 @@ permalink: 00-inbox/2025-11-25-complete-task-board
 
 ## 🔴 CRITICAL (This Week - Nov 25-29)
 
-- [ ] **Belt Splicing Inventory - All Sites**  
-	  📅 EOB Today | 🏗️ Multi-site | 👤 Sipho, Sikelela, Sello, Xavier, Michael  
-	  Consolidate for scope submission
 - [ ] **Rock Breaker Repair - Sat Tips**  
 	  📅 Nov 27 | ⚙️ N3 Equipment | 👤 Sello, Stef  
 	  Relocate from waste tip + resolve boom compatibility
-- [ ] **Ashwin - 3 Fitter Appointments Status**  
-	  📅 Today | 👥 HR | 👤 Greg  
-	  Email sent - awaiting response
-- [ ] **Conveyor BRMO Scope Delivery**  
-	  📅 Nov 26 (Tomorrow) | 💼 Procurement | 👤 Greg → Hilaria  
-	  Critical vendor deadline
 - [ ] **Compile Unplanned Capital Submission**  
 	  📅 Nov 27 | 💰 Capital (1.2x) | 👤 Greg  
 	  Jacques request - bearing temp monitoring + others
@@ -102,6 +93,15 @@ permalink: 00-inbox/2025-11-25-complete-task-board
 
 ## ✅ COMPLETED
 
+- [ ] **Conveyor BRMO Scope Delivery**  
+	  📅 Nov 26 (Tomorrow) | 💼 Procurement | 👤 Greg → Hilaria  
+	  Critical vendor deadline
+- [ ] **Ashwin - 3 Fitter Appointments Status**  
+	  📅 Today | 👥 HR | 👤 Greg  
+	  Email sent - awaiting response
+- [ ] **Belt Splicing Inventory - All Sites**  
+	  📅 EOB Today | 🏗️ Multi-site | 👤 Sipho, Sikelela, Sello, Xavier, Michael  
+	  Consolidate for scope submission
 - [x] **CAS L9 - Aard Panel Order & Delivery** ✅ Nov 20
 - [x] **CAS L9 - Aard 6-month Support Contract** ✅ Nov 22
 - [x] **CAS L9 Status Meetings - All OEMs** ✅ Nov 25  
@@ -118,54 +118,14 @@ permalink: 00-inbox/2025-11-25-complete-task-board
 
 ## 📊 BOARD SUMMARY
 
-**Active Tasks by Priority:**
-- 🔴 CRITICAL (This Week): 5 items
-- 🟡 HIGH (Dec 2-6): 7 items
-- 🟢 MEDIUM (Dec 9-13): 10 items
-- 🔵 BACKLOG (December): 3 items
-- 🎯 CAS L9 Active: 4 items
-- **Total Active: 29 tasks**
+- [ ] 🔴 CRITICAL (This Week): 5 items
+- [ ] 🟡 HIGH (Dec 2-6): 7 items
+- [ ] 🟢 MEDIUM (Dec 9-13): 10 items
+- [ ] 🔵 BACKLOG (December): 3 items
+- [ ] 🎯 CAS L9 Active: 4 items
+- [ ] **Total Active: 29 tasks**
 
-**Completion Progress:**
-- ✅ Completed this week: 11 items
-- Strong CAS L9 momentum (6 items done)
-- Fire safety and team capacity advancing
 
-**This Week Priorities (Nov 25-29):**
-1. Belt splicing inventory (EOB today)
-2. Rock breaker repair (Wed)
-3. Ashwin fitters (awaiting response)
-4. BRMO scope (tomorrow)
-5. Unplanned capital (Wed)
-
-**Next Week Critical (Dec 2-6):**
-- Belt speed optimization (Wed actions: Pieter/Ronnie)
-- Battery chargers (power supply tomorrow, procedure TODAY)
-- Lubri Vent systems (overdue)
-- Itireleng scope (overdue)
-
-**Watch Items (Overdue):**
-- Fermel CAS L9 resource shortage (Nov 19)
-- CR121 replacement decision (Nov 20)
-- Aard scissor lift (Nov 20)
-- Lubri Vent systems (Nov 9)
-- Belt temp survey (Nov 15)
-- DMR drill torque (Oct 20)
-- Capital vote closures (Oct 31)
-
-**Strategic Weight Distribution:**
-- 🎯 CAS L9 (2.5x): 4 active + 6 completed = Strong progress
-- 🔥 Fire Safety (2.0x): 3 active items
-- ⚡ BEV Program (1.5x): 1 active item
-- ✅ Compliance (1.5x): 4 active items
-- 💰 Capital (1.2x): 6 active items
-- 👥 Team (1.2x): 2 active items
-
-**Before Leave (Dec 14):**
-- Complete all CRITICAL (5 items)
-- Close 80% of HIGH (6/7 items)
-- Advance MEDIUM to handover-ready state
-- Ensure CAS L9 on track for Dec 31
 
 
 %% kanban:settings
