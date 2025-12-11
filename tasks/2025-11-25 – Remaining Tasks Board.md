@@ -138,13 +138,13 @@ permalink: 00-inbox/2025-11-25-remaining-tasks-board-1
 - [ ] **Audit All Fermels for Fire Risk**  
 	  📅 Oct 25 (OVERDUE) | 🔥 Fire Safety (2.0x) | 👤 TBD  
 	  Action from N3 incident
-- [ ] **Xavier - N2 Manwinder Investigation**  
-	  📅 Nov 10 (OVERDUE) | 🔴 CRITICAL | 👤 Xavier  
-	  ESCALATED - detailed investigation required
 
 
 ## ✅ COMPLETED
 
+- [x] **Xavier - N2 Manwinder Investigation**  
+	  📅 Nov 10 (OVERDUE) | 🔴 CRITICAL | 👤 Xavier  
+	  ESCALATED - detailed investigation required
 - [x] **Solrock Weekend Work - Shaft Lining Repairs**  
 	  📅 Nov 9 (OVERDUE) | ⚙️ S&W | 👤 Xavier, Sikelela  
 	  IN PROGRESS - weekend coordination

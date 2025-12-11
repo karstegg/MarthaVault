@@ -12,15 +12,9 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 
 ## 🔴 CRITICAL (This Week - Nov 25-29)
 
-- [ ] **Belt Splicing Inventory - All Sites**  
-	  📅 EOB Today | 🏗️ Multi-site | 👤 Sipho, Sikelela, Sello, Xavier, Michael  
-	  Consolidate for scope submission
 - [ ] **Rock Breaker Repair - Sat Tips**  
 	  📅 Nov 27 | ⚙️ N3 Equipment | 👤 Sello, Stef  
 	  Relocate from waste tip + resolve boom compatibility
-- [ ] **Ashwin - 3 Fitter Appointments Status**  
-	  📅 Today | 👥 HR | 👤 Greg  
-	  Email sent - awaiting response
 
 
 ## 🟡 HIGH PRIORITY (Dec 2-6)
@@ -33,7 +27,6 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 	  📅 Dec 6 | ⚡ BEV Program (1.5x) | 👤 Sello, Stef, Jabu, Piet  
 	  93N-3E (Main West) + 60N52E (Central). Free up 4 B/Bay posts.  
 	  **URGENT:** Power supply (Stef/Sello) Tue Nov 26, Procedure (Jabu) TODAY
-
 - [ ] **Fit Lubri Vent Systems - S2 Drill Rigs**  
 	  📅 Nov 9 (OVERDUE) | 🔥 Fire Safety (2.0x) | 👤 Sello
 - [ ] **Submit Itireleng Scope to JoMari**  
@@ -44,8 +37,6 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 
 ## 🟢 MEDIUM (Dec 9-13)
 
-- [ ] [[Survey Belt Temperature Sensor Deployment]]  
-	  📅 Nov 15 (OVERDUE) | 🔥 Fire Safety (2.0x) | 👤 Greg
 - [ ] **Capital Vote Closures - 2025**  
 	  📅 Oct 31 (OVERDUE) | 💰 Capital (1.2x) | 👤 Greg
 - [ ] **Lifting Equipment vs Jacking Analysis**  
@@ -62,15 +53,6 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 
 ## 
 
-- [ ] **CAS L9 - UV53 Deployment to Chamdor**  
-	  📅 Nov 20 | 🎯 CAS-L9 | 👤 Hennie
-- [ ] **CAS L9 - CR121 Replacement Decision**  
-	  📅 Nov 20 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Hennie - Manitou
-- [ ] **Fermel CAS L9 - Resource Shortage**  
-	  📅 Nov 19 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Nico (HO)  
-	  Resolve with Head Office for Dec 31 compliance
-- [ ] **CAS L9 - Aard Scissor Lift Loop Issue**  
-	  📅 Nov 20 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Hennie
 - [ ] 🎯 CAS L9 DMRE: 2.5x (CRITICAL - Dec 31 deadline)
 
 
@@ -108,6 +90,23 @@ permalink: 00-inbox/2025-11-25-strategic-planning-board-nov-dec
 
 ## ✅ COMPLETED
 
+- [x] **CAS L9 - Aard Scissor Lift Loop Issue**  
+	  📅 Nov 20 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Hennie
+- [x] **Fermel CAS L9 - Resource Shortage**  
+	  📅 Nov 19 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Nico (HO)  
+	  Resolve with Head Office for Dec 31 compliance
+- [x] **CAS L9 - CR121 Replacement Decision**  
+	  📅 Nov 20 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Hennie - Manitou
+- [x] **CAS L9 - UV53 Deployment to Chamdor**  
+	  📅 Nov 20 | 🎯 CAS-L9 | 👤 Hennie
+- [x] [[Survey Belt Temperature Sensor Deployment]]  
+	  📅 Nov 15 (OVERDUE) | 🔥 Fire Safety (2.0x) | 👤 Greg
+- [x] **Ashwin - 3 Fitter Appointments Status**  
+	  📅 Today | 👥 HR | 👤 Greg  
+	  Email sent - awaiting response
+- [x] **Belt Splicing Inventory - All Sites**  
+	  📅 EOB Today | 🏗️ Multi-site | 👤 Sipho, Sikelela, Sello, Xavier, Michael  
+	  Consolidate for scope submission
 - [x] **CAS L9 - Aard Panel Order & Delivery**  
 	  📅 Nov 20 (OVERDUE) | 🎯 CAS-L9 (2.5x) | 👤 Hennie
 - [x] **CAS L9 - Aard 6-month Support Contract**  

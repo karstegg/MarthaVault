@@ -13,17 +13,23 @@
             "state": {
               "type": "kanban",
               "state": {
-                "file": "tasks/2025-11-25 – Remaining Tasks Board.md",
+                "file": "tasks/2025-11-25 – Strategic Planning Board Nov-Dec.md",
                 "kanbanViewState": {
                   "kanban-plugin": "board",
                   "list-collapse": [
+                    false,
                     null,
-                    null
+                    null,
+                    null,
+                    false,
+                    true,
+                    true,
+                    true
                   ]
                 }
               },
               "icon": "lucide-trello",
-              "title": "2025-11-25 – Remaining Tasks Board"
+              "title": "2025-11-25 – Strategic Planning Board Nov-Dec"
             }
           }
         ]
@@ -233,6 +239,9 @@
   },
   "active": "390357521acdc6a2",
   "lastOpenFiles": [
+    "tasks/2025-11-25 – Remaining Tasks Board.md",
+    "tasks/2025-11-25 – Strategic Planning Board Nov-Dec.md",
+    "tasks/2025-11-25 – Strategic Planning by Effort.md",
     "tasks/2025-11-25 – Complete Task Board.md",
     "tasks/2025-10-29 – Junior Engineer Interview Questions.md",
     "tasks/2025-10-07 – SA Crane Contract 6 Month Extension.md",
@@ -266,9 +275,6 @@
     "Daily/2025-09-16 – Daily Note.md",
     "00_Inbox/2025-11-26 (Conflicted copy Greg's Tab S8 202512050928).md",
     "reference/claude-code/CLI Executor Quick Reference.md",
-    "reference/claude-code/CLI Executor MCP Architecture.md",
-    "people/Karsten, Gregory.md",
-    "reference/claude-desktop/WhatsApp Voice Note Transcription - Desktop Workflow.md",
     "00_Inbox/FT_2025-11-17 20_37_37.256.png",
     "media/image/2025/2025-11-17_2037_Emergency_Preparedness_Recap.png",
     "media/image/2025/2025-11-17_2036_Daily_Notes_Planner.png",
