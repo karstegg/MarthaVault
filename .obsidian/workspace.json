@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CLAUDE.md",
-                "mode": "preview",
+                "file": "Operations/Acting & Leave Handover/2025-12-11 – Leave Handover Notes (15 Dec - 15 Jan).md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CLAUDE"
+              "title": "2025-12-11 – Leave Handover Notes (15 Dec - 15 Jan)"
             }
           }
         ]
@@ -228,6 +228,7 @@
   },
   "active": "390357521acdc6a2",
   "lastOpenFiles": [
+    "CLAUDE.md",
     "projects/Capital/Bearing Temperature Monitoring/~$MO_BearingMonitoring_Capital_Application_20251211_Final.docx",
     "projects/Capital/Bearing Temperature Monitoring/~WRL1451.tmp",
     "projects/Capital/Bearing Temperature Monitoring/~WRD1427.tmp",
@@ -253,7 +254,6 @@
     "00_Inbox/2025-11-27.md",
     "00_Inbox/2025-11-25.md",
     "reference/operations/Nchwaning 3/N3 Underground Material Handling - SAT TIP System.md",
-    "reference/operations/Nchwaning 3",
     "00_Inbox/2025-11-25 – Voice Note & Image - SAT TIP 1 System.md",
     "00_Inbox/Survey Belt Temperature Sensor Deployment.md",
     "00_Inbox/2025-11-24.md",
