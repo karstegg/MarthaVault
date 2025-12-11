@@ -130,6 +130,6 @@ permalink: 00-inbox/2025-11-25-complete-task-board
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,true,true]}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,true,false]}
 ```
 %%
