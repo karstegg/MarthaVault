@@ -6,7 +6,7 @@
 'LeaveStart:': 2025-12-15
 'LeaveEnd:': 2026-01-15
 'Tags:': null
-permalink: projects/2025-12-11-leave-handover-notes-15-dec-15-jan
+permalink: operations/acting-leave-handover/2025-12-11-leave-handover-notes-15-dec-15-jan
 ---
 
 # Leave Handover Notes
