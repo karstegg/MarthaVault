@@ -11,25 +11,14 @@
             "id": "390357521acdc6a2",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "tasks/2025-11-25 – Strategic Planning Board Nov-Dec.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    null,
-                    null,
-                    null,
-                    false,
-                    true,
-                    true,
-                    true
-                  ]
-                }
+                "file": "CLAUDE.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-trello",
-              "title": "2025-11-25 – Strategic Planning Board Nov-Dec"
+              "icon": "lucide-file",
+              "title": "CLAUDE"
             }
           }
         ]
@@ -239,9 +228,11 @@
   },
   "active": "390357521acdc6a2",
   "lastOpenFiles": [
+    "tasks/2025-08-18 – Recruit N3 GES.md",
+    "tasks/2025-11-25 – Strategic Planning Board Nov-Dec.md",
+    "projects/Capital/Bearing Temperature Monitoring/6A03A770",
     "projects/Capital/Bearing Temperature Monitoring/~$Bearing Temp Monitoring Capital Estimate.xlsx",
     "tasks/2025-11-25 – Remaining Tasks Board.md",
-    "tasks/2025-11-25 – Strategic Planning Board Nov-Dec.md",
     "tasks/2025-11-25 – Strategic Planning by Effort.md",
     "tasks/2025-11-25 – Complete Task Board.md",
     "tasks/2025-10-29 – Junior Engineer Interview Questions.md",
@@ -263,7 +254,6 @@
     "projects/Capital/Bearing Temperature Monitoring/~WRL0001.tmp",
     "projects/Capital/Bearing Temperature Monitoring/~WRD0000.tmp",
     "projects/Capital/Bearing Temperature Monitoring/conveyor plummerblocks (002).docx",
-    "projects/Capital/Bearing Temperature Monitoring/CF10F270",
     "00_Inbox/Survey Belt Temperature Sensor Deployment.md",
     "00_Inbox/2025-11-24.md",
     "tasks/archive/daily-notes/2025-11/2025-11-24 – Daily Note.md",
