@@ -18,7 +18,9 @@ permalink: operations/acting-leave-handover/2025-12-11-leave-handover-notes-15-d
 **Responsibilities:** Nchwaning 3 operations
 
 #### Key Items:
-- [Items to be added]
+
+**Strata Bypass Card Control:**
+- Purchase tracker box (normally used for key control) for strata bypass card control
 
 ---
 
@@ -26,6 +28,10 @@ permalink: operations/acting-leave-handover/2025-12-11-leave-handover-notes-15-d
 **Responsibilities:** Nchwaning 2 and Gloria operations
 
 #### Key Items:
+
+**Strata Bypass Card Control:**
+- Purchase tracker box (normally used for key control) for strata bypass card control
+- **ACTION REQUIRED:** Compile procedure for strata bypass card control using tracker boxes (Greg will ask SK to do this)
 
 **Gloria - Nchwaning 9 Dam Project:**
 - Cleaning of the existing Nchwaning 9 dam
