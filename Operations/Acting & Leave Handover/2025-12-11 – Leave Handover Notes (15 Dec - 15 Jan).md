@@ -17,7 +17,7 @@ permalink: operations/acting-leave-handover/2025-12-11-leave-handover-notes-15-d
 ### Sello Sease 
 **Responsibilities:** Nchwaning 3 operations and Shafts & Winders Section
 
-#### Key Items:
+#### Key Actions:
 
 **Strata Bypass Card Control:**
 - Purchase tracker box (normally used for key control) for strata bypass card control. Hennie busy obtaining cards and Strata 
@@ -77,6 +77,11 @@ Bearing temp monitoring: Unplanned Capital application with Garth. Please compil
 ---
 
 ## General Notes
+**Acting arrangements
 - Terence to be relief 2.13.6.1 under Sello at N3
 - Mdu relieves as engineer 2.13.6.1 at N2 under SK.
 - Hans Jacobs will be relieving GES at Gloria with Kabelo relieving as Drill Rigs Foreman
+- Jan Niewoudt to relieve as Engineer for Shafts & Winders while Xavier is on leave.
+
+**Year-End Planning** 
+- Final Plan will be submitted today to me for review. I will sign and send out on Wednesday. 
