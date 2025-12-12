@@ -24,6 +24,8 @@ permalink: operations/acting-leave-handover/2025-12-11-leave-handover-notes-15-d
 
 **N3 Operations:**
 - VSD slower ramp-up startup on N3 belts - Stef/Pieter
+- 55CV03 Belt upgrade, 37kw --> 45kW - Stef / Pieter, We have spare motor and VSD
+- HD54 Specialist report actions → JDE
 - Radios for Load n Haul Fleet - Pieter/Sello: Have submitted to Lizette to re-quote
 - N3 Conveyor RCA actions: V-Scraper & Rip Detector
 - Stef to write capital to replace Silo Bottom belt
@@ -54,9 +56,7 @@ permalink: operations/acting-leave-handover/2025-12-11-leave-handover-notes-15-d
 
 
 **N2/Gloria Operations - Tasks from Jacques & Molly:**
-- LDV Cruiser Field intensity
-- Belt Speed up - Stef / Pieter
-- HD54 Rpt ACTIONS → JDE
+- LDV Cruiser Field intensity. Tests currently in progress at Transerve. We want to reduce the 
 - Incident Fitter: Correct Tool - Allen Cap Bolts, Torque Multiplier
 - Kenru FSS actions
 - Update Conveyor List (highlighted as priority)
