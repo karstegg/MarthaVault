@@ -36,10 +36,12 @@ permalink: operations/acting-leave-handover/2025-12-11-leave-handover-notes-15-d
 - BEV Charging Recipe:  - 12/12
 - BEV BAY CHARGERS & ORDERS: CABLES, OH CRANE, CRAWL, etc. as per email sent on 12/12. 
 - BEV Bay 1 water mgt - ensure walls are built
+- Mobile charger relocated to Sections - Completed to be tested and evaluated
 
 **Shafts & Winders:**
+- DMPR instructions on the prevents of incidents at Shafts & Winders (Refer to minutes and progress on Teams site)
 - Xavier: Current status of legal exemptions
-- Shaft water tanks for dewatering project - to be done before Hydrologist pumping contractor 
+- Shaft water tanks for dewatering project - to be done before Hydrologist pumping contractor is on site.
 - Hauling Contract
 
 **General:**
@@ -57,7 +59,7 @@ permalink: operations/acting-leave-handover/2025-12-11-leave-handover-notes-15-d
 - **ACTION REQUIRED:** Compile procedure for strata bypass card control using tracker boxes
 
 **Gloria - 9-West Dam Project:**
-- Cleaning of the existing 9-West dam (Mica Mining currently in progress). Obtain quote for additional dams and add to order for Gloria
+- Cleaning of the existing 9-West dam (Mica Mining currently in progress). Obtain quote for additional dams and add to order for Gloria (JP Esnouf <jp@micamining.co.za>, john@micamining.co.za)
 - Construction of the new 9-West dam (Attie currently busy with breaking of wall. Once this is done, the support can be completed and pumps installed)
 
 
@@ -69,8 +71,12 @@ permalink: operations/acting-leave-handover/2025-12-11-leave-handover-notes-15-d
 - Gloria Crusher Gaps to be measured and adjusted as per actions previously a=identified. Check with Surface Plant re presence of large rocks.
 - BEV Bay fire doors. Mdu to place order for doors and obtain quotes for construction of walls
 
+**General:**
+Bearing temp monitoring: Unplanned Capital application with Garth. Please compile presentation and present to enable routing for signatures. 
+
 ---
 
 ## General Notes
+- Terence to be relief 2.13.6.1 under Sello at N3
 - Mdu relieves as engineer 2.13.6.1 at N2 under SK.
-- Hans Jacobs will be relieving GES at Gloria with Kabelo relieving as Drill Rigs For
+- Hans Jacobs will be relieving GES at Gloria with Kabelo relieving as Drill Rigs Foreman
