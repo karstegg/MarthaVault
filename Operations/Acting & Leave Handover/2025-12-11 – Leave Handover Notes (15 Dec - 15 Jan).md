@@ -22,16 +22,17 @@ permalink: operations/acting-leave-handover/2025-12-11-leave-handover-notes-15-d
 **Strata Bypass Card Control:**
 - Purchase tracker box (normally used for key control) for strata bypass card control
 
-**N3 Operations - Tasks from Jacques & Molly:**
-- Pieter, must do ramp-up startup on N3 belts
-- Radios for Load n Haul Fleet - Pieter/Sello
+**N3 Operations:**
+- VSD slower ramp-up startup on N3 belts - Stef/Pieter
+- Radios for Load n Haul Fleet - Pieter/Sello: Have submitted to Lizette to re-quote
 - N3 Conveyor RCA actions: V-Scraper & Rip Detector
-- N3, Daily LOV availability → Jacques
 
 **Shafts & Winders:**
-- Xavier to report all water levels of shaft in daily WhatsApp report
-- Xavier: Current state of legal occupations (incomplete - clarify with Greg)
+- Xavier: Current status of legal exemptions
 - Hauling Contract
+
+**General:**
+- Itireleng Contract - Sent to all for comment, please send to Jomari by latest Friday 12/12.
 
 ---
 
@@ -42,11 +43,11 @@ permalink: operations/acting-leave-handover/2025-12-11-leave-handover-notes-15-d
 
 **Strata Bypass Card Control:**
 - Purchase tracker box (normally used for key control) for strata bypass card control
-- **ACTION REQUIRED:** Compile procedure for strata bypass card control using tracker boxes (Greg will ask SK to do this)
+- **ACTION REQUIRED:** Compile procedure for strata bypass card control using tracker boxes
 
 **Gloria - 9-West Dam Project:**
-- Cleaning of the existing 9-West dam
-- Construction of the new 9-West dam
+- Cleaning of the existing 9-West dam (Mica Mining currently in progress)
+- Construction of the new 9-West dam (Attie currently busy with breaking of wall. )
 - Monitor progress and coordinate with project team
 
 **N2/Gloria Operations - Tasks from Jacques & Molly:**
