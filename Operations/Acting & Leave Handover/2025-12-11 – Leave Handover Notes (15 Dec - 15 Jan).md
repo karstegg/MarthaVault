@@ -20,7 +20,7 @@ permalink: operations/acting-leave-handover/2025-12-11-leave-handover-notes-15-d
 #### Key Items:
 
 **Strata Bypass Card Control:**
-- Purchase tracker box (normally used for key control) for strata bypass card control
+- Purchase tracker box (normally used for key control) for strata bypass card control. Hennie busy obtaining cards and Strata 
 
 **N3 Operations:**
 - VSD slower ramp-up startup on N3 belts - Stef/Pieter
@@ -37,7 +37,7 @@ permalink: operations/acting-leave-handover/2025-12-11-leave-handover-notes-15-d
 - Hauling Contract
 
 **General:**
-- Itireleng Contract - Sent to all for comment, please send to Jomari by latest Friday 12/12.
+- Itireleng Contract - Sent to all for comment, please send to Jomari by latest Wednesday 17/12.
 
 ---
 
@@ -56,12 +56,11 @@ permalink: operations/acting-leave-handover/2025-12-11-leave-handover-notes-15-d
 
 
 **N2/Gloria Operations - Tasks from Jacques & Molly:**
-- LDV Cruiser Field intensity. Tests currently in progress at Transerve. We want to reduce the 
-- Incident Fitter: Correct Tool - Allen Cap Bolts, Torque Multiplier
-- Kenru FSS actions
+- LDV Cruiser Field intensity. Tests currently in progress at Transerv. We want to reduce the stop distance zone from 6m to 1-2m. Once tests are confirmed we can implement. - Hennie
+- Incident of Drill Rig Fitter: Correct Tool - Allen Cap Bolts, Torque Multiplier
+- Kenru FSS actions - ensure all actions closed
 - Update Conveyor List (highlighted as priority)
-- Gloria: Conveyor 54H. Send 6m piece to Firelab. Conveyors general; must use register sent out by Jacques - must replace Type K with Type F
-- Gloria Crusher Gaps
+- Gloria Crusher Gaps to be measured and adjusted
 
 **BEV Program:**
 - BEV Charging Recipe: F/MGill - 12/12
