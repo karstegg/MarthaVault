@@ -32,8 +32,14 @@ permalink: operations/acting-leave-handover/2025-12-11-leave-handover-notes-15-d
 - Capital must be applied for new decline belt
 - Sat Tip hammer - Stef. This Friday 12/12
 
+**BEV Program:**
+- BEV Charging Recipe:  - 12/12
+- BEV BAY CHARGERS & ORDERS: CABLES, OH CRANE, CRAWL, etc. as per email sent on 12/12. 
+- BEV Bay 1 water mgt - ensure walls are built
+
 **Shafts & Winders:**
 - Xavier: Current status of legal exemptions
+- Shaft water tanks for dewatering project - to be done before Hydrologist pumping contractor 
 - Hauling Contract
 
 **General:**
@@ -60,15 +66,11 @@ permalink: operations/acting-leave-handover/2025-12-11-leave-handover-notes-15-d
 - Incident of Drill Rig Fitter: Correct Tool - Allen Cap Bolts, Torque Multiplier
 - Kenru FSS actions - ensure all actions closed
 - Update Conveyor List (highlighted as priority)
-- Gloria Crusher Gaps to be measured and adjusted
-
-**BEV Program:**
-- BEV Charging Recipe: F/MGill - 12/12
-- BEV BAY CHARGERS & ORDERS: CABLES, OH CRANE, CRAWL
-- BEV Labor
-- BEV Bay 1 water mgt - walls to be built
+- Gloria Crusher Gaps to be measured and adjusted as per actions previously a=identified. Check with Surface Plant re presence of large rocks.
+- BEV Bay fire doors. Mdu to place order for doors and obtain quotes for construction of walls
 
 ---
 
 ## General Notes
-- [Additional items will be added as needed]
+- Mdu relieves as engineer 2.13.6.1 at N2 under SK.
+- Hans Jacobs will be relieving GES at Gloria with Kabelo relieving as Drill Rigs For
