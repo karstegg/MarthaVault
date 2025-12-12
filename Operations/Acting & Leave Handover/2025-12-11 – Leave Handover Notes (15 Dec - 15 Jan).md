@@ -85,3 +85,32 @@ Bearing temp monitoring: Unplanned Capital application with Garth. Please compil
 
 **Year-End Planning** 
 - Final Plan will be submitted today to me for review. I will sign and send out on Wednesday. 
+
+
+
+## G G Karsten
+Senior Production Engineer
+12 December 2025
+
+
+
+
+---
+## Sello Sease
+Production Engineer
+12 December 2025
+
+
+
+
+---
+
+
+
+## Sikelela Nzuza
+Senior Production Engineer
+12 December 2025
+_______________________
+
+
+
