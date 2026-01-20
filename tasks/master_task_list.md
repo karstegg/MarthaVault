@@ -209,6 +209,51 @@ permalink: tasks/master-task-list
   - Benefit: Intelligent context retrieval from Graph vs Basic Memory
 
 ### Context Management Implementation
+- [ ] Read AIGNE paper: "Everything is Context" - Agentic File System for Context Engineering #task #year/2025 #priority/medium #system #MarthaVault #research 📅 2025-12-31
+  - Paper: arxiv.org/abs/2512.05470
+  - Source: ClaudeBox triage 2025-12-20
+  - Relevance: Memory architecture, Graph+Basic Memory improvements, vault sync
+- [ ] Experiment with ACE (Agentic Context Engineering) framework #task #year/2025 #priority/medium #system #MarthaVault #research 📅 2025-12-31
+  - Repo: github.com/ace-agent/ace
+  - Source: ClaudeBox triage 2025-12-20 (Elvis @omarsar0)
+  - Concept: LLMs improve via evolving "playbooks" with incremental delta updates
+  - Architecture: Generator → Reflector → Curator (3-agent system)
+  - Application: Auto-evolve CLAUDE.md, refine extraction strategies, improve memory patterns
+  - Results: +10.6% agent tasks, -86.9% latency vs existing methods
+- [ ] Watch Teresa Torres Claude Code + Obsidian workflow video #task #year/2025 #priority/medium #system #MarthaVault #learning 📅 2025-12-28
+  - Video: youtu.be/uBJdwRPO1QE (via Peter Yang @petergyang)
+  - Source: ClaudeBox triage 2025-12-22
+  - Topics: 3-layer context (global → project → reference), /today command, Obsidian integration
+  - Quote: "Whenever you explain something to Claude, stop and ask—will I have to explain this again?"
+  - Relevance: Matches our MarthaVault + CLAUDE.md setup
+- [ ] Install and test claude-mem for persistent session memory #task #year/2025 #priority/high #system #MarthaVault 📅 2025-12-28
+  - Repo: github.com/thedotmack/claude-mem
+  - Source: ClaudeBox triage 2025-12-20
+  - Install: `/plugin marketplace add thedotmack/claude-mem` then `/plugin install claude-mem`
+  - Features: Auto-capture tool use, session summaries, context injection, 10 search tools
+  - Integration: Complements (not replaces) Graph Memory, Basic Memory, CLAUDE.md
+  - Test: Run 2-3 sessions, verify context injection works, test mem-search queries
+  - UI: Check localhost:37777 for memory viewer
+  - Evaluate: Does it reduce manual context work? Does it conflict with existing MCP tools?
+- [ ] Build app using Qwen-Image-Layered for image decomposition #task #year/2025 #priority/medium #personal #app #ai 📅 2025-12-31
+  - Model: Qwen-Image-Layered (Alibaba)
+  - Source: ClaudeBox triage 2025-12-20
+  - Capabilities: Photoshop-grade RGBA layer separation, prompt-controlled (3-10 layers), recursive decomposition
+  - App idea: Utility tool for designers/creators to decompose images into editable layers
+  - Resources: HuggingFace, ModelScope, GitHub (links in X post)
+  - X post: https://x.com/i/status/2002034611229229388
+- [ ] Test Meta SAM Audio for audio separation #task #year/2025 #priority/medium #personal #transcription #music #research 📅 2025-12-31
+  - Repo: github.com/facebookresearch/sam-audio
+  - HuggingFace: facebook/sam-audio-large
+  - Source: ClaudeBox triage 2025-12-20
+  - Prompt types: Text ("speech"), Visual (click speaker), Time-span (mark segment)
+  - **Use Case 1 (Primary): Music stem separation**
+    - Split songs into: bass, drums, keys, guitar, vocals, etc.
+    - Text prompts: "drums", "bass guitar", "piano", "vocals"
+    - Applications: Remixing, karaoke, learning instruments, DJ stems
+  - Use Case 2: Voice note cleanup
+    - Isolate speech from noisy WhatsApp voice notes
+    - Pipeline: Voice note → SAM Audio → Whisper → corrections
 - [ ] Verify Context Editing (test with 30+ file triage session) #task #year/2025 #priority/high #system #MarthaVault
   - Reference: [[personal/projects/MarthaVault Intuition Layer/2025-10-19 - Context Management Discussion Summary]]
 - [ ] Check Memory Tool Availability in Claude Code (/tools list) #task #year/2025 #priority/high #system #MarthaVault
@@ -237,6 +282,214 @@ permalink: tasks/master-task-list
 ## Monthly Recurring Tasks
 - [x] Process VFL Schedule when received (extract Greg's assignments to calendar) #task #year/2025 #priority/medium #recurring #SHEQ #VFL 📅 2025-11-01 ✅ 2025-11-13
   - Note: Apply VFL Schedule Processing skill - see [[system/skills/vfl-schedule-processing.md]]
+
+---
+
+## URGENT PROCUREMENT REQUESTS
+
+- [ ] Provide overhead cranes maintenance services scope to Hilaria Tshineva #task #year/2026 #priority/critical #procurement #overhead-cranes #SA-Cranes 📅 2026-01-17
+  - Assigned to: [[Karsten, Gregory]]
+  - Requestor: [[Tshineva, Hilaria]] (Procurement)
+  - CC: [[Breet, Jacques]], [[Esterhuizen, Charl]]
+  - Status: **2 MONTHS OVERDUE** (originally requested Nov 12, 2025)
+  - Context: Contract BSC780 with SA Cranes extended until April 2026
+  - Urgency: **BLOCKING TENDER** - Khumani Mine has similar requirement, scopes will be merged for market tender
+  - Follow-up email: Jan 14, 2026
+  - Action: Provide scope of works document for overhead cranes maintenance services including:
+    - Services required
+    - Equipment covered (list all overhead cranes at BRMO)
+    - Maintenance frequency
+    - Performance standards
+    - Technical specifications
+  - Note: This is blocking procurement from issuing tender to market
+
+---
+
+## JACQUES BREET ENGINEER ACTION TRACKER (January 2026)
+
+**Source:** Email from Jacques Breet, Jan 14, 2026 - "Engineers Action Log - January 2026.doc"
+**Note:** Jacques will be the only person to update status. Engineers provide updates to him for team meetings.
+
+### OVERDUE ACTIONS (Oct-Dec 2025)
+
+- [ ] Dam Cleaning - Ensure orders placed with risk assessment and method statements #task #year/2025 #priority/critical #compliance 📅 2025-10-31
+  - Assigned to: [[Karsten, Gregory]]
+  - Date logged: Oct 2025
+  - Status: OVERDUE (3+ months)
+  - Action: Ensure orders are placed – Risk assessment and method statements to be aligned
+
+- [ ] Illumination TMM - All sections compliance verification #task #year/2025 #priority/critical #compliance #illumination 📅 2025-10-31
+  - Assigned to: [[Karsten, Gregory]] (lead), [[Sease, Sello]], [[Dubazane, Sipho]], [[Mteki, Masigcinane]], [[Nzuza, Sikelela]], [[Bester, Michael]]
+  - Date logged: Oct 2025
+  - Status: OVERDUE (3+ months)
+  - Action: Procedure was approved – All sections to comply – Engineer to have proof
+
+- [ ] COC Compliance as per DMPR - All engineers tracker and POE #task #year/2025 #priority/critical #compliance #COC 📅 2025-10-31
+  - Assigned to: [[Karsten, Gregory]] (lead), [[Sease, Sello]], [[Dubazane, Sipho]], [[Mteki, Masigcinane]], [[Nzuza, Sikelela]], [[Bester, Michael]], [[Petersen, Xavier]]
+  - Date logged: Oct 2025
+  - Status: OVERDUE (3+ months)
+  - Action: All engineers to have a tracker and POE
+  - Related: DB COC Compliance tracking (separate initiative)
+
+- [ ] Kenru Actions - Complete DMPR commitments #task #year/2025 #priority/critical #compliance #Kenru 📅 2025-10-31
+  - Assigned to: [[Karsten, Gregory]] (lead), [[Sease, Sello]], [[Dubazane, Sipho]], [[Mteki, Masigcinane]], [[Nzuza, Sikelela]]
+  - Date logged: Oct 2025
+  - Status: OVERDUE (3+ months)
+  - Action: Complete actions as per DMPR commitment
+
+- [ ] Investigate Lazer Support Pattern – Roof bolter #task #year/2025 #priority/high #equipment #roof-bolter 📅 2025-10-31
+  - Assigned to: [[Karsten, Gregory]]
+  - Date logged: Oct 2025
+  - Status: OVERDUE (3+ months)
+  - Action: Cornel to assist
+
+- [ ] Satellite Strategy - Finalize #task #year/2025 #priority/high #strategy #satellite 📅 2025-10-31
+  - Assigned to: [[Karsten, Gregory]]
+  - Date logged: Oct 2025
+  - Status: OVERDUE (3+ months)
+  - Action: Finalize
+
+- [ ] Vibration Test - Latest report and action completion #task #year/2025 #priority/high #vibration #testing 📅 2025-11-30
+  - Assigned to: [[Karsten, Gregory]] (lead), [[Sease, Sello]], [[Dubazane, Sipho]], [[Mteki, Masigcinane]], [[Nzuza, Sikelela]]
+  - Date logged: Nov 2025
+  - Status: OVERDUE (2+ months)
+  - Action: Engineer to have latest report and ensure actions are completed
+
+- [ ] Install Radios in BEVs - Purchase and install #task #year/2025 #priority/high #BEV #radios #site/Nchwaning3 📅 2025-11-30
+  - Assigned to: [[Karsten, Gregory]]
+  - Date logged: Nov 2025
+  - Status: OVERDUE (2+ months)
+  - Action: Purchase and install
+
+- [ ] Conveyor installation record - All engineers update files #task #year/2025 #priority/high #conveyor #documentation 📅 2025-11-30
+  - Assigned to: [[Karsten, Gregory]] (lead), [[Sease, Sello]], [[Dubazane, Sipho]], [[Mteki, Masigcinane]], [[Nzuza, Sikelela]], [[Bester, Michael]]
+  - Date logged: Nov 2025
+  - Status: OVERDUE (2+ months)
+  - Action: Engineer to have updated record file
+
+- [ ] Order BEV Bay 2 equipment - OHC etc with Roelie support #task #year/2025 #priority/high #BEV #capital #site/Nchwaning3 📅 2025-11-30
+  - Assigned to: [[Karsten, Gregory]] (lead), [[Sease, Sello]]
+  - Date logged: Nov 2025
+  - Status: OVERDUE (2+ months)
+  - Action: Roelie to support
+  - Related: BEV Charging Bay #2 Project
+
+- [ ] S2 Functions lost due to Emergency mode - Understand impact #task #year/2025 #priority/medium #S2 #emergency-mode 📅 2025-12-31
+  - Assigned to: [[Karsten, Gregory]]
+  - Date logged: Dec 2025
+  - Status: OVERDUE (1 month)
+  - Action: Understand what functions are lost - parallel
+
+- [ ] N3 Scaler Aircons - All scalers upgrade #task #year/2025 #priority/high #site/Nchwaning3 #scaler #aircon 📅 2025-12-31
+  - Assigned to: [[Karsten, Gregory]] (lead), [[Sease, Sello]]
+  - Date logged: Dec 2025
+  - Status: OVERDUE (1 month)
+  - Action: All scalers to be upgraded
+
+- [ ] Logistics Weekly report - Ensure Amelia submits to Greg #task #year/2025 #priority/medium #reporting #logistics 📅 2025-12-31
+  - Assigned to: [[Karsten, Gregory]]
+  - Date logged: Dec 2025
+  - Status: OVERDUE (1 month)
+  - Action: Amelia to submit to Greg
+
+- [ ] Daily Weekly LDV availability report - Engineer reporting system #task #year/2025 #priority/medium #reporting #LDV 📅 2025-12-31
+  - Assigned to: [[Karsten, Gregory]] (lead), [[Sease, Sello]]
+  - Date logged: Dec 2025
+  - Status: OVERDUE (1 month)
+  - Action: Engineer to get daily report – Snr Eng to include in weekly report
+
+### CURRENT ACTIONS (Jan 2026)
+
+- [ ] Illumination Plant Area - Proof of testing and compliance #task #year/2026 #priority/critical #compliance #illumination 📅 2026-01-31
+  - Assigned to: [[Karsten, Gregory]] (lead), [[Sease, Sello]], [[Dubazane, Sipho]], [[Mteki, Masigcinane]], [[Nzuza, Sikelela]], [[Bester, Michael]]
+  - Date logged: Jan 2026
+  - Action: Procedure approved – All engineers to have proof that areas have been tested and comply
+
+- [ ] Capital Normet Charger and Sat Tip 1 upgrade - Ensure applications submitted #task #year/2026 #priority/high #capital 📅 2026-01-31
+  - Assigned to: [[Karsten, Gregory]] (lead), [[Sease, Sello]]
+  - Date logged: Jan 2026
+  - Action: Ensure JE submit applications
+  - Related: Jacques capital approval emails
+
+- [ ] Update UG vehicle requirements list - JB update, engineers sign off #task #year/2026 #priority/high #vehicles #planning 📅 2026-01-31
+  - Assigned to: [[Karsten, Gregory]] (lead), [[Sease, Sello]], [[Dubazane, Sipho]], [[Mteki, Masigcinane]]
+  - Date logged: Jan 2026
+  - Action: JB to update – engineers to sign off
+
+- [ ] Fatigue Management system - Present suitable system, speak to Khumani #task #year/2026 #priority/high #safety #fatigue 📅 2026-01-31
+  - Assigned to: [[Karsten, Gregory]]
+  - Date logged: Jan 2026
+  - Action: Present suitable system – Speak to Khumani
+
+- [ ] Refuelling Procedure machine idling - Review and update #task #year/2026 #priority/medium #procedures #refuelling 📅 2026-01-31
+  - Assigned to: [[Karsten, Gregory]]
+  - Date logged: Jan 2026
+  - Action: Review and update procedure
+
+- [ ] Finalise Conveyor Safety Risk Assessment - Jack Pearson presentation #task #year/2026 #priority/high #safety #conveyor 📅 2026-01-31
+  - Assigned to: [[Karsten, Gregory]]
+  - Date logged: Jan 2026
+  - Action: Jack Pearson to present updated document
+
+- [ ] Conveyor Tear Tracker - Update actions from Chris monthly report #task #year/2026 #priority/medium #conveyor #tracking 📅 2026-01-31
+  - Assigned to: [[Karsten, Gregory]] (lead), [[Sease, Sello]], [[Dubazane, Sipho]], [[Mteki, Masigcinane]], [[Nzuza, Sikelela]], [[Bester, Michael]]
+  - Date logged: Jan 2026
+  - Action: Update actions – Chris to send monthly report
+
+- [ ] Update Conveyor overview - Only H53 is type F #task #year/2026 #priority/medium #conveyor #documentation 📅 2026-01-31
+  - Assigned to: [[Karsten, Gregory]] (lead), [[Dubazane, Sipho]]
+  - Date logged: Jan 2026
+  - Action: Only H53 is type F
+
+- [ ] Condition Monitoring Overview - Update and sign off #task #year/2026 #priority/high #condition-monitoring 📅 2026-01-31
+  - Assigned to: [[Karsten, Gregory]]
+  - Date logged: Jan 2026
+  - Action: Update and sign off
+
+- [ ] Asset Management Pragma - Complete plan (JB leads) #task #year/2026 #priority/high #asset-management #Pragma 📅 2026-01-31
+  - Assigned to: [[Karsten, Gregory]] (lead), [[Sease, Sello]], [[Dubazane, Sipho]], [[Mteki, Masigcinane]], [[Nzuza, Sikelela]], [[Bester, Michael]], [[Petersen, Xavier]]
+  - Date logged: Jan 2025 (likely typo - should be Jan 2026)
+  - Action: Complete Plan – JB to lead the process
+
+- [ ] Replacement Capital Plan 2026/7 - Update and print #task #year/2026 #priority/high #capital #planning 📅 2026-01-31
+  - Assigned to: [[Karsten, Gregory]]
+  - Date logged: Jan 2026
+  - Action: Update and print
+
+---
+
+## DB COC COMPLIANCE TRACKING (Jan 2026)
+
+### N2 - Sikelela Nzuza
+- [ ] Follow up with Sikelela Nzuza - N2 UG DB COC compliance status #task #year/2026 #priority/high #site/Nchwaning2 #compliance #DB-COC 📅 2026-01-16
+  - Assigned to: [[Nzuza, Sikelela]]
+  - Status: NO RESPONSE to Jacques' Jan 6 request
+  - Action: Determine current compliance status and plan for outstanding areas
+  - Context: [[people/Breet, Jacques]] requested all engineers confirm DB COC compliance Jan 6, 2026
+
+### N3 - Sello Sease
+- [ ] Track N3 UG DB COC outsourcing to E-Tron/Thusano #task #year/2026 #priority/high #site/Nchwaning3 #compliance #DB-COC 📅 2026-01-20
+  - Assigned to: [[Sease, Sello]]
+  - Status: All areas underground outstanding
+  - Action: Engaging with E-Tron and Thusano for outsourcing
+  - Response received: Jan 7, 2026
+  - Follow-up: Confirm vendor selection and start date
+
+### Gloria - Jade Kruger
+- [ ] Track Gloria UG DB COC outsourcing to E-Tron/Thusano #task #year/2026 #priority/high #site/Gloria #compliance #DB-COC 📅 2026-01-20
+  - Assigned to: [[Kruger, Jade]]
+  - Status: All areas underground outstanding
+  - Action: To be outsourced to E-Tron or Thusano
+  - Response received: Jan 6, 2026
+  - Follow-up: Confirm vendor selection and start date
+
+### Shafts - Xavier Petersen (via Jan Nieuwoudt)
+- [ ] Track Shafts DB COC completion - Thusano continues from Jan 12 #task #year/2026 #priority/high #site/S&W #compliance #DB-COC 📅 2026-01-17
+  - Assigned to: [[Petersen, Xavier]] (currently on leave - [[Nieuwoudt, Jan]] covering)
+  - Status: Audit completed on NCHW 2, work in progress
+  - Action: Thusano will continue from January 12, 2026
+  - Response received: Jan 6, 2026 (Jan responding for Xavier)
+  - Follow-up: Confirm Thusano started on schedule, track completion
 
 ---
 

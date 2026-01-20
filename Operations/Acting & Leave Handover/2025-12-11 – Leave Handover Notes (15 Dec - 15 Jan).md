@@ -46,6 +46,7 @@ permalink: operations/acting-leave-handover/2025-12-11-leave-handover-notes-15-d
 
 **General:**
 - Itireleng Contract - Sent to all for comment, please send to Jomari by latest Wednesday 17/12.
+- Appointment of GES for BEV & Technology projects. HR is busy compiling and  submitting labour request. Please expedite.(Refer to email from Jacques)
 
 ---
 
@@ -73,7 +74,7 @@ permalink: operations/acting-leave-handover/2025-12-11-leave-handover-notes-15-d
 
 **General:**
 Bearing temp monitoring: Unplanned Capital application with Garth. Please compile presentation and present to enable routing for signatures. 
-
+ Appointment of GES Plant at Gloria. HR is busy compiling and  submitting labour request. Please expedite.(Refer to email from Jacques)
 ---
 
 ## General Notes

@@ -111,43 +111,9 @@
     ],
     "deny": []
   },
+  "hooks": {},
   "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "whatsapp"
-  ],
-  "hooks": {
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "sleep 60 && /sync-outlook-calendar && sleep 60",
-            "timeout": 180
-          }
-        ]
-      }
-    ],
-    "PostToolUse": [
-      {
-        "matcher": "Write|Edit",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash -c 'if [[ \"$TOOL_INPUT\" =~ Schedule/ ]]; then echo \"/sync-outlook-calendar\"; fi'",
-            "timeout": 30
-          }
-        ]
-      },
-      {
-        "matcher": "Write|Edit",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash -c 'if [[ \"$TOOL_INPUT\" =~ \"VFL Schedule\" ]] && [[ \"$TOOL_INPUT\" =~ \"00_Inbox\" ]]; then echo \"/process-vfl-schedule\"; fi'",
-            "timeout": 30
-          }
-        ]
-      }
-    ]
-  }
+  ]
 }
