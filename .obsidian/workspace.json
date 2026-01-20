@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2f6acd7899484ef4",
+        "id": "111fbcb308fb7fe0",
         "type": "tabs",
         "children": [
           {
-            "id": "8ff1fa54ebc36ffd",
+            "id": "9a2ce42a091da98c",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -44,7 +44,7 @@
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: ✳ Obsidian Terminal Plugin"
+              "title": "Terminal: ✳ Claude CLI in Obsidian Terminal"
             }
           }
         ]
@@ -253,7 +253,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "8ff1fa54ebc36ffd",
+  "active": "9a2ce42a091da98c",
   "lastOpenFiles": [
     "Operations/Acting & Leave Handover/2025-12-11 – Leave Handover Notes (15 Dec - 15 Jan).md",
     "00_Inbox/Untitled Kanban.md",
