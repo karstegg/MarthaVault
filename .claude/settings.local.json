@@ -111,9 +111,13 @@
     ],
     "deny": []
   },
-  "hooks": {},
   "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
-    "whatsapp"
-  ]
+    "whatsapp",
+    "memory",
+    "basic-memory",
+    "whisper",
+    "claude-cli-executor"
+  ],
+  "hooks": {}
 }
