@@ -4,47 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "111fbcb308fb7fe0",
+        "id": "455444a996432107",
         "type": "tabs",
         "children": [
           {
-            "id": "9a2ce42a091da98c",
+            "id": "dbfe81c267e56166",
             "type": "leaf",
-            "pinned": true,
             "state": {
-              "type": "terminal:terminal",
+              "type": "release-notes",
               "state": {
-                "terminal:terminal": {
-                  "cwd": "C:\\Users\\10064957\\My Drive\\GDVault\\MarthaVault",
-                  "focus": false,
-                  "profile": {
-                    "args": [],
-                    "executable": "C:\\Windows\\System32\\cmd.exe",
-                    "followTheme": true,
-                    "name": "",
-                    "platforms": {
-                      "win32": true
-                    },
-                    "pythonExecutable": "python3",
-                    "restoreHistory": false,
-                    "rightClickAction": "copyPaste",
-                    "successExitCodes": [
-                      "0",
-                      "SIGINT",
-                      "SIGTERM"
-                    ],
-                    "terminalOptions": {
-                      "documentOverride": null
-                    },
-                    "type": "integrated",
-                    "useWin32Conhost": true
-                  },
-                  "serial": null
-                }
+                "currentVersion": "1.11.5"
               },
-              "pinned": true,
-              "icon": "terminal",
-              "title": "Terminal: ✳ Claude CLI in Obsidian Terminal"
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.5"
             }
           }
         ]
@@ -253,8 +225,10 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "9a2ce42a091da98c",
+  "active": "dbfe81c267e56166",
   "lastOpenFiles": [
+    "00_Inbox/2025-11-26 (Conflicted copy Greg's Tab S8 202512050928).md",
+    "00_Inbox/2025-11-26.md",
     "Operations/Acting & Leave Handover/2025-12-11 – Leave Handover Notes (15 Dec - 15 Jan).md",
     "00_Inbox/Untitled Kanban.md",
     "Excalidraw/Drawing 2026-01-20 22.14.16.excalidraw.md",
@@ -290,8 +264,6 @@
     "tasks/archive/daily-notes/2025-11/2025-11-24 – Daily Note.md",
     "tasks/archive/weekly-plans/2025-11/2025-11-24 – Week Plan Nov 24-28.md",
     "tasks/tracking/2025-11-24 – Email Tracking - Week Actions.md",
-    "Operations/Shafts & Winders/DMR Instructions/2025-12-01 – DMR Instruction - Shaft and Winder Accident Prevention.md",
-    "00_Inbox/2025-12-02 – DT0121 Email Details.md",
     "00_Inbox/FT_2025-11-17 20_37_37.256.png",
     "media/image/2025/2025-11-17_2037_Emergency_Preparedness_Recap.png",
     "media/image/2025/2025-11-17_2036_Daily_Notes_Planner.png",
