@@ -17,13 +17,37 @@
                 "kanbanViewState": {
                   "kanban-plugin": "board",
                   "list-collapse": [
+                    true,
+                    true,
                     false,
-                    false
+                    null,
+                    null,
+                    true
                   ]
                 }
               },
               "icon": "lucide-trello",
               "title": "Tasks by Person"
+            }
+          }
+        ]
+      },
+      {
+        "id": "79b2fec95be039c1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1022f97a0ffc53cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_Inbox/Provide overhead cranes maintenance services scope to Hilaria Tshineva priority critical procurement SA-Cranes 📅 2026-01-17.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Provide overhead cranes maintenance services scope to Hilaria Tshineva priority critical procurement SA-Cranes 📅 2026-01-17"
             }
           }
         ]
@@ -148,13 +172,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tasks/Priority Matrix Board.md",
+                "file": "00_Inbox/Provide overhead cranes maintenance services scope to Hilaria Tshineva priority critical procurement SA-Cranes 📅 2026-01-17.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Priority Matrix Board"
+              "title": "Outline of Provide overhead cranes maintenance services scope to Hilaria Tshineva priority critical procurement SA-Cranes 📅 2026-01-17"
             }
           },
           {
@@ -188,7 +212,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       },
       {
         "id": "e1054e40570ce37e",
@@ -232,8 +256,11 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "6ec11c8d8a4dd083",
+  "active": "1022f97a0ffc53cf",
   "lastOpenFiles": [
+    "tasks/Tasks by Person.md",
+    "00_Inbox/Provide overhead cranes maintenance services scope to Hilaria Tshineva priority critical procurement SA-Cranes 📅 2026-01-17.md",
+    "tasks/Tasks by Site.md",
     "projects/BRP_Underground/2025-12-03 – Equipment Breakdown Analysis.xlsx",
     "00_Inbox/BRMO weekly report 09 January 2026 -  15 January 2026.pdf",
     "projects/Bearing_Temperature_Monitoring/2025-12-08 – Capital Application Draft.docx",
@@ -244,7 +271,6 @@
     "reference/2025-12-07 – Research Paper 2504.13173.pdf",
     "reference/2025-12-07 – Titans Learning to Memorize Research Paper.pdf",
     "reference/2025-11-18 – Zero Base Labour Plan Asset Breakdown.xls",
-    "projects/Belt_Splicing_Project/Nchwaning2-BRMO_Belt_Splicing_Scope_Template.xlsx",
     "personal/2025-11-26 – AI Agent Ideas.md",
     "00_Inbox/Survey Belt Temperature Sensor Deployment.md",
     "00_Inbox/N3 Second Electrical Supervisor.md",
@@ -269,8 +295,6 @@
     "tasks/2025-10-07 – SA Crane Contract 6 Month Extension.md",
     "projects/2025-12-11 – Leave Handover Notes (15 Dec - 15 Jan).md",
     "tasks/Priority Matrix Board.md",
-    "tasks/2025-07-29 – BEV Workshop Charges Order.md",
-    "00_Inbox/2025-11-25.md",
     "00_Inbox/FT_2025-11-17 20_37_37.256.png",
     "media/image/2025/2025-11-17_2037_Emergency_Preparedness_Recap.png",
     "media/image/2025/2025-11-17_2036_Daily_Notes_Planner.png",

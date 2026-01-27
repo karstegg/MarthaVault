@@ -15,7 +15,7 @@ permalink: tasks/tasks-by-person-1
 
 ## Greg - URGENT PROCUREMENT (2 MONTHS OVERDUE!)
 
-- [x] Provide overhead cranes maintenance services scope to Hilaria Tshineva #priority/critical #procurement #SA-Cranes 📅 2026-01-17
+- [x] [[Provide overhead cranes maintenance services scope to Hilaria Tshineva priority critical procurement SA-Cranes 📅 2026-01-17]]
 	  - **Status**: 2 MONTHS OVERDUE (originally requested Nov 12, 2025)
 	  - **Blocking**: Khumani Mine tender - scopes will be merged for market tender
 
@@ -334,6 +334,6 @@ permalink: tasks/tasks-by-person-1
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false]}
+{"kanban-plugin":"board","list-collapse":[true,true,false,null,null,true]}
 ```
 %%
