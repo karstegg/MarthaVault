@@ -11,12 +11,10 @@
             "id": "6ec11c8d8a4dd083",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "00_Inbox/BRMO weekly report 09 January 2026 -  15 January 2026.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "BRMO weekly report 09 January 2026 -  15 January 2026"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -227,19 +225,19 @@
   },
   "active": "6ec11c8d8a4dd083",
   "lastOpenFiles": [
+    "projects/BRP_Underground/2025-12-03 – Equipment Breakdown Analysis.xlsx",
+    "00_Inbox/BRMO weekly report 09 January 2026 -  15 January 2026.pdf",
+    "projects/Bearing_Temperature_Monitoring/2025-12-08 – Capital Application Draft.docx",
+    "projects/BEV_Program/2026-01-15 – BRMO Weekly Report Week 02.pdf",
+    "projects/BRP_Underground",
+    "projects/Bearing_Temperature_Monitoring",
+    "projects/BEV_Program",
     "reference/2025-12-07 – Research Paper 2504.13173.pdf",
     "reference/2025-12-07 – Titans Learning to Memorize Research Paper.pdf",
     "reference/2025-11-18 – Zero Base Labour Plan Asset Breakdown.xls",
     "projects/Belt_Splicing_Project/Nchwaning2-BRMO_Belt_Splicing_Scope_Template.xlsx",
-    "projects/Belt_Splicing_Project/BRMO_Belt_Splicing_Scope_Template.xlsx",
-    "projects/Belt_Splicing_Project/BRMO_Belt_Splicing_Scope_Shafts&Winders.xlsx",
-    "projects/Belt_Splicing_Project/BRMO_Belt_Splicing_Scope_N3.xlsx",
-    "projects/Belt_Splicing_Project/BRMO_Belt_Splicing_Scope_Gloria.xlsx",
-    "projects/Belt_Splicing_Project",
-    "reference/2025-12-11 – Leave Handover Notes Dec-Jan.pdf",
     "personal/2025-11-26 – AI Agent Ideas.md",
     "00_Inbox/Survey Belt Temperature Sensor Deployment.md",
-    "00_Inbox/BRMO weekly report 09 January 2026 -  15 January 2026.pdf",
     "00_Inbox/N3 Second Electrical Supervisor.md",
     "00_Inbox/Inspector Instructions - actions.md",
     "00_Inbox/2025-12-02 – DT0121 Email Details.md",
