@@ -29,7 +29,7 @@ permalink: tasks/tasks-by-person-1
 
 ## Sikelela (SK) - NO RESPONSE
 
-- [ ] [[Follow up - N2 UG DB COC compliance status priority high site Nchwaning2 compliance DB-COC 📅 2026-01-16 1 1]]
+- [ ] [[Follow up - N2 UG DB COC compliance status priority high site Nchwaning2 compliance DB-COC 📅 2026-01-16 1 1 1]]
 	  - **Status**: NO RESPONSE to Jacques' Jan 6 request
 	  - Action: Determine current compliance status and plan
 
