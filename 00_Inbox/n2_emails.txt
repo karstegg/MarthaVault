@@ -1,5 +1,0 @@
-✓ Connected to Outlook
-
-Searching for folders matching 'N2'...
-✗ No folders matching 'N2' found
-No emails found.
