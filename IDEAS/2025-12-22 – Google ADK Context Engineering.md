@@ -1,8 +1,9 @@
 ---
-Status:: Draft
-Priority:: High
-Tags:: #year/2025 #idea #context-engineering #agents #google
-Source:: https://github.com/google/adk-python
+'Status:': Draft
+'Priority:': High
+'Tags:': null
+'Source:': https://github.com/google/adk-python
+permalink: ideas/2025-12-22-google-adk-context-engineering
 ---
 
 # Google ADK - Context Engineering Framework
