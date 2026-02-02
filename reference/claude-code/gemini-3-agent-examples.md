@@ -1,7 +1,8 @@
 ---
-Status:: Reference
-Tags:: #year/2025 #reference #google #gemini #agents
-Source:: https://x.com/i/status/2002110501795590212
+'Status:': Reference
+'Tags:': null
+'Source:': https://x.com/i/status/2002110501795590212
+permalink: reference/claude-code/gemini-3-agent-examples
 ---
 
 # Gemini 3 for AI Agents

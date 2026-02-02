@@ -1,8 +1,9 @@
 ---
-Status:: To Review
-Source:: WhatsApp (self-chat)
-CapturedDate:: 2025-12-09
-Tags:: #idea #to-explore #year/2025
+'Status:': To Review
+'Source:': WhatsApp (self-chat)
+'CapturedDate:': 2025-12-09
+'Tags:': null
+permalink: ideas/2025-12-09-self-x-post-to-explore
 ---
 
 # X Post to Explore

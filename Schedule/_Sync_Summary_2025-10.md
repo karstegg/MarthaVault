@@ -3,6 +3,7 @@ title: Calendar Sync Summary - October 2025
 allDay: true
 date: 2025-10-21
 completed: null
+permalink: schedule/sync-summary-2025-10
 ---
 
 # Calendar Sync Summary - October 2025
